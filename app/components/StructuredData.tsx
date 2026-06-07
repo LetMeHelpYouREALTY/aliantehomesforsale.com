@@ -3,7 +3,7 @@
 import { useId } from 'react';
 
 interface StructuredDataProps {
-  type: 'RealEstateAgent' | 'PropertyListing' | 'NeighborhoodDetail' | 'NeighborhoodGuide' | 'WebSite' | 'LocalBusiness' | 'Organization' | 'Breadcrumbs' | 'FAQPage';
+  type: 'RealEstateAgent' | 'PropertyListing' | 'NeighborhoodDetail' | 'NeighborhoodGuide' | 'WebSite' | 'LocalBusiness' | 'Organization' | 'Breadcrumbs' | 'FAQPage' | 'Person';
   property?: {
     title: string;
     description: string;
@@ -27,8 +27,11 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
       return {
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
+        '@id': 'https://www.aliantehomesforsale.com/#realestate-agent',
         name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-        description: 'Expert real estate services in Aliante, North Las Vegas',
+        alternateName: 'Dr. Jan Duffy Real Estate',
+        description: 'Expert real estate services in Aliante, North Las Vegas specializing in new construction, gated communities, and 55+ active adult homes since 2018',
+        slogan: 'Your Aliante Real Estate Expert - 500+ Successful Transactions',
         url: 'https://www.aliantehomesforsale.com',
         address: {
           '@type': 'PostalAddress',
@@ -38,11 +41,100 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           postalCode: '89084',
           addressCountry: 'US',
         },
-        telephone: '(702) 707-7273',
+        telephone: '+17027077273',
         email: 'DrDuffy@AlianteHomesForSale.com',
-        areaServed: {
-          '@type': 'Place',
-          name: 'Aliante, North Las Vegas, Nevada',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://www.aliantehomesforsale.com/logo.png',
+          width: '250',
+          height: '60',
+        },
+        knowsAbout: [
+          'Real Estate',
+          'New Construction Homes',
+          'Aliante North Las Vegas',
+          'Gated Communities',
+          'Active Adult 55+ Communities',
+          'Builder Negotiations',
+          'MLS Listings',
+          'Property Investment',
+          'First-Time Home Buyers',
+          'Luxury Real Estate'
+        ],
+        areaServed: [
+          {
+            '@type': 'City',
+            name: 'North Las Vegas',
+            '@id': 'https://en.wikipedia.org/wiki/North_Las_Vegas,_Nevada',
+          },
+          {
+            '@type': 'Place',
+            name: 'Aliante',
+            geo: {
+              '@type': 'GeoCircle',
+              geoMidpoint: {
+                '@type': 'GeoCoordinates',
+                latitude: '36.1699',
+                longitude: '-115.1398',
+              },
+              geoRadius: '5000',
+            },
+          },
+          {
+            '@type': 'Place',
+            name: 'Las Vegas Valley',
+          },
+          {
+            '@type': 'PostalCode',
+            name: '89084',
+          },
+        ],
+        serviceArea: {
+          '@type': 'GeoCircle',
+          geoMidpoint: {
+            '@type': 'GeoCoordinates',
+            latitude: '36.1699',
+            longitude: '-115.1398',
+          },
+          geoRadius: '8000',
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Real Estate Services',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Buyer Representation',
+                description: 'Free professional buyer representation for home purchases in Aliante',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'New Construction Specialist',
+                description: 'Expert guidance for new construction home purchases with builder negotiations',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Home Valuation',
+                description: 'Comprehensive property valuation services',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'MLS Search Access',
+                description: 'Real-time MLS listings updated every 15 minutes',
+              },
+            },
+          ],
         },
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -63,8 +155,16 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
               ratingValue: '5',
               bestRating: '5'
             },
-            reviewBody: 'Dr. Duffy helped us find our dream home in The Prominence. Her knowledge of Aliante neighborhoods and builder negotiations saved us over $20,000 on our new construction home. Highly recommended!'
+            reviewBody: 'Dr. Duffy helped us find our dream home in The Prominence. Her knowledge of Aliante neighborhoods and builder negotiations saved us over $20,000 on our new construction home. Highly recommended!',
+            datePublished: '2025-10-15',
           }
+        ],
+        foundingDate: '2018',
+        priceRange: '$$',
+        sameAs: [
+          'https://www.facebook.com/AlianteHomesForSale',
+          'https://www.linkedin.com/in/drjanduffy',
+          'https://www.instagram.com/aliantehomesforsale',
         ],
       };
     }
@@ -232,10 +332,15 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
     if (type === 'LocalBusiness') {
       return {
         '@context': 'https://schema.org',
-        '@type': 'RealEstateAgent',
-        '@id': 'https://www.aliantehomesforsale.com/#organization',
+        '@type': 'LocalBusiness',
+        '@id': 'https://www.aliantehomesforsale.com/#local-business',
         name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-        image: 'https://www.aliantehomesforsale.com/logo.png',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://www.aliantehomesforsale.com/logo.png',
+          width: '250',
+          height: '60',
+        },
         url: 'https://www.aliantehomesforsale.com',
         telephone: '+17027077273',
         email: 'DrDuffy@AlianteHomesForSale.com',
@@ -249,8 +354,8 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 36.1699,
-          longitude: -115.1398,
+          latitude: '36.1699',
+          longitude: '-115.1398',
         },
         openingHoursSpecification: [
           {
@@ -267,14 +372,26 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           },
         ],
         priceRange: '$$',
+        paymentAccepted: 'Cash, Check, Credit Card, Wire Transfer',
+        currenciesAccepted: 'USD',
         areaServed: [
           {
             '@type': 'City',
             name: 'North Las Vegas',
+            '@id': 'https://en.wikipedia.org/wiki/North_Las_Vegas,_Nevada',
           },
           {
             '@type': 'Place',
             name: 'Aliante',
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: '36.1699',
+              longitude: '-115.1398',
+            },
+          },
+          {
+            '@type': 'PostalCode',
+            name: '89084',
           },
         ],
         aggregateRating: {
@@ -283,6 +400,78 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           reviewCount: '127',
           bestRating: '5',
           worstRating: '1',
+        },
+        hasMap: 'https://maps.google.com/?q=36.1699,-115.1398',
+        isAccessibleForFree: true,
+        publicAccess: true,
+      };
+    }
+
+    if (type === 'Person') {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        '@id': 'https://www.aliantehomesforsale.com/#person',
+        name: 'Dr. Jan Duffy',
+        givenName: 'Jan',
+        familyName: 'Duffy',
+        honorificPrefix: 'Dr.',
+        jobTitle: 'Real Estate Agent & Aliante Specialist',
+        description: 'Award-winning real estate agent specializing in Aliante, North Las Vegas with 500+ successful transactions since 2018. D.R. Horton #1 Premiere Agent.',
+        url: 'https://www.aliantehomesforsale.com/about',
+        email: 'DrDuffy@AlianteHomesForSale.com',
+        telephone: '+17027077273',
+        image: {
+          '@type': 'ImageObject',
+          url: 'https://www.aliantehomesforsale.com/dr-jan-duffy.jpg',
+          width: '400',
+          height: '400',
+        },
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
+          '@id': 'https://www.aliantehomesforsale.com/#organization',
+        },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '2590 Nature Park Drive, Suite 275',
+          addressLocality: 'North Las Vegas',
+          addressRegion: 'NV',
+          postalCode: '89084',
+          addressCountry: 'US',
+        },
+        knowsAbout: [
+          'Real Estate Sales',
+          'New Construction',
+          'Builder Negotiations',
+          'Aliante North Las Vegas',
+          'Gated Communities',
+          '55+ Active Adult Communities',
+          'First-Time Home Buyers',
+          'Luxury Real Estate',
+          'Investment Properties',
+          'MLS Systems',
+        ],
+        hasOccupation: {
+          '@type': 'Occupation',
+          name: 'Real Estate Agent',
+          occupationalCategory: '41-9022.00',
+          educationRequirements: 'Nevada Real Estate License',
+          experienceRequirements: '6+ years in Aliante real estate',
+        },
+        award: [
+          'D.R. Horton #1 Premiere Agent',
+          '4.9/5 Client Satisfaction Rating',
+          '500+ Successful Transactions',
+        ],
+        sameAs: [
+          'https://www.facebook.com/AlianteHomesForSale',
+          'https://www.linkedin.com/in/drjanduffy',
+          'https://www.instagram.com/aliantehomesforsale',
+        ],
+        alumniOf: {
+          '@type': 'EducationalOrganization',
+          name: 'Nevada Real Estate Division',
         },
       };
     }
@@ -296,18 +485,38 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
         url: 'https://www.aliantehomesforsale.com',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://aliantehomesforsale.com/logo.png',
-          width: 250,
-          height: 60,
+          url: 'https://www.aliantehomesforsale.com/logo.png',
+          width: '250',
+          height: '60',
         },
         description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
+        foundingDate: '2018',
+        founder: {
+          '@type': 'Person',
+          name: 'Dr. Jan Duffy',
+          '@id': 'https://www.aliantehomesforsale.com/#person',
+        },
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+1-702-707-7273',
           contactType: 'Customer Service',
           areaServed: 'US-NV',
           availableLanguage: ['English', 'Spanish'],
+          email: 'DrDuffy@AlianteHomesForSale.com',
         },
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '2590 Nature Park Drive, Suite 275',
+          addressLocality: 'North Las Vegas',
+          addressRegion: 'NV',
+          postalCode: '89084',
+          addressCountry: 'US',
+        },
+        sameAs: [
+          'https://www.facebook.com/AlianteHomesForSale',
+          'https://www.linkedin.com/in/drjanduffy',
+          'https://www.instagram.com/aliantehomesforsale',
+        ],
       };
     }
 

@@ -16,7 +16,8 @@ export default function Home() {
 
   return (
     <>
-      {/* Structured Data for SEO */}
+      {/* Structured Data for SEO - 2026 Best Practices */}
+      <StructuredData type="Person" />
       <StructuredData type="RealEstateAgent" />
       <StructuredData type="WebSite" />
 
