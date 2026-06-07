@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   description:
     'Browse 286+ Aliante homes for sale in North Las Vegas, NV. Updated every 15 minutes from MLS. Gated communities, Sun City Aliante 55+, new construction. Call (702) 707-7273 for expert local guidance.',
   keywords:
-    'Aliante North Las Vegas homes for sale, Aliante real estate, North Las Vegas homes, 89084 homes for sale, Aliante gated community, Sun City Aliante, Club Aliante, new construction Aliante, Aliante MLS listings, houses for rent Aliante',
-  authors: [{ name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy' }],
+    'Aliante North Las Vegas homes for sale, Aliante real estate near me, North Las Vegas homes, 89084 homes for sale, Aliante gated community, Sun City Aliante, Club Aliante, The Prominence Aliante, Desert Willows Aliante, new construction Aliante, Aliante MLS listings, houses near Nature Park Drive, homes near Aliante Parkway, luxury homes Aliante, golf course homes Aliante, 55+ active adult community North Las Vegas',
+  authors: [{ name: 'Dr. Jan Duffy', url: 'https://www.aliantehomesforsale.com/about' }],
   creator: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
   publisher: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
   formatDetection: {
@@ -82,6 +82,12 @@ export const metadata: Metadata = {
     'geo.placename': 'Aliante, North Las Vegas',
     'geo.position': '36.1699;-115.1398',
     'ICBM': '36.1699, -115.1398',
+    'distribution': 'global',
+    'rating': 'general',
+    'revisit-after': '1 days',
+    'article:published_time': '2018-01-01T00:00:00Z',
+    'article:modified_time': new Date().toISOString(),
+    'article:author': 'Dr. Jan Duffy',
   },
 };
 
