@@ -235,6 +235,7 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
         '@type': 'RealEstateAgent',
         '@id': 'https://www.aliantehomesforsale.com/#organization',
         name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
+        alternateName: 'Dr. Jan Duffy Real Estate',
         image: 'https://www.aliantehomesforsale.com/logo.png',
         url: 'https://www.aliantehomesforsale.com',
         telephone: '+17027077273',
@@ -271,10 +272,21 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           {
             '@type': 'City',
             name: 'North Las Vegas',
+            '@id': 'https://www.wikidata.org/wiki/Q79373',
           },
           {
             '@type': 'Place',
             name: 'Aliante',
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 36.1699,
+              longitude: -115.1398,
+            },
+          },
+          {
+            '@type': 'State',
+            name: 'Nevada',
+            '@id': 'https://www.wikidata.org/wiki/Q1227',
           },
         ],
         aggregateRating: {
@@ -283,6 +295,24 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           reviewCount: '127',
           bestRating: '5',
           worstRating: '1',
+        },
+        knowsAbout: [
+          'Real Estate',
+          'Aliante North Las Vegas',
+          'New Construction Homes',
+          'Gated Communities',
+          'Sun City Aliante 55+ Community',
+          'Golf Course Homes',
+          'Luxury Real Estate',
+          'First Time Home Buyers',
+        ],
+        slogan: 'Expert Aliante Real Estate Guidance Since 2018 - 500+ Successful Transactions',
+        foundingDate: '2018',
+        founder: {
+          '@type': 'Person',
+          name: 'Dr. Jan Duffy',
+          jobTitle: 'Real Estate Agent',
+          alumniOf: 'University of Nevada, Las Vegas',
         },
       };
     }
@@ -300,14 +330,52 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, cust
           width: 250,
           height: 60,
         },
-        description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
+        description: 'Expert real estate services in Aliante, North Las Vegas since 2018. Specializing in new construction, gated communities, and Sun City Aliante 55+ active adult homes with over 500 successful transactions and a 4.9/5 client satisfaction rating.',
+        foundingDate: '2018-01-01',
+        foundingLocation: {
+          '@type': 'Place',
+          name: 'North Las Vegas, Nevada',
+        },
+        slogan: 'Your Trusted Aliante Real Estate Expert - 286+ Active MLS Listings Updated Every 15 Minutes',
+        knowsAbout: [
+          'Real Estate Sales',
+          'New Construction Consulting',
+          'Gated Community Expertise',
+          'Active Adult 55+ Communities',
+          'Luxury Home Sales',
+          'First-Time Homebuyer Programs',
+          'Investment Property Analysis',
+          'Builder Incentive Negotiation',
+        ],
+        areaServed: {
+          '@type': 'GeoCircle',
+          geoMidpoint: {
+            '@type': 'GeoCoordinates',
+            latitude: 36.1699,
+            longitude: -115.1398,
+          },
+          geoRadius: '10 mi',
+        },
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+1-702-707-7273',
           contactType: 'Customer Service',
+          email: 'DrDuffy@AlianteHomesForSale.com',
           areaServed: 'US-NV',
           availableLanguage: ['English', 'Spanish'],
+          contactOption: 'TollFree',
+          hoursAvailable: {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+            opens: '08:00',
+            closes: '19:00',
+          },
         },
+        sameAs: [
+          'https://www.facebook.com/AlianteHomesForSale',
+          'https://www.linkedin.com/in/drjanduffy',
+          'https://www.instagram.com/aliantehomes',
+        ],
       };
     }
 

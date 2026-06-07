@@ -89,6 +89,11 @@ export const metadata: Metadata = {
     'geo.placename': 'Aliante, North Las Vegas',
     'geo.position': '36.1699;-115.1398',
     'ICBM': '36.1699, -115.1398',
+    'geo.place': 'Aliante, North Las Vegas, Nevada, 89084',
+    'rating': '4.9',
+    'reviews': '127',
+    'transactions': '500+',
+    'established': '2018',
   },
 };
 
