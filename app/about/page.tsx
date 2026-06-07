@@ -5,36 +5,64 @@ import AboutExpertise from '../components/AboutExpertise';
 import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 import AboutCommitment from '../components/AboutCommitment';
 import AboutCTA from '../components/AboutCTA';
+import StructuredData from '../components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'About Aliante Real Estate - Local Experts Since 2018',
-  description: 'Meet the local real estate experts serving Aliante and North Las Vegas since 2018. 500+ successful transactions, deep builder relationships, and unmatched market knowledge.',
+  title: 'About Dr. Jan Duffy - Aliante Real Estate Expert Since 2018',
+  description: 'Meet Dr. Jan Duffy, licensed Nevada real estate agent specializing in Aliante, North Las Vegas since 2018. 500+ successful transactions, deep builder relationships, and unmatched local market knowledge. Expert in luxury gated communities, 55+ active adult, and new construction homes.',
+  keywords: 'Dr. Jan Duffy, Aliante real estate agent, North Las Vegas realtor, local expert, luxury homes specialist, new construction expert, 55+ communities',
+  authors: [{ name: 'Dr. Jan Duffy', url: 'https://www.aliantehomesforsale.com/about' }],
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/about',
+  },
+  openGraph: {
+    title: 'About Dr. Jan Duffy - Aliante Real Estate Expert Since 2018',
+    description: '500+ successful transactions, deep builder relationships, and unmatched local market knowledge in Aliante, North Las Vegas.',
+    url: 'https://www.aliantehomesforsale.com/about',
+    type: 'profile',
+  },
+  other: {
+    'article:published_time': '2024-01-15T08:00:00Z',
+    'article:modified_time': new Date().toISOString(),
   },
 };
 
 export default function About() {
   return (
-    <main className="about-page">
-      {/* Hero Section */}
-      <AboutHero />
+    <>
+      {/* Enhanced Schema for E-E-A-T Signals */}
+      <StructuredData type="Person" />
+      <StructuredData
+        type="Article"
+        article={{
+          title: 'About Dr. Jan Duffy - Aliante Real Estate Expert',
+          description: 'Licensed Nevada real estate professional specializing in Aliante neighborhoods since 2018',
+          datePublished: '2024-01-15T08:00:00Z',
+          dateModified: new Date().toISOString(),
+          url: 'https://www.aliantehomesforsale.com/about'
+        }}
+      />
 
-      {/* Stats Section */}
-      <AboutStats />
+      <main className="about-page">
+        {/* Hero Section */}
+        <AboutHero />
 
-      {/* Expertise Section */}
-      <AboutExpertise />
+        {/* Stats Section */}
+        <AboutStats />
 
-      {/* Why Choose Us Section */}
-      <AboutWhyChooseUs />
+        {/* Expertise Section */}
+        <AboutExpertise />
 
-      {/* Commitment Section */}
-      <AboutCommitment />
+        {/* Why Choose Us Section */}
+        <AboutWhyChooseUs />
 
-      {/* CTA Section */}
-      <AboutCTA />
-    </main>
+        {/* Commitment Section */}
+        <AboutCommitment />
+
+        {/* CTA Section */}
+        <AboutCTA />
+      </main>
+    </>
   );
 }
 

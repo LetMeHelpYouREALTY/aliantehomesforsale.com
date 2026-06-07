@@ -26,11 +26,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Aliante North Las Vegas Real Estate & Homes For Sale | 286+ MLS Listings',
   description:
-    'Browse 286+ Aliante homes for sale in North Las Vegas, NV. Updated every 15 minutes from MLS. Gated communities, Sun City Aliante 55+, new construction. Call (702) 707-7273 for expert local guidance.',
+    'Browse 286+ Aliante homes for sale in North Las Vegas, NV. Updated every 15 minutes from MLS. Gated communities, Sun City Aliante 55+, new construction. Call (702) 707-7273 for expert local guidance since 2018.',
   keywords:
-    'Aliante North Las Vegas homes for sale, Aliante real estate, North Las Vegas homes, 89084 homes for sale, Aliante gated community, Sun City Aliante, Club Aliante, new construction Aliante, Aliante MLS listings, houses for rent Aliante',
-  authors: [{ name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy' }],
-  creator: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
+    'Aliante North Las Vegas homes for sale, Aliante real estate, North Las Vegas homes, 89084 homes for sale, Aliante gated community, Sun City Aliante, Club Aliante, new construction Aliante, Aliante MLS listings, luxury homes Aliante, 55+ active adult communities',
+  authors: [{ name: 'Dr. Jan Duffy', url: 'https://www.aliantehomesforsale.com/about' }],
+  creator: 'Dr. Jan Duffy - Aliante Real Estate Specialist',
   publisher: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
   formatDetection: {
     email: false,
@@ -97,9 +97,10 @@ export default function RootLayout({
         <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* Core Structured Data - Organization & LocalBusiness & Location */}
+        {/* Core Structured Data - Organization & LocalBusiness & Person & Location - 2026 Enhanced */}
         <StructuredData type="Organization" />
         <StructuredData type="LocalBusiness" />
+        <StructuredData type="Person" />
         <LocationSchema />
         
         <EnhancedNavigation />
