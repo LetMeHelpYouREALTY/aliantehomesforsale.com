@@ -8,6 +8,7 @@ import PerformanceMonitor from './components/PerformanceMonitor';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import StructuredData from './components/StructuredData';
 import LocationSchema from './components/LocationSchema';
+import RealScoutWidget from './components/RealScoutWidget';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -117,15 +118,16 @@ export default function RootLayout({
         {children}
         <PerformanceMonitor />
 
-        {/* RealScout Office Listings - Below the fold */}
-        <div className="realscout-widget-container">
-          <realscout-office-listings
-            agent-encoded-id="QWdlbnQtMjI1MDUw"
-            sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
-            listing-status="For Sale,Rented"
-            property-types="SFR,MF,LAL,MOBILE,OTHER"
-            price-min="500000">
-          </realscout-office-listings>
+        {/* RealScout Office Listings - Below the fold, above footer */}
+        <div className="container mx-auto px-4 py-12">
+          <h2 className="text-3xl font-bold text-center mb-8" style={{ color: '#1a365d' }}>
+            Featured Aliante Properties
+          </h2>
+          <RealScoutWidget
+            priceMin={500000}
+            sortOrder="STATUS_AND_SIGNIFICANT_CHANGE"
+            className="mb-8"
+          />
         </div>
 
         {/* Enhanced Footer with SEO-optimized structure */}
