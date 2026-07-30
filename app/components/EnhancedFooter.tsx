@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
 
 export default function EnhancedFooter() {
   return (
@@ -119,7 +120,8 @@ export default function EnhancedFooter() {
             </Link>
 
             <div className="mt-6 pt-6 border-t border-gray-700 text-xs text-gray-400 space-y-1">
-              <p>Nevada Real Estate License #B.0123456.LLC</p>
+              <p>{siteConfig.brokerage}</p>
+              <p>Nevada Real Estate License #{siteConfig.agentLicense}</p>
               <p className="font-semibold">Equal Housing Opportunity</p>
             </div>
           </div>
@@ -375,8 +377,8 @@ export default function EnhancedFooter() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="text-center md:text-left">
               <p className="mb-1">
-                © 2025 Aliante Las Vegas | Homes by Dr. Jan Duffy. Licensed Real Estate Brokerage in
-                Nevada.
+                © {siteConfig.foundedYear}–{new Date().getFullYear()} {siteConfig.siteName}.
+                Licensed with {siteConfig.brokerage}.
               </p>
               <p className="text-xs">
                 All information deemed reliable but not guaranteed. All properties subject to prior

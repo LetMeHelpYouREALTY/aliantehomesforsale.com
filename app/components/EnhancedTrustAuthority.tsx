@@ -37,9 +37,9 @@ export default function EnhancedTrustAuthority() {
   const credentials: CredentialCardProps[] = [
     {
       icon: '🏆',
-      title: '20+ Years Experience',
+      title: 'Aliante Specialist Since 2018',
       description:
-        'Dr. Janet Duffy has been serving North Las Vegas families since 2003, with specialized expertise in the Aliante area since its development. Her deep market knowledge and local connections ensure you get the best possible outcomes.',
+        'Dr. Jan Duffy has specialized exclusively in Aliante and North Las Vegas real estate since 2018. Her hyper-local market knowledge, builder relationships, and neighborhood-by-neighborhood expertise ensure you get the best possible outcome.',
     },
     {
       icon: '👨‍👩‍👧‍👦',

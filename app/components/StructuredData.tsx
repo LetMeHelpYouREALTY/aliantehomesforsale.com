@@ -44,8 +44,13 @@ export default function StructuredData({
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
         name: siteConfig.siteName,
-        description: `Expert real estate services in ${siteConfig.areaName}, ${siteConfig.region}`,
+        description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} — buyer representation, listing services, new construction, and 55+ community specialist.`,
         url: siteConfig.siteUrl,
+        founder: {
+          '@type': 'Person',
+          name: siteConfig.agentName,
+        },
+        foundingDate: String(siteConfig.foundedYear),
         address: {
           '@type': 'PostalAddress',
           streetAddress: siteConfig.address.streetAddress,
@@ -56,9 +61,34 @@ export default function StructuredData({
         },
         telephone: siteConfig.phone,
         email: siteConfig.email,
-        areaServed: {
-          '@type': 'Place',
-          name: siteConfig.areaServed,
+        areaServed: [
+          { '@type': 'Place', name: siteConfig.areaServed },
+          ...siteConfig.neighborhoods.map((n) => ({ '@type': 'Place', name: n.name })),
+        ],
+        knowsAbout: [
+          'Aliante real estate',
+          'North Las Vegas 89084 homes for sale',
+          'New construction homes',
+          'Gated community real estate',
+          '55+ active adult communities',
+          'Sun City Aliante',
+          'Buyer representation',
+          'Home valuation and CMA',
+          'Investment property analysis',
+        ],
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: `${siteConfig.areaName} Real Estate Services`,
+          itemListElement: siteConfig.services.map((service, index) => ({
+            '@type': 'Offer',
+            position: index + 1,
+            itemOffered: {
+              '@type': 'Service',
+              name: service.name,
+              description: service.description,
+              areaServed: { '@type': 'Place', name: siteConfig.areaServed },
+            },
+          })),
         },
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -67,22 +97,6 @@ export default function StructuredData({
           bestRating: '5',
           worstRating: '1',
         },
-        review: [
-          {
-            '@type': 'Review',
-            author: {
-              '@type': 'Person',
-              name: 'John Smith',
-            },
-            reviewRating: {
-              '@type': 'Rating',
-              ratingValue: '5',
-              bestRating: '5',
-            },
-            reviewBody:
-              'Dr. Duffy helped us find our dream home in The Prominence. Her knowledge of Aliante neighborhoods and builder negotiations saved us over $20,000 on our new construction home. Highly recommended!',
-          },
-        ],
       };
     }
 
@@ -180,7 +194,12 @@ export default function StructuredData({
         '@type': 'WebSite',
         name: siteConfig.siteName,
         url: siteConfig.siteUrl,
-        description: `Find your dream home in ${siteConfig.areaName}, ${siteConfig.region} with expert real estate guidance since 2018`,
+        description: `Find your dream home in ${siteConfig.areaName}, ${siteConfig.region} with hyperlocal real estate guidance since ${siteConfig.foundedYear}`,
+        inLanguage: 'en-US',
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', 'h2', '.speakable'],
+        },
         potentialAction: {
           '@type': 'SearchAction',
           target: siteConfig.searchUrlTemplate,
@@ -295,6 +314,7 @@ export default function StructuredData({
             '@type': 'Place',
             name: 'Aliante',
           },
+          ...siteConfig.neighborhoods.map((n) => ({ '@type': 'Place', name: n.name })),
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -319,7 +339,8 @@ export default function StructuredData({
           width: 250,
           height: 60,
         },
-        description: `Expert real estate services in ${siteConfig.areaName}, ${siteConfig.region} since 2018`,
+        description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} since ${siteConfig.foundedYear}`,
+        foundingDate: String(siteConfig.foundedYear),
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: siteConfig.phone,
