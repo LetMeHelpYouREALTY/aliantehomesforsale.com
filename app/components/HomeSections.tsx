@@ -4,6 +4,7 @@ import EnhancedHero from './EnhancedHero';
 import RealScoutSearchSection from './RealScoutSearchSection';
 import EnhancedFeaturedProperties from './EnhancedFeaturedProperties';
 import AgentWelcomeSection from './AgentWelcomeSection';
+import HyperlocalRealtorServices from './HyperlocalRealtorServices';
 import EnhancedPropertyTypes from './EnhancedPropertyTypes';
 import EnhancedMarketInsights from './EnhancedMarketInsights';
 import EnhancedTrustAuthority from './EnhancedTrustAuthority';
@@ -18,6 +19,7 @@ export function HomeSectionsTop() {
       <RealScoutSearchSection />
       <EnhancedFeaturedProperties />
       <AgentWelcomeSection />
+      <HyperlocalRealtorServices />
       <EnhancedPropertyTypes />
       <EnhancedMarketInsights />
       <EnhancedTrustAuthority />
