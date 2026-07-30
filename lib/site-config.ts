@@ -49,8 +49,7 @@ export const siteConfig = {
     },
     {
       name: 'Home Valuation & Comparative Market Analysis',
-      description:
-        'Free, data-backed CMA reports for Aliante homeowners considering a sale.',
+      description: 'Free, data-backed CMA reports for Aliante homeowners considering a sale.',
     },
     {
       name: 'Investment Property Analysis',

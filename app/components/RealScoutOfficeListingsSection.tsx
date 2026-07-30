@@ -20,10 +20,7 @@ export default function RealScoutOfficeListingsSection() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="sr-only">Homes for sale</h2>
-        <div
-          className="min-h-[200px] w-full"
-          dangerouslySetInnerHTML={{ __html: widgetMarkup }}
-        />
+        <div className="min-h-[200px] w-full" dangerouslySetInnerHTML={{ __html: widgetMarkup }} />
       </div>
     </section>
   );

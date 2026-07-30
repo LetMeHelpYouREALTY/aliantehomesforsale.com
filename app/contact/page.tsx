@@ -18,27 +18,27 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <main className="contact-page">
-        {/* Hero Section */}
-        <ContactHero />
+      {/* Hero Section */}
+      <ContactHero />
 
-        {/* Contact Methods Grid */}
-        <ContactMethods />
+      {/* Contact Methods Grid */}
+      <ContactMethods />
 
-        {/* Contact Form Section */}
-        <section className="py-16 px-4 bg-white">
-          <div className="container">
-            <EnhancedContactForm />
-          </div>
-        </section>
+      {/* Contact Form Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container">
+          <EnhancedContactForm />
+        </div>
+      </section>
 
-        {/* Why Choose Us */}
-        <ContactWhyChoose />
+      {/* Why Choose Us */}
+      <ContactWhyChoose />
 
-        {/* FAQ with schema (AEO) */}
-        <ContactFAQ />
+      {/* FAQ with schema (AEO) */}
+      <ContactFAQ />
 
-        {/* Office Location & Map */}
-        <OfficeLocation />
-      </main>
+      {/* Office Location & Map */}
+      <OfficeLocation />
+    </main>
   );
 }

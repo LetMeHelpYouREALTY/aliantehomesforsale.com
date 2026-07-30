@@ -52,8 +52,7 @@ export async function getKcmFeedItems(limit = 3): Promise<KcmFeedItem[]> {
     );
     const rawDesc = descMatch?.[1] ?? '';
     const rawContent = contentMatch?.[1] ?? '';
-    const image =
-      extractFirstImageUrl(rawDesc) || extractFirstImageUrl(rawContent);
+    const image = extractFirstImageUrl(rawDesc) || extractFirstImageUrl(rawContent);
     const textForExcerpt = rawDesc || rawContent;
     const item: KcmFeedItem = {
       title: titleMatch?.[1]?.replace(/<[^>]+>/g, '').trim() ?? 'Untitled',

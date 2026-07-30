@@ -11,7 +11,7 @@ const contactFaqs = [
   {
     question: 'Is there a cost for buyer representation?',
     answer:
-      'No. Buyer representation is free to you. Sellers and builders pay the buyer\'s agent commission. You get full advocacy, negotiation, and local expertise at no cost.',
+      "No. Buyer representation is free to you. Sellers and builders pay the buyer's agent commission. You get full advocacy, negotiation, and local expertise at no cost.",
   },
   {
     question: 'How quickly can I get a response?',
@@ -21,10 +21,5 @@ const contactFaqs = [
 ];
 
 export default function ContactFAQ() {
-  return (
-    <FAQSection
-      title="Frequently Asked Questions About Contacting Us"
-      faqs={contactFaqs}
-    />
-  );
+  return <FAQSection title="Frequently Asked Questions About Contacting Us" faqs={contactFaqs} />;
 }
