@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import NewConstructionHero from '../components/NewConstructionHero';
-import BuildersIntro from '../components/BuildersIntro';
-import TopBuilders from '../components/TopBuilders';
 import BuilderAdvantages from '../components/BuilderAdvantages';
-import ContextualLinks from '../components/ContextualLinks';
 import BuilderComparison from '../components/BuilderComparison';
 import BuilderIncentivesInfo from '../components/BuilderIncentivesInfo';
+import BuildersIntro from '../components/BuildersIntro';
+import ContextualLinks from '../components/ContextualLinks';
 import NewConstructionCTA from '../components/NewConstructionCTA';
+import NewConstructionHero from '../components/NewConstructionHero';
+import TopBuilders from '../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'New Construction Builders in Aliante - Compare All Builders',

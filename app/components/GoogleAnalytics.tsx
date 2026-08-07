@@ -1,9 +1,8 @@
 'use client';
 
-import Script from 'next/script';
-import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
+import Script from 'next/script';
+import { Suspense, useEffect } from 'react';
 
 interface GoogleAnalyticsProps {
   measurementId?: string;

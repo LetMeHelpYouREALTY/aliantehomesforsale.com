@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import HomesForSaleHero from '../components/HomesForSaleHero';
 import AdvancedSearchForm from '../components/AdvancedSearchForm';
-import SearchPageContent from '../components/SearchPageContent';
-import PropertyCategories from '../components/PropertyCategories';
-import HomesSearchTips from '../components/HomesSearchTips';
 import HomesCTA from '../components/HomesCTA';
+import HomesForSaleHero from '../components/HomesForSaleHero';
+import HomesSearchTips from '../components/HomesSearchTips';
+import PropertyCategories from '../components/PropertyCategories';
+import SearchPageContent from '../components/SearchPageContent';
 
 export const metadata: Metadata = {
   title: 'Search Aliante Homes - Advanced MLS Search',

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
-import ConstructionProcess from '../../components/ConstructionProcess';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
-import QuickMoveInHomes from '../../components/QuickMoveInHomes';
+import ConstructionProcess from '../../components/ConstructionProcess';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
+import NewConstructionHero from '../../components/NewConstructionHero';
+import QuickMoveInHomes from '../../components/QuickMoveInHomes';
+import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'D.R. Horton Homes Tule Springs - Dr. Duffy #1 Premiere Agent',

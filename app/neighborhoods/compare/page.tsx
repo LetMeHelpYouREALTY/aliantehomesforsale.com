@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodComparison from '../../components/NeighborhoodComparison';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
+import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
   title: 'Compare Aliante Neighborhoods - Side by Side Analysis',

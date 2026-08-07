@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import ContactHero from '../components/ContactHero';
-import MortgageCalculatorContent from '../components/MortgageCalculatorContent';
 import EnhancedContactForm from '../components/EnhancedContactForm';
-import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import HomesCTA from '../components/HomesCTA';
+import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
+import MortgageCalculatorContent from '../components/MortgageCalculatorContent';
 
 export const metadata: Metadata = {
   title: 'Mortgage Calculator Aliante - Estimate Your Payment',

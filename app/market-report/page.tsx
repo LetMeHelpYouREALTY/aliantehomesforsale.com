@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import ContextualLinks from '../components/ContextualLinks';
+import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import MarketReportContent from '../components/MarketReportContent';
-import ContextualLinks from '../components/ContextualLinks';
 import PropertyCategories from '../components/PropertyCategories';
-import HomesCTA from '../components/HomesCTA';
 
 export const metadata: Metadata = {
   title: 'Aliante Market Report - Real-Time MLS Data & Trends',

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
+import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedHero from '../components/EnhancedHero';
 import GolfHomesContent from '../components/GolfHomesContent';
-import NeighborhoodCards from '../components/NeighborhoodCards';
-import CommunityAmenities from '../components/CommunityAmenities';
 import HomesCTA from '../components/HomesCTA';
+import NeighborhoodCards from '../components/NeighborhoodCards';
 
 export const metadata: Metadata = {
   title: 'Golf Course Homes Aliante - Club Aliante Properties',

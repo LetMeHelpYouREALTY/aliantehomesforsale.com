@@ -5,22 +5,15 @@ import Link from 'next/link';
  */
 export default function AgentWelcomeSection() {
   return (
-    <section
-      className="py-16 px-4 bg-white"
-      aria-labelledby="agent-welcome-heading"
-    >
+    <section className="py-16 px-4 bg-white" aria-labelledby="agent-welcome-heading">
       <div className="max-w-4xl mx-auto text-center">
-        <h2
-          id="agent-welcome-heading"
-          className="text-3xl font-bold mb-6 text-[#0a2540]"
-        >
+        <h2 id="agent-welcome-heading" className="text-3xl font-bold mb-6 text-[#0a2540]">
           Dr. Jan Duffy Real Estate
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Your trusted Aliante and North Las Vegas expert since 2018. I help
-          buyers and sellers with MLS listings updated every 15 minutes, new
-          construction, gated communities, and Sun City Aliante 55+. From
-          first-time buyers to luxury homes, I’m here to guide you with local
+          Your trusted Aliante and North Las Vegas expert since 2018. I help buyers and sellers with
+          MLS listings updated every 15 minutes, new construction, gated communities, and Sun City
+          Aliante 55+. From first-time buyers to luxury homes, I’m here to guide you with local
           knowledge and a proven track record.
         </p>
         <Link

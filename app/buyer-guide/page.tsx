@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
-import ContextualLinks from '../components/ContextualLinks';
 import ConstructionProcess from '../components/ConstructionProcess';
-import HomesSearchTips from '../components/HomesSearchTips';
 import ContactWhyChoose from '../components/ContactWhyChoose';
+import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
+import HomesSearchTips from '../components/HomesSearchTips';
 
 export const metadata: Metadata = {
   title: 'First-Time Home Buyer Guide Aliante - Expert Tips',

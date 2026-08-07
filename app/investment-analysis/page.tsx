@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import HomesForSaleHero from '../components/HomesForSaleHero';
-import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
-import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
 import AboutExpertise from '../components/AboutExpertise';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
+import HomesForSaleHero from '../components/HomesForSaleHero';
+import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
+import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
 
 export const metadata: Metadata = {
   title: 'Investment Property Analysis Aliante - ROI Calculator',

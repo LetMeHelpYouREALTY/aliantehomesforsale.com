@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import AboutHero from '../components/AboutHero';
-import SellerChecklistContent from '../components/SellerChecklistContent';
-import ContextualLinks from '../components/ContextualLinks';
-import ConstructionProcess from '../components/ConstructionProcess';
-import AboutExpertise from '../components/AboutExpertise';
 import AboutCTA from '../components/AboutCTA';
+import AboutExpertise from '../components/AboutExpertise';
+import AboutHero from '../components/AboutHero';
+import ConstructionProcess from '../components/ConstructionProcess';
+import ContextualLinks from '../components/ContextualLinks';
+import SellerChecklistContent from '../components/SellerChecklistContent';
 
 export const metadata: Metadata = {
   title: 'Home Selling Checklist Aliante - Maximize Your Sale Price',

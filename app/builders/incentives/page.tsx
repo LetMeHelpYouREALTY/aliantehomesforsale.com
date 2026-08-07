@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 import BuilderComparison from '../../components/BuilderComparison';
 import BuilderIncentivesInfo from '../../components/BuilderIncentivesInfo';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
+import NewConstructionHero from '../../components/NewConstructionHero';
+import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Builder Incentives Tracker - Up to $25K Savings',

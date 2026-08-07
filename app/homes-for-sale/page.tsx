@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import HomesForSaleHero from '../components/HomesForSaleHero';
-import RealScoutSearchSection from '../components/RealScoutSearchSection';
-import PropertyCategories from '../components/PropertyCategories';
-import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
-import HomesSearchTips from '../components/HomesSearchTips';
 import AlianteFAQ from '../components/AlianteFAQ';
 import HomesCTA from '../components/HomesCTA';
+import HomesForSaleHero from '../components/HomesForSaleHero';
+import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
+import HomesSearchTips from '../components/HomesSearchTips';
+import PropertyCategories from '../components/PropertyCategories';
+import RealScoutSearchSection from '../components/RealScoutSearchSection';
 
 export const metadata: Metadata = {
   title: 'Aliante Homes For Sale | North Las Vegas NV 89084 MLS Listings',

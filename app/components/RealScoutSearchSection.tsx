@@ -14,7 +14,10 @@ export default function RealScoutSearchSection() {
       aria-label="Search homes for sale"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center" style={{ color: '#1a365d' }}>
+        <h2
+          className="text-2xl sm:text-3xl font-bold mb-6 text-center"
+          style={{ color: '#1a365d' }}
+        >
           Find Your Dream Home
         </h2>
         <div className="realscout-search-section">

@@ -53,7 +53,13 @@ export const appConfig = {
     // Content Security Policy
     csp: {
       'default-src': ["'self'"],
-      'script-src': ["'self'", "'unsafe-eval'", "'unsafe-inline'", 'https://em.realscout.com', 'https://www.realscout.com'],
+      'script-src': [
+        "'self'",
+        "'unsafe-eval'",
+        "'unsafe-inline'",
+        'https://em.realscout.com',
+        'https://www.realscout.com',
+      ],
       'style-src': ["'self'", "'unsafe-inline'"],
       'img-src': ["'self'", 'data:', 'https:'],
       'font-src': ["'self'", 'data:'],

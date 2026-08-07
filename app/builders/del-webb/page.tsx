@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 import CommunityAmenities from '../../components/CommunityAmenities';
-import SunCityContent from '../../components/SunCityContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
+import NewConstructionHero from '../../components/NewConstructionHero';
+import SunCityContent from '../../components/SunCityContent';
+import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Del Webb Sun City Aliante - Active Adult 55+ Homes',

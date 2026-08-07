@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
+import BuilderComparison from '../components/BuilderComparison';
+import ConstructionProcess from '../components/ConstructionProcess';
+import NewConstructionCTA from '../components/NewConstructionCTA';
+import NewConstructionFAQ from '../components/NewConstructionFAQ';
 import NewConstructionHero from '../components/NewConstructionHero';
+import QuickMoveInHomes from '../components/QuickMoveInHomes';
 import TopBuilders from '../components/TopBuilders';
 import WhyNewConstruction from '../components/WhyNewConstruction';
-import ConstructionProcess from '../components/ConstructionProcess';
-import QuickMoveInHomes from '../components/QuickMoveInHomes';
-import BuilderComparison from '../components/BuilderComparison';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
-import NewConstructionFAQ from '../components/NewConstructionFAQ';
-import NewConstructionCTA from '../components/NewConstructionCTA';
 
 export const metadata: Metadata = {
   title: 'New Construction Homes Aliante North Las Vegas | Top Builders + Incentives',

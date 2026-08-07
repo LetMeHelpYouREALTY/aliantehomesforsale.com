@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import AboutHero from '../components/AboutHero';
-import AboutStats from '../components/AboutStats';
-import AboutExpertise from '../components/AboutExpertise';
-import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 import AboutCommitment from '../components/AboutCommitment';
 import AboutCTA from '../components/AboutCTA';
+import AboutExpertise from '../components/AboutExpertise';
 import AboutFAQ from '../components/AboutFAQ';
+import AboutHero from '../components/AboutHero';
+import AboutStats from '../components/AboutStats';
+import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 
 export const metadata: Metadata = {
   title: 'About Aliante Real Estate - Local Experts Since 2018',

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import NeighborhoodsHero from '../../components/NeighborhoodsHero';
-import NeighborhoodCards from '../../components/NeighborhoodCards';
 import CommunityAmenities from '../../components/CommunityAmenities';
-import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
+import NeighborhoodCards from '../../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
+import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
   title: 'Desert Willows Aliante - Family Community',

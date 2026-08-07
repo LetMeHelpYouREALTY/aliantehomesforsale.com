@@ -1,6 +1,6 @@
+import crypto from 'node:crypto';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import crypto from 'node:crypto';
 
 // Simple webhook signature verification
 function verifySignature(body: string, signature: string, secret: string): boolean {

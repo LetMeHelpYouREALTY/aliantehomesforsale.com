@@ -1,4 +1,4 @@
-import { HomeSectionsTop, HomeSectionsBottom } from './components/HomeSections';
+import { HomeSectionsBottom, HomeSectionsTop } from './components/HomeSections';
 import LatestNewsSection from './components/LatestNewsSection';
 
 export default function Home() {

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import BuilderDetailContent from '../../components/BuilderDetailContent';
+import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
+import QuickMoveInHomes from '../../components/QuickMoveInHomes';
 import TopBuilders from '../../components/TopBuilders';
 import WhyNewConstruction from '../../components/WhyNewConstruction';
-import BuilderDetailContent from '../../components/BuilderDetailContent';
-import QuickMoveInHomes from '../../components/QuickMoveInHomes';
-import NewConstructionCTA from '../../components/NewConstructionCTA';
 
 export const metadata: Metadata = {
   title: 'Lennar Homes Aliante - #1 Volume Builder | Everything Included',

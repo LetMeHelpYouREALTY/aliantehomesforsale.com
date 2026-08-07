@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
+import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
-import NeighborhoodCards from '../components/NeighborhoodCards';
-import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import HomesCTA from '../components/HomesCTA';
+import NeighborhoodCards from '../components/NeighborhoodCards';
 
 export const metadata: Metadata = {
   title: 'Gated Communities in Aliante - 24/7 Security & Luxury',

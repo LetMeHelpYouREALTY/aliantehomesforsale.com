@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import ContactHero from '../components/ContactHero';
-import HomeValuationContent from '../components/HomeValuationContent';
-import EnhancedContactForm from '../components/EnhancedContactForm';
-import AboutExpertise from '../components/AboutExpertise';
 import AboutCTA from '../components/AboutCTA';
+import AboutExpertise from '../components/AboutExpertise';
+import ContactHero from '../components/ContactHero';
+import EnhancedContactForm from '../components/EnhancedContactForm';
+import HomeValuationContent from '../components/HomeValuationContent';
 
 export const metadata: Metadata = {
   title: "Free Home Valuation Aliante - What's Your Home Worth?",

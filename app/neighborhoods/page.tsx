@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import StructuredData from '../components/StructuredData';
-import NeighborhoodsHero from '../components/NeighborhoodsHero';
-import NeighborhoodCards from '../components/NeighborhoodCards';
 import CommunityAmenities from '../components/CommunityAmenities';
 import ContextualLinks from '../components/ContextualLinks';
+import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodComparison from '../components/NeighborhoodComparison';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
+import NeighborhoodsHero from '../components/NeighborhoodsHero';
+import StructuredData from '../components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Aliante Neighborhoods Guide | North Las Vegas Communities',

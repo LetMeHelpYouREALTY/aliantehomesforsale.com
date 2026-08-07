@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react';
 
 const SLIDES = [
   {
@@ -61,7 +61,10 @@ export default function EnhancedHero() {
             />
           </div>
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-indigo-900/90" aria-hidden />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-indigo-900/90"
+          aria-hidden
+        />
       </div>
 
       {/* Pattern overlay */}
@@ -84,7 +87,8 @@ export default function EnhancedHero() {
           Dr. Jan Duffy | Aliante North Las Vegas Real Estate
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Discover new listings right when they hit the market. RealScout powers your search—updated every 15 minutes.
+          Discover new listings right when they hit the market. RealScout powers your search—updated
+          every 15 minutes.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
@@ -114,8 +118,19 @@ export default function EnhancedHero() {
           aria-label="Previous slide"
         >
           <span className="sr-only">Previous</span>
-          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
         <div className="flex gap-2" role="tablist" aria-label="Hero slides">
@@ -140,7 +155,13 @@ export default function EnhancedHero() {
           aria-label="Next slide"
         >
           <span className="sr-only">Next</span>
-          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>

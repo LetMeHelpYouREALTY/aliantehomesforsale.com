@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import NeighborhoodsHero from '../../components/NeighborhoodsHero';
+import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
+import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
   title: 'The Paseos Aliante - Affordable Family Homes',

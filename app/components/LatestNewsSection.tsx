@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import { getKcmFeedItems } from '../../lib/kcm-feed';
 
 /** Blog section powered by Simplifying the Market (KCM) RSS feed. Images from files.keepingcurrentmatters.com — img-src must allow that host. */
@@ -8,21 +8,14 @@ export default async function LatestNewsSection() {
   if (items.length === 0) return null;
 
   return (
-    <section
-      className="py-16 px-4 bg-[#f7f9fc]"
-      aria-labelledby="latest-news-heading"
-    >
+    <section className="py-16 px-4 bg-[#f7f9fc]" aria-labelledby="latest-news-heading">
       <div className="max-w-7xl mx-auto">
-        <h2
-          id="latest-news-heading"
-          className="text-3xl font-bold text-center mb-4 text-[#0a2540]"
-        >
+        <h2 id="latest-news-heading" className="text-3xl font-bold text-center mb-4 text-[#0a2540]">
           Latest News
         </h2>
         <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-          Tips and trends for Aliante and North Las Vegas home buyers and
-          sellers. Updated regularly from our partners at Simplifying the
-          Market.
+          Tips and trends for Aliante and North Las Vegas home buyers and sellers. Updated regularly
+          from our partners at Simplifying the Market.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item) => (
@@ -55,9 +48,7 @@ export default async function LatestNewsSection() {
                     {item.title}
                   </Link>
                 </h3>
-                <p className="text-gray-600 text-sm line-clamp-3 mb-4">
-                  {item.description}
-                </p>
+                <p className="text-gray-600 text-sm line-clamp-3 mb-4">{item.description}</p>
                 <Link
                   href={item.link}
                   target="_blank"

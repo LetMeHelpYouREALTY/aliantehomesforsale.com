@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import NeighborhoodsHero from '../components/NeighborhoodsHero';
-import SunCityContent from '../components/SunCityContent';
 import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
+import NeighborhoodsHero from '../components/NeighborhoodsHero';
+import SunCityContent from '../components/SunCityContent';
 
 export const metadata: Metadata = {
   title: 'Sun City Aliante 55+ Community - Active Adult Living',

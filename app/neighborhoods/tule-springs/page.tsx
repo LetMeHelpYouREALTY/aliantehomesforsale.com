@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
+import NewConstructionHero from '../../components/NewConstructionHero';
+import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Villages at Tule Springs - New Master-Planned Community',
