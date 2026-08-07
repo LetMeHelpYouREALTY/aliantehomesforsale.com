@@ -113,8 +113,13 @@ Update `VERCEL_PROJECT_ID` if it still points at drjanduffy.com (workflow now ha
 
 ---
 
-## Verify production
+## Verify production (confirmed 2026-08-07)
 
-1. Vercel Deployments: latest SHA = `main` HEAD, target production, READY.
-2. `https://www.aliantehomesforsale.com/robots.txt` — **no** `Disallow: /_next/`.
-3. Homepage HTML includes nearby map / entity graph markers from recent commits.
+| Check | Result |
+|-------|--------|
+| Vercel prod `dpl_9X73nWy…` (`5c4a1ec`) | READY, aliased to www |
+| Actions Deploy Production on `f274372` | **Success** (workflow overall was red only from Lighthouse) |
+| Live `robots.txt` | No `Disallow: /_next/` |
+| Live homepage | `@graph`, `TouristAttraction`, nearby / Aliante Casino present |
+
+Production is current again. Prefer push → `main` + Actions (or Vercel Git) going forward.
