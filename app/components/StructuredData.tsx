@@ -90,13 +90,6 @@ export default function StructuredData({
             },
           })),
         },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '127',
-          bestRating: '5',
-          worstRating: '1',
-        },
       };
     }
 
@@ -316,13 +309,6 @@ export default function StructuredData({
           },
           ...siteConfig.neighborhoods.map((n) => ({ '@type': 'Place', name: n.name })),
         ],
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '127',
-          bestRating: '5',
-          worstRating: '1',
-        },
       };
     }
 

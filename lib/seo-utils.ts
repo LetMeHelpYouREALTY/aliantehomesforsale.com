@@ -292,18 +292,6 @@ export function generateLocalBusinessSchema() {
         },
       ],
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    sameAs: [
-      'https://www.facebook.com/aliantehomes',
-      'https://www.instagram.com/aliantehomes',
-      'https://www.linkedin.com/company/aliantehomes',
-    ],
   };
 }
 

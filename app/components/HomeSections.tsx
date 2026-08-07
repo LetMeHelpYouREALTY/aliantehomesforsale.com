@@ -2,7 +2,7 @@
 
 import AgentWelcomeSection from './AgentWelcomeSection';
 import AlianteFAQ from './AlianteFAQ';
-import EnhancedFeaturedProperties from './EnhancedFeaturedProperties';
+import BuyerPathSection from './BuyerPathSection';
 import EnhancedHero from './EnhancedHero';
 import EnhancedMarketInsights from './EnhancedMarketInsights';
 import EnhancedPropertyTypes from './EnhancedPropertyTypes';
@@ -10,6 +10,7 @@ import EnhancedTrustAuthority from './EnhancedTrustAuthority';
 import FeaturedCommunities from './FeaturedCommunities';
 import HomeCTAStrip from './HomeCTAStrip';
 import HyperlocalRealtorServices from './HyperlocalRealtorServices';
+import LifestyleHomesSection from './LifestyleHomesSection';
 import RealScoutSearchSection from './RealScoutSearchSection';
 import TestimonialsSection from './TestimonialsSection';
 
@@ -19,8 +20,9 @@ export function HomeSectionsTop() {
     <>
       <EnhancedHero />
       <RealScoutSearchSection />
-      <EnhancedFeaturedProperties />
+      <LifestyleHomesSection />
       <AgentWelcomeSection />
+      <BuyerPathSection />
       <FeaturedCommunities />
       <HyperlocalRealtorServices />
       <EnhancedPropertyTypes />

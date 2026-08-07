@@ -6,12 +6,11 @@ import './globals.css';
 import Breadcrumbs from './components/Breadcrumbs';
 import EnhancedFooter from './components/EnhancedFooter';
 import EnhancedNavigation from './components/EnhancedNavigation';
+import EntityGraphSchema from './components/EntityGraphSchema';
 import GoogleAnalytics from './components/GoogleAnalytics';
-import LocationSchema from './components/LocationSchema';
 import PerformanceMonitor from './components/PerformanceMonitor';
 import RealScoutOfficeListingsSection from './components/RealScoutOfficeListingsSection';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
-import StructuredData from './components/StructuredData';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -98,9 +97,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <GoogleAnalytics
-          measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'}
-        />
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
+          <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        ) : null}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Skip link: WCAG 2.2 / keyboard users (focus visible) */}
@@ -117,12 +116,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="module"
         />
 
-        {/* Core Structured Data - Organization, LocalBusiness, RealEstateAgent, WebSite (GEO/AEO) */}
-        <StructuredData type="Organization" />
-        <StructuredData type="LocalBusiness" />
-        <StructuredData type="RealEstateAgent" />
-        <StructuredData type="WebSite" />
-        <LocationSchema />
+        {/* Knowledge + Content + Agent graphs (SEO / AEO / GEO) */}
+        <EntityGraphSchema />
 
         <EnhancedNavigation />
         <Breadcrumbs />

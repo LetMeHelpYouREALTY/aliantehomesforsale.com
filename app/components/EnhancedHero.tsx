@@ -94,7 +94,7 @@ export default function EnhancedHero() {
             🏆 Local Expert Since 2018
           </span>
           <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-            📊 286+ Active Listings
+            📍 Aliante · 89084 Only
           </span>
         </div>
         <a

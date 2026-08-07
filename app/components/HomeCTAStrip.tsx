@@ -18,7 +18,7 @@ export default function HomeCTAStrip() {
     },
     {
       label: "What's My Home Worth?",
-      href: '/contact',
+      href: '/home-valuation',
       description: 'Free home valuation',
     },
   ];

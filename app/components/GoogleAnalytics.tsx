@@ -9,32 +9,29 @@ interface GoogleAnalyticsProps {
   measurementId?: string;
 }
 
-function GoogleAnalyticsInner({ measurementId = 'G-XXXXXXXXXX' }: GoogleAnalyticsProps) {
+function GoogleAnalyticsInner({ measurementId }: GoogleAnalyticsProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isValidId = Boolean(measurementId && !measurementId.includes('XXXX'));
 
   // Track page views on route change
   useEffect(() => {
+    if (!isValidId || !measurementId) return;
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('config', measurementId, {
         page_path: pathname + (searchParams ? `?${searchParams.toString()}` : ''),
       });
     }
-  }, [pathname, searchParams, measurementId]);
-
-  // Don't load in development
-  if (process.env.NODE_ENV === 'development') {
-    return null;
-  }
+  }, [pathname, searchParams, measurementId, isValidId]);
 
   return null;
 }
 
 export default function GoogleAnalytics(props: GoogleAnalyticsProps) {
-  const { measurementId = 'G-XXXXXXXXXX' } = props;
+  const { measurementId } = props;
 
-  // Don't load in development
-  if (process.env.NODE_ENV === 'development') {
+  // Don't load in development or without a real measurement ID
+  if (process.env.NODE_ENV === 'development' || !measurementId || measurementId.includes('XXXX')) {
     return null;
   }
 

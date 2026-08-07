@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import StructuredData from '../components/StructuredData';
 import NewConstructionHero from '../components/NewConstructionHero';
 import TopBuilders from '../components/TopBuilders';
 import WhyNewConstruction from '../components/WhyNewConstruction';
@@ -31,8 +30,6 @@ export const metadata: Metadata = {
 export default function NewConstruction() {
   return (
     <>
-      <StructuredData type="WebSite" />
-
       <main className="new-construction-page">
         <NewConstructionHero />
         <TopBuilders />
