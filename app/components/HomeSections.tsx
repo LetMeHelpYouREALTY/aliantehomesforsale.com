@@ -9,6 +9,7 @@ import EnhancedPropertyTypes from './EnhancedPropertyTypes';
 import EnhancedTrustAuthority from './EnhancedTrustAuthority';
 import FeaturedCommunities from './FeaturedCommunities';
 import HomeCTAStrip from './HomeCTAStrip';
+import HyperlocalRealtorServices from './HyperlocalRealtorServices';
 import RealScoutSearchSection from './RealScoutSearchSection';
 import TestimonialsSection from './TestimonialsSection';
 
@@ -21,6 +22,7 @@ export function HomeSectionsTop() {
       <EnhancedFeaturedProperties />
       <AgentWelcomeSection />
       <FeaturedCommunities />
+      <HyperlocalRealtorServices />
       <EnhancedPropertyTypes />
       <EnhancedMarketInsights />
       <EnhancedTrustAuthority />

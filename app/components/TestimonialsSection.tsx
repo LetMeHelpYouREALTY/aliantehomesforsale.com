@@ -1,7 +1,3 @@
-'use client';
-
-import { useId } from 'react';
-
 type Testimonial = {
   quote: string;
   author: string;
@@ -41,43 +37,12 @@ const TESTIMONIALS: Testimonial[] = [
 ];
 
 /**
- * Purist-style “What Clients Are Saying” with Review JSON-LD for rich results.
+ * Purist-style “What Clients Are Saying” (visible social proof only).
+ * No fabricated Review JSON-LD — schema.org disallows fake reviews.
  */
 export default function TestimonialsSection() {
-  const scriptId = useId();
-
-  const reviewSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'RealEstateAgent',
-    name: 'Dr. Jan Duffy',
-    url: 'https://www.aliantehomesforsale.com',
-    telephone: '+17027077273',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127',
-      bestRating: '5',
-      worstRating: '1',
-    },
-    review: TESTIMONIALS.map((t) => ({
-      '@type': 'Review',
-      author: { '@type': 'Person', name: t.author },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: String(t.rating),
-        bestRating: '5',
-      },
-      reviewBody: t.quote,
-    })),
-  };
-
   return (
     <section className="py-16 px-4 bg-white" aria-labelledby="testimonials-heading">
-      <script
-        id={scriptId}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
-      />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2
@@ -88,8 +53,8 @@ export default function TestimonialsSection() {
             What Clients Are Saying
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real feedback from Aliante and North Las Vegas buyers and sellers who worked with Dr.
-            Jan Duffy.
+            Feedback from Aliante and North Las Vegas buyers and sellers who worked with Dr. Jan
+            Duffy.
           </p>
         </div>
 

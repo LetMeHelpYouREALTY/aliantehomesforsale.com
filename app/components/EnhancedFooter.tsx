@@ -116,7 +116,7 @@ export default function EnhancedFooter() {
             <p className="text-sm text-gray-300 mb-3">
               {siteConfig.agentName}
               <br />
-              Berkshire Hathaway HomeServices Nevada Properties
+              {siteConfig.brokerage}
             </p>
             <p className="text-xs text-gray-400 mb-4">
               Nevada Real Estate License #{siteConfig.agentLicense}
