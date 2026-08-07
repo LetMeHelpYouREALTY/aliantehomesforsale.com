@@ -15,6 +15,8 @@ export const siteConfig = {
   region: 'North Las Vegas, NV',
   areaServed: 'Aliante, North Las Vegas, Nevada',
   phone: '(702) 707-7273',
+  /** E.164 for tel: links and schema telephone */
+  phoneTel: '+17027077273',
   email: 'DrDuffy@AlianteHomesForSale.com',
   address: {
     streetAddress: '2590 Nature Park Drive, Suite 275',

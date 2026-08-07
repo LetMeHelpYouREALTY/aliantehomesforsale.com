@@ -1,14 +1,16 @@
 'use client';
 
-import EnhancedHero from './EnhancedHero';
-import RealScoutSearchSection from './RealScoutSearchSection';
-import EnhancedFeaturedProperties from './EnhancedFeaturedProperties';
 import AgentWelcomeSection from './AgentWelcomeSection';
-import EnhancedPropertyTypes from './EnhancedPropertyTypes';
-import EnhancedMarketInsights from './EnhancedMarketInsights';
-import EnhancedTrustAuthority from './EnhancedTrustAuthority';
-import HomeCTAStrip from './HomeCTAStrip';
 import AlianteFAQ from './AlianteFAQ';
+import EnhancedFeaturedProperties from './EnhancedFeaturedProperties';
+import EnhancedHero from './EnhancedHero';
+import EnhancedMarketInsights from './EnhancedMarketInsights';
+import EnhancedPropertyTypes from './EnhancedPropertyTypes';
+import EnhancedTrustAuthority from './EnhancedTrustAuthority';
+import FeaturedCommunities from './FeaturedCommunities';
+import HomeCTAStrip from './HomeCTAStrip';
+import RealScoutSearchSection from './RealScoutSearchSection';
+import TestimonialsSection from './TestimonialsSection';
 
 /** Top half: Hero through Trust. Latest News is rendered between this and HomeSectionsBottom in page.tsx. */
 export function HomeSectionsTop() {
@@ -18,9 +20,11 @@ export function HomeSectionsTop() {
       <RealScoutSearchSection />
       <EnhancedFeaturedProperties />
       <AgentWelcomeSection />
+      <FeaturedCommunities />
       <EnhancedPropertyTypes />
       <EnhancedMarketInsights />
       <EnhancedTrustAuthority />
+      <TestimonialsSection />
     </>
   );
 }

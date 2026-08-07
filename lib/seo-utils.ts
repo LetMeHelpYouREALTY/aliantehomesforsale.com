@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import { siteConfig } from './site-config';
 
-const SITE_URL = 'https://www.aliantehomesforsale.com';
-const SITE_NAME = 'Aliante Las Vegas | Homes by Dr. Jan Duffy';
-const DEFAULT_TITLE = 'Aliante Homes For Sale - Expert Local Realtors | North Las Vegas NV';
-const DEFAULT_DESCRIPTION =
-  'Find your perfect Aliante home with local experts. 286+ verified MLS listings updated every 15 minutes. Free market analysis & buyer consultation. Call (702) 555-0123';
+const SITE_URL = siteConfig.siteUrl;
+const SITE_NAME = siteConfig.siteName;
+const DEFAULT_TITLE = siteConfig.defaultTitle;
+const DEFAULT_DESCRIPTION = siteConfig.defaultDescription;
 
 interface SEOConfig {
   title?: string;
@@ -148,7 +148,7 @@ export const pageSEO = {
   'homes-for-sale': {
     title: 'Homes For Sale in Aliante - Updated Every 15 Minutes | MLS Listings',
     description:
-      '286+ verified MLS listings in Aliante, North Las Vegas. Updated every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 555-0123',
+      '286+ verified MLS listings in Aliante, North Las Vegas. Updated every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 707-7273',
     keywords: [
       'Aliante homes for sale',
       'MLS listings Aliante',
@@ -169,7 +169,7 @@ export const pageSEO = {
     keywords: ['home valuation Aliante', 'property value estimate', 'CMA', 'sell my home'],
   },
   contact: {
-    title: 'Contact Aliante Real Estate - Call (702) 555-0123',
+    title: 'Contact Aliante Real Estate - Call (702) 707-7273',
     description:
       'Contact our local Aliante real estate experts. Office: 2590 Nature Park Drive, Suite 275. Open 7 days a week. Free buyer consultation.',
     keywords: ['contact Aliante realtor', 'real estate agent', 'buyer consultation'],
@@ -221,8 +221,8 @@ export function generateLocalBusinessSchema() {
     name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
     image: `${SITE_URL}/logo.png`,
     url: SITE_URL,
-    telephone: '+17025550123',
-    email: 'info@aliantehomesforsale.com',
+    telephone: siteConfig.phoneTel,
+    email: siteConfig.email,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '2590 Nature Park Drive, Suite 275',
@@ -324,7 +324,7 @@ export function generateOrganizationSchema() {
     description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-702-555-0123',
+      telephone: siteConfig.phoneTel,
       contactType: 'Customer Service',
       areaServed: 'US-NV',
       availableLanguage: ['English', 'Spanish'],

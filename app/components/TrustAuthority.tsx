@@ -211,11 +211,11 @@ export default function TrustAuthority() {
               Schedule Free Consultation
             </a>
             <a
-              href="tel:+17025550123"
+              href="tel:+17027077273"
               className="nav-cta"
               style={{ background: 'rgba(255,255,255,0.2)' }}
             >
-              Call (702) 555-0123
+              Call (702) 707-7273
             </a>
           </div>
         </div>

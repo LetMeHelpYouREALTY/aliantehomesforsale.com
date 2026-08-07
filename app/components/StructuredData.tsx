@@ -54,7 +54,7 @@ export default function StructuredData({
           postalCode: siteConfig.address.postalCode,
           addressCountry: siteConfig.address.addressCountry,
         },
-        telephone: siteConfig.phone,
+        telephone: siteConfig.phoneTel,
         email: siteConfig.email,
         areaServed: {
           '@type': 'Place',
@@ -256,7 +256,7 @@ export default function StructuredData({
         name: siteConfig.siteName,
         image: `${siteConfig.siteUrl}/logo.png`,
         url: siteConfig.siteUrl,
-        telephone: '+17027077273',
+        telephone: siteConfig.phoneTel,
         email: siteConfig.email,
         address: {
           '@type': 'PostalAddress',
@@ -322,7 +322,7 @@ export default function StructuredData({
         description: `Expert real estate services in ${siteConfig.areaName}, ${siteConfig.region} since 2018`,
         contactPoint: {
           '@type': 'ContactPoint',
-          telephone: siteConfig.phone,
+          telephone: siteConfig.phoneTel,
           contactType: 'Customer Service',
           areaServed: 'US-NV',
           availableLanguage: ['English', 'Spanish'],

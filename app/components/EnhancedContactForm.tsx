@@ -159,7 +159,7 @@ export default function EnhancedContactForm() {
               value={formData.phone}
               onChange={handleChange}
               required
-              placeholder="(702) 555-0123"
+              placeholder="(702) XXX-XXXX"
               className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none"
               style={{ minHeight: '48px' }}
             />

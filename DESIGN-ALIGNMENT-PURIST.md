@@ -43,9 +43,10 @@ Goal: Align aliantehomesforsale.com structure, sections, and visual tone with th
 - **Featured Communities**: Reframe Property Types as image cards (optional follow-up).
 
 ### Phase 2 – Content and polish
-- **Testimonials**: Add “What Clients Are Saying” section (carousel or grid) with 3–6 placeholder or real testimonials + schema.
-- **Agent welcome**: Dedicated “Dr. Jan Duffy Real Estate” block with 2–3 sentences and “Learn More” → /about.
-- **Footer**: Align column structure with Purist (Navigate, Contact, Company, optional Newsletter); keep NAP and compliance.
+- **Testimonials**: ✅ `TestimonialsSection.tsx` — “What Clients Are Saying” grid (4 reviews) + Review JSON-LD.
+- **Featured Communities**: ✅ `FeaturedCommunities.tsx` — 6 image-led neighborhood cards on home.
+- **Agent welcome**: ✅ Already shipped in Phase 1 (`AgentWelcomeSection.tsx`).
+- **Footer**: ✅ `EnhancedFooter.tsx` — Navigate, Contact (NAP), Company (license S.0197614.LLC), Neighborhoods + market-updates CTA.
 
 ### Phase 3 – Optional
 - **Blog/News**: “Latest News” section with 3 posts or links to /blog if you add a blog.
