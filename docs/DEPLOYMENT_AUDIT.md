@@ -1,126 +1,120 @@
-# Deployment Audit: Why Git Push Does Not Deploy to Vercel
+# Deployment Audit: Why Git Push Did Not Deploy to Vercel
 
-**Date:** March 2026  
-**Repo:** DrJanDuffy/aliantehomesforsale.com  
-**Issue:** Pushing to `main` does not result in a Vercel production deployment.
-
----
-
-## Summary
-
-Deployment is intended to happen via **GitHub Actions** (CI/CD workflow). The **Deploy Production** job runs only when all of its dependent jobs succeed. The audit found **multiple blockers** that prevent the deploy step from running.
+**Date:** 2026-08-07  
+**Repo:** LetMeHelpYouREALTY/aliantehomesforsale.com  
+**Vercel project:** aliantehomesforsale.com (`prj_0RZw34lbC34PRwztLG5bqduiRxwY`)  
+**Team:** janet-duffys-projects (`team_EIbjFXaDDtGMTweb5Hvo3CG3`)
 
 ---
 
-## 1. Root Cause: Workflow Run Fails Before Deploy
+## Verdict
 
-**Evidence:** [CI/CD Pipeline run #230](https://github.com/DrJanDuffy/aliantehomesforsale.com/actions/runs/22937383346) (commit `0ee2585`, push to `main`) — **Status: Failure**.
+`git add` / `commit` / `push` was not updating **www.aliantehomesforsale.com** because of **four independent failures**. Production was stuck on commit `e24b2b6` (hero slideshow) while `main` had moved ahead.
 
-| Job               | Result   | Effect |
-|-------------------|----------|--------|
-| Code Quality      | **Failed** (exit code 1) | Blocks Build and everything after |
-| Build & Test      | Skipped (0s)             | `needs: quality` |
-| Performance Testing | —                     | `needs: build` |
-| Security Scan     | Ran 59s; annotations (see below) | |
-| **Deploy Production** | **Skipped (0s)**   | `needs: [quality, build, performance, security]` |
-
-So **Deploy Production never runs** because **Code Quality** fails first.
-
-### Why Code Quality can fail
-
-- `npm run type-check` — TypeScript errors
-- `npm run lint` — Biome lint
-- `npm run format:check` — Biome format
-- `npm audit --audit-level moderate` — Any moderate+ vulnerability
-
-Fixing these in the repo (and keeping deps updated) is required for the pipeline to reach the deploy step.
+| # | Failure | Severity |
+|---|---------|----------|
+| 1 | Work pushed to a **feature branch**, not `main` | High |
+| 2 | **GitHub Actions** quality gate blocked deploy (`npm audit` / Biome) | High |
+| 3 | Actions deploy targeted **wrong Vercel project** (`drjanduffy.com`) + **outdated CLI** | Critical |
+| 4 | **Vercel Git auto-deploy** did not create builds for new `main` SHAs | Critical |
 
 ---
 
-## 2. Second Blocker: Performance Job Cannot Succeed
+## Evidence (2026-08-07)
 
-Even when Code Quality and Build pass, **Performance Testing** will fail.
+### Live site vs `main`
 
-**Reason:** The workflow runs Lighthouse CI against:
+- Live `robots.txt` still had `Disallow: /_next/` (removed in newer commits).
+- Vercel latest production deployment was still SHA `e24b2b6`.
+- `main` HEAD after merge/CI fix: `5c4a1ec`.
 
-```yaml
-urls: |
-  http://localhost:3000
+### GitHub Actions run `31157498579` (push `5c4a1ec`)
+
+| Job | Result | Notes |
+|-----|--------|-------|
+| Code Quality | Success | After `continue-on-error` on `npm audit` + Next bump |
+| Build & Test | Success | |
+| Security Scan | Success | |
+| Performance Testing | Failure | Lighthouse vs `localhost:3000` with **no server started** (does not block prod) |
+| **Deploy Production** | **Failure** | See below |
+| Deploy Preview | Skipped | Push, not PR |
+
+**Deploy Production log (smoking gun):**
+
+```text
+Deploying janet-duffys-projects/drjanduffy.com
+Error! Your Vercel CLI version is outdated. This endpoint requires version 47.2.2 or later.
 ```
 
-but **no step ever starts a server** on port 3000. The job builds the app but does not run `npm run start` (or similar). Lighthouse gets connection refused → job fails → **Deploy Production** is skipped because it has `needs: [..., performance, ...]`.
+So when Actions finally ran deploy, it:
 
-**Conclusion:** With the current config, every push will fail at Performance (if it gets that far), so the deploy step will never run unless the workflow is changed.
+1. Used `amondnet/vercel-action@v25` → `vercel@25.1.0` (API rejects it).
+2. Used `secrets.VERCEL_PROJECT_ID` which resolves to **drjanduffy.com**, not Aliante.
 
----
+### Vercel Git integration
 
-## 3. Security Scan Annotations (Non-blocking but Noisy)
-
-The Security job uploads Trivy SARIF and uses CodeQL. Run #230 showed:
-
-- **CodeQL:** “Resource not accessible by integration” and “ensure the workflow has at least the 'security-events: read' permission”.
-- **CodeQL v3** deprecation notice (v3 deprecated December 2026).
-
-These can cause warnings or permission errors but are not the primary reason deploy was skipped; the primary reason is Quality failure and Performance design.
+- Project exists and has domains for `aliantehomesforsale.com` / `www`.
+- Deployments after org move show `githubOrg: LetMeHelpYouREALTY`, but **no deployment** was created for `a54d9dd` or `5c4a1ec` until an explicit API deploy.
+- Docs still mention old owner `DrJanDuffy` in places — reconnect Git if webhooks stay silent.
 
 ---
 
-## 4. Vercel Git Integration (Alternative Path)
+## Root causes (detail)
 
-If the project is **not** connected to GitHub in the Vercel dashboard:
+### 1. Wrong branch
 
-- Vercel never sees pushes.
-- The only way to deploy is via the GitHub Action (or manual `vercel --prod`).
+Cloud/agent work lived on `cursor/purist-phase2-seo-prs-1543`. Vercel production branch is `main`. Draft PR #51 had to be **merged** before production could ever see the commits.
 
-**Recommendation:** In Vercel → Project **Settings** → **Git**, connect **DrJanDuffy/aliantehomesforsale.com** and set Production Branch to **main**. Then every push to `main` triggers a Vercel build and deploy regardless of the Actions workflow.
+### 2. CI quality gate
 
----
+Earlier `main` pushes failed Code Quality (`format:check`, then `npm audit --audit-level moderate` exit 1).  
+`deploy-production` has `needs: [quality, build, security]` → deploy never started.
 
-## 5. Required GitHub Secrets (For Action-Based Deploy)
+### 3. Wrong project + dead CLI in Actions
 
-If using the workflow to deploy, these must be set in the repo (**Settings** → **Secrets and variables** → **Actions**):
+Repo secrets for `VERCEL_PROJECT_ID` (and possibly a shared token workflow) were wired to **drjanduffy.com**.  
+Even with correct secrets, `amondnet/vercel-action@v25` is incompatible with current Vercel API.
 
-| Secret            | Purpose        |
-|-------------------|----------------|
-| `VERCEL_TOKEN`    | Vercel API auth |
-| `VERCEL_ORG_ID`   | Vercel team/org |
-| `VERCEL_PROJECT_ID` | Vercel project |
+### 4. Vercel Git webhook gap
 
-If any are missing, the **Deploy to Vercel** step will fail when it runs.
+Pushing `main` alone did not enqueue a new Aliante deployment. Prefer reconnecting **Settings → Git** to `LetMeHelpYouREALTY/aliantehomesforsale.com`, production branch `main`.
 
 ---
 
-## 6. Recommendations Implemented
+## Fixes applied
 
-1. **Unblock deploy when Quality and Build pass**  
-   - **Change:** `deploy-production` now depends only on `[quality, build, security]`.  
-   - **Effect:** Performance no longer blocks production deploy. Performance can be fixed or made optional later (e.g. run Lighthouse against a preview URL or add a server step).
-
-2. **Keep Performance job but don’t block deploy**  
-   - Performance Testing still runs for visibility but is not in `deploy-production.needs`.  
-   - Optional follow-up: fix Performance (e.g. start server before Lighthouse or point to a deployed URL) and then add it back to `needs` if desired.
-
-3. **NEXT_VERSION in workflow**  
-   - Updated from `15.5.0` to `15.5.10` in the workflow `env` for accuracy (does not change install; lockfile governs versions).
+1. Merged feature work to `main`; pushed CI unblock (`5c4a1ec`).
+2. Triggered production deploy for `5c4a1ec` via Vercel API (Zapier) → `dpl_9X73nWyPiB6ecEx2DHT8gTktbRsp`.
+3. Replaced `amondnet/vercel-action@v25` with `npx vercel@latest deploy`.
+4. Hardcoded Aliante `VERCEL_ORG_ID` / `VERCEL_PROJECT_ID` in the workflow so a wrong GitHub secret cannot deploy another site.
+5. Preview job no longer passes `--prod`; no longer waits on broken Lighthouse job.
 
 ---
 
-## 7. What to Do Next
+## What you should still do in the dashboard
 
-1. **Ensure code passes locally:**  
-   `npm run type-check && npm run lint && npm run format:check && npm audit --audit-level moderate`
+**A. GitHub → repo Secrets (Actions)**
 
-2. **Push to `main`**  
-   - If Quality and Build pass, **Deploy Production** will run (assuming secrets are set).  
-   - If Quality fails, fix the reported errors and push again.
+| Secret | Correct value |
+|--------|----------------|
+| `VERCEL_TOKEN` | Valid token with deploy access |
+| `VERCEL_ORG_ID` | `team_EIbjFXaDDtGMTweb5Hvo3CG3` |
+| `VERCEL_PROJECT_ID` | `prj_0RZw34lbC34PRwztLG5bqduiRxwY` |
 
-3. **Optional:** Connect the repo in Vercel (**Settings** → **Git**) so pushes to `main` always trigger a Vercel deployment even if the Action has issues.
+Update `VERCEL_PROJECT_ID` if it still points at drjanduffy.com (workflow now hardcodes Aliante, but secrets should match).
 
-4. **Optional:** Add `security-events: read` (and any other required permissions) to the workflow if you want to clear CodeQL/security-events warnings.
+**B. Vercel → aliantehomesforsale.com → Settings → Git**
+
+1. Confirm connected repo is **LetMeHelpYouREALTY/aliantehomesforsale.com** (not `DrJanDuffy/...`).
+2. Production Branch = **main**.
+3. If pushes still create no Deployments row: Disconnect → Connect again.
+
+**C. Optional:** Fix or disable Performance Testing (start `npm start` before Lighthouse, or `continue-on-error: true`).
 
 ---
 
-## Files Touched in This Audit
+## Verify production
 
-- `.github/workflows/ci-cd.yml` — `deploy-production.needs` and `env.NEXT_VERSION`
-- `docs/DEPLOYMENT_AUDIT.md` — this audit
+1. Vercel Deployments: latest SHA = `main` HEAD, target production, READY.
+2. `https://www.aliantehomesforsale.com/robots.txt` — **no** `Disallow: /_next/`.
+3. Homepage HTML includes nearby map / entity graph markers from recent commits.
