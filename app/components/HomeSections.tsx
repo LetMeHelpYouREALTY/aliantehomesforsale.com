@@ -11,6 +11,7 @@ import FeaturedCommunities from './FeaturedCommunities';
 import HomeCTAStrip from './HomeCTAStrip';
 import HyperlocalRealtorServices from './HyperlocalRealtorServices';
 import LifestyleHomesSection from './LifestyleHomesSection';
+import NearbyLocatorMap from './NearbyLocatorMap';
 import RealScoutSearchSection from './RealScoutSearchSection';
 import TestimonialsSection from './TestimonialsSection';
 
@@ -38,6 +39,7 @@ export function HomeSectionsBottom() {
   return (
     <>
       <HomeCTAStrip />
+      <NearbyLocatorMap />
       <AlianteFAQ />
     </>
   );

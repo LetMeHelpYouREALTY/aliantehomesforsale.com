@@ -15,4 +15,5 @@ export const graphIds = {
   service: (slug: string) => `${siteConfig.siteUrl}/#service-${slug}`,
   builder: (slug: string) => `${siteConfig.siteUrl}/builders/${slug}#organization`,
   hubPage: (path: string) => `${siteConfig.siteUrl}${path}#webpage`,
+  nearbyPlace: (id: string) => `${siteConfig.siteUrl}/contact#nearby-${id}`,
 } as const;

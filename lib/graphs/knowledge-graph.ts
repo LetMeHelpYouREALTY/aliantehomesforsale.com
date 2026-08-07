@@ -1,3 +1,4 @@
+import { nearbyPlaceSearchUrl, nearbyPlaces } from '../content/aliante-content';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
 
@@ -160,6 +161,37 @@ export function buildKnowledgeGraph() {
     areaServed: { '@id': graphIds.aliantePlace },
   }));
 
+  const nearbyAttractions = nearbyPlaces.map((place) => ({
+    '@type': 'TouristAttraction',
+    '@id': graphIds.nearbyPlace(place.id),
+    name: place.name,
+    description: place.description,
+    url: nearbyPlaceSearchUrl(place.mapsQuery),
+    touristType: place.category,
+    containedInPlace: { '@id': graphIds.aliantePlace },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'North Las Vegas',
+      addressRegion: 'NV',
+      postalCode: siteConfig.zipCode,
+      addressCountry: 'US',
+    },
+  }));
+
+  const nearbyItemList = {
+    '@type': 'ItemList',
+    '@id': `${siteConfig.siteUrl}/contact#nearby-itemlist`,
+    name: "What's nearby Aliante Corporate Center",
+    numberOfItems: nearbyPlaces.length,
+    itemListElement: nearbyPlaces.map((place, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: place.name,
+      url: nearbyPlaceSearchUrl(place.mapsQuery),
+      item: { '@id': graphIds.nearbyPlace(place.id) },
+    })),
+  };
+
   return [
     organization,
     localBusiness,
@@ -168,5 +200,7 @@ export function buildKnowledgeGraph() {
     ...services,
     offerCatalog,
     ...builders,
+    ...nearbyAttractions,
+    nearbyItemList,
   ];
 }

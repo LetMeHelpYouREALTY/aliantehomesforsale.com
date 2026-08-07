@@ -130,9 +130,7 @@ export const siteConfig = {
     'D.R. Horton Tule Springs',
   ],
   /** Verified / brand profiles only — empty slots omitted from schema */
-  sameAs: [
-    'https://www.aliantehomesforsale.com',
-  ] as string[],
+  sameAs: ['https://www.aliantehomesforsale.com'] as string[],
   phone: '(702) 707-7273',
   phoneTel: '+17027077273',
   email: 'DrDuffy@AlianteHomesForSale.com',
@@ -154,6 +152,11 @@ export const siteConfig = {
       'https://www.google.com/maps/dir/?api=1&destination=2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084',
     placeUrl:
       'https://www.google.com/maps/search/?api=1&query=2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084',
+    /** GBP “Show what’s nearby” — attractions/businesses near the office */
+    nearbyEmbedUrl:
+      'https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sthings+to+do+near+2590+Nature+Park+Drive+North+Las+Vegas+NV!6i13',
+    nearbySearchUrl:
+      'https://www.google.com/maps/search/?api=1&query=things+to+do+near+2590+Nature+Park+Drive+North+Las+Vegas+NV+89084',
   },
   hours: {
     weekday: 'Mon–Fri: 8:00 AM – 7:00 PM',

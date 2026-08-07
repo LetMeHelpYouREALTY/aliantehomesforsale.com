@@ -148,3 +148,79 @@ export const buyerPathSteps: BuyerPath[] = [
 ];
 
 export const marketAsOfLabel = 'Market tools update from MLS; figures on widgets are live.';
+
+export type NearbyPlace = {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  /** Google Maps search / directions query */
+  mapsQuery: string;
+  driveNote: string;
+};
+
+/** Local attractions & businesses near Aliante Corporate Center (GBP “what’s nearby”) */
+export const nearbyPlaces: NearbyPlace[] = [
+  {
+    id: 'aliante-casino',
+    name: 'Aliante Casino + Hotel',
+    category: 'Entertainment & dining',
+    description:
+      'Resort casino with restaurants, shows, and a spa — about a short drive from the office on Aliante Parkway.',
+    mapsQuery: 'Aliante Casino + Hotel, North Las Vegas, NV',
+    driveNote: '~5 min drive',
+  },
+  {
+    id: 'aliante-golf',
+    name: 'Aliante Golf Club',
+    category: 'Golf',
+    description:
+      'Public 18-hole course and clubhouse serving Club Aliante and surrounding neighborhoods.',
+    mapsQuery: 'Aliante Golf Club, North Las Vegas, NV',
+    driveNote: '~5 min drive',
+  },
+  {
+    id: 'nature-discovery-park',
+    name: 'Aliante Nature Discovery Park',
+    category: 'Parks & outdoors',
+    description:
+      'Walking paths, playgrounds, and open green space in the heart of the Aliante master plan.',
+    mapsQuery: 'Aliante Nature Discovery Park, North Las Vegas, NV',
+    driveNote: '~5 min drive',
+  },
+  {
+    id: 'floyd-lamb',
+    name: 'Floyd Lamb Park at Tule Springs',
+    category: 'Parks & outdoors',
+    description:
+      'Large regional park with lakes, trails, and picnic areas near Tule Springs new construction.',
+    mapsQuery: 'Floyd Lamb Park at Tule Springs, Las Vegas, NV',
+    driveNote: '~10–15 min drive',
+  },
+  {
+    id: 'craig-ranch',
+    name: 'Craig Ranch Regional Park',
+    category: 'Parks & recreation',
+    description:
+      'Sports fields, trails, and event space serving North Las Vegas near the 215 Beltway.',
+    mapsQuery: 'Craig Ranch Regional Park, North Las Vegas, NV',
+    driveNote: '~10 min drive',
+  },
+  {
+    id: 'centennial-hills',
+    name: 'Centennial Hills shopping',
+    category: 'Shopping & services',
+    description:
+      'Grocery, retail, and everyday services along the Centennial corridor west of Aliante.',
+    mapsQuery: 'Centennial Hills shopping, Las Vegas, NV',
+    driveNote: '~10–15 min drive',
+  },
+];
+
+export function nearbyPlaceDirectionsUrl(mapsQuery: string): string {
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(mapsQuery)}`;
+}
+
+export function nearbyPlaceSearchUrl(mapsQuery: string): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`;
+}
