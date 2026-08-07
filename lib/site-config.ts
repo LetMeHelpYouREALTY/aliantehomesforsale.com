@@ -68,9 +68,23 @@ export const siteConfig = {
     postalCode: '89084',
     addressCountry: 'US',
   },
+  /** Aliante Corporate Center — MapQuest/verified pin for 2590 Nature Park Dr */
   geo: {
-    latitude: 36.1699,
-    longitude: -115.1398,
+    latitude: 36.28946,
+    longitude: -115.17756,
+  },
+  /** Google Maps links for “Add directions to your website” / plan-a-visit CTAs */
+  maps: {
+    embedUrl:
+      'https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084!6i15',
+    directionsUrl:
+      'https://www.google.com/maps/dir/?api=1&destination=2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084',
+    placeUrl:
+      'https://www.google.com/maps/search/?api=1&query=2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084',
+  },
+  hours: {
+    weekday: 'Mon–Fri: 8:00 AM – 7:00 PM',
+    weekend: 'Sat–Sun: 9:00 AM – 6:00 PM',
   },
   searchUrlTemplate: 'https://www.aliantehomesforsale.com/search?q={search_term_string}',
 

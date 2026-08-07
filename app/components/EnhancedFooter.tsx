@@ -79,9 +79,9 @@ export default function EnhancedFooter() {
                 {siteConfig.address.postalCode}
               </address>
               <div className="text-gray-300">
-                Mon-Fri: 8AM-7PM
+                {siteConfig.hours.weekday}
                 <br />
-                Sat-Sun: 9AM-6PM
+                {siteConfig.hours.weekend}
               </div>
             </div>
 
@@ -94,13 +94,19 @@ export default function EnhancedFooter() {
                 Call
               </a>
               <a
-                href="https://maps.google.com/?q=2590+Nature+Park+Drive+Suite+275+North+Las+Vegas+NV+89084"
+                href={siteConfig.maps.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
               >
                 Directions
               </a>
+              <Link
+                href="/contact#directions"
+                className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
+              >
+                Map &amp; Visit
+              </Link>
               <Link
                 href="/contact"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"

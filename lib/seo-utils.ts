@@ -233,8 +233,8 @@ export function generateLocalBusinessSchema() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 36.1699,
-      longitude: -115.1398,
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude,
     },
     openingHoursSpecification: [
       {

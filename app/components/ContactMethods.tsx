@@ -69,13 +69,14 @@ export default function ContactMethods() {
       icon: '📍',
       title: 'Visit Our Office',
       primary: '2590 Nature Park Drive',
-      details: ['Suite 275', 'North Las Vegas, NV 89084'],
+      details: ['Suite 275 · North Las Vegas, NV 89084', 'Tap for map & directions'],
+      href: '#directions',
     },
     {
       icon: '⏰',
       title: 'Office Hours',
-      primary: 'Mon-Fri: 9AM-6PM',
-      details: ['Saturday: 10AM-4PM', 'Sunday: By appointment'],
+      primary: 'Mon–Fri: 8AM–7PM',
+      details: ['Sat–Sun: 9AM–6PM', 'Appointments welcome'],
     },
   ];
 
