@@ -40,7 +40,7 @@ const COMMUNITIES: Community[] = [
   },
   {
     name: 'Sun City Aliante',
-    href: '/neighborhoods/sun-city',
+    href: '/sun-city-aliante',
     tagline: 'Active adult 55+ Del Webb community',
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
     alt: 'Sun City Aliante 55+ homes in North Las Vegas',

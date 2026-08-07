@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Contact our local Aliante real estate experts. Office: 2590 Nature Park Drive, Suite 275. Open 7 days a week. Free buyer consultation.',
   alternates: {
-    canonical: '/contact',
+    canonical: 'https://www.aliantehomesforsale.com/contact',
   },
 };
 

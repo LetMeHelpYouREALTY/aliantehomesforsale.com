@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Meet the local real estate experts serving Aliante and North Las Vegas since 2018. 500+ successful transactions, deep builder relationships, and unmatched market knowledge.',
   alternates: {
-    canonical: '/about',
+    canonical: 'https://www.aliantehomesforsale.com/about',
   },
 };
 

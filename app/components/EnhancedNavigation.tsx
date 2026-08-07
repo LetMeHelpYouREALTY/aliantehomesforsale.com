@@ -160,7 +160,7 @@ export default function EnhancedNavigation() {
                       Club Aliante (Golf)
                     </Link>
                     <Link
-                      href="/neighborhoods/sun-city"
+                      href="/sun-city-aliante"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       Sun City (55+)

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Desert Willows Aliante - Family Community',
   description:
     'Desert Willows family neighborhood in Aliante. Top schools, parks, family amenities. $400K-$700K.',
-  alternates: { canonical: '/neighborhoods/desert-willows' },
+  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows' },
 };
 
 export default function DesertWillows() {

@@ -3,15 +3,15 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
 import { siteConfig } from '../lib/site-config';
 import './globals.css';
-import EnhancedNavigation from './components/EnhancedNavigation';
 import Breadcrumbs from './components/Breadcrumbs';
 import EnhancedFooter from './components/EnhancedFooter';
-import PerformanceMonitor from './components/PerformanceMonitor';
+import EnhancedNavigation from './components/EnhancedNavigation';
 import GoogleAnalytics from './components/GoogleAnalytics';
+import LocationSchema from './components/LocationSchema';
+import PerformanceMonitor from './components/PerformanceMonitor';
 import RealScoutOfficeListingsSection from './components/RealScoutOfficeListingsSection';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
 import StructuredData from './components/StructuredData';
-import LocationSchema from './components/LocationSchema';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -77,9 +77,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+  // Only emit verification meta when a real token is configured (DNS verification needs no meta tag)
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
   other: {
     'geo.region': 'US-NV',
     'geo.placename': `${siteConfig.areaName}, ${siteConfig.region}`,

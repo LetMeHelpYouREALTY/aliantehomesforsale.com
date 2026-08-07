@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords:
     'Aliante homes for sale, North Las Vegas homes, 89084 homes for sale, Aliante real estate, gated community Las Vegas, Sun City Aliante',
   alternates: {
-    canonical: '/homes-for-sale',
+    canonical: 'https://www.aliantehomesforsale.com/homes-for-sale',
   },
 };
 

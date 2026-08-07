@@ -117,12 +117,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/neighborhoods/sun-city`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/neighborhoods/tule-springs`,
       lastModified: currentDate,
       changeFrequency: 'weekly',

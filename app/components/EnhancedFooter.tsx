@@ -178,7 +178,7 @@ export default function EnhancedFooter() {
                 </li>
                 <li>
                   <Link
-                    href="/neighborhoods/sun-city"
+                    href="/sun-city-aliante"
                     className="text-gray-300 hover:text-[#16B286] transition-colors"
                   >
                     Sun City Aliante (55+)

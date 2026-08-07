@@ -36,12 +36,6 @@ export async function GET() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/neighborhoods/sun-city`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/neighborhoods/tule-springs`,
       lastModified: currentDate,
       changeFrequency: 'weekly',

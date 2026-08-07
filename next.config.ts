@@ -1,6 +1,6 @@
-import type { NextConfig } from 'next';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { NextConfig } from 'next';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -134,16 +134,36 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Redirects for better SEO
+  // Redirects for better SEO (301/308). next.config.js was deleted so this file is authoritative.
   async redirects() {
     return [
+      // Apex → www (also covered in vercel.json; keep here for non-Vercel / consistency)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'aliantehomesforsale.com' }],
+        destination: 'https://www.aliantehomesforsale.com/:path*',
+        permanent: true,
+      },
       {
         source: '/home',
         destination: '/',
         permanent: true,
       },
+      // Consolidate duplicate Sun City URLs onto the stronger slug
+      {
+        source: '/neighborhoods/sun-city',
+        destination: '/sun-city-aliante',
+        permanent: true,
+      },
+      {
+        source: '/neighborhoods/sun-city/',
+        destination: '/sun-city-aliante',
+        permanent: true,
+      },
     ];
   },
+
+  reactStrictMode: true,
 
   // Advanced Next.js optimizations
   compiler: {

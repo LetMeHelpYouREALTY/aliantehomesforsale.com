@@ -94,7 +94,7 @@ export default function EnhancedPropertyTypes() {
         'Social activities & events',
         'Low-maintenance living',
       ],
-      link: '/neighborhoods/sun-city',
+      link: '/sun-city-aliante',
     },
     {
       icon: '🏗️',
