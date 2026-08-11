@@ -1,0 +1,76 @@
+name: Weekly Content Freshness Update
+
+on:
+  schedule:
+    # Run every Monday at 8 AM UTC
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-timestamps:
+    name: Update Content Timestamps
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config --global user.name 'SEO Automation Bot'
+          git config --global user.email 'seo-bot@aliantehomesforsale.com'
+
+      - name: Check content age
+        id: check_age
+        run: |
+          echo "Checking content freshness..."
+          CURRENT_DATE=$(date -u +%Y-%m-%d)
+          echo "current_date=$CURRENT_DATE" >> $GITHUB_OUTPUT
+
+          # Check last commit date
+          LAST_COMMIT_DATE=$(git log -1 --format=%cd --date=short)
+          echo "last_commit=$LAST_COMMIT_DATE" >> $GITHUB_OUTPUT
+
+          # Calculate days since last update
+          DAYS_OLD=$(( ( $(date -d "$CURRENT_DATE" +%s) - $(date -d "$LAST_COMMIT_DATE" +%s) ) / 86400 ))
+          echo "days_old=$DAYS_OLD" >> $GITHUB_OUTPUT
+
+          echo "Content is $DAYS_OLD days old"
+
+      - name: Update metadata comments
+        run: |
+          echo "Content freshness check completed on $(date -u +%Y-%m-%d)" > .content-freshness
+          echo "Last automated check: $(date -u)" >> .content-freshness
+          echo "Days since last update: ${{ steps.check_age.outputs.days_old }}" >> .content-freshness
+
+      - name: Create PR if needed
+        if: steps.check_age.outputs.days_old > 30
+        run: |
+          echo "⚠️  Content is over 30 days old"
+          echo "Consider updating schemas with fresh dateModified timestamps"
+          echo "83% of AI citations require content updated within 12 months"
+
+      - name: Content freshness report
+        run: |
+          echo "================================================"
+          echo "       Content Freshness Report                 "
+          echo "================================================"
+          echo "Current date: ${{ steps.check_age.outputs.current_date }}"
+          echo "Last update: ${{ steps.check_age.outputs.last_commit }}"
+          echo "Days old: ${{ steps.check_age.outputs.days_old }}"
+          echo ""
+          if [ "${{ steps.check_age.outputs.days_old }}" -lt 30 ]; then
+            echo "✅ Content is fresh (< 30 days)"
+          elif [ "${{ steps.check_age.outputs.days_old }}" -lt 180 ]; then
+            echo "⚠️  Content is aging (30-180 days)"
+          else
+            echo "❌ Content needs update (> 180 days)"
+          fi
+          echo "================================================"
+          echo "For optimal AEO: Update within 6-12 months"
