@@ -9,10 +9,10 @@ export function middleware(request: NextRequest) {
   const canonicalDomain = 'www.aliantehomesforsale.com';
 
   // Check if request is not to canonical domain
+  const isLocalHost = hostname.includes('localhost') || hostname.includes('127.0.0.1');
+
   const needsRedirect =
-    hostname !== canonicalDomain &&
-    !hostname.includes('localhost') &&
-    !hostname.includes('vercel.app');
+    hostname !== canonicalDomain && !isLocalHost && !hostname.includes('vercel.app');
 
   if (needsRedirect) {
     // Force HTTPS and www
@@ -24,7 +24,7 @@ export function middleware(request: NextRequest) {
   }
 
   // Force HTTPS even on correct domain
-  if (url.protocol === 'http:' && !hostname.includes('localhost')) {
+  if (url.protocol === 'http:' && !isLocalHost) {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 301);
   }
