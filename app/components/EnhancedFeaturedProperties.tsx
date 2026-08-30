@@ -1,6 +1,7 @@
 'use client';
 
-import Image from 'next/image';
+import { imagePaths } from '../../lib/site-images';
+import CdnImage from './CdnImage';
 
 interface PropertyCardProps {
   price: string;
@@ -10,27 +11,26 @@ interface PropertyCardProps {
   baths: number;
   sqft: number;
   features: string[];
-  gradient?: string;
+  image: string;
 }
 
-function PropertyCard({ price, address, city, beds, baths, sqft, features }: PropertyCardProps) {
-  // Use Unsplash images based on price range
-  const imageId = price.includes('$349')
-    ? 'photo-1570129477492-45c003edd2be'
-    : price.includes('$595')
-      ? 'photo-1600596542815-ffad4c1539a9'
-      : 'photo-1613490493576-7fde63acd811';
-  const imageUrl = `https://images.unsplash.com/${imageId}?w=600&h=400&fit=crop&q=80`;
-
+function PropertyCard({
+  price,
+  address,
+  city,
+  beds,
+  baths,
+  sqft,
+  features,
+  image,
+}: PropertyCardProps) {
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl group">
-      {/* Property Image: next/image for AVIF/WebP, responsive sizes, no CLS */}
       <div className="relative h-56 overflow-hidden">
-        <Image
-          src={imageUrl}
+        <CdnImage
+          src={image}
           alt={`${address}, ${city} — Aliante homes for sale`}
-          width={600}
-          height={400}
+          fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
           decoding="async"
@@ -118,7 +118,7 @@ export default function EnhancedFeaturedProperties() {
         'Mountain & Golf Course Views',
         'Resort-Style Pool & Spa',
       ],
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: imagePaths.communities.prominence,
     },
     {
       price: '$385,000',
@@ -133,7 +133,7 @@ export default function EnhancedFeaturedProperties() {
         'Community Golf Course Access',
         'Low HOA Fees ($150/month)',
       ],
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      image: imagePaths.communities.sunCity,
     },
     {
       price: '$725,000',
@@ -148,7 +148,7 @@ export default function EnhancedFeaturedProperties() {
         'Oversized 3-Car Garage',
         'Professional Landscaping Included',
       ],
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: imagePaths.heroes.newConstruction,
     },
   ];
 

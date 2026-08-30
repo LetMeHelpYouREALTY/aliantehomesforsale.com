@@ -1,6 +1,7 @@
 'use client';
 
-import Image from 'next/image';
+import { imagePaths } from '../../lib/site-images';
+import CdnImage from './CdnImage';
 
 interface QuickMoveInHomeProps {
   badge: string;
@@ -9,7 +10,7 @@ interface QuickMoveInHomeProps {
   specs: string;
   price: string;
   features: string;
-  gradient: string;
+  image: string;
 }
 
 function QuickMoveInCard({
@@ -19,25 +20,15 @@ function QuickMoveInCard({
   specs,
   price,
   features,
+  image,
 }: QuickMoveInHomeProps) {
-  // Use different Unsplash images for each builder
-  const imageId =
-    builder === 'Lennar'
-      ? 'photo-1600585154340-be6161a56a0c'
-      : builder === 'D.R. Horton'
-        ? 'photo-1600047509807-ba8f99d2cdde'
-        : 'photo-1600573472592-401b489a3cdc';
-  const imageUrl = `https://images.unsplash.com/${imageId}?w=600&h=400&fit=crop&q=80`;
-
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      {/* Property Image: next/image for AVIF/WebP, responsive sizes */}
       <div className="relative h-48 overflow-hidden">
-        <Image
-          src={imageUrl}
+        <CdnImage
+          src={image}
           alt={`${builder} new construction home in ${community}`}
-          width={600}
-          height={400}
+          fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
           decoding="async"
@@ -83,7 +74,7 @@ export default function QuickMoveInHomes() {
       specs: '4 BR | 3 BA | 2,450 sq ft',
       price: '$549,900',
       features: 'Smart home package, gourmet kitchen, 3-car garage',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: imagePaths.communities.desertWillows,
     },
     {
       badge: 'Ready in 45 Days',
@@ -91,8 +82,8 @@ export default function QuickMoveInHomes() {
       community: 'Tule Springs',
       specs: '3 BR | 2.5 BA | 2,180 sq ft',
       price: '$479,000',
-      features: 'Open concept, large backyard, top schools',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      features: 'Open concept, large backyard, nearby parks',
+      image: imagePaths.communities.tuleSprings,
     },
     {
       badge: 'Move-In Ready',
@@ -101,7 +92,7 @@ export default function QuickMoveInHomes() {
       specs: '4 BR | 3.5 BA | 3,100 sq ft',
       price: '$729,000',
       features: 'Premium finishes, mountain views, golf course',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: imagePaths.heroes.luxuryPool,
     },
   ];
 

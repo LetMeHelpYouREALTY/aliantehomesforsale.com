@@ -55,11 +55,15 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com',
+        hostname: 'images.aliantehomesforsale.com',
       },
       {
         protocol: 'https',
-        hostname: 'cdn.pixabay.com',
+        hostname: 'imagedelivery.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
       },
       {
         protocol: 'https',

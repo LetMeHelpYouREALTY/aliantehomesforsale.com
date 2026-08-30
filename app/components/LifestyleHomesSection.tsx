@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { lifestyleCategories } from '../../lib/content/aliante-content';
+import CdnImage from './CdnImage';
 
 /**
  * User-friendly “explore by lifestyle” grid — replaces fabricated MLS property cards.
@@ -31,7 +31,7 @@ export default function LifestyleHomesSection() {
               className="group flex flex-col overflow-hidden rounded-xl border border-gray-100 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[#2c5aa0]/30"
             >
               <div className="relative aspect-[4/3]">
-                <Image
+                <CdnImage
                   src={item.image}
                   alt={item.alt}
                   fill

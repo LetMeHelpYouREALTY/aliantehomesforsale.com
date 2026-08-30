@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import { heroImages } from '../../lib/site-images';
 import AgentPhoto from './AgentPhoto';
+import HeroBackground from './HeroBackground';
 
 export default function NewConstructionHero() {
   const [selectedBuilder, setSelectedBuilder] = useState('all');
@@ -17,22 +19,10 @@ export default function NewConstructionHero() {
 
   return (
     <section
-      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      }}
+      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16 overflow-hidden bg-[#0A2540]"
       aria-labelledby="nc-hero-heading"
     >
-      {/* Background pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackground src={heroImages.newConstruction.src} alt={heroImages.newConstruction.alt} />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         {/* Main Heading */}

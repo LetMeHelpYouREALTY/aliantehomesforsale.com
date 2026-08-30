@@ -1,5 +1,8 @@
 'use client';
 
+import { imagePaths } from '../../lib/site-images';
+import CdnImage from './CdnImage';
+
 interface NeighborhoodCardProps {
   icon: string;
   name: string;
@@ -9,7 +12,7 @@ interface NeighborhoodCardProps {
   stats: { label: string; value: string }[];
   href: string;
   featured?: boolean;
-  gradient: string;
+  image: string;
 }
 
 function NeighborhoodCard({
@@ -21,7 +24,7 @@ function NeighborhoodCard({
   stats,
   href,
   featured,
-  gradient,
+  image,
 }: NeighborhoodCardProps) {
   return (
     <article
@@ -30,12 +33,19 @@ function NeighborhoodCard({
       }`}
       style={featured ? { borderColor: '#2c5aa0' } : { borderColor: '#e5e7eb' }}
     >
-      {/* Image Header */}
-      <div
-        className="h-48 flex items-center justify-center relative"
-        style={{ background: gradient }}
-      >
-        <div className="text-7xl">{icon}</div>
+      <div className="relative h-48 overflow-hidden">
+        <CdnImage
+          src={image}
+          alt={`${name} homes in Aliante, North Las Vegas`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+        <div className="absolute bottom-3 left-3 text-5xl drop-shadow" aria-hidden>
+          {icon}
+        </div>
         {featured && (
           <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg">
             ⭐ Featured
@@ -109,7 +119,7 @@ export default function NeighborhoodCards() {
       ],
       href: '/neighborhoods/prominence',
       featured: true,
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: imagePaths.communities.prominence,
     },
     {
       icon: '🌵',
@@ -129,7 +139,7 @@ export default function NeighborhoodCards() {
         { label: 'Schools', value: '8/10 Rated' },
       ],
       href: '/neighborhoods/desert-willows',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      image: imagePaths.communities.desertWillows,
     },
     {
       icon: '🏌️',
@@ -149,7 +159,7 @@ export default function NeighborhoodCards() {
         { label: 'Schools', value: '9/10 Rated' },
       ],
       href: '/neighborhoods/club-aliante',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: imagePaths.communities.clubAliante,
     },
     {
       icon: '🏘️',
@@ -169,7 +179,7 @@ export default function NeighborhoodCards() {
         { label: 'Schools', value: '7/10 Rated' },
       ],
       href: '/neighborhoods/paseos',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+      image: imagePaths.communities.paseos,
     },
     {
       icon: '🌅',
@@ -184,7 +194,7 @@ export default function NeighborhoodCards() {
         { label: 'Age Requirement', value: '55+ Community' },
       ],
       href: '/neighborhoods/sun-city',
-      gradient: 'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
+      image: imagePaths.communities.sunCity,
     },
     {
       icon: '🌲',
@@ -204,7 +214,7 @@ export default function NeighborhoodCards() {
         { label: 'Schools', value: 'Brand New' },
       ],
       href: '/neighborhoods/tule-springs',
-      gradient: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
+      image: imagePaths.communities.tuleSprings,
     },
   ];
 
@@ -216,8 +226,8 @@ export default function NeighborhoodCards() {
             Find Your Perfect Aliante Community
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Aliante offers diverse neighborhoods catering to different lifestyles, from luxury gated
-            communities to family-friendly areas with excellent schools and amenities.
+            Aliante offers diverse neighborhoods with gated communities, golf-course homes, 55+ Del
+            Webb living, and new construction near Tule Springs.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ body {
 
 .hero {
   min-height: 60vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #0a2540;
 }
 
 /* ===== GLOBAL STYLES ===== */
@@ -153,7 +153,7 @@ html {
   align-items: center;
   justify-content: center;
   min-height: 60vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #0a2540;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -451,7 +451,7 @@ h3 {
 
 /* Page Hero Sections */
 .page-hero {
-  background: linear-gradient(135deg, #0a2540 0%, #3a8dde 100%);
+  background-color: #0a2540;
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -1297,7 +1297,7 @@ h3 {
 
 /* Neighborhoods Page Layout */
 .neighborhoods-page .page-hero {
-  background: linear-gradient(135deg, #0a2540 0%, #3a8dde 100%);
+  background-color: #0a2540;
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -1676,7 +1676,7 @@ h3 {
 
 /* Neighborhood Detail Page Layout */
 .neighborhood-detail-page .page-hero {
-  background: linear-gradient(135deg, #0a2540 0%, #3a8dde 100%);
+  background-color: #0a2540;
   color: white;
   padding: 5rem 0;
   text-align: center;
@@ -2429,7 +2429,7 @@ h3 {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #2c5aa0 0%, #97d8c4 100%);
+  background-color: #0a2540;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
