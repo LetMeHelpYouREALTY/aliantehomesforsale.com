@@ -1,21 +1,24 @@
-import type { Metadata } from 'next';
+import { builderCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import BuilderComparison from '../../components/BuilderComparison';
+import BuilderDetailContent from '../../components/BuilderDetailContent';
 import BuilderIncentivesInfo from '../../components/BuilderIncentivesInfo';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 import TopBuilders from '../../components/TopBuilders';
 
-export const metadata: Metadata = {
-  title: 'Builder Incentives Tracker - Up to $25K Savings',
-  description:
-    'Current builder incentives in Aliante. Up to $25K in closing costs, upgrades, and rate buydowns.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/incentives' },
-};
+const copy = uniquePageCopy(builderCopy, 'incentives');
+
+export const metadata = pageMetadata('/builders/incentives', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function Incentives() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <BuilderDetailContent slug="incentives" />
       <BuilderComparison />
       <TopBuilders />
       <BuilderIncentivesInfo />

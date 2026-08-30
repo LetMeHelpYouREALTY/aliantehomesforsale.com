@@ -21,24 +21,24 @@ function StatCard({ number, label, icon }: StatCardProps) {
 export default function AboutStats() {
   const stats: StatCardProps[] = [
     {
-      number: '500+',
-      label: 'Successful Transactions',
-      icon: '🏠',
-    },
-    {
-      number: '6+ Years',
-      label: 'Local Market Experience',
+      number: '2018',
+      label: 'Serving Aliante since',
       icon: '📅',
     },
     {
-      number: '4.9/5',
-      label: 'Client Satisfaction Rating',
-      icon: '⭐',
+      number: 'NV',
+      label: 'License S.0197614.LLC',
+      icon: '🪪',
     },
     {
-      number: '127',
-      label: 'Verified Reviews',
-      icon: '💬',
+      number: 'BHHS',
+      label: 'Nevada Properties brokerage',
+      icon: '🏠',
+    },
+    {
+      number: '89084',
+      label: 'Aliante ZIP focus',
+      icon: '📍',
     },
   ];
 
@@ -50,10 +50,9 @@ export default function AboutStats() {
             Who We Are
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Dr. Jan Duffy and Aliante Las Vegas have been serving the North Las Vegas community
-            since 2018, specializing exclusively in Aliante and surrounding areas. With over 500
-            successful transactions, we've built our reputation on local expertise, integrity, and
-            results.
+            Dr. Jan Duffy has served Aliante and North Las Vegas since 2018 with Berkshire Hathaway
+            HomeServices Nevada Properties (license S.0197614.LLC). Work is focused on 89084
+            villages, builder contracts, and live MLS—not valley-wide averages.
           </p>
         </div>
 

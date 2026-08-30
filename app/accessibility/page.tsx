@@ -1,18 +1,16 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Accessibility Statement - Aliante Homes For Sale',
-  description:
-    'Accessibility commitment for AlianteHomesForSale.com. WCAG compliance and accessibility features.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/accessibility' },
-};
+export const metadata = pageMetadata('/accessibility');
 
 export default function Accessibility() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Accessibility statement"
+        subtitle="How we work toward WCAG 2.1 AA on this site."
+      />
       <LegalContent title="Website Accessibility Commitment">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

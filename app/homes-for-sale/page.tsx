@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import AlianteFAQ from '../components/AlianteFAQ';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
@@ -6,43 +5,27 @@ import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import HomesSearchTips from '../components/HomesSearchTips';
 import PropertyCategories from '../components/PropertyCategories';
 import RealScoutSearchSection from '../components/RealScoutSearchSection';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 
-export const metadata: Metadata = {
-  title: 'Aliante Homes For Sale | North Las Vegas NV 89084 MLS Listings',
+export const metadata = pageMetadata('/homes-for-sale', {
+  title: 'Aliante homes for sale | North Las Vegas 89084 MLS',
   description:
-    'Browse Aliante homes for sale in North Las Vegas, NV 89084. MLS listings updated about every 15 minutes. Gated communities, Sun City 55+, golf course homes, new construction. Call (702) 707-7273.',
-  keywords:
-    'Aliante homes for sale, North Las Vegas homes, 89084 homes for sale, Aliante real estate, gated community Las Vegas, Sun City Aliante',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/homes-for-sale',
-  },
-};
+    'Browse live MLS listings in Aliante, North Las Vegas 89084. Gated communities, Sun City 55+, golf-course homes, and new construction. Updates about every 15 minutes.',
+});
 
 export default function HomesForSale() {
   return (
-    <>
-      <main className="homes-for-sale-page">
-        {/* Hero Section */}
-        <HomesForSaleHero />
-
-        {/* RealScout search: right below hero (primary lead-gen) */}
-        <RealScoutSearchSection />
-
-        {/* Property Categories */}
-        <PropertyCategories />
-
-        {/* Market Snapshot */}
-        <HomesMarketSnapshot />
-
-        {/* Search Tips */}
-        <HomesSearchTips />
-
-        {/* FAQ Section */}
-        <AlianteFAQ />
-
-        {/* CTA Section */}
-        <HomesCTA />
-      </main>
-    </>
+    <main className="homes-for-sale-page">
+      <HomesForSaleHero
+        title="Aliante homes for sale in North Las Vegas 89084"
+        subtitle="Live MLS via RealScout. Listings refresh about every 15 minutes. Call (702) 707-7273 for a showing."
+      />
+      <RealScoutSearchSection />
+      <PropertyCategories />
+      <HomesMarketSnapshot />
+      <HomesSearchTips />
+      <AlianteFAQ />
+      <HomesCTA />
+    </main>
   );
 }

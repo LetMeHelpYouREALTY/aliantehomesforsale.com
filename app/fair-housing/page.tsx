@@ -1,17 +1,16 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Fair Housing Statement - Aliante Homes For Sale',
-  description: 'Fair housing commitment. Equal opportunity housing provider.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/fair-housing' },
-};
+export const metadata = pageMetadata('/fair-housing');
 
 export default function FairHousing() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Fair Housing statement"
+        subtitle="Equal professional service. We do not use protected-class proxies in marketing."
+      />
       <LegalContent title="Fair Housing and Equal Opportunity Statement">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

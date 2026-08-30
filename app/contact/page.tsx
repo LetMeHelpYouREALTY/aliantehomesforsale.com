@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContactFAQ from '../components/ContactFAQ';
 import ContactHero from '../components/ContactHero';
 import ContactMethods from '../components/ContactMethods';
@@ -7,20 +7,20 @@ import EnhancedContactForm from '../components/EnhancedContactForm';
 import NearbyLocatorMap from '../components/NearbyLocatorMap';
 import OfficeLocation from '../components/OfficeLocation';
 
-export const metadata: Metadata = {
-  title: 'Contact, Directions & Nearby | Aliante Real Estate — Dr. Jan Duffy',
+export const metadata = pageMetadata('/contact', {
+  title: 'Contact Dr. Jan Duffy in Aliante',
   description:
-    'Visit Dr. Jan Duffy at 2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Get directions, explore what’s nearby on Google Maps, or call (702) 707-7273.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/contact',
-  },
-};
+    'Visit 2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Get directions, see what’s nearby, or call (702) 707-7273.',
+});
 
 export default function Contact() {
   return (
     <main className="contact-page">
       {/* Hero Section */}
-      <ContactHero />
+      <ContactHero
+        title="Contact Dr. Jan Duffy in Aliante"
+        subtitle="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Call (702) 707-7273."
+      />
 
       {/* Contact Methods Grid */}
       <ContactMethods />

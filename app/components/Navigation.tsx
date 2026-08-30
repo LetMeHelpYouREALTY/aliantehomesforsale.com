@@ -9,8 +9,8 @@ export default function Navigation() {
     <nav className="main-navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <a href="/" className="brand-link">
-            <h1>Aliante Las Vegas</h1>
+            <a href="/" className="brand-link">
+            <span className="text-xl font-bold">Aliante Las Vegas</span>
             <span className="brand-subtitle">
               Homes by Dr. Jan Duffy | Your Trusted Local Expert Since 2018
             </span>

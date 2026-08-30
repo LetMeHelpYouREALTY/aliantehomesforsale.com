@@ -181,7 +181,7 @@ export default function EnhancedFeaturedProperties() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1e3f73')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#2c5aa0')}
           >
-            View All 286+ Listings →
+            View all Aliante MLS listings →
           </a>
         </div>
       </div>

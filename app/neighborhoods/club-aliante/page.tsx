@@ -1,24 +1,27 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import GolfHomesContent from '../../components/GolfHomesContent';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
-export const metadata: Metadata = {
-  title: 'Club Aliante Golf Course Homes - Premier Golf Living',
-  description:
-    'Club Aliante golf course homes. Championship golf, clubhouse amenities, stunning views. $500K-$900K.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/club-aliante' },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'club-aliante');
+
+export const metadata = pageMetadata('/neighborhoods/club-aliante', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function ClubAliante() {
   return (
     <main>
-      <NeighborhoodsHero />
-      <CommunityAmenities />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodDetailContent slug="club-aliante" />
       <GolfHomesContent />
+      <CommunityAmenities />
       <EnhancedFeaturedProperties />
       <NeighborhoodCards />
       <NeighborhoodsCTA />

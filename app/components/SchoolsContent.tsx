@@ -13,38 +13,33 @@ export default function SchoolsContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              School quality ranks among the top priorities for families considering a move to
-              Aliante, and with good reason – the area is served by some of North Las Vegas's
-              highest-rated schools. The master-planned nature of Aliante included careful
-              consideration of educational facilities from the community's inception, resulting in
-              modern school buildings, well-maintained campuses, and strong parental involvement
-              that contribute to exceptional learning environments. Schools within Aliante
-              boundaries consistently score above district and state averages on standardized
-              testing and offer robust programs in academics, arts, athletics, and technology. View{' '}
+              Aliante addresses are served by Clark County School District campuses, including
+              Leavitt Elementary, Kit Carson Elementary, Homer Elementary, Brinley Middle School,
+              Centennial High School, and Legacy High School depending on the parcel. Buildings,
+              programs, and attendance lines change—confirm the current zone with CCSD for any
+              address you are considering. View{' '}
               <Link
                 href="/neighborhoods"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Aliante neighborhoods
               </Link>{' '}
-              to see school ratings for each area, or browse{' '}
+              for village-level context, or browse{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 homes for sale
               </Link>{' '}
-              in top school districts.
+              on live MLS.
             </p>
 
             <p className="leading-relaxed">
-              As a local real estate specialist who has helped dozens of families navigate school
-              boundary decisions, I maintain current information on school ratings, program
-              offerings, principal leadership, and parent satisfaction for all schools serving
-              Aliante neighborhoods. Understanding school options is crucial for family buyers, as
-              attendance boundaries can shift with new school openings and district redistricting.
-              I'll provide detailed school information for any property you're considering and help
-              you identify homes within boundaries for your preferred schools.
+              As a local agent, Dr. Jan Duffy helps buyers pull current attendance information for a
+              specific parcel rather than relying only on listing remarks. Boundaries can shift when
+              new campuses open or when the district redistricts. Ask for the CCSD lookup on any
+              property you tour, then confirm hours, programs, and transportation with the school
+              directly.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -143,23 +138,18 @@ export default function SchoolsContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              School quality directly impacts property values, with homes in highly-rated school
-              attendance zones commanding 5-15% premiums over similar properties in lower-rated
-              zones. When reviewing homes in Aliante, understanding exact school boundaries and how
-              they might change over time is essential for protecting your investment. New schools
-              opening in the area sometimes trigger boundary changes that can affect which schools
-              your children attend, making it important to verify current boundaries with the school
-              district rather than relying solely on real estate listing information.
+              Attendance zones can affect resale comps because buyers often filter by named
+              campuses. When reviewing homes in Aliante, confirm exact school boundaries and whether
+              they are scheduled to change. New schools opening nearby sometimes trigger
+              redistricting. Verify current lines with Clark County School District rather than
+              relying solely on listing remarks.
             </p>
 
             <p className="leading-relaxed">
-              As your buyer's agent, I'll research exact school boundaries for any property you're
-              considering and can connect you with school administrators for tours and questions
-              about programs and culture. Many of my clients make school quality their top priority,
-              and I'm experienced at identifying homes within desired school zones that meet your
-              other criteria for location, size, and budget. The combination of quality schools,
-              safe neighborhoods, and strong community amenities makes Aliante one of the most
-              family-friendly areas in the entire Las Vegas valley.
+              As your buyer’s agent, Dr. Jan Duffy can research the attendance zone for any address
+              you tour and point you to district contacts for hours, programs, and enrollment. This
+              page names campuses commonly associated with Aliante-area parcels; it does not rank
+              districts or use school marketing as a housing pitch.
             </p>
           </div>
         </div>

@@ -13,41 +13,38 @@ export default function MarketReportContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              The Aliante real estate market operates within the larger North Las Vegas market
-              ecosystem, but maintains its own unique characteristics driven by the master-planned
-              community design, quality schools, golf course amenities, and strategic location near
-              the I-215 Beltway. Our market data is updated every 15 minutes directly from the Las
-              Vegas MLS system, ensuring you have access to the most current information when making
-              buying or selling decisions.
+              The Aliante market sits inside North Las Vegas and is shaped by the master-planned
+              street grid, Club Aliante golf, I-215 access, and a mix of resale and nearby new
+              construction. Market widgets on this site pull from Las Vegas MLS via RealScout and
+              refresh about every 15 minutes. Use those live cards—not a static count—when you
+              compare inventory.
             </p>
 
             <p className="leading-relaxed">
-              With over 286 active listings currently available, Aliante offers buyers exceptional
-              choice across all price points and property types. From affordable starter homes in{' '}
+              Active inventory in Aliante moves across price bands and property types. Starter and
+              move-up plans in{' '}
               <Link
                 href="/neighborhoods/paseos"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 The Paseos
               </Link>{' '}
-              beginning around $300,000 to luxury estates in{' '}
+              sit next to larger lots in{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 The Prominence
-              </Link>{' '}
-              exceeding $1.2 million, the diverse inventory ensures that families at every stage of
-              life can find their ideal home. Browse all{' '}
+              </Link>
+              . Browse{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Aliante homes for sale
               </Link>{' '}
-              to see current listings. The median price of $450,000 reflects a balanced market where
-              buyers have negotiating power while sellers can still achieve strong returns on their
-              investments.
+              for current list prices, square footage, and days on market. Village-level comps
+              matter more than a valley-wide average.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -55,13 +52,11 @@ export default function MarketReportContent() {
             </h3>
 
             <p className="leading-relaxed">
-              The average days on market of just 3 days indicates a competitive market where
-              well-priced, quality homes are selling quickly. This rapid absorption rate is driven
-              by multiple factors: the limited supply of new construction lots in Aliante proper,
-              strong buyer demand from California equity migrants seeking Nevada's tax advantages,
-              and the area's continued recognition as one of the valley's premier family-friendly
-              communities. Homes that are priced correctly and show well are often receiving
-              multiple offers within the first weekend of listing.
+              Days on market vary by village, condition, and price. Well-priced homes with complete
+              photos can move faster than over-improved or poorly presented listings. California
+              relocation demand and limited remaining lots inside Aliante proper still show up in
+              offer activity, but that is not a reason to skip inspections or skip a CMA. Homes that
+              are priced to recent 89084 solds typically draw more showings in the first weekend.
             </p>
 
             <p className="leading-relaxed">

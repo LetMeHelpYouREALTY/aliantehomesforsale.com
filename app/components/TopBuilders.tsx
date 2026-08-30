@@ -130,15 +130,15 @@ export default function TopBuilders() {
       name: 'LENNAR',
       badge: '#1 Volume Builder',
       stats: [
-        { value: '2,143', label: 'Homes Sold in Area' },
-        { value: '45+', label: 'Available Now' },
+        { value: 'Lennar', label: 'Aliante-area builder' },
+        { value: 'MLS', label: 'Live inventory' },
         { value: '$350K-$750K', label: 'Price Range' },
       ],
       title: "Lennar - Everything's Included®",
       description:
         "America's #1 homebuilder includes smart home technology, Wi-Fi certified, and premium upgrades standard in every home.",
       communities: [
-        'Aliante Springs - Family homes $450K-$650K',
+        'Aliante Springs - 3–5 bedroom plans $450K-$650K',
         'Desert Willows - 3-5 BR homes $380K-$580K',
         'The Prominence - Luxury estates $600K-$750K',
       ],
@@ -148,7 +148,7 @@ export default function TopBuilders() {
         'Rate buydown options available',
         'Smart home package included FREE',
       ],
-      primaryCTA: { text: 'View 45+ Lennar Homes', href: '/builders/lennar' },
+      primaryCTA: { text: 'View Lennar homes', href: '/builders/lennar' },
       secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
       featured: true,
     },
@@ -167,7 +167,7 @@ export default function TopBuilders() {
         'Master-planned directly adjacent to Aliante',
         'Median price: $639,900 - Homes selling in 8 days!',
         'Quick access to Aliante Resort & 215 Beltway',
-        '32+ homes available in multiple collections',
+        'Quick-move-in specs when released—confirm on the builder page',
       ],
       incentives: [
         'Award-winning D.R. Horton #1 specialist',
@@ -184,7 +184,7 @@ export default function TopBuilders() {
       badge: '5-Star Premium',
       stats: [
         { value: 'Premium', label: 'Quality Rating' },
-        { value: '18+', label: 'Available Now' },
+        { value: 'MLS', label: 'Live inventory' },
         { value: '$450K-$850K', label: 'Price Range' },
       ],
       title: 'Tri Pointe Homes - Luxury & Design',
@@ -200,7 +200,7 @@ export default function TopBuilders() {
         'Gourmet kitchen package included',
         'Smart home integration',
       ],
-      primaryCTA: { text: 'View 18+ Tri Pointe Homes', href: '/builders/tri-pointe' },
+      primaryCTA: { text: 'View Tri Pointe homes', href: '/builders/tri-pointe' },
       secondaryCTA: { text: 'Book Showing', href: '/contact' },
     },
     {
@@ -208,7 +208,7 @@ export default function TopBuilders() {
       badge: 'Active Adult 55+',
       stats: [
         { value: '55+', label: 'Age Qualified' },
-        { value: '25+', label: 'Available Now' },
+        { value: 'MLS', label: 'Live inventory' },
         { value: '$380K-$650K', label: 'Price Range' },
       ],
       title: 'Del Webb - Active Adult Living',
@@ -224,7 +224,7 @@ export default function TopBuilders() {
         'Quick move-in homes ready now',
         'Resort amenities included',
       ],
-      primaryCTA: { text: 'View 25+ Del Webb Homes', href: '/builders/del-webb' },
+      primaryCTA: { text: 'View Del Webb homes', href: '/builders/del-webb' },
       secondaryCTA: { text: 'Sun City Details', href: '/neighborhoods/sun-city' },
     },
     {

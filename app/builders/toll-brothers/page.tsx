@@ -1,24 +1,25 @@
-import type { Metadata } from 'next';
+import { builderCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 import TopBuilders from '../../components/TopBuilders';
 import WhyNewConstruction from '../../components/WhyNewConstruction';
 
-export const metadata: Metadata = {
-  title: 'Toll Brothers Luxury Homes - Ultra-Luxury New Construction',
-  description:
-    'Toll Brothers luxury homes near Aliante. Fortune 500 builder. $575K-$1.6M. Premium materials and design.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/toll-brothers' },
-};
+const copy = uniquePageCopy(builderCopy, 'toll-brothers');
+
+export const metadata = pageMetadata('/builders/toll-brothers', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function TollBrothers() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <BuilderDetailContent slug="toll-brothers" />
       <TopBuilders />
       <WhyNewConstruction />
-      <BuilderDetailContent />
       <NewConstructionCTA />
     </main>
   );

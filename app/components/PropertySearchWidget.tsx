@@ -84,7 +84,7 @@ export default function PropertySearchWidget({ variant = 'hero' }: SearchWidgetP
           <h2 className="text-2xl md:text-3xl font-bold" style={{ color: '#1a365d' }}>
             Search Aliante Homes
           </h2>
-          <p className="text-gray-600 mt-2">286+ MLS listings updated every 15 minutes</p>
+          <p className="text-gray-600 mt-2">Live MLS listings updated about every 15 minutes</p>
         </div>
 
         {/* Search Fields */}
@@ -199,7 +199,7 @@ export default function PropertySearchWidget({ variant = 'hero' }: SearchWidgetP
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
           >
-            🔍 Search 286+ Homes
+            Search live MLS homes
           </button>
 
           <a

@@ -20,7 +20,15 @@ const SLIDES = [
 
 const INTERVAL_MS = 6000;
 
-export default function EnhancedHero() {
+type EnhancedHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function EnhancedHero({
+  title = 'Dr. Jan Duffy | Aliante North Las Vegas Real Estate',
+  subtitle = 'Discover new listings right when they hit the market. RealScout powers your search—updated every 15 minutes.',
+}: EnhancedHeroProps) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -84,11 +92,10 @@ export default function EnhancedHero() {
           id="hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
         >
-          Dr. Jan Duffy | Aliante North Las Vegas Real Estate
+          {title}
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Discover new listings right when they hit the market. RealScout powers your search—updated
-          every 15 minutes.
+          {subtitle}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">

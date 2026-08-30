@@ -492,7 +492,7 @@ export default function RealScoutWidget({
             </div>
             <p style={{ marginTop: '15px', fontSize: '14px' }}>
               <a href="/homes-for-sale" style={{ color: '#3A8DDE', textDecoration: 'underline' }}>
-                View all 286+ available properties →
+                View all Aliante MLS listings →
               </a>
             </p>
           </div>

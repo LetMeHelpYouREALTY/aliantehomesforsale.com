@@ -119,9 +119,7 @@ export default function PropertySearch() {
           aria-describedby={searchHelpId}
           disabled={isSearching}
         >
-          <span className="search-text">
-            {isSearching ? 'Searching...' : 'Search 286+ Properties'}
-          </span>
+          <span className="search-text">{isSearching ? 'Searching...' : 'Search live MLS'}</span>
           {isSearching && <span className="loading" aria-hidden="true"></span>}
         </button>
         <small id={searchHelpId} className="sr-only">

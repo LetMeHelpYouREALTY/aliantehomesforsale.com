@@ -1,23 +1,24 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodComparison from '../../components/NeighborhoodComparison';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
-export const metadata: Metadata = {
-  title: 'Compare Aliante Neighborhoods - Side by Side Analysis',
-  description:
-    'Compare all Aliante neighborhoods side by side. Prices, amenities, schools, and features.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/compare' },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'compare');
+
+export const metadata = pageMetadata('/neighborhoods/compare', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function Compare() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
       <NeighborhoodComparison />
-      <NeighborhoodDetailContent />
+      <NeighborhoodDetailContent slug="compare" />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

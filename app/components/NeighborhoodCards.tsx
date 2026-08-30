@@ -104,8 +104,8 @@ export default function NeighborhoodCards() {
       features: ['🏌️ Golf Course Access', '🔒 24/7 Security', '🏊‍♂️ Resort Pool', '🎾 Tennis Courts'],
       stats: [
         { label: 'Price Range', value: '$600K - $1.2M+' },
-        { label: 'Home Types', value: 'Single Family, Luxury' },
-        { label: 'Schools', value: '9/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, luxury' },
+        { label: 'Access', value: 'Gated' },
       ],
       href: '/neighborhoods/prominence',
       featured: true,
@@ -114,19 +114,19 @@ export default function NeighborhoodCards() {
     {
       icon: '🌵',
       name: 'Desert Willows',
-      tag: 'Family Community',
+      tag: 'Parks and pools',
       description:
-        'Family-oriented neighborhood with spacious lots, excellent schools, and easy access to shopping, dining, and outdoor recreation areas.',
+        'One- and two-story plans, pocket parks, and community recreation in Aliante 89084. Confirm HOA rules and live MLS inventory before you offer.',
       features: [
-        '👨‍👩‍👧‍👦 Family Friendly',
-        '🏫 Top Schools',
-        '🛒 Shopping Nearby',
-        '🌳 Parks & Trails',
+        '🏞️ Pocket parks',
+        '🏊 Community pools',
+        '🛒 Shopping nearby',
+        '🌳 Parks and trails',
       ],
       stats: [
         { label: 'Price Range', value: '$400K - $700K' },
-        { label: 'Home Types', value: 'Single Family, Townhomes' },
-        { label: 'Schools', value: '8/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, townhomes' },
+        { label: 'ZIP', value: '89084' },
       ],
       href: '/neighborhoods/desert-willows',
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
@@ -145,8 +145,8 @@ export default function NeighborhoodCards() {
       ],
       stats: [
         { label: 'Price Range', value: '$500K - $900K' },
-        { label: 'Home Types', value: 'Single Family, Golf Homes' },
-        { label: 'Schools', value: '9/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, golf-course lots' },
+        { label: 'Golf', value: 'Club Aliante' },
       ],
       href: '/neighborhoods/club-aliante',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
@@ -156,17 +156,17 @@ export default function NeighborhoodCards() {
       name: 'The Paseos',
       tag: 'Affordable Living',
       description:
-        'Value-focused community offering quality homes at accessible prices, perfect for first-time buyers and growing families.',
+        'Gated Aliante village with a range of home sizes and shared recreation. Confirm HOA dues and CC&Rs; browse live MLS for current list prices.',
       features: [
-        '💰 Affordable Prices',
-        '🚶‍♂️ Walkable Design',
-        '🅿️ Ample Parking',
-        '🌿 Green Spaces',
+        '💰 Range of plan sizes',
+        '🚶‍♂️ Walkable streets',
+        '🅿️ Guest parking',
+        '🌿 Common-area parks',
       ],
       stats: [
         { label: 'Price Range', value: '$300K - $500K' },
-        { label: 'Home Types', value: 'Single Family, Townhomes' },
-        { label: 'Schools', value: '7/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, townhomes' },
+        { label: 'Access', value: 'Gated' },
       ],
       href: '/neighborhoods/paseos',
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
@@ -183,7 +183,7 @@ export default function NeighborhoodCards() {
         { label: 'Home Types', value: 'Single Family, Villas' },
         { label: 'Age Requirement', value: '55+ Community' },
       ],
-      href: '/neighborhoods/sun-city',
+      href: '/sun-city-aliante',
       gradient: 'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
     },
     {
@@ -193,15 +193,15 @@ export default function NeighborhoodCards() {
       description:
         'Newest master-planned community adjacent to Aliante with parks, trails, and modern homes from top builders.',
       features: [
-        '🏗️ New Construction',
-        '🌳 Parks & Trails',
-        '🏫 New Schools',
-        '🎯 Modern Amenities',
+        '🏗️ New construction',
+        '🌳 Parks and trails',
+        '🏫 Named CCSD campuses',
+        '🎯 Modern amenities',
       ],
       stats: [
         { label: 'Price Range', value: '$450K - $750K' },
-        { label: 'Home Types', value: 'New Construction' },
-        { label: 'Schools', value: 'Brand New' },
+        { label: 'Home Types', value: 'New construction' },
+        { label: 'Area', value: 'Tule Springs' },
       ],
       href: '/neighborhoods/tule-springs',
       gradient: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
@@ -216,8 +216,8 @@ export default function NeighborhoodCards() {
             Find Your Perfect Aliante Community
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Aliante offers diverse neighborhoods catering to different lifestyles, from luxury gated
-            communities to family-friendly areas with excellent schools and amenities.
+            Aliante villages differ by gate access, golf proximity, 55+ occupancy rules, and typical
+            plan size. Open a neighborhood page, then confirm inventory on live MLS.
           </p>
         </div>
 

@@ -1,18 +1,16 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy - Aliante Homes For Sale',
-  description:
-    'Privacy policy for AlianteHomesForSale.com. How we collect, use, and protect your information.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/privacy-policy' },
-};
+export const metadata = pageMetadata('/privacy-policy');
 
 export default function PrivacyPolicy() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Privacy policy"
+        subtitle="How AlianteHomesForSale.com collects and uses information."
+      />
       <LegalContent title="Our Commitment to Your Privacy">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

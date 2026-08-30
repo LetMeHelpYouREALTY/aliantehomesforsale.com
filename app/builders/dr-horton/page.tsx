@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { builderCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import ConstructionProcess from '../../components/ConstructionProcess';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
@@ -6,20 +7,20 @@ import NewConstructionHero from '../../components/NewConstructionHero';
 import QuickMoveInHomes from '../../components/QuickMoveInHomes';
 import TopBuilders from '../../components/TopBuilders';
 
-export const metadata: Metadata = {
-  title: 'D.R. Horton Homes Tule Springs - Dr. Duffy #1 Premiere Agent',
-  description:
-    'D.R. Horton new construction in Tule Springs. Dr. Duffy is #1 Premiere Agent. Average $18K+ savings.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/dr-horton' },
-};
+const copy = uniquePageCopy(builderCopy, 'dr-horton');
+
+export const metadata = pageMetadata('/builders/dr-horton', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function DrHorton() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <BuilderDetailContent slug="dr-horton" />
       <TopBuilders />
       <ConstructionProcess />
-      <BuilderDetailContent />
       <QuickMoveInHomes />
       <NewConstructionCTA />
     </main>

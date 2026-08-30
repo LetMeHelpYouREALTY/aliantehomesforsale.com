@@ -32,8 +32,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: siteConfig.defaultTitle,
   description: siteConfig.defaultDescription,
-  keywords:
-    'Aliante North Las Vegas homes for sale, Aliante real estate, North Las Vegas homes, 89084 homes for sale, Aliante gated community, Sun City Aliante, Club Aliante, new construction Aliante, Aliante MLS listings, houses for rent Aliante',
   authors: [{ name: siteConfig.siteName }],
   creator: siteConfig.siteName,
   publisher: siteConfig.siteName,

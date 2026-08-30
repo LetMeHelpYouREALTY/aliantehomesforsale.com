@@ -1,6 +1,8 @@
-import type { Metadata } from 'next';
+import { builderCopy, uniquePageCopy } from '../../lib/content/unique-pages';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import BuilderAdvantages from '../components/BuilderAdvantages';
 import BuilderComparison from '../components/BuilderComparison';
+import BuilderDetailContent from '../components/BuilderDetailContent';
 import BuilderIncentivesInfo from '../components/BuilderIncentivesInfo';
 import BuildersIntro from '../components/BuildersIntro';
 import ContextualLinks from '../components/ContextualLinks';
@@ -8,19 +10,18 @@ import NewConstructionCTA from '../components/NewConstructionCTA';
 import NewConstructionHero from '../components/NewConstructionHero';
 import TopBuilders from '../components/TopBuilders';
 
-export const metadata: Metadata = {
-  title: 'New Construction Builders in Aliante - Compare All Builders',
-  description:
-    'Compare all new construction builders in Aliante: Lennar, D.R. Horton, Tri Pointe, Del Webb. Incentives, floor plans, and expert guidance.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/builders',
-  },
-};
+const copy = uniquePageCopy(builderCopy, 'hub');
+
+export const metadata = pageMetadata('/builders', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function Builders() {
   return (
     <main className="builders-page">
-      <NewConstructionHero />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <BuilderDetailContent slug="hub" />
       <BuildersIntro />
       <TopBuilders />
       <div className="px-4">

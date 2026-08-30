@@ -8,4 +8,4 @@ export function getPageDefinition(pathname: string): PageDefinition | undefined 
 }
 
 export { buildPageGraph, pageCatalog, pageCatalogByPath };
-export type { PageDefinition } from './types';
+export type { PageDefinition, PageKind } from './types';

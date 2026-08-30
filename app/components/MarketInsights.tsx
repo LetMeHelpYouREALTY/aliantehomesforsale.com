@@ -16,61 +16,61 @@ export default function MarketInsights() {
     <section className="market-insights" id={marketSectionId} aria-labelledby={marketHeadingId}>
       <div className="container">
         <h2 id={marketHeadingId} style={{ textAlign: 'center', marginBottom: '1rem' }}>
-          Aliante Real Estate Market Report - August 2025
+          Aliante real estate market snapshot
         </h2>
         <p
           style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.1rem', opacity: '0.9' }}
         >
-          Current market conditions and trends in North Las Vegas
+          Use live MLS search for current prices and inventory in North Las Vegas 89084
         </p>
 
         <div className="insights-grid">
           <div className="insight">
-            <h3>286</h3>
+            <h3>MLS</h3>
             <p>
-              Active Listings
+              Live listings
               <br />
-              <small>↑ 15% increase vs. July 2025</small>
+              <small>Updated about every 15 minutes</small>
             </p>
           </div>
           <div className="insight">
-            <h3>$434,900</h3>
+            <h3>CMA</h3>
             <p>
-              Median Sale Price
+              Village-level comps
               <br />
-              <small>↑ 3.2% increase year-over-year</small>
+              <small>Not a valley-wide average</small>
             </p>
           </div>
           <div className="insight">
-            <h3>32 Days</h3>
+            <h3>89084</h3>
             <p>
-              Average Days on Market
+              Aliante ZIP focus
               <br />
-              <small>8% faster than Nevada average</small>
+              <small>North Las Vegas hyperlocal</small>
             </p>
           </div>
           <div className="insight">
-            <h3>94.2%</h3>
+            <h3>HOA</h3>
             <p>
-              Sale-to-List Price Ratio
+              Confirm dues in CC&amp;Rs
               <br />
-              <small>Strong seller's market conditions</small>
+              <small>Varies by village and sub-association</small>
             </p>
           </div>
           <div className="insight">
-            <h3>2,143</h3>
+            <h3>Builders</h3>
             <p>
-              Lennar Homes Sold YTD
+              Lennar, Horton, and more
               <br />
-              <small>#1 builder in North Las Vegas</small>
+              <small>Register your agent before models</small>
             </p>
           </div>
           <div className="insight">
-            <h3>4.7%</h3>
+            <h3>PITI</h3>
             <p>
-              Current Mortgage Rates
+              Estimate principal &amp; interest
               <br />
-              <small>30-year conventional average</small>
+              <small>Not a rate lock or lender quote</small>
             </p>
           </div>
         </div>
@@ -98,8 +98,8 @@ export default function MarketInsights() {
             <div>
               <h4 style={{ color: '#97d8c4' }}>🏗️ Villages at Tule Springs</h4>
               <p>
-                Major D.R. Horton master-planned community with Heartland neighborhoods. 500+ new
-                homes planned through 2026.
+                Major D.R. Horton corridor at Tule Springs / Heartland. Phases open and
+                close—confirm current specs on the builder page.
               </p>
             </div>
             <div>

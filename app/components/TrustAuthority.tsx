@@ -51,15 +51,15 @@ export default function TrustAuthority() {
           <div className="credential">
             <h3>📈 Proven Track Record</h3>
             <p>
-              500+ successful transactions including new construction, resales, investments, and
-              luxury properties. Our clients consistently receive top dollar for their homes and
-              secure the best deals as buyers.
+              Dr. Jan Duffy has represented Aliante buyers and sellers since 2018, including new
+              construction, resales, and 55+ occupancy homes in Sun City Aliante. Pricing and offer
+              strategy come from 89084 comps, not invented volume stats.
             </p>
             <ul style={{ marginTop: '1rem', listStyle: 'none' }}>
-              <li>✓ 4.9/5.0 average client satisfaction rating</li>
-              <li>✓ 94% of our business comes from referrals</li>
-              <li>✓ Average 6 days faster sales than market average</li>
-              <li>✓ 98% of listings sell within 60 days</li>
+              <li>✓ Licensed Nevada broker-salesperson S.0197614.LLC</li>
+              <li>✓ Berkshire Hathaway HomeServices Nevada Properties</li>
+              <li>✓ Aliante / North Las Vegas 89084 focus since 2018</li>
+              <li>✓ Independent buyer advocacy on builder contracts</li>
             </ul>
           </div>
 
