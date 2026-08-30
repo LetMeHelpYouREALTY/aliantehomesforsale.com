@@ -27,7 +27,7 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
             Club Aliante Golf →
           </Link>
           <Link
-            href="/neighborhoods/sun-city"
+            href="/sun-city-aliante"
             className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
           >
             Sun City 55+ →

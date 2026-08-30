@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutCommitment from '../components/AboutCommitment';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
@@ -7,20 +8,21 @@ import AboutHero from '../components/AboutHero';
 import AboutStats from '../components/AboutStats';
 import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 
-export const metadata: Metadata = {
-  title: 'About Aliante Real Estate - Local Experts Since 2018',
+export const metadata = pageMetadata('/about', {
+  title: 'Dr. Jan Duffy, Aliante real estate since 2018',
   description:
-    'Meet the local real estate experts serving Aliante and North Las Vegas since 2018. 500+ successful transactions, deep builder relationships, and unmatched market knowledge.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/about',
-  },
-};
+    'Nevada license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Aliante and North Las Vegas 89084 specialist.',
+});
 
 export default function About() {
   return (
     <main className="about-page">
       {/* Hero Section */}
-      <AboutHero />
+      <AboutHero
+        title="Dr. Jan Duffy, Aliante real estate since 2018"
+        subtitle="Nevada license S.0197614.LLC · Berkshire Hathaway HomeServices Nevada Properties · 89084 specialist."
+        image={pageHero('/about')}
+      />
 
       {/* Stats Section */}
       <AboutStats />

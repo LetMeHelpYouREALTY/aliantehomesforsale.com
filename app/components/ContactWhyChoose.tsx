@@ -37,8 +37,9 @@ export default function ContactWhyChoose() {
     },
     {
       icon: '⭐',
-      title: 'Proven Track Record',
-      description: '500+ successful transactions with verified client testimonials',
+      title: 'Licensed local advocate',
+      description:
+        'Nevada license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Aliante since 2018.',
     },
   ];
 

@@ -48,8 +48,8 @@ export default function AboutWhyChooseUs() {
       icon: '💙',
     },
     {
-      title: 'Proven Results',
-      description: '500+ satisfied clients and growing',
+      title: 'Licensed local advocate',
+      description: 'Nevada license S.0197614.LLC. Aliante and 89084 since 2018.',
       icon: '✨',
     },
   ];

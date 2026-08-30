@@ -106,12 +106,18 @@ export const siteConfig = {
   /** Content-graph hub pages for AEO/GEO internal linking */
   hubPages: [
     { name: 'Homes for Sale', path: '/homes-for-sale' },
+    { name: 'Search MLS', path: '/search' },
     { name: 'Neighborhoods', path: '/neighborhoods' },
     { name: 'New Construction', path: '/new-construction' },
+    { name: 'Builders', path: '/builders' },
     { name: 'Sun City Aliante', path: '/sun-city-aliante' },
+    { name: 'Gated Communities', path: '/gated-communities' },
+    { name: 'Golf Homes', path: '/golf-homes' },
     { name: 'Market Report', path: '/market-report' },
     { name: 'Home Valuation', path: '/home-valuation' },
     { name: 'Buyer Guide', path: '/buyer-guide' },
+    { name: 'Seller Checklist', path: '/seller-checklist' },
+    { name: 'Schools', path: '/schools' },
     { name: 'About', path: '/about' },
     { name: 'Contact & Directions', path: '/contact' },
   ],

@@ -1,7 +1,10 @@
 'use client';
 
+import Image from 'next/image';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+
 interface NeighborhoodCardProps {
-  icon: string;
+  image: SiteImage;
   name: string;
   tag: string;
   description: string;
@@ -9,11 +12,10 @@ interface NeighborhoodCardProps {
   stats: { label: string; value: string }[];
   href: string;
   featured?: boolean;
-  gradient: string;
 }
 
 function NeighborhoodCard({
-  icon,
+  image,
   name,
   tag,
   description,
@@ -21,7 +23,6 @@ function NeighborhoodCard({
   stats,
   href,
   featured,
-  gradient,
 }: NeighborhoodCardProps) {
   return (
     <article
@@ -30,20 +31,22 @@ function NeighborhoodCard({
       }`}
       style={featured ? { borderColor: '#2c5aa0' } : { borderColor: '#e5e7eb' }}
     >
-      {/* Image Header */}
-      <div
-        className="h-48 flex items-center justify-center relative"
-        style={{ background: gradient }}
-      >
-        <div className="text-7xl">{icon}</div>
+      <div className="relative h-48">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover"
+          loading="lazy"
+        />
         {featured && (
           <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-            ⭐ Featured
+            Featured
           </div>
         )}
       </div>
 
-      {/* Content */}
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-2" style={{ color: '#1a365d' }}>
           {name}
@@ -54,11 +57,10 @@ function NeighborhoodCard({
 
         <p className="text-gray-700 mb-6 leading-relaxed">{description}</p>
 
-        {/* Features */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <span
-              key={index}
+              key={feature}
               className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium"
             >
               {feature}
@@ -66,10 +68,9 @@ function NeighborhoodCard({
           ))}
         </div>
 
-        {/* Stats */}
         <div className="space-y-2 mb-6 pb-6 border-b-2 border-gray-100">
-          {stats.map((stat, index) => (
-            <div key={index} className="flex justify-between text-sm">
+          {stats.map((stat) => (
+            <div key={stat.label} className="flex justify-between text-sm">
               <span className="font-bold" style={{ color: '#2c5aa0' }}>
                 {stat.label}:
               </span>
@@ -78,7 +79,6 @@ function NeighborhoodCard({
           ))}
         </div>
 
-        {/* CTA */}
         <a
           href={href}
           className="block w-full text-center py-3 px-6 rounded-lg font-semibold text-white transition-all transform hover:scale-105 focus:ring-4 focus:ring-orange-300 focus:outline-none"
@@ -96,115 +96,89 @@ function NeighborhoodCard({
 export default function NeighborhoodCards() {
   const neighborhoods: NeighborhoodCardProps[] = [
     {
-      icon: '🏰',
+      image: siteImages.prominence,
       name: 'The Prominence',
       tag: 'Luxury Gated Community',
       description:
         'Upscale gated community featuring luxury homes with premium amenities, golf course views, and exclusive access to Club Aliante facilities.',
-      features: ['🏌️ Golf Course Access', '🔒 24/7 Security', '🏊‍♂️ Resort Pool', '🎾 Tennis Courts'],
+      features: ['Golf course access', 'Gated entry', 'Community pool', 'Tennis courts'],
       stats: [
         { label: 'Price Range', value: '$600K - $1.2M+' },
-        { label: 'Home Types', value: 'Single Family, Luxury' },
-        { label: 'Schools', value: '9/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, luxury' },
+        { label: 'Access', value: 'Gated' },
       ],
       href: '/neighborhoods/prominence',
       featured: true,
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     },
     {
-      icon: '🌵',
+      image: siteImages.desertWillows,
       name: 'Desert Willows',
-      tag: 'Family Community',
+      tag: 'Parks and pools',
       description:
-        'Family-oriented neighborhood with spacious lots, excellent schools, and easy access to shopping, dining, and outdoor recreation areas.',
-      features: [
-        '👨‍👩‍👧‍👦 Family Friendly',
-        '🏫 Top Schools',
-        '🛒 Shopping Nearby',
-        '🌳 Parks & Trails',
-      ],
+        'One- and two-story plans, pocket parks, and community recreation in Aliante 89084. Confirm HOA rules and live MLS inventory before you offer.',
+      features: ['Pocket parks', 'Community pools', 'Shopping nearby', 'Parks and trails'],
       stats: [
         { label: 'Price Range', value: '$400K - $700K' },
-        { label: 'Home Types', value: 'Single Family, Townhomes' },
-        { label: 'Schools', value: '8/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, townhomes' },
+        { label: 'ZIP', value: '89084' },
       ],
       href: '/neighborhoods/desert-willows',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
     },
     {
-      icon: '🏌️',
+      image: siteImages.clubAliante,
       name: 'Club Aliante',
       tag: 'Golf Course Living',
       description:
         'Premier golf course community offering stunning views, clubhouse amenities, and access to the championship Aliante Golf Club.',
-      features: [
-        '⛳ Golf Course Views',
-        '🏆 Clubhouse Access',
-        '🍽️ Fine Dining',
-        '🏋️‍♂️ Fitness Center',
-      ],
+      features: ['Golf course views', 'Clubhouse access', 'Dining nearby', 'Fitness center'],
       stats: [
         { label: 'Price Range', value: '$500K - $900K' },
-        { label: 'Home Types', value: 'Single Family, Golf Homes' },
-        { label: 'Schools', value: '9/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, golf-course lots' },
+        { label: 'Golf', value: 'Club Aliante' },
       ],
       href: '/neighborhoods/club-aliante',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     },
     {
-      icon: '🏘️',
+      image: siteImages.paseos,
       name: 'The Paseos',
-      tag: 'Affordable Living',
+      tag: 'Gated village',
       description:
-        'Value-focused community offering quality homes at accessible prices, perfect for first-time buyers and growing families.',
-      features: [
-        '💰 Affordable Prices',
-        '🚶‍♂️ Walkable Design',
-        '🅿️ Ample Parking',
-        '🌿 Green Spaces',
-      ],
+        'Gated Aliante village with a range of home sizes and shared recreation. Confirm HOA dues and CC&Rs; browse live MLS for current list prices.',
+      features: ['Range of plan sizes', 'Walkable streets', 'Guest parking', 'Common-area parks'],
       stats: [
         { label: 'Price Range', value: '$300K - $500K' },
-        { label: 'Home Types', value: 'Single Family, Townhomes' },
-        { label: 'Schools', value: '7/10 Rated' },
+        { label: 'Home Types', value: 'Single-family, townhomes' },
+        { label: 'Access', value: 'Gated' },
       ],
       href: '/neighborhoods/paseos',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
     },
     {
-      icon: '🌅',
+      image: siteImages.sunCity,
       name: 'Sun City Aliante',
       tag: 'Active Adult 55+',
       description:
         'Premier 55+ community with world-class amenities, social activities, and maintenance-free living designed for active adults.',
-      features: ['🏌️ Golf Courses', '🎭 Social Clubs', '💪 Fitness Classes', '🎨 Art Studios'],
+      features: ['Golf courses', 'Social clubs', 'Fitness classes', 'Art studios'],
       stats: [
         { label: 'Price Range', value: '$380K - $650K' },
         { label: 'Home Types', value: 'Single Family, Villas' },
         { label: 'Age Requirement', value: '55+ Community' },
       ],
-      href: '/neighborhoods/sun-city',
-      gradient: 'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
+      href: '/sun-city-aliante',
     },
     {
-      icon: '🌲',
+      image: siteImages.tuleSprings,
       name: 'Villages at Tule Springs',
       tag: 'Master-Planned',
       description:
         'Newest master-planned community adjacent to Aliante with parks, trails, and modern homes from top builders.',
-      features: [
-        '🏗️ New Construction',
-        '🌳 Parks & Trails',
-        '🏫 New Schools',
-        '🎯 Modern Amenities',
-      ],
+      features: ['New construction', 'Parks and trails', 'Named CCSD campuses', 'Modern amenities'],
       stats: [
         { label: 'Price Range', value: '$450K - $750K' },
-        { label: 'Home Types', value: 'New Construction' },
-        { label: 'Schools', value: 'Brand New' },
+        { label: 'Home Types', value: 'New construction' },
+        { label: 'Area', value: 'Tule Springs' },
       ],
       href: '/neighborhoods/tule-springs',
-      gradient: 'linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)',
     },
   ];
 
@@ -216,14 +190,14 @@ export default function NeighborhoodCards() {
             Find Your Perfect Aliante Community
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Aliante offers diverse neighborhoods catering to different lifestyles, from luxury gated
-            communities to family-friendly areas with excellent schools and amenities.
+            Aliante villages differ by gate access, golf proximity, 55+ occupancy rules, and typical
+            plan size. Open a neighborhood page, then confirm inventory on live MLS.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {neighborhoods.map((neighborhood, index) => (
-            <NeighborhoodCard key={index} {...neighborhood} />
+          {neighborhoods.map((neighborhood) => (
+            <NeighborhoodCard key={neighborhood.href} {...neighborhood} />
           ))}
         </div>
       </div>

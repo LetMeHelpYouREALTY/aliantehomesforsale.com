@@ -32,7 +32,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★★ #1 Volume</td>
                 <td className="px-6 py-4 text-gray-700">$350K-$750K</td>
-                <td className="px-6 py-4 text-gray-700">45+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Smart homes, value</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   Up to $25K
@@ -44,7 +44,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★★ #2 Volume</td>
                 <td className="px-6 py-4 text-gray-700">$380K-$680K</td>
-                <td className="px-6 py-4 text-gray-700">32+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Affordability, variety</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   Up to $20K
@@ -56,7 +56,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★★ Luxury</td>
                 <td className="px-6 py-4 text-gray-700">$450K-$850K</td>
-                <td className="px-6 py-4 text-gray-700">18+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Premium finishes</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   Up to $18K
@@ -68,7 +68,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★★ 55+ Leader</td>
                 <td className="px-6 py-4 text-gray-700">$380K-$650K</td>
-                <td className="px-6 py-4 text-gray-700">25+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Active adult lifestyle</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   Up to $12K
@@ -80,7 +80,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★★ Ultra-Luxury</td>
                 <td className="px-6 py-4 text-gray-700">$575K-$1.6M</td>
-                <td className="px-6 py-4 text-gray-700">28+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Fortune 500 luxury</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   2/1 Rate Buydown
@@ -92,7 +92,7 @@ export default function BuilderComparison() {
                 </td>
                 <td className="px-6 py-4 text-gray-700">★★★★☆ Quality</td>
                 <td className="px-6 py-4 text-gray-700">$420K-$680K</td>
-                <td className="px-6 py-4 text-gray-700">12+ homes</td>
+                <td className="px-6 py-4 text-gray-700">See live inventory</td>
                 <td className="px-6 py-4 text-gray-700">Customization options</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
                   Up to $15K

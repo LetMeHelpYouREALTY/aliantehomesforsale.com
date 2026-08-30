@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { siteConfig } from '../../lib/site-config';
 
 export async function GET() {
-  const baseUrl = 'https://www.aliantehomesforsale.com';
+  const baseUrl = siteConfig.siteUrl;
   const currentDate = new Date().toISOString();
 
   const neighborhoodPages: MetadataRoute.Sitemap = [

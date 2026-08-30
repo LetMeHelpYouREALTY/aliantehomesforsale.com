@@ -70,9 +70,7 @@ Would you like to schedule a showing or request more information?`;
 
   const showAllProperties = () => {
     // Would normally navigate to full listings page
-    alert(
-      'This would navigate to the full property listings page with all 286+ available properties.'
-    );
+    alert('This would navigate to the full property listings page with live MLS inventory.');
   };
 
   return (
@@ -408,7 +406,7 @@ Would you like to schedule a showing or request more information?`;
             onClick={showAllProperties}
             style={{ marginRight: '1rem', display: 'inline-block' }}
           >
-            Browse All 286+ Available Properties
+            Browse live Aliante MLS listings
           </button>
           <a href="#search" className="nav-cta" style={{ background: '#6c757d' }}>
             Advanced Search & Filters

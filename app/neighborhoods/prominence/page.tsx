@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
@@ -6,20 +7,20 @@ import NeighborhoodDetailContent from '../../components/NeighborhoodDetailConten
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
-export const metadata: Metadata = {
-  title: 'The Prominence Aliante - Luxury Gated Community',
-  description:
-    'The Prominence luxury gated community in Aliante. Golf course views, premium amenities. $600K-$1.2M+.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/prominence' },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'prominence');
+
+export const metadata = pageMetadata('/neighborhoods/prominence', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function Prominence() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <EnhancedFeaturedProperties />
+      <NeighborhoodDetailContent slug="prominence" />
       <CommunityAmenities />
-      <NeighborhoodDetailContent />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

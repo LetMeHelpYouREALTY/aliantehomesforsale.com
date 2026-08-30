@@ -1,23 +1,25 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
 import HomesCTA from '../components/HomesCTA';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 
-export const metadata: Metadata = {
-  title: 'Gated Communities in Aliante - 24/7 Security & Luxury',
+export const metadata = pageMetadata('/gated-communities', {
+  title: 'Gated communities in Aliante, North Las Vegas',
   description:
-    'Explore gated communities in Aliante with 24/7 security, resort amenities. The Prominence, Club Aliante, and more premium communities.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/gated-communities',
-  },
-};
+    'The Prominence, Club Aliante pockets, and other controlled-access streets in 89084. Confirm HOA and gate rules before you offer.',
+});
 
 export default function GatedCommunities() {
   return (
     <main>
-      <EnhancedHero />
+      <EnhancedHero
+        title="Gated communities in Aliante, North Las Vegas"
+        subtitle="The Prominence, Club Aliante pockets, and other controlled-access streets. Confirm HOA and gate rules before you offer."
+        image={pageHero('/gated-communities')}
+      />
       <GatedCommunitiesContent />
       <NeighborhoodCards />
       <EnhancedFeaturedProperties />

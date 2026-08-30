@@ -1,24 +1,25 @@
-import type { Metadata } from 'next';
+import { builderCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 import TopBuilders from '../../components/TopBuilders';
 import WhyNewConstruction from '../../components/WhyNewConstruction';
 
-export const metadata: Metadata = {
-  title: 'Tri Pointe Homes Aliante - Luxury New Construction',
-  description:
-    'Tri Pointe luxury homes in Aliante. Premium finishes, superior craftsmanship. 18+ homes available.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/tri-pointe' },
-};
+const copy = uniquePageCopy(builderCopy, 'tri-pointe');
+
+export const metadata = pageMetadata('/builders/tri-pointe', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function TriPointe() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
+      <BuilderDetailContent slug="tri-pointe" />
       <TopBuilders />
       <WhyNewConstruction />
-      <BuilderDetailContent />
       <NewConstructionCTA />
     </main>
   );

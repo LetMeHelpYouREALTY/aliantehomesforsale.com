@@ -1,4 +1,6 @@
 import { buyerPathSteps } from '../content/aliante-content';
+import { absoluteImageUrl, pageOgImage } from '../content/site-images';
+import { pageCatalog } from '../schema/page-catalog';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
 
@@ -24,6 +26,38 @@ export function buildContentGraph() {
     },
   };
 
+  const extraWebPages = pageCatalog
+    .filter(
+      (page) => page.path !== '/' && !siteConfig.hubPages.some((hub) => hub.path === page.path)
+    )
+    .map((page) => ({
+      '@type': page.pageTypes[0],
+      '@id': graphIds.hubPage(page.path),
+      name: page.name,
+      url: `${siteConfig.siteUrl}${page.path}`,
+      description: page.description,
+      isPartOf: { '@id': graphIds.website },
+      about: { '@id': graphIds.aliantePlace },
+      primaryImageOfPage: absoluteImageUrl(pageOgImage(page.path)),
+      inLanguage: 'en-US',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2', '.speakable'],
+      },
+    }));
+
+  const homePage = {
+    '@type': 'WebPage',
+    '@id': graphIds.hubPage('/'),
+    name: siteConfig.defaultTitle,
+    url: siteConfig.siteUrl,
+    description: siteConfig.defaultDescription,
+    isPartOf: { '@id': graphIds.website },
+    about: { '@id': graphIds.aliantePlace },
+    primaryImageOfPage: absoluteImageUrl(pageOgImage('/')),
+    inLanguage: 'en-US',
+  };
+
   const hubPages = siteConfig.hubPages.map((hub) => ({
     '@type': 'WebPage',
     '@id': graphIds.hubPage(hub.path),
@@ -31,7 +65,7 @@ export function buildContentGraph() {
     url: `${siteConfig.siteUrl}${hub.path}`,
     isPartOf: { '@id': graphIds.website },
     about: { '@id': graphIds.aliantePlace },
-    primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+    primaryImageOfPage: absoluteImageUrl(pageOgImage(hub.path)),
     inLanguage: 'en-US',
   }));
 
@@ -106,7 +140,9 @@ export function buildContentGraph() {
     url: siteConfig.siteUrl,
     hasPart: [
       { '@id': graphIds.website },
+      { '@id': graphIds.hubPage('/') },
       ...siteConfig.hubPages.map((hub) => ({ '@id': graphIds.hubPage(hub.path) })),
+      ...extraWebPages.map((page) => ({ '@id': page['@id'] })),
       { '@id': `${siteConfig.siteUrl}/neighborhoods#itemlist` },
       { '@id': `${siteConfig.siteUrl}/#services-itemlist` },
       { '@id': `${siteConfig.siteUrl}/builders#itemlist` },
@@ -116,7 +152,9 @@ export function buildContentGraph() {
 
   return [
     website,
+    homePage,
     ...hubPages,
+    ...extraWebPages,
     neighborhoodList,
     servicesList,
     buildersList,

@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
@@ -6,19 +7,20 @@ import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import MarketReportContent from '../components/MarketReportContent';
 import PropertyCategories from '../components/PropertyCategories';
 
-export const metadata: Metadata = {
-  title: 'Aliante Market Report - Real-Time MLS Data & Trends',
+export const metadata = pageMetadata('/market-report', {
+  title: 'Aliante market report | live MLS snapshot',
   description:
-    'Live Aliante market data updated every 15 minutes. Median prices, inventory levels, days on market, and market trends.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/market-report',
-  },
-};
+    'Aliante, North Las Vegas 89084 market context from MLS-connected widgets. Inventory and days on market refresh about every 15 minutes.',
+});
 
 export default function MarketReport() {
   return (
     <main>
-      <HomesForSaleHero />
+      <HomesForSaleHero
+        title="Aliante market report for 89084"
+        subtitle="Widget figures are live from MLS. Narrative copy is a guide, not a CMA."
+        image={pageHero('/market-report')}
+      />
       <HomesMarketSnapshot />
       <MarketReportContent />
       <div className="px-4">

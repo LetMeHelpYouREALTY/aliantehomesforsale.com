@@ -1,17 +1,18 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Terms of Service - Aliante Homes For Sale',
-  description: 'Terms of service for AlianteHomesForSale.com.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/terms-of-service' },
-};
+export const metadata = pageMetadata('/terms-of-service');
 
 export default function TermsOfService() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Terms of service"
+        subtitle="Rules for using AlianteHomesForSale.com."
+        image={pageHero('/terms-of-service')}
+      />
       <LegalContent title="Terms of Service Agreement">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

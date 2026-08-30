@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
 import AboutHero from '../components/AboutHero';
@@ -6,19 +7,20 @@ import ConstructionProcess from '../components/ConstructionProcess';
 import ContextualLinks from '../components/ContextualLinks';
 import SellerChecklistContent from '../components/SellerChecklistContent';
 
-export const metadata: Metadata = {
-  title: 'Home Selling Checklist Aliante - Maximize Your Sale Price',
+export const metadata = pageMetadata('/seller-checklist', {
+  title: 'Aliante home selling checklist',
   description:
-    'Complete checklist for selling your Aliante home. Expert guidance to maximize sale price and minimize time on market.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/seller-checklist',
-  },
-};
+    'CMA, repairs, MLS photos, and negotiation for Aliante 89084 sellers with Dr. Jan Duffy.',
+});
 
 export default function SellerChecklist() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Aliante home selling checklist"
+        subtitle="CMA, repairs, MLS photos, and negotiation for 89084 sellers."
+        image={pageHero('/seller-checklist')}
+      />
       <SellerChecklistContent />
       <div className="px-4">
         <ContextualLinks variant="selling" />

@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
@@ -6,20 +7,20 @@ import NeighborhoodDetailContent from '../../components/NeighborhoodDetailConten
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
-export const metadata: Metadata = {
-  title: 'Desert Willows Aliante - Family Community',
-  description:
-    'Desert Willows family neighborhood in Aliante. Top schools, parks, family amenities. $400K-$700K.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows' },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'desert-willows');
+
+export const metadata = pageMetadata('/neighborhoods/desert-willows', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function DesertWillows() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <EnhancedFeaturedProperties />
+      <NeighborhoodDetailContent slug="desert-willows" />
       <CommunityAmenities />
-      <NeighborhoodDetailContent />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

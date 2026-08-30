@@ -1,23 +1,22 @@
-import type { Metadata } from 'next';
-import BuilderDetailContent from '../../components/BuilderDetailContent';
+import { neighborhoodCopy, uniquePageCopy } from '../../../lib/content/unique-pages';
+import { pageMetadata } from '../../../lib/seo/page-metadata';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
-import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
+import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
-export const metadata: Metadata = {
-  title: 'Villages at Tule Springs - New Master-Planned Community',
-  description:
-    'Villages at Tule Springs master-planned community. New construction, parks, trails. $450K-$750K.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs' },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'tule-springs');
+
+export const metadata = pageMetadata('/neighborhoods/tule-springs', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function TuleSprings() {
   return (
     <main>
-      <NewConstructionHero />
-      <TopBuilders />
-      <BuilderDetailContent />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
+      <NeighborhoodDetailContent slug="tule-springs" />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

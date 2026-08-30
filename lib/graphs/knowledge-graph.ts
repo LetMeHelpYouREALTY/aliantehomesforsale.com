@@ -178,6 +178,30 @@ export function buildKnowledgeGraph() {
     },
   }));
 
+  const definedTerms = {
+    '@type': 'DefinedTermSet',
+    '@id': `${siteConfig.siteUrl}/#defined-terms`,
+    name: 'Aliante real estate entities',
+    hasDefinedTerm: [
+      ...siteConfig.neighborhoods.map((neighborhood) => ({
+        '@type': 'DefinedTerm',
+        '@id': `${siteConfig.siteUrl}/#term-${neighborhood.slug}`,
+        name: neighborhood.name,
+        description: neighborhood.summary,
+        url: `${siteConfig.siteUrl}${'path' in neighborhood && typeof neighborhood.path === 'string' ? neighborhood.path : `/neighborhoods/${neighborhood.slug}`}`,
+        inDefinedTermSet: `${siteConfig.siteUrl}/#defined-terms`,
+      })),
+      ...siteConfig.services.map((service) => ({
+        '@type': 'DefinedTerm',
+        '@id': `${siteConfig.siteUrl}/#term-${service.slug}`,
+        name: service.name,
+        description: service.description,
+        url: `${siteConfig.siteUrl}${service.url}`,
+        inDefinedTermSet: `${siteConfig.siteUrl}/#defined-terms`,
+      })),
+    ],
+  };
+
   const nearbyItemList = {
     '@type': 'ItemList',
     '@id': `${siteConfig.siteUrl}/contact#nearby-itemlist`,
@@ -200,6 +224,7 @@ export function buildKnowledgeGraph() {
     ...services,
     offerCatalog,
     ...builders,
+    definedTerms,
     ...nearbyAttractions,
     nearbyItemList,
   ];

@@ -23,10 +23,9 @@ export default function GolfHomesContent() {
                 Club Aliante
               </Link>
               , designed by renowned architect Billy Casper, features 7,092 yards of challenging
-              play with stunning elevation changes, strategic bunkers, and lush landscaping that
-              creates a true desert oasis. The 32+ available golf course properties range from cozy
-              villas overlooking signature par-3 holes to expansive estate homes with panoramic
-              views spanning multiple fairways. Browse current{' '}
+              play with elevation changes, bunkers, and desert landscaping. Golf-course lots in
+              Aliante range from villas overlooking shorter holes to larger homes with longer
+              fairway views. Inventory counts change daily—browse current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

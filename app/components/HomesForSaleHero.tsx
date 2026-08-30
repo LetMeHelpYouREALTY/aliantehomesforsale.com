@@ -1,24 +1,19 @@
-'use client';
+import type { SiteImage } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
 
-export default function HomesForSaleHero() {
+type HomesForSaleHeroProps = {
+  title: string;
+  subtitle: string;
+  image: SiteImage;
+};
+
+export default function HomesForSaleHero({ title, subtitle, image }: HomesForSaleHeroProps) {
   return (
     <section
-      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
-      }}
+      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="homes-hero-heading"
     >
-      {/* Background pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full text-center">
         <h1
@@ -26,23 +21,19 @@ export default function HomesForSaleHero() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
-          Aliante Homes For Sale | 286+ Active MLS Listings in North Las Vegas
+          {title}
         </h1>
 
         <p className="text-lg sm:text-xl text-white/95 max-w-3xl mx-auto mb-8 leading-relaxed">
-          Live MLS data updated every 15 minutes • Expert local guidance since 2018
+          {subtitle}
         </p>
 
-        {/* Update Badge */}
         <div className="flex justify-center gap-4 flex-wrap">
-          <div className="bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-lg animate-pulse">
-            ⚡ Live MLS - Updated Every 15 Minutes
+          <div className="bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+            Live MLS · updates about every 15 minutes
           </div>
           <div className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold">
-            📊 286 Active Listings
-          </div>
-          <div className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold">
-            💰 Median: $434,900
+            Aliante · North Las Vegas 89084
           </div>
         </div>
       </div>

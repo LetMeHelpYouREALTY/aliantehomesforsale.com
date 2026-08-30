@@ -1,24 +1,25 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../lib/content/unique-pages';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
 import SunCityContent from '../components/SunCityContent';
 
-export const metadata: Metadata = {
-  title: 'Sun City Aliante 55+ Community - Active Adult Living',
-  description:
-    'Sun City Aliante active adult 55+ community. Resort-style amenities, golf courses, social activities.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/sun-city-aliante',
-  },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'sun-city');
+
+export const metadata = pageMetadata('/sun-city-aliante', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function SunCityAliante() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
+      <NeighborhoodDetailContent slug="sun-city" />
       <SunCityContent />
       <CommunityAmenities />
       <EnhancedFeaturedProperties />

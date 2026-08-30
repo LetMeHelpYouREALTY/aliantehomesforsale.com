@@ -1,47 +1,32 @@
-import type { Metadata } from 'next';
+import { neighborhoodCopy, uniquePageCopy } from '../../lib/content/unique-pages';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import CommunityAmenities from '../components/CommunityAmenities';
 import ContextualLinks from '../components/ContextualLinks';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodComparison from '../components/NeighborhoodComparison';
+import NeighborhoodDetailContent from '../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
-import StructuredData from '../components/StructuredData';
 
-export const metadata: Metadata = {
-  title: 'Aliante Neighborhoods Guide | North Las Vegas Communities',
-  description:
-    'Explore Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos. Find your perfect community with amenities, schools, and lifestyle.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/neighborhoods',
-  },
-};
+const copy = uniquePageCopy(neighborhoodCopy, 'hub');
+
+export const metadata = pageMetadata('/neighborhoods', {
+  title: copy.h1,
+  description: copy.subtitle,
+});
 
 export default function Neighborhoods() {
   return (
-    <>
-      <StructuredData type="NeighborhoodGuide" />
-
-      <main className="neighborhoods-page">
-        {/* Hero Section */}
-        <NeighborhoodsHero />
-
-        {/* Neighborhood Cards */}
-        <NeighborhoodCards />
-
-        {/* Contextual Links */}
-        <div className="px-4">
-          <ContextualLinks variant="neighborhoods" />
-        </div>
-
-        {/* Community Amenities */}
-        <CommunityAmenities />
-
-        {/* Neighborhood Comparison Table */}
-        <NeighborhoodComparison />
-
-        {/* CTA Section */}
-        <NeighborhoodsCTA />
-      </main>
-    </>
+    <main className="neighborhoods-page">
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
+      <NeighborhoodCards />
+      <NeighborhoodDetailContent slug="hub" />
+      <div className="px-4">
+        <ContextualLinks variant="neighborhoods" />
+      </div>
+      <CommunityAmenities />
+      <NeighborhoodComparison />
+      <NeighborhoodsCTA />
+    </main>
   );
 }

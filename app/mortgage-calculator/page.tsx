@@ -1,23 +1,25 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContactHero from '../components/ContactHero';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import MortgageCalculatorContent from '../components/MortgageCalculatorContent';
 
-export const metadata: Metadata = {
-  title: 'Mortgage Calculator Aliante - Estimate Your Payment',
+export const metadata = pageMetadata('/mortgage-calculator', {
+  title: 'Aliante mortgage payment calculator',
   description:
-    'Calculate your mortgage payment for Aliante homes. Current rates, payment estimates, and lender recommendations.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/mortgage-calculator',
-  },
-};
+    'Estimate principal and interest for Aliante homes. Not a rate lock. Add HOA dues on top of PITI.',
+});
 
 export default function MortgageCalculator() {
   return (
     <main>
-      <ContactHero />
+      <ContactHero
+        title="Aliante mortgage payment calculator"
+        subtitle="Estimate principal and interest. Not a rate lock. Add HOA dues on top of PITI."
+        image={pageHero('/mortgage-calculator')}
+      />
       <MortgageCalculatorContent />
       <section className="py-16 px-4 bg-white">
         <div className="container">
