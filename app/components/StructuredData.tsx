@@ -148,7 +148,8 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'Desert Willows',
-                description: 'Aliante neighborhood with parks and a mix of single- and two-story homes',
+                description:
+                  'Aliante neighborhood with parks and a mix of single- and two-story homes',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows',
               },
             },
