@@ -1,4 +1,5 @@
 import { lifestyleCategories } from '../content/aliante-content';
+import { absoluteImageUrl, pageOgImage } from '../content/site-images';
 import { graphIds } from '../graphs/ids';
 import { siteConfig } from '../site-config';
 import {
@@ -223,7 +224,7 @@ function extraNodes(def: PageDefinition, pageUrl: string): JsonLdNode[] {
         url: pageUrl,
         telephone: siteConfig.phoneTel,
         email: siteConfig.email,
-        image: `${siteConfig.siteUrl}/og-image.jpg`,
+        image: absoluteImageUrl(pageOgImage('/contact')),
         address: postalAddress(),
         geo: geoCoordinates(),
         hasMap: siteConfig.maps.placeUrl,
@@ -370,11 +371,11 @@ export function buildPageGraph(def: PageDefinition): JsonLdNode {
     mentions: mentionsRefs(def),
     primaryImageOfPage: {
       '@type': 'ImageObject',
-      url: `${siteConfig.siteUrl}/og-image.jpg`,
-      width: 1200,
-      height: 630,
+      url: absoluteImageUrl(pageOgImage(def.path)),
+      width: def.path === '/' ? 1200 : 1920,
+      height: def.path === '/' ? 630 : 1080,
     },
-    thumbnailUrl: `${siteConfig.siteUrl}/og-image.jpg`,
+    thumbnailUrl: absoluteImageUrl(pageOgImage(def.path)),
     publisher: publisherRef(),
     author: agentRef(),
     copyrightHolder: publisherRef(),

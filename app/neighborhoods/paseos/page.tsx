@@ -16,7 +16,7 @@ export const metadata = pageMetadata('/neighborhoods/paseos', {
 export default function Paseos() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodDetailContent slug="paseos" />
       <EnhancedFeaturedProperties />
       <NeighborhoodCards />

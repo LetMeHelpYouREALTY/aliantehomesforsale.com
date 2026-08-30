@@ -17,7 +17,7 @@ export const metadata = pageMetadata('/builders/incentives', {
 export default function Incentives() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="incentives" />
       <BuilderComparison />
       <TopBuilders />

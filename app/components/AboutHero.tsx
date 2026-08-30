@@ -1,26 +1,19 @@
+import type { SiteImage } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
+
 type AboutHeroProps = {
   title: string;
   subtitle: string;
+  image: SiteImage;
 };
 
-export default function AboutHero({ title, subtitle }: AboutHeroProps) {
+export default function AboutHero({ title, subtitle, image }: AboutHeroProps) {
   return (
     <section
-      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
-      }}
+      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="about-hero-heading"
     >
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
         <h1

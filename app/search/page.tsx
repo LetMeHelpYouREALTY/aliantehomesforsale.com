@@ -1,10 +1,11 @@
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AdvancedSearchForm from '../components/AdvancedSearchForm';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesSearchTips from '../components/HomesSearchTips';
 import PropertyCategories from '../components/PropertyCategories';
 import SearchPageContent from '../components/SearchPageContent';
-import { pageMetadata } from '../../lib/seo/page-metadata';
 
 export const metadata = pageMetadata('/search', {
   title: 'Search Aliante MLS listings',
@@ -18,6 +19,7 @@ export default function Search() {
       <HomesForSaleHero
         title="Search Aliante MLS listings"
         subtitle="Use filters below. Results come from live MLS, not a static inventory count."
+        image={pageHero('/search')}
       />
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto">

@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
@@ -10,6 +11,7 @@ export default function PrivacyPolicy() {
       <AboutHero
         title="Privacy policy"
         subtitle="How AlianteHomesForSale.com collects and uses information."
+        image={pageHero('/privacy-policy')}
       />
       <LegalContent title="Our Commitment to Your Privacy">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

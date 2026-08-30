@@ -1,4 +1,5 @@
 import { buyerPathSteps } from '../content/aliante-content';
+import { absoluteImageUrl, pageOgImage } from '../content/site-images';
 import { pageCatalog } from '../schema/page-catalog';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
@@ -37,7 +38,7 @@ export function buildContentGraph() {
       description: page.description,
       isPartOf: { '@id': graphIds.website },
       about: { '@id': graphIds.aliantePlace },
-      primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+      primaryImageOfPage: absoluteImageUrl(pageOgImage(page.path)),
       inLanguage: 'en-US',
       speakable: {
         '@type': 'SpeakableSpecification',
@@ -53,7 +54,7 @@ export function buildContentGraph() {
     description: siteConfig.defaultDescription,
     isPartOf: { '@id': graphIds.website },
     about: { '@id': graphIds.aliantePlace },
-    primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+    primaryImageOfPage: absoluteImageUrl(pageOgImage('/')),
     inLanguage: 'en-US',
   };
 
@@ -64,7 +65,7 @@ export function buildContentGraph() {
     url: `${siteConfig.siteUrl}${hub.path}`,
     isPartOf: { '@id': graphIds.website },
     about: { '@id': graphIds.aliantePlace },
-    primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+    primaryImageOfPage: absoluteImageUrl(pageOgImage(hub.path)),
     inLanguage: 'en-US',
   }));
 

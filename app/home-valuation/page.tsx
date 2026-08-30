@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
@@ -17,6 +18,7 @@ export default function HomeValuation() {
       <ContactHero
         title="Free Aliante home valuation (CMA)"
         subtitle="Not an appraisal. Request a comparative market analysis for a 89084 address."
+        image={pageHero('/home-valuation')}
       />
       <HomeValuationContent />
       <section className="py-16 px-4 bg-white">

@@ -1,3 +1,5 @@
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import BuilderComparison from '../components/BuilderComparison';
 import ConstructionProcess from '../components/ConstructionProcess';
 import NewConstructionCTA from '../components/NewConstructionCTA';
@@ -7,7 +9,6 @@ import QuickMoveInHomes from '../components/QuickMoveInHomes';
 import TopBuilders from '../components/TopBuilders';
 import WhyNewConstruction from '../components/WhyNewConstruction';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
-import { pageMetadata } from '../../lib/seo/page-metadata';
 
 export const metadata = pageMetadata('/new-construction', {
   title: 'New construction homes in Aliante, North Las Vegas',
@@ -21,6 +22,7 @@ export default function NewConstruction() {
       <NewConstructionHero
         title="New construction homes in Aliante"
         subtitle="Independent buyer representation with Aliante-area builders. Incentives and lot premiums change—ask for this month’s sheet."
+        image={pageHero('/new-construction')}
       />
       <TopBuilders />
       <WhyNewConstruction />

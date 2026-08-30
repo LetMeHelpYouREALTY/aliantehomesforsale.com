@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedHero from '../components/EnhancedHero';
@@ -17,6 +18,7 @@ export default function GolfHomes() {
       <EnhancedHero
         title="Golf-course homes near Club Aliante"
         subtitle="Fairway, lake, and interior lots in 89084. Membership is separate from HOA—ask for the fee sheet."
+        image={pageHero('/golf-homes')}
       />
       <GolfHomesContent />
       <NeighborhoodCards />

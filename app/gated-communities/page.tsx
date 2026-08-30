@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
@@ -17,6 +18,7 @@ export default function GatedCommunities() {
       <EnhancedHero
         title="Gated communities in Aliante, North Las Vegas"
         subtitle="The Prominence, Club Aliante pockets, and other controlled-access streets. Confirm HOA and gate rules before you offer."
+        image={pageHero('/gated-communities')}
       />
       <GatedCommunitiesContent />
       <NeighborhoodCards />

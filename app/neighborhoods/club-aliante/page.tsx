@@ -18,7 +18,7 @@ export const metadata = pageMetadata('/neighborhoods/club-aliante', {
 export default function ClubAliante() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodDetailContent slug="club-aliante" />
       <GolfHomesContent />
       <CommunityAmenities />

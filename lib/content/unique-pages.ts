@@ -1,8 +1,10 @@
+import { type SiteImage, siteImages } from './site-images';
+
 export type UniquePageCopy = {
   h1: string;
   subtitle: string;
   heading: string;
-  image: { src: string; alt: string };
+  image: SiteImage;
   paragraphs: string[];
   links: { href: string; text: string }[];
 };
@@ -25,10 +27,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Guard-gated streets, larger lots, and golf-course views in North Las Vegas. Browse live MLS and tour with Dr. Jan Duffy.',
     heading: 'What to know before you buy in The Prominence',
-    image: {
-      src: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=700&fit=crop&q=80',
-      alt: 'Luxury gated homes in The Prominence, Aliante, North Las Vegas 89084',
-    },
+    image: siteImages.prominence,
     paragraphs: [
       'The Prominence sits inside the Aliante master plan in North Las Vegas ZIP 89084. Streets are gated; lots and elevations typically run larger than adjacent villages. List prices often start in the mid-$600,000s and reach seven figures for expanded plans and view lots. Confirm current HOA dues, gate rules, and rental caps in the CC&Rs before you write an offer.',
       'Golf-course, mountain, and interior lots do not price the same. A CMA from Dr. Jan Duffy uses recent Prominence solds—not valley-wide averages—and notes lot premiums, pool additions, and elevation upgrades. Live MLS cards on this site refresh about every 15 minutes via RealScout.',
@@ -45,10 +44,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Single- and two-story floor plans, parks, and community pools in 89084. Live MLS plus local comps from Dr. Jan Duffy.',
     heading: 'Buying or selling in Desert Willows',
-    image: {
-      src: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&h=700&fit=crop&q=80',
-      alt: 'Single-family homes in Desert Willows, Aliante, North Las Vegas',
-    },
+    image: siteImages.desertWillows,
     paragraphs: [
       'Desert Willows is a residential village in Aliante with a mix of one- and two-story plans, pocket parks, and community recreation typical of the master plan. Inventory swings between resale and occasional new or recently built product. Price bands move with square footage, lot orientation, and upgrades—not a single “neighborhood average.”',
       'Before listing or offering, review HOA architectural rules for landscaping, paint, and additions. Dr. Jan Duffy (Nevada license S.0197614.LLC) prepares 89084 CMAs using Desert Willows solds and competing Aliante villages such as The Paseos.',
@@ -65,10 +61,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Fairway, lake, and interior lots near Aliante Golf Club and the Club Aliante clubhouse.',
     heading: 'Golf-course living versus interior Club Aliante streets',
-    image: {
-      src: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&h=700&fit=crop&q=80',
-      alt: 'Golf course homes at Club Aliante in North Las Vegas 89084',
-    },
+    image: siteImages.clubAliante,
     paragraphs: [
       'Club Aliante clusters around the public Aliante Golf Club and clubhouse. Fairway and water-view lots usually list higher than interior streets. A golf membership is not automatic with a home purchase—ask for the current club fee sheet when you tour.',
       'Some Club Aliante pockets are gated; others are not. Confirm access, HOA, and any sub-association before you underwrite a budget. Live MLS on this page is the inventory source of truth, not a static count.',
@@ -85,10 +78,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Controlled-access living in Aliante 89084 with a range of home sizes. MLS listings update about every 15 minutes.',
     heading: 'HOA, gates, and resale in The Paseos',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=700&fit=crop&q=80',
-      alt: 'Gated community homes in The Paseos, Aliante, North Las Vegas',
-    },
+    image: siteImages.paseos,
     paragraphs: [
       'The Paseos is a gated Aliante village with shared recreation typical of the master plan—pools, parks, and common-area maintenance funded by HOA dues. Home sizes span starter and move-up plans; list prices follow condition and lot more than a marketing slogan.',
       'Gate staffing, rental rules, and architectural standards live in the CC&Rs. Dr. Jan Duffy reviews those documents with you before earnest money goes hard. Compare The Paseos with Desert Willows if you want similar floor-plan variety without the same gate structure.',
@@ -105,10 +95,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Builder phases near Floyd Lamb Park and Tule Springs. Independent buyer representation with Lennar, D.R. Horton, and others.',
     heading: 'New construction in Tule Springs versus resale Aliante',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?w=1200&h=700&fit=crop&q=80',
-      alt: 'New construction homes near Tule Springs and Aliante, North Las Vegas',
-    },
+    image: siteImages.tuleSprings,
     paragraphs: [
       'Villages at Tule Springs is the new-construction corridor north and west of core Aliante, near Floyd Lamb Park. Builders open and close phases; incentives, lot premiums, and completion dates change by community. Register with Dr. Jan Duffy before you walk a model so the builder logs your agent.',
       'To-be-built homes follow the builder’s schedule (often several months). Quick move-in inventory can close faster when a spec is finished. Pre-drywall and pre-closing inspections still matter on new product.',
@@ -125,10 +112,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Age-qualified active-adult community with golf, clubs, and low-maintenance plans. At least one resident must be 55 or older.',
     heading: 'Age occupancy, HOA, and golf at Sun City Aliante',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=700&fit=crop&q=80',
-      alt: 'Sun City Aliante 55+ Del Webb homes in North Las Vegas 89084',
-    },
+    image: siteImages.sunCity,
     paragraphs: [
       'Sun City Aliante is a Del Webb 55+ community. Occupancy rules require at least one resident age 55 or older; younger occupants are limited by the covenant. Read the age-occupancy section before you offer—this is a legal restriction, not a marketing line.',
       'Amenities typically include golf access, fitness, pools, and clubs. Golf membership fees are often separate from HOA. Single-story plans are common; confirm roof, HVAC age, and HOA reserves on resales.',
@@ -145,10 +129,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Gates, golf, 55+ rules, HOA, and housing mix for Prominence, Desert Willows, Club Aliante, The Paseos, Tule Springs, and Sun City.',
     heading: 'How to use this comparison',
-    image: {
-      src: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=700&fit=crop&q=80',
-      alt: 'Aliante North Las Vegas neighborhood map context for home buyers',
-    },
+    image: siteImages.compare,
     paragraphs: [
       'Use the table on this page as a first pass, then tour. Noise, lot grade, and commute to I-215 do not show in a spreadsheet. HOA dues and rental caps belong in the resale package, not in a blog summary.',
       'Dr. Jan Duffy walks buyers through two or three villages in one appointment so you can compare finish levels in person. Call (702) 707-7273 to schedule.',
@@ -164,10 +145,7 @@ export const neighborhoodCopy = {
     subtitle:
       'The Prominence, Desert Willows, Club Aliante, The Paseos, Tule Springs, and Sun City Aliante—with live MLS and local guidance.',
     heading: 'Pick a village, then verify with MLS and a tour',
-    image: {
-      src: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=700&fit=crop&q=80',
-      alt: 'Aerial-style view of residential streets in Aliante, North Las Vegas',
-    },
+    image: siteImages.neighborhoods,
     paragraphs: [
       'Aliante is a master-planned community in North Las Vegas. Villages differ by gate access, golf proximity, 55+ rules, and typical plan size. This hub links to a dedicated page for each so Google and shoppers get one URL per topic—not duplicate copy under many paths.',
       'Listings refresh about every 15 minutes. For a CMA or builder worksheet, call Dr. Jan Duffy at (702) 707-7273.',
@@ -183,10 +161,7 @@ export const neighborhoodCopy = {
     subtitle:
       'Named campuses mentioned for 89084 parcels: Leavitt, Kit Carson, Homer, Brinley, Centennial, and Legacy. Boundaries change—confirm with Clark County School District.',
     heading: 'How to confirm a listing’s attendance zone',
-    image: {
-      src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&h=700&fit=crop&q=80',
-      alt: 'School campus building near Aliante and North Las Vegas',
-    },
+    image: siteImages.schools,
     paragraphs: [
       'Listing remarks are not official boundary maps. Before you offer, check Clark County School District tools for that parcel, or ask Dr. Jan Duffy to help you pull the current zone. New campuses and redistricting can move lines.',
       'This page names schools that commonly serve Aliante-area addresses. It does not rank districts or use school quality as a coded housing pitch. For the property search itself, start with live MLS.',
@@ -205,10 +180,7 @@ export const builderCopy = {
     subtitle:
       'Compare Lennar, D.R. Horton, Tri Pointe, Del Webb, Toll Brothers, and Richmond American with independent buyer representation.',
     heading: 'Register with your agent before you walk a model',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?w=1200&h=700&fit=crop&q=80',
-      alt: 'New construction homes in Aliante, North Las Vegas',
-    },
+    image: siteImages.builders,
     paragraphs: [
       'On-site sales staff represent the builder. In a typical Aliante builder contract, the seller still pays the buyer’s agent. Register Dr. Jan Duffy first so you keep advocacy on incentives, lot premiums, and inspections.',
       'Phases open and close. Use this hub to open a builder page, then call (702) 707-7273 for the current worksheet—not a screenshot of last month’s flyer.',
@@ -224,10 +196,7 @@ export const builderCopy = {
     subtitle:
       'Everything’s Included packages, smart-home features, and independent buyer representation at no extra cost to you in a typical deal.',
     heading: 'Working with Lennar without going in unrepresented',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&h=700&fit=crop&q=80',
-      alt: 'Lennar new construction home exterior in the Aliante North Las Vegas area',
-    },
+    image: siteImages.lennar,
     paragraphs: [
       'Lennar is a high-volume builder in the Las Vegas valley with Everything’s Included marketing on many plans. Included features still vary by community—confirm the structural and design-center sheet for the phase you want. Lot premiums and completion dates are negotiable even when base price is firm.',
       'Dr. Jan Duffy attends design center and walk-throughs as your agent, not Lennar’s. Incentives (closing credits, buydowns) change by month. Call (702) 707-7273 before you register at the model.',
@@ -243,10 +212,7 @@ export const builderCopy = {
     subtitle:
       'Independent buyer advocacy on D.R. Horton contracts, including quick move-in specs when available.',
     heading: 'D.R. Horton process with a buyer’s agent',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&h=700&fit=crop&q=80',
-      alt: 'D.R. Horton new construction in Tule Springs, North Las Vegas',
-    },
+    image: siteImages.drHorton,
     paragraphs: [
       'D.R. Horton builds in the Tule Springs / North Las Vegas corridor serving Aliante shoppers. Spec (quick move-in) homes can close faster than to-be-built. Still schedule inspections; new is not a substitute for a punch list.',
       'Dr. Jan Duffy is a Premiere-level Horton partner in this market and represents you, not the builder. Call (702) 707-7273 to be registered on the Horton worksheet.',
@@ -262,10 +228,7 @@ export const builderCopy = {
     subtitle:
       'Higher-spec new construction plans with independent negotiation on options and lots.',
     heading: 'Tri Pointe options, lots, and representation',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=700&fit=crop&q=80',
-      alt: 'Tri Pointe Homes new construction in North Las Vegas near Aliante',
-    },
+    image: siteImages.triPointe,
     paragraphs: [
       'Tri Pointe (including luxury-leaning collections) targets buyers who want more elevation and finish choice than entry-level specs. Base price, lot premium, and design-center dollars should be modeled together—not as three surprises at closing.',
       'Register with Dr. Jan Duffy first. Call (702) 707-7273 for the current Aliante-area Tri Pointe community list.',
@@ -281,10 +244,7 @@ export const builderCopy = {
     subtitle:
       'Age-qualified Del Webb plans and resales. Confirm occupancy covenants and golf versus HOA fees.',
     heading: 'Del Webb new homes versus Sun City resales',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=700&fit=crop&q=80',
-      alt: 'Del Webb Sun City Aliante 55+ homes in North Las Vegas',
-    },
+    image: siteImages.sunCity,
     paragraphs: [
       'Del Webb is the original builder of Sun City Aliante. Remaining new or recently built product is limited compared with the resale pool. Age occupancy still applies. Compare a new Del Webb plan against a resale that already has landscaping and window treatments—the all-in cost often surprises first-time 55+ buyers.',
       'Dr. Jan Duffy represents both new and resale Sun City buyers. Call (702) 707-7273.',
@@ -300,10 +260,7 @@ export const builderCopy = {
     subtitle:
       'Ultra-luxury plans and lots. Independent review of options, premiums, and timelines.',
     heading: 'Toll Brothers contracts with a buyer’s agent',
-    image: {
-      src: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=700&fit=crop&q=80',
-      alt: 'Toll Brothers luxury home exterior in the North Las Vegas luxury market',
-    },
+    image: siteImages.tollBrothers,
     paragraphs: [
       'Toll Brothers competes at the top of the new-construction price band. Structural options and lot location drive cost more than brochure square footage. Have your agent at design center so upgrades are documented on the addendum.',
       'Call (702) 707-7273 to see which Toll Brothers communities currently serve Aliante-area buyers.',
@@ -319,10 +276,7 @@ export const builderCopy = {
     subtitle:
       'Production new construction with design options. Buyer representation on incentives and inspections.',
     heading: 'Richmond American process in 89084',
-    image: {
-      src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=700&fit=crop&q=80',
-      alt: 'Richmond American Homes new construction in North Las Vegas',
-    },
+    image: siteImages.richmondAmerican,
     paragraphs: [
       'Richmond American builds production homes with option packages that vary by community. Confirm included structural items versus paid design-center extras. Closing-cost credits and rate buydowns, when offered, should appear in writing.',
       'Dr. Jan Duffy registers you with Richmond American and stays through punch-list. Call (702) 707-7273.',
@@ -338,10 +292,7 @@ export const builderCopy = {
     subtitle:
       'Credits, buydowns, and design-center dollars change by community and month. Get today’s sheet, not last quarter’s ad.',
     heading: 'How incentives actually get to the closing table',
-    image: {
-      src: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=700&fit=crop&q=80',
-      alt: 'Home buyer reviewing new construction paperwork in Aliante, Nevada',
-    },
+    image: siteImages.incentives,
     paragraphs: [
       'Advertised builder incentives are a starting point. Preferred-lender credits may require using the builder’s mortgage affiliate—compare the rate against an independent quote. Lot premiums can erase a closing-cost credit if nobody models both numbers.',
       'Dr. Jan Duffy tracks Aliante-area builder sheets and documents them on your addendum. Call (702) 707-7273.',

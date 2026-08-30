@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
@@ -18,6 +19,7 @@ export default function SellerChecklist() {
       <AboutHero
         title="Aliante home selling checklist"
         subtitle="CMA, repairs, MLS photos, and negotiation for 89084 sellers."
+        image={pageHero('/seller-checklist')}
       />
       <SellerChecklistContent />
       <div className="px-4">

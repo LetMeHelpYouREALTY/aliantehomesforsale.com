@@ -17,7 +17,7 @@ export const metadata = pageMetadata('/neighborhoods/desert-willows', {
 export default function DesertWillows() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <EnhancedFeaturedProperties />
       <NeighborhoodDetailContent slug="desert-willows" />
       <CommunityAmenities />

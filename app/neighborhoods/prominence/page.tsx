@@ -17,7 +17,7 @@ export const metadata = pageMetadata('/neighborhoods/prominence', {
 export default function Prominence() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <EnhancedFeaturedProperties />
       <NeighborhoodDetailContent slug="prominence" />
       <CommunityAmenities />

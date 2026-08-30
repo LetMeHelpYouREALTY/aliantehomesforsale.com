@@ -16,7 +16,7 @@ export const metadata = pageMetadata('/builders/toll-brothers', {
 export default function TollBrothers() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="toll-brothers" />
       <TopBuilders />
       <WhyNewConstruction />

@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
@@ -10,6 +11,7 @@ export default function Accessibility() {
       <AboutHero
         title="Accessibility statement"
         subtitle="How we work toward WCAG 2.1 AA on this site."
+        image={pageHero('/accessibility')}
       />
       <LegalContent title="Website Accessibility Commitment">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

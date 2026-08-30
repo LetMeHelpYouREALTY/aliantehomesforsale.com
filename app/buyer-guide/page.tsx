@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
@@ -19,6 +20,7 @@ export default function BuyerGuide() {
       <AboutHero
         title="Aliante home buyer guide"
         subtitle="Pre-approval, live MLS, tours, and closing in North Las Vegas 89084."
+        image={pageHero('/buyer-guide')}
       />
       <BuyerGuideContent />
       <div className="px-4">

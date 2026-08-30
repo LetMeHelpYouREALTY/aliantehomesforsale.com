@@ -20,7 +20,7 @@ export const metadata = pageMetadata('/builders', {
 export default function Builders() {
   return (
     <main className="builders-page">
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="hub" />
       <BuildersIntro />
       <TopBuilders />

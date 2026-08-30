@@ -16,7 +16,7 @@ export const metadata = pageMetadata('/builders/richmond-american', {
 export default function RichmondAmerican() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="richmond-american" />
       <TopBuilders />
       <ConstructionProcess />

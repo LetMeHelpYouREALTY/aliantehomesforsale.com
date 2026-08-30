@@ -18,7 +18,7 @@ export const metadata = pageMetadata('/neighborhoods', {
 export default function Neighborhoods() {
   return (
     <main className="neighborhoods-page">
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodCards />
       <NeighborhoodDetailContent slug="hub" />
       <div className="px-4">

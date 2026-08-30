@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContactFAQ from '../components/ContactFAQ';
 import ContactHero from '../components/ContactHero';
@@ -20,6 +21,7 @@ export default function Contact() {
       <ContactHero
         title="Contact Dr. Jan Duffy in Aliante"
         subtitle="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Call (702) 707-7273."
+        image={pageHero('/contact')}
       />
 
       {/* Contact Methods Grid */}

@@ -16,7 +16,7 @@ export const metadata = pageMetadata('/neighborhoods/compare', {
 export default function Compare() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodComparison />
       <NeighborhoodDetailContent slug="compare" />
       <NeighborhoodCards />

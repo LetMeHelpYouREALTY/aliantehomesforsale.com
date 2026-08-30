@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
@@ -10,6 +11,7 @@ export default function FairHousing() {
       <AboutHero
         title="Fair Housing statement"
         subtitle="Equal professional service. We do not use protected-class proxies in marketing."
+        image={pageHero('/fair-housing')}
       />
       <LegalContent title="Fair Housing and Equal Opportunity Statement">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

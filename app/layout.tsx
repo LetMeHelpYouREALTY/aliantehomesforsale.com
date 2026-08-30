@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Aliante North Las Vegas Real Estate & Homes For Sale',
+        alt: 'Aliante North Las Vegas Real Estate & Homes For Sale | MLS Listings',
       },
     ],
   },

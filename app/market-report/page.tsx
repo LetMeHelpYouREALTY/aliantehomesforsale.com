@@ -1,10 +1,11 @@
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import MarketReportContent from '../components/MarketReportContent';
 import PropertyCategories from '../components/PropertyCategories';
-import { pageMetadata } from '../../lib/seo/page-metadata';
 
 export const metadata = pageMetadata('/market-report', {
   title: 'Aliante market report | live MLS snapshot',
@@ -18,6 +19,7 @@ export default function MarketReport() {
       <HomesForSaleHero
         title="Aliante market report for 89084"
         subtitle="Widget figures are live from MLS. Narrative copy is a guide, not a CMA."
+        image={pageHero('/market-report')}
       />
       <HomesMarketSnapshot />
       <MarketReportContent />

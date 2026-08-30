@@ -17,7 +17,7 @@ export const metadata = pageMetadata('/builders/del-webb', {
 export default function DelWebb() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="del-webb" />
       <SunCityContent />
       <TopBuilders />

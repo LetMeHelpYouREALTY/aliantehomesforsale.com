@@ -19,7 +19,7 @@ export const metadata = pageMetadata('/sun-city-aliante', {
 export default function SunCity() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodDetailContent slug="sun-city" />
       <SunCityContent />
       <CommunityAmenities />

@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutCommitment from '../components/AboutCommitment';
 import AboutCTA from '../components/AboutCTA';
@@ -20,6 +21,7 @@ export default function About() {
       <AboutHero
         title="Dr. Jan Duffy, Aliante real estate since 2018"
         subtitle="Nevada license S.0197614.LLC · Berkshire Hathaway HomeServices Nevada Properties · 89084 specialist."
+        image={pageHero('/about')}
       />
 
       {/* Stats Section */}

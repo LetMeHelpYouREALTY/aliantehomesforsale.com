@@ -15,7 +15,7 @@ export const metadata = pageMetadata('/neighborhoods/tule-springs', {
 export default function TuleSprings() {
   return (
     <main>
-      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} />
+      <NeighborhoodsHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <NeighborhoodDetailContent slug="tule-springs" />
       <NeighborhoodCards />
       <NeighborhoodsCTA />

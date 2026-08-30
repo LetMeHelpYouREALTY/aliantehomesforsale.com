@@ -1,6 +1,10 @@
+import type { SiteImage } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
+
 type NewConstructionHeroProps = {
   title: string;
   subtitle: string;
+  image: SiteImage;
 };
 
 const BUILDERS = [
@@ -12,24 +16,13 @@ const BUILDERS = [
   { name: 'Del Webb 55+', href: '/builders/del-webb' },
 ] as const;
 
-export default function NewConstructionHero({ title, subtitle }: NewConstructionHeroProps) {
+export default function NewConstructionHero({ title, subtitle, image }: NewConstructionHeroProps) {
   return (
     <section
-      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      }}
+      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="nc-hero-heading"
     >
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="text-center mb-12">
@@ -72,7 +65,9 @@ export default function NewConstructionHero({ title, subtitle }: NewConstruction
           </div>
 
           <div className="mt-6 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl p-6 text-center shadow-xl">
-            <h3 className="text-2xl font-bold text-white mb-2">Builder incentives change monthly</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">
+              Builder incentives change monthly
+            </h3>
             <p className="text-white/95 mb-4 text-lg">
               Ask for this month’s credits, buydowns, and design-center dollars.
             </p>

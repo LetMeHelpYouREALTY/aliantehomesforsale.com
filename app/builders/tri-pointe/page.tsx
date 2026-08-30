@@ -16,7 +16,7 @@ export const metadata = pageMetadata('/builders/tri-pointe', {
 export default function TriPointe() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="tri-pointe" />
       <TopBuilders />
       <WhyNewConstruction />

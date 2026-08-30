@@ -17,7 +17,7 @@ export const metadata = pageMetadata('/builders/dr-horton', {
 export default function DrHorton() {
   return (
     <main>
-      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} />
+      <NewConstructionHero title={copy.h1} subtitle={copy.subtitle} image={copy.image} />
       <BuilderDetailContent slug="dr-horton" />
       <TopBuilders />
       <ConstructionProcess />

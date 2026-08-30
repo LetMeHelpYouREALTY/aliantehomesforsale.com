@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo/page-metadata';
 import ContactHero from '../components/ContactHero';
 import EnhancedContactForm from '../components/EnhancedContactForm';
@@ -17,6 +18,7 @@ export default function MortgageCalculator() {
       <ContactHero
         title="Aliante mortgage payment calculator"
         subtitle="Estimate principal and interest. Not a rate lock. Add HOA dues on top of PITI."
+        image={pageHero('/mortgage-calculator')}
       />
       <MortgageCalculatorContent />
       <section className="py-16 px-4 bg-white">

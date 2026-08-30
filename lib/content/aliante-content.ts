@@ -1,3 +1,5 @@
+import { siteImages } from './site-images';
+
 /**
  * Typed content objects for Aliante UX + SEO (no fabricated listings or ratings).
  * Keep market figures soft / dated — live MLS numbers come from RealScout widgets.
@@ -41,8 +43,8 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Gated Communities',
     description: 'Controlled-access neighborhoods with resort-style amenities across Aliante.',
     href: '/gated-communities',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80',
-    alt: 'Gated community homes in Aliante North Las Vegas',
+    image: siteImages.gated.src,
+    alt: siteImages.gated.alt,
     highlights: ['24/7 gated entry', 'Community pools & parks', 'Resale + new construction'],
   },
   {
@@ -50,8 +52,8 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Golf-Course Homes',
     description: 'Homes near Club Aliante and fairway living in North Las Vegas 89084.',
     href: '/golf-homes',
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80',
-    alt: 'Golf course homes near Club Aliante',
+    image: siteImages.golf.src,
+    alt: siteImages.golf.alt,
     highlights: ['Club Aliante access', 'Fairway & mountain views', 'Lock-and-leave options'],
   },
   {
@@ -59,8 +61,8 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'New Construction',
     description: 'Compare Lennar, D.R. Horton, Tri Pointe, Del Webb, Toll Brothers & more.',
     href: '/new-construction',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?w=800&h=600&fit=crop&q=80',
-    alt: 'New construction homes in Aliante North Las Vegas',
+    image: siteImages.builders.src,
+    alt: siteImages.builders.alt,
     highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer advocacy'],
   },
   {
@@ -68,8 +70,8 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Sun City Aliante 55+',
     description: 'Del Webb active-adult living with golf, clubs, and low-maintenance homes.',
     href: '/sun-city-aliante',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
-    alt: 'Sun City Aliante 55+ active adult community',
+    image: siteImages.sunCity.src,
+    alt: siteImages.sunCity.alt,
     highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Single-story plans'],
   },
 ];

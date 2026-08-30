@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 
 interface QuickMoveInHomeProps {
   badge: string;
@@ -9,7 +10,7 @@ interface QuickMoveInHomeProps {
   specs: string;
   price: string;
   features: string;
-  gradient: string;
+  image: SiteImage;
 }
 
 function QuickMoveInCard({
@@ -19,37 +20,26 @@ function QuickMoveInCard({
   specs,
   price,
   features,
+  image,
 }: QuickMoveInHomeProps) {
-  // Use different Unsplash images for each builder
-  const imageId =
-    builder === 'Lennar'
-      ? 'photo-1600585154340-be6161a56a0c'
-      : builder === 'D.R. Horton'
-        ? 'photo-1600047509807-ba8f99d2cdde'
-        : 'photo-1600573472592-401b489a3cdc';
-  const imageUrl = `https://images.unsplash.com/${imageId}?w=600&h=400&fit=crop&q=80`;
-
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      {/* Property Image: next/image for AVIF/WebP, responsive sizes */}
       <div className="relative h-48 overflow-hidden">
         <Image
-          src={imageUrl}
-          alt={`${builder} new construction home in ${community}`}
-          width={600}
-          height={400}
+          src={image.src}
+          alt={`${builder} new construction in ${community}, North Las Vegas`}
+          fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
           decoding="async"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
           {badge}
         </div>
       </div>
 
-      {/* Content */}
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
           {builder} - {community}
@@ -83,7 +73,7 @@ export default function QuickMoveInHomes() {
       specs: '4 BR | 3 BA | 2,450 sq ft',
       price: '$549,900',
       features: 'Smart home package, gourmet kitchen, 3-car garage',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: siteImages.lennar,
     },
     {
       badge: 'Ready in 45 Days',
@@ -91,8 +81,8 @@ export default function QuickMoveInHomes() {
       community: 'Tule Springs',
       specs: '3 BR | 2.5 BA | 2,180 sq ft',
       price: '$479,000',
-      features: 'Open concept, large backyard, top schools',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      features: 'Open concept, large backyard, energy-efficient specs',
+      image: siteImages.drHorton,
     },
     {
       badge: 'Move-In Ready',
@@ -101,7 +91,7 @@ export default function QuickMoveInHomes() {
       specs: '4 BR | 3.5 BA | 3,100 sq ft',
       price: '$729,000',
       features: 'Premium finishes, mountain views, golf course',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: siteImages.triPointe,
     },
   ];
 
@@ -113,14 +103,14 @@ export default function QuickMoveInHomes() {
             Quick Move-In Homes - Ready Now!
           </h2>
           <p className="text-xl text-gray-600">
-            Move in within 30-60 days! Completed or nearly-completed homes with immediate
-            availability.
+            Sample builder types. Confirm availability on live MLS and the current builder
+            worksheet.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {homes.map((home, index) => (
-            <QuickMoveInCard key={index} {...home} />
+          {homes.map((home) => (
+            <QuickMoveInCard key={`${home.builder}-${home.community}`} {...home} />
           ))}
         </div>
 

@@ -1,10 +1,11 @@
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo/page-metadata';
 import AboutExpertise from '../components/AboutExpertise';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
-import { pageMetadata } from '../../lib/seo/page-metadata';
 
 export const metadata = pageMetadata('/investment-analysis', {
   title: 'Aliante investment property analysis',
@@ -18,6 +19,7 @@ export default function InvestmentAnalysis() {
       <HomesForSaleHero
         title="Aliante investment property analysis"
         subtitle="Model HOA dues, lease minimums, and sold comps with Dr. Jan Duffy before you underwrite."
+        image={pageHero('/investment-analysis')}
       />
       <HomesMarketSnapshot />
       <InvestmentAnalysisContent />

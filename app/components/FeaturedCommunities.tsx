@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 
 type Community = {
   name: string;
   href: string;
   tagline: string;
-  image: string;
-  alt: string;
+  image: SiteImage;
 };
 
 const COMMUNITIES: Community[] = [
@@ -14,48 +14,42 @@ const COMMUNITIES: Community[] = [
     name: 'The Prominence',
     href: '/neighborhoods/prominence',
     tagline: 'Luxury homes from the mid-$600s',
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop&q=80',
-    alt: 'Luxury homes in The Prominence, Aliante North Las Vegas',
+    image: siteImages.prominence,
   },
   {
     name: 'Desert Willows',
     href: '/neighborhoods/desert-willows',
     tagline: 'Single-story and two-story floor plans',
-    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop&q=80',
-    alt: 'Homes in Desert Willows, Aliante North Las Vegas',
+    image: siteImages.desertWillows,
   },
   {
     name: 'Club Aliante',
     href: '/neighborhoods/club-aliante',
     tagline: 'Golf-course living near the clubhouse',
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop&q=80',
-    alt: 'Golf course homes at Club Aliante, North Las Vegas',
+    image: siteImages.clubAliante,
   },
   {
     name: 'The Paseos',
     href: '/neighborhoods/paseos',
     tagline: 'Gated community with resort amenities',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80',
-    alt: 'Gated homes in The Paseos, Aliante',
+    image: siteImages.paseos,
   },
   {
     name: 'Sun City Aliante',
     href: '/sun-city-aliante',
     tagline: 'Active adult 55+ Del Webb community',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop&q=80',
-    alt: 'Sun City Aliante 55+ homes in North Las Vegas',
+    image: siteImages.sunCity,
   },
   {
     name: 'Tule Springs',
     href: '/neighborhoods/tule-springs',
     tagline: 'New construction near Floyd Lamb Park',
-    image: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cd00?w=800&h=600&fit=crop&q=80',
-    alt: 'New construction homes near Tule Springs, North Las Vegas',
+    image: siteImages.tuleSprings,
   },
 ];
 
 /**
- * Purist-style Featured Communities: image-led grid linking to Aliante neighborhood pages.
+ * Featured Communities: photo-led grid linking to Aliante neighborhood pages.
  */
 export default function FeaturedCommunities() {
   return (
@@ -88,8 +82,8 @@ export default function FeaturedCommunities() {
             >
               <div className="relative aspect-[4/3]">
                 <Image
-                  src={community.image}
-                  alt={community.alt}
+                  src={community.image.src}
+                  alt={community.image.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
