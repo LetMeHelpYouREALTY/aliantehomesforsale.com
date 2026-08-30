@@ -148,7 +148,7 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'Desert Willows',
-                description: 'Family-friendly neighborhood with excellent schools',
+                description: 'Aliante neighborhood with parks and a mix of single- and two-story homes',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows',
               },
             },
@@ -237,7 +237,7 @@ export default function StructuredData({
           {
             '@type': 'Place',
             name: 'Desert Willows',
-            description: 'Family-friendly neighborhood in Aliante',
+            description: 'Aliante neighborhood with parks and community amenities',
             url: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows',
           },
           {

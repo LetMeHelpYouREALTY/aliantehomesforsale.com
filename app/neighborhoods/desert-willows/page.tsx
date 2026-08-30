@@ -7,9 +7,9 @@ import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
-  title: 'Desert Willows Aliante - Family Community',
+  title: 'Desert Willows Aliante Homes For Sale',
   description:
-    'Desert Willows family neighborhood in Aliante. Top schools, parks, family amenities. $400K-$700K.',
+    'Desert Willows homes in Aliante, North Las Vegas 89084. Parks, community pools, and a mix of floor plans.',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows' },
 };
 

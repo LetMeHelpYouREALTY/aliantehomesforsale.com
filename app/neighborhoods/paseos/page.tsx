@@ -6,9 +6,9 @@ import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
-  title: 'The Paseos Aliante - Affordable Family Homes',
+  title: 'The Paseos Aliante Homes For Sale',
   description:
-    'The Paseos affordable homes in Aliante. Quality homes for first-time buyers and families. $300K-$500K.',
+    'The Paseos gated community in Aliante with resort-style amenities and a range of home sizes. North Las Vegas 89084.',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/paseos' },
 };
 

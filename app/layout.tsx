@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { headers } from 'next/headers';
 import Script from 'next/script';
 import { siteConfig } from '../lib/site-config';
 import './globals.css';
@@ -8,6 +9,8 @@ import EnhancedFooter from './components/EnhancedFooter';
 import EnhancedNavigation from './components/EnhancedNavigation';
 import EntityGraphSchema from './components/EntityGraphSchema';
 import GoogleAnalytics from './components/GoogleAnalytics';
+import PageFAQ from './components/PageFAQ';
+import PageSchema from './components/PageSchema';
 import PerformanceMonitor from './components/PerformanceMonitor';
 import RealScoutOfficeListingsSection from './components/RealScoutOfficeListingsSection';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
@@ -92,7 +95,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headerList = await headers();
+  const pathname = headerList.get('x-pathname') ?? '/';
+
   return (
     <html lang="en">
       <head>
@@ -118,12 +124,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Knowledge + Content + Agent graphs (SEO / AEO / GEO) */}
         <EntityGraphSchema />
+        {/* Per-page WebPage, FAQ, HowTo, Place, and section schema */}
+        <PageSchema pathname={pathname} />
 
         <EnhancedNavigation />
         <Breadcrumbs />
 
         <div id="main-content" tabIndex={-1}>
           {children}
+          <PageFAQ pathname={pathname} />
         </div>
 
         {/* RealScout search (lead gen): below hero on home (in page); below content on other pages */}

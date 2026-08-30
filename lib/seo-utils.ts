@@ -98,9 +98,9 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
     },
     other: {
       'geo.region': 'US-NV',
-      'geo.placename': 'Aliante, North Las Vegas',
-      'geo.position': '36.1699;-115.1398',
-      ICBM: '36.1699, -115.1398',
+      'geo.placename': `${siteConfig.areaName}, ${siteConfig.region}`,
+      'geo.position': `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
+      ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
     },
   };
 }
@@ -119,15 +119,10 @@ export const neighborhoodSEO = {
     ],
   },
   'desert-willows': {
-    title: 'Desert Willows Homes For Sale - Family-Friendly Neighborhood Aliante',
+    title: 'Desert Willows Aliante Homes For Sale',
     description:
-      'Find your perfect family home in Desert Willows, Aliante. Top-rated schools, parks, community pools. Affordable prices from $300k.',
-    keywords: [
-      'Desert Willows',
-      'family homes Aliante',
-      'good schools Las Vegas',
-      'affordable homes',
-    ],
+      'Find homes in Desert Willows, Aliante. Parks, community pools, and a mix of single- and two-story floor plans in North Las Vegas 89084.',
+    keywords: ['Desert Willows', 'Aliante homes', 'North Las Vegas 89084', 'Aliante real estate'],
   },
   'club-aliante': {
     title: 'Club Aliante Homes For Sale - Golf Course Community Las Vegas',

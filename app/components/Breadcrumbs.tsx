@@ -24,15 +24,16 @@ export default function Breadcrumbs() {
     }),
   ];
 
-  // Generate Schema.org BreadcrumbList JSON-LD
+  const pageUrl = pathname === '/' ? siteConfig.siteUrl : `${siteConfig.siteUrl}${pathname}`;
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
     itemListElement: breadcrumbItems.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `${siteConfig.siteUrl}${item.url}`,
+      item: item.url === '/' ? siteConfig.siteUrl : `${siteConfig.siteUrl}${item.url}`,
     })),
   };
 
