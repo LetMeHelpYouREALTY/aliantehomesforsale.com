@@ -21,7 +21,7 @@ export default function HomeValuation() {
       <HomeValuationContent />
       <section className="py-16 px-4 bg-white">
         <div className="container">
-          <EnhancedContactForm />
+          <EnhancedContactForm event="appointment" />
         </div>
       </section>
       <AboutExpertise />

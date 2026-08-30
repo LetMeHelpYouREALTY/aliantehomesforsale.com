@@ -1,4 +1,5 @@
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
 
 /**
  * Visit / directions block for GBP “Add directions to your website”.
@@ -46,10 +47,15 @@ export default function OfficeLocation() {
               className="rounded-2xl p-8 h-full"
               style={{ background: 'linear-gradient(135deg, #f0f4ff 0%, #e8f5f0 100%)' }}
             >
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#1a365d' }}>
-                Office Location
-              </h3>
-              <p className="text-sm text-gray-600 mb-6">Aliante Corporate Center</p>
+              <div className="flex items-center gap-4 mb-6">
+                <AgentPhoto size={72} className="flex-shrink-0" />
+                <div>
+                  <h3 className="text-2xl font-bold" style={{ color: '#1a365d' }}>
+                    Office Location
+                  </h3>
+                  <p className="text-sm text-gray-600">Aliante Corporate Center</p>
+                </div>
+              </div>
 
               <address className="not-italic space-y-5 mb-8">
                 <div>

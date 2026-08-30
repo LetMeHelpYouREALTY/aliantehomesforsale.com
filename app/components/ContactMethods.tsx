@@ -73,10 +73,11 @@ export default function ContactMethods() {
       href: '#directions',
     },
     {
-      icon: '⏰',
-      title: 'Office Hours',
-      primary: 'Mon–Fri: 8AM–7PM',
-      details: ['Sat–Sun: 9AM–6PM', 'Appointments welcome'],
+      icon: '📅',
+      title: 'Schedule Time',
+      primary: 'Book on Calendly',
+      details: ['15-minute consultation', 'No contact form required'],
+      href: '#schedule',
     },
   ];
 

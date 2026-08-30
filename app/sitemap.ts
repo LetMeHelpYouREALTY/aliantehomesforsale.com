@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { siteConfig } from '../lib/site-config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.aliantehomesforsale.com';
+  const baseUrl = siteConfig.siteUrl;
   const currentDate = new Date();
 
   // Core pages - highest priority, updated frequently

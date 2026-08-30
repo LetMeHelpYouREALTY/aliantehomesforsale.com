@@ -59,11 +59,26 @@ export const appConfig = {
         "'unsafe-inline'",
         'https://em.realscout.com',
         'https://www.realscout.com',
+        'https://assets.calendly.com',
+        'https://calendly.com',
       ],
-      'style-src': ["'self'", "'unsafe-inline'"],
+      'style-src': ["'self'", "'unsafe-inline'", 'https://assets.calendly.com'],
       'img-src': ["'self'", 'data:', 'https:'],
       'font-src': ["'self'", 'data:'],
-      'connect-src': ["'self'", 'https:', 'https://em.realscout.com', 'https://www.realscout.com'],
+      'connect-src': [
+        "'self'",
+        'https:',
+        'https://em.realscout.com',
+        'https://www.realscout.com',
+        'https://calendly.com',
+        'https://assets.calendly.com',
+      ],
+      'frame-src': [
+        "'self'",
+        'https://calendly.com',
+        'https://www.calendly.com',
+        'https://www.google.com',
+      ],
     },
     // Rate limiting
     rateLimit: {

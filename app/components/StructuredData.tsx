@@ -46,9 +46,11 @@ export default function StructuredData({
         name: siteConfig.siteName,
         description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} — buyer representation, listing services, new construction, and 55+ community specialist.`,
         url: siteConfig.siteUrl,
+        image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
         founder: {
           '@type': 'Person',
           name: siteConfig.agentName,
+          image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
         },
         foundingDate: String(siteConfig.foundedYear),
         address: {
@@ -266,7 +268,7 @@ export default function StructuredData({
         '@type': 'RealEstateAgent',
         '@id': `${siteConfig.siteUrl}/#organization`,
         name: siteConfig.siteName,
-        image: `${siteConfig.siteUrl}/logo.png`,
+        image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
         url: siteConfig.siteUrl,
         telephone: siteConfig.phoneTel,
         email: siteConfig.email,
@@ -298,6 +300,14 @@ export default function StructuredData({
           },
         ],
         priceRange: '$$',
+        potentialAction: {
+          '@type': 'ScheduleAction',
+          name: siteConfig.calendly.events.consultation.heading,
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: siteConfig.calendly.events.consultation.url,
+          },
+        },
         areaServed: [
           {
             '@type': 'City',
@@ -321,9 +331,9 @@ export default function StructuredData({
         url: siteConfig.siteUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${siteConfig.siteUrl}/logo.png`,
-          width: 250,
-          height: 60,
+          url: `${siteConfig.siteUrl}${siteConfig.logo}`,
+          width: 512,
+          height: 512,
         },
         description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} since ${siteConfig.foundedYear}`,
         foundingDate: String(siteConfig.foundedYear),

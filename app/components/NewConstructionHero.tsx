@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AgentPhoto from './AgentPhoto';
 
 export default function NewConstructionHero() {
   const [selectedBuilder, setSelectedBuilder] = useState('all');
@@ -36,6 +37,11 @@ export default function NewConstructionHero() {
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         {/* Main Heading */}
         <div className="text-center mb-12">
+          <AgentPhoto
+            size={140}
+            className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40"
+            priority
+          />
           <h1
             id="nc-hero-heading"
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"

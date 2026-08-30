@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
 
 const serviceIcons: Record<string, string> = {
   'buyer-representation': '🤝',
@@ -16,6 +17,7 @@ export default function HyperlocalRealtorServices() {
     <section className="py-16 px-4 bg-white" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <AgentPhoto size={140} className="mx-auto mb-6 shadow-lg" />
           <h2
             id="services-heading"
             className="speakable text-4xl sm:text-5xl font-bold mb-4"

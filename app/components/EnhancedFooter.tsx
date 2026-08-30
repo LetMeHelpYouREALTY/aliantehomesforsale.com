@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
 
 const navigateLinks = [
   { href: '/', label: 'Home' },
@@ -124,12 +125,24 @@ export default function EnhancedFooter() {
 
           {/* Column 3: Company */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <AgentPhoto size={64} className="flex-shrink-0 shadow-md" />
+              <div>
+                <h3 className="text-lg font-bold text-white">Company</h3>
+                <p className="text-xs text-gray-400">{siteConfig.agentName}</p>
+              </div>
+            </div>
             <p className="text-sm text-gray-300 mb-3">
               {siteConfig.agentName}
               <br />
               {siteConfig.brokerage}
             </p>
+            <a
+              href={siteConfig.calendly.events.consultation.url}
+              className="inline-block mb-4 text-sm font-semibold text-[#16B286] hover:underline"
+            >
+              Schedule time with me
+            </a>
             <p className="text-xs text-gray-400 mb-4">
               Nevada Real Estate License #{siteConfig.agentLicense}
               <br />

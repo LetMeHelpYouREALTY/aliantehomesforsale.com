@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
+import AgentPhoto from './AgentPhoto';
 
 const SLIDES = [
   {
@@ -80,6 +81,7 @@ export default function EnhancedHero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
+        <AgentPhoto size={180} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" priority />
         <h1
           id="hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"

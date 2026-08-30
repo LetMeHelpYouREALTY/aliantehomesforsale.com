@@ -17,7 +17,7 @@ export function buildAgentGraph() {
     '@id': graphIds.agent,
     name: siteConfig.agentName,
     url: `${siteConfig.siteUrl}/about`,
-    image: `${siteConfig.siteUrl}/og-image.jpg`,
+    image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
     jobTitle: 'Real Estate Agent',
@@ -50,6 +50,18 @@ export function buildAgentGraph() {
       ...siteConfig.neighborhoods.map((n) => ({ '@id': graphIds.neighborhood(n.slug) })),
     ],
     ...(siteConfig.sameAs.length > 0 ? { sameAs: [...siteConfig.sameAs] } : {}),
+    potentialAction: {
+      '@type': 'ScheduleAction',
+      name: siteConfig.calendly.events.consultation.heading,
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: siteConfig.calendly.events.consultation.url,
+        actionPlatform: [
+          'https://schema.org/DesktopWebPlatform',
+          'https://schema.org/MobileWebPlatform',
+        ],
+      },
+    },
   };
 
   const brokerage = {

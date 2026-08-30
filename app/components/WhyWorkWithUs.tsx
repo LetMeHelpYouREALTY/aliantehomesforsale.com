@@ -1,5 +1,7 @@
 'use client';
 
+import AgentPhoto from './AgentPhoto';
+
 interface ExpertiseItemProps {
   icon: string;
   title: string;
@@ -69,6 +71,7 @@ export default function WhyWorkWithUs() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <AgentPhoto size={140} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Why Work with Dr. Jan Duffy for New Construction?
           </h2>

@@ -1,5 +1,8 @@
 'use client';
 
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
+
 export default function NewConstructionCTA() {
   return (
     <section
@@ -20,6 +23,7 @@ export default function NewConstructionCTA() {
       </div>
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
+        <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
           Ready to Build Your Dream Home in Aliante?
         </h2>
@@ -28,18 +32,12 @@ export default function NewConstructionCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <a
-            href="tel:+17027077273"
-            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
-            style={{
-              backgroundColor: '#ed8936',
-              color: 'white',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
+          <CalendlyPopupButton
+            event="appointment"
+            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
           >
-            📞 Call (702) 707-7273 - Free Consultation
-          </a>
+            Book a builder consultation
+          </CalendlyPopupButton>
 
           <a
             href="/contact"

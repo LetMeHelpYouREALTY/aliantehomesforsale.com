@@ -20,9 +20,9 @@ export function buildKnowledgeGraph() {
     url: siteConfig.siteUrl,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.siteUrl}/og-image.jpg`,
-      width: 1200,
-      height: 630,
+      url: `${siteConfig.siteUrl}${siteConfig.logo}`,
+      width: 512,
+      height: 512,
     },
     description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} since ${siteConfig.foundedYear}`,
     foundingDate: String(siteConfig.foundedYear),
@@ -49,7 +49,20 @@ export function buildKnowledgeGraph() {
     '@id': graphIds.localBusiness,
     name: siteConfig.siteName,
     url: siteConfig.siteUrl,
-    image: `${siteConfig.siteUrl}/og-image.jpg`,
+    image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
+    hasMap: siteConfig.maps.placeUrl,
+    potentialAction: {
+      '@type': 'ScheduleAction',
+      name: siteConfig.calendly.events.consultation.heading,
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: siteConfig.calendly.events.consultation.url,
+        actionPlatform: [
+          'https://schema.org/DesktopWebPlatform',
+          'https://schema.org/MobileWebPlatform',
+        ],
+      },
+    },
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
     address: postalAddress,
@@ -79,7 +92,6 @@ export function buildKnowledgeGraph() {
       { '@id': graphIds.aliantePlace },
       ...siteConfig.neighborhoods.map((n) => ({ '@id': graphIds.neighborhood(n.slug) })),
     ],
-    hasMap: siteConfig.maps.placeUrl,
   };
 
   const aliantePlace = {

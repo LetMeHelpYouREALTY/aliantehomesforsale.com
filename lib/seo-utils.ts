@@ -22,7 +22,7 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
     description = DEFAULT_DESCRIPTION,
     keywords = [],
     path = '',
-    image = null,
+    image = siteConfig.ogImage,
     noindex = false,
     type = 'website',
   } = config;
@@ -219,7 +219,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'RealEstateAgent',
     '@id': `${SITE_URL}/#organization`,
     name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}${siteConfig.agentImage}`,
     url: SITE_URL,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
@@ -305,9 +305,9 @@ export function generateOrganizationSchema() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/logo.png`,
-      width: 250,
-      height: 60,
+      url: `${SITE_URL}${siteConfig.logo}`,
+      width: 512,
+      height: 512,
     },
     description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
     contactPoint: {
