@@ -49,7 +49,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Amenities and Recreation
+              Recreation campuses and Aliante Golf Club from Sun City
             </h3>
 
             <p className="leading-relaxed">
@@ -79,18 +79,15 @@ export default function SunCityContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Home Styles and Floor Plans
+            Sun City Aliante floor plans in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Sun City Aliante homes were designed specifically for active adult living, with
-              thoughtful features that enhance comfort and accessibility. Most homes offer
-              single-story living with master bedroom suites featuring walk-in closets, ensuite
-              bathrooms with walk-in showers, and direct access to outdoor living spaces.
-              Open-concept floor plans maximize usable space while creating bright interiors.
-              Kitchens with islands, upgraded appliances, and ample storage show up on some plans;
-              confirm finishes on the listing. Flex rooms can serve as an office or hobby space.
+              Sun City Aliante plans are built for 55+ occupancy. Many listings are single-story
+              with a primary suite on the main floor — confirm bed/bath count, stairs, and finishes
+              on that MLS number. Open-concept kitchens and flex rooms show up on some plans, not
+              all. I will not hard-code a size range.
             </p>
 
             <p className="leading-relaxed">
@@ -101,7 +98,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Healthcare and Services Access
+              Drive times to care and services from Sun City Aliante
             </h3>
 
             <p className="leading-relaxed">
