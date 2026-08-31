@@ -15,8 +15,9 @@ export default function BuildersIntro() {
             Aliante and the surrounding North Las Vegas area have become one of the most
             sought-after regions for new construction homes in Nevada. With its strategic location
             near the I-215 Beltway, with access to downtown Las Vegas, Harry Reid International
-            Airport, and employment centers throughout the valley. The area's continued growth has attracted the nation's premier home builders,
-            each bringing their unique approach to quality, design, and value.
+            Airport, and employment centers throughout the valley. The area's continued growth has
+            attracted the nation's premier home builders, each bringing their unique approach to
+            quality, design, and value.
           </p>
 
           <p className="leading-relaxed">

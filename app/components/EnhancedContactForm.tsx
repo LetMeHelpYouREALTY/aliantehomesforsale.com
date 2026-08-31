@@ -14,9 +14,7 @@ export default function EnhancedContactForm() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(
-    null
-  );
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
   // Generate unique IDs for accessibility
   const firstNameId = useId();
@@ -112,16 +110,13 @@ export default function EnhancedContactForm() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {status ? (
-          <p
-            role="status"
-            className={`rounded-lg px-4 py-3 text-sm font-medium ${
-              status.type === 'success'
-                ? 'bg-green-50 text-green-800'
-                : 'bg-red-50 text-red-800'
+          <output
+            className={`block rounded-lg px-4 py-3 text-sm font-medium ${
+              status.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
             }`}
           >
             {status.message}
-          </p>
+          </output>
         ) : null}
         {/* Name Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

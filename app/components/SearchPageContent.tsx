@@ -12,11 +12,10 @@ export default function SearchPageContent() {
           <p className="leading-relaxed">
             Our MLS search connects to the Las Vegas MLS feed that agents use, with listings that
             refresh about every 15 minutes. Inventory counts change throughout the day — search live
-            rather than relying on a stale total.
-            Unlike national real estate websites that often display outdated or inaccurate data, our
-            search connects directly to the Las Vegas MLS database that all real estate
-            professionals use, giving you the same information advantage that agents have when
-            searching for properties.
+            rather than relying on a stale total. Unlike national real estate websites that often
+            display outdated or inaccurate data, our search connects directly to the Las Vegas MLS
+            database that all real estate professionals use, giving you the same information
+            advantage that agents have when searching for properties.
           </p>
 
           <p className="leading-relaxed">

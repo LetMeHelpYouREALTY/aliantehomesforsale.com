@@ -64,18 +64,17 @@ export default function SunCityContent() {
               indoor and outdoor swimming pools and spas, tennis and pickleball courts, billiards
               rooms, card game areas, and ballrooms for community events and entertainment. The
               18-hole Aliante Golf Club (Gary Panks, city-owned and open to the public) runs through
-              the broader Aliante plan. Palm Valley is a different course in Sun City Summerlin —
-              do not confuse the two. Confirm current resident rates and tee-time rules with the
-              club.
+              the broader Aliante plan. Palm Valley is a different course in Sun City Summerlin — do
+              not confuse the two. Confirm current resident rates and tee-time rules with the club.
             </p>
 
             <p className="leading-relaxed">
-              Beyond physical recreation, Sun City Aliante offers dozens of clubs and interest groups
-              covering hobbies and activities. Art studios provide space for
-              painting, pottery, and crafts. Woodworking shops equipped with professional-grade
-              tools accommodate furniture building and home improvement projects. Computer labs
-              offer technology training and internet access. Dance clubs, book clubs, investment
-              clubs, travel clubs, and dozens of other organizations create opportunities for social
+              Beyond physical recreation, Sun City Aliante offers dozens of clubs and interest
+              groups covering hobbies and activities. Art studios provide space for painting,
+              pottery, and crafts. Woodworking shops equipped with professional-grade tools
+              accommodate furniture building and home improvement projects. Computer labs offer
+              technology training and internet access. Dance clubs, book clubs, investment clubs,
+              travel clubs, and dozens of other organizations create opportunities for social
               connection and continued learning throughout retirement. This comprehensive amenity
               package is rare even among 55+ communities and represents exceptional value for the
               monthly HOA fees residents pay.
@@ -130,10 +129,10 @@ export default function SunCityContent() {
               Shopping and services are equally convenient, with major grocery stores, pharmacies,
               banks, and restaurants all within easy reach. The I-215 Beltway connects Aliante to
               Harry Reid International Airport, Strip entertainment for visitors, and services
-              throughout the Las Vegas valley. This combination of
-              community self-sufficiency and convenient access to broader valley resources creates
-              an ideal balance for active adults seeking independence while ensuring services are
-              accessible as needs change with aging.
+              throughout the Las Vegas valley. This combination of community self-sufficiency and
+              convenient access to broader valley resources creates an ideal balance for active
+              adults seeking independence while ensuring services are accessible as needs change
+              with aging.
             </p>
           </div>
         </div>
