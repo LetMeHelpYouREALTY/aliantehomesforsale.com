@@ -3,7 +3,6 @@ import { pageHero } from '../../lib/content/site-images';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesSearchTips from '../components/HomesSearchTips';
-import PropertyCategories from '../components/PropertyCategories';
 import RealScoutSearchSection from '../components/RealScoutSearchSection';
 import SearchPageContent from '../components/SearchPageContent';
 
@@ -26,7 +25,6 @@ export default function Search() {
       />
       <RealScoutSearchSection />
       <SearchPageContent />
-      <PropertyCategories />
       <HomesSearchTips />
       <HomesCTA
         heading="Search Aliante MLS with a 89084 realtor"

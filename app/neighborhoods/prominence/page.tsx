@@ -27,7 +27,10 @@ export default function Prominence() {
         access="gated"
       />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour The Prominence gated village in 89084"
+        subheading="Guest lists, gate hours, and HOA architectural rules. Call (702) 707-7273."
+      />
     </main>
   );
 }

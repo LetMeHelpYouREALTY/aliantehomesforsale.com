@@ -17,13 +17,15 @@ export default function EnhancedNavigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, [isMenuOpen]);
 
   return (
@@ -46,14 +48,14 @@ export default function EnhancedNavigation() {
                 <span className="text-xl md:text-2xl font-bold" style={{ color: '#1a365d' }}>
                   Aliante Las Vegas
                 </span>
-                <span className="text-xs md:text-sm text-gray-600 font-medium hidden sm:block">
-                  Homes by Dr. Jan Duffy | Your Trusted Local Expert Since 2018
+                <span className="text-xs text-gray-600 font-medium hidden xl:block">
+                  Dr. Jan Duffy · Aliante 89084 since 2018
                 </span>
               </span>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center gap-4 xl:gap-8">
               <Link
                 href="/homes-for-sale"
                 className="text-base font-medium transition-colors hover:border-b-2 pb-1"
@@ -284,10 +286,10 @@ export default function EnhancedNavigation() {
             </div>
 
             {/* Right Side - CTA Buttons */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
               <a
                 href="tel:+17027077273"
-                className="text-lg font-semibold flex items-center gap-2 transition-colors"
+                className="text-base xl:text-lg font-semibold flex items-center gap-2 transition-colors whitespace-nowrap shrink-0"
                 style={{ color: '#1a365d' }}
               >
                 <svg
@@ -309,7 +311,7 @@ export default function EnhancedNavigation() {
 
               <Link
                 href="/search"
-                className="px-6 py-2.5 rounded-lg font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                className="px-4 xl:px-6 py-2.5 rounded-lg font-semibold text-white whitespace-nowrap shrink-0 transition-all transform hover:scale-105 hover:shadow-lg"
                 style={{ backgroundColor: '#ed8936' }}
               >
                 Search Properties

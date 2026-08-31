@@ -13,7 +13,9 @@ function ExpertiseItem({ icon, title, description }: ExpertiseItemProps) {
       style={{ borderLeftColor: '#16B286' }}
     >
       <div className="flex items-start gap-4">
-        <div className="text-4xl flex-shrink-0">{icon}</div>
+        <div className="text-4xl flex-shrink-0" aria-hidden="true">
+          {icon}
+        </div>
         <div>
           <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
             {title}

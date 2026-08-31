@@ -24,7 +24,10 @@ export default function SunCity() {
       />
       <SunCityContent />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour Sun City Aliante 55+ in ZIP 89084"
+        subheading="Del Webb inside 89084 — not Ardiente in 89081. Call (702) 707-7273."
+      />
     </main>
   );
 }

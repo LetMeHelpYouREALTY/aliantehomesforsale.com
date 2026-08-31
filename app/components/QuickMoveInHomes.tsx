@@ -29,7 +29,7 @@ export default function QuickMoveInHomes() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            New Construction & Quick Move-In
+            Lennar, Horton, and Tri Pointe inventory near Aliante 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Inventory, incentives, and close dates change with each builder release. Confirm current

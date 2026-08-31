@@ -24,7 +24,10 @@ export default function ClubAliante() {
       />
       <GolfHomesContent />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour Club Aliante golf-course lots in 89084"
+        subheading="Fairway homes next to Aliante Golf Club. Call (702) 707-7273."
+      />
     </main>
   );
 }

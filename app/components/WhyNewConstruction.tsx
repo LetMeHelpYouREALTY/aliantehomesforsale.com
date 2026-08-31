@@ -9,7 +9,9 @@ interface BenefitCardProps {
 function BenefitCard({ icon, title, description }: BenefitCardProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="text-5xl mb-4 text-center">{icon}</div>
+      <div className="text-5xl mb-4 text-center" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -34,7 +36,7 @@ export default function WhyNewConstruction() {
     },
     {
       icon: '💰',
-      title: 'Builder Incentives & Savings',
+      title: 'Builder incentives',
       description:
         'Builder credits, upgrades, and rate buydowns change with the week. Confirm today’s sheet — I will not publish a stale dollar amount.',
     },
@@ -52,9 +54,9 @@ export default function WhyNewConstruction() {
     },
     {
       icon: '🎯',
-      title: 'Our Expert Guidance',
+      title: 'Independent buyer representation',
       description:
-        'We represent you in negotiations, monitor construction quality, and confirm the live incentive sheet before you write.',
+        'I represent you on the builder contract, walk-throughs, and the live incentive sheet before you write.',
     },
   ];
 

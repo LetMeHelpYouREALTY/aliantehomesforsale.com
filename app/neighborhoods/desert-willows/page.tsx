@@ -27,7 +27,10 @@ export default function DesertWillows() {
         access="open"
       />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour Desert Willows in Aliante 89084"
+        subheading="Open-access village along Aliante Parkway. Call (702) 707-7273."
+      />
     </main>
   );
 }

@@ -27,7 +27,10 @@ export default function Paseos() {
         access="open"
       />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour The Paseos in Aliante 89084"
+        subheading="Open-access streets, master HOA, and village CC&Rs. Call (702) 707-7273."
+      />
     </main>
   );
 }
