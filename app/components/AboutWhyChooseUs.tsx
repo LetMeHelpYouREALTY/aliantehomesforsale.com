@@ -29,7 +29,8 @@ export default function AboutWhyChooseUs() {
   const reasons: ReasonProps[] = [
     {
       title: 'Local Focus',
-      description: 'We exclusively serve Aliante and North Las Vegas - this is our neighborhood',
+      description:
+        'Focused on Aliante and North Las Vegas 89084 — this is the market I work every week',
       icon: '📍',
     },
     {

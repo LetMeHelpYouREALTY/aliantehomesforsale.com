@@ -10,42 +10,30 @@ export default function BuilderDetailContent() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            As an independent buyer's agent with direct relationships with every major builder in
-            the Aliante area, I provide representation that protects your interests throughout the
-            new construction purchase process. Many buyers mistakenly believe they should work
-            directly with builder sales representatives, not realizing that these agents represent
-            the builder's interests, not yours. Buyer representation is typically at no extra cost
-            to you on participating builder sales — builders pay the cooperating commission from
-            their marketing budget. Confirm the fee in writing before you tour. That still gives you
-            professional advocacy, expert negotiation, and contract review. I will not publish a
-            stale savings total. Confirm today’s incentive sheet, lot premium, and upgrades before
-            you write.
+            As an independent buyer’s agent, I represent you — not Lennar, D.R. Horton, Del Webb, or
+            the other desks on the Aliante and Tule Springs map. Builder sales agents represent the
+            builder. Buyer representation is typically at no extra cost to you on participating
+            builder sales — builders pay the cooperating commission from their marketing budget.
+            Confirm the fee in writing before you tour. I review the live incentive sheet, lot
+            premium, and upgrades on that contract. I will not publish a stale savings total.
           </p>
 
           <p className="leading-relaxed">
-            My expertise extends beyond just helping you select a builder and floor plan. I attend
-            design center appointments to advise on upgrade selections that deliver the best value
-            and avoid overpriced options that won't recover their cost at resale. I review all
-            contracts and disclosures to ensure your interests are protected and all promised
-            incentives are properly documented. During construction, I conduct multiple site visits
-            to monitor quality and identify issues before they become problems. At final
-            walk-through, I help you create a comprehensive punch list ensuring every detail meets
-            specifications before you accept the home.
+            I attend design-center appointments to help you choose upgrades you actually want versus
+            items you can skip. I review contracts and disclosures so promised incentives are
+            written down. During construction I walk key phases with you and document issues. At
+            final walk-through, we build a punch list before you accept the keys.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            Maximizing Builder Incentives Through Expert Negotiation
+            Reviewing Builder Incentives on the Live Sheet
           </h3>
 
           <p className="leading-relaxed">
-            Builder incentives change frequently based on inventory levels, sales pace, and
-            corporate directives from national headquarters. What's advertised to the general public
-            is often just the starting point for what's truly available to buyers working with
-            experienced agents who understand negotiation leverage points. I track incentive
-            programs across all builders constantly and can advise you on optimal timing for your
-            purchase when incentives are most aggressive. I also understand which incentives are
-            truly valuable versus marketing tactics designed to steer you toward higher-priced
-            options or preferred lender relationships that may not offer the best rates.
+            Builder incentives change with inventory, sales pace, and corporate directives. Public
+            ads are a starting point — confirm the live sheet for that community. I compare credits,
+            upgrades, and rate-buydown offers across the builders you will actually tour. Preferred
+            lenders are optional; compare at least two written quotes.
           </p>
 
           <p className="leading-relaxed">

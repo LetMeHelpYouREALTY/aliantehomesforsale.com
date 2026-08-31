@@ -134,7 +134,7 @@ export default function TopBuilders() {
       communities: [
         'Communities inside Aliante / North Las Vegas 89084',
         'Confirm current collections on the Lennar sheet',
-        'Independent buyer agency at no extra cost to you on participating sales',
+        'Independent buyer agency at no extra cost on participating sales — confirm in writing',
       ],
       incentives: [
         'Confirm today’s closing-cost, buydown, and upgrade offers',

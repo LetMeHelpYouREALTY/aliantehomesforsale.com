@@ -64,9 +64,9 @@ export default function GatedCommunitiesContent() {
               >
                 The Prominence
               </Link>{' '}
-              stands as a gated village with premium finishes, golf-course proximity, and community
-              pools. Confirm live MLS prices — I will not publish a stale range as current. Homes
-              here often include upgraded interiors, larger lots, and views of the manicured{' '}
+              is a gated village with golf-course proximity and community pools. Confirm live MLS
+              prices, finishes, and lot size — I will not publish a stale range as current. Some
+              listings sit near the manicured{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -99,7 +99,8 @@ export default function GatedCommunitiesContent() {
               >
                 Aliante homes for sale
               </Link>{' '}
-              to explore current gated options.
+              to explore current gated options. Sub-associations such as Courts at Aliante and
+              Terrasini also use controlled access — confirm which gate system applies to the lot.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -141,10 +142,9 @@ export default function GatedCommunitiesContent() {
               Buyers should also review the community's CC&Rs (Covenants, Conditions, and
               Restrictions) carefully, as gated communities often have stricter rules regarding
               architectural changes, vehicle storage, landscaping requirements, and even holiday
-              decorations. While these rules help maintain property values and community aesthetics,
-              they do limit individual freedom compared to standard neighborhoods. I always
-              recommend that my clients thoroughly review these documents and understand the HOA's
-              enforcement history before committing to a purchase.
+              decorations. Those rules set appearance standards. They also limit what you can change
+              compared with open-access streets. Review the documents and the HOA’s enforcement
+              history before you write.
             </p>
 
             <p className="leading-relaxed">

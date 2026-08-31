@@ -45,11 +45,11 @@ export default function ConstructionProcess() {
       number: 1,
       title: 'Builder & Community Selection',
       description:
-        'We help you choose the right builder and community based on your lifestyle, budget, and preferences. Compare builders, floor plans, and amenities.',
+        'Compare builders, floor plans, and amenities against your budget and the lots that are actually for sale this month.',
       details: [
-        'Review all builders and communities',
-        'Compare quality and reputation',
-        'Analyze price vs. value',
+        'Review builders active near Aliante',
+        'Compare plans and included features',
+        'Confirm live price sheets',
         'Visit model homes together',
       ],
     },
@@ -57,7 +57,7 @@ export default function ConstructionProcess() {
       number: 2,
       title: 'Strategic Lot Selection',
       description:
-        'Lot placement affects resale value, views, privacy, and daily living. We analyze every factor to help you choose the best lot.',
+        'Lot placement affects views, sun, street noise, and daily living. We walk the map with you so you can choose a lot that matches those factors.',
       details: [
         'Corner vs. interior lots',
         'View premiums vs. standard',
@@ -69,7 +69,7 @@ export default function ConstructionProcess() {
       number: 3,
       title: 'Design Center & Upgrades',
       description:
-        'Maximize your investment with strategic upgrade choices. We help you decide which upgrades add value and which to skip.',
+        'Choose upgrades with use and resale in mind. We help you decide which design-center items you want to pay for and which to skip.',
       details: [
         'Flooring and finishes selection',
         'Kitchen and bath upgrades',
@@ -81,7 +81,7 @@ export default function ConstructionProcess() {
       number: 4,
       title: 'Construction Monitoring',
       description:
-        'We monitor your build progress, coordinate inspections at critical phases, and ensure quality standards are met.',
+        'We walk key phases with you, coordinate inspections you hire, and document issues before closing.',
       details: [
         'Foundation and framing inspections',
         'Pre-drywall walkthrough',

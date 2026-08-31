@@ -37,7 +37,7 @@ export default function AlianteFAQ() {
     {
       question: 'Does working with Dr. Jan Duffy cost me anything as a buyer?',
       answer:
-        'Buyer representation is typically at no extra cost to you. On participating sales, the builder or seller pays the buyer-broker fee from its marketing budget. <a href="/contact" class="text-blue-600 hover:underline font-semibold">Contact me</a> before you tour so representation is documented.',
+        'Buyer representation is typically at no extra cost to you on participating sales — the seller or builder pays the cooperating fee from its marketing budget. Confirm the fee arrangement in writing before you tour. <a href="/contact" class="text-blue-600 hover:underline font-semibold">Contact me</a> so representation is documented.',
     },
     {
       question: 'What is Dr. Jan Duffy’s focus in Aliante real estate?',

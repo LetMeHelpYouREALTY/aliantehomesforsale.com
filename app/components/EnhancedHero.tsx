@@ -92,14 +92,14 @@ export default function EnhancedHero({
               🏆 Local Expert Since 2018
             </span>
             <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              📍 Aliante · 89084 Only
+              📍 Aliante 89084 focus
             </span>
           </div>
           <a
             href="#live-listings-heading"
             className="inline-block py-4 px-8 rounded-xl font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-[1.02] hover:shadow-xl focus:ring-4 focus:ring-orange-300 focus:outline-none"
           >
-            🔍 See Available Homes
+            See current listings
           </a>
         </div>
 

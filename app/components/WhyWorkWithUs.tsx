@@ -35,7 +35,7 @@ export default function WhyWorkWithUs() {
     },
     {
       icon: '💡',
-      title: 'Incentive Maximization',
+      title: 'Incentive review',
       description:
         'I represent you on the builder contract. Confirm today’s incentive sheet, lot premiums, and upgrade credits before you write — I will not publish a stale savings average.',
     },
@@ -49,13 +49,13 @@ export default function WhyWorkWithUs() {
       icon: '📋',
       title: 'Contract Expertise',
       description:
-        'Builder contracts heavily favor the builder. We review every clause, negotiate better terms, and protect your interests throughout the process.',
+        'Builder contracts favor the builder. I review clauses with you and negotiate what that sales desk will actually change.',
     },
     {
       icon: '⏱️',
       title: 'Timeline Management',
       description:
-        'Construction delays cost money. We monitor your build schedule, coordinate with superintendents, and keep your project on track.',
+        'I track dates on your contract and flag delays when the builder updates the schedule. I cannot control the superintendent’s calendar.',
     },
     {
       icon: '🏆',

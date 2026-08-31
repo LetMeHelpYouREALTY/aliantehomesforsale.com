@@ -24,8 +24,8 @@ export default function HyperlocalRealtorServices() {
             Hyperlocal realtor services in Aliante, North Las Vegas 89084
           </h2>
           <p className="speakable text-xl text-gray-600 max-w-3xl mx-auto">
-            {siteConfig.agentName} specializes exclusively in Aliante and North Las Vegas, NV{' '}
-            {siteConfig.zipCode} — not the entire Las Vegas valley.
+            {siteConfig.agentName} focuses on Aliante and North Las Vegas, NV {siteConfig.zipCode} —
+            not a valley-wide general practice.
           </p>
         </div>
 

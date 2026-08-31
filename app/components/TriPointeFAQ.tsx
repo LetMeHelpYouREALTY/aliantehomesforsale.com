@@ -11,7 +11,7 @@ const faqs = [
   {
     question: 'Can I still use a buyer’s agent for Tri Pointe Homes Las Vegas?',
     answer:
-      'Yes. Register with Dr. Jan Duffy before you tour so representation is documented. Call (702) 707-7273. The builder pays the buyer-broker fee from its marketing budget on participating sales.',
+      'Yes. Register with Dr. Jan Duffy before you tour so representation is documented. Call (702) 707-7273. On participating sales, the builder pays the cooperating fee from its marketing budget. Confirm the fee arrangement in writing before you tour.',
   },
 ];
 

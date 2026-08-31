@@ -23,7 +23,7 @@ export default function ContactWhyChoose() {
     {
       icon: '🏠',
       title: 'Local Expertise',
-      description: '6+ years specializing exclusively in Aliante and North Las Vegas properties',
+      description: '6+ years focused on Aliante and North Las Vegas 89084 properties',
     },
     {
       icon: '🤝',
