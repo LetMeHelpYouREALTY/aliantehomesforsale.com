@@ -1,12 +1,16 @@
 'use client';
 
+type LegalContentProps = {
+  title: string;
+  children: React.ReactNode;
+  lastUpdated?: string;
+};
+
 export default function LegalContent({
   title,
   children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+  lastUpdated = 'August 31, 2026',
+}: LegalContentProps) {
   return (
     <>
       <section className="py-16 px-4 bg-white">
@@ -14,6 +18,7 @@ export default function LegalContent({
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             {title}
           </h2>
+          <p className="text-sm text-gray-500 mb-8">Last updated: {lastUpdated}</p>
           {children}
         </div>
       </section>

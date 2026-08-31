@@ -77,10 +77,11 @@ export default function BuilderIncentivesInfo({
           </p>
 
           <p className="leading-relaxed">
-            Working with me as your buyer’s agent does not add a fee on the builder contract. The
-            builder pays the cooperating commission from their marketing budget. Going to the
-            model-home desk without representation does not make the home cheaper. Call (702)
-            707-7273 to confirm today’s sheet for the community you want.
+            Buyer representation is typically at no extra cost to you on participating builder sales
+            — the builder pays the cooperating commission from its marketing budget. Confirm the fee
+            arrangement in writing before you tour. Going to the model-home desk without
+            representation does not make the home cheaper. Call (702) 707-7273 to confirm today’s
+            sheet for the community you want.
           </p>
         </div>
       </div>
