@@ -1,6 +1,14 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
+function permanentRedirect(url: URL) {
+  // 308 (not 307). NextResponse.redirect() defaults to 307, which Google treats as
+  // temporary — Search Console then keeps the source URL in “Page with redirect”
+  // and may not consolidate to www. 308 is the permanent equivalent of 301.
+  // @see https://developers.google.com/search/docs/crawling-indexing/301-redirects
+  return NextResponse.redirect(url, { status: 308 });
+}
+
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
@@ -8,25 +16,22 @@ export function middleware(request: NextRequest) {
   // Canonical domain enforcement (www + HTTPS)
   const canonicalDomain = 'www.aliantehomesforsale.com';
 
-  // Check if request is not to canonical domain
-  const needsRedirect =
-    hostname !== canonicalDomain &&
-    !hostname.includes('localhost') &&
-    !hostname.includes('vercel.app');
+  const isLocalDev =
+    hostname.includes('localhost') ||
+    hostname.startsWith('127.0.0.1') ||
+    hostname.startsWith('[::1]') ||
+    hostname.includes('vercel.app');
 
-  if (needsRedirect) {
-    // Force HTTPS and www
+  // Apex (and any other host) → https://www
+  if (hostname !== canonicalDomain && !isLocalDev) {
     url.protocol = 'https:';
     url.host = canonicalDomain;
-
-    // 301 Permanent Redirect
-    return NextResponse.redirect(url, 301);
+    return permanentRedirect(url);
   }
 
-  // Force HTTPS even on correct domain
-  if (url.protocol === 'http:' && !hostname.includes('localhost')) {
+  if (url.protocol === 'http:' && !isLocalDev) {
     url.protocol = 'https:';
-    return NextResponse.redirect(url, 301);
+    return permanentRedirect(url);
   }
 
   return NextResponse.next();

@@ -183,7 +183,7 @@ export default function NeighborhoodCards() {
         { label: 'Home Types', value: 'Single Family, Villas' },
         { label: 'Age Requirement', value: '55+ Community' },
       ],
-      href: '/neighborhoods/sun-city',
+      href: '/sun-city-aliante',
       gradient: 'linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%)',
     },
     {

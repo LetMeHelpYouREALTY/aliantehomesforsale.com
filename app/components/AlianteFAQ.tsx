@@ -17,7 +17,7 @@ export default function AlianteFAQ() {
     {
       question: 'What is Sun City Aliante and who can live there?',
       answer:
-        '<a href="/neighborhoods/sun-city" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is an active adult 55+ community built by <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. At least one resident must be 55 or older. The community offers resort-style amenities including golf courses, fitness centers, swimming pools, social clubs, and over 100 activity groups. Homes range from $380,000 to $650,000 with low-maintenance living and world-class amenities included.',
+        '<a href="/sun-city-aliante" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is an active adult 55+ community built by <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. At least one resident must be 55 or older. The community offers resort-style amenities including golf courses, fitness centers, swimming pools, social clubs, and over 100 activity groups. Homes range from $380,000 to $650,000 with low-maintenance living and world-class amenities included.',
     },
     {
       question: 'Are there gated communities in Aliante?',
