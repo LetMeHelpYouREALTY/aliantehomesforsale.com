@@ -1,4 +1,5 @@
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import { siteConfig } from '../../lib/site-config';
 import HeroBackdrop from './HeroBackdrop';
 
 type ContactHeroProps = {
@@ -43,7 +44,7 @@ export default function ContactHero({
             (702) 707-7273
           </a>
           <p className="text-white/80 mt-3 text-sm sm:text-base">
-            Available 7 days a week • 9:00 AM - 8:00 PM PST
+            {siteConfig.hours.weekday} · {siteConfig.hours.weekend}
           </p>
         </div>
       </div>

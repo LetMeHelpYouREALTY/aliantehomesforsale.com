@@ -1,5 +1,7 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+
 interface ContactMethodProps {
   icon: string;
   title: string;
@@ -54,7 +56,7 @@ export default function ContactMethods() {
       icon: '📞',
       title: 'Call Us Today',
       primary: '(702) 707-7273',
-      details: ['Available 7 days a week', '9:00 AM - 8:00 PM PST'],
+      details: [siteConfig.hours.weekday, siteConfig.hours.weekend],
       href: 'tel:+17027077273',
       featured: true,
     },
@@ -75,8 +77,8 @@ export default function ContactMethods() {
     {
       icon: '⏰',
       title: 'Office Hours',
-      primary: 'Mon–Fri: 8AM–7PM',
-      details: ['Sat–Sun: 9AM–6PM', 'Appointments welcome'],
+      primary: siteConfig.hours.weekday,
+      details: [siteConfig.hours.weekend, 'Appointments welcome'],
     },
   ];
 

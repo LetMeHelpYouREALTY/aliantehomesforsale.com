@@ -27,14 +27,8 @@ export default function NeighborhoodDetailContent({
           </p>
 
           <p className="leading-relaxed">
-            I've toured dozens of homes in this neighborhood and understand the various builder
-            floor plans, upgrade packages, and architectural styles available. This knowledge allows
-            me to quickly identify properties that represent exceptional value versus those that are
-            overpriced relative to market conditions. I also maintain relationships with many
-            homeowners in the area, giving me insights into neighborhood dynamics, HOA governance
-            quality, and community culture that you won't find in listing descriptions or online
-            reviews. This insider perspective helps ensure you make a purchase decision based on
-            complete information rather than just what sellers choose to disclose.
+            I tour homes in this village and compare builder floor plans, upgrade packages, and lot
+            position. Confirm HOA governance, CC&Rs, and live MLS comps — not listing remarks alone.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

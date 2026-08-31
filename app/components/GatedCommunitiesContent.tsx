@@ -28,7 +28,7 @@ export default function GatedCommunitiesContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              The Security Advantage
+              Controlled access, guest lists, and HOA rules
             </h3>
 
             <p className="leading-relaxed">
@@ -106,26 +106,20 @@ export default function GatedCommunitiesContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              The Financial Investment Perspective
+              Comps, HOA dues, and resale
             </h3>
 
             <p className="leading-relaxed">
-              Beyond the lifestyle benefits, gated communities represent a sound financial
-              investment. Homes in gated communities typically appreciate at faster rates than
-              comparable homes in standard neighborhoods, with the security and amenities commanding
-              a premium that grows over time. The selective nature of these communities means that
-              neighbors take pride in property maintenance, and HOA architectural controls ensure
-              that all homes are maintained to high standards.
+              Gated villages trade on lot position, square footage, HOA rules, and live comps — not
+              a guaranteed premium over open-access streets. Confirm current list prices and HOA
+              documents before you offer. I will not publish an appreciation rate for gated vs
+              open-access homes.
             </p>
 
             <p className="leading-relaxed">
-              When reselling a home in a gated community, sellers benefit from a larger pool of
-              qualified buyers willing to pay premium prices for the security and lifestyle these
-              communities provide. The combination of desirable location in Aliante, limited
-              inventory of gated homes, and strong buyer demand creates a favorable environment for
-              property appreciation. As your real estate advisor, I can provide detailed comparative
-              market analysis showing the appreciation trends for gated versus non-gated homes in
-              Aliante, helping you understand the long-term investment potential of your purchase.
+              When reselling a home in a gated village, inventory and buyer demand still change with
+              the market. Confirm live comps. I can run a comparative market analysis for the
+              address — I will not quote a gated vs open-access appreciation rate here.
             </p>
           </div>
         </div>
@@ -140,11 +134,10 @@ export default function GatedCommunitiesContent() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
               While gated communities offer tremendous benefits, it's important to understand the
-              unique considerations before making your purchase. HOA fees in gated communities are
-              typically higher than standard neighborhoods, ranging from $200 to $500+ per month,
-              depending on the community and amenities provided. These fees cover the cost of
-              security personnel or gate systems, common area maintenance, amenity upkeep, and the
-              premium insurance and landscaping these communities require.
+              unique considerations before making your purchase. HOA dues in gated villages are
+              often higher because they fund gate systems, common-area maintenance, and amenity
+              upkeep. Confirm the current HOA budget and fee sheet — I will not publish a stale
+              monthly amount.
             </p>
 
             <p className="leading-relaxed">
@@ -162,9 +155,8 @@ export default function GatedCommunitiesContent() {
               also means that your visitors will need to be cleared through the gate, which some
               buyers find inconvenient. Modern communities have streamlined this process with
               electronic guest lists and temporary access codes, but it's still an adjustment from
-              the completely open access of non-gated neighborhoods. Many buyers find that the
-              security benefits far outweigh this minor inconvenience, but it's something to
-              consider based on your lifestyle and how frequently you entertain guests.
+              the completely open access of non-gated neighborhoods. Confirm guest procedures before
+              you buy.
             </p>
           </div>
         </div>

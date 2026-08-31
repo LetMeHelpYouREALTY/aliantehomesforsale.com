@@ -28,14 +28,14 @@ export default function MarketReportContent() {
               >
                 The Paseos
               </Link>{' '}
-              beginning around $300,000 to luxury estates in{' '}
+              and larger homes in{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 The Prominence
               </Link>{' '}
-              exceeding $1.2 million on some sales — confirm the live list price. Browse all{' '}
+              — confirm the live list price. Browse all{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

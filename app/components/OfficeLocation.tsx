@@ -122,6 +122,15 @@ export default function OfficeLocation() {
                 >
                   Open in Google Maps
                 </a>
+                <a
+                  href={maps.placeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2 transition-colors focus:outline-none focus:ring-4 focus:ring-teal-200"
+                  style={{ borderColor: '#16B286', color: '#16B286' }}
+                >
+                  View Google Reviews
+                </a>
               </div>
 
               <p className="mt-6 text-sm text-gray-600">
