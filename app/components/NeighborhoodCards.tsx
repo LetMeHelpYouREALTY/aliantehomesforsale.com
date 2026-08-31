@@ -104,7 +104,7 @@ export default function NeighborhoodCards() {
       name: 'The Prominence',
       tag: 'Gated village',
       description:
-        'Controlled-access village inside the Aliante master plan with premium finishes, private amenities, and proximity to Aliante Golf Club.',
+        'Controlled-access village inside the Aliante master plan with private amenities and proximity to Aliante Golf Club.',
       features: ['Near Aliante Golf Club', 'Gated entry', 'Community pool', 'Courts'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },

@@ -53,14 +53,15 @@ export default function FAQSection({ title, faqs }: FAQSectionProps) {
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors cursor-pointer group"
+                className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors group"
               >
                 <summary
-                  className="font-bold text-lg list-none flex justify-between items-center"
-                  style={{ color: '#2c5aa0' }}
+                  className="font-bold text-lg flex justify-between items-center cursor-pointer rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden"
+                  style={{ color: '#2c5aa0', outlineColor: '#2c5aa0' }}
                 >
                   <span>{faq.question}</span>
                   <svg
+                    aria-hidden="true"
                     className="w-5 h-5 transition-transform group-open:rotate-180"
                     fill="none"
                     stroke="currentColor"
