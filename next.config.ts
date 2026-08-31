@@ -149,6 +149,18 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      // Next.js also serves the homepage at /index (200 + canonical to /).
+      // Google lists that as "Alternate page with proper canonical" — 308 it.
+      {
+        source: '/index',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
       // Consolidate duplicate Sun City URLs onto the stronger slug
       {
         source: '/neighborhoods/sun-city',

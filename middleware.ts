@@ -5,6 +5,15 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
 
+  // Next.js serves app/page.tsx at both / and /index (Vercel x-matched-path: /).
+  // Google crawled /index (200) with canonical to / → "Alternate page with proper canonical".
+  // Permanent redirect so crawlers only keep the homepage URL.
+  const path = url.pathname.replace(/\/+$/, '') || '/';
+  if (path === '/index' || path === '/index.html') {
+    url.pathname = '/';
+    return NextResponse.redirect(url, 308);
+  }
+
   // Canonical domain enforcement (www + HTTPS)
   const canonicalDomain = 'www.aliantehomesforsale.com';
 
