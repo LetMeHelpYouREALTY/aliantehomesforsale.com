@@ -110,7 +110,7 @@ export default function PropertyManagementContent() {
               className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2"
               style={{ borderColor: '#2c5aa0', color: '#2c5aa0' }}
             >
-              View Google Reviews
+              Open in Google Maps
             </a>
           </div>
         </div>

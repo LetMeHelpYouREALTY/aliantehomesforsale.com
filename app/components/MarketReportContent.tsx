@@ -118,10 +118,10 @@ export default function MarketReportContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Different property types within Aliante have shown different appreciation paths. Gated
-              single-family lots and new construction often hold a premium to open-access streets,
-              but I will not hard-code an annual percentage here. Confirm recent comps for the
-              village you want before you treat any “average gain” as current.
+              Different property types within Aliante trade on lot position, square footage, HOA
+              rules, and live comps. Confirm recent closed sales for the village you want — I will
+              not claim a gated or new-construction premium over open-access streets, and I will not
+              hard-code an annual percentage.
             </p>
 
             <p className="leading-relaxed">
