@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import AgentPhoto from './AgentPhoto';
 
 export default function EnhancedNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,12 +36,19 @@ export default function EnhancedNavigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo/Brand */}
-            <Link href="/" className="flex flex-col hover:opacity-80 transition-opacity">
-              <span className="text-xl md:text-2xl font-bold" style={{ color: '#1a365d' }}>
-                Aliante Las Vegas
-              </span>
-              <span className="text-xs md:text-sm text-gray-600 font-medium hidden sm:block">
-                Homes by Dr. Jan Duffy | Your Trusted Local Expert Since 2018
+            <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <AgentPhoto
+                size={isScrolled ? 40 : 48}
+                className="flex-shrink-0 shadow-sm"
+                priority
+              />
+              <span className="flex flex-col">
+                <span className="text-xl md:text-2xl font-bold" style={{ color: '#1a365d' }}>
+                  Aliante Las Vegas
+                </span>
+                <span className="text-xs md:text-sm text-gray-600 font-medium hidden sm:block">
+                  Homes by Dr. Jan Duffy | Your Trusted Local Expert Since 2018
+                </span>
               </span>
             </Link>
 
@@ -324,6 +332,20 @@ export default function EnhancedNavigation() {
                   />
                 </svg>
               </button>
+
+              <Link
+                href="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="flex items-center gap-3 mb-6"
+              >
+                <AgentPhoto size={56} className="flex-shrink-0" />
+                <span className="flex flex-col">
+                  <span className="font-bold" style={{ color: '#1a365d' }}>
+                    Dr. Jan Duffy
+                  </span>
+                  <span className="text-sm text-gray-600">Aliante real estate expert</span>
+                </span>
+              </Link>
 
               {/* Mobile Phone CTA */}
               <a

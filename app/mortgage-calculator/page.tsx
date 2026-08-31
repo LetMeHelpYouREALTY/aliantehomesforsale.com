@@ -24,11 +24,7 @@ export default function MortgageCalculator() {
         image={pageHero('/mortgage-calculator')}
       />
       <MortgageCalculatorContent />
-      <section className="py-16 px-4 bg-white">
-        <div className="container">
-          <EnhancedContactForm />
-        </div>
-      </section>
+      <EnhancedContactForm event="consultation" />
       <HomesMarketSnapshot />
       <HomesCTA />
     </main>

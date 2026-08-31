@@ -37,6 +37,10 @@ export const homeHeroSlides: readonly [SiteImage, SiteImage, SiteImage] = [
 
 export const siteImages = {
   og: ogImage,
+  agent: {
+    src: '/images/dr-jan-duffy.png',
+    alt: 'Dr. Jan Duffy, Aliante North Las Vegas real estate agent',
+  },
   homeSlides: homeHeroSlides,
   homesForSale: img(
     'homes-for-sale.jpg',

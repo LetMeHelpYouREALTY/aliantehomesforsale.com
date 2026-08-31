@@ -134,7 +134,10 @@ export default function OfficeLocation() {
               </div>
 
               <p className="mt-6 text-sm text-gray-600">
-                Prefer to meet at a listing, coffee shop, or your home? Call or use the contact form
+                Prefer to meet at a listing, coffee shop, or your home? Call or{' '}
+                <a href="#schedule" className="font-semibold underline">
+                  schedule on Calendly
+                </a>{' '}
                 — we come to you.
               </p>
             </div>

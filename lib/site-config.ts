@@ -10,6 +10,8 @@ export const siteConfig = {
   defaultDescription:
     'Aliante real estate and homes for sale in North Las Vegas, NV 89084. MLS updated about every 15 minutes. Club Aliante, Sun City Aliante 55+, gated communities. Call (702) 707-7273.',
   agentName: 'Dr. Jan Duffy',
+  /** Official circular portrait used for favicon, nav, footer, and agent sections. */
+  agentImage: '/images/dr-jan-duffy.png',
   agentLicense: 'S.0197614.LLC',
   brokerage: 'Berkshire Hathaway HomeServices Nevada Properties',
   foundedYear: 2018,
@@ -131,7 +133,45 @@ export const siteConfig = {
     'D.R. Horton Tule Springs',
   ],
   /** Verified / brand profiles only — empty slots omitted from schema */
-  sameAs: ['https://www.aliantehomesforsale.com'] as string[],
+  sameAs: ['https://www.aliantehomesforsale.com', 'https://calendly.com/drjanduffy'] as string[],
+  /**
+   * Live Calendly event types (verified 2026-08-31).
+   * Used for inline embeds, the sitewide badge, and ScheduleAction schema.
+   */
+  calendly: {
+    profile: 'https://calendly.com/drjanduffy',
+    scriptSrc: 'https://assets.calendly.com/assets/external/widget.js',
+    styleSrc: 'https://assets.calendly.com/assets/external/widget.css',
+    events: {
+      consultation: {
+        url: 'https://calendly.com/drjanduffy/15min',
+        label: '15-minute consultation',
+        heading: 'Schedule a 15-minute conversation',
+        description:
+          'Pick a time to talk Aliante homes, new construction, or your next move with Dr. Jan Duffy.',
+      },
+      appointment: {
+        url: 'https://calendly.com/drjanduffy/appointment',
+        label: 'Appointment',
+        heading: 'Book an appointment with Dr. Jan Duffy',
+        description:
+          'Reserve a working session for a home valuation, builder strategy, or listing plan.',
+      },
+      showing: {
+        url: 'https://calendly.com/drjanduffy/showing',
+        label: 'Private showing',
+        heading: 'Schedule a private showing',
+        description: 'Tour Aliante listings in person — no signup required.',
+      },
+      listing: {
+        url: 'https://calendly.com/drjanduffy/listing-consultation',
+        label: 'Listing consultation',
+        heading: 'Schedule a listing consultation',
+        description:
+          'Talk through your Aliante property, timing, and a neighborhood-level pricing plan.',
+      },
+    },
+  },
   phone: '(702) 707-7273',
   phoneTel: '+17027077273',
   email: 'DrDuffy@AlianteHomesForSale.com',

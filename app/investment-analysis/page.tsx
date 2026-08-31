@@ -27,11 +27,7 @@ export default function InvestmentAnalysis() {
       <HomesMarketSnapshot />
       <InvestmentAnalysisContent />
       <AboutExpertise />
-      <section className="py-16 px-4 bg-white">
-        <div className="container">
-          <EnhancedContactForm />
-        </div>
-      </section>
+      <EnhancedContactForm event="appointment" />
       <HomesCTA />
     </main>
   );

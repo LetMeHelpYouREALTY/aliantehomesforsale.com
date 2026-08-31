@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AgentPhoto from './AgentPhoto';
 
 /**
  * Purist-style agent intro: "Dr. Jan Duffy Real Estate" welcome block.
@@ -7,6 +8,7 @@ export default function AgentWelcomeSection() {
   return (
     <section className="py-16 px-4 bg-white" aria-labelledby="agent-welcome-heading">
       <div className="max-w-4xl mx-auto text-center">
+        <AgentPhoto size={160} className="mx-auto mb-6 shadow-lg" />
         <h2 id="agent-welcome-heading" className="text-3xl font-bold mb-6 text-[#0a2540]">
           Dr. Jan Duffy Real Estate
         </h2>

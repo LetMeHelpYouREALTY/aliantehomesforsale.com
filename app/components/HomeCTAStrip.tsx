@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
 
 /**
  * Purist-style CTA strip: View Listings, Explore Neighborhoods, What's My Home Worth.
@@ -29,6 +31,7 @@ export default function HomeCTAStrip() {
       aria-labelledby="cta-strip-heading"
     >
       <div className="max-w-5xl mx-auto text-center">
+        <AgentPhoto size={120} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 id="cta-strip-heading" className="sr-only">
           Next steps
         </h2>
@@ -43,6 +46,13 @@ export default function HomeCTAStrip() {
               <span className="text-sm text-white/90 mt-1">{description}</span>
             </Link>
           ))}
+          <CalendlyPopupButton
+            event="consultation"
+            className="flex flex-col justify-center rounded-xl border-2 border-white/40 bg-white/10 backdrop-blur-sm px-8 py-6 min-h-[120px] hover:bg-white/20 hover:border-white/60 transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2540]"
+          >
+            <span className="font-bold text-lg">Schedule time with me</span>
+            <span className="text-sm text-white/90 mt-1">Pick a Calendly slot — no form</span>
+          </CalendlyPopupButton>
         </div>
       </div>
     </section>

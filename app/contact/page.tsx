@@ -29,12 +29,7 @@ export default function Contact() {
       {/* Contact Methods Grid */}
       <ContactMethods />
 
-      {/* Contact Form Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container">
-          <EnhancedContactForm />
-        </div>
-      </section>
+      <EnhancedContactForm event="consultation" />
 
       {/* Why Choose Us */}
       <ContactWhyChoose />

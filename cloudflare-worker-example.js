@@ -83,12 +83,12 @@ async function handleRequest(request) {
   // Add Content Security Policy that allows RealScout and Google Analytics
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com",
-    "style-src 'self' 'unsafe-inline'",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://assets.calendly.com",
+    "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
     "img-src 'self' data: https: https://www.google-analytics.com",
-    "connect-src 'self' https://em.realscout.com https://www.realscout.com https://www.google-analytics.com https://region1.google-analytics.com https://region1.analytics.google.com",
+    "connect-src 'self' https://em.realscout.com https://www.realscout.com https://www.google-analytics.com https://region1.google-analytics.com https://region1.analytics.google.com https://calendly.com https://assets.calendly.com",
     "font-src 'self' data:",
-    "frame-src 'self'",
+    "frame-src 'self' https://calendly.com https://www.calendly.com https://www.google.com https://maps.google.com",
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'",

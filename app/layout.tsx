@@ -4,6 +4,8 @@ import Script from 'next/script';
 import { siteConfig } from '../lib/site-config';
 import './globals.css';
 import Breadcrumbs from './components/Breadcrumbs';
+import CalendlyPageSection from './components/CalendlyPageSection';
+import CalendlyPopupWidget from './components/CalendlyPopupWidget';
 import EnhancedFooter from './components/EnhancedFooter';
 import EnhancedNavigation from './components/EnhancedNavigation';
 import EntityGraphSchema from './components/EntityGraphSchema';
@@ -42,6 +44,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   alternates: {
     canonical: '/',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
     title: siteConfig.defaultTitle,
@@ -100,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         ) : null}
+        <link rel="stylesheet" href={siteConfig.calendly.styleSrc} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Skip link: WCAG 2.2 / keyboard users (focus visible) */}
@@ -115,6 +125,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
           type="module"
         />
+        {/* Calendly: load once for badge + popup buttons */}
+        <Script src={siteConfig.calendly.scriptSrc} strategy="lazyOnload" />
 
         {/* Knowledge + Content + Agent graphs (SEO / AEO / GEO) */}
         <EntityGraphSchema />
@@ -126,6 +138,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
 
+        {/* Matching Calendly event below content on pages without an inline scheduler */}
+        <CalendlyPageSection />
+
         {/* RealScout search (lead gen): below hero on home (in page); below content on other pages */}
         <RealScoutSearchSectionLayout />
 
@@ -136,6 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Enhanced Footer with SEO-optimized structure */}
         <EnhancedFooter />
+        <CalendlyPopupWidget />
       </body>
     </html>
   );

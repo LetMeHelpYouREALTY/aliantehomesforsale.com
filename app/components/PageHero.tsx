@@ -1,4 +1,5 @@
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
 
 type PageHeroProps = {
@@ -27,6 +28,7 @@ export default function PageHero({
             {eyebrow}
           </p>
         ) : null}
+        <AgentPhoto size={160} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" priority />
         <h1
           id="page-hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"

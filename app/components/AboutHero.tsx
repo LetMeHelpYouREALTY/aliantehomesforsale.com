@@ -1,4 +1,5 @@
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
 
 type AboutHeroProps = {
@@ -20,6 +21,7 @@ export default function AboutHero({
       <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
+        <AgentPhoto size={180} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" priority />
         <h1
           id="about-hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"

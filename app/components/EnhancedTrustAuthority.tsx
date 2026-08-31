@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { agentCredentials } from '../../lib/content/aliante-content';
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
 
 /**
  * Trust / credentials for Dr. Jan Duffy — no fabricated rankings or reviews.
@@ -10,6 +12,7 @@ export default function EnhancedTrustAuthority() {
     <section className="py-16 px-4 bg-white" aria-labelledby="why-choose-heading">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <AgentPhoto size={140} className="mx-auto mb-6 shadow-lg" />
           <h2
             id="why-choose-heading"
             className="speakable text-4xl sm:text-5xl font-bold mb-4"
@@ -50,6 +53,12 @@ export default function EnhancedTrustAuthority() {
             to talk through your Aliante search or sale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CalendlyPopupButton
+              event="consultation"
+              className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-[#ed8936]"
+            >
+              Schedule time with me
+            </CalendlyPopupButton>
             <a
               href={`tel:${siteConfig.phoneTel}`}
               className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white"

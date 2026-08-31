@@ -156,7 +156,7 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
             Current Market Data →
           </Link>
           <Link
-            href="/contact"
+            href="/contact#schedule"
             className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
           >
             Schedule Consultation →

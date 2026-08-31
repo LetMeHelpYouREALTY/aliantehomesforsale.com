@@ -24,11 +24,7 @@ export default function HomeValuation() {
         image={pageHero('/home-valuation')}
       />
       <HomeValuationContent />
-      <section className="py-16 px-4 bg-white">
-        <div className="container">
-          <EnhancedContactForm />
-        </div>
-      </section>
+      <EnhancedContactForm event="appointment" />
       <AboutExpertise />
       <AboutCTA />
     </main>

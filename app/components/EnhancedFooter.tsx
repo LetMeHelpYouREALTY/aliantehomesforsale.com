@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
 
 const navigateLinks = [
   { href: '/', label: 'Home' },
@@ -123,6 +124,12 @@ export default function EnhancedFooter() {
                 What&apos;s Nearby
               </Link>
               <Link
+                href="#schedule"
+                className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
+              >
+                Schedule time
+              </Link>
+              <Link
                 href="/contact"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
               >
@@ -133,12 +140,24 @@ export default function EnhancedFooter() {
 
           {/* Column 3: Company */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <AgentPhoto size={64} className="flex-shrink-0 shadow-md" />
+              <div>
+                <h3 className="text-lg font-bold text-white">Company</h3>
+                <p className="text-xs text-gray-400">{siteConfig.agentName}</p>
+              </div>
+            </div>
             <p className="text-sm text-gray-300 mb-3">
               {siteConfig.agentName}
               <br />
               {siteConfig.brokerage}
             </p>
+            <a
+              href={siteConfig.calendly.events.consultation.url}
+              className="inline-block mb-4 text-sm font-semibold text-[#16B286] hover:underline"
+            >
+              Schedule time with me
+            </a>
             <p className="text-xs text-gray-400 mb-4">
               Nevada Real Estate License #{siteConfig.agentLicense}
               <br />
@@ -221,13 +240,13 @@ export default function EnhancedFooter() {
               <p className="text-xs text-gray-400 mb-3">
                 Get Aliante listing alerts and local market notes from Dr. Duffy.
               </p>
-              <Link
-                href="/contact"
+              <a
+                href={siteConfig.calendly.events.consultation.url}
                 className="inline-block w-full text-center py-2 px-4 rounded-lg font-semibold text-sm text-white"
                 style={{ backgroundColor: '#16B286' }}
               >
-                Request Updates
-              </Link>
+                Schedule a market call
+              </a>
             </div>
           </div>
         </div>

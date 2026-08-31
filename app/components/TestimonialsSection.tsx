@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
 
 /**
  * Client feedback without invented quotes or Review JSON-LD.
@@ -9,6 +10,7 @@ export default function TestimonialsSection() {
     <section className="py-16 px-4 bg-white" aria-labelledby="testimonials-heading">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <AgentPhoto size={120} className="mx-auto mb-6 shadow-lg" />
           <h2
             id="testimonials-heading"
             className="text-4xl sm:text-5xl font-bold mb-4"
@@ -53,20 +55,20 @@ export default function TestimonialsSection() {
               Call now →
             </span>
           </a>
-          <Link
-            href="/contact"
-            className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow"
+          <CalendlyPopupButton
+            event="consultation"
+            className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow text-left"
           >
             <h3 className="text-xl font-bold mb-3" style={{ color: '#1a365d' }}>
-              Write a note
+              Schedule time with me
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Send the address or village you want to tour. I follow up from the same office NAP.
+              Pick a Calendly slot for a showing, listing conversation, or Aliante 89084 search.
             </p>
             <span className="font-semibold" style={{ color: '#2c5aa0' }}>
-              Contact form →
+              Open scheduler →
             </span>
-          </Link>
+          </CalendlyPopupButton>
         </div>
       </div>
     </section>

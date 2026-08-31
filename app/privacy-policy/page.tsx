@@ -41,9 +41,9 @@ export default function PrivacyPolicy() {
             We collect several types of information from and about users of our website and
             services. This includes information that you provide directly to us, such as your name,
             email address, phone number, physical address, and information about your real estate
-            needs and preferences. When you fill out contact forms, request home valuations, sign up
-            for property alerts, or communicate with us through email or phone, we collect and store
-            this information to better serve your needs.
+            needs and preferences. When you book a Calendly appointment, request home valuations,
+            sign up for property alerts, or communicate with us through email or phone, we collect
+            and store this information to better serve your needs.
           </p>
 
           <p className="leading-relaxed">

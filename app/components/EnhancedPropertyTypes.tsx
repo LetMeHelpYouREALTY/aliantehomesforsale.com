@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
 
 interface PropertyTypeCardProps {
   title: string;
@@ -122,6 +124,7 @@ export default function EnhancedPropertyTypes() {
     <section className="py-16 px-4" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
+          <AgentPhoto size={120} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Explore Property Types
           </h2>
@@ -139,19 +142,12 @@ export default function EnhancedPropertyTypes() {
 
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-700 mb-4">Not sure which type is right for you?</p>
-          <a
-            href="/contact"
-            className="inline-block py-3 px-8 rounded-lg font-semibold text-white transition-all transform hover:scale-105 focus:ring-4 focus:ring-teal-300 focus:outline-none"
-            style={{ backgroundColor: '#16B286' }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#0F9B6E';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#16B286';
-            }}
+          <CalendlyPopupButton
+            event="consultation"
+            className="inline-block py-3 px-8 rounded-lg font-semibold text-white bg-[#16B286] transition-all transform hover:scale-105 focus:ring-4 focus:ring-teal-300 focus:outline-none hover:bg-[#0F9B6E]"
           >
             Schedule a Free Consultation
-          </a>
+          </CalendlyPopupButton>
         </div>
       </div>
     </section>

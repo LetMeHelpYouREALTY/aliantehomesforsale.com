@@ -1,5 +1,8 @@
 'use client';
 
+import AgentPhoto from './AgentPhoto';
+import CalendlyPopupButton from './CalendlyPopupButton';
+
 export default function NewConstructionCTA() {
   return (
     <section
@@ -20,6 +23,7 @@ export default function NewConstructionCTA() {
       </div>
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
+        <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
           Hire a new-construction buyer’s agent in Aliante 89084
         </h2>
@@ -41,25 +45,12 @@ export default function NewConstructionCTA() {
             📞 Call (702) 707-7273 - Free Consultation
           </a>
 
-          <a
-            href="/contact"
-            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl border-2 focus:ring-4 focus:ring-white/30 focus:outline-none"
-            style={{
-              backgroundColor: 'transparent',
-              color: 'white',
-              borderColor: 'white',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#0A2540';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = 'white';
-            }}
+          <CalendlyPopupButton
+            event="appointment"
+            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-transparent border-2 border-white transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none hover:bg-white hover:text-[#0A2540]"
           >
             Schedule Builder Tours
-          </a>
+          </CalendlyPopupButton>
 
           <a
             href="/builders/incentives"
