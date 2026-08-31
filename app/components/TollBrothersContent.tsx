@@ -12,7 +12,7 @@ export default function TollBrothersContent() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Toll Brothers near Aliante — Elkhorn Grove, Las Vegas 89131, not ZIP 89084
+          Toll Brothers at Elkhorn Grove — Las Vegas 89131, not ZIP 89084
         </h2>
         <p className="leading-relaxed">
           Toll Brothers is not currently building inside the Aliante master plan. The closest
