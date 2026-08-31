@@ -17,7 +17,7 @@ type EnhancedHeroProps = {
 
 export default function EnhancedHero({
   title = 'Dr. Jan Duffy | Aliante North Las Vegas Real Estate',
-  subtitle = 'Discover new listings right when they hit the market. RealScout powers your search—updated every 15 minutes.',
+  subtitle = 'Aliante 89084 realtor. MLS search and office listings refresh about every 15 minutes — confirm ZIP on each card.',
   image,
 }: EnhancedHeroProps) {
   const [index, setIndex] = useState(0);
@@ -99,7 +99,7 @@ export default function EnhancedHero({
             href="#live-listings-heading"
             className="inline-block py-4 px-8 rounded-xl font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-[1.02] hover:shadow-xl focus:ring-4 focus:ring-orange-300 focus:outline-none"
           >
-            See current listings
+            See office listings
           </a>
         </div>
 

@@ -122,19 +122,11 @@ export default function InvestmentAnalysisContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Real estate investment success typically requires a long-term perspective and
-              strategic approach. Many successful investors begin with a single property, using
-              rental income to cover the mortgage while building equity through principal paydown
-              and appreciation. After 3-5 years, accumulated equity can be leveraged through
-              refinancing or home equity lines of credit to fund additional property acquisitions,
-              creating a snowball effect where each property helps finance the next.
-            </p>
-
-            <p className="leading-relaxed">
               Buy-and-hold in Aliante still depends on the lot, HOA, and financing you actually
               close. Master-planned amenities and remaining lots inside 89084 are facts you can
-              walk. I will not treat a past decade’s equity path as a forecast. Confirm live comps
-              and current rents before you lever the next purchase.
+              walk. I will not treat a past decade's equity path, a 3–5 year refinance cycle, or a
+              snowball of the next purchase as a forecast. Confirm live comps and current rents
+              before you lever another address.
             </p>
 
             <p className="leading-relaxed">

@@ -267,7 +267,6 @@ export default function TopBuilders() {
       primaryCTA: { text: 'Toll Brothers buyer notes', href: '/builders/toll-brothers' },
       secondaryCTA: { text: 'Schedule Private Tour', href: '/contact' },
       officialUrl: builderOfficialUrl('toll-brothers'),
-      featured: true,
     },
     {
       name: 'RICHMOND AMERICAN',
