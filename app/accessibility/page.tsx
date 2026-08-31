@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 export default function Accessibility() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Accessibility | Aliante Homes for Sale, North Las Vegas 89084"
+        subtitle="We work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page blocks you."
+      />
       <LegalContent title="Website Accessibility Commitment">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

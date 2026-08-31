@@ -84,11 +84,11 @@ export default function EnhancedHero() {
           id="hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
         >
-          Dr. Jan Duffy | Aliante North Las Vegas Real Estate
+          Aliante Real Estate | Homes for Sale in North Las Vegas 89084
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Discover new listings right when they hit the market. RealScout powers your search—updated
-          every 15 minutes.
+          Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties. MLS search updated about
+          every 15 minutes. Call (702) 707-7273.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">

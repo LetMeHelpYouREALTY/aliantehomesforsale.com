@@ -7,9 +7,9 @@ import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
 
 export const metadata: Metadata = {
-  title: 'Investment Property Analysis Aliante - ROI Calculator',
+  title: 'Investment Analysis for Aliante Rentals | North Las Vegas 89084',
   description:
-    'Investment property analysis for Aliante real estate. ROI calculations, rental market data, and expert guidance.',
+    'Buy-and-hold analysis for Aliante, North Las Vegas 89084. I sell the home; HOA and rental management is a different company. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/investment-analysis',
   },
@@ -18,7 +18,10 @@ export const metadata: Metadata = {
 export default function InvestmentAnalysis() {
   return (
     <main>
-      <HomesForSaleHero />
+      <HomesForSaleHero
+        title="Investment Analysis for Aliante Rentals | North Las Vegas 89084"
+        subtitle="Address-level cash-flow review in ZIP 89084. Call (702) 707-7273. I do not manage leases."
+      />
       <HomesMarketSnapshot />
       <InvestmentAnalysisContent />
       <AboutExpertise />

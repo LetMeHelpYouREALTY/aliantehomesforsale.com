@@ -1,6 +1,14 @@
 'use client';
 
-export default function HomesForSaleHero() {
+type HomesForSaleHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function HomesForSaleHero({
+  title = 'Aliante Homes for Sale | Realtor MLS Search, North Las Vegas 89084',
+  subtitle = 'Live MLS for ZIP 89084 — Club Aliante, gated villages, Sun City Aliante. Call (702) 707-7273.',
+}: HomesForSaleHeroProps) {
   return (
     <section
       className="relative min-h-[60vh] flex items-center justify-center px-4 py-16"
@@ -26,11 +34,11 @@ export default function HomesForSaleHero() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
-          Aliante Homes For Sale | 286+ Active MLS Listings in North Las Vegas
+          {title}
         </h1>
 
         <p className="text-lg sm:text-xl text-white/95 max-w-3xl mx-auto mb-8 leading-relaxed">
-          Live MLS data updated every 15 minutes • Expert local guidance since 2018
+          {subtitle}
         </p>
 
         {/* Update Badge */}

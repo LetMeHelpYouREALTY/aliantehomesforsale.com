@@ -8,7 +8,7 @@ export default function BuyerGuideContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            The Complete Aliante Home Buying Journey
+            How buyer representation works in Aliante 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -30,7 +30,7 @@ export default function BuyerGuideContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Step One: Financial Preparation and Pre-Approval
+              Get pre-approved before Club Aliante and Prominence tours
             </h3>
 
             <p className="leading-relaxed">
@@ -57,7 +57,7 @@ export default function BuyerGuideContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Understanding Aliante Neighborhoods and Property Types
+            Which Aliante villages to tour with your buyer’s agent
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -154,7 +154,7 @@ export default function BuyerGuideContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              The Home Search and Selection Process
+              Search Aliante MLS and tour 89084 homes with a buyer’s agent
             </h3>
 
             <p className="leading-relaxed">
@@ -183,7 +183,7 @@ export default function BuyerGuideContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Making Offers and Negotiating Purchase Terms
+            Write an offer on an Aliante home in North Las Vegas
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

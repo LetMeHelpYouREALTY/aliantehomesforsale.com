@@ -8,9 +8,9 @@ import HomesCTA from '../components/HomesCTA';
 import HomesSearchTips from '../components/HomesSearchTips';
 
 export const metadata: Metadata = {
-  title: 'First-Time Home Buyer Guide Aliante - Expert Tips',
+  title: 'Buyer Representation in Aliante | North Las Vegas 89084 Realtor',
   description:
-    'Complete guide for first-time home buyers in Aliante. Step-by-step process, expert tips, and local market insights.',
+    'Independent buyer’s agent in Aliante, North Las Vegas 89084. Club Aliante, gated villages, Sun City Aliante, Tule Springs. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/buyer-guide',
   },
@@ -19,7 +19,10 @@ export const metadata: Metadata = {
 export default function BuyerGuide() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Buyer Representation in Aliante, North Las Vegas 89084"
+        subtitle="I represent you on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Call (702) 707-7273."
+      />
       <BuyerGuideContent />
       <div className="px-4">
         <ContextualLinks variant="buying" />

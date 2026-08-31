@@ -6,9 +6,9 @@
 export const siteConfig = {
   siteUrl: 'https://www.aliantehomesforsale.com',
   siteName: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-  defaultTitle: 'Aliante North Las Vegas Real Estate & Homes For Sale | MLS Listings',
+  defaultTitle: 'Aliante Real Estate | Homes for Sale in North Las Vegas 89084',
   defaultDescription:
-    'Browse Aliante homes for sale in North Las Vegas, NV 89084. MLS listings updated about every 15 minutes. Gated communities, Sun City Aliante 55+, new construction. Call (702) 707-7273.',
+    'Aliante real estate and homes for sale in North Las Vegas, NV 89084. MLS updated about every 15 minutes. Club Aliante, Sun City Aliante 55+, gated communities. Call (702) 707-7273.',
   agentName: 'Dr. Jan Duffy',
   agentLicense: 'S.0197614.LLC',
   brokerage: 'Berkshire Hathaway HomeServices Nevada Properties',
@@ -55,43 +55,44 @@ export const siteConfig = {
   services: [
     {
       slug: 'buyer-representation',
-      name: 'Buyer Representation',
+      name: 'Buyer representation in Aliante 89084',
       description:
-        'Free buyer agency for Aliante home purchases, including new construction builder negotiations, resale homes, and gated communities.',
+        'Independent buyer’s agent for Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction — at no extra cost to you.',
       url: '/buyer-guide',
     },
     {
       slug: 'seller-representation',
-      name: 'Listing & Seller Representation',
+      name: 'List your Aliante home, North Las Vegas',
       description:
-        'Pricing strategy, staging guidance, and marketing to sell Aliante homes fast and for top dollar.',
+        'Listing agent for ZIP 89084: pricing from neighborhood comps, MLS marketing, and offer negotiation through closing.',
       url: '/seller-checklist',
     },
     {
       slug: 'new-construction',
-      name: 'New Construction Representation',
+      name: 'New-construction buyer agency, Aliante & Tule Springs',
       description:
-        'Independent buyer advocacy with Aliante builders (Lennar, D.R. Horton, Tri Pointe, Del Webb, Toll Brothers, Richmond American) at no cost to the buyer.',
+        'I represent you — not Lennar, D.R. Horton, or Del Webb — on incentives, options, and walk-throughs in North Las Vegas.',
       url: '/new-construction',
     },
     {
       slug: '55-plus',
-      name: '55+ Active Adult Community Specialist',
+      name: '55+ realtor for Sun City Aliante',
       description:
-        'Specialized guidance for Sun City Aliante and other 55+ active adult communities in North Las Vegas.',
+        'Del Webb 55+ inside Aliante 89084. Ardiente is a different community in 89081 — I will tell you which address is which.',
       url: '/sun-city-aliante',
     },
     {
       slug: 'home-valuation',
-      name: 'Home Valuation & Comparative Market Analysis',
-      description: 'Free, data-backed CMA reports for Aliante homeowners considering a sale.',
+      name: 'Home valuation / CMA in ZIP 89084',
+      description:
+        'Aliante-specific comparative market analysis. I do not use a valley-wide average for Club Aliante or Sun City comps.',
       url: '/home-valuation',
     },
     {
       slug: 'investment-analysis',
-      name: 'Investment Property Analysis',
+      name: 'Investment analysis for Aliante rentals',
       description:
-        'Rental yield, appreciation, and market timing analysis for investors targeting Aliante and North Las Vegas.',
+        'Buy-and-hold review for North Las Vegas 89084 addresses. I sell the property; HOA/rental management is a different company.',
       url: '/investment-analysis',
     },
   ],

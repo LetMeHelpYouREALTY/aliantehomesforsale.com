@@ -27,27 +27,27 @@ export default function AboutExpertise() {
   const expertise: ExpertiseCardProps[] = [
     {
       icon: '🏗️',
-      title: 'New Construction Specialists',
+      title: 'New-construction buyer agency in Aliante & Tule Springs',
       description:
-        'Direct relationships with all major builders in North Las Vegas: Lennar, D.R. Horton, Tri Pointe, Del Webb, and Richmond American. We track incentives, negotiate on your behalf, and guide you through every construction phase.',
+        'I represent you with Lennar, D.R. Horton, and Del Webb — not the builder. Incentives, options, and walk-throughs in North Las Vegas 89084.',
     },
     {
       icon: '🏘️',
-      title: 'Neighborhood Experts',
+      title: 'Village matching: Club Aliante, Prominence, Paseos, Sun City',
       description:
-        'Intimate knowledge of every Aliante neighborhood: The Prominence, Desert Willows, Club Aliante, The Paseos, and Sun City Aliante. We can match you with the perfect community for your lifestyle.',
+        'I tour the actual Aliante villages with you. Ardiente (89081) is not inside this master plan; I will say so before you write an offer.',
     },
     {
       icon: '📊',
-      title: 'Market Intelligence',
+      title: 'MLS and CMA work for ZIP 89084',
       description:
-        'Real-time MLS data updated every 15 minutes, comprehensive market reports, and insider knowledge of upcoming developments and trends in North Las Vegas real estate.',
+        'Listings refresh about every 15 minutes. Valuations use Aliante comps — Club Aliante vs Sun City vs gated — not a valley average.',
     },
     {
       icon: '🤝',
-      title: 'Buyer & Seller Advocacy',
+      title: 'Buyer and seller advocacy in Aliante',
       description:
-        "Whether you're buying your first home or selling your dream property, we provide expert guidance, skillful negotiation, and personalized service every step of the way.",
+        'Purchase or listing, I am your agent at 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
     },
   ];
 
@@ -56,10 +56,11 @@ export default function AboutExpertise() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Our Expertise
+            Realtor expertise in Aliante, North Las Vegas 89084
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Specialized knowledge and services tailored to your real estate needs
+            Six services, one ZIP: buyer agency, listings, new construction, Sun City Aliante 55+,
+            CMAs, and rental-property analysis.
           </p>
         </div>
 

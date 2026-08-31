@@ -16,6 +16,8 @@ const navigateLinks = [
 
 const companyLinks = [
   { href: '/builders', label: 'Builders Guide' },
+  { href: '/buyer-guide', label: 'Buyer Representation, 89084' },
+  { href: '/property-management', label: 'Aliante Property Management (Not Us)' },
   { href: '/gated-communities', label: 'Gated Communities' },
   { href: '/sun-city-aliante', label: 'Sun City Aliante' },
   { href: '/buyer-guide', label: 'Buyer Guide' },

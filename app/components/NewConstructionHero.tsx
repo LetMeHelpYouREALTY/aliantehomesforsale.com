@@ -2,7 +2,15 @@
 
 import { useState } from 'react';
 
-export default function NewConstructionHero() {
+type NewConstructionHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function NewConstructionHero({
+  title = 'New-Construction Buyer Agency in Aliante, North Las Vegas 89084',
+  subtitle = 'Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273.',
+}: NewConstructionHeroProps) {
   const [selectedBuilder, setSelectedBuilder] = useState('all');
 
   const builders = [
@@ -41,12 +49,11 @@ export default function NewConstructionHero() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
             style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
           >
-            New Construction Homes Aliante | Top Builders + Up to $25K Incentives
+            {title}
           </h1>
 
           <p className="text-lg sm:text-xl text-white/95 max-w-4xl mx-auto leading-relaxed">
-            95+ new homes available • Luxury to affordable • Builder incentives up to $25,000 •
-            Expert guidance through the entire process
+            {subtitle}
           </p>
         </div>
 

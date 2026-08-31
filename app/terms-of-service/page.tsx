@@ -11,7 +11,10 @@ export const metadata: Metadata = {
 export default function TermsOfService() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Terms of Service | Aliante Homes by Dr. Jan Duffy"
+        subtitle="Rules for using AlianteHomesForSale.com. North Las Vegas 89084."
+      />
       <LegalContent title="Terms of Service Agreement">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

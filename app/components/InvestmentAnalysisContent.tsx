@@ -8,7 +8,7 @@ export default function InvestmentAnalysisContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Aliante Investment Property Market Overview
+            Investment analysis for Aliante rentals, North Las Vegas 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -46,7 +46,7 @@ export default function InvestmentAnalysisContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Calculating Return on Investment and Cash Flow
+              Cash flow math on an Aliante address in ZIP 89084
             </h3>
 
             <p className="leading-relaxed">
@@ -76,7 +76,7 @@ export default function InvestmentAnalysisContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Rental Market Dynamics and Tenant Profile
+            Aliante rental demand versus HOA and vacancy costs
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -101,7 +101,7 @@ export default function InvestmentAnalysisContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Property Management and Operational Considerations
+              Who manages Aliante rentals (not this realtor)
             </h3>
 
             <p className="leading-relaxed">
@@ -131,7 +131,7 @@ export default function InvestmentAnalysisContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Building a Long-Term Investment Strategy
+            Long-term buy-and-hold strategy in Aliante 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

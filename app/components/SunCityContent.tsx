@@ -8,7 +8,7 @@ export default function SunCityContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Sun City Aliante: Premier Active Adult Living
+            Sun City Aliante 55+ realtor services in North Las Vegas 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

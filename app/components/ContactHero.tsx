@@ -1,6 +1,14 @@
 'use client';
 
-export default function ContactHero() {
+type ContactHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function ContactHero({
+  title = 'Contact Your Aliante Realtor | North Las Vegas 89084',
+  subtitle = 'Buyer or seller representation in ZIP 89084. Office at 2590 Nature Park Drive, Suite 275.',
+}: ContactHeroProps) {
   return (
     <section
       className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
@@ -26,15 +34,13 @@ export default function ContactHero() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
-          Contact Aliante Real Estate Expert | (702) 707-7273
+          {title}
         </h1>
 
-        <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">
-          Aliante Las Vegas Real Estate Expert
-        </p>
+        <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">{subtitle}</p>
 
         <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
-          Your trusted Aliante specialist since 2018 | 500+ successful transactions
+          Dr. Jan Duffy · Berkshire Hathaway HomeServices Nevada Properties · Since 2018
         </p>
 
         {/* Quick Phone CTA */}

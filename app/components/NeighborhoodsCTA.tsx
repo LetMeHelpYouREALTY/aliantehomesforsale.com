@@ -20,7 +20,7 @@ export default function NeighborhoodsCTA() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Ready to Find Your Perfect Neighborhood?
+          Tour Aliante neighborhoods with a 89084 realtor
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
           Get expert guidance on choosing the right Aliante community for your lifestyle

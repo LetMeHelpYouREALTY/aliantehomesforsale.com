@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Privacy Policy | Aliante Homes by Dr. Jan Duffy"
+        subtitle="How we handle contact data for Aliante real estate inquiries in ZIP 89084."
+      />
       <LegalContent title="Our Commitment to Your Privacy">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

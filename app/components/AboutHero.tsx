@@ -1,6 +1,14 @@
 'use client';
 
-export default function AboutHero() {
+type AboutHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function AboutHero({
+  title = 'Aliante Realtor Services | Dr. Jan Duffy, North Las Vegas 89084',
+  subtitle = 'Buyer agency, listings, new-construction representation, and Sun City Aliante 55+. Call (702) 707-7273.',
+}: AboutHeroProps) {
   return (
     <section
       className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
@@ -26,15 +34,13 @@ export default function AboutHero() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
-          Expert Aliante Real Estate Agent | Dr. Jan Duffy Since 2018
+          {title}
         </h1>
 
-        <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">
-          Aliante Las Vegas Real Estate
-        </p>
+        <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">{subtitle}</p>
 
         <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
-          Your Trusted Local Expert Since 2018
+          Berkshire Hathaway HomeServices Nevada Properties · License S.0197614.LLC · Since 2018
         </p>
       </div>
     </section>

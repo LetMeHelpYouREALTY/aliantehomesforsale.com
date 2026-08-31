@@ -7,9 +7,9 @@ import ContextualLinks from '../components/ContextualLinks';
 import SellerChecklistContent from '../components/SellerChecklistContent';
 
 export const metadata: Metadata = {
-  title: 'Home Selling Checklist Aliante - Maximize Your Sale Price',
+  title: 'Sell Your Aliante Home | Listing Agent, North Las Vegas 89084',
   description:
-    'Complete checklist for selling your Aliante home. Expert guidance to maximize sale price and minimize time on market.',
+    'Listing agent for Aliante, North Las Vegas 89084. Neighborhood comps, MLS marketing, and offer negotiation. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/seller-checklist',
   },
@@ -18,7 +18,10 @@ export const metadata: Metadata = {
 export default function SellerChecklist() {
   return (
     <main>
-      <AboutHero />
+      <AboutHero
+        title="Sell Your Aliante Home | Listing Agent, North Las Vegas 89084"
+        subtitle="Club Aliante, gated villages, and Sun City Aliante listings. Call (702) 707-7273 for a CMA."
+      />
       <SellerChecklistContent />
       <div className="px-4">
         <ContextualLinks variant="selling" />

@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 export default function MortgageCalculator() {
   return (
     <main>
-      <ContactHero />
+      <ContactHero
+        title="Aliante Mortgage Payment Calculator | North Las Vegas 89084"
+        subtitle="Estimate a payment, then confirm rates with a lender. I am your realtor, not your loan officer."
+      />
       <MortgageCalculatorContent />
       <section className="py-16 px-4 bg-white">
         <div className="container">

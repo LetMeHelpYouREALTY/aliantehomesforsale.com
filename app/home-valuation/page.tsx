@@ -6,9 +6,9 @@ import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomeValuationContent from '../components/HomeValuationContent';
 
 export const metadata: Metadata = {
-  title: "Free Home Valuation Aliante - What's Your Home Worth?",
+  title: 'What’s My Aliante Home Worth? | CMA in North Las Vegas 89084',
   description:
-    'Get a free, accurate home valuation for your Aliante property. CMA analysis from local experts.',
+    'Free comparative market analysis for Aliante, North Las Vegas 89084. Club Aliante, gated, and Sun City comps — not a valley average. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/home-valuation',
   },
@@ -17,7 +17,10 @@ export const metadata: Metadata = {
 export default function HomeValuation() {
   return (
     <main>
-      <ContactHero />
+      <ContactHero
+        title="What’s My Aliante Home Worth? | CMA in North Las Vegas 89084"
+        subtitle="Neighborhood comps for Club Aliante, gated villages, and Sun City Aliante. Call (702) 707-7273."
+      />
       <HomeValuationContent />
       <section className="py-16 px-4 bg-white">
         <div className="container">

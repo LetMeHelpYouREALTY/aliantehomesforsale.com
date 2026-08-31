@@ -7,9 +7,11 @@ import NeighborhoodsHero from '../components/NeighborhoodsHero';
 import SunCityContent from '../components/SunCityContent';
 
 export const metadata: Metadata = {
-  title: 'Sun City Aliante 55+ Community - Active Adult Living',
+  title: 'Sun City Aliante Homes for Sale | 55+ North Las Vegas 89084',
   description:
-    'Sun City Aliante active adult 55+ community. Resort-style amenities, golf courses, social activities.',
+    'Sun City Aliante homes for sale in North Las Vegas. Del Webb 55+ inside ZIP 89084 — not Ardiente (89081), not Del Webb Summerlin or Mesquite. Call (702) 707-7273.',
+  keywords:
+    'sun city aliante, sun city aliante homes for sale, sun city aliante north las vegas, del webb sun city aliante, 55+ homes aliante',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/sun-city-aliante',
   },
@@ -18,7 +20,10 @@ export const metadata: Metadata = {
 export default function SunCityAliante() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero
+        title="Sun City Aliante Homes for Sale | 55+ North Las Vegas 89084"
+        subtitle="Del Webb’s 55+ community inside Aliante. Ardiente is a different 55+ community in ZIP 89081. Call (702) 707-7273."
+      />
       <SunCityContent />
       <CommunityAmenities />
       <EnhancedFeaturedProperties />

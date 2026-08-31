@@ -7,18 +7,23 @@ import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
-  title: 'Club Aliante Golf Course Homes - Premier Golf Living',
+  title: 'Club Aliante Homes for Sale | Golf Course Real Estate, North Las Vegas',
   description:
-    'Club Aliante golf course homes. Championship golf, clubhouse amenities, stunning views. $500K-$900K.',
+    'Club Aliante homes for sale in North Las Vegas 89084. Golf-course lots, clubhouse, and Aliante Golf Club. Independent realtor Dr. Jan Duffy. Call (702) 707-7273. Confirm live MLS prices before you offer.',
+  keywords:
+    'club aliante, club aliante homes for sale, club aliante north las vegas, aliante golf club, golf homes aliante',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/club-aliante' },
 };
 
 export default function ClubAliante() {
   return (
     <main>
-      <NeighborhoodsHero />
-      <CommunityAmenities />
+      <NeighborhoodsHero
+        title="Club Aliante Homes for Sale | Golf Course Real Estate, North Las Vegas"
+        subtitle="Fairway homes in ZIP 89084 next to Aliante Golf Club. Call (702) 707-7273 to tour live listings."
+      />
       <GolfHomesContent />
+      <CommunityAmenities />
       <EnhancedFeaturedProperties />
       <NeighborhoodCards />
       <NeighborhoodsCTA />

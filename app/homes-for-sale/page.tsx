@@ -8,7 +8,7 @@ import PropertyCategories from '../components/PropertyCategories';
 import RealScoutSearchSection from '../components/RealScoutSearchSection';
 
 export const metadata: Metadata = {
-  title: 'Aliante Homes For Sale | North Las Vegas NV 89084 MLS Listings',
+  title: 'Aliante Homes for Sale | Realtor MLS Listings, North Las Vegas 89084',
   description:
     'Browse Aliante homes for sale in North Las Vegas, NV 89084. MLS listings updated about every 15 minutes. Gated communities, Sun City 55+, golf course homes, new construction. Call (702) 707-7273.',
   keywords:

@@ -8,7 +8,7 @@ export default function HomeValuationContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Professional Home Valuation Services
+            Aliante home valuation and CMA in North Las Vegas 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -34,7 +34,7 @@ export default function HomeValuationContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              What Goes Into a Comprehensive Market Analysis
+              What goes into a CMA for Club Aliante vs Sun City Aliante
             </h3>
 
             <p className="leading-relaxed">
@@ -63,7 +63,7 @@ export default function HomeValuationContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Factors Affecting Your Aliante Home's Value
+            What changes an Aliante home’s value in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -115,7 +115,7 @@ export default function HomeValuationContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Market Timing and Seasonal Variations
+              Timing an Aliante listing in the North Las Vegas market
             </h3>
 
             <p className="leading-relaxed">
@@ -146,7 +146,7 @@ export default function HomeValuationContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Next Steps After Your Valuation
+            Next steps after your Aliante CMA
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

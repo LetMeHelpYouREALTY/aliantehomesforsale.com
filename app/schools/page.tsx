@@ -6,9 +6,10 @@ import NeighborhoodsHero from '../components/NeighborhoodsHero';
 import SchoolsContent from '../components/SchoolsContent';
 
 export const metadata: Metadata = {
-  title: 'Aliante Schools Guide - Top-Rated School Districts',
+  title: 'Homes Near Aliante Schools | North Las Vegas 89084',
   description:
-    'Complete guide to schools in Aliante. Top-rated public schools, private options, and school district information.',
+    'Named campuses serving Aliante in North Las Vegas 89084, plus homes for sale nearby. Call (702) 707-7273 to match an address to current attendance boundaries.',
+  keywords: 'aliante schools, homes near aliante schools, north las vegas schools 89084',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/schools',
   },
@@ -17,7 +18,10 @@ export const metadata: Metadata = {
 export default function Schools() {
   return (
     <main>
-      <NeighborhoodsHero />
+      <NeighborhoodsHero
+        title="Homes Near Aliante Schools | North Las Vegas 89084"
+        subtitle="I name the campus that currently serves an address. Boundaries change — confirm with Clark County School District before you offer."
+      />
       <SchoolsContent />
       <CommunityAmenities />
       <NeighborhoodCards />

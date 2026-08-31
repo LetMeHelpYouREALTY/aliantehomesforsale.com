@@ -8,7 +8,7 @@ export default function SellerChecklistContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Preparing Your Aliante Home for Maximum Sale Price
+            List your Aliante home in North Las Vegas 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -45,7 +45,7 @@ export default function SellerChecklistContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              The Pre-Listing Preparation Phase
+              Pre-listing prep for Club Aliante, gated, and Sun City homes
             </h3>
 
             <p className="leading-relaxed">
@@ -75,7 +75,7 @@ export default function SellerChecklistContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Pricing Strategy and Market Positioning
+            Price an Aliante listing using 89084 neighborhood comps
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -102,7 +102,7 @@ export default function SellerChecklistContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Professional Marketing and Buyer Reach
+              Market an Aliante listing to North Las Vegas buyers
             </h3>
 
             <p className="leading-relaxed">
@@ -130,7 +130,7 @@ export default function SellerChecklistContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Negotiating Offers and Closing the Transaction
+            Negotiate and close an Aliante sale in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

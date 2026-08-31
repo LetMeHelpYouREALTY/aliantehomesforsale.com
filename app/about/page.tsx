@@ -8,9 +8,9 @@ import AboutStats from '../components/AboutStats';
 import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 
 export const metadata: Metadata = {
-  title: 'About Aliante Real Estate - Local Experts Since 2018',
+  title: 'Aliante Realtor | Dr. Jan Duffy, North Las Vegas 89084',
   description:
-    'Meet the local real estate experts serving Aliante and North Las Vegas since 2018. 500+ successful transactions, deep builder relationships, and unmatched market knowledge.',
+    'Meet Dr. Jan Duffy, Aliante realtor at Berkshire Hathaway HomeServices Nevada Properties. Buyer and seller representation in ZIP 89084 since 2018. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/about',
   },

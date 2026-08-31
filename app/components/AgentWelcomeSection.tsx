@@ -8,13 +8,12 @@ export default function AgentWelcomeSection() {
     <section className="py-16 px-4 bg-white" aria-labelledby="agent-welcome-heading">
       <div className="max-w-4xl mx-auto text-center">
         <h2 id="agent-welcome-heading" className="text-3xl font-bold mb-6 text-[#0a2540]">
-          Dr. Jan Duffy Real Estate
+          Aliante realtor services by Dr. Jan Duffy, 89084
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          Your trusted Aliante and North Las Vegas expert since 2018. I help buyers and sellers with
-          MLS listings updated every 15 minutes, new construction, gated communities, and Sun City
-          Aliante 55+. From first-time buyers to luxury homes, I’m here to guide you with local
-          knowledge and a proven track record.
+          I represent buyers and sellers in the Aliante master plan — Club Aliante, gated villages,
+          Sun City Aliante 55+, and nearby Tule Springs new construction. MLS search updates about
+          every 15 minutes. Call (702) 707-7273.
         </p>
         <Link
           href="/about"
