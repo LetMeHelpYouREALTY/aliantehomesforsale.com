@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import CommunityAmenities from '../components/CommunityAmenities';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
@@ -25,9 +24,11 @@ export default function Schools() {
         image={pageHero('/schools')}
       />
       <SchoolsContent />
-      <CommunityAmenities />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Match an Aliante address to the current CCSD campus"
+        subheading="Boundaries change. Confirm with Clark County School District before you offer."
+      />
     </main>
   );
 }

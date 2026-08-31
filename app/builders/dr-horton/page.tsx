@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import BuilderDetailContent from '../../components/BuilderDetailContent';
-import ConstructionProcess from '../../components/ConstructionProcess';
+import HortonContent from '../../components/HortonContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import QuickMoveInHomes from '../../components/QuickMoveInHomes';
 import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
@@ -24,10 +22,8 @@ export default function DrHorton() {
         filterHeading="D.R. Horton near Aliante and Tule Springs"
         image={pageHero('/builders/dr-horton')}
       />
+      <HortonContent />
       <TopBuilders />
-      <ConstructionProcess />
-      <BuilderDetailContent />
-      <QuickMoveInHomes />
       <NewConstructionCTA />
     </main>
   );
