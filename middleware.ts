@@ -21,6 +21,7 @@ export function middleware(request: NextRequest) {
   const needsRedirect =
     hostname !== canonicalDomain &&
     !hostname.includes('localhost') &&
+    !hostname.includes('127.0.0.1') &&
     !hostname.includes('vercel.app');
 
   if (needsRedirect) {
@@ -33,7 +34,7 @@ export function middleware(request: NextRequest) {
   }
 
   // Force HTTPS even on correct domain
-  if (url.protocol === 'http:' && !hostname.includes('localhost')) {
+  if (url.protocol === 'http:' && !hostname.includes('localhost') && !hostname.includes('127.0.0.1')) {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 301);
   }
