@@ -10,7 +10,7 @@ type NeighborhoodsCTAProps = {
 
 export default function NeighborhoodsCTA({
   heading = 'Tour Aliante neighborhoods with a 89084 realtor',
-  subheading = 'Get expert guidance on gated vs open-access villages, golf-course lots, and Sun City Aliante 55+',
+  subheading = 'Compare gated vs open-access villages, golf-course lots, and Sun City Aliante 55+',
 }: NeighborhoodsCTAProps) {
   return (
     <section

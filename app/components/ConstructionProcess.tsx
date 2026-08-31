@@ -113,10 +113,11 @@ export default function ConstructionProcess() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Your New Home Journey - Step by Step
+            How a new-construction purchase works near Aliante 89084
           </h2>
           <p className="text-xl text-white/90">
-            We guide you through every phase of the new construction process
+            Community selection, options, walk-throughs, and closing — confirm the live sheet at
+            each step.
           </p>
         </div>
 

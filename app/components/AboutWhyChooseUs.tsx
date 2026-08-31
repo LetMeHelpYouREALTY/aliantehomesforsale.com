@@ -12,6 +12,7 @@ function ReasonCard({ title, description, icon }: ReasonProps) {
       <div
         className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-2xl"
         style={{ backgroundColor: '#e6f0ff' }}
+        aria-hidden="true"
       >
         {icon}
       </div>
@@ -46,7 +47,7 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Client-First',
-      description: 'Your goals are our priority - no pressure, just expert guidance',
+      description: 'No pressure. Confirm live MLS before you offer or list.',
       icon: '💙',
     },
     {
