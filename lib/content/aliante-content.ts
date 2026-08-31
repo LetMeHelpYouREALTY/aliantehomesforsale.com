@@ -113,7 +113,7 @@ export const agentCredentials: CredentialItem[] = [
     id: 'hyperlocal',
     title: 'Aliante specialist since 2018',
     description:
-      'Hundreds of Aliante closings across gated communities, new construction, Club Aliante golf homes, and Sun City Aliante 55+.',
+      'Aliante closings since 2018 across gated villages, new construction, Club Aliante golf homes, and Sun City Aliante 55+. Call for current references.',
   },
   {
     id: 'builders',

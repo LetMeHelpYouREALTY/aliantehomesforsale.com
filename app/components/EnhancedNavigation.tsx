@@ -62,8 +62,14 @@ export default function EnhancedNavigation() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <button
+                  type="button"
+                  aria-haspopup="true"
+                  aria-expanded={activeDropdown === 'construction'}
                   className="text-base font-medium transition-colors hover:border-b-2 pb-1 flex items-center gap-1"
                   style={{ color: '#1a365d', borderColor: '#2c5aa0' }}
+                  onClick={() =>
+                    setActiveDropdown(activeDropdown === 'construction' ? null : 'construction')
+                  }
                 >
                   New Construction
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,7 +94,7 @@ export default function EnhancedNavigation() {
                       href="/builders/lennar"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
-                      Lennar (#1 Volume)
+                      Lennar
                     </Link>
                     <Link
                       href="/builders/dr-horton"
@@ -125,8 +131,14 @@ export default function EnhancedNavigation() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <button
+                  type="button"
+                  aria-haspopup="true"
+                  aria-expanded={activeDropdown === 'neighborhoods'}
                   className="text-base font-medium transition-colors hover:border-b-2 pb-1 flex items-center gap-1"
                   style={{ color: '#1a365d', borderColor: '#2c5aa0' }}
+                  onClick={() =>
+                    setActiveDropdown(activeDropdown === 'neighborhoods' ? null : 'neighborhoods')
+                  }
                 >
                   Neighborhoods
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -292,6 +304,7 @@ export default function EnhancedNavigation() {
             <div className="p-6">
               {/* Close Button */}
               <button
+                type="button"
                 onClick={() => setIsMenuOpen(false)}
                 className="absolute top-4 right-4 p-2 rounded-md hover:bg-gray-100"
                 aria-label="Close menu"

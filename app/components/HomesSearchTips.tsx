@@ -42,7 +42,7 @@ export default function HomesSearchTips() {
       icon: '⏱️',
       title: 'Act Quickly on Good Deals',
       description:
-        'Hot properties sell in days. Set up alerts and be ready to move when the right home appears.',
+        'Well-priced homes can still move quickly. Confirm current days-on-market on live MLS and set alerts for the villages you want.',
     },
     {
       icon: '🤝',

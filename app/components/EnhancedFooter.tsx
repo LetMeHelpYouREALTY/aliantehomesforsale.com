@@ -102,6 +102,14 @@ export default function EnhancedFooter() {
               >
                 Directions
               </a>
+              <a
+                href={siteConfig.maps.placeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
+              >
+                View Google Reviews
+              </a>
               <Link
                 href="/contact#directions"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
