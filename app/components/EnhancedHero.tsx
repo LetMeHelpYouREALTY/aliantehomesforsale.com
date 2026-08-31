@@ -86,13 +86,13 @@ export default function EnhancedHero({
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              ⚡ MLS Updated Every 15 Min
+              <span aria-hidden="true">⚡</span> MLS updated about every 15 minutes
             </span>
             <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              🏆 Local Expert Since 2018
+              Aliante 89084 since 2018
             </span>
             <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              📍 Aliante 89084 focus
+              <span aria-hidden="true">📍</span> ZIP 89084 focus
             </span>
           </div>
           <a

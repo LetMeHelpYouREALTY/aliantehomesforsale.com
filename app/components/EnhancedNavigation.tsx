@@ -44,11 +44,14 @@ export default function EnhancedNavigation() {
                 className="flex-shrink-0 shadow-sm"
                 priority
               />
-              <span className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold" style={{ color: '#1a365d' }}>
+              <span className="flex flex-col min-w-0">
+                <span
+                  className="text-lg xl:text-2xl font-bold whitespace-nowrap"
+                  style={{ color: '#1a365d' }}
+                >
                   Aliante Las Vegas
                 </span>
-                <span className="text-xs text-gray-600 font-medium hidden xl:block">
+                <span className="text-xs text-gray-600 font-medium hidden xl:block whitespace-nowrap">
                   Dr. Jan Duffy · Aliante 89084 since 2018
                 </span>
               </span>
