@@ -59,19 +59,19 @@ export default function NeighborhoodComparison({
                   Home types
                 </td>
                 <td className="px-6 py-4 text-gray-700">Single-family</td>
-                <td className="px-6 py-4 text-gray-700">Single-family, townhomes</td>
+                <td className="px-6 py-4 text-gray-700">Single-family</td>
                 <td className="px-6 py-4 text-gray-700">Golf-course lots</td>
-                <td className="px-6 py-4 text-gray-700">Single-family, townhomes</td>
+                <td className="px-6 py-4 text-gray-700">Confirm on live MLS</td>
                 <td className="px-6 py-4 text-gray-700">Single-family, villas</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
                   Golf access
                 </td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
+                <td className="px-6 py-4 text-gray-700">Gated; confirm lot</td>
+                <td className="px-6 py-4 text-gray-700">Open-access streets</td>
                 <td className="px-6 py-4 text-gray-700">Fairway lots</td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
+                <td className="px-6 py-4 text-gray-700">Open-access streets</td>
                 <td className="px-6 py-4 text-gray-700">Aliante Golf Club nearby</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">

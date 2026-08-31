@@ -7,7 +7,7 @@ const neighborhoods = [
     name: 'The Prominence',
     href: '/neighborhoods/prominence',
     image: siteImages.prominence,
-    caption: 'Gated village with larger homes',
+    caption: 'Gated village with private streets',
   },
   {
     name: 'Club Aliante',

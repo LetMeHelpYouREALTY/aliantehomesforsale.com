@@ -34,7 +34,7 @@ export default function Compare() {
       />
       <NeighborhoodCards />
       <NeighborhoodsCTA
-        heading="Compare Aliante villages with a 89084 realtor"
+        heading="Compare Aliante villages with an 89084 realtor"
         subheading="Gated vs open-access, fairway vs interior, Sun City 55+ vs all-ages streets."
       />
     </main>

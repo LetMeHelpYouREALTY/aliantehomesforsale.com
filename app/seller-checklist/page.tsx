@@ -27,7 +27,7 @@ export default function SellerChecklist() {
         <ContextualLinks variant="selling" />
       </div>
       <AboutCTA
-        heading="List your Aliante home with a 89084 realtor"
+        heading="List your Aliante home with an 89084 realtor"
         subheading="Neighborhood comps, MLS photos, and offer review. Call (702) 707-7273."
         secondaryHref="/home-valuation"
         secondaryLabel="Request a CMA"

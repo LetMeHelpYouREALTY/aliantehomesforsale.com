@@ -138,13 +138,10 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              When evaluating golf course properties, I recommend multiple showings at different
-              times of day to experience the property during active golf hours and quiet periods.
-              This gives you realistic understanding of noise levels, foot traffic, and how the golf
-              course activity affects the home's ambiance. I'll also provide detailed comparative
-              market analysis showing recent golf course sales and how various lots are valued
-              relative to one another, ensuring you make an informed decision about fair value for
-              the specific property you're considering.
+              When evaluating golf-course lots, I schedule more than one showing when the calendar
+              allows — morning tee times and quieter hours sound different. Confirm errant-ball
+              history and live comps for that lot. I will not publish a quiet-hours schedule I have
+              not verified with the club.
             </p>
 
             <p className="leading-relaxed">

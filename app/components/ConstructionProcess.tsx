@@ -59,10 +59,10 @@ export default function ConstructionProcess() {
       number: 2,
       title: 'Strategic Lot Selection',
       description:
-        'Lot placement affects views, sun, street noise, and daily living. We walk the map with you so you can choose a lot that matches those factors.',
+        'Lot placement affects views, sun, street noise, and daily living. I walk the map with you so you can choose a lot that matches those factors.',
       details: [
         'Corner vs. interior lots',
-        'View premiums vs. standard',
+        'Fairway vs interior (confirm on the plat)',
         'Sun exposure and orientation',
         'Proximity to amenities/streets',
       ],
@@ -71,7 +71,7 @@ export default function ConstructionProcess() {
       number: 3,
       title: 'Design Center & Upgrades',
       description:
-        'Choose upgrades with use and resale in mind. We help you decide which design-center items you want to pay for and which to skip.',
+        'Choose upgrades with use and resale in mind. I help you decide which design-center items you want to pay for and which to skip.',
       details: [
         'Flooring and finishes selection',
         'Kitchen and bath upgrades',
@@ -83,7 +83,7 @@ export default function ConstructionProcess() {
       number: 4,
       title: 'Construction Monitoring',
       description:
-        'We walk key phases with you, coordinate inspections you hire, and document issues before closing.',
+        'I walk key phases with you, coordinate inspections you hire, and document issues before closing.',
       details: [
         'Foundation and framing inspections',
         'Pre-drywall walkthrough',

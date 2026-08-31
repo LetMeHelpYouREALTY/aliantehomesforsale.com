@@ -97,8 +97,8 @@ export default function NeighborhoodCards() {
       name: 'The Prominence',
       tag: 'Gated village',
       description:
-        'Controlled-access village inside the Aliante master plan with private amenities and proximity to Aliante Golf Club.',
-      features: ['Near Aliante Golf Club', 'Gated entry', 'Community pool', 'Courts'],
+        'Controlled-access village inside the Aliante master plan with private streets and shared amenities.',
+      features: ['Gated entry', 'Private streets', 'Community pool', 'HOA architectural rules'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
         { label: 'Home types', value: 'Single-family' },
@@ -115,7 +115,7 @@ export default function NeighborhoodCards() {
       features: ['Parks nearby', 'Community pools', 'Shopping nearby', 'Mixed floor plans'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
-        { label: 'Home types', value: 'Single-family, townhomes' },
+        { label: 'Home types', value: 'Single-family' },
         { label: 'Access', value: 'Open' },
       ],
       href: '/neighborhoods/desert-willows',
@@ -139,11 +139,11 @@ export default function NeighborhoodCards() {
       name: 'The Paseos',
       tag: 'Open-access village',
       description:
-        'Open-access village inside the Aliante master plan with parks, green space, and a mix of single-family homes and townhomes.',
-      features: ['Green spaces', 'Trails nearby', 'Driveway parking', 'Townhomes + SFH'],
+        'Open-access village inside the Aliante master plan with parks and green space. Not The Paseos in Summerlin. Confirm housing type on live MLS.',
+      features: ['Green spaces', 'Trails nearby', 'Open-access streets', 'Master HOA'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
-        { label: 'Home types', value: 'Single-family, townhomes' },
+        { label: 'Home types', value: 'Confirm on live MLS' },
         { label: 'Access', value: 'Open' },
       ],
       href: '/neighborhoods/paseos',
@@ -187,8 +187,8 @@ export default function NeighborhoodCards() {
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             {onVillagePage
-              ? 'Other Aliante villages in ZIP 89084'
-              : 'Aliante villages in North Las Vegas 89084'}
+              ? 'Other Aliante villages and nearby Tule Springs'
+              : 'Aliante villages and nearby Tule Springs'}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Club Aliante, gated villages, Sun City Aliante 55+, open-access streets, and Tule

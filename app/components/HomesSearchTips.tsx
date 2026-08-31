@@ -42,21 +42,20 @@ export default function HomesSearchTips() {
     },
     {
       icon: '⏱️',
-      title: 'Act Quickly on Good Deals',
+      title: 'Set MLS alerts, then tour',
       description:
         'Well-priced homes can still move quickly. Confirm current days-on-market on live MLS and set alerts for the villages you want.',
     },
     {
       icon: '🤝',
-      title: 'Work with a 89084 realtor',
+      title: 'Work with an 89084 realtor',
       description:
         'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',
     },
     {
       icon: '📊',
       title: 'Check the Market Data',
-      description:
-        'Understand pricing trends, days on market, and neighborhood comparisons before making offers.',
+      description: 'Confirm live medians, days on market, and village comps before you write.',
     },
   ];
 
@@ -65,7 +64,7 @@ export default function HomesSearchTips() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Home Search Tips
+            How I search Aliante MLS in ZIP 89084
           </h2>
           <p className="text-xl text-gray-600">How I search Aliante MLS and tour 89084 villages</p>
         </div>

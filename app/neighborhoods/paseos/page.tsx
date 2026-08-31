@@ -23,7 +23,7 @@ export default function Paseos() {
       />
       <NeighborhoodDetailContent
         heading="Buying in The Paseos, Aliante 89084"
-        intro="The Paseos is an open-access village (not gated) inside the Aliante master plan, with parks, green space, and a mix of single-family homes and townhomes."
+        intro="The Paseos in Aliante ZIP 89084 is an open-access village (not gated), with parks and green space. It is not The Paseos in Summerlin. Confirm housing type on live MLS."
         access="open"
       />
       <NeighborhoodCards />

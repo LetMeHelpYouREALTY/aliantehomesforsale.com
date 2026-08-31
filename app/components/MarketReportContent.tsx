@@ -28,7 +28,7 @@ export default function MarketReportContent() {
               >
                 The Paseos
               </Link>{' '}
-              and larger homes in{' '}
+              and gated streets in{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
