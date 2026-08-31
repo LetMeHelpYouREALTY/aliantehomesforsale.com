@@ -43,7 +43,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/gated-communities',
     image: '/images/gated.jpg',
     alt: 'Gated community homes in Aliante North Las Vegas',
-    highlights: ['24/7 gated entry', 'Community pools & parks', 'Resale + new construction'],
+    highlights: ['Controlled entry', 'Community pools & parks', 'Resale + new construction'],
   },
   {
     id: 'golf',

@@ -54,7 +54,7 @@ export default function WhyNewConstruction() {
       icon: '🎯',
       title: 'Our Expert Guidance',
       description:
-        'We represent you in negotiations, monitor construction quality, and ensure you get the best deal possible.',
+        'We represent you in negotiations, monitor construction quality, and confirm the live incentive sheet before you write.',
     },
   ];
 

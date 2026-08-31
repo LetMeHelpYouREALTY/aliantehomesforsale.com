@@ -110,7 +110,7 @@ export const neighborhoodSEO = {
   prominence: {
     title: 'The Prominence Homes For Sale - Luxury Gated Community Aliante',
     description:
-      "Explore luxury homes in The Prominence, Aliante's premier gated community. Large estates, premium amenities, golf course access. Expert local guidance.",
+      'Gated village in The Prominence, Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
     keywords: [
       'The Prominence',
       'luxury homes Aliante',
@@ -132,14 +132,14 @@ export const neighborhoodSEO = {
   'club-aliante': {
     title: 'Club Aliante Homes For Sale - Golf Course Community Las Vegas',
     description:
-      'Golf course living in Club Aliante. Championship golf access, resort-style amenities, guard-gated security. Homes from $400k.',
+      'Golf-course lots in Club Aliante, North Las Vegas 89084. Confirm live MLS prices. Call (702) 707-7273.',
     keywords: ['Club Aliante', 'golf course homes', 'resort living Las Vegas', 'golf community'],
   },
   paseos: {
-    title: 'The Paseos Homes For Sale - First-Time Buyers Aliante',
+    title: 'The Paseos Homes For Sale - Aliante, North Las Vegas 89084',
     description:
-      'Affordable homes in The Paseos, perfect for first-time buyers. Community parks, low HOA fees, excellent value. Starting at $280k.',
-    keywords: ['The Paseos', 'first-time buyer homes', 'affordable Aliante', 'low HOA'],
+      'The Paseos is an open-access village in Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
+    keywords: ['The Paseos', 'open-access Aliante', 'Aliante homes North Las Vegas', '89084'],
   },
 };
 
@@ -159,7 +159,7 @@ export const pageSEO = {
   'new-construction': {
     title: 'New Construction Homes Aliante - Builder Incentives & Floor Plans',
     description:
-      'New construction homes in Aliante from Lennar, DR Horton, Tri Pointe. Special builder incentives up to $25k. Pre-construction pricing available.',
+      'New construction in Aliante and nearby Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 707-7273.',
     keywords: ['new construction Aliante', 'builder incentives', 'Lennar homes', 'DR Horton'],
   },
   'home-valuation': {

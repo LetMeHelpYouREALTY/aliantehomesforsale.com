@@ -16,8 +16,8 @@ export default function BuilderDetailContent() {
             directly with builder sales representatives, not realizing that these agents represent
             the builder's interests, not yours. Working with me costs you nothing – builders pay my
             commission from their marketing budget – but provides you with professional advocacy,
-            expert negotiation, and insider knowledge that can save you tens of thousands of dollars
-            through better incentive packages, lot premiums, and upgrades.
+            expert negotiation, and contract review. I will not publish a stale savings total.
+            Confirm today’s incentive sheet, lot premium, and upgrades before you write.
           </p>
 
           <p className="leading-relaxed">

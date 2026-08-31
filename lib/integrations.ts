@@ -130,7 +130,7 @@ export async function handleContactFormSubmission(data: ContactFormData) {
     if (data.phone && data.preferredContact === 'text') {
       results.sms = await sendSMSNotification({
         to: data.phone,
-        message: `Thank you for contacting Aliante Real Estate! We've received your inquiry and will respond within 2 hours. Need immediate assistance? Call (702) 707-7273.`,
+        message: `Thank you for contacting Aliante Real Estate! We've received your inquiry and will follow up during office hours. Need immediate assistance? Call (702) 707-7273.`,
       });
     }
 

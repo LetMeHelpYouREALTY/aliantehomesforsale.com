@@ -24,13 +24,12 @@ export default function HomeValuationContent() {
             </p>
 
             <p className="leading-relaxed">
-              With over six years of experience analyzing Aliante property values and having
-              personally toured hundreds of homes throughout the area, I can provide valuation
-              accuracy that automated tools simply cannot match. I understand how specific
-              neighborhoods command different price premiums, how various upgrades affect value, and
-              what current market trends mean for your property's worth today versus six months ago.
-              This expertise ensures you have reliable information for making important financial
-              decisions.
+              I have analyzed Aliante property values since 2018. Valuation accuracy comes from
+              touring the village and reading recent comps — not from an automated estimate. I
+              understand how specific neighborhoods command different price premiums, how various
+              upgrades affect value, and what current market trends mean for your property's worth
+              today versus six months ago. This expertise ensures you have reliable information for
+              making important financial decisions.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -68,50 +67,30 @@ export default function HomeValuationContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Location within Aliante significantly impacts property values, with{' '}
-              <Link
-                href="/gated-communities"
-                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
-              >
-                gated communities
-              </Link>{' '}
-              commanding 10-15% premiums over non-gated areas, and{' '}
-              <Link
-                href="/golf-homes"
-                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
-              >
-                golf course properties
-              </Link>{' '}
-              adding another 10-20% premium. Corner lots, cul-de-sac locations, and properties with
-              mountain or golf course views all enhance value compared to interior lots or busy
-              street locations.{' '}
+              Location inside Aliante still matters: gated vs open-access, fairway vs interior, and
+              drive time to the I-215. Confirm those differences with live comps for the address — I
+              will not publish a gated or golf-course premium percentage. Named campuses that
+              currently serve an address are on the{' '}
               <Link
                 href="/schools"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                School quality
-              </Link>{' '}
-              matters tremendously – homes in attendance zones for highly rated elementary schools
-              typically sell for 5-10% more than similar homes in less desirable school zones.
-              Compare values across different{' '}
+                schools page
+              </Link>
+              ; confirm the CCSD map before you list or offer. Compare villages on the{' '}
               <Link
                 href="/neighborhoods/compare"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                neighborhoods
-              </Link>{' '}
-              to understand pricing variations.
+                neighborhood comparison
+              </Link>
+              .
             </p>
 
             <p className="leading-relaxed">
-              Property condition and updates play crucial roles in value determination. Recently
-              updated kitchens with granite countertops, stainless appliances, and modern cabinetry
-              can add $15,000-$30,000 to home values. Renovated bathrooms, new flooring, fresh
-              paint, and updated fixtures all contribute to buyer appeal and justify higher prices.
-              Conversely, homes needing significant repairs or updates sell at discounts reflecting
-              the cost buyers will incur to bring the property to modern standards. Deferred
-              maintenance issues like aging HVAC systems, worn roofs, or outdated electrical systems
-              all negatively impact value.
+              Property condition shows up in comps. Updated kitchens, baths, flooring, and HVAC age
+              change what buyers will pay. I will not publish a dollar-per-upgrade table here —
+              those numbers go stale. We read them off recent closed sales for your village.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -119,13 +98,8 @@ export default function HomeValuationContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Home values fluctuate with market conditions and seasons. Spring typically brings peak
-              buyer activity and maximum values, while summer heat and winter holidays see reduced
-              demand and softer pricing. The broader Las Vegas real estate market cycle also affects
-              Aliante specifically – during periods of rapid appreciation, Aliante homes may gain
-              8-10% annually, while during market corrections, values may flatten or decline
-              modestly. Understanding where we currently sit in the market cycle helps sellers time
-              their listings optimally and buyers recognize when opportunities emerge.
+              Home values move with inventory, rates, and season. Confirm current medians and days
+              on market on the live widgets. I will not hard-code an annual appreciation rate.
             </p>
 
             <p className="leading-relaxed">

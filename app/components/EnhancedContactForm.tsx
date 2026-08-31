@@ -104,7 +104,7 @@ export default function EnhancedContactForm() {
           Get Expert Guidance
         </h2>
         <p className="text-lg text-gray-600">
-          Fill out the form below and we'll get back to you within 2 hours
+          Fill out the form below. I follow up during office hours — or call (702) 707-7273.
         </p>
       </div>
 

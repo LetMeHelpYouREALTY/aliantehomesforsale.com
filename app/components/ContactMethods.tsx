@@ -64,7 +64,7 @@ export default function ContactMethods() {
       icon: '✉️',
       title: 'Email Us',
       primary: 'DrDuffy@AlianteHomesForSale.com',
-      details: ['Response within 2 hours'],
+      details: ['Reply during office hours'],
       href: 'mailto:DrDuffy@AlianteHomesForSale.com',
     },
     {

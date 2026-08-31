@@ -12,22 +12,19 @@ export default function BuildersIntro() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            Aliante and the surrounding North Las Vegas area have become one of the most
-            sought-after regions for new construction homes in Nevada. With its strategic location
-            near the I-215 Beltway, with access to downtown Las Vegas, Harry Reid International
-            Airport, and employment centers throughout the valley. The area's continued growth has
-            attracted the nation's premier home builders, each bringing their unique approach to
-            quality, design, and value.
+            Aliante and the surrounding North Las Vegas area remain active for new construction. The
+            I-215 Beltway connects ZIP 89084 to downtown Las Vegas, Harry Reid International
+            Airport, and employment centers throughout the valley. National and regional builders
+            still sell here, each with a different floor-plan mix, included features, and incentive
+            sheet.
           </p>
 
           <p className="leading-relaxed">
-            As Dr. Jan Duffy, your local new construction specialist since 2018, I've helped
-            hundreds of families navigate the complex process of building a new home. My direct
-            relationships with every major builder in the area mean you'll receive exclusive access
-            to inventory, incentive programs, and lot premiums that aren't advertised to the general
-            public. Whether you're a first-time buyer looking for an affordable entry point or a
-            luxury home buyer seeking the finest finishes and locations, I can guide you to the
-            perfect match.
+            As Dr. Jan Duffy, your local new construction specialist since 2018, I represent you —
+            not the builder — on the contract, options, and walk-throughs. Confirm current
+            communities, inventory, and incentive programs on this month’s sheet. Whether you're a
+            first-time buyer looking for an affordable entry point or a luxury home buyer seeking
+            the finest finishes and locations, I can guide you to the perfect match.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

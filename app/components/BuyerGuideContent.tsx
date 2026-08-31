@@ -22,11 +22,10 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your local buyer's agent since 2018, I've guided hundreds of families through this
-              process, helping them avoid common pitfalls, negotiate better terms, and ultimately
-              secure homes they love at prices that fit their budgets. My role is to be your
-              advocate, advisor, and expert throughout the entire transaction, ensuring that you
-              make informed decisions and never feel pressured or confused about the process.
+              As your local buyer's agent since 2018, I represent you through pre-approval, tours,
+              offers, and closing. My role is to be your advocate, advisor, and expert throughout
+              the entire transaction, ensuring that you make informed decisions and never feel
+              pressured or confused about the process.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -43,12 +42,12 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              I work closely with several excellent local lenders who specialize in the Las Vegas
-              market and can often secure better rates and terms than national banks. These lenders
-              understand unique situations like self-employment income, investment property
-              purchases, and non-traditional credit profiles. Getting pre-approved typically takes
-              2-3 business days and costs nothing – it's a free service that puts you in position to
-              act quickly when the right home appears on the market.
+              I work closely with several local lenders who specialize in the Las Vegas market and
+              can often secure better rates and terms than national banks. These lenders understand
+              unique situations like self-employment income, investment property purchases, and
+              non-traditional credit profiles. Getting pre-approved typically takes 2-3 business
+              days and costs nothing – it's a free service that puts you in position to act quickly
+              when the right home appears on the market.
             </p>
           </div>
         </div>
@@ -85,8 +84,8 @@ export default function BuyerGuideContent() {
               >
                 gated living
               </Link>{' '}
-              with golf course access, appealing to move-up buyers and retirees seeking premium
-              amenities and security.{' '}
+              with golf course access, appealing to move-up buyers seeking premium amenities and
+              controlled entry.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

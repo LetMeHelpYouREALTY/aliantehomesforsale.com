@@ -31,13 +31,13 @@ export default function WhyWorkWithUs() {
       icon: '🤝',
       title: 'Direct Builder Relationships',
       description:
-        'Personal connections with sales managers at every major builder. We get early access to new releases, priority lot selections, and better incentive packages for our clients.',
+        'I work the Aliante and Tule Springs builder map with you. Confirm current communities and sales-manager contacts on this month’s sheet.',
     },
     {
       icon: '💡',
       title: 'Incentive Maximization',
       description:
-        'Average client savings of $15,000+ through incentive stacking, upgrade negotiations, and closing cost credits. We know every available program and how to combine them.',
+        'I represent you on the builder contract. Confirm today’s incentive sheet, lot premiums, and upgrade credits before you write — I will not publish a stale savings average.',
     },
     {
       icon: '🔍',
@@ -61,7 +61,7 @@ export default function WhyWorkWithUs() {
       icon: '🏆',
       title: 'Proven Results',
       description:
-        'Over 200 new construction closings in Aliante area. Our clients consistently get better lots, more upgrades, and superior value compared to buyers without representation.',
+        'Independent buyer representation on Aliante and nearby Tule Springs new construction. Confirm live inventory. I will not publish an unverified closing count.',
     },
   ];
 

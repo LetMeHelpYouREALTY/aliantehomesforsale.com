@@ -28,7 +28,7 @@ export default function ContactWhyChoose() {
     {
       icon: '🤝',
       title: 'Builder Relationships',
-      description: 'Direct relationships with all major builders for better deals and incentives',
+      description: 'I confirm live builder incentive sheets and represent you — not the sales desk',
     },
     {
       icon: '📊',

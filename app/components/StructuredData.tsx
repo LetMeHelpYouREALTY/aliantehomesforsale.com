@@ -168,7 +168,7 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'The Paseos',
-                description: 'Affordable living community for first-time buyers',
+                description: 'Open-access village with parks, trails, and shared recreation',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/paseos',
               },
             },

@@ -76,22 +76,16 @@ export default function MarketReportContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Las Vegas real estate follows predictable seasonal patterns that savvy buyers and
-              sellers can leverage for advantage. Spring (March-May) traditionally sees the highest
-              inventory and buyer activity as families time purchases to align with the school year
-              transition. This increased competition often drives prices to annual highs, but also
-              provides maximum choice in available properties. Summer months bring extreme heat and
-              slower activity, creating potential negotiating opportunities as sellers who remain on
-              market become more motivated.
+              Las Vegas listing volume still moves with the calendar. Spring (March-May) typically
+              sees higher inventory and more buyer activity. That can mean more competition on
+              well-priced homes and more choice. Summer heat often slows showings, which can leave
+              more room to negotiate with sellers who stay on market.
             </p>
 
             <p className="leading-relaxed">
-              Fall presents an interesting dynamic where inventory remains healthy but buyer
-              competition decreases as families settle into school routines and holiday planning
-              begins. This September-November window often represents the best balance of selection
-              and negotiating power for buyers. Winter months see the lowest inventory but also the
-              most motivated sellers – those listing during the holidays typically have compelling
-              reasons to sell and may be more flexible on price and terms.
+              Fall often still has inventory while some buyers pause for holidays. Winter usually
+              has fewer listings and fewer showings. Confirm live days-on-market rather than
+              treating any season as a guaranteed discount.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -100,21 +94,20 @@ export default function MarketReportContent() {
 
             <p className="leading-relaxed">
               Interest rates remain the single most important factor affecting housing affordability
-              and buyer purchasing power. A 1% change in interest rates can impact monthly payments
-              by $200-$300 on a median-priced Aliante home, effectively changing your buying power
-              by $30,000-$50,000. Current rate environments make working with experienced lenders
-              who can shop multiple banks for the best rates absolutely critical. Many builders
-              offer rate buydown programs that can reduce your effective rate by 1-2% in the early
-              years of your loan, significantly improving affordability.
+              and buyer purchasing power. On the sample $450,000 loan used on the mortgage
+              calculator page, a 1% rate change moves principal-and-interest by a few hundred
+              dollars a month — confirm the live quote for your credit and down payment. Many
+              builders offer rate buydown programs; confirm today’s sheet rather than a stale 1-2%
+              claim.
             </p>
 
             <p className="leading-relaxed">
               As your local market expert, I maintain relationships with multiple lenders who
-              specialize in the Las Vegas market and can often secure rates that are .25%-.5% better
-              than advertised national averages. This difference may seem small, but over the life
-              of a 30-year mortgage, it can save you tens of thousands of dollars. I always
-              recommend that my clients get pre-approved with at least two different lenders to
-              compare rates and terms before beginning their home search.
+              specialize in the Las Vegas market. Compare at least two written quotes — I will not
+              publish a spread versus national advertised averages. Over a 30-year loan, a small
+              rate difference compounds. I always recommend that my clients get pre-approved with at
+              least two different lenders to compare rates and terms before beginning their home
+              search.
             </p>
           </div>
         </div>

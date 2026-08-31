@@ -54,7 +54,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              World-Class Amenities and Recreation
+              Amenities and Recreation
             </h3>
 
             <p className="leading-relaxed">
@@ -102,11 +102,9 @@ export default function SunCityContent() {
             <p className="leading-relaxed">
               Outdoor living receives special emphasis, with most homes featuring covered patios,
               low-maintenance desert landscaping, and private courtyards or golf course views. Many
-              properties include casitas or detached guest suites perfect for visiting children and
-              grandchildren, providing privacy while keeping family close during visits. Homes range
-              from cozy villas under 1,500 square feet ideal for couples downsizing from larger
-              family homes, to expansive estates exceeding 3,000 square feet with multiple bedrooms,
-              entertainment spaces, and luxury finishes throughout.
+              properties include casitas or detached guest suites for visitors. Homes range from
+              villas under 1,500 square feet, to plans exceeding 3,000 square feet with multiple
+              bedrooms, entertainment spaces, and upgraded finishes throughout.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -144,24 +142,18 @@ export default function SunCityContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Sun City Aliante homes typically cost 10-15% less per square foot than comparable
-              active adult communities in Southern Nevada, while offering equal or superior
-              amenities and social programming. This value proposition attracts retirees from
-              throughout the country, particularly California equity migrants seeking to stretch
-              their retirement dollars while enjoying excellent quality of life. The absence of
-              state income tax in Nevada further enhances financial benefits for retirees with
-              pension income, IRA distributions, or Social Security benefits.
+              Confirm live list prices and price per square foot against other 55+ communities in
+              Southern Nevada — I will not publish a stale discount. Amenities, HOA dues, and
+              occupancy rules still decide fit. Nevada has no state income tax; confirm current tax
+              treatment of pension, IRA, and Social Security income with a CPA, not this listing
+              page.
             </p>
 
             <p className="leading-relaxed">
-              From a lifestyle perspective, Sun City Aliante provides the structure and social
-              opportunities that research shows are critical for healthy, engaged aging. The ability
-              to pursue hobbies, maintain physical fitness, develop friendships, and participate in
-              community activities contributes to both physical and mental health throughout
-              retirement years. Many residents report that moving to Sun City Aliante was among the
-              best decisions they've made, citing the active lifestyle, friendly neighbors, and
-              freedom from home maintenance as transformative benefits that have enriched their
-              retirement beyond what they initially imagined possible.
+              From a lifestyle perspective, Sun City Aliante is built around clubs, fitness, and
+              low-maintenance lots. Confirm current amenities, HOA fees, and occupancy rules with
+              the association before you offer. I represent you on the purchase — I will not publish
+              unverified resident testimonials.
             </p>
           </div>
         </div>

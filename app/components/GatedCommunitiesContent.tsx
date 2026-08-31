@@ -51,13 +51,13 @@ export default function GatedCommunitiesContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Aliante's Premier Gated Communities
+            Aliante's Gated Villages
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Aliante includes several gated villages, each with its own
-              character and amenity offerings.{' '}
+              Aliante includes several gated villages, each with its own character and amenity
+              offerings.{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -87,7 +87,7 @@ export default function GatedCommunitiesContent() {
               offers a different take on gated living, focusing on golf lifestyle with homes
               surrounding the championship 18-hole course. Residents enjoy preferred tee times,
               clubhouse dining privileges, and a tight-knit community of golf enthusiasts. The gated
-              sections of this community provide the perfect blend of security and{' '}
+              sections of this community provide controlled access plus{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -151,12 +151,11 @@ export default function GatedCommunitiesContent() {
             </p>
 
             <p className="leading-relaxed">
-              The guest access process is another consideration – while security is a benefit, it
-              also means that your visitors will need to be cleared through the gate, which some
-              buyers find inconvenient. Modern communities have streamlined this process with
-              electronic guest lists and temporary access codes, but it's still an adjustment from
-              the completely open access of non-gated neighborhoods. Confirm guest procedures before
-              you buy.
+              The guest access process is another consideration – controlled entry means that your
+              visitors will need to be cleared through the gate, which some buyers find
+              inconvenient. Modern communities have streamlined this process with electronic guest
+              lists and temporary access codes, but it's still an adjustment from the completely
+              open access of non-gated neighborhoods. Confirm guest procedures before you buy.
             </p>
           </div>
         </div>

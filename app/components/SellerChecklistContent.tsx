@@ -38,10 +38,10 @@ export default function SellerChecklistContent() {
             <p className="leading-relaxed">
               The Aliante market is unique in that buyers have high expectations for quality and
               presentation given the master-planned community's reputation. Homes that show well and
-              are priced competitively typically receive multiple offers within the first week of
-              listing, often selling above asking price. Conversely, homes that hit the market
-              unprepared or overpriced can linger for weeks or months, eventually selling for less
-              than they would have achieved with proper initial positioning.
+              are priced to recent comps typically get more showing traffic in the first weeks of
+              listing. Homes that hit the market unprepared or overpriced can linger, which can
+              weaken later offers. Confirm current days-on-market on live MLS — I will not publish a
+              stale “sold in week one” rate.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -108,10 +108,10 @@ export default function SellerChecklistContent() {
             <p className="leading-relaxed">
               Once your home is prepared and priced, we launch a comprehensive marketing campaign
               designed to reach every qualified buyer in the market. This begins with professional
-              photography – studies show that homes with professional photos sell 32% faster and for
-              significantly higher prices than those with amateur smartphone pictures. I invest in
-              professional photographers who understand how to showcase homes in the best light,
-              often including drone footage for properties with exceptional locations or views.
+              photography — professional listing photos typically show rooms, lot, and light more
+              clearly than phone snapshots. I invest in professional photographers who understand
+              how to showcase homes in the best light, often including drone footage for properties
+              with exceptional locations or views.
             </p>
 
             <p className="leading-relaxed">
@@ -152,18 +152,16 @@ export default function SellerChecklistContent() {
               coordinate with all parties, address any issues that arise, and keep you informed
               throughout the process. My goal is to remove stress and uncertainty from the
               transaction while protecting your interests and ensuring we reach closing day on
-              schedule. With proper preparation, pricing, and execution, most of my listings close
-              within 30-45 days at or above asking price, and my clients consistently report
-              satisfaction with both the process and the outcome.
+              schedule. Closing timelines still depend on the contract, lender, and title — confirm
+              current days-to-close on the offer you accept.
             </p>
 
             <p className="leading-relaxed">
               Selling a home is a significant life event, and you deserve representation that
-              combines local market expertise with professional execution. I've successfully guided
-              hundreds of Aliante sellers through this process, and I'd welcome the opportunity to
-              help you achieve your real estate goals. Contact me today for a free home valuation
-              and listing consultation where we can discuss your specific situation and create a
-              customized plan for your successful sale.
+              combines local market expertise with professional execution. I have listed Aliante
+              homes since 2018. Contact me today for a free home valuation and listing consultation
+              where we can discuss your specific situation and create a customized plan for your
+              successful sale.
             </p>
           </div>
         </div>

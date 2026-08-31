@@ -49,13 +49,13 @@ export default function GolfHomesContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Owning a home on the Club Aliante golf course provides natural access to one of
-              Nevada's premier golf clubs, though formal club membership is separate from home
-              ownership. Club members enjoy preferred tee times, clubhouse dining privileges,
-              practice facility access, and social events throughout the year. The club operates
-              both as a public course available for daily fee play and as a private club for
-              members, creating a balanced atmosphere that provides the benefits of membership
-              without the exclusivity pressure of some private clubs.
+              Owning a home on the Club Aliante golf course sits next to the city-owned Aliante Golf
+              Club, though formal club membership is separate from home ownership. Club members
+              enjoy preferred tee times, clubhouse dining privileges, practice facility access, and
+              social events throughout the year. The club operates both as a public course available
+              for daily fee play and as a private club for members, creating a balanced atmosphere
+              that provides the benefits of membership without the exclusivity pressure of some
+              private clubs.
             </p>
 
             <p className="leading-relaxed">
@@ -112,14 +112,10 @@ export default function GolfHomesContent() {
 
             <p className="leading-relaxed">
               Early morning golfers beginning play at dawn during summer months may create noise
-              that some homeowners find disruptive, though most quickly adapt to the rhythm of
-              course activity. The benefit is that golf courses have defined quiet hours (typically
-              sunset to sunrise), unlike other commercial or entertainment uses that might operate
-              late into the evening. Overall, the vast majority of golf course homeowners in Aliante
-              report extremely high satisfaction with their purchase and would choose golf course
-              living again for their next home. The combination of views, resort-style amenities,
-              and permanent open space protection creates a living environment that's difficult to
-              replicate in standard residential settings.
+              that some homeowners find disruptive. The course has defined quiet hours (typically
+              sunset to sunrise), unlike some commercial uses that run late. Confirm tee-time hours
+              and errant-ball history for the lot before you offer. Views, HOA rules, and live comps
+              still decide value — I will not publish a satisfaction rate.
             </p>
           </div>
         </div>
@@ -134,11 +130,10 @@ export default function GolfHomesContent() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
               Navigating the golf course home market requires working with an agent who understands
-              the nuances of these specialized properties. I've sold dozens of golf course homes in
-              Aliante and can provide detailed insights on specific lots, view corridors, past
-              errant ball frequency, sun exposure patterns, and resale history. Some of the best
-              values emerge when golf course homes linger on market due to poor initial marketing –
-              I can help you identify these opportunities and negotiate exceptional terms.
+              the nuances of these specialized properties. I tour fairway lots in Aliante with you
+              and can walk lot position, view corridors, errant-ball exposure, sun, and recent
+              comps. Some listings linger because the photos miss the course — we can check those
+              against live MLS and negotiate from there.
             </p>
 
             <p className="leading-relaxed">

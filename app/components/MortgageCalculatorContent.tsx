@@ -48,13 +48,13 @@ export default function MortgageCalculatorContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Interest rates remain the single most important variable affecting affordability. A 1%
-              change in rates can alter your monthly payment by $200-$300, effectively changing your
-              buying power by $30,000-$50,000. In today's environment, rates fluctuate based on
-              Federal Reserve policy, inflation trends, and broader economic conditions. Working
-              with lenders who can lock favorable rates quickly when market conditions improve is
-              crucial – rates can change daily, and being prepared to act when opportunities emerge
-              provides real financial advantage.
+              Interest rates remain the single most important variable affecting affordability. On
+              the sample $450,000 loan above, a 1% rate change moves principal-and-interest by a few
+              hundred dollars a month — confirm the live quote for your credit and down payment. In
+              today's environment, rates fluctuate based on Federal Reserve policy, inflation
+              trends, and broader economic conditions. Working with lenders who can lock favorable
+              rates quickly when market conditions improve is crucial – rates can change daily, and
+              being prepared to act when opportunities emerge provides real financial advantage.
             </p>
 
             <p className="leading-relaxed">
@@ -136,12 +136,12 @@ export default function MortgageCalculatorContent() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
               Selecting the right lender is nearly as important as finding the right home. I work
-              with several excellent mortgage professionals who specialize in the Las Vegas market
-              and consistently deliver competitive rates, efficient processing, and reliable
-              closings. These lenders understand unique situations like self-employment income,
-              investment property financing, and non-traditional credit profiles. They'll provide
-              multiple loan program options with detailed cost comparisons so you can make informed
-              decisions about which structure best fits your situation.
+              with several mortgage professionals who specialize in the Las Vegas market and
+              consistently deliver competitive rates, efficient processing, and reliable closings.
+              These lenders understand unique situations like self-employment income, investment
+              property financing, and non-traditional credit profiles. They'll provide multiple loan
+              program options with detailed cost comparisons so you can make informed decisions
+              about which structure best fits your situation.
             </p>
 
             <p className="leading-relaxed">

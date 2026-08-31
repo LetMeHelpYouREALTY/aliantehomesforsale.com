@@ -45,7 +45,7 @@ export default function NewConstructionFAQ() {
     {
       question: "Do I need a buyer's agent for new construction?",
       answer:
-        "Absolutely! The builder's sales agent represents the builder, not you. Having your own agent costs you nothing (builder pays commission) and can save you thousands through better negotiations and protecting your interests.",
+        "The builder's sales agent represents the builder, not you. Having your own agent typically costs you nothing on participating builder contracts (the builder pays the cooperating commission). I review incentives, options, and walk-throughs on your side of the table.",
     },
     {
       question: 'How long does the new construction process take?',

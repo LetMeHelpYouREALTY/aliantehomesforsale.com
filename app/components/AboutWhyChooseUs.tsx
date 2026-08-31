@@ -34,7 +34,7 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Builder Relationships',
-      description: 'Direct access to builder reps for better deals and incentives',
+      description: 'I confirm live builder incentive sheets and represent you on the contract',
       icon: '🤝',
     },
     {

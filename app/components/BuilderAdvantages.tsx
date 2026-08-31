@@ -7,7 +7,7 @@ export default function BuilderAdvantages() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-          How to Choose the Right Builder for Your Family
+          How to Choose the Right Builder in Aliante
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -48,8 +48,8 @@ export default function BuilderAdvantages() {
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
             >
               first-time buyers
-            </Link>
-            , growing families, and anyone who prioritizes value and speed to occupancy.
+            </Link>{' '}
+            and buyers who want included features and a shorter path to occupancy.
           </p>
 
           <p className="leading-relaxed">

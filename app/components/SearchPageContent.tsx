@@ -23,9 +23,9 @@ export default function SearchPageContent() {
             range, square footage, number of bedrooms and bathrooms, lot size, property age,
             community amenities, specific neighborhoods, and dozens of other features. You can save
             your favorite properties, set up automated email alerts when new homes matching your
-            criteria hit the market, and share listings with family members who are helping with
-            your search. This powerful combination of features ensures you stay informed and can act
-            quickly when the right property becomes available.
+            criteria hit the market, and share listings with others helping with your search. This
+            combination of features keeps you informed so you can act when the right property
+            becomes available.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
