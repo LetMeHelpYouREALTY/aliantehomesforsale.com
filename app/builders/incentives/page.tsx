@@ -21,7 +21,7 @@ export default function Incentives() {
       <NewConstructionHero
         title="Builder Incentives in Aliante | North Las Vegas 89084"
         subtitle="I confirm today’s closing-cost, rate-buydown, and upgrade offers with you. I will not publish a stale dollar amount. Call (702) 707-7273."
-        filterHeading="Which Aliante builder is offering credits now"
+        filterHeading="Which builder is offering credits — confirm ZIP"
         image={pageHero('/builders/incentives')}
       />
       <BuilderIncentivesInfo

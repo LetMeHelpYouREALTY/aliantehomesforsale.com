@@ -42,8 +42,8 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              I represent 55+ buyers on occupancy rules, HOA documents, and lot position.
-              Single-story plans, proximity to the recreation campus or Aliante Golf Club, and club
+              I represent 55+ buyers on occupancy rules, HOA documents, and lot position. Floor
+              plan, story count, proximity to the recreation campus or Aliante Golf Club, and club
               access still vary by address. Confirm live MLS inventory and list prices — I will not
               publish a stale count or range.
             </p>
@@ -84,10 +84,10 @@ export default function SunCityContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Sun City Aliante plans are built for 55+ occupancy. Many listings are single-story
-              with a primary suite on the main floor — confirm bed/bath count, stairs, and finishes
-              on that MLS number. Open-concept kitchens and flex rooms show up on some plans, not
-              all. I will not hard-code a size range.
+              Sun City Aliante plans are built for 55+ occupancy. Confirm story count, primary-suite
+              location, bed/bath count, stairs, and finishes on that MLS number — I will not treat
+              single-story as a given. Open-concept kitchens and flex rooms show up on some plans,
+              not all. I will not hard-code a size range.
             </p>
 
             <p className="leading-relaxed">

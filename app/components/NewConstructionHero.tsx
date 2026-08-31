@@ -92,7 +92,7 @@ export default function NewConstructionHero({
                 className="inline-block px-8 py-3 bg-white rounded-lg font-semibold transition-all hover:scale-105 focus:ring-4 focus:ring-white/30 focus:outline-none"
                 style={{ color: '#ed8936' }}
               >
-                View Aliante incentive notes →
+                View builder incentive notes →
               </a>
             </div>
           </div>

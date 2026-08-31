@@ -78,7 +78,7 @@ export default function EnhancedPropertyTypes() {
         'Updated kitchens and baths where listed',
         'Confirm smart-home items on the listing',
         'Pools and outdoor living where present',
-        'Mountain or golf-course views where the lot has them',
+        'Gated streets — confirm lot position, not golf-course frontage',
       ],
       link: '/neighborhoods/prominence',
       image: siteImages.prominence,

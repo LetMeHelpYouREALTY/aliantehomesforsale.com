@@ -71,7 +71,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/sun-city-aliante',
     image: '/images/sun-city.jpg',
     alt: 'Sun City Aliante 55+ active adult community',
-    highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Single-story plans'],
+    highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Confirm floor plan on listing'],
   },
 ];
 

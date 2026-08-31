@@ -153,8 +153,8 @@ export default function NeighborhoodCards() {
       name: 'Sun City Aliante',
       tag: 'Active adult 55+',
       description:
-        'Del Webb 55+ village inside ZIP 89084 — not Ardiente (89081). Golf nearby, clubs, fitness, and low-maintenance single-story plans.',
-      features: ['Aliante Golf Club nearby', 'Clubs', 'Fitness', 'Single-story plans'],
+        'Del Webb 55+ village inside ZIP 89084 — not Ardiente (89081). Golf nearby, clubs, and fitness. Confirm floor plan and story count on the listing.',
+      features: ['Aliante Golf Club nearby', 'Clubs', 'Fitness', 'Confirm floor plan on listing'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
         { label: 'Home types', value: 'Single-family, villas' },

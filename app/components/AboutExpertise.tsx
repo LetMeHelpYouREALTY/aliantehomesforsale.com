@@ -31,7 +31,7 @@ export default function AboutExpertise() {
       icon: '🏗️',
       title: 'New-construction buyer agency in Aliante & Tule Springs',
       description:
-        'I represent you with Lennar, D.R. Horton, and Del Webb — not the builder. Incentives, options, and walk-throughs in North Las Vegas 89084.',
+        'I represent you with Lennar and Del Webb in 89084, and D.R. Horton at Tule Springs — not the builder. Confirm incentives, options, and walk-throughs on that community\u2019s sheet.',
     },
     {
       icon: '🏘️',
