@@ -82,7 +82,7 @@ export default function PropertyCategories() {
       count: '41',
       description:
         'Active adult community with world-class amenities. Resort-style living designed for 55+.',
-      href: '/neighborhoods/sun-city',
+      href: '/sun-city-aliante',
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
     },
   ];

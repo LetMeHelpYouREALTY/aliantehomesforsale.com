@@ -130,7 +130,7 @@ export default function BuyerGuideContent() {
               neighborhoods offer the best balance of affordability and quality, with homes
               typically ranging from $300,000 to $600,000.{' '}
               <Link
-                href="/neighborhoods/sun-city"
+                href="/sun-city-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Sun City Aliante

@@ -225,7 +225,7 @@ export default function TopBuilders() {
         'Resort amenities included',
       ],
       primaryCTA: { text: 'View 25+ Del Webb Homes', href: '/builders/del-webb' },
-      secondaryCTA: { text: 'Sun City Details', href: '/neighborhoods/sun-city' },
+      secondaryCTA: { text: 'Sun City Details', href: '/sun-city-aliante' },
     },
     {
       name: 'TOLL BROTHERS',

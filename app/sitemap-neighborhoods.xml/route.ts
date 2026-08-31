@@ -42,6 +42,12 @@ export async function GET() {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/sun-city-aliante`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/neighborhoods/compare`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
