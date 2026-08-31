@@ -49,14 +49,10 @@ export default function SellerChecklistContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Before your home hits the MLS, we'll conduct a comprehensive pre-listing consultation
-              where I evaluate your home's condition, identify areas needing attention, and
-              recommend strategic improvements that deliver the highest return on investment. Not
-              all updates make financial sense – my job is to help you distinguish between necessary
-              repairs that affect buyer perception and unnecessary renovations that won't recover
-              their cost at sale. In most cases, deep cleaning, minor repairs, fresh paint in
-              neutral colors, and professional landscaping deliver far better ROI than major kitchen
-              or bathroom renovations.
+              Before your home hits the MLS, we'll walk the house together, note repairs that affect
+              how buyers see it, and skip updates that may not recoup their cost. Deep cleaning,
+              minor repairs, fresh paint in neutral colors, and landscaping often change showing
+              photos more than a full kitchen remodel — confirm what that address actually needs.
             </p>
 
             <p className="leading-relaxed">
@@ -64,9 +60,8 @@ export default function SellerChecklistContent() {
               envision themselves living in your space, which becomes difficult when every surface
               is covered with personal items, family photos, and collection displays. We'll work
               together to create a clean, neutral canvas that showcases your home's best features.
-              For many sellers, this means placing items in storage temporarily, which is a small
-              investment that typically pays significant dividends in the final sale price and speed
-              of sale.
+              For many sellers, this means placing items in storage temporarily so rooms photograph
+              and show as empty living space, not a personal archive.
             </p>
           </div>
         </div>
@@ -80,25 +75,19 @@ export default function SellerChecklistContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Pricing your home correctly from day one is the single most important decision in the
-              entire selling process. In today's digital age, the vast majority of buyers discover
-              homes online, and initial MLS positioning determines whether your home appears in
-              their search results. Overpricing even by 5-10% can dramatically reduce your buyer
-              pool, as many searchers set maximum price filters that will exclude your home
-              entirely. Meanwhile, the first two weeks on market generate the most buyer interest
-              and showing activity – mispricing your home means missing this critical window of
-              maximum attention.
+              Pricing your home correctly from day one is the most important listing decision. Many
+              buyers start online, and MLS price filters decide whether your home appears. A list
+              price above what searchers cap can hide the house entirely. The first weeks on market
+              usually bring the most showings — confirm current days-on-market on live MLS rather
+              than a stale “sold in week one” rate.
             </p>
 
             <p className="leading-relaxed">
-              I create comprehensive comparative market analyses using recent sales data from your
-              specific neighborhood, adjusting for key differentiators like lot size, pool, upgraded
-              finishes, and condition. This data-driven approach removes emotion from the pricing
-              decision and positions your home competitively against current inventory. In seller's
-              markets, we may price slightly below market value to generate multiple offers and
-              create bidding competition that drives the final price above asking. In balanced
-              markets, precision pricing at market value typically yields the fastest sale at the
-              best price.
+              I create comparative market analyses from recent sales in your village, adjusting for
+              lot size, pool, finishes, and condition. That keeps pricing on comps, not a valley
+              average. In a seller’s market we may discuss pricing to invite competing offers. In a
+              balanced market, list at a number the last closed sales support. Confirm the sheet for
+              your address before you pick a number.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -132,14 +121,10 @@ export default function SellerChecklistContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              When offers begin arriving, my expertise in negotiation becomes crucial for maximizing
-              your net proceeds. Price is just one component – contingency periods, closing
-              timelines, repair obligations, buyer financing strength, and numerous other terms all
-              impact the quality of an offer. I'll review each offer thoroughly with you, providing
-              recommendations based on market conditions and the relative strengths and weaknesses
-              of each buyer's position. In multiple offer situations, I'll manage the negotiation
-              process to create competitive tension that drives buyers to their highest and best
-              terms.
+              When offers arrive, we review price and terms together: contingencies, closing dates,
+              repairs, and financing. I'll go through each offer with you against current comps. In
+              a multiple-offer week, I manage the process so you can compare highest-and-best terms
+              — I will not promise a bidding war.
             </p>
 
             <p className="leading-relaxed">
