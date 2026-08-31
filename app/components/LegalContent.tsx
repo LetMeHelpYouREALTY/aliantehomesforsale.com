@@ -41,7 +41,7 @@ export default function LegalContent({
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Dr. Jan Duffy - Aliante Real Estate Specialist
+              Dr. Jan Duffy — Aliante realtor, ZIP 89084
             </h3>
 
             <p className="leading-relaxed">

@@ -11,11 +11,11 @@ export default async function LatestNewsSection() {
     <section className="py-16 px-4 bg-[#f7f9fc]" aria-labelledby="latest-news-heading">
       <div className="max-w-7xl mx-auto">
         <h2 id="latest-news-heading" className="text-3xl font-bold text-center mb-4 text-[#0a2540]">
-          Latest News
+          Market notes for Aliante and North Las Vegas 89084
         </h2>
         <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-          Tips and trends for Aliante and North Las Vegas home buyers and sellers. Updated regularly
-          from our partners at Simplifying the Market.
+          Housing notes for Aliante 89084 from Simplifying the Market. Confirm live MLS on this site
+          — feed articles are not a price forecast.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item) => (
