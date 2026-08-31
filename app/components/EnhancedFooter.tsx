@@ -16,6 +16,7 @@ const navigateLinks = [
 
 const companyLinks = [
   { href: '/builders', label: 'Builders Guide' },
+  { href: '/builders/toll-brothers', label: 'Toll Brothers Near Aliante' },
   { href: '/gated-communities', label: 'Gated Communities' },
   { href: '/sun-city-aliante', label: 'Sun City Aliante' },
   { href: '/buyer-guide', label: 'Buyer Guide' },

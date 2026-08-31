@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function NewConstructionHero() {
@@ -9,7 +10,6 @@ export default function NewConstructionHero() {
     { id: 'all', name: 'All Builders', count: '95+' },
     { id: 'lennar', name: 'Lennar', count: '45' },
     { id: 'dr-horton', name: 'D.R. Horton', count: '32' },
-    { id: 'toll-brothers', name: 'Toll Brothers', count: '28' },
     { id: 'tri-pointe', name: 'Tri Pointe', count: '18' },
     { id: 'del-webb', name: 'Del Webb 55+', count: '25' },
   ];
@@ -80,6 +80,12 @@ export default function NewConstructionHero() {
                   {builder.name} ({builder.count})
                 </button>
               ))}
+              <Link
+                href="/builders/toll-brothers"
+                className="px-6 py-3 rounded-full font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-all transform hover:scale-105 focus:ring-4 focus:ring-blue-300 focus:outline-none"
+              >
+                Toll Brothers (near Aliante)
+              </Link>
             </div>
           </div>
 

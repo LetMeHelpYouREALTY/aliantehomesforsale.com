@@ -37,9 +37,9 @@ export async function GET() {
     },
     {
       url: `${baseUrl}/builders/toll-brothers`,
-      lastModified: currentDate,
+      lastModified: '2026-08-31T00:00:00.000Z',
       changeFrequency: 'weekly',
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/builders/richmond-american`,

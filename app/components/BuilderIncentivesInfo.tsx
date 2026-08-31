@@ -54,12 +54,29 @@ export default function BuilderIncentivesInfo() {
           </p>
 
           <p className="leading-relaxed">
-            Tri Pointe and Toll Brothers take a different approach, offering free room additions
-            (bonus rooms, extended garages, or outdoor living spaces) and upgrade packages worth
-            $30,000-$50,000 when you use their preferred lender. Del Webb's active adult communities
-            include special incentives for age-qualified buyers, including golf club memberships,
-            resort passes, and furniture packages that can add tremendous value beyond just the
-            monetary savings.
+            <Link
+              href="/builders/tri-pointe"
+              className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+            >
+              Tri Pointe
+            </Link>{' '}
+            and{' '}
+            <Link
+              href="/builders/toll-brothers"
+              className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+            >
+              Toll Brothers near Aliante
+            </Link>{' '}
+            publish their own option credits and lender programs; I confirm the live sheet before
+            you offer. Toll Brothers is not currently building inside ZIP 89084 — Elkhorn Grove in
+            89131 is the closest community.{' '}
+            <Link
+              href="/builders/del-webb"
+              className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+            >
+              Del Webb
+            </Link>{' '}
+            at Sun City Aliante runs separate 55+ incentives that change with inventory.
           </p>
 
           <p className="leading-relaxed">

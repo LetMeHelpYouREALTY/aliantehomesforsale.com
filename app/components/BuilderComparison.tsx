@@ -76,14 +76,16 @@ export default function BuilderComparison() {
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
-                  Toll Brothers
+                  <a href="/builders/toll-brothers" className="hover:underline">
+                    Toll Brothers
+                  </a>
                 </td>
-                <td className="px-6 py-4 text-gray-700">★★★★★ Ultra-Luxury</td>
-                <td className="px-6 py-4 text-gray-700">$575K-$1.6M</td>
-                <td className="px-6 py-4 text-gray-700">28+ homes</td>
-                <td className="px-6 py-4 text-gray-700">Fortune 500 luxury</td>
+                <td className="px-6 py-4 text-gray-700">Valley luxury (not in 89084)</td>
+                <td className="px-6 py-4 text-gray-700">Confirm live with builder</td>
+                <td className="px-6 py-4 text-gray-700">Elkhorn Grove 89131 + valley</td>
+                <td className="px-6 py-4 text-gray-700">Luxury product outside Aliante</td>
                 <td className="px-6 py-4 font-bold" style={{ color: '#16B286' }}>
-                  2/1 Rate Buydown
+                  Confirm live
                 </td>
               </tr>
               <tr className="hover:bg-gray-50 transition-colors">
