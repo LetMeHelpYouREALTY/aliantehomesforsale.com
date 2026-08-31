@@ -44,7 +44,7 @@ export const siteConfig = {
     {
       name: 'Villages at Tule Springs',
       slug: 'tule-springs',
-      summary: 'New construction near Floyd Lamb Park and Tule Springs.',
+      summary: 'New construction east of Aliante ZIP 89084, near Floyd Lamb Park.',
     },
     {
       name: 'Sun City Aliante',

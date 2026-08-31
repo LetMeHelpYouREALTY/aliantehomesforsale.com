@@ -13,7 +13,9 @@ function ExpertiseCard({ icon, title, description }: ExpertiseCardProps) {
       style={{ borderLeftColor: '#2c5aa0' }}
     >
       <div className="flex items-start gap-4 mb-4">
-        <div className="text-4xl flex-shrink-0">{icon}</div>
+        <div className="text-4xl flex-shrink-0" aria-hidden="true">
+          {icon}
+        </div>
         <h3 className="text-2xl font-bold" style={{ color: '#1a365d' }}>
           {title}
         </h3>

@@ -14,12 +14,12 @@ const aboutFaqs = [
       'Aliante and North Las Vegas, Nevada — including Sun City Aliante, The Prominence, Desert Willows, Club Aliante, The Paseos, nearby Tule Springs, and new construction in ZIP 89084 and adjacent streets.',
   },
   {
-    question: 'Why work with a local Aliante expert?',
+    question: 'Why work with a 89084 realtor?',
     answer:
       'A local agent knows builder incentive sheets, village HOAs, and live MLS comps. I help buyers negotiate and document representation before model tours, and I help sellers price from neighborhood comps — not a valley-wide average.',
   },
 ];
 
 export default function AboutFAQ() {
-  return <FAQSection title="Frequently Asked Questions About Our Team" faqs={aboutFaqs} />;
+  return <FAQSection title="Frequently Asked Questions About Dr. Jan Duffy" faqs={aboutFaqs} />;
 }
