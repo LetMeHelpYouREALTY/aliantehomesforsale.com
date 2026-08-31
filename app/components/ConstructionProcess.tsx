@@ -30,7 +30,9 @@ function ProcessStep({ number, title, description, details }: ProcessStepProps) 
       <ul className="space-y-2">
         {details.map((detail, index) => (
           <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-            <span className="flex-shrink-0 text-green-500 font-bold">✓</span>
+            <span className="flex-shrink-0 text-green-500 font-bold" aria-hidden="true">
+              ✓
+            </span>
             <span>{detail}</span>
           </li>
         ))}

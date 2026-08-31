@@ -37,6 +37,7 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
               <span
                 className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
                 style={{ backgroundColor: '#16B286' }}
+                aria-hidden="true"
               >
                 ✓
               </span>

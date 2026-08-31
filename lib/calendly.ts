@@ -18,7 +18,8 @@ const INLINE_FORM_PATHS = new Set([
 ]);
 
 export function isLegalPath(pathname: string): boolean {
-  return LEGAL_PATHS.has(pathname);
+  const normalized = pathname.replace(/\/+$/, '') || '/';
+  return LEGAL_PATHS.has(normalized);
 }
 
 export function hasPageInlineCalendly(pathname: string): boolean {

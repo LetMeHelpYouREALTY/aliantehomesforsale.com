@@ -410,7 +410,7 @@ export default function EnhancedNavigation() {
                 className="block w-full px-6 py-3 rounded-lg font-bold text-white text-center mb-6 transition-all"
                 style={{ backgroundColor: '#ed8936' }}
               >
-                📞 (702) 707-7273
+                <span aria-hidden="true">📞</span> (702) 707-7273
               </a>
 
               {/* Mobile Navigation Links */}
@@ -430,6 +430,48 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   New Construction
+                </Link>
+                <Link
+                  href="/builders/lennar"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Lennar
+                </Link>
+                <Link
+                  href="/builders/dr-horton"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  D.R. Horton
+                </Link>
+                <Link
+                  href="/builders/tri-pointe"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Tri Pointe
+                </Link>
+                <Link
+                  href="/builders/del-webb"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Del Webb (55+)
+                </Link>
+                <Link
+                  href="/builders/toll-brothers"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Toll Brothers
+                </Link>
+                <Link
+                  href="/builders/richmond-american"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Richmond American
                 </Link>
                 <Link
                   href="/builders"

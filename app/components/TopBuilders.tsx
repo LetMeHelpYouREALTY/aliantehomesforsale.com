@@ -76,7 +76,9 @@ function BuilderCard({
           <ul className="space-y-2">
             {communities.map((community) => (
               <li key={community} className="flex items-start gap-2 text-sm text-gray-700">
-                <span className="text-teal-500 font-bold flex-shrink-0">▸</span>
+                <span className="text-teal-500 font-bold flex-shrink-0" aria-hidden="true">
+                  ▸
+                </span>
                 <span>{community}</span>
               </li>
             ))}
@@ -90,7 +92,9 @@ function BuilderCard({
           <ul className="space-y-2">
             {incentives.map((incentive) => (
               <li key={incentive} className="flex items-start gap-2 text-sm text-gray-700">
-                <span className="flex-shrink-0">✅</span>
+                <span className="flex-shrink-0" aria-hidden="true">
+                  ✅
+                </span>
                 <span>{incentive}</span>
               </li>
             ))}
@@ -264,6 +268,29 @@ export default function TopBuilders() {
       secondaryCTA: { text: 'Schedule Private Tour', href: '/contact' },
       officialUrl: builderOfficialUrl('toll-brothers'),
       featured: true,
+    },
+    {
+      name: 'RICHMOND AMERICAN',
+      badge: 'Confirm ZIP',
+      stats: [
+        { value: 'Nearby', label: 'Not assumed 89084' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Community' },
+      ],
+      title: 'Richmond American — confirm the community ZIP',
+      description:
+        'Do not assume a Richmond American community is inside Aliante ZIP 89084. Confirm the current map, then compare with Lennar in Aliante or Tule Springs new construction.',
+      communities: [
+        'Confirm whether the community you will tour is inside 89084',
+        'Compare with Lennar in Aliante and D.R. Horton at Tule Springs',
+      ],
+      incentives: [
+        'Confirm today’s incentive sheet for that community',
+        'Register with me before the model tour so representation is documented',
+      ],
+      primaryCTA: { text: 'Richmond American buyer notes', href: '/builders/richmond-american' },
+      secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('richmond-american'),
     },
   ];
 
