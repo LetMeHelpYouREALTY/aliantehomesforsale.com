@@ -23,11 +23,11 @@ export default function MortgageCalculatorContent() {
             </p>
 
             <p className="leading-relaxed">
-              For example, on a $450,000 purchase with 10% down, a 7% rate, and a 30-year term, use
-              the estimator on this page for principal and interest (illustrative only — confirm
-              live rate and taxes). Property taxes, insurance, HOA, and PMI if applicable sit on top
-              of that P&amp;I. Total housing cost is higher than the advertised P&amp;I. View
-              current{' '}
+              Enter the list price, down payment, and the rate your lender quoted in the estimator
+              on this page for principal and interest. Confirm live rate and taxes — I will not
+              publish a sample price or rate as current. Property taxes, insurance, HOA, and PMI if
+              applicable sit on top of that P&amp;I. Total housing cost is higher than the
+              advertised P&amp;I. View current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -49,11 +49,11 @@ export default function MortgageCalculatorContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Interest rates remain the single most important variable affecting affordability. On
-              the sample $450,000 purchase above, a 1% rate change moves principal-and-interest by a
-              few hundred dollars a month — confirm the live quote for your credit and down payment.
-              Rates move with the market. Confirm the quote your lender will actually lock — I will
-              not treat a Fed headline as your payment.
+              Interest rates remain the single most important variable affecting affordability. A 1%
+              rate change moves monthly principal-and-interest — confirm the live quote for your
+              credit, purchase price, and down payment. Rates move with the market. Confirm the
+              quote your lender will actually lock — I will not treat a Fed headline as your
+              payment.
             </p>
 
             <p className="leading-relaxed">
