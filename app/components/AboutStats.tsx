@@ -1,6 +1,8 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
+import ExternalLink from './ExternalLink';
 
 interface StatCardProps {
   number: string;
@@ -53,9 +55,28 @@ export default function AboutStats() {
             Who We Are
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Dr. Jan Duffy has specialized in Aliante and North Las Vegas 89084 since 2018 with
-            Berkshire Hathaway HomeServices Nevada Properties. For verified client feedback, use
-            Google Business Profile reviews — I will not publish an unverified star rating here.
+            Dr. Jan Duffy has specialized in Aliante and North Las Vegas 89084 since 2018 with{' '}
+            <ExternalLink
+              href={siteConfig.official.brokerage}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              {siteConfig.brokerage}
+            </ExternalLink>
+            . Nevada license{' '}
+            <ExternalLink
+              href={siteConfig.official.nredLicenseLookup}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              {siteConfig.agentLicense}
+            </ExternalLink>
+            . For verified client feedback, use{' '}
+            <ExternalLink
+              href={siteConfig.maps.placeUrl}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Google Maps
+            </ExternalLink>{' '}
+            reviews — I will not publish an unverified star rating here.
           </p>
         </div>
 

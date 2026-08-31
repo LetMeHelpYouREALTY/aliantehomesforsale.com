@@ -24,10 +24,10 @@ export default function HomeValuationContent() {
             <p className="leading-relaxed">
               I have analyzed Aliante property values since 2018. Valuation accuracy comes from
               touring the village and reading recent comps — not from an automated estimate. I
-              understand how specific neighborhoods command different price premiums, how various
-              upgrades affect value, and what current market trends mean for your property's worth
-              today versus six months ago. This expertise ensures you have reliable information for
-              making important financial decisions.
+              understand how specific neighborhoods trade at different prices, how various upgrades
+              affect value, and what current market trends mean for your property's worth today
+              versus six months ago. This expertise ensures you have reliable information for making
+              important financial decisions.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

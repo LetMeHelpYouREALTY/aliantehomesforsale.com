@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { siteConfig } from '../../lib/site-config';
 import AboutHero from '../components/AboutHero';
+import ExternalLink from '../components/ExternalLink';
 import LegalContent from '../components/LegalContent';
 
 export const metadata: Metadata = {
@@ -62,9 +64,33 @@ export default function FairHousing() {
           <p className="leading-relaxed">
             If you believe you have experienced discrimination in a housing transaction, you have
             the right to file a complaint with the U.S. Department of Housing and Urban Development
-            (HUD) by calling 1-800-669-9777 or visiting www.hud.gov. Complaints may also be filed
-            with the Nevada Equal Rights Commission. We take all discrimination complaints seriously
-            and will cooperate fully with any investigation of fair housing practices.
+            (HUD) by calling{' '}
+            <a href="tel:+18006699777" className="text-blue-600 hover:underline font-semibold">
+              1-800-669-9777
+            </a>{' '}
+            or visiting{' '}
+            <ExternalLink
+              href={siteConfig.official.hudReportDiscrimination}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              HUD’s Report Housing Discrimination page
+            </ExternalLink>
+            . Read{' '}
+            <ExternalLink
+              href={siteConfig.official.hudFairHousing}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              HUD Fair Housing
+            </ExternalLink>{' '}
+            for the federal standard. Complaints may also be filed with the{' '}
+            <ExternalLink
+              href={siteConfig.official.nercComplaint}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Nevada Equal Rights Commission
+            </ExternalLink>
+            . We take all discrimination complaints seriously and will cooperate fully with any
+            investigation of fair housing practices.
           </p>
         </div>
       </LegalContent>

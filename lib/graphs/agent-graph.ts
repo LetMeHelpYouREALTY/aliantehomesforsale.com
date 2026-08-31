@@ -29,9 +29,11 @@ export function buildAgentGraph() {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'Real Estate License',
       name: `Nevada Real Estate License ${siteConfig.agentLicense}`,
+      url: siteConfig.official.nredLicenseLookup,
       recognizedBy: {
-        '@type': 'Organization',
+        '@type': 'GovernmentOrganization',
         name: 'Nevada Real Estate Division',
+        url: siteConfig.official.nred,
       },
     },
     knowsAbout: [
@@ -68,6 +70,8 @@ export function buildAgentGraph() {
     '@type': 'RealEstateAgent',
     '@id': graphIds.brokerage,
     name: siteConfig.brokerage,
+    url: siteConfig.official.brokerage,
+    sameAs: [siteConfig.official.brokerage],
     address: postalAddress,
   };
 

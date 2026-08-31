@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 export default function GolfHomesContent() {
   return (
@@ -13,9 +15,15 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Golf-course homes in Aliante sit next to the city-owned Aliante Golf Club, an 18-hole
-              public course designed by Gary Panks — not Palm Valley in Sun City Summerlin, and not
-              a Billy Casper layout.{' '}
+              Golf-course homes in Aliante sit next to the city-owned{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>
+              , an 18-hole public course designed by Gary Panks — not Palm Valley in Sun City
+              Summerlin, and not a Billy Casper layout.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -48,11 +56,17 @@ export default function GolfHomesContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Owning a home on the Club Aliante golf course sits next to the city-owned Aliante Golf
-              Club, though formal club membership is separate from home ownership. Confirm current
-              tee-time, dining, and practice-facility rules with Aliante Golf Club — I will not
-              publish member benefits that can change. The course also takes daily-fee play;
-              membership is optional.
+              Owning a home on the Club Aliante golf course sits next to the city-owned{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>
+              , though formal club membership is separate from home ownership. Confirm current
+              tee-time, dining, and practice-facility rules with the course — I will not publish
+              member benefits that can change. The course also takes daily-fee play; membership is
+              optional.
             </p>
 
             <p className="leading-relaxed">

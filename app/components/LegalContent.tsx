@@ -1,5 +1,8 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
+
 type LegalContentProps = {
   title: string;
   children: React.ReactNode;
@@ -11,6 +14,8 @@ export default function LegalContent({
   children,
   lastUpdated = 'August 31, 2026',
 }: LegalContentProps) {
+  const { address, phone, phoneTel, email, hours, maps, official, agentLicense } = siteConfig;
+
   return (
     <>
       <section className="py-16 px-4 bg-white">
@@ -42,23 +47,46 @@ export default function LegalContent({
             <p className="leading-relaxed">
               <strong>Office Address:</strong>
               <br />
-              2590 Nature Park Drive, Suite 275
-              <br />
-              North Las Vegas, NV 89084
+              <ExternalLink href={maps.placeUrl} className="text-blue-600 hover:underline">
+                {address.streetAddress}
+                <br />
+                {address.addressLocality}, {address.addressRegion} {address.postalCode}
+              </ExternalLink>
             </p>
 
             <p className="leading-relaxed">
-              <strong>Phone:</strong> (702) 707-7273
+              <strong>Phone:</strong>{' '}
+              <a href={`tel:${phoneTel}`} className="text-blue-600 hover:underline">
+                {phone}
+              </a>
               <br />
-              <strong>Email:</strong> DrDuffy@AlianteHomesForSale.com
+              <strong>Email:</strong>{' '}
+              <a href={`mailto:${email}`} className="text-blue-600 hover:underline">
+                {email}
+              </a>
             </p>
 
             <p className="leading-relaxed">
               <strong>Office Hours:</strong>
               <br />
-              Monday-Friday: 8:00 AM - 7:00 PM
+              {hours.weekday}
               <br />
-              Saturday-Sunday: 9:00 AM - 6:00 PM
+              {hours.weekend}
+            </p>
+
+            <p className="leading-relaxed text-sm">
+              Brokerage:{' '}
+              <ExternalLink href={official.brokerage} className="text-blue-600 hover:underline">
+                {siteConfig.brokerage}
+              </ExternalLink>
+              . License:{' '}
+              <ExternalLink
+                href={official.nredLicenseLookup}
+                className="text-blue-600 hover:underline"
+              >
+                {agentLicense}
+              </ExternalLink>
+              .
             </p>
           </div>
         </div>

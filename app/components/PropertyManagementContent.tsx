@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 /**
  * Honest disambiguation for GSC queries like "aliante property management".
@@ -30,10 +31,16 @@ export default function PropertyManagementContent() {
           FirstService Residential vs your Aliante realtor (same building)
         </h3>
         <p className="leading-relaxed">
-          FirstService Residential has managed the Aliante Master Association since 2003 and keeps a
-          North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275
-          in that same building. HOA billing, architectural review, and community rules go to the
-          association manager. Purchase and listing work goes to me.
+          <ExternalLink
+            href={siteConfig.official.firstService}
+            className="font-semibold text-[#2c5aa0] hover:underline"
+          >
+            FirstService Residential
+          </ExternalLink>{' '}
+          has managed the Aliante Master Association since 2003 and keeps a North Las Vegas office
+          at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275 in that same building.
+          HOA billing, architectural review, and community rules go to the association manager.
+          Purchase and listing work goes to me.
         </p>
         <p className="leading-relaxed">
           Sub-associations such as Courts at Aliante and Terrasini also use professional HOA

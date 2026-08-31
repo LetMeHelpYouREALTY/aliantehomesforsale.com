@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 export default function SunCityContent() {
   return (
@@ -53,7 +55,13 @@ export default function SunCityContent() {
             <p className="leading-relaxed">
               Sun City Aliante recreation campuses typically include fitness rooms, pools, tennis
               and pickleball courts, and meeting rooms for clubs. Confirm current hours, fees, and
-              guest rules with the association — amenity lists change. The 18-hole Aliante Golf Club
+              guest rules with the association — amenity lists change. The 18-hole{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>{' '}
               (Gary Panks, city-owned and open to the public) runs through the broader Aliante plan.
               Palm Valley is a different course in Sun City Summerlin — do not confuse the two.
               Confirm current resident rates and tee-time rules with the club.

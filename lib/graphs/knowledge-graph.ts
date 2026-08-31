@@ -158,6 +158,7 @@ export function buildKnowledgeGraph() {
     '@id': graphIds.builder(builder.slug),
     name: builder.name,
     url: `${siteConfig.siteUrl}/builders/${builder.slug}`,
+    sameAs: builder.officialUrl,
     areaServed: { '@id': graphIds.aliantePlace },
   }));
 

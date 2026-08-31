@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
+import ExternalLink from './ExternalLink';
 
 const navigateLinks = [
   { href: '/', label: 'Home' },
@@ -109,7 +110,7 @@ export default function EnhancedFooter() {
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
               >
-                View Google Reviews
+                Open in Google Maps
               </a>
               <Link
                 href="/contact#directions"
@@ -150,7 +151,12 @@ export default function EnhancedFooter() {
             <p className="text-sm text-gray-300 mb-3">
               {siteConfig.agentName}
               <br />
-              {siteConfig.brokerage}
+              <ExternalLink
+                href={siteConfig.official.brokerage}
+                className="text-gray-300 hover:text-[#16B286] transition-colors"
+              >
+                {siteConfig.brokerage}
+              </ExternalLink>
             </p>
             <a
               href={siteConfig.calendly.events.consultation.url}
@@ -159,10 +165,63 @@ export default function EnhancedFooter() {
               Schedule time with me
             </a>
             <p className="text-xs text-gray-400 mb-4">
-              Nevada Real Estate License #{siteConfig.agentLicense}
+              <ExternalLink
+                href={siteConfig.official.nredLicenseLookup}
+                className="hover:text-[#16B286] transition-colors"
+              >
+                Nevada Real Estate License #{siteConfig.agentLicense}
+              </ExternalLink>
               <br />
-              Equal Housing Opportunity
+              <Link href="/fair-housing" className="hover:text-[#16B286] transition-colors">
+                Equal Housing Opportunity
+              </Link>
+              {' · '}
+              <ExternalLink
+                href={siteConfig.official.hudFairHousing}
+                className="hover:text-[#16B286] transition-colors"
+              >
+                HUD Fair Housing
+              </ExternalLink>
             </p>
+            <nav aria-label="Official sources" className="mb-4">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                Official sources
+              </p>
+              <ul className="space-y-1 text-xs text-gray-400">
+                <li>
+                  <ExternalLink
+                    href={siteConfig.official.brokerage}
+                    className="hover:text-[#16B286] transition-colors"
+                  >
+                    BHHS Nevada Properties
+                  </ExternalLink>
+                </li>
+                <li>
+                  <ExternalLink
+                    href={siteConfig.official.nred}
+                    className="hover:text-[#16B286] transition-colors"
+                  >
+                    Nevada Real Estate Division
+                  </ExternalLink>
+                </li>
+                <li>
+                  <ExternalLink
+                    href={siteConfig.official.hudReportDiscrimination}
+                    className="hover:text-[#16B286] transition-colors"
+                  >
+                    Report housing discrimination (HUD)
+                  </ExternalLink>
+                </li>
+                <li>
+                  <ExternalLink
+                    href={siteConfig.official.ccsdZoning}
+                    className="hover:text-[#16B286] transition-colors"
+                  >
+                    CCSD school zoning
+                  </ExternalLink>
+                </li>
+              </ul>
+            </nav>
             <nav aria-label="Company links">
               <ul className="space-y-2 text-sm">
                 {companyLinks.map((link) => (

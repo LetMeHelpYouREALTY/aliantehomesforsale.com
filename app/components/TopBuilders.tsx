@@ -1,5 +1,16 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
+
+function builderOfficialUrl(slug: (typeof siteConfig.builders)[number]['slug']): string {
+  const match = siteConfig.builders.find((builder) => builder.slug === slug);
+  if (match === undefined) {
+    throw new Error(`Missing official URL for builder slug ${slug}`);
+  }
+  return match.officialUrl;
+}
+
 interface BuilderCardProps {
   name: string;
   badge: string;
@@ -10,6 +21,7 @@ interface BuilderCardProps {
   incentives: string[];
   primaryCTA: { text: string; href: string };
   secondaryCTA: { text: string; href: string };
+  officialUrl?: string;
   featured?: boolean;
 }
 
@@ -23,6 +35,7 @@ function BuilderCard({
   incentives,
   primaryCTA,
   secondaryCTA,
+  officialUrl,
   featured,
 }: BuilderCardProps) {
   return (
@@ -113,6 +126,16 @@ function BuilderCard({
             {secondaryCTA.text}
           </a>
         </div>
+        {officialUrl ? (
+          <p className="mt-3 text-center text-sm">
+            <ExternalLink
+              href={officialUrl}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Official {name} website
+            </ExternalLink>
+          </p>
+        ) : null}
       </div>
     </article>
   );
@@ -143,6 +166,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Lennar in Aliante 89084', href: '/builders/lennar' },
       secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('lennar'),
       featured: true,
     },
     {
@@ -168,6 +192,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'D.R. Horton buyer notes', href: '/builders/dr-horton' },
       secondaryCTA: { text: 'Schedule Tule Springs tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('dr-horton'),
       featured: true,
     },
     {
@@ -191,6 +216,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Tri Pointe buyer notes', href: '/builders/tri-pointe' },
       secondaryCTA: { text: 'Book Showing', href: '/contact' },
+      officialUrl: builderOfficialUrl('tri-pointe'),
     },
     {
       name: 'DEL WEBB',
@@ -213,6 +239,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Del Webb buyer notes', href: '/builders/del-webb' },
       secondaryCTA: { text: 'Sun City Aliante', href: '/sun-city-aliante' },
+      officialUrl: builderOfficialUrl('del-webb'),
     },
     {
       name: 'TOLL BROTHERS',
@@ -235,30 +262,29 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Toll Brothers buyer notes', href: '/builders/toll-brothers' },
       secondaryCTA: { text: 'Schedule Private Tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('toll-brothers'),
       featured: true,
     },
   ];
 
   return (
-    <>
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-              New-home builders near Aliante 89084
-            </h2>
-            <p className="text-xl text-gray-600">
-              Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {builders.map((builder) => (
-              <BuilderCard key={builder.name} {...builder} />
-            ))}
-          </div>
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+            New-home builders near Aliante 89084
+          </h2>
+          <p className="text-xl text-gray-600">
+            Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
+          </p>
         </div>
-      </section>
-    </>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {builders.map((builder) => (
+            <BuilderCard key={builder.name} {...builder} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

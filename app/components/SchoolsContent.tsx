@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 export default function SchoolsContent() {
   return (
@@ -37,7 +39,14 @@ export default function SchoolsContent() {
             <p className="leading-relaxed">
               Listing remarks are not an attendance guarantee. A village name is not a boundary. I
               match the lot to the current CCSD map and tell you how to confirm it with the district
-              before you write.
+              before you write. Use the{' '}
+              <ExternalLink
+                href={siteConfig.official.ccsdZoning}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Clark County School District zoning search
+              </ExternalLink>{' '}
+              for the address you will actually buy.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -91,7 +100,14 @@ export default function SchoolsContent() {
             <p className="leading-relaxed">
               Pair the named campus with square footage, HOA rules, and drive time to the 215. I
               will not quote a “school-quality premium” or a neighborhood rating. Confirm the
-              attendance map with Clark County School District before you offer.
+              attendance map with{' '}
+              <ExternalLink
+                href={siteConfig.official.ccsdZoning}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Clark County School District zoning
+              </ExternalLink>{' '}
+              before you offer.
             </p>
           </div>
         </div>

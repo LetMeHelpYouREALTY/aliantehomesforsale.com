@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { siteConfig } from '../../lib/site-config';
 import AboutHero from '../components/AboutHero';
+import ExternalLink from '../components/ExternalLink';
 import LegalContent from '../components/LegalContent';
 
 export const metadata: Metadata = {
@@ -20,16 +22,28 @@ export default function Accessibility() {
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
             At Aliante Homes For Sale, we work to keep this site usable for people with
-            disabilities. If a page, form, or widget blocks you, call (702) 707-7273 and we will
-            help you complete the request another way.
+            disabilities. If a page, form, or widget blocks you, call{' '}
+            <a
+              href={`tel:${siteConfig.phoneTel}`}
+              className="font-semibold text-blue-600 hover:underline"
+            >
+              {siteConfig.phone}
+            </a>{' '}
+            and we will help you complete the request another way.
           </p>
 
           <p className="leading-relaxed">
-            We aim to follow Web Content Accessibility Guidelines (WCAG) 2.2 Level AA published by
-            the World Wide Web Consortium (W3C). Those guidelines cover how to make web content more
-            usable for people who are blind or have low vision, are deaf or hard of hearing, have
-            limited mobility, or have cognitive disabilities. This page is a statement of intent,
-            not a certified audit.
+            We aim to follow{' '}
+            <ExternalLink
+              href={siteConfig.official.wcag22}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Web Content Accessibility Guidelines (WCAG) 2.2 Level AA
+            </ExternalLink>{' '}
+            published by the World Wide Web Consortium (W3C). Those guidelines cover how to make web
+            content more usable for people who are blind or have low vision, are deaf or hard of
+            hearing, have limited mobility, or have cognitive disabilities. This page is a statement
+            of intent, not a certified audit.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -51,9 +65,21 @@ export default function Accessibility() {
           </p>
 
           <p className="leading-relaxed">
-            Report accessibility problems to Dr. Jan Duffy at (702) 707-7273 or
-            DrDuffy@AlianteHomesForSale.com. We will work with you to provide the listing or form
-            another way.
+            Report accessibility problems to Dr. Jan Duffy at{' '}
+            <a
+              href={`tel:${siteConfig.phoneTel}`}
+              className="font-semibold text-blue-600 hover:underline"
+            >
+              {siteConfig.phone}
+            </a>{' '}
+            or{' '}
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="font-semibold text-blue-600 hover:underline"
+            >
+              {siteConfig.email}
+            </a>
+            . We will work with you to provide the listing or form another way.
           </p>
         </div>
       </LegalContent>
