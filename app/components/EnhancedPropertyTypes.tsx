@@ -146,7 +146,7 @@ export default function EnhancedPropertyTypes() {
             event="consultation"
             className="inline-block py-3 px-8 rounded-lg font-semibold text-white bg-[#16B286] transition-all transform hover:scale-105 focus:ring-4 focus:ring-teal-300 focus:outline-none hover:bg-[#0F9B6E]"
           >
-            Schedule a Free Consultation
+            Schedule a consultation
           </CalendlyPopupButton>
         </div>
       </div>

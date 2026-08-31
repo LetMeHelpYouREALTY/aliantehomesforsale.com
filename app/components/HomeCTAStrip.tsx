@@ -21,7 +21,7 @@ export default function HomeCTAStrip() {
     {
       label: "What's My Home Worth?",
       href: '/home-valuation',
-      description: 'Free home valuation',
+      description: 'Request a CMA from village comps',
     },
   ];
 

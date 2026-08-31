@@ -42,7 +42,7 @@ export default function NewConstructionCTA() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
           >
-            📞 Call (702) 707-7273 - Free Consultation
+            📞 Call (702) 707-7273
           </a>
 
           <CalendlyPopupButton
@@ -74,7 +74,8 @@ export default function NewConstructionCTA() {
         </div>
 
         <p className="text-white/80 text-sm sm:text-base">
-          Free buyer representation | No cost to you | Builder pays commission | Expert negotiation
+          Buyer representation is typically at no extra cost to you on participating builder sales.
+          Confirm the fee in writing before you tour.
         </p>
       </div>
     </section>

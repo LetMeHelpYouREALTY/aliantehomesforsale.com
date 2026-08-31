@@ -80,10 +80,9 @@ export default function SunCityContent() {
               thoughtful features that enhance comfort and accessibility. Most homes offer
               single-story living with master bedroom suites featuring walk-in closets, ensuite
               bathrooms with walk-in showers, and direct access to outdoor living spaces.
-              Open-concept floor plans maximize usable space while creating bright, airy interiors
-              perfect for entertaining. Gourmet kitchens with islands, upgraded appliances, and
-              ample storage accommodate cooking enthusiasts, while flex rooms provide office space
-              for those continuing to work part-time or pursuing hobbies.
+              Open-concept floor plans maximize usable space while creating bright interiors.
+              Kitchens with islands, upgraded appliances, and ample storage show up on some plans;
+              confirm finishes on the listing. Flex rooms can serve as an office or hobby space.
             </p>
 
             <p className="leading-relaxed">
