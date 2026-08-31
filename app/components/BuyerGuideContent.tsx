@@ -67,8 +67,8 @@ export default function BuyerGuideContent() {
                 neighborhoods
               </Link>
               , each with its own character, amenities, and price points. Understanding these
-              differences is crucial for focusing your search on areas that align with your
-              lifestyle priorities and budget.{' '}
+              differences is crucial for focusing your search on housing type, amenities, and
+              budget.{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -94,7 +94,7 @@ export default function BuyerGuideContent() {
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                golf lifestyle
+                golf-course homes
               </Link>
               , with homes on golf-course lots next to Aliante Golf Club. Lot position and HOA rules
               vary — confirm them on the address you will actually buy.

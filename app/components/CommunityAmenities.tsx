@@ -16,7 +16,9 @@ function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
       <ul className="space-y-2">
         {amenities.map((amenity) => (
           <li key={amenity} className="flex items-start gap-2 text-gray-700">
-            <span className="flex-shrink-0 text-green-500 font-bold">✓</span>
+            <span className="flex-shrink-0 text-green-500 font-bold" aria-hidden="true">
+              ✓
+            </span>
             <span>{amenity}</span>
           </li>
         ))}
@@ -78,7 +80,7 @@ export default function CommunityAmenities() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Community Amenities & Lifestyle
+            Community Amenities in Aliante
           </h2>
           <p className="text-xl text-gray-600">
             Golf, parks, named CCSD campuses, and I-215 access inside the Aliante master plan

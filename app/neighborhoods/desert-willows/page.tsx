@@ -25,7 +25,10 @@ export default function DesertWillows() {
       />
       <EnhancedFeaturedProperties />
       <CommunityAmenities />
-      <NeighborhoodDetailContent heading="Buying in Desert Willows, Aliante 89084" />
+      <NeighborhoodDetailContent
+        heading="Buying in Desert Willows, Aliante 89084"
+        intro="Desert Willows is an open-access village with single- and two-story homes, parks nearby, and everyday access along Aliante Parkway."
+      />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

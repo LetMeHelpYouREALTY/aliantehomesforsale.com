@@ -27,7 +27,8 @@ export default function NeighborhoodsCTA() {
           Tour Aliante neighborhoods with a 89084 realtor
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance on choosing the right Aliante community for your lifestyle
+          Get expert guidance on gated vs open-access villages, golf-course lots, and Sun City
+          Aliante 55+
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

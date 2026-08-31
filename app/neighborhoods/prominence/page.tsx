@@ -25,7 +25,10 @@ export default function Prominence() {
       />
       <EnhancedFeaturedProperties />
       <CommunityAmenities />
-      <NeighborhoodDetailContent heading="Buying in The Prominence, Aliante 89084" />
+      <NeighborhoodDetailContent
+        heading="Buying in The Prominence, Aliante 89084"
+        intro="The Prominence is a gated village with controlled entry, private streets, and shared amenities. Confirm live MLS prices, finishes, and lot size — I will not publish a stale range."
+      />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

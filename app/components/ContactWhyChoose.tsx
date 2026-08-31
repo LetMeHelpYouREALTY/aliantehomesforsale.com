@@ -1,5 +1,7 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+
 interface ReasonProps {
   icon: string;
   title: string;
@@ -23,7 +25,7 @@ export default function ContactWhyChoose() {
     {
       icon: '🏠',
       title: 'Local Expertise',
-      description: '6+ years focused on Aliante and North Las Vegas 89084 properties',
+      description: `Aliante and North Las Vegas 89084 specialist since ${siteConfig.foundedYear}`,
     },
     {
       icon: '🤝',

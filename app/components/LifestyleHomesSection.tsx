@@ -16,10 +16,11 @@ export default function LifestyleHomesSection() {
             className="speakable text-4xl sm:text-5xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Explore Aliante Homes by Lifestyle
+            Explore Aliante Homes by Housing Type
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Pick the lifestyle that fits — then search live MLS listings for North Las Vegas 89084.
+            Pick gated, golf-course, new-construction, or 55+ housing — then search live MLS
+            listings for North Las Vegas 89084.
           </p>
         </div>
 

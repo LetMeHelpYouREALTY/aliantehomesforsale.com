@@ -109,7 +109,7 @@ export default function GolfHomesContent() {
               living before making their purchase. The primary consideration is errant golf balls –
               homes located along fairways will occasionally receive wayward shots, particularly
               from amateur players. Most golf course homeowners accept this as a minor trade-off for
-              the views and lifestyle, but it's important to acknowledge. Installing
+              the views and open space, but it's important to acknowledge. Installing
               impact-resistant windows on golf course-facing sides and creating covered patios
               provides protection while maintaining the open feel these properties offer.
             </p>

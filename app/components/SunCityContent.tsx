@@ -138,10 +138,10 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              From a lifestyle perspective, Sun City Aliante is built around clubs, fitness, and
-              low-maintenance lots. Confirm current amenities, HOA fees, and occupancy rules with
-              the association before you offer. I represent you on the purchase — I will not publish
-              unverified resident testimonials.
+              Sun City Aliante is built around clubs, fitness, and low-maintenance lots. Confirm
+              current amenities, HOA fees, and occupancy rules with the association before you
+              offer. I represent you on the purchase — I will not publish unverified resident
+              testimonials.
             </p>
           </div>
         </div>

@@ -23,7 +23,10 @@ export default function Paseos() {
         image={pageHero('/neighborhoods/paseos')}
       />
       <EnhancedFeaturedProperties />
-      <NeighborhoodDetailContent heading="Buying in The Paseos, Aliante 89084" />
+      <NeighborhoodDetailContent
+        heading="Buying in The Paseos, Aliante 89084"
+        intro="The Paseos is an open-access village (not gated) inside the Aliante master plan, with parks, green space, and a mix of single-family homes and townhomes."
+      />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>
