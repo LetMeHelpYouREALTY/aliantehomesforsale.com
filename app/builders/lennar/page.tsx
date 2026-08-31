@@ -3,7 +3,6 @@ import { pageHero } from '../../../lib/content/site-images';
 import LennarContent from '../../components/LennarContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084',
@@ -23,7 +22,6 @@ export default function Lennar() {
         image={pageHero('/builders/lennar')}
       />
       <LennarContent />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

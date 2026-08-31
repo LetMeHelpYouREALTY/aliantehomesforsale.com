@@ -3,7 +3,6 @@ import { pageHero } from '../../../lib/content/site-images';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 import TollBrothersContent from '../../components/TollBrothersContent';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Toll Brothers near Aliante | Elkhorn Grove, Las Vegas 89131',
@@ -23,7 +22,6 @@ export default function TollBrothers() {
         image={pageHero('/builders/toll-brothers')}
       />
       <TollBrothersContent />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

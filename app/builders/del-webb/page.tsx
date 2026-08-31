@@ -3,7 +3,6 @@ import { pageHero } from '../../../lib/content/site-images';
 import DelWebbContent from '../../components/DelWebbContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Del Webb Sun City Aliante | 55+ Buyer Agency, North Las Vegas 89084',
@@ -23,7 +22,6 @@ export default function DelWebb() {
         image={pageHero('/builders/del-webb')}
       />
       <DelWebbContent />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

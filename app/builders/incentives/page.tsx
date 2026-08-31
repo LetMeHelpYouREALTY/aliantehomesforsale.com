@@ -4,7 +4,6 @@ import BuilderComparison from '../../components/BuilderComparison';
 import BuilderIncentivesInfo from '../../components/BuilderIncentivesInfo';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Builder Incentives in Aliante | North Las Vegas 89084',
@@ -32,7 +31,6 @@ export default function Incentives() {
         heading="Where each builder sits relative to Aliante ZIP 89084"
         subheading="Confirm today’s sheet. I will not publish a stale dollar amount."
       />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

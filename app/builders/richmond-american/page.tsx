@@ -3,7 +3,6 @@ import { pageHero } from '../../../lib/content/site-images';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 import RichmondAmericanContent from '../../components/RichmondAmericanContent';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'Richmond American | Confirm ZIP vs Aliante 89084',
@@ -23,7 +22,6 @@ export default function RichmondAmerican() {
         image={pageHero('/builders/richmond-american')}
       />
       <RichmondAmericanContent />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

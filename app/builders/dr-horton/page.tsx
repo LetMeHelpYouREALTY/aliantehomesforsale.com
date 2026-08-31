@@ -3,7 +3,6 @@ import { pageHero } from '../../../lib/content/site-images';
 import HortonContent from '../../components/HortonContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
   title: 'D.R. Horton at Tule Springs | Buyer Agency East of Aliante',
@@ -23,7 +22,6 @@ export default function DrHorton() {
         image={pageHero('/builders/dr-horton')}
       />
       <HortonContent />
-      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

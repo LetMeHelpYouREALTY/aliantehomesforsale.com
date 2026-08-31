@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import BuilderComparison from '../components/BuilderComparison';
 import ConstructionProcess from '../components/ConstructionProcess';
 import NewConstructionCTA from '../components/NewConstructionCTA';
 import NewConstructionFAQ from '../components/NewConstructionFAQ';
 import NewConstructionHero from '../components/NewConstructionHero';
-import QuickMoveInHomes from '../components/QuickMoveInHomes';
 import TopBuilders from '../components/TopBuilders';
 import WhyNewConstruction from '../components/WhyNewConstruction';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
@@ -40,11 +38,6 @@ export default function NewConstruction() {
       <TopBuilders />
       <WhyNewConstruction />
       <ConstructionProcess />
-      <QuickMoveInHomes />
-      <BuilderComparison
-        heading="Where each builder sits relative to Aliante ZIP 89084"
-        subheading="Lennar and Del Webb inside Aliante. Horton in Tule Springs. Toll, Tri Pointe, and Richmond are not inside 89084."
-      />
       <WhyWorkWithUs />
       <NewConstructionFAQ />
       <NewConstructionCTA />
