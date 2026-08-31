@@ -12,7 +12,7 @@ export default function RichmondAmericanContent() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Richmond American near Aliante — confirm the community ZIP before you tour
+          Richmond American — confirm the community ZIP vs Aliante 89084
         </h2>
         <p className="leading-relaxed">
           Do not assume a Richmond American community is inside Aliante ZIP 89084. Confirm the

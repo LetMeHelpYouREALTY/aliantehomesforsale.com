@@ -53,7 +53,7 @@ export default function PropertyCategories() {
     {
       title: 'New Construction',
       description:
-        'Lennar, D.R. Horton, and Del Webb near Aliante. Confirm live incentives — I will not publish a stale dollar amount.',
+        'Lennar and Del Webb in 89084; Horton at Tule Springs. Confirm live incentives — I will not publish a stale dollar amount.',
       href: '/new-construction',
       image: siteImages.builders,
     },

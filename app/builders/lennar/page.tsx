@@ -19,7 +19,7 @@ export default function Lennar() {
       <NewConstructionHero
         title="Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084"
         subtitle="I represent you on the Lennar contract in ZIP 89084. Confirm live inventory. Call (702) 707-7273."
-        filterHeading="Lennar communities near Aliante 89084"
+        filterHeading="Lennar communities in Aliante 89084"
         image={pageHero('/builders/lennar')}
       />
       <LennarContent />

@@ -7,14 +7,20 @@ type NeighborhoodDetailContentProps = {
   heading?: string;
   /** Village-specific facts such as gated vs open-access. */
   intro?: string;
+  /** Village-specific lot-position copy. Falls back to generic lot language. */
+  lotCopy?: string;
   variant?: NeighborhoodDetailVariant;
   /** Gated vs open-access follow-on copy. Ignored when variant is compare. */
   access?: VillageAccess;
 };
 
+const DEFAULT_LOT_COPY =
+  'I work this village with you on lot position, HOA rules, and live comps. Corner lots, cul-de-sacs, through-streets, and homes backing to common areas live differently — I will walk the map with you rather than treat every address as the same. Confirm HOA dues, CC&Rs, and current list prices before you offer.';
+
 export default function NeighborhoodDetailContent({
   heading = 'Buyer representation in this Aliante village',
   intro,
+  lotCopy,
   variant = 'village',
   access = 'open',
 }: NeighborhoodDetailContentProps) {
@@ -26,7 +32,7 @@ export default function NeighborhoodDetailContent({
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-          {renderDetail(variant, intro, access)}
+          {renderDetail(variant, intro, lotCopy, access)}
         </div>
       </div>
     </section>
@@ -36,13 +42,14 @@ export default function NeighborhoodDetailContent({
 function renderDetail(
   variant: NeighborhoodDetailVariant,
   intro: string | undefined,
+  lotCopy: string | undefined,
   access: VillageAccess
 ) {
   switch (variant) {
     case 'compare':
       return <CompareCopy />;
     case 'village':
-      return <VillageCopy intro={intro} access={access} />;
+      return <VillageCopy intro={intro} lotCopy={lotCopy} access={access} />;
     default: {
       const _exhaustive: never = variant;
       return _exhaustive;
@@ -50,16 +57,19 @@ function renderDetail(
   }
 }
 
-function VillageCopy({ intro, access }: { intro?: string | undefined; access: VillageAccess }) {
+function VillageCopy({
+  intro,
+  lotCopy,
+  access,
+}: {
+  intro?: string | undefined;
+  lotCopy?: string | undefined;
+  access: VillageAccess;
+}) {
   return (
     <>
       {intro ? <p className="leading-relaxed">{intro}</p> : null}
-      <p className="leading-relaxed">
-        I work this village with you on lot position, HOA rules, and live comps. Corner lots,
-        cul-de-sacs, through-streets, and homes backing to common areas live differently — I will
-        walk the map with you rather than treat every address as the same. Confirm HOA dues, CC&Rs,
-        and current list prices before you offer.
-      </p>
+      <p className="leading-relaxed">{lotCopy ?? DEFAULT_LOT_COPY}</p>
       {renderAccessCopy(access)}
     </>
   );

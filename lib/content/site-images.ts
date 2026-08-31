@@ -87,7 +87,7 @@ export const siteImages = {
   drHorton: img('dr-horton.jpg', 'D.R. Horton new construction in Tule Springs, North Las Vegas'),
   triPointe: img(
     'tri-pointe.jpg',
-    'Tri Pointe Homes new construction in North Las Vegas near Aliante'
+    'Tri Pointe Homes new construction in northwest Las Vegas, not inside Aliante'
   ),
   tollBrothers: img(
     'toll-brothers.jpg',
