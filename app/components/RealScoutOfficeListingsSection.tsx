@@ -25,16 +25,18 @@ export default function RealScoutOfficeListingsSection() {
             className="speakable text-3xl sm:text-4xl font-bold mb-3"
             style={{ color: '#1a365d' }}
           >
-            Live Aliante Homes for Sale
+            Current homes for sale from this office
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Current MLS listings for North Las Vegas 89084 — updated about every 15 minutes.
+            Live MLS cards from Dr. Jan Duffy’s listings. Confirm city and ZIP on each card — not
+            every listing is inside Aliante 89084. Use the search widget to filter North Las Vegas.
           </p>
         </div>
         <div className="min-h-[200px] w-full" dangerouslySetInnerHTML={{ __html: widgetMarkup }} />
         <p className="mt-6 text-center text-sm text-gray-500">
           Listing data provided via RealScout / Greater Las Vegas Association of REALTORS® MLS.
-          Information deemed reliable but not guaranteed.
+          Information deemed reliable but not guaranteed. Confirm address, city, and ZIP before you
+          tour.
         </p>
       </div>
     </section>
