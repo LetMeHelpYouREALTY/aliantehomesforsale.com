@@ -80,7 +80,13 @@ export default function EnhancedNavigation() {
                   }
                 >
                   New Construction
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    aria-hidden="true"
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -149,7 +155,13 @@ export default function EnhancedNavigation() {
                   }
                 >
                   Neighborhoods
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    aria-hidden="true"
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -248,7 +260,13 @@ export default function EnhancedNavigation() {
                 className="text-lg font-semibold flex items-center gap-2 transition-colors"
                 style={{ color: '#1a365d' }}
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  aria-hidden="true"
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -278,6 +296,7 @@ export default function EnhancedNavigation() {
             >
               {isMenuOpen ? (
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
@@ -293,6 +312,7 @@ export default function EnhancedNavigation() {
                 </svg>
               ) : (
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
@@ -330,6 +350,7 @@ export default function EnhancedNavigation() {
                 aria-label="Close menu"
               >
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
