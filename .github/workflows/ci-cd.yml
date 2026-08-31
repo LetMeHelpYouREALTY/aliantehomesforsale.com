@@ -78,7 +78,7 @@ jobs:
           path: .next/
           retention-days: 7
 
-  # Performance Testing — advisory only (Lighthouse hits localhost with no server started)
+  # Performance Testing — Lighthouse against a local `next start` after build
   performance:
     name: Performance Testing
     runs-on: ubuntu-latest
@@ -103,8 +103,7 @@ jobs:
       - name: Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v10
         with:
-          urls: |
-            http://localhost:3000
+          configPath: './lighthouserc.json'
           uploadArtifacts: true
           temporaryPublicStorage: true
 
@@ -150,7 +149,7 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: npx vercel@latest deploy --yes --token="$VERCEL_TOKEN"
 
-  # Deploy to Production (performance not in needs: Lighthouse hits localhost with no server)
+  # Deploy to Production (Lighthouse is advisory / continue-on-error)
   deploy-production:
     name: Deploy Production
     runs-on: ubuntu-latest
