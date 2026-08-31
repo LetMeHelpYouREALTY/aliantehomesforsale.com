@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
@@ -22,7 +21,6 @@ export default function Paseos() {
         subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
         image={pageHero('/neighborhoods/paseos')}
       />
-      <EnhancedFeaturedProperties />
       <NeighborhoodDetailContent
         heading="Buying in The Paseos, Aliante 89084"
         intro="The Paseos is an open-access village (not gated) inside the Aliante master plan, with parks, green space, and a mix of single-family homes and townhomes."

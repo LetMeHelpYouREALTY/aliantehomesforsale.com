@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedHero from '../components/EnhancedHero';
 import GolfHomesContent from '../components/GolfHomesContent';
 import HomesCTA from '../components/HomesCTA';
@@ -25,7 +24,6 @@ export default function GolfHomes() {
       />
       <GolfHomesContent />
       <NeighborhoodCards />
-      <CommunityAmenities />
       <HomesCTA />
     </main>
   );

@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import CommunityAmenities from '../../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
@@ -23,8 +21,6 @@ export default function DesertWillows() {
         subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
         image={pageHero('/neighborhoods/desert-willows')}
       />
-      <EnhancedFeaturedProperties />
-      <CommunityAmenities />
       <NeighborhoodDetailContent
         heading="Buying in Desert Willows, Aliante 89084"
         intro="Desert Willows is an open-access village with single- and two-story homes, parks nearby, and everyday access along Aliante Parkway."

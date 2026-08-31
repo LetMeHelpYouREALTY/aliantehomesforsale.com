@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
 import HomesCTA from '../components/HomesCTA';
@@ -27,7 +26,6 @@ export default function GatedCommunities() {
       />
       <GatedCommunitiesContent />
       <NeighborhoodCards />
-      <EnhancedFeaturedProperties />
       <HomesCTA />
     </main>
   );

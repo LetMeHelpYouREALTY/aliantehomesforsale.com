@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import CommunityAmenities from '../../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import GolfHomesContent from '../../components/GolfHomesContent';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
@@ -25,8 +23,6 @@ export default function ClubAliante() {
         image={pageHero('/neighborhoods/club-aliante')}
       />
       <GolfHomesContent />
-      <CommunityAmenities />
-      <EnhancedFeaturedProperties />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import CommunityAmenities from '../../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
@@ -24,9 +22,7 @@ export default function SunCity() {
         subtitle="This URL redirects to the live Sun City Aliante page. Call (702) 707-7273."
         image={pageHero('/sun-city-aliante')}
       />
-      <CommunityAmenities />
       <SunCityContent />
-      <EnhancedFeaturedProperties />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>

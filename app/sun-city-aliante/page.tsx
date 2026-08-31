@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import CommunityAmenities from '../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
@@ -27,8 +25,6 @@ export default function SunCityAliante() {
         image={pageHero('/sun-city-aliante')}
       />
       <SunCityContent />
-      <CommunityAmenities />
-      <EnhancedFeaturedProperties />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
     </main>
