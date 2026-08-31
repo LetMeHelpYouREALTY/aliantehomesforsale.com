@@ -14,7 +14,9 @@ interface ContactMethodProps {
 function ContactMethodCard({ icon, title, primary, details, href, featured }: ContactMethodProps) {
   const content = (
     <>
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-2xl font-bold mb-4" style={{ color: '#1a365d' }}>
         {title}
       </h3>

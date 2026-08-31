@@ -24,15 +24,15 @@ export default function Incentives() {
         filterHeading="Which Aliante builder is offering credits now"
         image={pageHero('/builders/incentives')}
       />
-      <BuilderComparison
-        heading="Which Aliante builder still has a live credit"
-        subheading="I confirm today’s sheet. I will not publish a stale dollar amount."
-      />
-      <TopBuilders />
       <BuilderIncentivesInfo
         heading="How I confirm builder incentives in Aliante 89084"
         subheading="Lennar, D.R. Horton, and Del Webb offers change by community and week."
       />
+      <BuilderComparison
+        heading="Where each builder sits relative to Aliante ZIP 89084"
+        subheading="Confirm today’s sheet. I will not publish a stale dollar amount."
+      />
+      <TopBuilders />
       <NewConstructionCTA />
     </main>
   );

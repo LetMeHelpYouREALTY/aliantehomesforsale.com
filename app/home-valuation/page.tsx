@@ -24,7 +24,14 @@ export default function HomeValuation() {
       />
       <HomeValuationContent />
       <EnhancedContactForm event="appointment" />
-      <AboutCTA />
+      <AboutCTA
+        heading="Get a CMA for your Aliante address"
+        subheading="Village comps for Club Aliante, gated streets, and Sun City Aliante — not a valley average."
+        secondaryHref="/seller-checklist"
+        secondaryLabel="Seller checklist"
+        calendlyEvent="appointment"
+        calendlyLabel="Schedule a CMA appointment"
+      />
     </main>
   );
 }

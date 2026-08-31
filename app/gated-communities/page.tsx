@@ -26,7 +26,14 @@ export default function GatedCommunities() {
       />
       <GatedCommunitiesContent />
       <NeighborhoodCards />
-      <HomesCTA />
+      <HomesCTA
+        heading="Tour gated Aliante villages in North Las Vegas 89084"
+        subheading="Club Aliante, The Prominence, and other controlled-access streets. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a gated-village showing"
+      />
     </main>
   );
 }

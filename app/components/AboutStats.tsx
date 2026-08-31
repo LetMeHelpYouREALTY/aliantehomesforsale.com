@@ -13,7 +13,9 @@ interface StatCardProps {
 function StatCard({ number, label, icon }: StatCardProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-4xl sm:text-5xl font-bold mb-2" style={{ color: '#2c5aa0' }}>
         {number}
       </h3>

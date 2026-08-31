@@ -28,7 +28,8 @@ export default function NewConstructionCTA() {
           Hire a new-construction buyer’s agent near Aliante 89084
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance from Dr. Jan Duffy - Aliante's new construction specialist
+          Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs
+          builders. Call (702) 707-7273.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -42,7 +43,7 @@ export default function NewConstructionCTA() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
           >
-            📞 Call (702) 707-7273
+            <span aria-hidden="true">📞</span> Call (702) 707-7273
           </a>
 
           <CalendlyPopupButton

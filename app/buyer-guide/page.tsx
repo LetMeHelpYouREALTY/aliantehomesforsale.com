@@ -30,7 +30,14 @@ export default function BuyerGuide() {
       </div>
       <HomesSearchTips />
       <ContactWhyChoose />
-      <HomesCTA />
+      <HomesCTA
+        heading="Buyer representation in Aliante, North Las Vegas 89084"
+        subheading="I represent you on Club Aliante, gated villages, and Sun City Aliante. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Search live MLS"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a buyer consultation"
+      />
     </main>
   );
 }

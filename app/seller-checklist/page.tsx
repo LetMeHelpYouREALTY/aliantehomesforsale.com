@@ -26,7 +26,14 @@ export default function SellerChecklist() {
       <div className="px-4">
         <ContextualLinks variant="selling" />
       </div>
-      <AboutCTA />
+      <AboutCTA
+        heading="List your Aliante home with a 89084 realtor"
+        subheading="Neighborhood comps, MLS photos, and offer review. Call (702) 707-7273."
+        secondaryHref="/home-valuation"
+        secondaryLabel="Request a CMA"
+        calendlyEvent="listing"
+        calendlyLabel="Schedule a listing consultation"
+      />
     </main>
   );
 }

@@ -28,7 +28,14 @@ export default function Search() {
       <SearchPageContent />
       <PropertyCategories />
       <HomesSearchTips />
-      <HomesCTA />
+      <HomesCTA
+        heading="Search Aliante MLS with a 89084 realtor"
+        subheading="Filter Club Aliante, gated villages, and Sun City Aliante. Listings update about every 15 minutes."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a showing"
+      />
     </main>
   );
 }

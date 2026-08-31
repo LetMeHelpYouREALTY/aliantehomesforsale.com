@@ -10,7 +10,9 @@ function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md">
       <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: '#1a365d' }}>
-        <span className="text-3xl">{icon}</span>
+        <span className="text-3xl" aria-hidden="true">
+          {icon}
+        </span>
         {title}
       </h3>
       <ul className="space-y-2">

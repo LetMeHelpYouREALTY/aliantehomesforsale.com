@@ -42,8 +42,8 @@ export default function NewConstruction() {
       <ConstructionProcess />
       <QuickMoveInHomes />
       <BuilderComparison
-        heading="Lennar, D.R. Horton, and Del Webb near Aliante 89084"
-        subheading="Independent buyer agency. Confirm live inventory and incentive sheets."
+        heading="Where each builder sits relative to Aliante ZIP 89084"
+        subheading="Lennar and Del Webb inside Aliante. Horton in Tule Springs. Toll, Tri Pointe, and Richmond are not inside 89084."
       />
       <WhyWorkWithUs />
       <NewConstructionFAQ />

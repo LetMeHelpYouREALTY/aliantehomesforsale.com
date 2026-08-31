@@ -36,7 +36,7 @@ export default function Builders() {
       <BuilderAdvantages />
       <BuilderComparison
         heading="Where each builder sits relative to Aliante ZIP 89084"
-        subheading="Lennar and Del Webb inside Aliante. D.R. Horton in nearby Tule Springs."
+        subheading="Lennar and Del Webb inside Aliante. Horton in Tule Springs. Toll, Tri Pointe, and Richmond are not inside 89084."
         showBuildersCta={false}
       />
       <BuilderIncentivesInfo

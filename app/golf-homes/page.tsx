@@ -24,7 +24,14 @@ export default function GolfHomes() {
       />
       <GolfHomesContent />
       <NeighborhoodCards />
-      <HomesCTA />
+      <HomesCTA
+        heading="Tour Club Aliante golf-course homes in ZIP 89084"
+        subheading="Fairway vs green, par-5 vs par-3. Confirm live MLS. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a golf-home showing"
+      />
     </main>
   );
 }

@@ -24,7 +24,14 @@ export default function InvestmentAnalysis() {
       />
       <InvestmentAnalysisContent />
       <EnhancedContactForm event="appointment" />
-      <HomesCTA />
+      <HomesCTA
+        heading="Analyze an Aliante rental address in ZIP 89084"
+        subheading="I sell the home. HOA and lease management is a different company. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="appointment"
+        calendlyLabel="Schedule a cash-flow review"
+      />
     </main>
   );
 }
