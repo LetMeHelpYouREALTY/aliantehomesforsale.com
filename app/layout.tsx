@@ -11,7 +11,6 @@ import EnhancedNavigation from './components/EnhancedNavigation';
 import EntityGraphSchema from './components/EntityGraphSchema';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import PerformanceMonitor from './components/PerformanceMonitor';
-import RealScoutOfficeListingsSection from './components/RealScoutOfficeListingsSection';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
 
 const geistSans = Geist({
@@ -143,9 +142,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* RealScout search (lead gen): below hero on home (in page); below content on other pages */}
         <RealScoutSearchSectionLayout />
-
-        {/* RealScout office listings: below the fold on every page */}
-        <RealScoutOfficeListingsSection />
 
         <PerformanceMonitor />
 

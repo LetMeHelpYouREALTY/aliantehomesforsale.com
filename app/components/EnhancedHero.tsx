@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { homeHeroSlides, type SiteImage } from '../../lib/content/site-images';
+import AfterHeroListings from './AfterHeroListings';
 import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
 
@@ -38,123 +39,134 @@ export default function EnhancedHero({
   }, [paused, slides.length]);
 
   return (
-    <section
-      className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden"
-      aria-labelledby="hero-heading"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
-      <div className="absolute inset-0">
-        {slides.map((slide, i) => (
+    <AfterHeroListings>
+      <section
+        className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden"
+        aria-labelledby="hero-heading"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div className="absolute inset-0">
+          {slides.map((slide, i) => (
+            <div
+              key={slide.src}
+              className="absolute inset-0 transition-opacity duration-700 ease-in-out"
+              style={{ opacity: i === index ? 1 : 0 }}
+              aria-hidden={i !== index}
+            >
+              <HeroBackdrop image={slide} priority={i === 0} />
+            </div>
+          ))}
+        </div>
+
+        <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden>
           <div
-            key={slide.src}
-            className="absolute inset-0 transition-opacity duration-700 ease-in-out"
-            style={{ opacity: i === index ? 1 : 0 }}
-            aria-hidden={i !== index}
-          >
-            <HeroBackdrop image={slide} priority={i === 0} />
-          </div>
-        ))}
-      </div>
-
-      <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden>
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
-        <AgentPhoto size={180} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" priority />
-        <h1
-          id="hero-heading"
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
-        >
-          {title}
-        </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
-          {subtitle}
-        </p>
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-            ⚡ MLS Updated Every 15 Min
-          </span>
-          <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-            🏆 Local Expert Since 2018
-          </span>
-          <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-            📍 Aliante · 89084 Only
-          </span>
+            className="absolute inset-0"
+            style={{
+              backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+              backgroundSize: '40px 40px',
+            }}
+          />
         </div>
-        <a
-          href="#realscout-search"
-          className="inline-block py-4 px-8 rounded-xl font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-[1.02] hover:shadow-xl focus:ring-4 focus:ring-orange-300 focus:outline-none"
-        >
-          🔍 Search Homes Below
-        </a>
-      </div>
 
-      {showControls ? (
-        <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-4">
-          <button
-            type="button"
-            onClick={() => goTo(index - 1)}
-            className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
-            aria-label="Previous slide"
+        <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
+          <AgentPhoto
+            size={180}
+            className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40"
+            priority
+          />
+          <h1
+            id="hero-heading"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
           >
-            <span className="sr-only">Previous</span>
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-          <div className="flex gap-2" role="tablist" aria-label="Hero slides">
-            {slides.map((slide, i) => (
-              <button
-                key={slide.src}
-                type="button"
-                role="tab"
-                aria-selected={i === index ? 'true' : 'false'}
-                aria-label={`Slide ${i + 1}`}
-                onClick={() => goTo(i)}
-                className={`h-2.5 rounded-full transition-all focus:ring-2 focus:ring-white focus:outline-none ${
-                  i === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/70'
-                }`}
-              />
-            ))}
+            {title}
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
+            {subtitle}
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
+              ⚡ MLS Updated Every 15 Min
+            </span>
+            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
+              🏆 Local Expert Since 2018
+            </span>
+            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
+              📍 Aliante · 89084 Only
+            </span>
           </div>
-          <button
-            type="button"
-            onClick={() => goTo(index + 1)}
-            className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
-            aria-label="Next slide"
+          <a
+            href="#live-listings-heading"
+            className="inline-block py-4 px-8 rounded-xl font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-[1.02] hover:shadow-xl focus:ring-4 focus:ring-orange-300 focus:outline-none"
           >
-            <span className="sr-only">Next</span>
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            🔍 See Available Homes
+          </a>
         </div>
-      ) : null}
-    </section>
+
+        {showControls ? (
+          <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-4">
+            <button
+              type="button"
+              onClick={() => goTo(index - 1)}
+              className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
+              aria-label="Previous slide"
+            >
+              <span className="sr-only">Previous</span>
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <div className="flex gap-2" role="tablist" aria-label="Hero slides">
+              {slides.map((slide, i) => (
+                <button
+                  key={slide.src}
+                  type="button"
+                  role="tab"
+                  aria-selected={i === index ? 'true' : 'false'}
+                  aria-label={`Slide ${i + 1}`}
+                  onClick={() => goTo(i)}
+                  className={`h-2.5 rounded-full transition-all focus:ring-2 focus:ring-white focus:outline-none ${
+                    i === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/70'
+                  }`}
+                />
+              ))}
+            </div>
+            <button
+              type="button"
+              onClick={() => goTo(index + 1)}
+              className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
+              aria-label="Next slide"
+            >
+              <span className="sr-only">Next</span>
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        ) : null}
+      </section>
+    </AfterHeroListings>
   );
 }

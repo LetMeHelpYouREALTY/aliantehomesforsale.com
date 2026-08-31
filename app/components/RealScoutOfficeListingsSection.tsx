@@ -1,6 +1,6 @@
 /**
  * RealScout office listings widget — live MLS cards (replaces fabricated featured listings).
- * Script must be loaded once in root layout.
+ * Script must be loaded once in root layout. Rendered immediately after every page hero.
  */
 const widgetMarkup = `
 <style>
