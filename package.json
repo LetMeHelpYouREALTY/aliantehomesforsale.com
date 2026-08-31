@@ -28,6 +28,7 @@
     "cursor-fix": "node cursor-integration-service.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^2.0.0",
     "express": "^5.1.0",
     "lru-cache": "^11.1.0",
@@ -41,7 +42,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@vercel/analytics": "^1.5.0",
     "autoprefixer": "^10.4.21",
     "critters": "^0.0.23",
     "lightningcss": "^1.30.2",
