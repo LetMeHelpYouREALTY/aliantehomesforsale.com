@@ -30,10 +30,10 @@ export default function PropertyManagementContent() {
           FirstService Residential vs your Aliante realtor (same building)
         </h3>
         <p className="leading-relaxed">
-          FirstService Residential has managed the Aliante Master Association since 2003 and keeps
-          a North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite
-          275 in that same building. HOA billing, architectural review, and community rules go to
-          the association manager. Purchase and listing work goes to me.
+          FirstService Residential has managed the Aliante Master Association since 2003 and keeps a
+          North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275
+          in that same building. HOA billing, architectural review, and community rules go to the
+          association manager. Purchase and listing work goes to me.
         </p>
         <p className="leading-relaxed">
           Sub-associations such as Courts at Aliante and Terrasini also use professional HOA
@@ -49,8 +49,8 @@ export default function PropertyManagementContent() {
           <Link href="/homes-for-sale" className="font-semibold" style={{ color: '#2c5aa0' }}>
             Aliante homes for sale
           </Link>{' '}
-          versus renting, including HOA dues on a specific address. For apartments inside the
-          master plan, contact that community’s leasing office directly.
+          versus renting, including HOA dues on a specific address. For apartments inside the master
+          plan, contact that community’s leasing office directly.
         </p>
 
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>

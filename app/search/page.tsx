@@ -8,7 +8,8 @@ import SearchPageContent from '../components/SearchPageContent';
 
 export const metadata: Metadata = {
   title: 'Search Aliante MLS | Realtor Filters, North Las Vegas 89084',
-  description: 'Search Aliante homes for sale with MLS filters. ZIP 89084. Updated about every 15 minutes. Call (702) 707-7273.',
+  description:
+    'Search Aliante homes for sale with MLS filters. ZIP 89084. Updated about every 15 minutes. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/search',
   },

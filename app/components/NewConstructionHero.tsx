@@ -5,21 +5,25 @@ import { useState } from 'react';
 type NewConstructionHeroProps = {
   title?: string;
   subtitle?: string;
+  filterHeading?: string;
+  filterSubheading?: string;
 };
 
 export default function NewConstructionHero({
   title = 'New-Construction Buyer Agency in Aliante, North Las Vegas 89084',
   subtitle = 'Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273.',
+  filterHeading = 'Filter Aliante and Tule Springs builders',
+  filterSubheading = 'Confirm live inventory and incentives before you tour.',
 }: NewConstructionHeroProps) {
   const [selectedBuilder, setSelectedBuilder] = useState('all');
 
   const builders = [
-    { id: 'all', name: 'All Builders', count: '95+' },
-    { id: 'lennar', name: 'Lennar', count: '45' },
-    { id: 'dr-horton', name: 'D.R. Horton', count: '32' },
-    { id: 'toll-brothers', name: 'Toll Brothers', count: '28' },
-    { id: 'tri-pointe', name: 'Tri Pointe', count: '18' },
-    { id: 'del-webb', name: 'Del Webb 55+', count: '25' },
+    { id: 'all', name: 'All Builders' },
+    { id: 'lennar', name: 'Lennar' },
+    { id: 'dr-horton', name: 'D.R. Horton' },
+    { id: 'toll-brothers', name: 'Toll Brothers' },
+    { id: 'tri-pointe', name: 'Tri Pointe' },
+    { id: 'del-webb', name: 'Del Webb 55+' },
   ];
 
   return (
@@ -64,11 +68,9 @@ export default function NewConstructionHero({
               className="text-2xl sm:text-3xl font-bold mb-4 text-center"
               style={{ color: '#1a365d' }}
             >
-              Find Your Perfect New Home
+              {filterHeading}
             </h2>
-            <p className="text-center text-gray-600 mb-6">
-              Filter by builder, community, price range, and home features
-            </p>
+            <p className="text-center text-gray-600 mb-6">{filterSubheading}</p>
 
             {/* Builder Filter Chips */}
             <div className="flex flex-wrap gap-3 justify-center">
@@ -84,26 +86,26 @@ export default function NewConstructionHero({
                   }`}
                   style={selectedBuilder === builder.id ? { backgroundColor: '#2c5aa0' } : {}}
                 >
-                  {builder.name} ({builder.count})
+                  {builder.name}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Incentives Banner */}
           <div className="mt-6 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl p-6 text-center shadow-xl">
             <h3 className="text-2xl font-bold text-white mb-2">
-              🎉 Current Builder Incentives - October 2025
+              Confirm current builder incentives
             </h3>
             <p className="text-white/95 mb-4 text-lg">
-              Up to $25,000 in savings! Limited time offers on select homes. Contact us for details.
+              Closing-cost, rate-buydown, and upgrade offers change by community. I confirm them
+              with you. Call (702) 707-7273.
             </p>
             <a
               href="/builders/incentives"
               className="inline-block px-8 py-3 bg-white rounded-lg font-semibold transition-all transform hover:scale-105 hover:shadow-lg focus:ring-4 focus:ring-white/30 focus:outline-none"
               style={{ color: '#ed8936' }}
             >
-              View All Incentives →
+              View Aliante incentive notes →
             </a>
           </div>
         </div>

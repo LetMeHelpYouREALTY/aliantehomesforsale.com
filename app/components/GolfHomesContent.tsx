@@ -8,7 +8,7 @@ export default function GolfHomesContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Club Aliante golf-course realtor services in ZIP 89084
+            Club Aliante golf-course realtor services in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

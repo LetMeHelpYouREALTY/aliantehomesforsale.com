@@ -6,16 +6,21 @@ import SunCityContent from '../../components/SunCityContent';
 import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
-  title: 'Del Webb Sun City Aliante - Active Adult 55+ Homes',
+  title: 'Del Webb Sun City Aliante | 55+ Buyer Agency, North Las Vegas 89084',
   description:
-    'Del Webb homes in Sun City Aliante. Active adult 55+ community. Resort amenities, golf courses. 25+ homes available.',
+    'Del Webb at Sun City Aliante in North Las Vegas 89084. Independent buyer’s agent for 55+ new construction. Confirm live inventory. Call (702) 707-7273.',
+  keywords: 'del webb sun city aliante, del webb aliante, 55+ new construction north las vegas',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/del-webb' },
 };
 
 export default function DelWebb() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero
+        title="Del Webb Sun City Aliante | 55+ Buyer Agency, North Las Vegas 89084"
+        subtitle="Age-qualified Del Webb inside ZIP 89084 — not Ardiente (89081). Call (702) 707-7273."
+        filterHeading="Del Webb 55+ in Aliante 89084"
+      />
       <TopBuilders />
       <SunCityContent />
       <CommunityAmenities />

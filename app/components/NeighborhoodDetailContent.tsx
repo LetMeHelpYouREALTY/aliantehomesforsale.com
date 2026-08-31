@@ -1,11 +1,17 @@
 'use client';
 
-export default function NeighborhoodDetailContent() {
+type NeighborhoodDetailContentProps = {
+  heading?: string;
+};
+
+export default function NeighborhoodDetailContent({
+  heading = 'Buyer representation in this Aliante village',
+}: NeighborhoodDetailContentProps) {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Expert Guidance for Purchasing in This Community
+          {heading}
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

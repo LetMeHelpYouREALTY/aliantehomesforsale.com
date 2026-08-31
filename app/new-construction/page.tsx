@@ -30,12 +30,19 @@ export const metadata: Metadata = {
 export default function NewConstruction() {
   return (
     <main className="new-construction-page">
-      <NewConstructionHero />
+      <NewConstructionHero
+        title="New-Construction Buyer Agency in Aliante, North Las Vegas 89084"
+        subtitle="Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273."
+        filterHeading="Filter Aliante and Tule Springs new construction"
+      />
       <TopBuilders />
       <WhyNewConstruction />
       <ConstructionProcess />
       <QuickMoveInHomes />
-      <BuilderComparison />
+      <BuilderComparison
+        heading="Lennar, D.R. Horton, and Del Webb near Aliante 89084"
+        subheading="Independent buyer agency. Confirm live inventory and incentive sheets."
+      />
       <WhyWorkWithUs />
       <NewConstructionFAQ />
       <NewConstructionCTA />

@@ -8,9 +8,11 @@ import NeighborhoodsHero from '../components/NeighborhoodsHero';
 import StructuredData from '../components/StructuredData';
 
 export const metadata: Metadata = {
-  title: 'Aliante Neighborhoods Guide | North Las Vegas Communities',
+  title: 'Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084',
   description:
-    'Explore Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos. Find your perfect community with amenities, schools, and lifestyle.',
+    'Aliante neighborhoods in North Las Vegas 89084: Club Aliante, Sun City Aliante, The Prominence, Desert Willows, and The Paseos. Call (702) 707-7273 for live MLS homes.',
+  keywords:
+    'aliante neighborhoods, club aliante, sun city aliante, gated communities north las vegas 89084',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/neighborhoods',
   },
@@ -23,7 +25,10 @@ export default function Neighborhoods() {
 
       <main className="neighborhoods-page">
         {/* Hero Section */}
-        <NeighborhoodsHero />
+        <NeighborhoodsHero
+          title="Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084"
+          subtitle="Villages inside the Aliante master plan, North Las Vegas ZIP 89084. Call (702) 707-7273."
+        />
 
         {/* Neighborhood Cards */}
         <NeighborhoodCards />
@@ -37,7 +42,10 @@ export default function Neighborhoods() {
         <CommunityAmenities />
 
         {/* Neighborhood Comparison Table */}
-        <NeighborhoodComparison />
+        <NeighborhoodComparison
+          heading="Aliante villages in ZIP 89084"
+          subheading="Club Aliante, Prominence, Desert Willows, and The Paseos. Confirm live MLS prices."
+        />
 
         {/* CTA Section */}
         <NeighborhoodsCTA />

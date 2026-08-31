@@ -2,85 +2,85 @@
 
 import Link from 'next/link';
 
-export default function BuilderIncentivesInfo() {
+type BuilderIncentivesInfoProps = {
+  heading?: string;
+  subheading?: string;
+};
+
+export default function BuilderIncentivesInfo({
+  heading = 'How I confirm builder incentives in Aliante 89084',
+  subheading,
+}: BuilderIncentivesInfoProps) {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-          Maximizing Builder Incentives and Savings
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+          {heading}
         </h2>
+        {subheading ? <p className="text-xl text-gray-600 mb-8">{subheading}</p> : null}
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            One of the most significant advantages of working with a specialized new construction
-            agent is the ability to maximize builder incentives and negotiate additional concessions
-            that unrepresented buyers simply cannot access. Builder incentives are complex and
-            constantly changing based on inventory levels, sales pace, and corporate directives from
-            national headquarters. What's offered to the general public is often just the starting
-            point for what's truly available to buyers who work with the right agent.
+            Builder incentives in Aliante and nearby Tule Springs change by community, phase, and
+            week. I confirm the live closing-cost, rate-buydown, and upgrade offers with you before
+            you write. I will not publish a stale dollar amount in a heading. Call (702) 707-7273.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            Current Incentive Programs in Aliante
+            Lennar, D.R. Horton, and Del Webb offers in ZIP 89084
           </h3>
 
           <p className="leading-relaxed">
-            As of 2025, builders in the Aliante and North Las Vegas area are offering some of the
-            most aggressive incentive packages we've seen in years.{' '}
             <Link
               href="/builders/lennar"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
             >
               Lennar
             </Link>{' '}
-            is currently providing up to $25,000 in closing cost assistance on select quick move-in
-            homes, plus their Everything's Included® package that adds smart home technology,
-            upgraded appliances, and designer finishes at no additional cost.{' '}
+            in Aliante,{' '}
             <Link
               href="/builders/dr-horton"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
             >
               D.R. Horton
             </Link>{' '}
-            has partnered with their preferred lender to offer 2-1{' '}
+            in nearby Tule Springs, and{' '}
+            <Link
+              href="/builders/del-webb"
+              className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+            >
+              Del Webb
+            </Link>{' '}
+            at Sun City Aliante each run their own preferred-lender packages. What the model-home
+            desk quotes walk-in buyers is often the public starting point. I compare that quote
+            against the current sheet for that lot and that lender.
+          </p>
+
+          <p className="leading-relaxed">
+            Tri Pointe and Toll Brothers are not currently building inside Aliante ZIP 89084. Nearby
+            northwest Las Vegas communities still matter if you are comparing new construction with
+            Aliante resale. Confirm live inventory before you drive.{' '}
             <Link
               href="/mortgage-calculator"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
             >
-              mortgage rate buydowns
-            </Link>
-            , effectively reducing your interest rate by 2% in the first year and 1% in the second
-            year – a savings that can exceed $500 per month.
+              Run payment scenarios
+            </Link>{' '}
+            after we confirm the actual incentive, not a marketing banner.
           </p>
 
           <p className="leading-relaxed">
-            Tri Pointe and Toll Brothers take a different approach, offering free room additions
-            (bonus rooms, extended garages, or outdoor living spaces) and upgrade packages worth
-            $30,000-$50,000 when you use their preferred lender. Del Webb's active adult communities
-            include special incentives for age-qualified buyers, including golf club memberships,
-            resort passes, and furniture packages that can add tremendous value beyond just the
-            monetary savings.
+            Timing still matters: month-end and quarter-end can move a builder, and excess inventory
+            in one phase can change the offer on a specific elevation. I track those cycles for
+            Aliante 89084 and Tule Springs so you know when an advertised credit is real versus when
+            it is steering you toward a higher-priced lot.
           </p>
 
           <p className="leading-relaxed">
-            The key to maximizing these incentives is understanding the negotiation leverage points
-            and timing your offer strategically. Builders are most motivated at month-end,
-            quarter-end, and when they have excess inventory in a particular phase or community. As
-            your buyer's agent, I track these cycles closely and can advise you on the optimal
-            timing for your offer. I also understand which incentives are truly valuable versus
-            which are marketing tactics designed to steer you toward higher-priced options. My goal
-            is to structure a deal that delivers maximum value while ensuring the home meets your
-            needs and timeline.
-          </p>
-
-          <p className="leading-relaxed">
-            It's important to note that working with me costs you nothing – builders pay the buyer's
-            agent commission from their marketing budget, and my services are completely free to
-            you. In fact, buyers who go directly to builders without representation often end up
-            paying the same price or more because the builder simply retains the commission they
-            would have paid to an agent. By working with me, you get professional advocacy, expert
-            negotiation, and insider knowledge at no cost while potentially saving tens of thousands
-            of dollars through better incentive packages and lot selection.
+            Working with me as your buyer’s agent does not add a fee on the builder contract. The
+            builder pays the cooperating commission from their marketing budget. Going to the
+            model-home desk without representation does not make the home cheaper. Call (702)
+            707-7273 to confirm today’s sheet for the community you want.
           </p>
         </div>
       </div>

@@ -6,16 +6,21 @@ import TopBuilders from '../../components/TopBuilders';
 import WhyNewConstruction from '../../components/WhyNewConstruction';
 
 export const metadata: Metadata = {
-  title: 'Toll Brothers Luxury Homes - Ultra-Luxury New Construction',
+  title: 'Toll Brothers near Aliante | Elkhorn Grove, Las Vegas 89131',
   description:
-    'Toll Brothers luxury homes near Aliante. Fortune 500 builder. $575K-$1.6M. Premium materials and design.',
+    'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131. Call (702) 707-7273.',
+  keywords: 'toll brothers aliante, toll brothers elkhorn grove, toll brothers north las vegas',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/toll-brothers' },
 };
 
 export default function TollBrothers() {
   return (
     <main>
-      <NewConstructionHero />
+      <NewConstructionHero
+        title="Toll Brothers near Aliante | Elkhorn Grove, Las Vegas 89131"
+        subtitle="Not currently building inside Aliante ZIP 89084. Confirm live inventory at Elkhorn Grove. Call (702) 707-7273."
+        filterHeading="Toll Brothers vs Aliante 89084 builders"
+      />
       <TopBuilders />
       <WhyNewConstruction />
       <BuilderDetailContent />
