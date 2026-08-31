@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
@@ -21,6 +22,7 @@ export default function Lennar() {
         title="Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084"
         subtitle="I represent you on the Lennar contract in ZIP 89084. Confirm live inventory. Call (702) 707-7273."
         filterHeading="Lennar communities near Aliante 89084"
+        image={pageHero('/builders/lennar')}
       />
       <TopBuilders />
       <WhyNewConstruction />

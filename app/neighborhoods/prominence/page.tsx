@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
@@ -20,6 +21,7 @@ export default function Prominence() {
       <NeighborhoodsHero
         title="The Prominence Aliante | Gated Homes North Las Vegas 89084"
         subtitle="Controlled-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
+        image={pageHero('/neighborhoods/prominence')}
       />
       <EnhancedFeaturedProperties />
       <CommunityAmenities />

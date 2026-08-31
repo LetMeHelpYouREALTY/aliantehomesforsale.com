@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import AboutExpertise from '../components/AboutExpertise';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
@@ -21,6 +22,7 @@ export default function InvestmentAnalysis() {
       <HomesForSaleHero
         title="Investment Analysis for Aliante Rentals | North Las Vegas 89084"
         subtitle="Address-level cash-flow review in ZIP 89084. Call (702) 707-7273. I do not manage leases."
+        image={pageHero('/investment-analysis')}
       />
       <HomesMarketSnapshot />
       <InvestmentAnalysisContent />

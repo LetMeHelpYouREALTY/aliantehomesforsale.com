@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
@@ -19,6 +20,7 @@ export default function Paseos() {
       <NeighborhoodsHero
         title="The Paseos Aliante | Homes for Sale North Las Vegas 89084"
         subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
+        image={pageHero('/neighborhoods/paseos')}
       />
       <EnhancedFeaturedProperties />
       <NeighborhoodDetailContent heading="Buying in The Paseos, Aliante 89084" />

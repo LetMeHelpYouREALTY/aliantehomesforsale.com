@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
@@ -20,6 +21,7 @@ export default function TollBrothers() {
         title="Toll Brothers near Aliante | Elkhorn Grove, Las Vegas 89131"
         subtitle="Not currently building inside Aliante ZIP 89084. Confirm live inventory at Elkhorn Grove. Call (702) 707-7273."
         filterHeading="Toll Brothers vs Aliante 89084 builders"
+        image={pageHero('/builders/toll-brothers')}
       />
       <TopBuilders />
       <WhyNewConstruction />

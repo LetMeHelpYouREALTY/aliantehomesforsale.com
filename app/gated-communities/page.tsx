@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
+import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
 import HomesCTA from '../components/HomesCTA';
 import NeighborhoodCards from '../components/NeighborhoodCards';
-import NeighborhoodsHero from '../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
   title: 'Gated Communities in Las Vegas | Aliante North Las Vegas Homes',
@@ -19,9 +20,10 @@ export const metadata: Metadata = {
 export default function GatedCommunities() {
   return (
     <main>
-      <NeighborhoodsHero
+      <EnhancedHero
         title="Gated Communities in Las Vegas | Aliante Homes for Sale, 89084"
         subtitle="Controlled-access villages inside the Aliante master plan. Call (702) 707-7273 to tour current listings."
+        image={pageHero('/gated-communities')}
       />
       <GatedCommunitiesContent />
       <NeighborhoodCards />

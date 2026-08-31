@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import CommunityAmenities from '../components/CommunityAmenities';
 import ContextualLinks from '../components/ContextualLinks';
 import NeighborhoodCards from '../components/NeighborhoodCards';
@@ -28,6 +29,7 @@ export default function Neighborhoods() {
         <NeighborhoodsHero
           title="Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084"
           subtitle="Villages inside the Aliante master plan, North Las Vegas ZIP 89084. Call (702) 707-7273."
+          image={pageHero('/neighborhoods')}
         />
 
         {/* Neighborhood Cards */}

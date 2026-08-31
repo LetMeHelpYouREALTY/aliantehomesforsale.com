@@ -1,19 +1,19 @@
 import Link from 'next/link';
 
 /**
- * Purist-style agent intro: "Dr. Jan Duffy Real Estate" welcome block with short copy and Learn More → /about.
+ * Purist-style agent intro: "Dr. Jan Duffy Real Estate" welcome block.
  */
 export default function AgentWelcomeSection() {
   return (
     <section className="py-16 px-4 bg-white" aria-labelledby="agent-welcome-heading">
       <div className="max-w-4xl mx-auto text-center">
         <h2 id="agent-welcome-heading" className="text-3xl font-bold mb-6 text-[#0a2540]">
-          Aliante realtor services by Dr. Jan Duffy, 89084
+          Dr. Jan Duffy Real Estate
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          I represent buyers and sellers in the Aliante master plan — Club Aliante, gated villages,
-          Sun City Aliante 55+, and nearby Tule Springs new construction. MLS search updates about
-          every 15 minutes. Call (702) 707-7273.
+          Nevada license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Aliante
+          89084 is my home market — gated villages, golf-course homes, and Sun City Aliante 55+.
+          Call (702) 707-7273 when you want a showing or a pricing conversation.
         </p>
         <Link
           href="/about"

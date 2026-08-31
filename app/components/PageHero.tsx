@@ -1,26 +1,26 @@
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
+
 type PageHeroProps = {
   title: string;
   subtitle: string;
   eyebrow?: string;
+  image?: SiteImage;
 };
 
-/** Unique H1 hero. Do not reuse a shared generic heading on landing pages Google already ranks. */
-export default function PageHero({ title, subtitle, eyebrow }: PageHeroProps) {
+/** Unique H1 hero with the production photo overlay. */
+export default function PageHero({
+  title,
+  subtitle,
+  eyebrow,
+  image = siteImages.about,
+}: PageHeroProps) {
   return (
     <section
-      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
-      style={{ background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)' }}
+      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="page-hero-heading"
     >
-      <div className="absolute inset-0 opacity-10" aria-hidden="true">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
       <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
         {eyebrow ? (
           <p className="text-sm sm:text-base font-semibold uppercase tracking-wide text-white/80 mb-4">

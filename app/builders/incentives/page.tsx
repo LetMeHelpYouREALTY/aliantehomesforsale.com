@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import BuilderComparison from '../../components/BuilderComparison';
 import BuilderIncentivesInfo from '../../components/BuilderIncentivesInfo';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
@@ -21,6 +22,7 @@ export default function Incentives() {
         title="Builder Incentives in Aliante | North Las Vegas 89084"
         subtitle="I confirm today’s closing-cost, rate-buydown, and upgrade offers with you. I will not publish a stale dollar amount. Call (702) 707-7273."
         filterHeading="Which Aliante builder is offering credits now"
+        image={pageHero('/builders/incentives')}
       />
       <BuilderComparison
         heading="Which Aliante builder still has a live credit"

@@ -14,6 +14,9 @@ export default function EnhancedContactForm() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(
+    null
+  );
 
   // Generate unique IDs for accessibility
   const firstNameId = useId();
@@ -24,11 +27,11 @@ export default function EnhancedContactForm() {
   const messageId = useId();
   const newsletterId = useId();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setStatus(null);
 
-    // Analytics tracking
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'form_submit', {
         form_name: 'contact_form',
@@ -36,10 +39,35 @@ export default function EnhancedContactForm() {
       });
     }
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert("Thank you! We'll be in touch within 2 hours.");
+    try {
+      const response = await fetch('/api/leads/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          inquiryType: formData.inquiryType,
+          message: formData.message,
+        }),
+      });
+      const payload = (await response.json().catch(() => ({}))) as { error?: string };
+
+      if (!response.ok) {
+        setStatus({
+          type: 'error',
+          message:
+            payload.error ||
+            'We could not send this form. Call (702) 707-7273 so we do not miss your request.',
+        });
+        return;
+      }
+
+      setStatus({
+        type: 'success',
+        message: 'Received. I will follow up — or call (702) 707-7273 if you need me sooner.',
+      });
       setFormData({
         firstName: '',
         lastName: '',
@@ -49,7 +77,14 @@ export default function EnhancedContactForm() {
         message: '',
         newsletter: false,
       });
-    }, 1000);
+    } catch {
+      setStatus({
+        type: 'error',
+        message: 'Network error. Call (702) 707-7273 so we do not miss your request.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -76,6 +111,18 @@ export default function EnhancedContactForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        {status ? (
+          <p
+            role="status"
+            className={`rounded-lg px-4 py-3 text-sm font-medium ${
+              status.type === 'success'
+                ? 'bg-green-50 text-green-800'
+                : 'bg-red-50 text-red-800'
+            }`}
+          >
+            {status.message}
+          </p>
+        ) : null}
         {/* Name Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>

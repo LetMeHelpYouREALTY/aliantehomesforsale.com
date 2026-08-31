@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
+import ContextualLinks from '../../components/ContextualLinks';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
-import ContextualLinks from '../../components/ContextualLinks';
 
 export const metadata: Metadata = {
   title: 'Villages at Tule Springs Homes | North Las Vegas New Construction',
@@ -19,6 +20,7 @@ export default function TuleSprings() {
       <NeighborhoodsHero
         title="Villages at Tule Springs | North Las Vegas New Construction"
         subtitle="East of Aliante. Compare Tule Springs new homes with Aliante resale. Call (702) 707-7273."
+        image={pageHero('/neighborhoods/tule-springs')}
       />
       <div className="px-4">
         <ContextualLinks variant="builders" />

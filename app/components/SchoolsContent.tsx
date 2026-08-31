@@ -13,14 +13,11 @@ export default function SchoolsContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              School quality ranks among the top priorities for families considering a move to
-              Aliante, and with good reason – the area is served by some of North Las Vegas's
-              highest-rated schools. The master-planned nature of Aliante included careful
-              consideration of educational facilities from the community's inception, resulting in
-              modern school buildings, well-maintained campuses, and strong parental involvement
-              that contribute to exceptional learning environments. Schools within Aliante
-              boundaries consistently score above district and state averages on standardized
-              testing and offer robust programs in academics, arts, athletics, and technology. View{' '}
+              I name the campus that currently serves an Aliante address and confirm Clark County
+              School District attendance boundaries before you offer — boundaries change. Campuses
+              serving ZIP 89084 include Leavitt Elementary, Kit Carson Elementary, Homer Elementary,
+              Brinley Middle School, and either Centennial High School or Legacy High School,
+              depending on the street. View{' '}
               <Link
                 href="/neighborhoods"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -34,17 +31,14 @@ export default function SchoolsContent() {
               >
                 homes for sale
               </Link>{' '}
-              in top school districts.
+              near a named campus.
             </p>
 
             <p className="leading-relaxed">
-              As a local real estate specialist who has helped dozens of families navigate school
-              boundary decisions, I maintain current information on school ratings, program
-              offerings, principal leadership, and parent satisfaction for all schools serving
-              Aliante neighborhoods. Understanding school options is crucial for family buyers, as
-              attendance boundaries can shift with new school openings and district redistricting.
-              I'll provide detailed school information for any property you're considering and help
-              you identify homes within boundaries for your preferred schools.
+              As a local real estate specialist, I match a street address to the current CCSD
+              attendance map. Boundaries shift with new school openings and redistricting, so
+              listing remarks are not enough. I will name the campus for any property you tour and
+              tell you how to confirm it with the district before you write.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -52,15 +46,11 @@ export default function SchoolsContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Aliante is primarily served by several highly-rated elementary schools including
-              Leavitt Elementary, Kit Carson Elementary, and Homer Elementary. Leavitt Elementary,
-              the newest of these facilities, features state-of-the-art technology integration, a
-              robust STEM program, and consistently ranks among the top elementary schools in the
-              Clark County School District. The school's modern facilities include science labs,
-              computer learning centers, and a well-equipped library that supports student learning
-              at all levels. Parent-teacher organization involvement is exceptionally strong,
-              funding field trips, classroom supplies, and enrichment programs that enhance the
-              educational experience.
+              Elementary campuses that currently serve parts of Aliante include Leavitt Elementary,
+              Kit Carson Elementary, and Homer Elementary. Confirm which campus serves the lot you
+              want — a village name is not an attendance guarantee. Ask the school for current
+              programs (STEM labs, literacy support, before- and after-school care) rather than
+              relying on a star rating in a listing.
             </p>
 
             <p className="leading-relaxed">
@@ -153,13 +143,11 @@ export default function SchoolsContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your buyer's agent, I'll research exact school boundaries for any property you're
-              considering and can connect you with school administrators for tours and questions
-              about programs and culture. Many of my clients make school quality their top priority,
-              and I'm experienced at identifying homes within desired school zones that meet your
-              other criteria for location, size, and budget. The combination of quality schools,
-              safe neighborhoods, and strong community amenities makes Aliante one of the most
-              family-friendly areas in the entire Las Vegas valley.
+              As your buyer’s agent, I will research the current CCSD boundary for any property you
+              consider and can connect you with the campus office for tours and program questions.
+              Pair that with square footage, commute time to the 215, and HOA rules — not a
+              neighborhood “rating.” Confirm the map with Clark County School District before you
+              offer.
             </p>
           </div>
         </div>

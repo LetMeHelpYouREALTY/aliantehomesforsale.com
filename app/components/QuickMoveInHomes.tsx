@@ -1,139 +1,80 @@
-'use client';
-
 import Image from 'next/image';
+import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 
-interface QuickMoveInHomeProps {
-  badge: string;
-  builder: string;
-  community: string;
-  specs: string;
-  price: string;
-  features: string;
-  gradient: string;
-}
-
-function QuickMoveInCard({
-  badge,
-  builder,
-  community,
-  specs,
-  price,
-  features,
-}: QuickMoveInHomeProps) {
-  // Use different Unsplash images for each builder
-  const imageId =
-    builder === 'Lennar'
-      ? 'photo-1600585154340-be6161a56a0c'
-      : builder === 'D.R. Horton'
-        ? 'photo-1600047509807-ba8f99d2cdde'
-        : 'photo-1600573472592-401b489a3cdc';
-  const imageUrl = `https://images.unsplash.com/${imageId}?w=600&h=400&fit=crop&q=80`;
-
-  return (
-    <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      {/* Property Image: next/image for AVIF/WebP, responsive sizes */}
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={`${builder} new construction home in ${community}`}
-          width={600}
-          height={400}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          loading="lazy"
-          decoding="async"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-        <div className="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-          {badge}
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
-          {builder} - {community}
-        </h3>
-        <p className="text-lg font-semibold text-gray-700 mb-3">{specs}</p>
-        <p className="text-3xl font-bold mb-3" style={{ color: '#2c5aa0' }}>
-          {price}
-        </p>
-        <p className="text-gray-600 mb-6">{features}</p>
-
-        <a
-          href="/contact"
-          className="block w-full text-center py-3 px-6 rounded-lg font-semibold text-white transition-all transform hover:scale-105 focus:ring-4 focus:ring-orange-300 focus:outline-none"
-          style={{ backgroundColor: '#ed8936' }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
-        >
-          View Details
-        </a>
-      </div>
-    </article>
-  );
-}
+const builderCards = [
+  {
+    name: 'Lennar',
+    href: '/builders/lennar',
+    image: siteImages.lennar,
+    caption: 'Active Aliante communities',
+  },
+  {
+    name: 'D.R. Horton',
+    href: '/builders/dr-horton',
+    image: siteImages.drHorton,
+    caption: 'Tule Springs new construction',
+  },
+  {
+    name: 'Tri Pointe',
+    href: '/builders/tri-pointe',
+    image: siteImages.triPointe,
+    caption: 'Northwest Las Vegas collections',
+  },
+];
 
 export default function QuickMoveInHomes() {
-  const homes: QuickMoveInHomeProps[] = [
-    {
-      badge: 'Ready in 30 Days',
-      builder: 'Lennar',
-      community: 'Desert Willows',
-      specs: '4 BR | 3 BA | 2,450 sq ft',
-      price: '$549,900',
-      features: 'Smart home package, gourmet kitchen, 3-car garage',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    },
-    {
-      badge: 'Ready in 45 Days',
-      builder: 'D.R. Horton',
-      community: 'Tule Springs',
-      specs: '3 BR | 2.5 BA | 2,180 sq ft',
-      price: '$479,000',
-      features: 'Open concept, large backyard, top schools',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    },
-    {
-      badge: 'Move-In Ready',
-      builder: 'Tri Pointe',
-      community: 'Aliante Highlands',
-      specs: '4 BR | 3.5 BA | 3,100 sq ft',
-      price: '$729,000',
-      features: 'Premium finishes, mountain views, golf course',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    },
-  ];
-
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Quick Move-In Homes - Ready Now!
+            New Construction & Quick Move-In
           </h2>
-          <p className="text-xl text-gray-600">
-            Move in within 30-60 days! Completed or nearly-completed homes with immediate
-            availability.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Inventory, incentives, and close dates change with each builder release. Confirm current
+            homes with me at (702) 707-7273.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {homes.map((home, index) => (
-            <QuickMoveInCard key={index} {...home} />
+          {builderCards.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            >
+              <div className="relative h-48">
+                <Image
+                  src={item.image.src}
+                  alt={item.image.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
+                  {item.name}
+                </h3>
+                <p className="text-gray-600 mb-4">{item.caption}</p>
+                <span
+                  className="block w-full text-center py-3 px-6 rounded-lg font-semibold text-white"
+                  style={{ backgroundColor: '#ed8936' }}
+                >
+                  View builder page →
+                </span>
+              </div>
+            </Link>
           ))}
         </div>
-
         <div className="text-center">
-          <a
-            href="/contact"
-            className="inline-block py-4 px-10 rounded-lg font-semibold text-lg text-white transition-all transform hover:scale-105 hover:shadow-xl focus:ring-4 focus:ring-blue-300 focus:outline-none"
+          <Link
+            href="/builders"
+            className="inline-block py-4 px-10 rounded-lg font-semibold text-lg text-white"
             style={{ backgroundColor: '#2c5aa0' }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1e3f73')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#2c5aa0')}
           >
-            View All Quick Move-In Homes
-          </a>
+            Compare all builders
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
@@ -20,6 +21,7 @@ export default function DelWebb() {
         title="Del Webb Sun City Aliante | 55+ Buyer Agency, North Las Vegas 89084"
         subtitle="Age-qualified Del Webb inside ZIP 89084 — not Ardiente (89081). Call (702) 707-7273."
         filterHeading="Del Webb 55+ in Aliante 89084"
+        image={pageHero('/builders/del-webb')}
       />
       <TopBuilders />
       <SunCityContent />

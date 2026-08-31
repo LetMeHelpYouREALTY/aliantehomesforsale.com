@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import ConstructionProcess from '../../components/ConstructionProcess';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
@@ -21,6 +22,7 @@ export default function DrHorton() {
         title="D.R. Horton near Aliante | Tule Springs Buyer Agency 89084"
         subtitle="Compare Tule Springs new homes with Aliante resale. Confirm live inventory. Call (702) 707-7273."
         filterHeading="D.R. Horton near Aliante and Tule Springs"
+        image={pageHero('/builders/dr-horton')}
       />
       <TopBuilders />
       <ConstructionProcess />

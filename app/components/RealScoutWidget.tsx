@@ -445,54 +445,14 @@ export default function RealScoutWidget({
               border: '1px solid #dee2e6',
             }}
           >
-            <h4>🏠 Featured Aliante Properties</h4>
-            <p>While we resolve the widget issue, here are some highlights:</p>
-            <div style={{ textAlign: 'left', maxWidth: '600px', margin: '0 auto' }}>
-              <div
-                style={{
-                  padding: '15px',
-                  border: '1px solid #e9ecef',
-                  borderRadius: '6px',
-                  marginBottom: '15px',
-                }}
-              >
-                <h5 style={{ margin: '0 0 10px 0', color: '#3A8DDE' }}>
-                  Luxury Home in The Prominence
-                </h5>
-                <p style={{ margin: '0 0 8px 0' }}>4 bed, 3.5 bath | 3,200 sq ft | $750,000</p>
-                <p style={{ margin: '0', fontSize: '14px', color: '#6c757d' }}>
-                  Gated community with golf course views
-                </p>
-              </div>
-              <div
-                style={{
-                  padding: '15px',
-                  border: '1px solid #e9ecef',
-                  borderRadius: '6px',
-                  marginBottom: '15px',
-                }}
-              >
-                <h5 style={{ margin: '0 0 10px 0', color: '#3A8DDE' }}>
-                  Family Home in Desert Willows
-                </h5>
-                <p style={{ margin: '0 0 8px 0' }}>3 bed, 2.5 bath | 2,100 sq ft | $485,000</p>
-                <p style={{ margin: '0', fontSize: '14px', color: '#6c757d' }}>
-                  Excellent schools, spacious lot
-                </p>
-              </div>
-              <div style={{ padding: '15px', border: '1px solid #e9ecef', borderRadius: '6px' }}>
-                <h5 style={{ margin: '0 0 10px 0', color: '#3A8DDE' }}>
-                  New Construction in Aliante Springs
-                </h5>
-                <p style={{ margin: '0 0 8px 0' }}>4 bed, 3 bath | 2,800 sq ft | $620,000</p>
-                <p style={{ margin: '0', fontSize: '14px', color: '#6c757d' }}>
-                  Builder incentives available
-                </p>
-              </div>
-            </div>
+            <h4>Search live Aliante MLS</h4>
+            <p>
+              While the widget loads, use the listings page. I will not publish a stale sample
+              address as if it were for sale.
+            </p>
             <p style={{ marginTop: '15px', fontSize: '14px' }}>
               <a href="/homes-for-sale" style={{ color: '#3A8DDE', textDecoration: 'underline' }}>
-                View all 286+ available properties →
+                Open live MLS search →
               </a>
             </p>
           </div>

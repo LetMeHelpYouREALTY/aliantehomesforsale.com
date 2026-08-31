@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
@@ -21,6 +22,7 @@ export default function MarketReport() {
       <HomesForSaleHero
         title="Aliante Market Report | ZIP 89084 MLS Trends, North Las Vegas"
         subtitle="Use live widgets for current medians. I will not quote a stale average in a heading. Call (702) 707-7273."
+        image={pageHero('/market-report')}
       />
       <HomesMarketSnapshot />
       <MarketReportContent />

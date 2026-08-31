@@ -21,24 +21,24 @@ function StatCard({ number, label, icon }: StatCardProps) {
 export default function AboutStats() {
   const stats: StatCardProps[] = [
     {
-      number: '500+',
-      label: 'Successful Transactions',
-      icon: '🏠',
-    },
-    {
-      number: '6+ Years',
-      label: 'Local Market Experience',
+      number: '2018',
+      label: 'Aliante specialist since',
       icon: '📅',
     },
     {
-      number: '4.9/5',
-      label: 'Client Satisfaction Rating',
-      icon: '⭐',
+      number: 'S.0197614.LLC',
+      label: 'Nevada real estate license',
+      icon: '📋',
     },
     {
-      number: '127',
-      label: 'Verified Reviews',
-      icon: '💬',
+      number: '89084',
+      label: 'Hyperlocal ZIP focus',
+      icon: '📍',
+    },
+    {
+      number: 'BHHS NV',
+      label: 'Berkshire Hathaway HomeServices',
+      icon: '🏠',
     },
   ];
 
@@ -50,16 +50,15 @@ export default function AboutStats() {
             Who We Are
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Dr. Jan Duffy and Aliante Las Vegas have been serving the North Las Vegas community
-            since 2018, specializing exclusively in Aliante and surrounding areas. With over 500
-            successful transactions, we've built our reputation on local expertise, integrity, and
-            results.
+            Dr. Jan Duffy has specialized in Aliante and North Las Vegas 89084 since 2018 with
+            Berkshire Hathaway HomeServices Nevada Properties. For verified client feedback, use
+            Google Business Profile reviews — I will not publish an unverified star rating here.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <StatCard key={index} {...stat} />
+          {stats.map((stat) => (
+            <StatCard key={stat.label} {...stat} />
           ))}
         </div>
       </div>

@@ -1,31 +1,23 @@
-'use client';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
 
 type NeighborhoodsHeroProps = {
   title?: string;
   subtitle?: string;
+  image?: SiteImage;
 };
 
 export default function NeighborhoodsHero({
   title = 'Aliante Neighborhoods for Sale | North Las Vegas 89084',
   subtitle = 'Club Aliante, Sun City Aliante, gated villages, and ZIP 89084. Call (702) 707-7273.',
+  image = siteImages.neighborhoods,
 }: NeighborhoodsHeroProps) {
   return (
     <section
-      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      }}
+      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="neighborhoods-hero-heading"
     >
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
         <h1

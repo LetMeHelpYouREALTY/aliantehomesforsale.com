@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import ContextualLinks from '../../components/ContextualLinks';
 import OfficeLocation from '../../components/OfficeLocation';
 import PageHero from '../../components/PageHero';
@@ -22,6 +23,7 @@ export default function TriPointe() {
         eyebrow="New construction · Las Vegas Valley"
         title="Tri Pointe Homes Las Vegas | Near Aliante, Not Inside 89084"
         subtitle="Tri Pointe is not currently listing a community inside the Aliante master plan. Tour northwest collections with an independent buyer’s agent. Call (702) 707-7273."
+        image={pageHero('/builders/tri-pointe')}
       />
       <TriPointeContent />
       <div className="px-4">

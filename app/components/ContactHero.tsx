@@ -1,32 +1,23 @@
-'use client';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
 
 type ContactHeroProps = {
   title?: string;
   subtitle?: string;
+  image?: SiteImage;
 };
 
 export default function ContactHero({
   title = 'Contact Your Aliante Realtor | North Las Vegas 89084',
   subtitle = 'Buyer or seller representation in ZIP 89084. Office at 2590 Nature Park Drive, Suite 275.',
+  image = siteImages.contact,
 }: ContactHeroProps) {
   return (
     <section
-      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      }}
+      className="relative min-h-[50vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="contact-hero-heading"
     >
-      {/* Background pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-4xl mx-auto w-full text-center">
         <h1
@@ -43,14 +34,13 @@ export default function ContactHero({
           Dr. Jan Duffy · Berkshire Hathaway HomeServices Nevada Properties · Since 2018
         </p>
 
-        {/* Quick Phone CTA */}
         <div className="mt-8">
           <a
             href="tel:+17027077273"
             className="inline-block px-10 py-4 bg-white rounded-full text-2xl sm:text-3xl font-bold transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
             style={{ color: '#2c5aa0' }}
           >
-            📞 (702) 707-7273
+            (702) 707-7273
           </a>
           <p className="text-white/80 mt-3 text-sm sm:text-base">
             Available 7 days a week • 9:00 AM - 8:00 PM PST

@@ -13,20 +13,18 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Golf course homes in Aliante represent the pinnacle of resort-style living, combining
-              the natural beauty of manicured fairways with the convenience of having a championship
-              golf course as your backyard.{' '}
+              Golf-course homes in Aliante sit next to the city-owned Aliante Golf Club, an 18-hole
+              public course designed by Gary Panks — not Palm Valley in Sun City Summerlin, and not
+              a Billy Casper layout.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Club Aliante
-              </Link>
-              , designed by renowned architect Billy Casper, features 7,092 yards of challenging
-              play with stunning elevation changes, strategic bunkers, and lush landscaping that
-              creates a true desert oasis. The 32+ available golf course properties range from cozy
-              villas overlooking signature par-3 holes to expansive estate homes with panoramic
-              views spanning multiple fairways. Browse current{' '}
+              </Link>{' '}
+              is the guard-gated village along those fairways. Lot position matters: corner views,
+              fairway versus green, and par-5 versus par-3 frontage. Confirm live MLS rather than a
+              stale count. Browse current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -82,13 +80,10 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Golf course properties typically command 10-20% premiums over similar homes in
-              non-golf locations, and this premium has remained consistent throughout various market
-              cycles. The combination of limited supply (only a finite number of golf course lots
-              exist) and consistent demand from golf enthusiasts and view-seekers creates stable
-              appreciation patterns. Golf course homes in Aliante have shown particularly strong
-              value retention during market downturns, as the unique positioning attracts serious
-              buyers even when overall market activity slows.
+              Golf course properties appeal to a smaller buyer pool but can hold value when the
+              course view is the point of the purchase. Supply of fairway lots in Aliante is finite.
+              Confirm live comps — days on market for golf lots can run longer than open-access
+              streets.
             </p>
 
             <p className="leading-relaxed">
@@ -101,7 +96,9 @@ export default function GolfHomesContent() {
               and targeting marketing to golf enthusiasts beyond traditional real estate channels.
             </p>
 
-            <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}></h3>
+            <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
+              Golf-course living: balls, dawn tee times, and views
+            </h3>
 
             <p className="leading-relaxed">
               Potential buyers should understand both the benefits and considerations of golf course

@@ -20,7 +20,6 @@ const companyLinks = [
   { href: '/property-management', label: 'Aliante Property Management (Not Us)' },
   { href: '/gated-communities', label: 'Gated Communities' },
   { href: '/sun-city-aliante', label: 'Sun City Aliante' },
-  { href: '/buyer-guide', label: 'Buyer Guide' },
   { href: '/seller-checklist', label: 'Seller Checklist' },
   { href: '/schools', label: 'Schools' },
   { href: '/fair-housing', label: 'Fair Housing' },

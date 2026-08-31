@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import RealScoutSearchSection from './RealScoutSearchSection';
 
-const PAGES_WITH_SEARCH_AFTER_HERO = ['/', '/homes-for-sale'];
+const PAGES_WITH_SEARCH_AFTER_HERO = ['/', '/homes-for-sale', '/search'];
 
 /**
  * Renders RealScout search section in layout on every page except those that

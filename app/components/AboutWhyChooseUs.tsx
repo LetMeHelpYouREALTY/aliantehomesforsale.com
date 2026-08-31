@@ -49,7 +49,7 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Proven Results',
-      description: '500+ satisfied clients and growing',
+      description: 'Aliante closings since 2018 — call for current references',
       icon: '✨',
     },
   ];

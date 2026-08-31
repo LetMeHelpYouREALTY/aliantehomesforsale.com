@@ -14,9 +14,8 @@ export default function BuildersIntro() {
           <p className="leading-relaxed">
             Aliante and the surrounding North Las Vegas area have become one of the most
             sought-after regions for new construction homes in Nevada. With its strategic location
-            near the I-215 Beltway, families and professionals enjoy quick access to downtown Las
-            Vegas, McCarran International Airport, and all major employment centers throughout the
-            valley. The area's continued growth has attracted the nation's premier home builders,
+            near the I-215 Beltway, with access to downtown Las Vegas, Harry Reid International
+            Airport, and employment centers throughout the valley. The area's continued growth has attracted the nation's premier home builders,
             each bringing their unique approach to quality, design, and value.
           </p>
 
@@ -31,16 +30,15 @@ export default function BuildersIntro() {
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            The Advantages of Building New in 2025
+            The Advantages of Building New in 2026
           </h3>
 
           <p className="leading-relaxed">
             Today's new construction homes offer unprecedented value through builder incentives,
             energy efficiency, and modern design. Current market conditions have created a unique
             opportunity where builders are offering aggressive incentives to meet their quarterly
-            sales goals. These incentives often include substantial closing cost assistance (up to
-            $25,000 with some builders), free upgrades worth tens of thousands of dollars, and
-            mortgage rate buydowns that can save you hundreds of dollars per month.
+            sales goals. Incentives can include closing-cost credits, upgrades, and rate buydowns —
+            confirm today’s sheet before you write. I will not publish a stale dollar amount.
           </p>
 
           <p className="leading-relaxed">
@@ -50,7 +48,8 @@ export default function BuildersIntro() {
             electrical and plumbing systems designed for today's lifestyle, and peace of mind
             knowing that every component is brand new and covered under warranty. The ability to
             customize your home during the build process means you can create a space that perfectly
-            matches your family's needs without the cost and hassle of renovations. Learn more about{' '}
+            matches the floor plan you want without the cost and hassle of renovations. Learn more
+            about{' '}
             <Link
               href="/neighborhoods/tule-springs"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

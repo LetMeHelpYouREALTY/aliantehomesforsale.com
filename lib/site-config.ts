@@ -37,7 +37,7 @@ export const siteConfig = {
     {
       name: 'The Paseos',
       slug: 'paseos',
-      summary: 'Gated community living with resort-style amenities in Aliante.',
+      summary: 'Open-access village with parks, trails, and shared recreation in Aliante.',
     },
     {
       name: 'Villages at Tule Springs',

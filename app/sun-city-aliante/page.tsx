@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../components/NeighborhoodCards';
@@ -23,6 +24,7 @@ export default function SunCityAliante() {
       <NeighborhoodsHero
         title="Sun City Aliante Homes for Sale | 55+ North Las Vegas 89084"
         subtitle="Del Webb’s 55+ community inside Aliante. Ardiente is a different 55+ community in ZIP 89081. Call (702) 707-7273."
+        image={pageHero('/sun-city-aliante')}
       />
       <SunCityContent />
       <CommunityAmenities />

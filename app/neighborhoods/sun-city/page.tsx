@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
@@ -21,6 +22,7 @@ export default function SunCity() {
       <NeighborhoodsHero
         title="Sun City Aliante Homes for Sale | 55+ North Las Vegas 89084"
         subtitle="This URL redirects to the live Sun City Aliante page. Call (702) 707-7273."
+        image={pageHero('/sun-city-aliante')}
       />
       <CommunityAmenities />
       <SunCityContent />

@@ -51,6 +51,7 @@ const nextConfig: NextConfig = {
     loader: 'default',
     // Modern format support
     formats: ['image/webp', 'image/avif'],
+    qualities: [75, 80],
     // External domains for images and other services
     remotePatterns: [
       {

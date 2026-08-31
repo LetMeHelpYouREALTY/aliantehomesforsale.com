@@ -32,7 +32,6 @@ function BuilderCard({
       }`}
       style={featured ? { borderColor: '#2c5aa0' } : { borderColor: '#e5e7eb' }}
     >
-      {/* Builder Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
         <div className="flex justify-between items-start mb-4">
           <div className="text-3xl font-bold">{name}</div>
@@ -41,10 +40,9 @@ function BuilderCard({
           </div>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mt-4">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center">
               <div className="text-xl font-bold">{stat.value}</div>
               <div className="text-xs text-white/80">{stat.label}</div>
             </div>
@@ -52,21 +50,19 @@ function BuilderCard({
         </div>
       </div>
 
-      {/* Builder Content */}
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a365d' }}>
           {title}
         </h3>
         <p className="text-gray-700 mb-6 leading-relaxed">{description}</p>
 
-        {/* Communities */}
         <div className="mb-6">
           <h4 className="text-lg font-bold mb-3" style={{ color: '#2c5aa0' }}>
-            Popular Communities:
+            Relative to Aliante 89084
           </h4>
           <ul className="space-y-2">
-            {communities.map((community, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+            {communities.map((community) => (
+              <li key={community} className="flex items-start gap-2 text-sm text-gray-700">
                 <span className="text-teal-500 font-bold flex-shrink-0">▸</span>
                 <span>{community}</span>
               </li>
@@ -74,14 +70,13 @@ function BuilderCard({
           </ul>
         </div>
 
-        {/* Incentives */}
         <div className="mb-6 bg-green-50 rounded-lg p-4">
           <h4 className="text-lg font-bold mb-3" style={{ color: '#16B286' }}>
-            Current Incentives:
+            Incentives
           </h4>
           <ul className="space-y-2">
-            {incentives.map((incentive, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+            {incentives.map((incentive) => (
+              <li key={incentive} className="flex items-start gap-2 text-sm text-gray-700">
                 <span className="flex-shrink-0">✅</span>
                 <span>{incentive}</span>
               </li>
@@ -89,7 +84,6 @@ function BuilderCard({
           </ul>
         </div>
 
-        {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-3">
           <a
             href={primaryCTA.href}
@@ -128,130 +122,118 @@ export default function TopBuilders() {
   const builders: BuilderCardProps[] = [
     {
       name: 'LENNAR',
-      badge: '#1 Volume Builder',
+      badge: 'Inside 89084',
       stats: [
-        { value: '2,143', label: 'Homes Sold in Area' },
-        { value: '45+', label: 'Available Now' },
-        { value: '$350K-$750K', label: 'Price Range' },
+        { value: 'Aliante', label: 'Master plan' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Price sheet' },
       ],
-      title: "Lennar - Everything's Included®",
+      title: 'Lennar — independent buyer representation',
       description:
-        "America's #1 homebuilder includes smart home technology, Wi-Fi certified, and premium upgrades standard in every home.",
+        'I represent you on the Lennar contract in ZIP 89084 — not the builder. Confirm live spec homes, lot premiums, and incentives before you write.',
       communities: [
-        'Aliante Springs - Family homes $450K-$650K',
-        'Desert Willows - 3-5 BR homes $380K-$580K',
-        'The Prominence - Luxury estates $600K-$750K',
+        'Communities inside Aliante / North Las Vegas 89084',
+        'Confirm current collections on the Lennar sheet',
+        'Independent buyer agency at no extra cost to you on participating sales',
       ],
       incentives: [
-        '$15,000 in closing cost assistance',
-        '$10,000 design studio credits',
-        'Rate buydown options available',
-        'Smart home package included FREE',
+        'Confirm today’s closing-cost, buydown, and upgrade offers',
+        'I will not publish a stale dollar amount',
+        'Register with me before you tour the model',
       ],
-      primaryCTA: { text: 'View 45+ Lennar Homes', href: '/builders/lennar' },
+      primaryCTA: { text: 'Lennar in Aliante 89084', href: '/builders/lennar' },
       secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
       featured: true,
     },
     {
       name: 'D.R. HORTON',
-      badge: '🏆 Dr. Duffy #1 Premiere Agent',
+      badge: 'Tule Springs',
       stats: [
-        { value: '$639,900', label: 'Median New Price' },
-        { value: '8 Days', label: 'Avg Days on Market' },
-        { value: '$380K-$680K', label: 'Price Range' },
+        { value: 'Nearby', label: 'Not inside Aliante' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Price sheet' },
       ],
-      title: "D.R. Horton - America's #1 Builder",
+      title: 'D.R. Horton — Villages at Tule Springs',
       description:
-        "🏆 Dr. Jan Duffy is D.R. Horton's #1 Premiere Buyers Agent in North Las Vegas. Award-winning expert for Heartland at Tule Springs - the primary active builder community directly adjacent to Aliante with quick access to Aliante Resort and 215 Beltway.",
+        'Compare Tule Springs new homes with Aliante resale. D.R. Horton is adjacent to Aliante, not inside the master plan. Confirm live inventory before you tour.',
       communities: [
-        'Master-planned directly adjacent to Aliante',
-        'Median price: $639,900 - Homes selling in 8 days!',
-        'Quick access to Aliante Resort & 215 Beltway',
-        '32+ homes available in multiple collections',
+        'Villages at Tule Springs, North Las Vegas',
+        'Not currently a substitute for an Aliante 89084 address',
+        'Independent buyer agency on the Horton contract',
       ],
       incentives: [
-        'Award-winning D.R. Horton #1 specialist',
-        'Average $18,000+ savings per client',
-        'Direct builder relationships & priority access',
-        'Construction quality monitoring included',
+        'Confirm today’s incentive sheet with me',
+        'I will not quote a stale median or “homes sold in 8 days” figure',
+        'Register before the model tour so representation is documented',
       ],
-      primaryCTA: { text: 'Work with #1 D.R. Horton Agent', href: '/builders/dr-horton' },
-      secondaryCTA: { text: 'Schedule Heartland Tour', href: '/contact' },
+      primaryCTA: { text: 'D.R. Horton buyer notes', href: '/builders/dr-horton' },
+      secondaryCTA: { text: 'Schedule Tule Springs tour', href: '/contact' },
       featured: true,
     },
     {
       name: 'TRI POINTE',
-      badge: '5-Star Premium',
+      badge: 'Not inside 89084',
       stats: [
-        { value: 'Premium', label: 'Quality Rating' },
-        { value: '18+', label: 'Available Now' },
-        { value: '$450K-$850K', label: 'Price Range' },
+        { value: 'NW LV', label: 'Current map' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Community' },
       ],
-      title: 'Tri Pointe Homes - Luxury & Design',
+      title: 'Tri Pointe Homes — northwest Las Vegas',
       description:
-        'Premium homebuilder known for high-end finishes, superior craftsmanship, and attention to detail. Every home features designer touches and luxury amenities.',
+        'Tri Pointe is not currently listing a community inside the Aliante master plan. Active collections are northwest (Kyle Pointe and Citrine near Skye Canyon).',
       communities: [
-        'Aliante Highlands - Premium lots $550K-$850K',
-        'Mountain View Estates - Luxury living $480K-$750K',
+        'Kyle Pointe and Citrine — northwest Las Vegas, not ZIP 89084',
+        'Compare with Lennar and Aliante resale if you need an Aliante address',
       ],
       incentives: [
-        '$18,000 in design upgrades',
-        'Premium lot selections available',
-        'Gourmet kitchen package included',
-        'Smart home integration',
+        'Confirm live inventory at the community you will actually tour',
+        'Do not assume an Aliante Highlands collection exists',
       ],
-      primaryCTA: { text: 'View 18+ Tri Pointe Homes', href: '/builders/tri-pointe' },
+      primaryCTA: { text: 'Tri Pointe buyer notes', href: '/builders/tri-pointe' },
       secondaryCTA: { text: 'Book Showing', href: '/contact' },
     },
     {
       name: 'DEL WEBB',
-      badge: 'Active Adult 55+',
+      badge: 'Sun City 55+',
       stats: [
-        { value: '55+', label: 'Age Qualified' },
-        { value: '25+', label: 'Available Now' },
-        { value: '$380K-$650K', label: 'Price Range' },
+        { value: '55+', label: 'Age qualified' },
+        { value: '89084', label: 'ZIP' },
+        { value: 'Confirm', label: 'Inventory' },
       ],
-      title: 'Del Webb - Active Adult Living',
+      title: 'Del Webb — Sun City Aliante',
       description:
-        "America's leading builder of active adult 55+ communities. Sun City Aliante features resort-style amenities, social activities, and maintenance-free living.",
+        'Age-qualified Del Webb inside ZIP 89084 — not Ardiente (89081), not Del Webb Summerlin. Confirm live inventory and age occupancy rules before you offer.',
       communities: [
-        'Sun City Aliante - Resort living $380K-$650K',
-        'Active Adult Villas - Low-maintenance $420K-$580K',
+        'Sun City Aliante 55+ inside the Aliante master plan',
+        'Ardiente is a different 55+ community in ZIP 89081',
       ],
       incentives: [
-        '$12,000 in closing credits',
-        'Golf membership discounts',
-        'Quick move-in homes ready now',
-        'Resort amenities included',
+        'Confirm today’s Del Webb sheet',
+        'I will not publish a stale price range as current',
       ],
-      primaryCTA: { text: 'View 25+ Del Webb Homes', href: '/builders/del-webb' },
-      secondaryCTA: { text: 'Sun City Details', href: '/neighborhoods/sun-city' },
+      primaryCTA: { text: 'Del Webb buyer notes', href: '/builders/del-webb' },
+      secondaryCTA: { text: 'Sun City Aliante', href: '/sun-city-aliante' },
     },
     {
       name: 'TOLL BROTHERS',
-      badge: 'Ultra-Luxury',
+      badge: 'Not inside 89084',
       stats: [
-        { value: 'Fortune 500', label: 'Elite Builder' },
-        { value: '12+', label: 'Communities' },
-        { value: '$575K-$1.6M', label: 'Price Range' },
+        { value: '89131', label: 'Elkhorn Grove' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Rate sheet' },
       ],
-      title: "Toll Brothers - The Nation's Luxury Homebuilder®",
+      title: 'Toll Brothers — Elkhorn Grove',
       description:
-        'Fortune 500 builder delivering ultra-luxury homes since 1967. Renowned for superior design, premium materials, and unparalleled attention to detail. The benchmark for luxury new construction.',
+        'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131.',
       communities: [
-        'Elkhorn Grove - Luxury estates $800K-$1.2M',
-        'Glenrock - Premium single-family $1.5M-$1.8M',
-        'Raven Crest - Luxury townhomes $635K-$750K',
-        'Cordillera - Modern townhomes $575K-$680K',
-        'Mira Villa - Luxury condos $1M-$1.4M',
+        'Elkhorn Grove, Las Vegas 89131 — not Aliante 89084',
+        'Confirm live inventory before you tour',
       ],
       incentives: [
-        '3.625% first-year rate (2/1 buydown)',
-        'Fall Savings Event - limited time',
-        'Quick move-in homes available',
-        'Premium upgrades and finishes included',
+        'Confirm today’s buydown and credit sheet — I will not quote a stale rate',
+        'Register with me before the model so representation is documented',
       ],
-      primaryCTA: { text: 'View Toll Brothers Homes', href: '/builders/toll-brothers' },
+      primaryCTA: { text: 'Toll Brothers buyer notes', href: '/builders/toll-brothers' },
       secondaryCTA: { text: 'Schedule Private Tour', href: '/contact' },
       featured: true,
     },
@@ -259,21 +241,20 @@ export default function TopBuilders() {
 
   return (
     <>
-      {/* Top Section (Hero + Filters handled above) */}
-
-      {/* Builders Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-              Top New Home Builders in Aliante Area
+              New-home builders near Aliante 89084
             </h2>
-            <p className="text-xl text-gray-600">Choose from the nation's top-rated homebuilders</p>
+            <p className="text-xl text-gray-600">
+              Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {builders.map((builder, index) => (
-              <BuilderCard key={index} {...builder} />
+            {builders.map((builder) => (
+              <BuilderCard key={builder.name} {...builder} />
             ))}
           </div>
         </div>

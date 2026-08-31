@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import BuilderAdvantages from '../components/BuilderAdvantages';
 import BuilderComparison from '../components/BuilderComparison';
 import BuilderIncentivesInfo from '../components/BuilderIncentivesInfo';
@@ -25,6 +26,7 @@ export default function Builders() {
         title="Aliante Builders | Lennar, D.R. Horton, Del Webb — 89084"
         subtitle="Independent buyer representation in Aliante and nearby Tule Springs. Call (702) 707-7273."
         filterHeading="Compare Aliante and Tule Springs builders"
+        image={pageHero('/builders')}
       />
       <BuildersIntro />
       <TopBuilders />

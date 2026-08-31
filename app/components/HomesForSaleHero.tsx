@@ -1,32 +1,23 @@
-'use client';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
 
 type HomesForSaleHeroProps = {
   title?: string;
   subtitle?: string;
+  image?: SiteImage;
 };
 
 export default function HomesForSaleHero({
   title = 'Aliante Homes for Sale | Realtor MLS Search, North Las Vegas 89084',
   subtitle = 'Live MLS for ZIP 89084 — Club Aliante, gated villages, Sun City Aliante. Call (702) 707-7273.',
+  image = siteImages.homesForSale,
 }: HomesForSaleHeroProps) {
   return (
     <section
-      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16"
-      style={{
-        background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
-      }}
+      className="relative min-h-[60vh] flex items-center justify-center px-4 py-16 overflow-hidden"
       aria-labelledby="homes-hero-heading"
     >
-      {/* Background pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      <HeroBackdrop image={image} />
 
       <div className="relative z-10 max-w-5xl mx-auto w-full text-center">
         <h1
@@ -41,16 +32,12 @@ export default function HomesForSaleHero({
           {subtitle}
         </p>
 
-        {/* Update Badge */}
         <div className="flex justify-center gap-4 flex-wrap">
-          <div className="bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-lg animate-pulse">
-            ⚡ Live MLS - Updated Every 15 Minutes
+          <div className="bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+            Live MLS · updates about every 15 minutes
           </div>
           <div className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold">
-            📊 286 Active Listings
-          </div>
-          <div className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold">
-            💰 Median: $434,900
+            Aliante · 89084 only
           </div>
         </div>
       </div>

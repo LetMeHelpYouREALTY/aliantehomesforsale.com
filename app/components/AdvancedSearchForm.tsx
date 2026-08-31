@@ -34,7 +34,7 @@ export default function AdvancedSearchForm() {
     if (filters.amenities.length) params.append('amenities', filters.amenities.join(','));
 
     // Navigate to results
-    window.location.href = `/search-results?${params.toString()}`;
+    window.location.href = `/homes-for-sale`;
   };
 
   const handleCheckbox = (

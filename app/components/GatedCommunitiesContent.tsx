@@ -13,21 +13,18 @@ export default function GatedCommunitiesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Gated communities in Aliante represent the pinnacle of secure, luxury living in North
-              Las Vegas. With 86+ available properties across multiple premier communities, buyers
-              have unprecedented choice in selecting a gated home that matches their lifestyle,
-              budget, and preferences. These communities offer a level of exclusivity and security
-              that standard neighborhoods simply cannot match, making them particularly attractive
-              to families with young children, retirees seeking peace of mind, and professionals who
-              value privacy and premium amenities.
+              Gated villages in Aliante (Club Aliante, The Prominence, and others) sit inside the
+              North Las Vegas 89084 master plan with controlled entry, private amenities, and HOA
+              architectural rules. Inventory changes throughout the day — confirm live MLS rather
+              than a stale count. I represent you on the purchase: HOA documents, lot position, and
+              offer terms.
             </p>
 
             <p className="leading-relaxed">
-              As your local gated community specialist, I've helped dozens of families navigate the
-              unique considerations of purchasing a home in these exclusive neighborhoods. From
-              understanding HOA governance and amenity access to negotiating with sellers who
-              understand the premium value of their gated locations, my expertise ensures you make
-              an informed decision and secure the best possible terms on your purchase.
+              As your local gated-community specialist, I walk buyers through HOA governance,
+              amenity access, and offer strategy on controlled-access lots. Guard gates, electronic
+              entry, and guest lists work differently in each village — I will tell you which
+              address uses which system before you tour.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -35,21 +32,17 @@ export default function GatedCommunitiesContent() {
             </h3>
 
             <p className="leading-relaxed">
-              The primary appeal of gated communities is the enhanced security they provide.
-              Controlled access points with 24/7 guard stations or electronic entry systems mean
-              only residents, guests, and authorized service providers can enter the community. This
-              dramatically reduces crime, solicitation, and unwanted traffic while creating a safer
-              environment for children to play outdoors and residents to enjoy evening walks without
-              concern.
+              The primary feature of gated villages is controlled access. Guard stations or
+              electronic entry mean only residents, guests, and authorized vendors enter. That
+              reduces through-traffic and solicitation. It also means your visitors wait at the
+              gate. Review guest procedures before you buy.
             </p>
 
             <p className="leading-relaxed">
-              Studies have shown that homes in gated communities experience significantly lower
-              rates of property crime compared to similar homes in non-gated neighborhoods. The
-              visible security presence acts as a deterrent, while the restricted access points
-              create a natural barrier to opportunistic criminals. For many buyers, the peace of
-              mind that comes from this enhanced security is worth the premium price and additional
-              HOA fees associated with gated living.
+              Controlled access is one factor among many — lot size, HOA dues, commute to the 215,
+              and square footage still drive value. I will not claim a crime-rate comparison. Ask
+              for the HOA budget, gate hours, and architectural rules, then confirm live comps
+              before you offer.
             </p>
           </div>
         </div>
@@ -71,10 +64,10 @@ export default function GatedCommunitiesContent() {
               >
                 The Prominence
               </Link>{' '}
-              stands as the area's most exclusive community, featuring luxury homes from $600,000 to
-              over $1.2 million with direct golf course access, resort-style pools, and concierge
-              services. Homes here are architectural showcases with premium finishes, expansive
-              lots, and views of the manicured{' '}
+              stands as a gated village with premium finishes, golf-course proximity, resort-style
+              pools, and concierge-style amenities where offered. Confirm live MLS prices — I will
+              not publish a stale range as current. Homes here often include upgraded interiors,
+              larger lots, and views of the manicured{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -101,8 +94,8 @@ export default function GatedCommunitiesContent() {
               >
                 golf course living
               </Link>
-              , with homes ranging from $500,000 to $900,000 offering exceptional value for the
-              amenities provided. View all available{' '}
+              . Confirm live list prices on Club Aliante lots rather than a stale range. View all
+              available{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

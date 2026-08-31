@@ -14,8 +14,8 @@ function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
         {title}
       </h3>
       <ul className="space-y-2">
-        {amenities.map((amenity, index) => (
-          <li key={index} className="flex items-start gap-2 text-gray-700">
+        {amenities.map((amenity) => (
+          <li key={amenity} className="flex items-start gap-2 text-gray-700">
             <span className="flex-shrink-0 text-green-500 font-bold">✓</span>
             <span>{amenity}</span>
           </li>
@@ -31,7 +31,7 @@ export default function CommunityAmenities() {
       icon: '🏌️',
       title: 'Golf & Recreation',
       amenities: [
-        'Championship 18-hole golf course',
+        'Aliante Golf Club (18-hole public course)',
         'Pro shop and golf lessons',
         'Tennis and pickleball courts',
         'Swimming pools and spas',
@@ -43,32 +43,32 @@ export default function CommunityAmenities() {
       title: 'Shopping & Dining',
       amenities: [
         'Aliante Casino + Hotel',
-        'Premium shopping centers',
-        'Fine dining restaurants',
-        'Casual eateries and cafes',
+        'Retail along Aliante Parkway',
+        'Restaurants and cafes nearby',
+        'Everyday grocery and services',
         'Entertainment venues',
       ],
     },
     {
       icon: '🎓',
-      title: 'Education & Family',
+      title: 'Named campuses nearby',
       amenities: [
-        'Top-rated public schools',
-        'Private school options',
-        'Community parks and playgrounds',
-        'Family activity centers',
-        'Library and learning resources',
+        'Leavitt Elementary, Kit Carson Elementary',
+        'Homer Elementary (confirm current boundary)',
+        'Brinley Middle School',
+        'Centennial High School or Legacy High School',
+        'Confirm CCSD attendance before you offer',
       ],
     },
     {
       icon: '🚗',
       title: 'Transportation & Access',
       amenities: [
-        'Easy freeway access (I-215)',
-        'Public transportation',
+        'I-215 Beltway interchange at Aliante Parkway',
+        'RTC bus routes serving North Las Vegas',
         'Bike lanes and walking trails',
-        'Airport proximity (15 minutes)',
-        'Downtown Las Vegas access',
+        'Harry Reid International Airport via I-215',
+        'Downtown Las Vegas via I-15 / US-95',
       ],
     },
   ];
@@ -81,13 +81,13 @@ export default function CommunityAmenities() {
             Community Amenities & Lifestyle
           </h2>
           <p className="text-xl text-gray-600">
-            Aliante offers world-class amenities and a vibrant lifestyle for residents of all ages
+            Golf, parks, named CCSD campuses, and I-215 access inside the Aliante master plan
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {categories.map((category, index) => (
-            <AmenityCategory key={index} {...category} />
+          {categories.map((category) => (
+            <AmenityCategory key={category.title} {...category} />
           ))}
         </div>
       </div>

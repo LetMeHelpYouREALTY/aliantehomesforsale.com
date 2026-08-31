@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import CommunityAmenities from '../components/CommunityAmenities';
+import EnhancedHero from '../components/EnhancedHero';
 import GolfHomesContent from '../components/GolfHomesContent';
 import HomesCTA from '../components/HomesCTA';
 import NeighborhoodCards from '../components/NeighborhoodCards';
-import NeighborhoodsHero from '../components/NeighborhoodsHero';
 
 export const metadata: Metadata = {
   title: 'Club Aliante Golf Homes for Sale | North Las Vegas 89084 Realtor',
@@ -17,9 +18,10 @@ export const metadata: Metadata = {
 export default function GolfHomes() {
   return (
     <main>
-      <NeighborhoodsHero
+      <EnhancedHero
         title="Club Aliante Golf Homes for Sale | North Las Vegas 89084"
         subtitle="Fairway lots next to Aliante Golf Club. I represent you on the purchase. Call (702) 707-7273."
+        image={pageHero('/golf-homes')}
       />
       <GolfHomesContent />
       <NeighborhoodCards />

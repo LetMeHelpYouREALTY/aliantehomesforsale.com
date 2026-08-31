@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
 import ContactHero from '../components/ContactHero';
@@ -20,6 +21,7 @@ export default function HomeValuation() {
       <ContactHero
         title="What’s My Aliante Home Worth? | CMA in North Las Vegas 89084"
         subtitle="Neighborhood comps for Club Aliante, gated villages, and Sun City Aliante. Call (702) 707-7273."
+        image={pageHero('/home-valuation')}
       />
       <HomeValuationContent />
       <section className="py-16 px-4 bg-white">

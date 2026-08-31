@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import BuilderComparison from '../components/BuilderComparison';
 import ConstructionProcess from '../components/ConstructionProcess';
 import NewConstructionCTA from '../components/NewConstructionCTA';
@@ -34,6 +35,7 @@ export default function NewConstruction() {
         title="New-Construction Buyer Agency in Aliante, North Las Vegas 89084"
         subtitle="Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273."
         filterHeading="Filter Aliante and Tule Springs new construction"
+        image={pageHero('/new-construction')}
       />
       <TopBuilders />
       <WhyNewConstruction />

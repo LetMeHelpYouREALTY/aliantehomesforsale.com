@@ -23,8 +23,9 @@ export default function SunCityContent() {
               >
                 Del Webb
               </Link>
-              , the nation's premier builder of active adult communities, Sun City Aliante spans
-              over 1,400 acres and includes multiple{' '}
+              , the nation&apos;s premier builder of active adult communities, Sun City Aliante is a
+              Del Webb village of about 2,000 homes inside the larger Aliante master plan. It
+              includes multiple{' '}
               <Link
                 href="/neighborhoods"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -48,9 +49,9 @@ export default function SunCityContent() {
               considerations that 55+ buyers prioritize. Single-story floor plans for aging-in-place
               comfort, proximity to specific amenities like golf or fitness centers, social club
               access matching your interests, and neighborhoods within the broader community that
-              align with your desired activity level all factor into finding your ideal home. With
-              41+ properties currently available ranging from $380,000 to $650,000, buyers have
-              exceptional choice in selecting homes that match both lifestyle priorities and budget.
+              align with your desired activity level all factor into finding your ideal home.
+              Confirm live MLS inventory and list prices — I will not publish a stale count or
+              range.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -62,14 +63,15 @@ export default function SunCityContent() {
               featuring fitness centers with state-of-the-art equipment and group exercise classes,
               indoor and outdoor swimming pools and spas, tennis and pickleball courts, billiards
               rooms, card game areas, and ballrooms for community events and entertainment. The
-              18-hole Palm Valley Golf Course provides championship play in a stunning desert
-              setting, with preferred rates for residents and a full-service pro shop offering
-              equipment and lessons.
+              18-hole Aliante Golf Club (Gary Panks, city-owned and open to the public) runs through
+              the broader Aliante plan. Palm Valley is a different course in Sun City Summerlin —
+              do not confuse the two. Confirm current resident rates and tee-time rules with the
+              club.
             </p>
 
             <p className="leading-relaxed">
-              Beyond physical recreation, Sun City Aliante offers over 100 clubs and interest groups
-              covering virtually every hobby and activity imaginable. Art studios provide space for
+              Beyond physical recreation, Sun City Aliante offers dozens of clubs and interest groups
+              covering hobbies and activities. Art studios provide space for
               painting, pottery, and crafts. Woodworking shops equipped with professional-grade
               tools accommodate furniture building and home improvement projects. Computer labs
               offer technology training and internet access. Dance clubs, book clubs, investment
@@ -126,9 +128,9 @@ export default function SunCityContent() {
 
             <p className="leading-relaxed">
               Shopping and services are equally convenient, with major grocery stores, pharmacies,
-              banks, and restaurants all within easy reach. The proximity to I-215 provides quick
-              access to McCarran International Airport for travel, Strip entertainment for visitors,
-              and all services and amenities throughout the Las Vegas valley. This combination of
+              banks, and restaurants all within easy reach. The I-215 Beltway connects Aliante to
+              Harry Reid International Airport, Strip entertainment for visitors, and services
+              throughout the Las Vegas valley. This combination of
               community self-sufficiency and convenient access to broader valley resources creates
               an ideal balance for active adults seeking independence while ensuring services are
               accessible as needs change with aging.

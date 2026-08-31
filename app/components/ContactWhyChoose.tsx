@@ -38,7 +38,7 @@ export default function ContactWhyChoose() {
     {
       icon: '⭐',
       title: 'Proven Track Record',
-      description: '500+ successful transactions with verified client testimonials',
+      description: 'Aliante and North Las Vegas closings since 2018 — ask for current references',
     },
   ];
 

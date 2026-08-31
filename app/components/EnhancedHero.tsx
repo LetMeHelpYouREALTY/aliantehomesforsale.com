@@ -1,38 +1,40 @@
 'use client';
 
-import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
-
-const SLIDES = [
-  {
-    src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&h=1080&fit=crop&q=80',
-    alt: 'Aliante luxury homes and North Las Vegas real estate',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop&q=80',
-    alt: 'Modern home exterior in Aliante',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop&q=80',
-    alt: 'North Las Vegas community and homes',
-  },
-] as const;
+import { homeHeroSlides, type SiteImage } from '../../lib/content/site-images';
+import HeroBackdrop from './HeroBackdrop';
 
 const INTERVAL_MS = 6000;
 
-export default function EnhancedHero() {
+type EnhancedHeroProps = {
+  title?: string;
+  subtitle?: string;
+  /** Single photo matching this page H1 (golf / gated). Homepage uses the local slideshow. */
+  image?: SiteImage;
+};
+
+export default function EnhancedHero({
+  title = 'Dr. Jan Duffy | Aliante North Las Vegas Real Estate',
+  subtitle = 'Discover new listings right when they hit the market. RealScout powers your search—updated every 15 minutes.',
+  image,
+}: EnhancedHeroProps) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const slides = image ? [image] : homeHeroSlides;
+  const showControls = slides.length > 1;
 
-  const goTo = useCallback((target: number) => {
-    setIndex((target + SLIDES.length) % SLIDES.length);
-  }, []);
+  const goTo = useCallback(
+    (target: number) => {
+      setIndex((target + slides.length) % slides.length);
+    },
+    [slides.length]
+  );
 
   useEffect(() => {
-    if (paused) return;
-    const id = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), INTERVAL_MS);
+    if (paused || slides.length < 2) return;
+    const id = setInterval(() => setIndex((i) => (i + 1) % slides.length), INTERVAL_MS);
     return () => clearInterval(id);
-  }, [paused]);
+  }, [paused, slides.length]);
 
   return (
     <section
@@ -41,33 +43,19 @@ export default function EnhancedHero() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Background slideshow */}
       <div className="absolute inset-0">
-        {SLIDES.map((slide, i) => (
+        {slides.map((slide, i) => (
           <div
             key={slide.src}
             className="absolute inset-0 transition-opacity duration-700 ease-in-out"
             style={{ opacity: i === index ? 1 : 0 }}
             aria-hidden={i !== index}
           >
-            <Image
-              src={slide.src}
-              alt={i === index ? slide.alt : ''}
-              fill
-              sizes="100vw"
-              priority={i === 0}
-              quality={80}
-              className="object-cover"
-            />
+            <HeroBackdrop image={slide} priority={i === 0} />
           </div>
         ))}
-        <div
-          className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-indigo-900/90"
-          aria-hidden
-        />
       </div>
 
-      {/* Pattern overlay */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" aria-hidden>
         <div
           className="absolute inset-0"
@@ -78,17 +66,15 @@ export default function EnhancedHero() {
         />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
         <h1
           id="hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
         >
-          Aliante Real Estate | Homes for Sale in North Las Vegas 89084
+          {title}
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties. MLS search updated about
-          every 15 minutes. Call (702) 707-7273.
+          {subtitle}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
@@ -109,63 +95,64 @@ export default function EnhancedHero() {
         </a>
       </div>
 
-      {/* Slide indicators + prev/next */}
-      <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-4">
-        <button
-          type="button"
-          onClick={() => goTo(index - 1)}
-          className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
-          aria-label="Previous slide"
-        >
-          <span className="sr-only">Previous</span>
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden
+      {showControls ? (
+        <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-4">
+          <button
+            type="button"
+            onClick={() => goTo(index - 1)}
+            className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
+            aria-label="Previous slide"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <div className="flex gap-2" role="tablist" aria-label="Hero slides">
-          {SLIDES.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              role="tab"
-              aria-selected={i === index ? 'true' : 'false'}
-              aria-label={`Slide ${i + 1}`}
-              onClick={() => goTo(i)}
-              className={`h-2.5 rounded-full transition-all focus:ring-2 focus:ring-white focus:outline-none ${
-                i === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/70'
-              }`}
-            />
-          ))}
+            <span className="sr-only">Previous</span>
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <div className="flex gap-2" role="tablist" aria-label="Hero slides">
+            {slides.map((slide, i) => (
+              <button
+                key={slide.src}
+                type="button"
+                role="tab"
+                aria-selected={i === index ? 'true' : 'false'}
+                aria-label={`Slide ${i + 1}`}
+                onClick={() => goTo(i)}
+                className={`h-2.5 rounded-full transition-all focus:ring-2 focus:ring-white focus:outline-none ${
+                  i === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50 hover:bg-white/70'
+                }`}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={() => goTo(index + 1)}
+            className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
+            aria-label="Next slide"
+          >
+            <span className="sr-only">Next</span>
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={() => goTo(index + 1)}
-          className="p-2 rounded-full text-white/80 hover:text-white hover:bg-white/20 focus:ring-2 focus:ring-white focus:outline-none"
-          aria-label="Next slide"
-        >
-          <span className="sr-only">Next</span>
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
+      ) : null}
     </section>
   );
 }

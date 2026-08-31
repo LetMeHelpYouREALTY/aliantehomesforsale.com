@@ -36,7 +36,7 @@ export default function WhyNewConstruction() {
       icon: '💰',
       title: 'Builder Incentives & Savings',
       description:
-        'Up to $25,000 in closing costs, upgrades, or rate buydowns. We help you maximize every available incentive.',
+        'Builder credits, upgrades, and rate buydowns change with the week. Confirm today’s sheet — I will not publish a stale dollar amount.',
     },
     {
       icon: '✅',

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import AdvancedSearchForm from '../components/AdvancedSearchForm';
+import { pageHero } from '../../lib/content/site-images';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesSearchTips from '../components/HomesSearchTips';
 import PropertyCategories from '../components/PropertyCategories';
+import RealScoutSearchSection from '../components/RealScoutSearchSection';
 import SearchPageContent from '../components/SearchPageContent';
 
 export const metadata: Metadata = {
@@ -21,12 +22,9 @@ export default function Search() {
       <HomesForSaleHero
         title="Search Aliante MLS | Realtor Filters for North Las Vegas 89084"
         subtitle="Filter Club Aliante, gated villages, and Sun City Aliante. Listings update about every 15 minutes."
+        image={pageHero('/search')}
       />
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto">
-          <AdvancedSearchForm />
-        </div>
-      </section>
+      <RealScoutSearchSection />
       <SearchPageContent />
       <PropertyCategories />
       <HomesSearchTips />

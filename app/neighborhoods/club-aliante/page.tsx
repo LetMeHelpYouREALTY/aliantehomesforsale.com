@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import GolfHomesContent from '../../components/GolfHomesContent';
@@ -21,6 +22,7 @@ export default function ClubAliante() {
       <NeighborhoodsHero
         title="Club Aliante Homes for Sale | Golf Course Real Estate, North Las Vegas"
         subtitle="Fairway homes in ZIP 89084 next to Aliante Golf Club. Call (702) 707-7273 to tour live listings."
+        image={pageHero('/neighborhoods/club-aliante')}
       />
       <GolfHomesContent />
       <CommunityAmenities />

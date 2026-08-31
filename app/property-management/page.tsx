@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import OfficeLocation from '../components/OfficeLocation';
 import PageHero from '../components/PageHero';
 import PropertyManagementContent from '../components/PropertyManagementContent';
@@ -21,6 +22,7 @@ export default function PropertyManagementPage() {
         eyebrow="Aliante · North Las Vegas 89084"
         title="Aliante Property Management | We Sell Homes, Not Leases"
         subtitle="FirstService Residential runs the Aliante Master Association from Suite 100 in this building. I list and sell homes from Suite 275. Call (702) 707-7273."
+        image={pageHero('/contact')}
       />
       <PropertyManagementContent />
       <PropertyManagementFAQ />

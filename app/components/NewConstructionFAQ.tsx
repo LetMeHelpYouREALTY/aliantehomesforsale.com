@@ -55,7 +55,7 @@ export default function NewConstructionFAQ() {
     {
       question: 'What incentives are currently available?',
       answer:
-        'Builders currently offer $10,000-$25,000 in incentives including closing costs, upgrades, rate buydowns, and design credits. Contact us for specific current offers.',
+        'Confirm today’s closing-cost, upgrade, and rate-buydown sheet with me. I will not publish a stale dollar range as current.',
     },
     {
       question: 'Can I negotiate with builders?',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import CommunityAmenities from '../components/CommunityAmenities';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
@@ -21,6 +22,7 @@ export default function Schools() {
       <NeighborhoodsHero
         title="Homes Near Aliante Schools | North Las Vegas 89084"
         subtitle="I name the campus that currently serves an address. Boundaries change — confirm with Clark County School District before you offer."
+        image={pageHero('/schools')}
       />
       <SchoolsContent />
       <CommunityAmenities />

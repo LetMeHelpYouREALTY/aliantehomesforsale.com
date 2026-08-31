@@ -5,44 +5,44 @@ import FAQSection from './FAQSection';
 export default function AlianteFAQ() {
   const faqs = [
     {
-      question: 'What are the best neighborhoods in Aliante for families?',
+      question: 'Which Aliante neighborhoods can I tour in ZIP 89084?',
       answer:
-        'Desert Willows and The Paseos are ideal for families, offering excellent schools rated 8-9 out of 10, community parks, swimming pools, and family-friendly amenities. Homes range from $300,000 to $700,000. <a href="/neighborhoods/desert-willows" class="text-blue-600 hover:underline font-semibold">Desert Willows</a> features spacious lots and top-rated schools, while <a href="/neighborhoods/paseos" class="text-blue-600 hover:underline font-semibold">The Paseos</a> offers affordable pricing perfect for first-time buyers. Both neighborhoods have low crime rates, walkable designs, and strong community involvement.',
+        '<a href="/neighborhoods/desert-willows" class="text-blue-600 hover:underline font-semibold">Desert Willows</a> and <a href="/neighborhoods/paseos" class="text-blue-600 hover:underline font-semibold">The Paseos</a> are open-access villages with parks and community pools. <a href="/neighborhoods/prominence" class="text-blue-600 hover:underline font-semibold">The Prominence</a> and <a href="/neighborhoods/club-aliante" class="text-blue-600 hover:underline font-semibold">Club Aliante</a> are gated. Confirm live MLS prices before you offer.',
     },
     {
-      question: 'How much are new construction homes in Aliante?',
+      question: 'How do I confirm new-construction prices near Aliante?',
       answer:
-        'New construction homes in Aliante range from $350,000 for townhomes to over $1.6 million for luxury estates. Most single-family homes from <a href="/builders/lennar" class="text-blue-600 hover:underline font-semibold">Lennar</a> and <a href="/builders/dr-horton" class="text-blue-600 hover:underline font-semibold">D.R. Horton</a> are priced between $450,000-$650,000. Current builder incentives offer up to $25,000 in closing costs and free upgrades. Check our <a href="/builders/incentives" class="text-blue-600 hover:underline font-semibold">Builder Incentives Tracker</a> for the latest offers.',
+        'Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="text-blue-600 hover:underline font-semibold">Lennar</a>, <a href="/builders/dr-horton" class="text-blue-600 hover:underline font-semibold">D.R. Horton</a>, and <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="text-blue-600 hover:underline font-semibold">Builder Incentives</a> page or call (702) 707-7273.',
     },
     {
       question: 'What is Sun City Aliante and who can live there?',
       answer:
-        '<a href="/neighborhoods/sun-city" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is an active adult 55+ community built by <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. At least one resident must be 55 or older. The community offers resort-style amenities including golf courses, fitness centers, swimming pools, social clubs, and over 100 activity groups. Homes range from $380,000 to $650,000 with low-maintenance living and world-class amenities included.',
+        '<a href="/sun-city-aliante" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is a Del Webb 55+ community inside ZIP 89084 — not Ardiente (89081). At least one resident must be 55 or older. Amenities include fitness, pools, clubs, and nearby <a href="/golf-homes" class="text-blue-600 hover:underline font-semibold">Aliante Golf Club</a>. Confirm live MLS before you offer.',
     },
     {
       question: 'Are there gated communities in Aliante?',
       answer:
-        'Yes! Aliante has 86+ properties in <a href="/gated-communities" class="text-blue-600 hover:underline font-semibold">gated communities</a> offering 24/7 security, private amenities, and premium living. <a href="/neighborhoods/prominence" class="text-blue-600 hover:underline font-semibold">The Prominence</a> is the area\'s most exclusive gated community ($600K-$1.2M+), while <a href="/neighborhoods/club-aliante" class="text-blue-600 hover:underline font-semibold">Club Aliante</a> offers golf course gated living ($500K-$900K). Gated communities provide enhanced security, higher property values, and resort-style amenities.',
+        'Yes. Gated villages inside the Aliante master plan include <a href="/neighborhoods/prominence" class="text-blue-600 hover:underline font-semibold">The Prominence</a> and <a href="/neighborhoods/club-aliante" class="text-blue-600 hover:underline font-semibold">Club Aliante</a>. Browse <a href="/gated-communities" class="text-blue-600 hover:underline font-semibold">gated communities</a> and confirm live MLS listings rather than a stale count.',
     },
     {
-      question: 'How often are MLS listings updated on your site?',
+      question: 'How often are MLS listings updated on this site?',
       answer:
-        'Our <a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">MLS listings</a> are updated every 15 minutes directly from the Las Vegas MLS database. This ensures you see new properties immediately when they hit the market, giving you a competitive advantage in Aliante\'s fast-moving real estate market. We currently have 286+ active listings available. Use our <a href="/search" class="text-blue-600 hover:underline font-semibold">advanced search</a> to find your perfect home.',
+        '<a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">MLS listings</a> refresh about every 15 minutes from the Las Vegas MLS feed. Inventory changes daily — use <a href="/search" class="text-blue-600 hover:underline font-semibold">advanced search</a> or call (702) 707-7273 for current addresses.',
     },
     {
       question: 'What are current home prices in Aliante?',
       answer:
-        'The median home price in Aliante is $450,000. Prices range from $300,000 for starter homes in <a href="/neighborhoods/paseos" class="text-blue-600 hover:underline font-semibold">The Paseos</a> to over $1.2 million for luxury estates in <a href="/neighborhoods/prominence" class="text-blue-600 hover:underline font-semibold">The Prominence</a>. Most homes sell within 3-7 days on market. View our <a href="/market-report" class="text-blue-600 hover:underline font-semibold">live market report</a> for current pricing trends and inventory levels.',
+        'I will not quote a stale median in this answer. Confirm live prices on the MLS widgets and the <a href="/market-report" class="text-blue-600 hover:underline font-semibold">Aliante market report</a>. Villages range from open-access homes in <a href="/neighborhoods/paseos" class="text-blue-600 hover:underline font-semibold">The Paseos</a> to gated lots in <a href="/neighborhoods/prominence" class="text-blue-600 hover:underline font-semibold">The Prominence</a>.',
     },
     {
-      question: 'Does working with Dr. Jan Duffy cost me anything?',
+      question: 'Does working with Dr. Jan Duffy cost me anything as a buyer?',
       answer:
-        'No! Buyer representation is completely free to you. Builders and sellers pay the buyer\'s agent commission from their marketing budget. By working with me, you get professional advocacy, expert negotiation, insider knowledge, and access to exclusive incentives at no cost. In fact, buyers who go directly to builders often end up paying the same price but without professional representation. <a href="/contact" class="text-blue-600 hover:underline font-semibold">Contact me today</a> to discuss your home search.',
+        'Buyer representation is typically at no extra cost to you. On participating sales, the builder or seller pays the buyer-broker fee from its marketing budget. <a href="/contact" class="text-blue-600 hover:underline font-semibold">Contact me</a> before you tour so representation is documented.',
     },
     {
-      question: 'What makes Dr. Jan Duffy an expert in Aliante real estate?',
+      question: 'What is Dr. Jan Duffy’s focus in Aliante real estate?',
       answer:
-        'I\'ve specialized in Aliante real estate since 2018, completing 500+ successful transactions with a 4.9/5 client satisfaction rating from 127 verified reviews. I maintain direct relationships with every major builder in the area, including being D.R. Horton\'s #1 Premiere Agent. My local expertise, builder connections, and proven track record help clients save thousands while avoiding common mistakes. Read more <a href="/about" class="text-blue-600 hover:underline font-semibold">about my experience</a>.',
+        'I have specialized in Aliante and North Las Vegas 89084 since 2018 with Berkshire Hathaway HomeServices Nevada Properties (license S.0197614.LLC). I represent buyers and sellers on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Read more <a href="/about" class="text-blue-600 hover:underline font-semibold">about my work</a>.',
     },
   ];
 

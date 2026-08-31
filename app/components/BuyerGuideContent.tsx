@@ -105,7 +105,7 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              Family-oriented buyers often gravitate toward{' '}
+              Buyers comparing parks, pools, and open-access streets often tour{' '}
               <Link
                 href="/neighborhoods/desert-willows"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -119,18 +119,17 @@ export default function BuyerGuideContent() {
               >
                 The Paseos
               </Link>
-              , where excellent{' '}
+              , where named{' '}
               <Link
                 href="/schools"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                schools
+                CCSD campuses
               </Link>
-              , parks, and community pools create ideal environments for children. These
-              neighborhoods offer the best balance of affordability and quality, with homes
-              typically ranging from $300,000 to $600,000.{' '}
+              , parks, and community pools sit close to the lot. Confirm live MLS prices — I will
+              not publish a stale range.{' '}
               <Link
-                href="/neighborhoods/sun-city"
+                href="/sun-city-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Sun City Aliante

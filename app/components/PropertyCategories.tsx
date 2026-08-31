@@ -1,32 +1,29 @@
 'use client';
 
+import Image from 'next/image';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+
 interface CategoryCardProps {
-  icon: string;
   title: string;
-  count: string;
   description: string;
   href: string;
-  gradient: string;
+  image: SiteImage;
 }
 
-function CategoryCard({ icon, title, count, description, href, gradient }: CategoryCardProps) {
+function CategoryCard({ title, description, href, image }: CategoryCardProps) {
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-transparent hover:border-blue-500">
-      {/* Gradient Header */}
-      <div
-        className="h-32 flex items-center justify-center relative"
-        style={{ background: gradient }}
-      >
-        <div className="text-6xl">{icon}</div>
-        <div
-          className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm"
-          style={{ color: '#2c5aa0' }}
-        >
-          {count} Available
-        </div>
+      <div className="relative h-32">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-cover"
+          loading="lazy"
+        />
       </div>
 
-      {/* Content */}
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a365d' }}>
           {title}
@@ -37,8 +34,12 @@ function CategoryCard({ icon, title, count, description, href, gradient }: Categ
           href={href}
           className="block w-full text-center py-3 px-6 rounded-lg font-semibold text-white transition-all transform hover:scale-105 focus:ring-4 focus:ring-orange-300 focus:outline-none"
           style={{ backgroundColor: '#ed8936' }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#dd6b20';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#ed8936';
+          }}
         >
           View Properties →
         </a>
@@ -50,40 +51,32 @@ function CategoryCard({ icon, title, count, description, href, gradient }: Categ
 export default function PropertyCategories() {
   const categories: CategoryCardProps[] = [
     {
-      icon: '🏗️',
       title: 'New Construction',
-      count: '45',
       description:
-        'Brand new homes from top builders. Customize to your taste with builder incentives up to $25K.',
+        'Lennar, D.R. Horton, and Del Webb near Aliante. Confirm live incentives — I will not publish a stale dollar amount.',
       href: '/new-construction',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: siteImages.builders,
     },
     {
-      icon: '🏰',
       title: 'Gated Communities',
-      count: '86',
       description:
-        '24/7 security, resort amenities, well-maintained landscapes. Premium living with peace of mind.',
+        'Controlled-access villages inside the Aliante master plan: Club Aliante, The Prominence, and more.',
       href: '/gated-communities',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      image: siteImages.gated,
     },
     {
-      icon: '⛳',
       title: 'Golf Course Homes',
-      count: '32',
       description:
-        'Stunning fairway and mountain views. Club Aliante Golf Course access and premium lifestyle.',
+        'Fairway lots next to Aliante Golf Club and Club Aliante. Confirm live MLS prices before you offer.',
       href: '/golf-homes',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: siteImages.golf,
     },
     {
-      icon: '🌅',
       title: 'Sun City Aliante 55+',
-      count: '41',
       description:
-        'Active adult community with world-class amenities. Resort-style living designed for 55+.',
-      href: '/neighborhoods/sun-city',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+        'Del Webb 55+ inside ZIP 89084 — not Ardiente (89081). Confirm live inventory and occupancy rules.',
+      href: '/sun-city-aliante',
+      image: siteImages.sunCity,
     },
   ];
 
@@ -95,13 +88,13 @@ export default function PropertyCategories() {
             Browse by Category
           </h2>
           <p className="text-xl text-gray-600">
-            Find your perfect home in Aliante's most sought-after communities
+            Filter Aliante 89084 homes on live MLS — inventory changes throughout the day.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((category, index) => (
-            <CategoryCard key={index} {...category} />
+          {categories.map((category) => (
+            <CategoryCard key={category.href} {...category} />
           ))}
         </div>
       </div>

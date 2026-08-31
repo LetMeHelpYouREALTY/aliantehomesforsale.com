@@ -76,9 +76,9 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
     title,
     description,
     keywords: allKeywords,
-    authors: [{ name: 'Aliante Real Estate' }],
-    creator: 'Aliante Real Estate',
-    publisher: 'Aliante Real Estate',
+    authors: [{ name: siteConfig.agentName }],
+    creator: siteConfig.agentName,
+    publisher: siteConfig.brokerage,
     metadataBase: new URL(SITE_URL),
     alternates: {
       canonical: url,
@@ -99,8 +99,8 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
     other: {
       'geo.region': 'US-NV',
       'geo.placename': 'Aliante, North Las Vegas',
-      'geo.position': '36.1699;-115.1398',
-      ICBM: '36.1699, -115.1398',
+      'geo.position': `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
+      ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
     },
   };
 }
@@ -119,14 +119,14 @@ export const neighborhoodSEO = {
     ],
   },
   'desert-willows': {
-    title: 'Desert Willows Homes For Sale - Family-Friendly Neighborhood Aliante',
+    title: 'Desert Willows Homes For Sale - Aliante, North Las Vegas 89084',
     description:
-      'Find your perfect family home in Desert Willows, Aliante. Top-rated schools, parks, community pools. Affordable prices from $300k.',
+      'Homes in Desert Willows, Aliante. Parks, community pools, and named CCSD campuses nearby. Confirm live MLS prices. Call (702) 707-7273.',
     keywords: [
       'Desert Willows',
-      'family homes Aliante',
-      'good schools Las Vegas',
-      'affordable homes',
+      'Aliante homes North Las Vegas',
+      '89084 homes for sale',
+      'open-access Aliante village',
     ],
   },
   'club-aliante': {
@@ -148,7 +148,7 @@ export const pageSEO = {
   'homes-for-sale': {
     title: 'Homes For Sale in Aliante - Updated Every 15 Minutes | MLS Listings',
     description:
-      '286+ verified MLS listings in Aliante, North Las Vegas. Updated every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 707-7273',
+      'MLS listings in Aliante, North Las Vegas 89084. Updated about every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 707-7273',
     keywords: [
       'Aliante homes for sale',
       'MLS listings Aliante',

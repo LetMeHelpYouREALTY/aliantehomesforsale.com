@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodComparison from '../../components/NeighborhoodComparison';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
@@ -20,6 +21,7 @@ export default function Compare() {
       <NeighborhoodsHero
         title="Compare Aliante Neighborhoods | Club Aliante, Sun City, Prominence"
         subtitle="Side-by-side villages in ZIP 89084. Confirm live MLS prices before you offer. Call (702) 707-7273."
+        image={pageHero('/neighborhoods/compare')}
       />
       <NeighborhoodComparison
         heading="Side-by-side: Club Aliante, Prominence, Desert Willows, The Paseos"

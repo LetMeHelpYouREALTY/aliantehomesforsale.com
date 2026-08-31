@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
 import ConstructionProcess from '../components/ConstructionProcess';
@@ -22,6 +23,7 @@ export default function BuyerGuide() {
       <AboutHero
         title="Buyer Representation in Aliante, North Las Vegas 89084"
         subtitle="I represent you on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Call (702) 707-7273."
+        image={pageHero('/buyer-guide')}
       />
       <BuyerGuideContent />
       <div className="px-4">

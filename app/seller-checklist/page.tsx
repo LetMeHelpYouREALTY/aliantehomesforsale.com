@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
 import AboutHero from '../components/AboutHero';
@@ -21,6 +22,7 @@ export default function SellerChecklist() {
       <AboutHero
         title="Sell Your Aliante Home | Listing Agent, North Las Vegas 89084"
         subtitle="Club Aliante, gated villages, and Sun City Aliante listings. Call (702) 707-7273 for a CMA."
+        image={pageHero('/seller-checklist')}
       />
       <SellerChecklistContent />
       <div className="px-4">

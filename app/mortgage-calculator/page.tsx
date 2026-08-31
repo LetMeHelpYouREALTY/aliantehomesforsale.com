@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
 import ContactHero from '../components/ContactHero';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
@@ -20,6 +21,7 @@ export default function MortgageCalculator() {
       <ContactHero
         title="Aliante Mortgage Payment Calculator | North Las Vegas 89084"
         subtitle="Estimate a payment, then confirm rates with a lender. I am your realtor, not your loan officer."
+        image={pageHero('/mortgage-calculator')}
       />
       <MortgageCalculatorContent />
       <section className="py-16 px-4 bg-white">

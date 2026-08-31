@@ -10,8 +10,9 @@ export default function SearchPageContent() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            Our advanced MLS search tool provides direct access to all 286+ active listings in the
-            Aliante area, updated every 15 minutes to ensure you never miss newly listed properties.
+            Our MLS search connects to the Las Vegas MLS feed that agents use, with listings that
+            refresh about every 15 minutes. Inventory counts change throughout the day — search live
+            rather than relying on a stale total.
             Unlike national real estate websites that often display outdated or inaccurate data, our
             search connects directly to the Las Vegas MLS database that all real estate
             professionals use, giving you the same information advantage that agents have when

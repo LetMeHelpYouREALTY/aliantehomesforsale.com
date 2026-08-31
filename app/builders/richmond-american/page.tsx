@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageHero } from '../../../lib/content/site-images';
 import BuilderDetailContent from '../../components/BuilderDetailContent';
 import ConstructionProcess from '../../components/ConstructionProcess';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
@@ -20,6 +21,7 @@ export default function RichmondAmerican() {
         title="Richmond American near Aliante | North Las Vegas 89084"
         subtitle="Confirm whether the community is inside Aliante ZIP 89084 before you tour. Call (702) 707-7273."
         filterHeading="Richmond American near Aliante"
+        image={pageHero('/builders/richmond-american')}
       />
       <TopBuilders />
       <ConstructionProcess />

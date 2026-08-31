@@ -13,17 +13,15 @@ export default function MarketReportContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              The Aliante real estate market operates within the larger North Las Vegas market
-              ecosystem, but maintains its own unique characteristics driven by the master-planned
-              community design, quality schools, golf course amenities, and strategic location near
-              the I-215 Beltway. Our market data is updated every 15 minutes directly from the Las
-              Vegas MLS system, ensuring you have access to the most current information when making
-              buying or selling decisions.
+              The Aliante real estate market sits inside North Las Vegas but trades on its own
+              micro-markets: Club Aliante fairway lots, gated villages, Sun City Aliante 55+, and
+              open-access streets — all near the I-215 Beltway. MLS widgets on this site refresh
+              about every 15 minutes. Use those live figures; I will not quote a stale median in
+              this copy.
             </p>
 
             <p className="leading-relaxed">
-              With over 286 active listings currently available, Aliante offers buyers exceptional
-              choice across all price points and property types. From affordable starter homes in{' '}
+              Inventory changes throughout the day. Open-access homes in{' '}
               <Link
                 href="/neighborhoods/paseos"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -37,17 +35,15 @@ export default function MarketReportContent() {
               >
                 The Prominence
               </Link>{' '}
-              exceeding $1.2 million, the diverse inventory ensures that families at every stage of
-              life can find their ideal home. Browse all{' '}
+              exceeding $1.2 million on some sales — confirm the live list price. Browse all{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Aliante homes for sale
               </Link>{' '}
-              to see current listings. The median price of $450,000 reflects a balanced market where
-              buyers have negotiating power while sellers can still achieve strong returns on their
-              investments.
+              to see current listings. Read the median, days on market, and price per square foot
+              from the live widgets on this page — not from a paragraph that can go stale.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -55,22 +51,18 @@ export default function MarketReportContent() {
             </h3>
 
             <p className="leading-relaxed">
-              The average days on market of just 3 days indicates a competitive market where
-              well-priced, quality homes are selling quickly. This rapid absorption rate is driven
-              by multiple factors: the limited supply of new construction lots in Aliante proper,
-              strong buyer demand from California equity migrants seeking Nevada's tax advantages,
-              and the area's continued recognition as one of the valley's premier family-friendly
-              communities. Homes that are priced correctly and show well are often receiving
-              multiple offers within the first weekend of listing.
+              Days on market changes with the week. Well-priced homes can still move quickly when
+              comps support the list price. That pace is driven by limited remaining lots inside
+              Aliante proper, buyer demand from other states, and golf, parks, and I-215 access.
+              Confirm current days-on-market on the live widget — I will not hard-code a 3-day
+              average here.
             </p>
 
             <p className="leading-relaxed">
-              Price per square foot averages $243 across all property types, though this varies
-              significantly by neighborhood and home age. Newer construction in Villages at Tule
-              Springs commands premiums of $260-$280 per square foot, while established
-              neighborhoods like Desert Willows trade in the $220-$240 range. Understanding these
-              micro-market differences is crucial for both buyers evaluating fair value and sellers
-              setting competitive list prices.
+              Price per square foot varies by village and home age. Newer construction near Tule
+              Springs often trades at a premium to established streets in Desert Willows. Read the
+              live price-per-square-foot figure on the widgets. Those micro-market differences
+              matter for buyers evaluating fair value and sellers setting a list price.
             </p>
           </div>
         </div>
@@ -136,13 +128,10 @@ export default function MarketReportContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Different property types within Aliante have shown varying appreciation and investment
-              performance over recent years. Single-family homes in gated communities have led
-              appreciation, with average annual gains of 6-8% as security-conscious buyers continue
-              to place premium value on controlled-access neighborhoods. New construction has also
-              performed exceptionally well, with homes purchased pre-completion seeing 3-5%
-              appreciation by the time construction completes due to rising construction costs and
-              builder price increases.
+              Different property types within Aliante have shown different appreciation paths. Gated
+              single-family lots and new construction often hold a premium to open-access streets,
+              but I will not hard-code an annual percentage here. Confirm recent comps for the
+              village you want before you treat any “average gain” as current.
             </p>
 
             <p className="leading-relaxed">
