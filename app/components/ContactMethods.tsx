@@ -56,7 +56,7 @@ export default function ContactMethods() {
   const methods: ContactMethodProps[] = [
     {
       icon: '📞',
-      title: 'Call Us Today',
+      title: 'Call today',
       primary: '(702) 707-7273',
       details: [siteConfig.hours.weekday, siteConfig.hours.weekend],
       href: 'tel:+17027077273',
@@ -64,14 +64,14 @@ export default function ContactMethods() {
     },
     {
       icon: '✉️',
-      title: 'Email Us',
+      title: 'Email',
       primary: siteConfig.email,
       details: ['Reply during office hours'],
       href: `mailto:${siteConfig.email}`,
     },
     {
       icon: '📍',
-      title: 'Visit Our Office',
+      title: 'Visit the office',
       primary: '2590 Nature Park Drive',
       details: ['Suite 275 · North Las Vegas, NV 89084', 'Tap for map & directions'],
       href: '#directions',

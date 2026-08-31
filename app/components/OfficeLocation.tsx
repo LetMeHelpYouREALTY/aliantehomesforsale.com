@@ -17,7 +17,7 @@ export default function OfficeLocation() {
             className="text-3xl sm:text-4xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Visit Our Office &amp; Get Directions
+            Visit the office and get directions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Plan your visit with {agentName} at Aliante Corporate Center in North Las Vegas. Confirm

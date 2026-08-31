@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
+import DelWebbContent from '../../components/DelWebbContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import SunCityContent from '../../components/SunCityContent';
 import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function DelWebb() {
         filterHeading="Del Webb 55+ in Aliante 89084"
         image={pageHero('/builders/del-webb')}
       />
-      <SunCityContent />
+      <DelWebbContent />
       <TopBuilders />
       <NewConstructionCTA />
     </main>
