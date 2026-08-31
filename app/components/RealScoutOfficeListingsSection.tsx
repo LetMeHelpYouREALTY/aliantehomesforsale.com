@@ -9,7 +9,7 @@ const widgetMarkup = `
     width: 100%;
   }
 </style>
-<realscout-office-listings agent-encoded-id="QWdlbnQtMjI1MDUw" sort-order="NEWEST" listing-status="For Sale" property-types=",SFR,MF,TC,OTHER" price-min="300000" price-max="1200000"></realscout-office-listings>
+<realscout-office-listings agent-encoded-id="QWdlbnQtMjI1MDUw" sort-order="NEWEST" listing-status="For Sale" property-types=",SFR,MF,TC,OTHER"></realscout-office-listings>
 `;
 
 export default function RealScoutOfficeListingsSection() {

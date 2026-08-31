@@ -35,12 +35,10 @@ export default function InvestmentAnalysisContent() {
             </p>
 
             <p className="leading-relaxed">
-              As an investment property specialist with extensive experience in the Aliante market,
-              I help investors identify properties with the best return potential, conduct thorough
-              financial analysis, and navigate the unique considerations of purchasing rental
-              properties. Whether you're a first-time investor looking to build wealth through real
-              estate or an experienced operator expanding your portfolio, understanding the Aliante
-              market dynamics is essential for making sound investment decisions.
+              As an investment property specialist in the Aliante market, I help you underwrite
+              specific addresses: live comps, current rent surveys, HOA dues, and vacancy. I will
+              not rank villages by return. Confirm the numbers on this month’s sheet before you
+              offer.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

@@ -52,17 +52,15 @@ export default function MarketReportContent() {
 
             <p className="leading-relaxed">
               Days on market changes with the week. Well-priced homes can still move quickly when
-              comps support the list price. That pace is driven by limited remaining lots inside
-              Aliante proper, buyer demand from other states, and golf, parks, and I-215 access.
-              Confirm current days-on-market on the live widget — I will not hard-code a 3-day
-              average here.
+              comps support the list price. Confirm current days-on-market on the live widget — I
+              will not hard-code a 3-day average or a remaining-lot count here.
             </p>
 
             <p className="leading-relaxed">
-              Price per square foot varies by village and home age. Newer construction near Tule
-              Springs often trades at a premium to established streets in Desert Willows. Read the
-              live price-per-square-foot figure on the widgets. Those micro-market differences
-              matter for buyers evaluating fair value and sellers setting a list price.
+              Price per square foot varies by village and home age. Compare Tule Springs new
+              construction with Desert Willows resale on live comps — I will not publish a premium
+              percentage. Those village differences matter for buyers evaluating fair value and
+              sellers setting a list price.
             </p>
           </div>
         </div>

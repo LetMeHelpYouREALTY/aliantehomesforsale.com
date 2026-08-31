@@ -104,13 +104,11 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              Shopping and services are equally convenient, with major grocery stores, pharmacies,
-              banks, and restaurants all within easy reach. The I-215 Beltway connects Aliante to
-              Harry Reid International Airport, Strip entertainment for visitors, and services
-              throughout the Las Vegas valley. This combination of community self-sufficiency and
-              convenient access to broader valley resources creates an ideal balance for active
-              adults seeking independence while ensuring services are accessible as needs change
-              with aging.
+              Shopping and services sit along Aliante Parkway and nearby North Las Vegas corridors:
+              grocery stores, pharmacies, banks, and restaurants. Confirm which locations serve the
+              street you will actually buy. The I-215 Beltway connects Aliante to Harry Reid
+              International Airport and the rest of the valley — confirm drive time from that
+              address.
             </p>
           </div>
         </div>
@@ -119,7 +117,7 @@ export default function SunCityContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            The Financial and Lifestyle Value Proposition
+            HOA dues, occupancy rules, and live comps
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
