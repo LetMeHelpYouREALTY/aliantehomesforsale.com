@@ -17,13 +17,9 @@ export default function SearchPageContent() {
           </p>
 
           <p className="leading-relaxed">
-            The search interface allows you to filter properties by virtually any criteria – price
-            range, square footage, number of bedrooms and bathrooms, lot size, property age,
-            community amenities, specific neighborhoods, and dozens of other features. You can save
-            your favorite properties, set up automated email alerts when new homes matching your
-            criteria hit the market, and share listings with others helping with your search. This
-            combination of features keeps you informed so you can act when the right property
-            becomes available.
+            The search interface lets you filter live listings by price, beds, baths, square
+            footage, and village. Saved searches and email alerts depend on the RealScout account
+            you create — confirm what that widget actually offers before you rely on a notification.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -38,12 +34,9 @@ export default function SearchPageContent() {
           </p>
 
           <p className="leading-relaxed">
-            Property history data shows previous sale prices and dates, days on market for current
-            listing, and any price reductions that have occurred. This information helps you assess
-            seller motivation and identify potential negotiating opportunities. Properties that have
-            been listed for extended periods or have undergone multiple price reductions often
-            present better deals than fresh listings, though you must also evaluate why the property
-            hasn't sold to ensure there aren't underlying issues affecting marketability.
+            Property history, days on market, and price changes appear when the listing agent
+            entered them. Use that data as a starting point, then confirm status on live MLS. I will
+            not treat a long DOM or a price cut as a guaranteed bargain.
           </p>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function AboutExpertise() {
     },
     {
       icon: '🏘️',
-      title: 'Village matching: Club Aliante, Prominence, Paseos, Sun City',
+      title: 'Village matching: Club Aliante, Prominence, Paseos, Desert Willows, Sun City',
       description:
         'I tour the actual Aliante villages with you. Ardiente (89081) is not inside this master plan; I will say so before you write an offer.',
     },
@@ -48,6 +48,18 @@ export default function AboutExpertise() {
       title: 'Buyer and seller advocacy in Aliante',
       description:
         'Purchase or listing, I am your agent at 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
+    },
+    {
+      icon: '⛳',
+      title: '55+ realtor for Sun City Aliante',
+      description:
+        'Del Webb 55+ inside ZIP 89084. Ardiente is a different community in 89081 — I will tell you which address is which.',
+    },
+    {
+      icon: '🔑',
+      title: 'Rental-property analysis in ZIP 89084',
+      description:
+        'I sell the home and run buy-and-hold math from live comps. I do not manage leases or HOAs.',
     },
   ];
 
