@@ -152,13 +152,9 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              Whether you're an avid golfer seeking the ultimate golf lifestyle or simply someone
-              who appreciates beautiful views and resort-style living, Aliante's golf course
-              properties offer exceptional value and lifestyle benefits. Contact me today to
-              schedule private showings of currently available golf course homes and discuss which
-              locations best match your priorities and budget. With my expertise and knowledge of
-              every golf course property in the area, I'll help you find your perfect golf course
-              home.
+              Fairway lots and interior lots with course views both come up on live MLS. Contact me
+              to schedule showings and confirm lot position, HOA rules, and list price before you
+              offer. I represent you on the purchase.
             </p>
           </div>
         </div>

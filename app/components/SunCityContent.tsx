@@ -14,18 +14,17 @@ export default function SunCityContent() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
               Sun City Aliante is an active adult 55+ community in North Las Vegas built by Del
-              Webb, offering resort-style living with world-class amenities, social engagement, and
-              maintenance-free homes. It represents the pinnacle of 55+ living in the area, with
-              residents focusing on enjoying retirement rather than home upkeep. Developed by{' '}
+              Webb. Amenities include a recreation campus, clubs, and low-maintenance floor plans —
+              confirm current inventory on live MLS. It sits inside ZIP 89084 — not Ardiente
+              (89081). Developed by{' '}
               <Link
                 href="/builders/del-webb"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Del Webb
               </Link>
-              , the nation&apos;s premier builder of active adult communities, Sun City Aliante is a
-              Del Webb village of about 2,000 homes inside the larger Aliante master plan. It
-              includes multiple{' '}
+              , Sun City Aliante is a Del Webb 55+ village inside the larger Aliante master plan. It
+              includes{' '}
               <Link
                 href="/neighborhoods"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -75,9 +74,8 @@ export default function SunCityContent() {
               accommodate furniture building and home improvement projects. Computer labs offer
               technology training and internet access. Dance clubs, book clubs, investment clubs,
               travel clubs, and dozens of other organizations create opportunities for social
-              connection and continued learning throughout retirement. This comprehensive amenity
-              package is rare even among 55+ communities and represents exceptional value for the
-              monthly HOA fees residents pay.
+              connection and continued learning. Confirm current clubs, fees, and occupancy rules
+              with the HOA before you offer.
             </p>
           </div>
         </div>
