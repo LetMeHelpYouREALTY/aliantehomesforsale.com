@@ -48,7 +48,7 @@ export default function WhyNewConstruction() {
       icon: '⚡',
       title: 'Energy Efficiency',
       description:
-        'Latest energy codes mean lower utility bills. Smart home technology, efficient HVAC, LED lighting, and solar-ready.',
+        'Newer homes are built to the energy code in effect at permit. Compare utility estimates on that plan — I will not publish a savings figure.',
     },
     {
       icon: '🎯',

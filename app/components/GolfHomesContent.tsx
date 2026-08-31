@@ -58,13 +58,9 @@ export default function GolfHomesContent() {
             <p className="leading-relaxed">
               Beyond golf, Club Aliante includes fitness rooms, swimming pools, tennis and
               pickleball courts, and clubhouse dining. Confirm current amenity hours and fees with
-              the association. Many golf course homeowners are non-golfers who simply appreciate the
-              open space views, mature landscaping, and resort-like setting these properties
-              provide. The golf course itself acts as a permanent green belt that ensures your view
-              will never be obstructed by future development, providing both aesthetic appeal and
-              property value protection. Sunset views from golf course patios are particularly
-              spectacular, with the combination of mountain backdrops and manicured fairways
-              creating postcard-worthy scenes year-round.
+              the association. Some owners on fairway lots are not golfers — they buy the open space
+              and the view. The course is a long-term neighbor, not a guaranteed value premium.
+              Confirm live comps for that lot.
             </p>
           </div>
         </div>
@@ -73,7 +69,7 @@ export default function GolfHomesContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Investment Value and Resale Considerations
+            Comps, buyer pool, and resale on fairway lots
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -85,13 +81,9 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              From a resale perspective, golf course properties appeal to a more selective but
-              highly motivated buyer pool. While you may receive fewer showings compared to non-golf
-              properties, the buyers who do tour are typically serious prospects who specifically
-              seek golf course living and are willing to pay premium prices for the right property.
-              Marketing golf course homes requires specialized expertise – professional photography
-              that captures views, timing listings to coincide with peak golf season buyer activity,
-              and targeting marketing to golf enthusiasts beyond traditional real estate channels.
+              From a resale perspective, fairway lots draw a smaller buyer pool than interior
+              streets. Confirm live comps — I will not claim a golf premium or that every showing is
+              a serious offer. Marketing still depends on photography, list price, and the week.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -109,11 +101,10 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              Early morning golfers beginning play at dawn during summer months may create noise
-              that some homeowners find disruptive. The course has defined quiet hours (typically
-              sunset to sunrise), unlike some commercial uses that run late. Confirm tee-time hours
-              and errant-ball history for the lot before you offer. Views, HOA rules, and live comps
-              still decide value — I will not publish a satisfaction rate.
+              Early morning play can be audible from some lots. Confirm tee-time hours and
+              errant-ball history for the lot before you offer. Views, HOA rules, and live comps
+              still decide value — I will not publish a satisfaction rate or a quiet-hours schedule
+              I have not verified with the club.
             </p>
           </div>
         </div>

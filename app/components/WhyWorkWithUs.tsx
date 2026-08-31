@@ -43,7 +43,7 @@ export default function WhyWorkWithUs() {
       icon: '🔍',
       title: 'Quality Control & Inspections',
       description:
-        'Pre-drywall and pre-close inspections at no additional cost. We catch issues before they become problems and ensure your builder meets quality standards.',
+        'I attend pre-drywall and pre-close walkthroughs with you. Third-party inspections are a separate cost you confirm with the inspector.',
     },
     {
       icon: '📋',
