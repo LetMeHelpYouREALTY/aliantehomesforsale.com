@@ -90,6 +90,23 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/sitemap.xsl',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/xsl; charset=utf-8',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, s-maxage=86400',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
+        ],
+      },
+      {
         source: '/robots.txt',
         headers: [
           {
@@ -159,6 +176,22 @@ const nextConfig: NextConfig = {
       {
         source: '/neighborhoods/sun-city/',
         destination: '/sun-city-aliante',
+        permanent: true,
+      },
+      // One canonical sitemap. Child/index files duplicated the same URLs.
+      {
+        source: '/sitemap-index.xml',
+        destination: '/sitemap.xml',
+        permanent: true,
+      },
+      {
+        source: '/sitemap-builders.xml',
+        destination: '/sitemap.xml',
+        permanent: true,
+      },
+      {
+        source: '/sitemap-neighborhoods.xml',
+        destination: '/sitemap.xml',
         permanent: true,
       },
     ];
