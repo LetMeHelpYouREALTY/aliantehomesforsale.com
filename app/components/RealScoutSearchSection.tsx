@@ -31,7 +31,7 @@ export default function RealScoutSearchSection() {
             className="inline-flex items-center gap-2 text-xl font-bold hover:underline"
             style={{ color: '#2c5aa0' }}
           >
-            📞 (702) 707-7273
+            <span aria-hidden="true">📞</span> (702) 707-7273
           </a>
         </div>
       </div>

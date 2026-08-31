@@ -120,13 +120,31 @@ export default function EnhancedNavigation() {
                       href="/builders/tri-pointe"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
-                      Tri Pointe (Luxury)
+                      Tri Pointe
                     </Link>
                     <Link
                       href="/builders/del-webb"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       Del Webb (55+)
+                    </Link>
+                    <Link
+                      href="/builders/toll-brothers"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Toll Brothers
+                    </Link>
+                    <Link
+                      href="/builders/richmond-american"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Richmond American
+                    </Link>
+                    <Link
+                      href="/builders"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      All Builders
                     </Link>
                     <Link
                       href="/builders/incentives"
@@ -208,6 +226,12 @@ export default function EnhancedNavigation() {
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       Sun City (55+)
+                    </Link>
+                    <Link
+                      href="/neighborhoods/tule-springs"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Villages at Tule Springs
                     </Link>
                     <Link
                       href="/gated-communities"
@@ -430,6 +454,13 @@ export default function EnhancedNavigation() {
                   Neighborhoods
                 </Link>
                 <Link
+                  href="/neighborhoods/prominence"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  The Prominence
+                </Link>
+                <Link
                   href="/neighborhoods/desert-willows"
                   className="block py-2 px-8 text-sm text-gray-600"
                   onClick={() => setIsMenuOpen(false)}
@@ -456,6 +487,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Sun City Aliante
+                </Link>
+                <Link
+                  href="/neighborhoods/tule-springs"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Villages at Tule Springs
                 </Link>
                 <Link
                   href="/gated-communities"

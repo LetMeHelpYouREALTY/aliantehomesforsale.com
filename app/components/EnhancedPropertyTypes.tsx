@@ -73,7 +73,7 @@ export default function EnhancedPropertyTypes() {
     {
       title: 'Luxury Homes',
       features: [
-        'Premium finishes — confirm live MLS',
+        'Confirm finishes on live MLS',
         'Updated kitchens and baths where listed',
         'Confirm smart-home items on the listing',
         'Pools and outdoor living where present',

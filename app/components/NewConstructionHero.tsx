@@ -15,9 +15,10 @@ const BUILDERS = [
   { name: 'All builders', href: '/builders' },
   { name: 'Lennar', href: '/builders/lennar' },
   { name: 'D.R. Horton', href: '/builders/dr-horton' },
+  { name: 'Del Webb 55+', href: '/builders/del-webb' },
   { name: 'Toll Brothers', href: '/builders/toll-brothers' },
   { name: 'Tri Pointe', href: '/builders/tri-pointe' },
-  { name: 'Del Webb 55+', href: '/builders/del-webb' },
+  { name: 'Richmond American', href: '/builders/richmond-american' },
 ] as const;
 
 export default function NewConstructionHero({
