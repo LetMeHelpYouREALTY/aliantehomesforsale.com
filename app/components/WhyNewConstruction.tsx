@@ -63,7 +63,7 @@ export default function WhyNewConstruction() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Why use a buyer’s agent on Aliante new construction?
+            Why use a buyer’s agent on new construction near Aliante?
           </h2>
         </div>
 

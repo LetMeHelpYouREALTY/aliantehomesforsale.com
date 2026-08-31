@@ -12,7 +12,7 @@ export default function HomesCTA() {
       }}
     >
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
           style={{

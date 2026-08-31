@@ -28,7 +28,10 @@ export default function TuleSprings() {
         <ContextualLinks variant="builders" />
       </div>
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Compare Tule Springs with Aliante resale"
+        subheading="East of ZIP 89084. Confirm live inventory before you tour."
+      />
     </main>
   );
 }

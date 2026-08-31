@@ -3,7 +3,15 @@
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
 
-export default function NeighborhoodsCTA() {
+type NeighborhoodsCTAProps = {
+  heading?: string;
+  subheading?: string;
+};
+
+export default function NeighborhoodsCTA({
+  heading = 'Tour Aliante neighborhoods with a 89084 realtor',
+  subheading = 'Get expert guidance on gated vs open-access villages, golf-course lots, and Sun City Aliante 55+',
+}: NeighborhoodsCTAProps) {
   return (
     <section
       className="py-16 px-4 relative overflow-hidden"
@@ -11,7 +19,7 @@ export default function NeighborhoodsCTA() {
         background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
       }}
     >
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
           style={{
@@ -23,13 +31,8 @@ export default function NeighborhoodsCTA() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Tour Aliante neighborhoods with a 89084 realtor
-        </h2>
-        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance on gated vs open-access villages, golf-course lots, and Sun City
-          Aliante 55+
-        </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">{heading}</h2>
+        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">{subheading}</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <CalendlyPopupButton

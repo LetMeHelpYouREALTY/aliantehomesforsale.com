@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import BuilderDetailContent from '../../components/BuilderDetailContent';
-import ConstructionProcess from '../../components/ConstructionProcess';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
+import RichmondAmericanContent from '../../components/RichmondAmericanContent';
 import TopBuilders from '../../components/TopBuilders';
 
 export const metadata: Metadata = {
@@ -23,9 +22,8 @@ export default function RichmondAmerican() {
         filterHeading="Richmond American near Aliante"
         image={pageHero('/builders/richmond-american')}
       />
+      <RichmondAmericanContent />
       <TopBuilders />
-      <ConstructionProcess />
-      <BuilderDetailContent />
       <NewConstructionCTA />
     </main>
   );

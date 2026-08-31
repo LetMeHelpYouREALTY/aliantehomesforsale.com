@@ -240,6 +240,12 @@ export default function EnhancedNavigation() {
                       Gated Communities
                     </Link>
                     <Link
+                      href="/golf-homes"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Golf Course Homes
+                    </Link>
+                    <Link
                       href="/neighborhoods/compare"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors font-semibold"
                     >
@@ -550,6 +556,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Golf Course Homes
+                </Link>
+                <Link
+                  href="/neighborhoods/compare"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Compare Neighborhoods
                 </Link>
                 <Link
                   href="/market-report"

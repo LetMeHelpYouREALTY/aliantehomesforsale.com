@@ -50,6 +50,12 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
           >
             Gated Communities →
           </Link>
+          <Link
+            href="/neighborhoods/tule-springs"
+            className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+          >
+            Villages at Tule Springs →
+          </Link>
         </div>
       </div>
     ),
@@ -75,7 +81,7 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
             href="/builders/tri-pointe"
             className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
           >
-            Tri Pointe Luxury →
+            Tri Pointe →
           </Link>
           <Link
             href="/builders/del-webb"
@@ -88,6 +94,12 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
             className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
           >
             Toll Brothers →
+          </Link>
+          <Link
+            href="/builders/richmond-american"
+            className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+          >
+            Richmond American →
           </Link>
           <Link
             href="/builders/incentives"
