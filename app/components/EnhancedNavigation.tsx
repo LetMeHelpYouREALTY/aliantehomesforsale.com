@@ -109,6 +109,12 @@ export default function EnhancedNavigation() {
                       Del Webb (55+)
                     </Link>
                     <Link
+                      href="/builders/toll-brothers"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Toll Brothers (Valley luxury)
+                    </Link>
+                    <Link
                       href="/builders/incentives"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors font-semibold"
                     >
@@ -345,6 +351,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   All Builders
+                </Link>
+                <Link
+                  href="/builders/toll-brothers"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Toll Brothers
                 </Link>
                 <Link
                   href="/builders/incentives"
