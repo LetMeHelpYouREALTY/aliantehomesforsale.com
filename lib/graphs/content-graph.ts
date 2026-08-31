@@ -17,11 +17,28 @@ export function buildContentGraph() {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.speakable'],
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: siteConfig.searchUrlTemplate,
-      'query-input': 'required name=search_term_string',
-    },
+    potentialAction: [
+      {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: siteConfig.searchUrlTemplate,
+        },
+        'query-input': 'required name=search_term_string',
+      },
+      {
+        '@type': 'ScheduleAction',
+        name: siteConfig.calendly.events.consultation.heading,
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: siteConfig.calendly.events.consultation.url,
+          actionPlatform: [
+            'https://schema.org/DesktopWebPlatform',
+            'https://schema.org/MobileWebPlatform',
+          ],
+        },
+      },
+    ],
   };
 
   const hubPages = siteConfig.hubPages.map((hub) => ({
@@ -31,8 +48,27 @@ export function buildContentGraph() {
     url: `${siteConfig.siteUrl}${hub.path}`,
     isPartOf: { '@id': graphIds.website },
     about: { '@id': graphIds.aliantePlace },
-    primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.speakable'],
+    },
     inLanguage: 'en-US',
+    potentialAction: {
+      '@type': 'ScheduleAction',
+      name: siteConfig.calendly.events.consultation.heading,
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: siteConfig.calendly.events.consultation.url,
+        actionPlatform: [
+          'https://schema.org/DesktopWebPlatform',
+          'https://schema.org/MobileWebPlatform',
+        ],
+      },
+    },
   }));
 
   const neighborhoodList = {

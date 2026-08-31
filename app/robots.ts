@@ -5,6 +5,9 @@ import { siteConfig } from '../lib/site-config';
  * robots.txt for Google / crawlers.
  * Do NOT disallow /_next/ — Google needs /_next/static and /_next/image to render pages.
  * @see https://developers.google.com/search/docs/crawling-indexing/robots/intro
+ * Host is the canonical www origin. Google Search Console uses this plus 301s
+ * (apex → www) rather than a separate “preferred domain” setting.
+ * @see https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
  */
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = siteConfig.siteUrl;

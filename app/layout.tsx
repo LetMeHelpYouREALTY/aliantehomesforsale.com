@@ -4,6 +4,8 @@ import Script from 'next/script';
 import { siteConfig } from '../lib/site-config';
 import './globals.css';
 import Breadcrumbs from './components/Breadcrumbs';
+import CalendlyPageSection from './components/CalendlyPageSection';
+import CalendlyPopupWidget from './components/CalendlyPopupWidget';
 import EnhancedFooter from './components/EnhancedFooter';
 import EnhancedNavigation from './components/EnhancedNavigation';
 import EntityGraphSchema from './components/EntityGraphSchema';
@@ -11,6 +13,7 @@ import GoogleAnalytics from './components/GoogleAnalytics';
 import PerformanceMonitor from './components/PerformanceMonitor';
 import RealScoutOfficeListingsSection from './components/RealScoutOfficeListingsSection';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
+import RoutePageSchema from './components/RoutePageSchema';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,6 +46,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
   openGraph: {
     title: siteConfig.defaultTitle,
     description: siteConfig.defaultDescription,
@@ -52,10 +62,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: 'Aliante North Las Vegas Real Estate & Homes For Sale',
+        alt: `${siteConfig.agentName} | Aliante North Las Vegas Real Estate & Homes For Sale`,
       },
     ],
   },
@@ -63,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.defaultTitle,
     description: siteConfig.defaultDescription,
-    images: ['/og-image.jpg'],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
@@ -96,10 +106,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         ) : null}
+        <link rel="stylesheet" href={siteConfig.calendly.styleSrc} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Skip link: WCAG 2.2 / keyboard users (focus visible) */}
@@ -115,9 +125,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
           type="module"
         />
+        {/* Calendly: load once for badge + popup buttons */}
+        <Script src={siteConfig.calendly.scriptSrc} strategy="lazyOnload" />
 
-        {/* Knowledge + Content + Agent graphs (SEO / AEO / GEO) */}
+        {/* Knowledge + Content + Agent graphs (SEO). Per Google 2026, AEO/GEO is still SEO. */}
         <EntityGraphSchema />
+        <RoutePageSchema />
 
         <EnhancedNavigation />
         <Breadcrumbs />
@@ -125,6 +138,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div id="main-content" tabIndex={-1}>
           {children}
         </div>
+
+        {/* Matching Calendly event below content on pages without an inline scheduler */}
+        <CalendlyPageSection />
 
         {/* RealScout search (lead gen): below hero on home (in page); below content on other pages */}
         <RealScoutSearchSectionLayout />
@@ -136,6 +152,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Enhanced Footer with SEO-optimized structure */}
         <EnhancedFooter />
+        <CalendlyPopupWidget />
       </body>
     </html>
   );

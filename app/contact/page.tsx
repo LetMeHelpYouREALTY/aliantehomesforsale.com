@@ -28,7 +28,7 @@ export default function Contact() {
       {/* Contact Form Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container">
-          <EnhancedContactForm />
+          <EnhancedContactForm event="consultation" />
         </div>
       </section>
 

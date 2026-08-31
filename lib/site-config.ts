@@ -10,6 +10,10 @@ export const siteConfig = {
   defaultDescription:
     'Browse Aliante homes for sale in North Las Vegas, NV 89084. MLS listings updated about every 15 minutes. Gated communities, Sun City Aliante 55+, new construction. Call (702) 707-7273.',
   agentName: 'Dr. Jan Duffy',
+  /** Official circular portrait used for favicon, nav, footer, OG, and agent sections. */
+  agentImage: '/images/dr-jan-duffy.png',
+  logo: '/logo.png',
+  ogImage: '/og-image.jpg',
   agentLicense: 'S.0197614.LLC',
   brokerage: 'Berkshire Hathaway HomeServices Nevada Properties',
   foundedYear: 2018,
@@ -130,7 +134,45 @@ export const siteConfig = {
     'D.R. Horton Tule Springs',
   ],
   /** Verified / brand profiles only — empty slots omitted from schema */
-  sameAs: ['https://www.aliantehomesforsale.com'] as string[],
+  sameAs: ['https://www.aliantehomesforsale.com', 'https://calendly.com/drjanduffy'] as string[],
+  /**
+   * Live Calendly event types (verified 2026-08-30).
+   * Used for inline embeds, the sitewide badge, and ScheduleAction schema.
+   */
+  calendly: {
+    profile: 'https://calendly.com/drjanduffy',
+    scriptSrc: 'https://assets.calendly.com/assets/external/widget.js',
+    styleSrc: 'https://assets.calendly.com/assets/external/widget.css',
+    events: {
+      consultation: {
+        url: 'https://calendly.com/drjanduffy/15min',
+        label: '15-minute consultation',
+        heading: 'Schedule a 15-minute conversation',
+        description:
+          'Pick a time to talk Aliante homes, new construction, or your next move with Dr. Jan Duffy.',
+      },
+      appointment: {
+        url: 'https://calendly.com/drjanduffy/appointment',
+        label: 'Appointment',
+        heading: 'Book an appointment with Dr. Jan Duffy',
+        description:
+          'Reserve a working session for a home valuation, builder strategy, or listing plan.',
+      },
+      showing: {
+        url: 'https://calendly.com/drjanduffy/showing',
+        label: 'Private showing',
+        heading: 'Schedule a private showing',
+        description: 'Tour Aliante listings in person — no signup required.',
+      },
+      tour: {
+        url: 'https://calendly.com/drjanduffy/open-house-tour',
+        label: 'Neighborhood tour',
+        heading: 'Schedule a neighborhood or open-house tour',
+        description:
+          'Walk Aliante communities, amenities, and current open houses with a local expert.',
+      },
+    },
+  },
   phone: '(702) 707-7273',
   phoneTel: '+17027077273',
   email: 'DrDuffy@AlianteHomesForSale.com',

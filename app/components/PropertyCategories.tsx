@@ -1,23 +1,36 @@
 'use client';
 
+import { imagePaths } from '../../lib/site-images';
+import CdnImage from './CdnImage';
+
 interface CategoryCardProps {
   icon: string;
   title: string;
   count: string;
   description: string;
   href: string;
-  gradient: string;
+  image: string;
 }
 
-function CategoryCard({ icon, title, count, description, href, gradient }: CategoryCardProps) {
+function CategoryCard({ icon, title, count, description, href, image }: CategoryCardProps) {
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-transparent hover:border-blue-500">
-      {/* Gradient Header */}
-      <div
-        className="h-32 flex items-center justify-center relative"
-        style={{ background: gradient }}
-      >
-        <div className="text-6xl">{icon}</div>
+      <div className="relative h-32 overflow-hidden">
+        <CdnImage
+          src={image}
+          alt={`${title} in Aliante, North Las Vegas`}
+          fill
+          sizes="(max-width: 768px) 100vw, 25vw"
+          className="object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-[#0A2540]/35" />
+        <div
+          className="absolute inset-0 flex items-center justify-center text-5xl drop-shadow"
+          aria-hidden
+        >
+          {icon}
+        </div>
         <div
           className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full font-bold text-sm"
           style={{ color: '#2c5aa0' }}
@@ -56,16 +69,15 @@ export default function PropertyCategories() {
       description:
         'Brand new homes from top builders. Customize to your taste with builder incentives up to $25K.',
       href: '/new-construction',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      image: imagePaths.heroes.newConstruction,
     },
     {
       icon: '🏰',
       title: 'Gated Communities',
       count: '86',
-      description:
-        '24/7 security, resort amenities, well-maintained landscapes. Premium living with peace of mind.',
+      description: 'Gated entry, resort amenities, and maintained common areas in Aliante.',
       href: '/gated-communities',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      image: imagePaths.communities.paseos,
     },
     {
       icon: '⛳',
@@ -74,7 +86,7 @@ export default function PropertyCategories() {
       description:
         'Stunning fairway and mountain views. Club Aliante Golf Course access and premium lifestyle.',
       href: '/golf-homes',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+      image: imagePaths.heroes.golfEstate,
     },
     {
       icon: '🌅',
@@ -83,7 +95,7 @@ export default function PropertyCategories() {
       description:
         'Active adult community with world-class amenities. Resort-style living designed for 55+.',
       href: '/neighborhoods/sun-city',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+      image: imagePaths.communities.sunCity,
     },
   ];
 

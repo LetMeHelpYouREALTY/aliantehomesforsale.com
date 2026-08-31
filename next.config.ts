@@ -51,15 +51,20 @@ const nextConfig: NextConfig = {
     loader: 'default',
     // Modern format support
     formats: ['image/webp', 'image/avif'],
+    qualities: [75, 80],
     // External domains for images and other services
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com',
+        hostname: 'images.aliantehomesforsale.com',
       },
       {
         protocol: 'https',
-        hostname: 'cdn.pixabay.com',
+        hostname: 'imagedelivery.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
       },
       {
         protocol: 'https',
@@ -110,7 +115,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'X-Frame-Options',
-            value: 'DENY',
+            value: 'SAMEORIGIN',
           },
           {
             key: 'X-XSS-Protection',

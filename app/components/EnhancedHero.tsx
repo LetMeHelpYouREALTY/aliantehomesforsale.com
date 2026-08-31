@@ -1,22 +1,11 @@
 'use client';
 
-import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
+import { heroImages } from '../../lib/site-images';
+import AgentPhoto from './AgentPhoto';
+import CdnImage from './CdnImage';
 
-const SLIDES = [
-  {
-    src: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&h=1080&fit=crop&q=80',
-    alt: 'Aliante luxury homes and North Las Vegas real estate',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop&q=80',
-    alt: 'Modern home exterior in Aliante',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop&q=80',
-    alt: 'North Las Vegas community and homes',
-  },
-] as const;
+const SLIDES = heroImages.home;
 
 const INTERVAL_MS = 6000;
 
@@ -36,7 +25,7 @@ export default function EnhancedHero() {
 
   return (
     <section
-      className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden"
+      className="relative min-h-[90vh] flex items-center justify-center px-4 py-16 overflow-hidden bg-[#0A2540]"
       aria-labelledby="hero-heading"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -50,7 +39,7 @@ export default function EnhancedHero() {
             style={{ opacity: i === index ? 1 : 0 }}
             aria-hidden={i !== index}
           >
-            <Image
+            <CdnImage
               src={slide.src}
               alt={i === index ? slide.alt : ''}
               fill
@@ -62,7 +51,7 @@ export default function EnhancedHero() {
           </div>
         ))}
         <div
-          className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-indigo-900/90"
+          className="absolute inset-0 bg-gradient-to-r from-[#0A2540]/55 via-[#0A2540]/40 to-[#1a365d]/50"
           aria-hidden
         />
       </div>
@@ -80,6 +69,7 @@ export default function EnhancedHero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
+        <AgentPhoto size={180} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" priority />
         <h1
           id="hero-heading"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
