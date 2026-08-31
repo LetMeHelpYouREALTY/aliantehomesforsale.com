@@ -125,7 +125,7 @@ export default function StructuredData({
         '@type': 'WebPage',
         name: 'Aliante Neighborhoods Guide',
         description:
-          'Guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos, and Sun City Aliante in North Las Vegas 89084.',
+          'Guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos, Sun City Aliante, and nearby Villages at Tule Springs in North Las Vegas 89084.',
         url: 'https://www.aliantehomesforsale.com/neighborhoods',
         mainEntity: {
           '@type': 'ItemList',

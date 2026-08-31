@@ -20,8 +20,8 @@ export default function OfficeLocation() {
             Visit Our Office &amp; Get Directions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Plan your visit with {agentName} at Aliante Corporate Center in North Las Vegas. Free
-            parking on site.
+            Plan your visit with {agentName} at Aliante Corporate Center in North Las Vegas. Confirm
+            parking when you arrive.
           </p>
         </div>
 

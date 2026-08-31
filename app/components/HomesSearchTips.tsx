@@ -30,13 +30,13 @@ export default function HomesSearchTips() {
       icon: '💰',
       title: 'Get Pre-Approved First',
       description:
-        'Know your budget before falling in love with a home. We can connect you with trusted lenders.',
+        'Know your budget before you write. I can introduce lenders who actually close Aliante files.',
     },
     {
       icon: '🏘️',
       title: 'Visit Multiple Neighborhoods',
       description:
-        'Each Aliante community has unique character. Tour several to find your perfect fit.',
+        'Each Aliante village has different access, HOA rules, and lot types. Tour more than one before you offer.',
     },
     {
       icon: '⏱️',
@@ -48,7 +48,7 @@ export default function HomesSearchTips() {
       icon: '🤝',
       title: 'Work with a Local Expert',
       description:
-        'We know every street in Aliante. Our expertise helps you avoid costly mistakes.',
+        'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',
     },
     {
       icon: '📊',
@@ -66,7 +66,7 @@ export default function HomesSearchTips() {
             Home Search Tips
           </h2>
           <p className="text-xl text-gray-600">
-            Expert advice to help you find the perfect Aliante home faster
+            Expert advice to help you search Aliante MLS and tour 89084 villages
           </p>
         </div>
 

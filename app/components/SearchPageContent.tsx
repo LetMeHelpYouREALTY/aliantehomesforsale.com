@@ -12,10 +12,8 @@ export default function SearchPageContent() {
           <p className="leading-relaxed">
             Our MLS search connects to the Las Vegas MLS feed that agents use, with listings that
             refresh about every 15 minutes. Inventory counts change throughout the day — search live
-            rather than relying on a stale total. Unlike national real estate websites that often
-            display outdated or inaccurate data, our search connects directly to the Las Vegas MLS
-            database that all real estate professionals use, giving you the same information
-            advantage that agents have when searching for properties.
+            rather than relying on a stale total. Confirm the address, list price, and status on the
+            widget before you treat any card as current.
           </p>
 
           <p className="leading-relaxed">
@@ -33,11 +31,10 @@ export default function SearchPageContent() {
           </h3>
 
           <p className="leading-relaxed">
-            Each property listing includes comprehensive details entered by the listing agent,
-            including full property descriptions, feature lists, room dimensions, recent upgrades,
-            HOA fees, tax information, and disclosure documents. High-resolution photos showcase
-            each home's interior and exterior, while many listings now include 3D virtual tours that
-            allow you to walk through properties remotely before scheduling in-person showings.
+            Each property listing includes details entered by the listing agent: descriptions,
+            features, room counts, HOA remarks, taxes, and disclosures when provided. Photos and
+            virtual tours vary by listing — confirm what is attached to that MLS number before you
+            skip an in-person showing.
           </p>
 
           <p className="leading-relaxed">

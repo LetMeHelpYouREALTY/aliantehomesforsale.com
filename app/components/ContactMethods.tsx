@@ -30,7 +30,7 @@ function ContactMethodCard({ icon, title, primary, details, href, featured }: Co
   );
 
   const baseClasses = `bg-white rounded-xl p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-    featured ? 'border-4 transform scale-105' : 'border-2'
+    featured ? 'border-4' : 'border-2'
   }`;
 
   const borderColor = featured ? '#2c5aa0' : '#e5e7eb';

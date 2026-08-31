@@ -124,7 +124,7 @@ export default function EnhancedFooter() {
                 What&apos;s Nearby
               </Link>
               <Link
-                href="#schedule"
+                href="/contact#schedule"
                 className="inline-block px-4 py-2 rounded-lg font-semibold text-sm border border-white/40 hover:bg-white/10 transition-colors"
               >
                 Schedule time

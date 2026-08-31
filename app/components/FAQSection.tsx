@@ -10,6 +10,13 @@ interface FAQSectionProps {
   faqs: FAQItem[];
 }
 
+function plainText(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export default function FAQSection({ title, faqs }: FAQSectionProps) {
   // Generate FAQ Schema for Google rich results
   const faqSchema = {
@@ -20,7 +27,7 @@ export default function FAQSection({ title, faqs }: FAQSectionProps) {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
+        text: plainText(faq.answer),
       },
     })),
   };
