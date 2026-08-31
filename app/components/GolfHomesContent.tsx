@@ -37,11 +37,10 @@ export default function GolfHomesContent() {
             <p className="leading-relaxed">
               As a golf course property specialist, I understand the unique considerations that make
               these homes special. Not all golf course lots are created equal – corner lots with
-              views of multiple holes command premiums, while homes on fairways versus greens offer
-              different noise and foot traffic profiles. Lots adjacent to par-5s experience more
-              errant ball risk but offer dramatic long-range views, while homes along par-3s enjoy
-              quieter settings with less play. I'll help you identify the perfect golf course
-              location that matches your lifestyle priorities and budget.
+              views of multiple holes often price higher, while homes on fairways versus greens
+              offer different noise and foot-traffic profiles. Lots next to par-5s see more
+              errant-ball risk and longer sightlines; par-3 frontage is shorter. I compare lot
+              position, HOA rules, and live comps for the address you will actually buy.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -50,12 +49,10 @@ export default function GolfHomesContent() {
 
             <p className="leading-relaxed">
               Owning a home on the Club Aliante golf course sits next to the city-owned Aliante Golf
-              Club, though formal club membership is separate from home ownership. Club members
-              enjoy preferred tee times, clubhouse dining privileges, practice facility access, and
-              social events throughout the year. The club operates both as a public course available
-              for daily fee play and as a private club for members, creating a balanced atmosphere
-              that provides the benefits of membership without the exclusivity pressure of some
-              private clubs.
+              Club, though formal club membership is separate from home ownership. Confirm current
+              tee-time, dining, and practice-facility rules with Aliante Golf Club — I will not
+              publish member benefits that can change. The course also takes daily-fee play;
+              membership is optional.
             </p>
 
             <p className="leading-relaxed">
@@ -124,7 +121,7 @@ export default function GolfHomesContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Finding Your Perfect Golf Course Home
+            How I tour Aliante golf-course lots
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

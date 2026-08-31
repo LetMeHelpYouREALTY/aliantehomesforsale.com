@@ -12,7 +12,7 @@ export default function LocationSchema() {
     '@id': graphIds.aliantePlace,
     name: 'Aliante',
     description:
-      'Master-planned community in North Las Vegas, Nevada featuring gated communities, golf courses, and active adult 55+ living.',
+      'Master-planned community in North Las Vegas, Nevada featuring gated villages, Aliante Golf Club, and Sun City Aliante 55+ living.',
     url: `${siteConfig.siteUrl}/neighborhoods`,
     address: {
       '@type': 'PostalAddress',

@@ -24,13 +24,13 @@ export default function WhyNewConstruction() {
       icon: '🏗️',
       title: 'Never Been Lived In',
       description:
-        'Brand new home with latest building codes, modern design, and energy-efficient construction. No repairs or updates needed for years.',
+        'New inventory built to the codes in effect at permit. Confirm remaining warranties, punch-list items, and included features on that contract.',
     },
     {
       icon: '🎨',
-      title: 'Customize Your Dream Home',
+      title: 'Lot, plan, and finish choices',
       description:
-        'Choose your lot, floor plan, colors, finishes, and upgrades. Create the perfect home for your lifestyle and taste.',
+        'Where the builder still has unsold lots, you can often choose plan, elevation, and design-center options. Confirm what is still available on that phase.',
     },
     {
       icon: '💰',
@@ -40,9 +40,9 @@ export default function WhyNewConstruction() {
     },
     {
       icon: '✅',
-      title: 'Comprehensive Warranties',
+      title: 'Builder warranties',
       description:
-        '10-year structural warranty, builder warranties on all systems and components. Peace of mind for a decade.',
+        'Warranty length and coverage vary by builder and component. Read the warranty booklet for that community before you write — I will not publish a one-size term.',
     },
     {
       icon: '⚡',

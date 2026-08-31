@@ -128,21 +128,16 @@ export default function MarketReportContent() {
             </p>
 
             <p className="leading-relaxed">
-              Golf course properties represent a unique investment class, appealing to a more
-              selective buyer pool but commanding higher prices and showing strong value retention
-              during market downturns. The limited supply of golf course lots in Aliante ensures
-              that these properties maintain their premium pricing, though they may take slightly
-              longer to sell due to the smaller buyer pool. For investors seeking rental income,
-              single-family homes in non-gated communities provide the best balance of purchase
-              price, rental rates, and tenant appeal.
+              Golf-course lots appeal to a smaller buyer pool and can hold a premium when the view
+              is the point of the purchase. Supply of fairway lots in Aliante is finite. Confirm
+              live comps — days on market for golf lots can run longer than open-access streets. I
+              will not publish a downturn-retention rate or a rental “best village” ranking.
             </p>
 
             <p className="leading-relaxed">
-              Looking forward, the completion of nearby commercial development and the continued
-              expansion of employment centers in North Las Vegas position Aliante for continued
-              strong performance. The master-planned nature of the community ensures that future
-              development will enhance rather than detract from existing property values, making
-              current purchases in the area a sound long-term investment strategy.
+              Looking forward, walk remaining lots, HOA rules, and I-215 access for the address you
+              will actually buy. Master-planned amenities are facts you can tour. I will not treat
+              unfinished commercial projects or a past decade’s path as a forecast.
             </p>
           </div>
         </div>

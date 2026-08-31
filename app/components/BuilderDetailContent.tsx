@@ -47,13 +47,11 @@ export default function BuilderDetailContent() {
           </p>
 
           <p className="leading-relaxed">
-            My goal is to structure a deal that delivers maximum value while ensuring the home meets
-            your needs and timeline. Whether you're a first-time buyer navigating new construction
-            for the first time or an experienced homeowner seeking your next dream home, my
-            expertise and builder relationships will provide significant advantages throughout the
-            process. Contact me today to discuss your new construction goals and learn how I can
-            help you achieve them while saving money and avoiding the common pitfalls that
-            unrepresented buyers often encounter.
+            My goal is to structure a deal that matches the lot, the incentive sheet, and your
+            timeline. Whether you are writing your first builder contract or comparing a resale to a
+            spec home, I represent you — not the sales desk — on options, credits, and
+            walk-throughs. Contact me to review the current sheet for the community you will
+            actually tour.
           </p>
         </div>
       </div>

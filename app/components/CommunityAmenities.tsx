@@ -32,10 +32,10 @@ export default function CommunityAmenities() {
       title: 'Golf & Recreation',
       amenities: [
         'Aliante Golf Club (18-hole public course)',
-        'Pro shop and golf lessons',
-        'Tennis and pickleball courts',
-        'Swimming pools and spas',
-        'Fitness center and yoga studio',
+        'Pro shop — confirm lessons and hours with the club',
+        'Tennis and pickleball courts (confirm which village)',
+        'Community swimming pools',
+        'Fitness rooms at village recreation campuses',
       ],
     },
     {

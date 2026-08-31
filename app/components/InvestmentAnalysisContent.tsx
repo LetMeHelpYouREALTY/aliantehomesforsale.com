@@ -31,7 +31,7 @@ export default function InvestmentAnalysisContent() {
               >
                 market report
               </Link>{' '}
-              for detailed investment performance data.
+              for how to read live MLS widgets — not a table of returns.
             </p>
 
             <p className="leading-relaxed">

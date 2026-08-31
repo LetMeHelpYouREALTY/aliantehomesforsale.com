@@ -166,6 +166,7 @@ export const pageHeroByPath: Record<string, SiteImage> = {
   '/home-valuation': siteImages.homeValuation,
   '/mortgage-calculator': siteImages.mortgage,
   '/investment-analysis': siteImages.investment,
+  '/property-management': siteImages.contact,
   '/privacy-policy': siteImages.about,
   '/terms-of-service': siteImages.about,
   '/accessibility': siteImages.contact,

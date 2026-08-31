@@ -27,7 +27,7 @@ export default function BuilderIncentivesInfo({
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            Lennar, D.R. Horton, and Del Webb offers in ZIP 89084
+            Lennar and Del Webb in ZIP 89084; Horton nearby
           </h3>
 
           <p className="leading-relaxed">

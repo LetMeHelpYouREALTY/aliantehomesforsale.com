@@ -44,7 +44,7 @@ export default function MortgageCalculatorContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Current Interest Rate Environment
+              How rates change what you can pay
             </h3>
 
             <p className="leading-relaxed">
@@ -146,12 +146,10 @@ export default function MortgageCalculatorContent() {
 
             <p className="leading-relaxed">
               Getting pre-approved (not just pre-qualified) before beginning your home search is
-              absolutely essential in today's market. Pre-approval involves submitting full
-              documentation and receiving underwriter approval for a specific loan amount, making
-              your offers as strong as cash from a seller's perspective. This process typically
-              takes 2-3 business days and costs nothing – it's a free service that positions you to
-              act immediately when the right home appears. Contact me today to receive introductions
-              to my preferred lenders and begin the pre-approval process.
+              usually the strongest way to write. Pre-approval involves submitting full
+              documentation and receiving underwriter review for a loan amount. It is not the same
+              as cash. This process often takes a few business days — confirm cost and timing with
+              the lender. Contact me for introductions to lenders who actually close Aliante files.
             </p>
           </div>
         </div>

@@ -13,26 +13,23 @@ export default function SunCityContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Sun City Aliante is an active adult 55+ community in North Las Vegas built by Del
-              Webb. Amenities include a recreation campus, clubs, and low-maintenance floor plans —
-              confirm current inventory on live MLS. It sits inside ZIP 89084 — not Ardiente
-              (89081). Developed by{' '}
+              Sun City Aliante is a Del Webb 55+ village inside ZIP 89084 — not Ardiente (89081).
+              Amenities include a recreation campus, clubs, and low-maintenance floor plans. Confirm
+              current inventory on live MLS. Developed by{' '}
               <Link
                 href="/builders/del-webb"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Del Webb
               </Link>
-              , Sun City Aliante is a Del Webb 55+ village inside the larger Aliante master plan. It
-              includes{' '}
+              , it sits inside the larger Aliante master plan. Compare it with other{' '}
               <Link
                 href="/neighborhoods"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                neighborhoods
-              </Link>
-              , extensive recreational facilities, and a vibrant social scene that keeps residents
-              active and engaged throughout their retirement years. Explore current{' '}
+                Aliante neighborhoods
+              </Link>{' '}
+              or browse current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -43,14 +40,10 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              As a specialist in Sun City Aliante properties with extensive experience helping
-              active adults find their perfect retirement home, I understand the unique
-              considerations that 55+ buyers prioritize. Single-story floor plans for aging-in-place
-              comfort, proximity to specific amenities like golf or fitness centers, social club
-              access matching your interests, and neighborhoods within the broader community that
-              align with your desired activity level all factor into finding your ideal home.
-              Confirm live MLS inventory and list prices — I will not publish a stale count or
-              range.
+              I represent 55+ buyers on occupancy rules, HOA documents, and lot position.
+              Single-story plans, proximity to the recreation campus or Aliante Golf Club, and club
+              access still vary by address. Confirm live MLS inventory and list prices — I will not
+              publish a stale count or range.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -58,24 +51,18 @@ export default function SunCityContent() {
             </h3>
 
             <p className="leading-relaxed">
-              The Aliante Sun City community centers serve as the heart of social activity,
-              featuring fitness centers with state-of-the-art equipment and group exercise classes,
-              indoor and outdoor swimming pools and spas, tennis and pickleball courts, billiards
-              rooms, card game areas, and ballrooms for community events and entertainment. The
-              18-hole Aliante Golf Club (Gary Panks, city-owned and open to the public) runs through
-              the broader Aliante plan. Palm Valley is a different course in Sun City Summerlin — do
-              not confuse the two. Confirm current resident rates and tee-time rules with the club.
+              Sun City Aliante recreation campuses typically include fitness rooms, pools, tennis
+              and pickleball courts, and meeting rooms for clubs. Confirm current hours, fees, and
+              guest rules with the association — amenity lists change. The 18-hole Aliante Golf Club
+              (Gary Panks, city-owned and open to the public) runs through the broader Aliante plan.
+              Palm Valley is a different course in Sun City Summerlin — do not confuse the two.
+              Confirm current resident rates and tee-time rules with the club.
             </p>
 
             <p className="leading-relaxed">
-              Beyond physical recreation, Sun City Aliante offers dozens of clubs and interest
-              groups covering hobbies and activities. Art studios provide space for painting,
-              pottery, and crafts. Woodworking shops equipped with professional-grade tools
-              accommodate furniture building and home improvement projects. Computer labs offer
-              technology training and internet access. Dance clubs, book clubs, investment clubs,
-              travel clubs, and dozens of other organizations create opportunities for social
-              connection and continued learning. Confirm current clubs, fees, and occupancy rules
-              with the HOA before you offer.
+              Club calendars, craft rooms, and interest groups change with the HOA. Confirm current
+              clubs, fees, and occupancy rules with the association before you offer — I will not
+              publish a stale club roster.
             </p>
           </div>
         </div>
@@ -100,11 +87,10 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              Outdoor living receives special emphasis, with most homes featuring covered patios,
-              low-maintenance desert landscaping, and private courtyards or golf course views. Many
-              properties include casitas or detached guest suites for visitors. Homes range from
-              villas under 1,500 square feet, to plans exceeding 3,000 square feet with multiple
-              bedrooms, entertainment spaces, and upgraded finishes throughout.
+              Outdoor living receives special emphasis, with many homes featuring covered patios and
+              low-maintenance desert landscaping. Some properties include casitas or guest suites.
+              Confirm square footage, bed/bath count, and lot type on the live listing — I will not
+              hard-code a size range here.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -112,13 +98,10 @@ export default function SunCityContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Sun City Aliante's location provides excellent access to healthcare services critical
-              for retiree residents. North Vista Hospital is less than 10 minutes away, offering
-              emergency services, surgical facilities, and specialist care. Numerous primary care
-              physicians, cardiologists, orthopedists, and other medical specialists maintain
-              practices within a short drive of the community. Several urgent care centers and
-              diagnostic imaging facilities nearby provide convenient access to routine medical
-              needs without traveling to distant medical campuses.
+              North Vista Hospital is in North Las Vegas. Confirm drive time from the specific Sun
+              City Aliante address you will buy. Primary-care offices, urgent care, and imaging
+              facilities also operate in North Las Vegas — I name the ones near that street rather
+              than a valley-wide list.
             </p>
 
             <p className="leading-relaxed">

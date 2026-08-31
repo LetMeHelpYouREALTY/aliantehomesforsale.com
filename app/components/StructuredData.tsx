@@ -125,7 +125,7 @@ export default function StructuredData({
         '@type': 'WebPage',
         name: 'Aliante Neighborhoods Guide',
         description:
-          'Comprehensive guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, and The Paseos. Find your perfect community with detailed information.',
+          'Guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos, and Sun City Aliante in North Las Vegas 89084.',
         url: 'https://www.aliantehomesforsale.com/neighborhoods',
         mainEntity: {
           '@type': 'ItemList',
@@ -138,7 +138,7 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'The Prominence',
-                description: 'Luxury gated community with premium amenities',
+                description: 'Gated village in Aliante with private streets and shared amenities',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/prominence',
               },
             },
@@ -158,7 +158,7 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'Club Aliante',
-                description: 'Golf course community with championship golf access',
+                description: 'Golf-course lots next to Aliante Golf Club',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/club-aliante',
               },
             },
@@ -170,6 +170,26 @@ export default function StructuredData({
                 name: 'The Paseos',
                 description: 'Open-access village with parks, trails, and shared recreation',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/paseos',
+              },
+            },
+            {
+              '@type': 'ListItem',
+              position: 5,
+              item: {
+                '@type': 'Place',
+                name: 'Sun City Aliante',
+                description: 'Del Webb 55+ village inside ZIP 89084',
+                url: 'https://www.aliantehomesforsale.com/sun-city-aliante',
+              },
+            },
+            {
+              '@type': 'ListItem',
+              position: 6,
+              item: {
+                '@type': 'Place',
+                name: 'Villages at Tule Springs',
+                description: 'New construction east of Aliante near Floyd Lamb Park',
+                url: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs',
               },
             },
           ],
@@ -187,7 +207,7 @@ export default function StructuredData({
         '@type': 'WebSite',
         name: siteConfig.siteName,
         url: siteConfig.siteUrl,
-        description: `Find your dream home in ${siteConfig.areaName}, ${siteConfig.region} with hyperlocal real estate guidance since ${siteConfig.foundedYear}`,
+        description: `Aliante and North Las Vegas ${siteConfig.zipCode} real estate with Dr. Jan Duffy since ${siteConfig.foundedYear}`,
         inLanguage: 'en-US',
         speakable: {
           '@type': 'SpeakableSpecification',
@@ -219,19 +239,20 @@ export default function StructuredData({
         '@type': 'Place',
         name: 'Aliante Neighborhoods',
         description:
-          'Discover the best neighborhoods in Aliante, North Las Vegas with detailed community information, amenities, and lifestyle details.',
+          'Aliante neighborhoods in North Las Vegas 89084: gated villages, golf-course lots, open-access streets, and Sun City Aliante 55+.',
         url: 'https://www.aliantehomesforsale.com/neighborhoods',
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Aliante',
+          addressLocality: 'North Las Vegas',
           addressRegion: 'NV',
+          postalCode: '89084',
           addressCountry: 'US',
         },
         containsPlace: [
           {
             '@type': 'Place',
             name: 'The Prominence',
-            description: 'Luxury gated community in Aliante',
+            description: 'Gated village in Aliante, North Las Vegas 89084',
             url: 'https://www.aliantehomesforsale.com/neighborhoods/prominence',
           },
           {
@@ -249,8 +270,20 @@ export default function StructuredData({
           {
             '@type': 'Place',
             name: 'The Paseos',
-            description: 'Affordable living community in Aliante',
+            description: 'Open-access village in Aliante',
             url: 'https://www.aliantehomesforsale.com/neighborhoods/paseos',
+          },
+          {
+            '@type': 'Place',
+            name: 'Sun City Aliante',
+            description: 'Del Webb 55+ village inside ZIP 89084',
+            url: 'https://www.aliantehomesforsale.com/sun-city-aliante',
+          },
+          {
+            '@type': 'Place',
+            name: 'Villages at Tule Springs',
+            description: 'New construction east of Aliante near Floyd Lamb Park',
+            url: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs',
           },
         ],
         areaServed: {
@@ -266,7 +299,7 @@ export default function StructuredData({
         '@type': 'RealEstateAgent',
         '@id': `${siteConfig.siteUrl}/#organization`,
         name: siteConfig.siteName,
-        image: `${siteConfig.siteUrl}/logo.png`,
+        image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
         url: siteConfig.siteUrl,
         telephone: siteConfig.phoneTel,
         email: siteConfig.email,
@@ -321,9 +354,9 @@ export default function StructuredData({
         url: siteConfig.siteUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${siteConfig.siteUrl}/logo.png`,
-          width: 250,
-          height: 60,
+          url: `${siteConfig.siteUrl}/og-image.jpg`,
+          width: 1200,
+          height: 630,
         },
         description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} since ${siteConfig.foundedYear}`,
         foundingDate: String(siteConfig.foundedYear),
@@ -332,7 +365,7 @@ export default function StructuredData({
           telephone: siteConfig.phoneTel,
           contactType: 'Customer Service',
           areaServed: 'US-NV',
-          availableLanguage: ['English', 'Spanish'],
+          availableLanguage: ['English'],
         },
       };
     }

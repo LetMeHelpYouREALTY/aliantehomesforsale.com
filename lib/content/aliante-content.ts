@@ -43,7 +43,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/gated-communities',
     image: '/images/gated.jpg',
     alt: 'Gated community homes in Aliante North Las Vegas',
-    highlights: ['Controlled entry', 'Community pools & parks', 'Resale + new construction'],
+    highlights: ['Controlled entry', 'Community pools & parks', 'Resale inventory'],
   },
   {
     id: 'golf',
@@ -52,12 +52,13 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/golf-homes',
     image: '/images/golf.jpg',
     alt: 'Golf course homes near Club Aliante',
-    highlights: ['Club Aliante access', 'Fairway & mountain views', 'Lock-and-leave options'],
+    highlights: ['Near Aliante Golf Club', 'Fairway & mountain views', 'Confirm HOA and lot type'],
   },
   {
     id: 'new-construction',
     title: 'New Construction',
-    description: 'Compare Lennar, D.R. Horton, Tri Pointe, Del Webb, Toll Brothers & more.',
+    description:
+      'Compare Lennar and Del Webb in 89084 with nearby Tule Springs and other builders.',
     href: '/new-construction',
     image: '/images/builders.jpg',
     alt: 'New construction homes in Aliante North Las Vegas',
@@ -90,9 +91,9 @@ export const marketSnapshot: MarketSnapshotItem[] = [
   },
   {
     id: 'builders',
-    label: 'Active builders',
-    value: '6+',
-    note: 'Lennar, D.R. Horton, Tri Pointe, Del Webb, Toll Brothers, Richmond American.',
+    label: 'Builder map',
+    value: 'Compare',
+    note: 'Lennar and Del Webb in 89084; Horton in Tule Springs; Tri Pointe, Toll, and Richmond are not inside Aliante.',
   },
   {
     id: 'experience',
@@ -168,7 +169,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Resort casino with restaurants, shows, and a spa — about a short drive from the office on Aliante Parkway.',
     mapsQuery: 'Aliante Casino + Hotel, North Las Vegas, NV',
-    driveNote: '~5 min drive',
+    driveNote: 'Nearby on Aliante Parkway — confirm drive time from the address you will buy.',
   },
   {
     id: 'aliante-golf',
@@ -177,7 +178,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Public 18-hole course and clubhouse serving Club Aliante and surrounding neighborhoods.',
     mapsQuery: 'Aliante Golf Club, North Las Vegas, NV',
-    driveNote: '~5 min drive',
+    driveNote: 'Nearby on Aliante Parkway — confirm drive time from the address you will buy.',
   },
   {
     id: 'nature-discovery-park',
@@ -186,7 +187,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Walking paths, playgrounds, and open green space in the heart of the Aliante master plan.',
     mapsQuery: 'Aliante Nature Discovery Park, North Las Vegas, NV',
-    driveNote: '~5 min drive',
+    driveNote: 'Nearby on Aliante Parkway — confirm drive time from the address you will buy.',
   },
   {
     id: 'floyd-lamb',
@@ -195,7 +196,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Large regional park with lakes, trails, and picnic areas near Tule Springs new construction.',
     mapsQuery: 'Floyd Lamb Park at Tule Springs, Las Vegas, NV',
-    driveNote: '~10–15 min drive',
+    driveNote: 'East of Aliante — confirm drive time from the address you will buy.',
   },
   {
     id: 'craig-ranch',
@@ -204,7 +205,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Sports fields, trails, and event space serving North Las Vegas near the 215 Beltway.',
     mapsQuery: 'Craig Ranch Regional Park, North Las Vegas, NV',
-    driveNote: '~10 min drive',
+    driveNote: 'South of Aliante along the 215 — confirm drive time from that street.',
   },
   {
     id: 'centennial-hills',
@@ -213,7 +214,8 @@ export const nearbyPlaces: NearbyPlace[] = [
     description:
       'Grocery, retail, and everyday services along the Centennial corridor west of Aliante.',
     mapsQuery: 'Centennial Hills shopping, Las Vegas, NV',
-    driveNote: '~10–15 min drive',
+    driveNote:
+      'West of Aliante along the Centennial corridor — confirm drive time from that street.',
   },
 ];
 

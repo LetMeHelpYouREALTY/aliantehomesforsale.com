@@ -46,7 +46,7 @@ export default function Neighborhoods() {
         {/* Neighborhood Comparison Table */}
         <NeighborhoodComparison
           heading="Aliante villages in ZIP 89084"
-          subheading="Club Aliante, Prominence, Desert Willows, and The Paseos. Confirm live MLS prices."
+          subheading="Club Aliante, Prominence, Desert Willows, The Paseos, Sun City Aliante 55+, and nearby Tule Springs. Confirm live MLS prices."
         />
 
         {/* CTA Section */}

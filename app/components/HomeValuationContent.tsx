@@ -15,12 +15,10 @@ export default function HomeValuationContent() {
             <p className="leading-relaxed">
               Understanding your Aliante home's current market value is essential whether you're
               considering selling, refinancing, or simply tracking your investment's performance.
-              Our free comparative market analysis (CMA) provides accurate, data-driven valuation
-              based on recent sales of comparable properties in your specific neighborhood, adjusted
-              for your home's unique features, condition, and location advantages. Unlike automated
-              online estimates that rely on algorithms and often miss critical details, our CMA
-              incorporates local market expertise and property-specific knowledge that only a
-              professional agent can provide.
+              Our comparative market analysis (CMA) uses recent sales of similar properties in your
+              village, then adjusts for condition, lot, and features we can actually see. Automated
+              estimates miss those details. Confirm the comps I show you against live MLS — I will
+              not call any estimate a guaranteed value.
             </p>
 
             <p className="leading-relaxed">

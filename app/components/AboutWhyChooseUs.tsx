@@ -39,7 +39,8 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Market Mastery',
-      description: 'We track every listing, price change, and market trend',
+      description:
+        'We watch Aliante 89084 inventory, price changes, and village comps — not a valley-wide average',
       icon: '📈',
     },
     {

@@ -24,7 +24,7 @@ export const siteConfig = {
     {
       name: 'The Prominence',
       slug: 'prominence',
-      summary: 'Luxury gated homes in Aliante with premium finishes and amenities.',
+      summary: 'Gated homes in Aliante with private streets and shared amenities.',
     },
     {
       name: 'Desert Willows',

@@ -73,11 +73,11 @@ export default function EnhancedPropertyTypes() {
     {
       title: 'Luxury Homes',
       features: [
-        'Premium finishes — confirm live MLS price',
-        'Gourmet kitchens & spa bathrooms',
-        'Smart home technology included',
-        'Private pools & outdoor living',
-        'Mountain & golf course views',
+        'Premium finishes — confirm live MLS',
+        'Updated kitchens and baths where listed',
+        'Confirm smart-home items on the listing',
+        'Pools and outdoor living where present',
+        'Mountain or golf-course views where the lot has them',
       ],
       link: '/neighborhoods/prominence',
       image: siteImages.prominence,
@@ -129,8 +129,8 @@ export default function EnhancedPropertyTypes() {
             Explore Property Types
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From luxury estates to active adult communities, find the match for how you want to
-            live.
+            Compare gated villages, 55+ Del Webb, golf-course lots, and new construction. Confirm
+            live inventory before you offer.
           </p>
         </div>
 

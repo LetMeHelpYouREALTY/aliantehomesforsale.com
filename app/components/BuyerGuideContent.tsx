@@ -33,12 +33,12 @@ export default function BuyerGuideContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Before you begin viewing homes, securing mortgage pre-approval is absolutely critical.
-              In today's competitive market, sellers simply won't entertain offers from buyers who
-              haven't demonstrated their financial capability through formal lender pre-approval.
-              This process involves submitting income documentation, tax returns, bank statements,
-              and authorization for credit checks to a mortgage lender who will then issue a
-              pre-approval letter stating the loan amount you qualify for.
+              Before you begin viewing homes, securing mortgage pre-approval is usually the first
+              step. Many listing agents ask for a pre-approval letter with an offer so the seller
+              can see what a lender has already reviewed. This process involves submitting income
+              documentation, tax returns, bank statements, and authorization for credit checks to a
+              mortgage lender who will then issue a pre-approval letter stating the loan amount you
+              qualify for.
             </p>
 
             <p className="leading-relaxed">
@@ -99,8 +99,8 @@ export default function BuyerGuideContent() {
               >
                 golf lifestyle
               </Link>
-              , with homes surrounding the championship course attracting golf enthusiasts and
-              entertaining-focused buyers.
+              , with homes on golf-course lots next to Aliante Golf Club. Lot position and HOA rules
+              vary — confirm them on the address you will actually buy.
             </p>
 
             <p className="leading-relaxed">
@@ -133,8 +133,7 @@ export default function BuyerGuideContent() {
               >
                 Sun City Aliante
               </Link>{' '}
-              serves active adults 55+ with resort-style amenities, social clubs, and age-restricted
-              peace and quiet.{' '}
+              serves adults 55+ with recreation, clubs, and age-qualified occupancy rules.{' '}
               <Link
                 href="/neighborhoods/tule-springs"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -156,23 +155,16 @@ export default function BuyerGuideContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Once you're pre-approved and understand the neighborhoods, we'll set up a customized
-              MLS search that automatically notifies you of new listings matching your criteria. In
-              today's fast market, being among the first to view new listings is essential. I often
-              learn about homes before they hit the MLS through my network of agent relationships,
-              giving my clients first opportunity on the best properties. We'll schedule showings at
-              your convenience, and I'll provide honest feedback about each property's condition,
-              pricing, and potential concerns.
+              Once you are pre-approved, we set a RealScout / MLS search that emails you when a
+              matching 89084 listing hits the market. I schedule showings during office hours and
+              walk the house: condition, layout, and comps for that village — not a valley average.
             </p>
 
             <p className="leading-relaxed">
-              During showings, I'll point out important details that many buyers overlook – evidence
-              of proper maintenance, potential costly repairs, functional layout considerations, and
-              neighborhood factors that could affect future resale value. It's common for buyers to
-              view 10-15 homes before finding "the one," though in competitive markets, strong
-              properties may require quicker decisions. I'll help you evaluate each home objectively
-              and advise you on whether making an offer makes sense based on market conditions and
-              comparable sales.
+              During showings I walk condition, layout, and likely repair items, then compare the
+              list price to recent closed sales in that Aliante village. How many homes you tour is
+              your call — I will not invent an average. Offers follow live comps for that address,
+              not a valley-wide slogan.
             </p>
           </div>
         </div>
@@ -186,34 +178,16 @@ export default function BuyerGuideContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              When you've found your ideal home, crafting a competitive offer requires understanding
-              current market conditions, the seller's motivations, and recent comparable sales. In a
-              seller's market, offers at or slightly above asking price with minimal contingencies
-              often win. In balanced markets, buyers have more negotiating room for price
-              reductions, seller-paid closing costs, and home warranty inclusion. I'll prepare a
-              comprehensive comparative market analysis showing recent sales of similar homes to
-              ensure your offer is both competitive and fair.
+              When you are ready to write, the offer uses that village&apos;s live comps, the
+              listing&apos;s terms, and what your lender will actually fund. I will not quote a
+              valley-wide &quot;asking price plus&quot; rule. Contingencies, earnest money, close
+              date, and repairs are negotiated on that file.
             </p>
 
             <p className="leading-relaxed">
-              Beyond price, numerous other terms can be negotiated – closing date flexibility,
-              contingency periods, included appliances and furnishings, HOA document review
-              timelines, and seller repair obligations. Many transactions are won or lost on these
-              secondary terms rather than price alone. A seller with a tight moving timeline may
-              accept a slightly lower price from a buyer who can close in 21 days versus one
-              requiring 45 days. Understanding these dynamics and crafting offers that address the
-              seller's priorities while protecting your interests is where experienced buyer
-              representation delivers tremendous value.
-            </p>
-
-            <p className="leading-relaxed">
-              Once your offer is accepted, we enter the escrow period where inspections, appraisals,
-              loan processing, and title work occur. This typically lasts 30-45 days and requires
-              careful management to ensure all deadlines are met. I'll coordinate with your lender,
-              the title company, inspectors, and the seller's agent to keep the transaction moving
-              smoothly. You'll remain informed at every step, with clear explanations of what's
-              happening and what decisions need to be made. My goal is to guide you to a successful
-              closing with minimal stress and maximum confidence in your purchase decision.
+              After acceptance, inspections, appraisal, loan, and title run on the contract
+              deadlines. I coordinate with your lender, title, and the listing agent. Confirm the
+              actual close date on that file — I will not publish a standard 30–45 day promise.
             </p>
           </div>
         </div>

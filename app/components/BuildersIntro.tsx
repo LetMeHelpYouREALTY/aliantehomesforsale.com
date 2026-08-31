@@ -22,9 +22,8 @@ export default function BuildersIntro() {
           <p className="leading-relaxed">
             As Dr. Jan Duffy, your local new construction specialist since 2018, I represent you —
             not the builder — on the contract, options, and walk-throughs. Confirm current
-            communities, inventory, and incentive programs on this month’s sheet. Whether you're a
-            first-time buyer looking for an affordable entry point or a luxury home buyer seeking
-            the finest finishes and locations, I can guide you to the perfect match.
+            communities, inventory, and incentive programs on this month’s sheet. I match the
+            builder map to the ZIP you actually want — Aliante 89084 versus nearby Tule Springs.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -32,29 +31,24 @@ export default function BuildersIntro() {
           </h3>
 
           <p className="leading-relaxed">
-            Today's new construction homes offer unprecedented value through builder incentives,
-            energy efficiency, and modern design. Current market conditions have created a unique
-            opportunity where builders are offering aggressive incentives to meet their quarterly
-            sales goals. Incentives can include closing-cost credits, upgrades, and rate buydowns —
-            confirm today’s sheet before you write. I will not publish a stale dollar amount.
+            Today's new construction still competes on incentives, energy codes, and included
+            features. Current sheets can include closing-cost credits, upgrades, and rate buydowns —
+            confirm today’s numbers before you write. I will not publish a stale dollar amount.
           </p>
 
           <p className="leading-relaxed">
-            Beyond the immediate financial benefits, new construction homes in Aliante feature the
-            latest in energy-efficient technology, smart home integration, and open-concept designs
-            that today's buyers demand. You'll enjoy 10-year structural warranties, modern
-            electrical and plumbing systems designed for today's lifestyle, and peace of mind
-            knowing that every component is brand new and covered under warranty. The ability to
-            customize your home during the build process means you can create a space that perfectly
-            matches the floor plan you want without the cost and hassle of renovations. Learn more
-            about{' '}
+            Beyond the purchase price, new construction in Aliante and nearby Tule Springs is built
+            to the codes in effect at permit. Warranty length, electrical and plumbing specs, and
+            option packages vary by builder. Read the warranty booklet and the design-center list
+            for that lot. Where a to-be-built plan is still available, you can often choose finishes
+            without a later remodel. Compare{' '}
             <Link
               href="/neighborhoods/tule-springs"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
             >
               Villages at Tule Springs
             </Link>
-            , our newest master-planned community with cutting-edge new construction.
+            , which is east of Aliante — not inside the Aliante master plan.
           </p>
         </div>
       </div>

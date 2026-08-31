@@ -15,6 +15,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
         className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         <h3 className="text-lg font-bold pr-4" style={{ color: '#1a365d' }}>
@@ -50,7 +51,7 @@ export default function NewConstructionFAQ() {
     {
       question: 'How long does the new construction process take?',
       answer:
-        'From contract to move-in typically takes 4-8 months depending on the home and builder. Quick move-in homes can be ready in 30-60 days.',
+        'Build calendars vary by builder, plan, and whether the home is already framed. Spec and quick-move-in homes can close faster than a to-be-built lot. Confirm the current close date on that contract — I will not publish a 4–8 month or 30–60 day promise.',
     },
     {
       question: 'What incentives are currently available?',

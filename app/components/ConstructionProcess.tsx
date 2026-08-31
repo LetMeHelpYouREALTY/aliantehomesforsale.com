@@ -93,7 +93,7 @@ export default function ConstructionProcess() {
       number: 5,
       title: 'Final Walkthrough & Closing',
       description:
-        'Detailed pre-closing inspection, punch list management, and smooth closing process. We ensure everything is perfect before you get the keys.',
+        'Detailed pre-closing inspection, punch list management, and closing coordination. Confirm remaining items before you accept the keys.',
       details: [
         'Comprehensive final walkthrough',
         'Punch list creation and follow-up',

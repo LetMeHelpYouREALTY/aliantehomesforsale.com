@@ -22,10 +22,10 @@ export default function SellerChecklistContent() {
                 market knowledge
               </Link>
               . The difference between an average sale and an exceptional one often comes down to
-              preparation, pricing strategy, and marketing execution. As your listing agent with
-              over six years of experience in the Aliante market, I'll guide you through a proven
-              process that maximizes your sale price while minimizing time on market and stress
-              throughout the transaction. Get started with a{' '}
+              preparation, pricing strategy, and marketing execution. As your listing agent since
+              2018 in the Aliante market, I'll walk you through pricing from village comps, MLS
+              photos, and offer review. Time on market still depends on the list price and the week
+              — I will not promise a sale speed. Get started with a{' '}
               <Link
                 href="/home-valuation"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -115,13 +115,10 @@ export default function SellerChecklistContent() {
             </p>
 
             <p className="leading-relaxed">
-              Your home will receive maximum exposure through the MLS (which syndicates to Zillow,
-              Realtor.com, and hundreds of other sites), targeted Facebook and Instagram advertising
-              to buyers specifically searching in Aliante, email campaigns to my database of active
-              buyers, and direct outreach to buyer's agents in my professional network. I also
-              conduct broker open houses and public open houses to generate showing traffic and
-              buyer interest. This multi-channel approach ensures that every serious buyer in the
-              market knows your home is available and has the opportunity to view it.
+              Your home is entered in the MLS, which syndicates to major public search sites. I also
+              share the listing with buyer’s agents in my network and can schedule broker and public
+              open houses when the property and the calendar support it. Confirm the marketing plan
+              for your address — I will not claim a paid-ad reach I have not booked.
             </p>
           </div>
         </div>

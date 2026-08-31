@@ -84,25 +84,23 @@ export default function GatedCommunitiesContent() {
               >
                 Club Aliante
               </Link>{' '}
-              offers a different take on gated living, focusing on golf lifestyle with homes
-              surrounding the championship 18-hole course. Residents enjoy preferred tee times,
-              clubhouse dining privileges, and a tight-knit community of golf enthusiasts. The gated
-              sections of this community provide controlled access plus{' '}
+              offers a different take on gated living, with golf-course lots next to Aliante Golf
+              Club, clubhouse dining nearby, and controlled-access streets. Confirm live list prices
+              on Club Aliante lots rather than a stale range. See{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                golf course living
-              </Link>
-              . Confirm live list prices on Club Aliante lots rather than a stale range. View all
-              available{' '}
+                golf-course homes
+              </Link>{' '}
+              and all available{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Aliante homes for sale
               </Link>{' '}
-              to explore current gated community options.
+              to explore current gated options.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

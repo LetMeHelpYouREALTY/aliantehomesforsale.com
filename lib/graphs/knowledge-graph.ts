@@ -39,7 +39,7 @@ export function buildKnowledgeGraph() {
       telephone: siteConfig.phoneTel,
       contactType: 'customer service',
       areaServed: 'US-NV',
-      availableLanguage: ['English', 'Spanish'],
+      availableLanguage: ['English'],
     },
     ...(siteConfig.sameAs.length > 0 ? { sameAs: [...siteConfig.sameAs] } : {}),
   };

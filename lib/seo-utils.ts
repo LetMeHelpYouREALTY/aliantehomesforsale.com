@@ -163,21 +163,21 @@ export const pageSEO = {
     keywords: ['new construction Aliante', 'builder incentives', 'Lennar homes', 'DR Horton'],
   },
   'home-valuation': {
-    title: 'Free Home Valuation Aliante - Instant Property Value Estimate',
+    title: 'What’s My Aliante Home Worth? | CMA in North Las Vegas 89084',
     description:
-      'Get your free home valuation in Aliante. Instant estimate powered by MLS data. Professional CMA included. Sell your home for top dollar.',
+      'Comparative market analysis for Aliante, North Las Vegas 89084. Neighborhood comps — not a valley average. Call (702) 707-7273.',
     keywords: ['home valuation Aliante', 'property value estimate', 'CMA', 'sell my home'],
   },
   contact: {
     title: 'Contact Aliante Real Estate - Call (702) 707-7273',
     description:
-      'Contact our local Aliante real estate experts. Office: 2590 Nature Park Drive, Suite 275. Open 7 days a week. Free buyer consultation.',
+      'Contact Dr. Jan Duffy in Aliante, North Las Vegas 89084. Office: 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
     keywords: ['contact Aliante realtor', 'real estate agent', 'buyer consultation'],
   },
   search: {
     title: 'Search Aliante Homes - Advanced Property Search Tool',
     description:
-      'Advanced property search for Aliante homes. Filter by price, beds, baths, neighborhoods, school districts. Save searches, get instant alerts.',
+      'Search Aliante homes in North Las Vegas 89084. Filter by price, beds, baths, and village. Call (702) 707-7273.',
     keywords: ['property search Aliante', 'home search tool', 'MLS search', 'real estate search'],
   },
 };
@@ -219,7 +219,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'RealEstateAgent',
     '@id': `${SITE_URL}/#organization`,
     name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/og-image.jpg`,
     url: SITE_URL,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
@@ -305,9 +305,9 @@ export function generateOrganizationSchema() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/logo.png`,
-      width: 250,
-      height: 60,
+      url: `${SITE_URL}/og-image.jpg`,
+      width: 1200,
+      height: 630,
     },
     description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
     contactPoint: {
@@ -315,7 +315,7 @@ export function generateOrganizationSchema() {
       telephone: siteConfig.phoneTel,
       contactType: 'Customer Service',
       areaServed: 'US-NV',
-      availableLanguage: ['English', 'Spanish'],
+      availableLanguage: ['English'],
     },
     address: {
       '@type': 'PostalAddress',
