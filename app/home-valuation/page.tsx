@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
 import AboutCTA from '../components/AboutCTA';
-import AboutExpertise from '../components/AboutExpertise';
 import ContactHero from '../components/ContactHero';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomeValuationContent from '../components/HomeValuationContent';
@@ -25,7 +24,6 @@ export default function HomeValuation() {
       />
       <HomeValuationContent />
       <EnhancedContactForm event="appointment" />
-      <AboutExpertise />
       <AboutCTA />
     </main>
   );

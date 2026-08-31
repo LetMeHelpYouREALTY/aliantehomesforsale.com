@@ -1,18 +1,22 @@
 'use client';
 
 type NeighborhoodDetailVariant = 'village' | 'compare';
+type VillageAccess = 'gated' | 'open';
 
 type NeighborhoodDetailContentProps = {
   heading?: string;
   /** Village-specific facts such as gated vs open-access. */
   intro?: string;
   variant?: NeighborhoodDetailVariant;
+  /** Gated vs open-access follow-on copy. Ignored when variant is compare. */
+  access?: VillageAccess;
 };
 
 export default function NeighborhoodDetailContent({
   heading = 'Buyer representation in this Aliante village',
   intro,
   variant = 'village',
+  access = 'open',
 }: NeighborhoodDetailContentProps) {
   return (
     <section className="py-16 px-4 bg-white">
@@ -22,19 +26,23 @@ export default function NeighborhoodDetailContent({
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-          {renderDetail(variant, intro)}
+          {renderDetail(variant, intro, access)}
         </div>
       </div>
     </section>
   );
 }
 
-function renderDetail(variant: NeighborhoodDetailVariant, intro?: string) {
+function renderDetail(
+  variant: NeighborhoodDetailVariant,
+  intro: string | undefined,
+  access: VillageAccess
+) {
   switch (variant) {
     case 'compare':
       return <CompareCopy />;
     case 'village':
-      return <VillageCopy intro={intro} />;
+      return <VillageCopy intro={intro} access={access} />;
     default: {
       const _exhaustive: never = variant;
       return _exhaustive;
@@ -42,7 +50,7 @@ function renderDetail(variant: NeighborhoodDetailVariant, intro?: string) {
   }
 }
 
-function VillageCopy({ intro }: { intro?: string | undefined }) {
+function VillageCopy({ intro, access }: { intro?: string | undefined; access: VillageAccess }) {
   return (
     <>
       {intro ? <p className="leading-relaxed">{intro}</p> : null}
@@ -52,37 +60,56 @@ function VillageCopy({ intro }: { intro?: string | undefined }) {
         walk the map with you rather than treat every address as the same. Confirm HOA dues, CC&Rs,
         and current list prices before you offer.
       </p>
-
-      <p className="leading-relaxed">
-        I tour the actual streets with you and compare condition, lot position, and recent closed
-        sales. Confirm HOA governance, CC&Rs, and live MLS comps — not listing remarks alone.
-      </p>
-
-      <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-        Navigating HOA Documents and Community Regulations
-      </h3>
-
-      <p className="leading-relaxed">
-        Every master-planned community and homeowners association comes with CC&Rs (Covenants,
-        Conditions, and Restrictions), bylaws, and rules that govern property use and architectural
-        standards. These documents can be complex and difficult to interpret, but they&apos;re
-        critically important to understand before purchasing. Some HOAs have strict enforcement
-        policies regarding architectural changes, vehicle storage, landscaping requirements, and
-        even holiday decorations. Others are more lenient, allowing homeowners greater freedom in
-        customizing their properties.
-      </p>
-
-      <p className="leading-relaxed">
-        I&apos;ll help you review all HOA documents and understand what restrictions will affect how
-        you use the property. If you&apos;re considering future additions like pools, outdoor
-        kitchens, or home offices, I&apos;ll research whether these improvements require HOA
-        architectural approval and what the approval process entails. Understanding these factors
-        before purchasing prevents surprises after closing and ensures the community&apos;s
-        governance structure aligns with your expectations for property ownership rights and
-        neighborhood oversight.
-      </p>
+      {renderAccessCopy(access)}
     </>
   );
+}
+
+function renderAccessCopy(access: VillageAccess) {
+  switch (access) {
+    case 'gated':
+      return (
+        <>
+          <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
+            Guest lists, gate hours, and HOA architectural rules
+          </h3>
+          <p className="leading-relaxed">
+            Controlled entry means residents, guests, and vendors wait at the gate. Review guest
+            procedures, gate hours, and vendor access before you offer. HOA documents still set
+            architectural rules, vehicle storage, and landscaping standards — confirm the current
+            budget and enforcement history for this village, not a master-plan average.
+          </p>
+          <p className="leading-relaxed">
+            I review CC&Rs and the HOA resale package with you. If you want a pool, outdoor kitchen,
+            or other addition, we check whether architectural approval is required in this gated
+            village before you write.
+          </p>
+        </>
+      );
+    case 'open':
+      return (
+        <>
+          <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
+            Open-access streets, master HOA, and village CC&Rs
+          </h3>
+          <p className="leading-relaxed">
+            Open-access villages still sit inside the Aliante master HOA. Through-streets, park
+            frontage, and cul-de-sacs live differently. Confirm village CC&Rs plus the master
+            association rules — landscaping, parking, and architectural changes can still need
+            approval even without a gate.
+          </p>
+          <p className="leading-relaxed">
+            I tour the actual streets with you and compare condition, lot position, and recent
+            closed sales. Confirm HOA dues and live MLS comps for this open-access village — not
+            listing remarks alone.
+          </p>
+        </>
+      );
+    default: {
+      const _exhaustive: never = access;
+      return _exhaustive;
+    }
+  }
 }
 
 function CompareCopy() {

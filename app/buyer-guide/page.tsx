@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
-import ConstructionProcess from '../components/ConstructionProcess';
 import ContactWhyChoose from '../components/ContactWhyChoose';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
@@ -30,7 +29,6 @@ export default function BuyerGuide() {
         <ContextualLinks variant="buying" />
       </div>
       <HomesSearchTips />
-      <ConstructionProcess />
       <ContactWhyChoose />
       <HomesCTA />
     </main>

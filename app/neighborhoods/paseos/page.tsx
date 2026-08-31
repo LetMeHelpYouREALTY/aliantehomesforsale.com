@@ -24,6 +24,7 @@ export default function Paseos() {
       <NeighborhoodDetailContent
         heading="Buying in The Paseos, Aliante 89084"
         intro="The Paseos is an open-access village (not gated) inside the Aliante master plan, with parks, green space, and a mix of single-family homes and townhomes."
+        access="open"
       />
       <NeighborhoodCards />
       <NeighborhoodsCTA />
