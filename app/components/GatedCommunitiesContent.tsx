@@ -56,7 +56,7 @@ export default function GatedCommunitiesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Aliante is home to several nationally recognized gated communities, each with its own
+              Aliante includes several gated villages, each with its own
               character and amenity offerings.{' '}
               <Link
                 href="/neighborhoods/prominence"
