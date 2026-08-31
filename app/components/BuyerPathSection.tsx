@@ -12,10 +12,10 @@ export default function BuyerPathSection() {
             className="speakable text-3xl sm:text-4xl font-bold mb-3"
             style={{ color: '#1a365d' }}
           >
-            Your path to an Aliante home
+            Your path to an Aliante home in ZIP 89084
           </h2>
           <p className="text-gray-600 text-lg">
-            Three clear steps — search, tour, close with local guidance.
+            Search live MLS, tour villages, then write and close.
           </p>
         </div>
         <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">

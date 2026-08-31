@@ -142,8 +142,8 @@ export const buyerPathSteps: BuyerPath[] = [
   {
     id: 'guide',
     step: 3,
-    title: 'Get local guidance',
-    description: 'Work with Dr. Jan Duffy on offers, inspections, and closing.',
+    title: 'Write and close',
+    description: 'Work with Dr. Jan Duffy on offers, inspections, and closing in ZIP 89084.',
     href: '/contact',
   },
 ];
@@ -166,8 +166,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     id: 'aliante-casino',
     name: 'Aliante Casino + Hotel',
     category: 'Entertainment & dining',
-    description:
-      'Resort casino with restaurants, shows, and a spa — about a short drive from the office on Aliante Parkway.',
+    description: 'Resort casino with restaurants, shows, and a spa on Aliante Parkway.',
     mapsQuery: 'Aliante Casino + Hotel, North Las Vegas, NV',
     driveNote: 'Nearby on Aliante Parkway — confirm drive time from the address you will buy.',
   },

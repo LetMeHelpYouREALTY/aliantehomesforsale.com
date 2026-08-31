@@ -11,7 +11,9 @@ interface ReasonProps {
 function ReasonCard({ icon, title, description }: ReasonProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-md text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold mb-3" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -24,7 +26,7 @@ export default function ContactWhyChoose() {
   const reasons: ReasonProps[] = [
     {
       icon: '🏠',
-      title: 'Local Expertise',
+      title: 'Aliante 89084 since 2018',
       description: `Aliante and North Las Vegas 89084 specialist since ${siteConfig.foundedYear}`,
     },
     {

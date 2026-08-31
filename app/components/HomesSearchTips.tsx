@@ -9,7 +9,9 @@ interface TipCardProps {
 function TipCard({ icon, title, description }: TipCardProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="text-4xl mb-4 text-center">{icon}</div>
+      <div className="text-4xl mb-4 text-center" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-lg font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -46,7 +48,7 @@ export default function HomesSearchTips() {
     },
     {
       icon: '🤝',
-      title: 'Work with a Local Expert',
+      title: 'Work with a 89084 realtor',
       description:
         'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',
     },
@@ -65,9 +67,7 @@ export default function HomesSearchTips() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Home Search Tips
           </h2>
-          <p className="text-xl text-gray-600">
-            Expert advice to help you search Aliante MLS and tour 89084 villages
-          </p>
+          <p className="text-xl text-gray-600">How I search Aliante MLS and tour 89084 villages</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

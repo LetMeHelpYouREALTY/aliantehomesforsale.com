@@ -113,7 +113,7 @@ export default function EnhancedPropertyTypes() {
         'Never-lived-in inventory',
         'Modern floor plans & finishes',
         'Energy-efficient features',
-        'Builder warranties included',
+        'Confirm the warranty booklet',
         'Independent buyer representation',
       ],
       link: '/new-construction',
@@ -127,7 +127,7 @@ export default function EnhancedPropertyTypes() {
         <div className="text-center mb-12">
           <AgentPhoto size={120} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Explore Property Types
+            Compare housing types in Aliante ZIP 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Compare gated villages, 55+ Del Webb, golf-course lots, and new construction. Confirm
