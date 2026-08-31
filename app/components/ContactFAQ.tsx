@@ -5,8 +5,8 @@ import FAQSection from './FAQSection';
 
 const contactFaqs = [
   {
-    question: 'How do I contact the Aliante real estate team?',
-    answer: `Call ${siteConfig.phone}, email ${siteConfig.email}, or visit our office at 2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Office hours are Mon–Fri 8:00 AM – 7:00 PM and Sat–Sun 9:00 AM – 6:00 PM.`,
+    question: 'How do I contact Dr. Jan Duffy in Aliante 89084?',
+    answer: `Call ${siteConfig.phone}, email ${siteConfig.email}, or visit the office at 2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084. Office hours are Mon–Fri 8:00 AM – 7:00 PM and Sat–Sun 9:00 AM – 6:00 PM.`,
   },
   {
     question: 'Is there a cost for buyer representation?',
@@ -20,5 +20,5 @@ const contactFaqs = [
 ];
 
 export default function ContactFAQ() {
-  return <FAQSection title="Frequently Asked Questions About Contacting Us" faqs={contactFaqs} />;
+  return <FAQSection title="How to reach Dr. Jan Duffy in Aliante 89084" faqs={contactFaqs} />;
 }

@@ -66,7 +66,9 @@ export default function HomesSearchTips() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             How I search Aliante MLS in ZIP 89084
           </h2>
-          <p className="text-xl text-gray-600">How I search Aliante MLS and tour 89084 villages</p>
+          <p className="text-xl text-gray-600">
+            Filter by village, set alerts, then confirm live comps before you write.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -129,7 +129,7 @@ export default function OfficeLocation() {
                 <a href="#schedule" className="font-semibold underline">
                   schedule on Calendly
                 </a>{' '}
-                — we come to you.
+                — I come to you.
               </p>
             </div>
           </div>
