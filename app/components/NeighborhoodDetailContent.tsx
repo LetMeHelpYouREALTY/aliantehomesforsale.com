@@ -16,14 +16,10 @@ export default function NeighborhoodDetailContent({
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            As a local real estate specialist with extensive experience in this specific
-            neighborhood, I provide insider knowledge that helps buyers make informed decisions and
-            negotiate better purchase terms. Not all properties within this community are created
-            equal – corner lots versus interior lots, cul-de-sac locations versus through-street
-            addresses, homes backing to common areas versus other homes, and proximity to specific
-            amenities all affect both livability and resale value. Understanding these nuances
-            requires local expertise that national real estate websites and algorithms simply cannot
-            provide.
+            I work this village with you on lot position, HOA rules, and live comps. Corner lots,
+            cul-de-sacs, through-streets, and homes backing to common areas live differently — I
+            will walk the map with you rather than treat every address as the same. Confirm HOA
+            dues, CC&Rs, and current list prices before you offer.
           </p>
 
           <p className="leading-relaxed">

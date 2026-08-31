@@ -45,7 +45,7 @@ export default function HomesForSaleHero({
               Live MLS · updates about every 15 minutes
             </div>
             <div className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold">
-              Aliante · 89084 only
+              Aliante 89084 focus
             </div>
           </div>
         </div>

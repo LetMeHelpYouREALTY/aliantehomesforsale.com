@@ -86,7 +86,7 @@ export const marketSnapshot: MarketSnapshotItem[] = [
   {
     id: 'focus',
     label: 'Service focus',
-    value: '89084 only',
+    value: '89084 focus',
     note: 'Hyperlocal to Aliante & North Las Vegas — not the entire Las Vegas valley.',
   },
   {
