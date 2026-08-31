@@ -64,10 +64,9 @@ export default function GatedCommunitiesContent() {
               >
                 The Prominence
               </Link>{' '}
-              stands as a gated village with premium finishes, golf-course proximity, resort-style
-              pools, and concierge-style amenities where offered. Confirm live MLS prices — I will
-              not publish a stale range as current. Homes here often include upgraded interiors,
-              larger lots, and views of the manicured{' '}
+              stands as a gated village with premium finishes, golf-course proximity, and community
+              pools. Confirm live MLS prices — I will not publish a stale range as current. Homes
+              here often include upgraded interiors, larger lots, and views of the manicured{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -131,11 +130,11 @@ export default function GatedCommunitiesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              While gated communities offer tremendous benefits, it's important to understand the
-              unique considerations before making your purchase. HOA dues in gated villages are
-              often higher because they fund gate systems, common-area maintenance, and amenity
-              upkeep. Confirm the current HOA budget and fee sheet — I will not publish a stale
-              monthly amount.
+              Gated villages add controlled access, HOA architectural rules, and private amenities.
+              Review those against dues, guest procedures, and live comps before you buy. HOA dues
+              in gated villages are often higher because they fund gate systems, common-area
+              maintenance, and amenity upkeep. Confirm the current HOA budget and fee sheet — I will
+              not publish a stale monthly amount.
             </p>
 
             <p className="leading-relaxed">

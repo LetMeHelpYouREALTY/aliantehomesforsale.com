@@ -90,8 +90,8 @@ export default function OfficeLocation() {
                     Getting here
                   </p>
                   <p className="text-gray-700">
-                    Just off the 215 Beltway in Aliante. Free visitor parking in front of the
-                    building.
+                    Just off the 215 Beltway in Aliante. Visitor parking is in front of the building
+                    — confirm when you arrive.
                   </p>
                 </div>
               </address>

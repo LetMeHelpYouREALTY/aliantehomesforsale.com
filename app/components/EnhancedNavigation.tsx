@@ -180,6 +180,18 @@ export default function EnhancedNavigation() {
                       Club Aliante (Golf)
                     </Link>
                     <Link
+                      href="/neighborhoods/desert-willows"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Desert Willows
+                    </Link>
+                    <Link
+                      href="/neighborhoods/paseos"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      The Paseos
+                    </Link>
+                    <Link
                       href="/sun-city-aliante"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
@@ -395,6 +407,34 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Neighborhoods
+                </Link>
+                <Link
+                  href="/neighborhoods/desert-willows"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Desert Willows
+                </Link>
+                <Link
+                  href="/neighborhoods/paseos"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  The Paseos
+                </Link>
+                <Link
+                  href="/neighborhoods/club-aliante"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Club Aliante
+                </Link>
+                <Link
+                  href="/sun-city-aliante"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Sun City Aliante
                 </Link>
                 <Link
                   href="/gated-communities"

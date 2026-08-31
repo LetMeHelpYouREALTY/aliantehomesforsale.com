@@ -83,9 +83,9 @@ export default function MortgageCalculatorContent() {
               as little as 3% down for first-time buyers, though 5-20% is more common. FHA loans
               require 3.5% minimum down payment and accept lower credit scores than conventional
               programs, making them popular with first-time buyers. VA loans available to qualifying
-              veterans and active military offer 0% down payment with no PMI requirement – an
-              exceptional benefit that can save tens of thousands of dollars over the life of the
-              loan.
+              veterans and active military offer 0% down payment with no PMI requirement. Confirm
+              current funding-fee rules and whether you qualify — I will not publish a lifetime
+              savings figure.
             </p>
 
             <p className="leading-relaxed">

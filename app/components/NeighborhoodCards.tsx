@@ -133,7 +133,7 @@ export default function NeighborhoodCards() {
       name: 'Club Aliante',
       tag: 'Golf-course living',
       description:
-        'Guard-gated village with fairway lots next to Aliante Golf Club, clubhouse dining, and a private recreation center.',
+        'Guard-gated village with fairway lots next to Aliante Golf Club, clubhouse dining, and recreation amenities.',
       features: ['Fairway lots', 'Clubhouse', 'Dining', 'Fitness center'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },

@@ -9,7 +9,7 @@ import HomeValuationContent from '../components/HomeValuationContent';
 export const metadata: Metadata = {
   title: 'What’s My Aliante Home Worth? | CMA in North Las Vegas 89084',
   description:
-    'Free comparative market analysis for Aliante, North Las Vegas 89084. Club Aliante, gated, and Sun City comps — not a valley average. Call (702) 707-7273.',
+    'Comparative market analysis for Aliante, North Las Vegas 89084. Club Aliante, gated, and Sun City comps — not a valley average. Call (702) 707-7273.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/home-valuation',
   },

@@ -159,7 +159,7 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
             href="/home-valuation"
             className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
           >
-            Free Home Valuation →
+            Home valuation / CMA →
           </Link>
           <Link
             href="/market-report"

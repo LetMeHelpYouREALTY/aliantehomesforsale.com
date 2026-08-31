@@ -14,10 +14,12 @@ export default function BuilderDetailContent() {
             the Aliante area, I provide representation that protects your interests throughout the
             new construction purchase process. Many buyers mistakenly believe they should work
             directly with builder sales representatives, not realizing that these agents represent
-            the builder's interests, not yours. Working with me costs you nothing – builders pay my
-            commission from their marketing budget – but provides you with professional advocacy,
-            expert negotiation, and contract review. I will not publish a stale savings total.
-            Confirm today’s incentive sheet, lot premium, and upgrades before you write.
+            the builder's interests, not yours. Buyer representation is typically at no extra cost
+            to you on participating builder sales — builders pay the cooperating commission from
+            their marketing budget. Confirm the fee in writing before you tour. That still gives you
+            professional advocacy, expert negotiation, and contract review. I will not publish a
+            stale savings total. Confirm today’s incentive sheet, lot premium, and upgrades before
+            you write.
           </p>
 
           <p className="leading-relaxed">

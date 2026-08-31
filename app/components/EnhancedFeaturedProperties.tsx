@@ -16,6 +16,12 @@ const neighborhoods = [
     caption: 'Gated village near the golf course',
   },
   {
+    name: 'Desert Willows',
+    href: '/neighborhoods/desert-willows',
+    image: siteImages.desertWillows,
+    caption: 'Open-access village with parks nearby',
+  },
+  {
     name: 'The Paseos',
     href: '/neighborhoods/paseos',
     image: siteImages.paseos,
@@ -42,7 +48,7 @@ export default function EnhancedFeaturedProperties() {
             market change daily.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {neighborhoods.map((item) => (
             <Link
               key={item.href}
@@ -55,7 +61,7 @@ export default function EnhancedFeaturedProperties() {
                   alt={item.image.alt}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 20vw"
                 />
               </div>
               <div className="p-4">

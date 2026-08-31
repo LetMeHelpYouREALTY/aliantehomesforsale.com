@@ -59,7 +59,7 @@ export const siteConfig = {
       slug: 'buyer-representation',
       name: 'Buyer representation in Aliante 89084',
       description:
-        'Independent buyer’s agent for Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction — at no extra cost to you.',
+        'Independent buyer’s agent for Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Confirm the fee in writing before you tour.',
       url: '/buyer-guide',
     },
     {

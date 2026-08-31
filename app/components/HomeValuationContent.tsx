@@ -106,10 +106,9 @@ export default function HomeValuationContent() {
               downward pressure on prices. Conversely, low-rate environments stimulate demand and
               support price appreciation. As your local market expert, I track these trends
               constantly and can advise you on optimal timing for buying or selling based on current
-              conditions and foreseeable market direction. Request your free home valuation today
-              and receive a detailed analysis of your property's current worth along with
-              recommendations for maximizing value through strategic improvements if you're planning
-              to sell.
+              conditions and foreseeable market direction. Request a comparative market analysis and
+              we will walk the comps for your village, then discuss which improvements recent buyers
+              in that village actually paid for if you are planning to sell.
             </p>
           </div>
         </div>
@@ -125,11 +124,10 @@ export default function HomeValuationContent() {
             <p className="leading-relaxed">
               Once you receive your detailed valuation report, we'll schedule a consultation to
               review the findings and discuss your goals. If you're considering selling, I'll
-              provide specific recommendations for preparing your home to achieve maximum value,
-              including cost-effective improvements that deliver strong ROI and timing strategies
-              that align with your personal timeline. If you're simply monitoring your investment,
-              we can discuss market outlook and factors that may affect your home's value over the
-              coming months and years.
+              recommend prep that matches recent closed sales in your village — not a generic
+              upgrade list or a promised return. If you're simply monitoring your investment, we can
+              discuss market outlook and factors that may affect your home's value over the coming
+              months and years.
             </p>
 
             <p className="leading-relaxed">
@@ -138,8 +136,8 @@ export default function HomeValuationContent() {
               insurance requirements. For those considering home equity lines of credit,
               understanding current value determines how much equity you can tap for home
               improvements, debt consolidation, or other financial goals. Whatever your situation,
-              accurate valuation provides the foundation for informed decision-making about one of
-              your largest financial assets.
+              accurate comps for that village provide the foundation for informed decision-making
+              about one of your largest financial assets.
             </p>
           </div>
         </div>

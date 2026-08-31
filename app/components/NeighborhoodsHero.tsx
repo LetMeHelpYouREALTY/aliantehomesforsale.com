@@ -11,7 +11,7 @@ type NeighborhoodsHeroProps = {
 
 export default function NeighborhoodsHero({
   title = 'Aliante Neighborhoods for Sale | North Las Vegas 89084',
-  subtitle = 'Club Aliante, Sun City Aliante, gated villages, and ZIP 89084. Call (702) 707-7273.',
+  subtitle = 'Club Aliante, Desert Willows, The Paseos, Sun City Aliante, gated villages, and ZIP 89084. Call (702) 707-7273.',
   image = siteImages.neighborhoods,
 }: NeighborhoodsHeroProps) {
   return (

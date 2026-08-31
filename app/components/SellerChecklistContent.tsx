@@ -30,7 +30,7 @@ export default function SellerChecklistContent() {
                 href="/home-valuation"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                free home valuation
+                home valuation / CMA
               </Link>{' '}
               to understand your property's current worth.
             </p>
@@ -156,9 +156,9 @@ export default function SellerChecklistContent() {
             <p className="leading-relaxed">
               Selling a home is a significant life event, and you deserve representation that
               combines local market expertise with professional execution. I have listed Aliante
-              homes since 2018. Contact me today for a free home valuation and listing consultation
-              where we can discuss your specific situation and create a customized plan for your
-              successful sale.
+              homes since 2018. Contact me today for a comparative market analysis and listing
+              consultation where we can discuss your specific situation and create a customized plan
+              for your successful sale.
             </p>
           </div>
         </div>

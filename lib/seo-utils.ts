@@ -287,7 +287,7 @@ export function generateLocalBusinessSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Home Valuation',
-            description: 'Free comparative market analysis',
+            description: 'Comparative market analysis using village comps',
           },
         },
       ],

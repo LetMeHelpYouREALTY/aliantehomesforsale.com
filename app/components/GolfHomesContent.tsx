@@ -44,7 +44,7 @@ export default function GolfHomesContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Club Aliante Membership Benefits and Lifestyle
+              Club Aliante golf access vs home ownership
             </h3>
 
             <p className="leading-relaxed">
@@ -56,14 +56,15 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              Beyond golf, Club Aliante offers fitness facilities, swimming pools, tennis and
-              pickleball courts, and fine dining in the clubhouse. Many golf course homeowners are
-              non-golfers who simply appreciate the open space views, mature landscaping, and
-              resort-like setting these properties provide. The golf course itself acts as a
-              permanent green belt that ensures your view will never be obstructed by future
-              development, providing both aesthetic appeal and property value protection. Sunset
-              views from golf course patios are particularly spectacular, with the combination of
-              mountain backdrops and manicured fairways creating postcard-worthy scenes year-round.
+              Beyond golf, Club Aliante includes fitness rooms, swimming pools, tennis and
+              pickleball courts, and clubhouse dining. Confirm current amenity hours and fees with
+              the association. Many golf course homeowners are non-golfers who simply appreciate the
+              open space views, mature landscaping, and resort-like setting these properties
+              provide. The golf course itself acts as a permanent green belt that ensures your view
+              will never be obstructed by future development, providing both aesthetic appeal and
+              property value protection. Sunset views from golf course patios are particularly
+              spectacular, with the combination of mountain backdrops and manicured fairways
+              creating postcard-worthy scenes year-round.
             </p>
           </div>
         </div>

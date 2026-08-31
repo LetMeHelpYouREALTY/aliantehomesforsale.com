@@ -42,12 +42,10 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              I work closely with several local lenders who specialize in the Las Vegas market and
-              can often secure better rates and terms than national banks. These lenders understand
-              unique situations like self-employment income, investment property purchases, and
-              non-traditional credit profiles. Getting pre-approved typically takes 2-3 business
-              days and costs nothing – it's a free service that puts you in position to act quickly
-              when the right home appears on the market.
+              I work with local lenders who know the Las Vegas market. Confirm the current quote,
+              credit, and program for your file — I will not claim a better rate than a national
+              bank. Getting pre-approved typically takes a few business days. Ask the lender whether
+              that step has a fee before you apply.
             </p>
           </div>
         </div>
@@ -77,15 +75,14 @@ export default function BuyerGuideContent() {
               >
                 The Prominence
               </Link>{' '}
-              offers luxury{' '}
+              offers{' '}
               <Link
                 href="/gated-communities"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 gated living
               </Link>{' '}
-              with golf course access, appealing to move-up buyers seeking premium amenities and
-              controlled entry.{' '}
+              with golf-course proximity, private amenities, and controlled entry.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

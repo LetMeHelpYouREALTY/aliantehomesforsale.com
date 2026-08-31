@@ -39,7 +39,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
   {
     id: 'gated',
     title: 'Gated Communities',
-    description: 'Controlled-access neighborhoods with resort-style amenities across Aliante.',
+    description: 'Controlled-access neighborhoods with private amenities across Aliante.',
     href: '/gated-communities',
     image: '/images/gated.jpg',
     alt: 'Gated community homes in Aliante North Las Vegas',
