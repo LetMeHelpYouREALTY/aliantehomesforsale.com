@@ -18,7 +18,7 @@ export default function EnhancedTrustAuthority() {
             className="speakable text-4xl sm:text-5xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Why Choose {siteConfig.agentName}?
+            Why work with {siteConfig.agentName} in Aliante 89084?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Nevada license {siteConfig.agentLicense}, {siteConfig.brokerage}, Aliante 89084 since

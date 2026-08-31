@@ -7,7 +7,7 @@ export default function BuildersIntro() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Why Choose New Construction in Aliante?
+          How new construction works near Aliante 89084
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -20,20 +20,20 @@ export default function BuildersIntro() {
           </p>
 
           <p className="leading-relaxed">
-            As Dr. Jan Duffy, your local new construction specialist since 2018, I represent you —
-            not the builder — on the contract, options, and walk-throughs. Confirm current
-            communities, inventory, and incentive programs on this month’s sheet. I match the
-            builder map to the ZIP you actually want — Aliante 89084 versus nearby Tule Springs.
+            I have represented new-construction buyers in Aliante since 2018. I represent you — not
+            the builder — on the contract, options, and walk-throughs. Confirm current communities,
+            inventory, and incentive programs on this month's sheet. I match the builder map to the
+            ZIP you actually want — Aliante 89084 versus nearby Tule Springs.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            The Advantages of Building New in 2026
+            Warranties, energy codes, and 2026 incentive sheets
           </h3>
 
           <p className="leading-relaxed">
             Today's new construction still competes on incentives, energy codes, and included
             features. Current sheets can include closing-cost credits, upgrades, and rate buydowns —
-            confirm today’s numbers before you write. I will not publish a stale dollar amount.
+            confirm today's numbers before you write. I will not publish a stale dollar amount.
           </p>
 
           <p className="leading-relaxed">

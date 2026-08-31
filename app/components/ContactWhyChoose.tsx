@@ -31,18 +31,19 @@ export default function ContactWhyChoose() {
     },
     {
       icon: '🤝',
-      title: 'Builder Relationships',
+      title: 'Builder map, not the sales desk',
       description: 'I confirm live builder incentive sheets and represent you — not the sales desk',
     },
     {
       icon: '📊',
-      title: 'Market Intelligence',
-      description: 'Real-time market data and insights to help you make informed decisions',
+      title: 'Live MLS, village comps',
+      description:
+        'Confirm inventory, price changes, and village comps on live MLS — not a valley average',
     },
     {
       icon: '⭐',
-      title: 'Proven Track Record',
-      description: 'Aliante and North Las Vegas closings since 2018 — ask for current references',
+      title: 'Aliante closings since 2018',
+      description: 'Ask for current references. I will not publish an unverified closing count.',
     },
   ];
 
@@ -51,7 +52,7 @@ export default function ContactWhyChoose() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Why Choose Aliante Real Estate?
+            Why call Dr. Jan Duffy for Aliante 89084
           </h2>
         </div>
 

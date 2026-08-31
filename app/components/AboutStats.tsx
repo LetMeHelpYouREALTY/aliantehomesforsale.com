@@ -54,7 +54,7 @@ export default function AboutStats() {
         <div className="text-center mb-12">
           <AgentPhoto size={160} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Who We Are
+            Who I am in Aliante ZIP 89084
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
             Dr. Jan Duffy has specialized in Aliante and North Las Vegas 89084 since 2018 with{' '}

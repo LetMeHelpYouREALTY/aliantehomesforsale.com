@@ -411,7 +411,7 @@ export default function EnhancedNavigation() {
                   <span className="font-bold" style={{ color: '#1a365d' }}>
                     Dr. Jan Duffy
                   </span>
-                  <span className="text-sm text-gray-600">Aliante real estate expert</span>
+                  <span className="text-sm text-gray-600">Aliante 89084 realtor</span>
                 </span>
               </Link>
 

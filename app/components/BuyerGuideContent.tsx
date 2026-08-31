@@ -13,19 +13,16 @@ export default function BuyerGuideContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Buying a home in Aliante represents one of the most significant financial and
-              emotional decisions you'll make. Whether you're a first-time buyer navigating the
-              process for the first time or an experienced homeowner relocating to the Las Vegas
-              area, understanding the unique characteristics of the Aliante market is essential for
-              success. This comprehensive guide walks you through every step of the journey, from
-              initial mortgage pre-approval through closing day and beyond.
+              Buying in Aliante ZIP 89084 still starts with pre-approval, village tours, an offer
+              from live comps, and a close date on that contract. I have represented buyers here
+              since 2018. This page walks those steps for Club Aliante, gated streets, Sun City
+              Aliante, and nearby Tule Springs — not a valley-wide slogan.
             </p>
 
             <p className="leading-relaxed">
-              As your local buyer's agent since 2018, I represent you through pre-approval, tours,
-              offers, and closing. My role is to be your advocate, advisor, and expert throughout
-              the entire transaction, ensuring that you make informed decisions and never feel
-              pressured or confused about the process.
+              As your buyer's agent I represent you through pre-approval, tours, offers, and
+              closing. Confirm the fee arrangement in writing before you tour. I review HOA
+              documents, lot position, and comps for the address you will actually buy.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -75,14 +72,14 @@ export default function BuyerGuideContent() {
               >
                 The Prominence
               </Link>{' '}
-              offers{' '}
+              is a{' '}
               <Link
                 href="/gated-communities"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                gated living
+                gated village
               </Link>{' '}
-              with golf-course proximity, private amenities, and controlled entry.{' '}
+              with controlled entry, private streets, and shared amenities.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -137,14 +134,15 @@ export default function BuyerGuideContent() {
               >
                 Villages at Tule Springs
               </Link>{' '}
-              represents the newest development, offering modern{' '}
+              is new construction east of ZIP 89084. Compare live inventory with Aliante resale — I
+              will not publish a stale energy-savings or smart-home claim. See{' '}
               <Link
                 href="/new-construction"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 new construction
-              </Link>{' '}
-              floor plans and the latest in energy efficiency and smart home technology.
+              </Link>
+              .
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

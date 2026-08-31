@@ -8,7 +8,7 @@ export default function MortgageCalculatorContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Understanding Mortgage Payments and Affordability
+            Mortgage payments on an Aliante 89084 purchase
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -34,7 +34,7 @@ export default function MortgageCalculatorContent() {
               >
                 Aliante homes for sale
               </Link>{' '}
-              to calculate payments on specific properties, or check our{' '}
+              to calculate payments on specific properties, or read the{' '}
               <Link
                 href="/market-report"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

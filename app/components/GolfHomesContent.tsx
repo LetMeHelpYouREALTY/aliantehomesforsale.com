@@ -43,12 +43,12 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              As a golf course property specialist, I understand the unique considerations that make
-              these homes special. Not all golf course lots are created equal – corner lots with
-              views of multiple holes often price higher, while homes on fairways versus greens
-              offer different noise and foot-traffic profiles. Lots next to par-5s see more
+              Not all golf-course lots price the same. Corner lots with views of more than one hole
+              often trade differently than a single-fairway lot. Homes on fairways versus greens
+              have different noise and foot-traffic profiles. Lots next to par-5s see more
               errant-ball risk and longer sightlines; par-3 frontage is shorter. I compare lot
-              position, HOA rules, and live comps for the address you will actually buy.
+              position, HOA rules, and live comps for the address you will actually buy. I will not
+              publish a golf-course premium percentage.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -132,11 +132,9 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Navigating the golf course home market requires working with an agent who understands
-              the nuances of these specialized properties. I tour fairway lots in Aliante with you
-              and can walk lot position, view corridors, errant-ball exposure, sun, and recent
-              comps. Some listings linger because the photos miss the course — we can check those
-              against live MLS and negotiate from there.
+              I tour fairway lots in Aliante with you and walk lot position, view corridors,
+              errant-ball exposure, sun, and recent comps. Some listings linger because the photos
+              miss the course — I check those against live MLS and negotiate from there.
             </p>
 
             <p className="leading-relaxed">

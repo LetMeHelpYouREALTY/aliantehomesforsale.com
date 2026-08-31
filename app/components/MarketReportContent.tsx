@@ -8,7 +8,7 @@ export default function MarketReportContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Understanding the Aliante Real Estate Market
+            How the Aliante 89084 market actually trades
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -95,16 +95,14 @@ export default function MarketReportContent() {
               and buyer purchasing power. On a sample $450,000 purchase with 10% down, a 1% rate
               change moves principal-and-interest by a few hundred dollars a month — confirm the
               live quote for your credit and down payment. Many builders offer rate buydown
-              programs; confirm today’s sheet rather than a stale 1-2% claim.
+              programs; confirm today's sheet rather than a stale 1-2% claim.
             </p>
 
             <p className="leading-relaxed">
-              As your local market expert, I maintain relationships with multiple lenders who
-              specialize in the Las Vegas market. Compare at least two written quotes — I will not
-              publish a spread versus national advertised averages. Over a 30-year loan, a small
-              rate difference compounds. I always recommend that my clients get pre-approved with at
-              least two different lenders to compare rates and terms before beginning their home
-              search.
+              Compare at least two written quotes from lenders who actually close Las Vegas loans —
+              I will not publish a spread versus national advertised averages. Over a 30-year loan,
+              a small rate difference compounds. Get pre-approved with at least two lenders before
+              you tour Club Aliante or Prominence.
             </p>
           </div>
         </div>
@@ -113,7 +111,7 @@ export default function MarketReportContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Property Type Performance and Investment Potential
+            Gated, golf, 55+, and open-access streets in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

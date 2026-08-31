@@ -13,7 +13,7 @@ const COMMUNITIES: Community[] = [
   {
     name: 'The Prominence',
     href: '/neighborhoods/prominence',
-    tagline: 'Gated village with larger homes and private streets',
+    tagline: 'Gated village with private streets and shared amenities',
     image: siteImages.prominence,
   },
   {

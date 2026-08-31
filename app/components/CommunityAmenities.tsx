@@ -82,7 +82,7 @@ export default function CommunityAmenities() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Community Amenities in Aliante
+            Amenities in the Aliante master plan, ZIP 89084
           </h2>
           <p className="text-xl text-gray-600">
             Golf, parks, named CCSD campuses, and I-215 access inside the Aliante master plan

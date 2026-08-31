@@ -107,25 +107,30 @@ export function buildKnowledgeGraph() {
       name: 'North Las Vegas',
       sameAs: graphIds.northLasVegas,
     },
-    containsPlace: siteConfig.neighborhoods.map((n) => ({
-      '@id': graphIds.neighborhood(n.slug),
-    })),
+    containsPlace: siteConfig.neighborhoods
+      .filter((n) => n.slug !== 'tule-springs')
+      .map((n) => ({
+        '@id': graphIds.neighborhood(n.slug),
+      })),
   };
 
   const neighborhoodPlaces = siteConfig.neighborhoods.map((n) => {
     const path = 'path' in n && typeof n.path === 'string' ? n.path : `/neighborhoods/${n.slug}`;
+    const insideAliante = n.slug !== 'tule-springs';
     return {
       '@type': 'Place',
       '@id': graphIds.neighborhood(n.slug),
       name: n.name,
       description: n.summary,
       url: `${siteConfig.siteUrl}${path}`,
-      containedInPlace: { '@id': graphIds.aliantePlace },
+      containedInPlace: {
+        '@id': insideAliante ? graphIds.aliantePlace : graphIds.northLasVegas,
+      },
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'North Las Vegas',
         addressRegion: 'NV',
-        postalCode: siteConfig.zipCode,
+        ...(insideAliante ? { postalCode: siteConfig.zipCode } : {}),
         addressCountry: 'US',
       },
     };
@@ -153,31 +158,48 @@ export function buildKnowledgeGraph() {
     })),
   };
 
+  const buildersInsideAliante = new Set(['lennar', 'del-webb']);
+
   const builders = siteConfig.builders.map((builder) => ({
     '@type': 'Organization',
     '@id': graphIds.builder(builder.slug),
     name: builder.name,
     url: `${siteConfig.siteUrl}/builders/${builder.slug}`,
     sameAs: builder.officialUrl,
-    areaServed: { '@id': graphIds.aliantePlace },
-  }));
-
-  const nearbyAttractions = nearbyPlaces.map((place) => ({
-    '@type': 'TouristAttraction',
-    '@id': graphIds.nearbyPlace(place.id),
-    name: place.name,
-    description: place.description,
-    url: nearbyPlaceSearchUrl(place.mapsQuery),
-    touristType: place.category,
-    containedInPlace: { '@id': graphIds.aliantePlace },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'North Las Vegas',
-      addressRegion: 'NV',
-      postalCode: siteConfig.zipCode,
-      addressCountry: 'US',
+    areaServed: {
+      '@id': buildersInsideAliante.has(builder.slug)
+        ? graphIds.aliantePlace
+        : graphIds.northLasVegas,
     },
   }));
+
+  const alianteNearbyIds = new Set(['aliante-casino', 'aliante-golf', 'nature-discovery-park']);
+
+  const nearbyAttractions = nearbyPlaces.map((place) => {
+    const inAliante = alianteNearbyIds.has(place.id);
+    return {
+      '@type': 'TouristAttraction',
+      '@id': graphIds.nearbyPlace(place.id),
+      name: place.name,
+      description: place.description,
+      url: nearbyPlaceSearchUrl(place.mapsQuery),
+      touristType: place.category,
+      containedInPlace: {
+        '@id': inAliante ? graphIds.aliantePlace : graphIds.northLasVegas,
+      },
+      ...(inAliante
+        ? {
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'North Las Vegas',
+              addressRegion: 'NV',
+              postalCode: siteConfig.zipCode,
+              addressCountry: 'US',
+            },
+          }
+        : {}),
+    };
+  });
 
   const nearbyItemList = {
     '@type': 'ItemList',

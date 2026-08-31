@@ -62,7 +62,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/new-construction',
     image: '/images/builders.jpg',
     alt: 'New construction homes in Aliante North Las Vegas',
-    highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer advocacy'],
+    highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer representation'],
   },
   {
     id: 'sun-city',

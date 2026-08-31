@@ -31,15 +31,15 @@ export default function WhyWorkWithUs() {
   const expertise: ExpertiseItemProps[] = [
     {
       icon: '🤝',
-      title: 'Direct Builder Relationships',
+      title: 'Builder map, not the sales desk',
       description:
-        'I work the Aliante and Tule Springs builder map with you. Confirm current communities and sales-manager contacts on this month’s sheet.',
+        'I work the Aliante and Tule Springs builder map with you. Confirm current communities and sales-manager contacts on this month\u2019s sheet.',
     },
     {
       icon: '💡',
       title: 'Incentive review',
       description:
-        'I represent you on the builder contract. Confirm today’s incentive sheet, lot premiums, and upgrade credits before you write — I will not publish a stale savings average.',
+        'I represent you on the builder contract. Confirm today\u2019s incentive sheet, lot premiums, and upgrade credits before you write \u2014 I will not publish a stale savings average.',
     },
     {
       icon: '🔍',
@@ -49,7 +49,7 @@ export default function WhyWorkWithUs() {
     },
     {
       icon: '📋',
-      title: 'Contract Expertise',
+      title: 'Builder contract review',
       description:
         'Builder contracts favor the builder. I review clauses with you and negotiate what that sales desk will actually change.',
     },
@@ -57,11 +57,11 @@ export default function WhyWorkWithUs() {
       icon: '⏱️',
       title: 'Timeline Management',
       description:
-        'I track dates on your contract and flag delays when the builder updates the schedule. I cannot control the superintendent’s calendar.',
+        'I track dates on your contract and flag delays when the builder updates the schedule. I cannot control the superintendent\u2019s calendar.',
     },
     {
       icon: '🏆',
-      title: 'Proven Results',
+      title: 'Independent representation',
       description:
         'Independent buyer representation on Aliante and nearby Tule Springs new construction. Confirm live inventory. I will not publish an unverified closing count.',
     },
@@ -72,7 +72,7 @@ export default function WhyWorkWithUs() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Why hire Dr. Jan Duffy as your Aliante new-construction buyer’s agent?
+            Why hire Dr. Jan Duffy as your Aliante new-construction buyer&apos;s agent?
           </h2>
         </div>
 

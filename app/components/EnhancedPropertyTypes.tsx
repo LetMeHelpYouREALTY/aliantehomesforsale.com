@@ -72,7 +72,7 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
 export default function EnhancedPropertyTypes() {
   const propertyTypes: PropertyTypeCardProps[] = [
     {
-      title: 'Luxury Homes',
+      title: 'The Prominence (gated)',
       features: [
         'Confirm finishes on live MLS',
         'Updated kitchens and baths where listed',

@@ -16,7 +16,7 @@ const faqs = [
   {
     question: 'What incentives are currently available?',
     answer:
-      'Confirm today’s closing-cost, upgrade, and rate-buydown sheet with me. I will not publish a stale dollar range as current.',
+      "Confirm today's closing-cost, upgrade, and rate-buydown sheet with me. I will not publish a stale dollar range as current.",
   },
   {
     question: 'Can I negotiate with builders?',
@@ -26,10 +26,10 @@ const faqs = [
   {
     question: 'Should I get a home inspection on new construction?',
     answer:
-      'Yes. Pre-drywall and pre-closing inspections catch issues while they are still the builder’s to fix. Third-party inspections are a separate cost you confirm with the inspector.',
+      "Yes. Pre-drywall and pre-closing inspections catch issues while they are still the builder's to fix. Third-party inspections are a separate cost you confirm with the inspector.",
   },
 ];
 
 export default function NewConstructionFAQ() {
-  return <FAQSection title="New Construction FAQs" faqs={faqs} />;
+  return <FAQSection title="New-construction FAQs near Aliante 89084" faqs={faqs} />;
 }

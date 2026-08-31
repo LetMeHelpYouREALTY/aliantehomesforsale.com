@@ -20,10 +20,7 @@ const homeSlide1 = img(
   'home-1.jpg',
   'Aliante North Las Vegas homes for sale along a desert residential street'
 );
-const homeSlide2 = img(
-  'home-2.jpg',
-  'Gated luxury community entrance in Aliante, North Las Vegas 89084'
-);
+const homeSlide2 = img('home-2.jpg', 'Gated community entrance in Aliante, North Las Vegas 89084');
 const homeSlide3 = img(
   'home-3.jpg',
   'Golf-course home overlooking a fairway in Aliante, North Las Vegas'
@@ -58,7 +55,7 @@ export const siteImages = {
   ),
   prominence: img(
     'prominence.jpg',
-    'Luxury gated homes in The Prominence, Aliante, North Las Vegas 89084'
+    'Gated homes in The Prominence, Aliante, North Las Vegas 89084'
   ),
   desertWillows: img(
     'desert-willows.jpg',
@@ -94,7 +91,7 @@ export const siteImages = {
   ),
   tollBrothers: img(
     'toll-brothers.jpg',
-    'Toll Brothers luxury home exterior in the North Las Vegas luxury market'
+    'Toll Brothers home exterior — not inside Aliante ZIP 89084'
   ),
   richmondAmerican: img(
     'richmond-american.jpg',

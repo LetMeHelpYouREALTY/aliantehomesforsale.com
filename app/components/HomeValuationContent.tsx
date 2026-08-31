@@ -14,20 +14,17 @@ export default function HomeValuationContent() {
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
               Understanding your Aliante home's current market value is essential whether you're
-              considering selling, refinancing, or simply tracking your investment's performance.
-              Our comparative market analysis (CMA) uses recent sales of similar properties in your
-              village, then adjusts for condition, lot, and features we can actually see. Automated
-              estimates miss those details. Confirm the comps I show you against live MLS — I will
-              not call any estimate a guaranteed value.
+              considering selling, refinancing, or simply tracking equity. A comparative market
+              analysis (CMA) uses recent sales of similar properties in your village, then adjusts
+              for condition, lot, and features I can actually see. Automated estimates miss those
+              details. Confirm the comps I show you against live MLS — I will not call any estimate
+              a guaranteed value.
             </p>
 
             <p className="leading-relaxed">
-              I have analyzed Aliante property values since 2018. Valuation accuracy comes from
-              touring the village and reading recent comps — not from an automated estimate. I
-              understand how specific neighborhoods trade at different prices, how various upgrades
-              affect value, and what current market trends mean for your property's worth today
-              versus six months ago. This expertise ensures you have reliable information for making
-              important financial decisions.
+              I have written Aliante CMAs since 2018. Accuracy comes from touring the village and
+              reading recent comps — not from an automated estimate. I compare Club Aliante, gated
+              streets, and Sun City Aliante on live comps for the address — not a valley average.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -35,23 +32,17 @@ export default function HomeValuationContent() {
             </h3>
 
             <p className="leading-relaxed">
-              A professional CMA examines multiple data points to arrive at an accurate value
-              estimate. We begin with recently sold comparable properties – homes similar to yours
-              in size, age, condition, and location that have sold within the past 3-6 months. These
-              "comps" establish the baseline value for homes like yours in current market
-              conditions. We then adjust for differences between the comparable properties and your
-              home, adding value for superior features like pools, upgraded kitchens, or larger
-              lots, while subtracting for missing features or needed repairs.
+              A CMA starts with recently sold comparable properties — homes similar in size, age,
+              condition, and village that closed in the past few months. Those comps set a baseline
+              for that street. I then adjust for differences: pools, kitchens, lot size, and needed
+              repairs. I will not publish a dollar-per-upgrade table here.
             </p>
 
             <p className="leading-relaxed">
-              Current active listings provide insight into your competition if you're considering
-              selling. If similar homes are priced significantly below or above recent sales, this
-              affects optimal pricing strategy. Pending sales (properties under contract but not yet
-              closed) indicate very recent buyer price acceptance and market direction. Properties
-              that failed to sell (expired or withdrawn listings) show pricing levels the market
-              rejected, helping us avoid overpricing mistakes. Combining these data sources creates
-              a comprehensive picture of your home's market value.
+              Current active listings show what you compete with if you list. Homes priced well
+              below or above recent closed sales change how buyers filter. Pending sales show what a
+              buyer already accepted this week. Expired or withdrawn listings show prices the market
+              passed on. I use those sheets with you — I will not treat pending as a forecast.
             </p>
           </div>
         </div>
@@ -88,7 +79,7 @@ export default function HomeValuationContent() {
             <p className="leading-relaxed">
               Property condition shows up in comps. Updated kitchens, baths, flooring, and HVAC age
               change what buyers will pay. I will not publish a dollar-per-upgrade table here —
-              those numbers go stale. We read them off recent closed sales for your village.
+              those numbers go stale. I read them off recent closed sales for your village.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -101,14 +92,11 @@ export default function HomeValuationContent() {
             </p>
 
             <p className="leading-relaxed">
-              Interest rate environments dramatically affect affordability and therefore home
-              values. When rates rise significantly, buyer purchasing power decreases, putting
-              downward pressure on prices. Conversely, low-rate environments stimulate demand and
-              support price appreciation. As your local market expert, I track these trends
-              constantly and can advise you on optimal timing for buying or selling based on current
-              conditions and foreseeable market direction. Request a comparative market analysis and
-              we will walk the comps for your village, then discuss which improvements recent buyers
-              in that village actually paid for if you are planning to sell.
+              Rates change what a buyer can pay. Confirm the rate your lender quoted, then I walk
+              village comps with you. I will not forecast a price direction. Request a comparative
+              market analysis and I will walk the comps for your village, then discuss which
+              improvements recent buyers in that village actually paid for if you are planning to
+              sell.
             </p>
           </div>
         </div>
@@ -122,12 +110,11 @@ export default function HomeValuationContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Once you receive your detailed valuation report, we'll schedule a consultation to
-              review the findings and discuss your goals. If you're considering selling, I'll
-              recommend prep that matches recent closed sales in your village — not a generic
-              upgrade list or a promised return. If you're simply monitoring your investment, we can
-              discuss market outlook and factors that may affect your home's value over the coming
-              months and years.
+              Once you receive your detailed valuation report, I schedule a consultation to review
+              the findings and discuss your goals. If you're considering selling, I'll recommend
+              prep that matches recent closed sales in your village — not a generic upgrade list or
+              a promised return. If you want another look later, we can run a new CMA from current
+              comps. I will not publish a multi-year outlook here.
             </p>
 
             <p className="leading-relaxed">

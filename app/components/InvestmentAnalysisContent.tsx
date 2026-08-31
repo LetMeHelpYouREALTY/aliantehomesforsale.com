@@ -24,7 +24,7 @@ export default function InvestmentAnalysisContent() {
               </Link>
               ; confirm the map before you underwrite rents. Proximity to the I-215 and nearby
               employment centers is a commute fact, not a vacancy guarantee. I will not publish a
-              stale rent, vacancy, or appreciation percentage here. Review our{' '}
+              stale rent, vacancy, or appreciation percentage here. Read the{' '}
               <Link
                 href="/market-report"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -35,10 +35,9 @@ export default function InvestmentAnalysisContent() {
             </p>
 
             <p className="leading-relaxed">
-              As an investment property specialist in the Aliante market, I help you underwrite
-              specific addresses: live comps, current rent surveys, HOA dues, and vacancy. I will
-              not rank villages by return. Confirm the numbers on this month’s sheet before you
-              offer.
+              I help you underwrite specific Aliante addresses: live comps, current rent surveys,
+              HOA dues, and vacancy. I will not rank villages by return. Confirm the numbers on this
+              month's sheet before you offer.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -139,11 +138,11 @@ export default function InvestmentAnalysisContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your investment property advisor, I can help you identify addresses worth
-              underwriting, run the cash-flow math from live rents and comps, coordinate
-              inspections, and connect you with lenders who actually do investment financing. I sell
-              the property; HOA and rental management is a different company. Confirm the numbers on
-              this month’s sheet before you treat Aliante as a portfolio add.
+              I can help you identify addresses worth underwriting, run the cash-flow math from live
+              rents and comps, coordinate inspections, and connect you with lenders who actually do
+              investment financing. I sell the property; HOA and rental management is a different
+              company. Confirm the numbers on this month's sheet before you treat Aliante as a
+              portfolio add.
             </p>
           </div>
         </div>
