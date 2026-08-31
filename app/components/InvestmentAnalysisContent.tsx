@@ -96,8 +96,9 @@ export default function InvestmentAnalysisContent() {
               Successful real estate investment extends beyond acquisition – property management
               quality directly impacts your returns and peace of mind. Many Aliante investors choose
               professional property management companies that handle tenant screening, rent
-              collection, maintenance coordination, and lease enforcement for typically 8-10% of
-              monthly rent. This cost is often worthwhile, particularly for out-of-area investors or
+              collection, maintenance coordination, and lease enforcement for a percentage of
+              monthly rent. Confirm the manager’s current fee sheet — I will not publish a stale
+              percentage. This cost is often worthwhile, particularly for out-of-area investors or
               those with multiple properties, as professional managers reduce vacancy periods,
               minimize property damage through proper screening, and handle tenant issues promptly.
             </p>
