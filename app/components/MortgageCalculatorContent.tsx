@@ -23,10 +23,11 @@ export default function MortgageCalculatorContent() {
             </p>
 
             <p className="leading-relaxed">
-              For example, on a $450,000 purchase with 10% down ($45,000), a sample payment at a 7%
-              rate looks like this (illustrative only — confirm live rate and taxes): Principal and
-              interest approximately $2,696, property taxes, insurance, HOA, and PMI if applicable.
-              Total housing cost is higher than the advertised P&amp;I. View current{' '}
+              For example, on a $450,000 purchase with 10% down, a 7% rate, and a 30-year term, use
+              the estimator on this page for principal and interest (illustrative only — confirm
+              live rate and taxes). Property taxes, insurance, HOA, and PMI if applicable sit on top
+              of that P&amp;I. Total housing cost is higher than the advertised P&amp;I. View
+              current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -49,9 +50,9 @@ export default function MortgageCalculatorContent() {
 
             <p className="leading-relaxed">
               Interest rates remain the single most important variable affecting affordability. On
-              the sample $450,000 loan above, a 1% rate change moves principal-and-interest by a few
-              hundred dollars a month — confirm the live quote for your credit and down payment. In
-              today's environment, rates fluctuate based on Federal Reserve policy, inflation
+              the sample $450,000 purchase above, a 1% rate change moves principal-and-interest by a
+              few hundred dollars a month — confirm the live quote for your credit and down payment.
+              In today's environment, rates fluctuate based on Federal Reserve policy, inflation
               trends, and broader economic conditions. Working with lenders who can lock favorable
               rates quickly when market conditions improve is crucial – rates can change daily, and
               being prepared to act when opportunities emerge provides real financial advantage.

@@ -92,11 +92,10 @@ export default function MarketReportContent() {
 
             <p className="leading-relaxed">
               Interest rates remain the single most important factor affecting housing affordability
-              and buyer purchasing power. On the sample $450,000 loan used on the mortgage
-              calculator page, a 1% rate change moves principal-and-interest by a few hundred
-              dollars a month — confirm the live quote for your credit and down payment. Many
-              builders offer rate buydown programs; confirm today’s sheet rather than a stale 1-2%
-              claim.
+              and buyer purchasing power. On a sample $450,000 purchase with 10% down, a 1% rate
+              change moves principal-and-interest by a few hundred dollars a month — confirm the
+              live quote for your credit and down payment. Many builders offer rate buydown
+              programs; confirm today’s sheet rather than a stale 1-2% claim.
             </p>
 
             <p className="leading-relaxed">
