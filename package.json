@@ -28,6 +28,7 @@
     "cursor-fix": "node cursor-integration-service.js"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.0.0",
     "express": "^5.1.0",
     "lru-cache": "^11.1.0",
     "next": "15.5.23",
