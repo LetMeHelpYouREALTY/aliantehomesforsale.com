@@ -101,11 +101,23 @@ jobs:
         run: npm run build
 
       - name: Run Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: './lighthouserc.json'
-          uploadArtifacts: true
+          # v10's built-in upload uses the retired artifacts API and fails with
+          # "The artifact name lighthouse-results is not valid".
+          uploadArtifacts: false
           temporaryPublicStorage: true
+
+      - name: Upload Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results
+          path: .lighthouseci/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: ignore
 
   # Security Scanning
   security:
