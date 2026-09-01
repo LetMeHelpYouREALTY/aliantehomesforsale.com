@@ -66,12 +66,12 @@ export default function NeighborhoodComparison({
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
-                  Golf access
+                  Golf / fairway
                 </td>
-                <td className="px-6 py-4 text-gray-700">Gated; confirm lot</td>
-                <td className="px-6 py-4 text-gray-700">Open-access streets</td>
+                <td className="px-6 py-4 text-gray-700">Not a golf village</td>
+                <td className="px-6 py-4 text-gray-700">Not fairway lots</td>
                 <td className="px-6 py-4 text-gray-700">Fairway lots</td>
-                <td className="px-6 py-4 text-gray-700">Open-access streets</td>
+                <td className="px-6 py-4 text-gray-700">Not fairway lots</td>
                 <td className="px-6 py-4 text-gray-700">Aliante Golf Club nearby</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
