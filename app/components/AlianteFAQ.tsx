@@ -9,7 +9,7 @@ export default function AlianteFAQ() {
   const faqs = [
     {
       question: 'Which Aliante neighborhoods can I tour in ZIP 89084?',
-      answer: `<a href="/neighborhoods/desert-willows" class="${linkClass}">Desert Willows</a> and <a href="/neighborhoods/paseos" class="${linkClass}">The Paseos</a> are open-access villages with parks and community pools. <a href="/neighborhoods/prominence" class="${linkClass}">The Prominence</a> and <a href="/neighborhoods/club-aliante" class="${linkClass}">Club Aliante</a> are gated. Confirm live MLS prices before you offer.`,
+      answer: `<a href="/neighborhoods/desert-willows" class="${linkClass}">Desert Willows</a> and <a href="/neighborhoods/paseos" class="${linkClass}">The Paseos</a> are open-access villages with parks and community pools. <a href="/neighborhoods/prominence" class="${linkClass}">The Prominence</a> and <a href="/neighborhoods/club-aliante" class="${linkClass}">Club Aliante</a> are gated. <a href="/sun-city-aliante" class="${linkClass}">Sun City Aliante</a> is Del Webb 55+ inside 89084. Confirm live MLS prices before you offer.`,
     },
     {
       question: 'How do I confirm new-construction prices near Aliante?',

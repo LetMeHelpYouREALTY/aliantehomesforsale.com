@@ -14,7 +14,7 @@ export default function PropertyManagementContent() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          We sell Aliante homes in ZIP 89084. We do not manage rentals or HOAs.
+          I sell Aliante homes in ZIP 89084. I do not manage rentals or HOAs.
         </h2>
         <p className="leading-relaxed">
           Google searches for Aliante property management, leasing agents, and rental companies

@@ -11,7 +11,7 @@ const aboutFaqs = [
   {
     question: 'What areas do you serve?',
     answer:
-      'Aliante and North Las Vegas, Nevada — including Sun City Aliante, The Prominence, Desert Willows, Club Aliante, The Paseos, nearby Tule Springs, and new construction in ZIP 89084 and adjacent streets.',
+      'Aliante and North Las Vegas, Nevada — including Sun City Aliante, The Prominence, Desert Willows, Club Aliante, The Paseos, nearby Tule Springs east of 89084, and new construction inside ZIP 89084.',
   },
   {
     question: 'Why work with an 89084 realtor?',

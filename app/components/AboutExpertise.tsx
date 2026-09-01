@@ -73,8 +73,9 @@ export default function AboutExpertise() {
             Realtor expertise in Aliante, North Las Vegas 89084
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Six services, one ZIP: buyer agency, listings, new construction, Sun City Aliante 55+,
-            CMAs, and rental-property analysis.
+            Buyer agency, listings, new construction, Sun City Aliante 55+, CMAs, and
+            rental-property analysis. Tule Springs new construction is east of ZIP 89084 — I will
+            say so before you tour.
           </p>
         </div>
 

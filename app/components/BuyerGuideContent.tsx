@@ -51,7 +51,7 @@ export default function BuyerGuideContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Which Aliante villages to tour with your buyer’s agent
+            Which villages to tour near Aliante 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -150,7 +150,7 @@ export default function BuyerGuideContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Once you are pre-approved, we set a RealScout / MLS search that emails you when a
+              Once you are pre-approved, I set a RealScout / MLS search that emails you when a
               matching 89084 listing hits the market. I schedule showings during office hours and
               walk the house: condition, layout, and comps for that village — not a valley average.
             </p>
