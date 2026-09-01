@@ -49,7 +49,7 @@ export default function ConstructionProcess() {
       description:
         'Compare builders, floor plans, and amenities against your budget and the lots that are actually for sale this month.',
       details: [
-        'Review builders active near Aliante',
+        'Review builders relative to Aliante',
         'Compare plans and included features',
         'Confirm live price sheets',
         'Visit model homes together',

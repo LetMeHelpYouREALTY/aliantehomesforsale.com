@@ -38,9 +38,9 @@ export default function PropertyManagementContent() {
             FirstService Residential
           </ExternalLink>{' '}
           has managed the Aliante Master Association since 2003 and keeps a North Las Vegas office
-          at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275 in that same building.
-          HOA billing, architectural review, and community rules go to the association manager.
-          Purchase and listing work goes to me.
+          at 2590 Nature Park Drive, Suite 100. My office is Suite 275 in that same building. HOA
+          billing, architectural review, and community rules go to the association manager. Purchase
+          and listing work goes to me.
         </p>
         <p className="leading-relaxed">
           Sub-associations such as Courts at Aliante and Terrasini also use professional HOA

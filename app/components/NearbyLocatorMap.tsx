@@ -113,7 +113,7 @@ export default function NearbyLocatorMap() {
                 className="inline-flex justify-center px-6 py-3 rounded-lg font-semibold border-2"
                 style={{ borderColor: '#16B286', color: '#16B286' }}
               >
-                Directions to our office
+                Directions to the office
               </a>
             </div>
           </div>

@@ -9,7 +9,7 @@ import TuleSpringsContent from '../../components/TuleSpringsContent';
 export const metadata: Metadata = {
   title: 'Villages at Tule Springs Homes | North Las Vegas New Construction',
   description:
-    'Villages at Tule Springs in North Las Vegas — new construction near Aliante 89084. D.R. Horton and other builders. Call (702) 707-7273. Confirm live inventory and prices.',
+    'Villages at Tule Springs in North Las Vegas — new construction east of Aliante ZIP 89084. D.R. Horton. Call (702) 707-7273. Confirm live inventory and prices.',
   keywords:
     'tule springs las vegas, villages at tule springs, dr horton tule springs, north las vegas new construction',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs' },
