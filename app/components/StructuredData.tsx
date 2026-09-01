@@ -129,8 +129,9 @@ export default function StructuredData({
         url: 'https://www.aliantehomesforsale.com/neighborhoods',
         mainEntity: {
           '@type': 'ItemList',
-          name: 'Aliante Neighborhoods',
-          description: 'Complete guide to all neighborhoods in Aliante, North Las Vegas',
+          name: 'Aliante villages and nearby Tule Springs',
+          description:
+            'Villages inside Aliante ZIP 89084, plus Villages at Tule Springs east of 89084',
           itemListElement: [
             {
               '@type': 'ListItem',

@@ -63,7 +63,7 @@ export default function BuyerGuideContent() {
               >
                 neighborhoods
               </Link>
-              , each with its own character, amenities, and price points. Understanding these
+              , each with different housing types, amenities, and HOA rules. Understanding these
               differences is crucial for focusing your search on housing type, amenities, and
               budget.{' '}
               <Link

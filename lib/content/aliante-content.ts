@@ -135,8 +135,9 @@ export const buyerPathSteps: BuyerPath[] = [
   {
     id: 'tour',
     step: 2,
-    title: 'Tour communities',
-    description: 'Compare gated, golf, 55+, and new-construction neighborhoods.',
+    title: 'Tour villages',
+    description:
+      'Compare gated, golf, 55+, and Tule Springs new construction relative to ZIP 89084.',
     href: '/neighborhoods',
   },
   {
