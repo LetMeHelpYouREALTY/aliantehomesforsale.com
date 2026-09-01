@@ -58,7 +58,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     id: 'new-construction',
     title: 'New Construction',
     description:
-      'Compare Lennar and Del Webb in 89084 with nearby Tule Springs and other builders.',
+      'Compare Lennar and Del Webb in 89084 with Horton at Tule Springs. Toll and Tri Pointe are not inside 89084.',
     href: '/new-construction',
     image: '/images/builders.jpg',
     alt: 'New construction homes in Aliante North Las Vegas',

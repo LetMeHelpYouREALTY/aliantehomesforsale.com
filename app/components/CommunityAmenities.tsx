@@ -59,6 +59,8 @@ export default function CommunityAmenities() {
       amenities: [
         'Vincent L. Triggs Elementary (89084)',
         'Theron H. and Naomi D. Goynes Elementary (89084)',
+        'Don E. Hayden Elementary (89084)',
+        'Ruby Duncan Elementary (89084)',
         'Brian & Teri Cram Middle School (89084)',
         'Legacy High School (89084)',
         'Confirm CCSD attendance before you offer',

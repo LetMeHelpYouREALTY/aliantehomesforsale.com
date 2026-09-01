@@ -13,7 +13,7 @@ export default function AlianteFAQ() {
     },
     {
       question: 'How do I confirm new-construction prices near Aliante?',
-      answer: `Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="${linkClass}">Lennar</a>, <a href="/builders/dr-horton" class="${linkClass}">D.R. Horton</a>, and <a href="/builders/del-webb" class="${linkClass}">Del Webb</a>. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="${linkClass}">Builder Incentives</a> page or call ${siteConfig.phone}.`,
+      answer: `Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="${linkClass}">Lennar</a> and <a href="/builders/del-webb" class="${linkClass}">Del Webb</a> in ZIP 89084, and <a href="/builders/dr-horton" class="${linkClass}">D.R. Horton</a> at Tule Springs. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="${linkClass}">Builder Incentives</a> page or call ${siteConfig.phone}.`,
     },
     {
       question: 'What is Sun City Aliante and who can live there?',

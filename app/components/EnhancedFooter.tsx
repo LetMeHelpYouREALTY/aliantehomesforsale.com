@@ -316,7 +316,8 @@ export default function EnhancedFooter() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="text-center md:text-left">
               <p className="mb-1">
-                © 2026 {siteConfig.siteName}. Licensed real estate brokerage in Nevada.
+                © 2026 {siteConfig.siteName}. {siteConfig.agentName} is a licensed Nevada real
+                estate professional with {siteConfig.brokerage}.
               </p>
               <p className="text-xs">
                 All information deemed reliable but not guaranteed. All properties subject to prior

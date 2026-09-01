@@ -7,7 +7,7 @@ export default function BuilderAdvantages() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-          How to compare builders near Aliante 89084
+          How to compare builders relative to Aliante 89084
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

@@ -298,7 +298,7 @@ export default function TopBuilders() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            New-home builders near Aliante 89084
+            New-home builders relative to Aliante 89084
           </h2>
           <p className="text-xl text-gray-600">
             Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.

@@ -62,7 +62,7 @@ export default function ContextualLinks({ variant }: ContextualLinksProps) {
     builders: (
       <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-8 my-12">
         <h3 className="text-2xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Builders near Aliante 89084
+          Builders to compare with Aliante 89084
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <Link
