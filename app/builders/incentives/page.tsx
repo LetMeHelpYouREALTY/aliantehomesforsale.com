@@ -6,7 +6,7 @@ import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
 
 export const metadata: Metadata = {
-  title: 'Builder Incentives near Aliante | Lennar, Horton, Del Webb',
+  title: 'Builder Incentives relative to Aliante | Lennar, Horton, Del Webb',
   description:
     'Independent buyer’s agent for Lennar and Del Webb incentives in Aliante 89084 and D.R. Horton at Tule Springs. Confirm live offers. Call (702) 707-7273.',
   keywords:
@@ -18,7 +18,7 @@ export default function Incentives() {
   return (
     <main>
       <NewConstructionHero
-        title="Builder Incentives near Aliante | Lennar, Horton, Del Webb"
+        title="Builder Incentives relative to Aliante | Lennar, Horton, Del Webb"
         subtitle="I confirm today’s closing-cost, rate-buydown, and upgrade offers with you. I will not publish a stale dollar amount. Call (702) 707-7273."
         filterHeading="Which builder is offering credits — confirm ZIP"
         image={pageHero('/builders/incentives')}

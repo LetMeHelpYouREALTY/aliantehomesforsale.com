@@ -48,10 +48,11 @@ export const lifestyleCategories: LifestyleCategory[] = [
   {
     id: 'golf',
     title: 'Golf-Course Homes',
-    description: 'Homes near Club Aliante and fairway living in North Las Vegas 89084.',
+    description:
+      'Fairway homes in Club Aliante next to Aliante Golf Club in North Las Vegas 89084.',
     href: '/golf-homes',
     image: '/images/golf.jpg',
-    alt: 'Golf course homes near Club Aliante',
+    alt: 'Golf-course homes in Club Aliante next to Aliante Golf Club',
     highlights: ['Near Aliante Golf Club', 'Fairway & mountain views', 'Confirm HOA and lot type'],
   },
   {

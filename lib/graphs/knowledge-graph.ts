@@ -136,6 +136,8 @@ export function buildKnowledgeGraph() {
     };
   });
 
+  const servicesServingTuleSprings = new Set(['buyer-representation', 'new-construction']);
+
   const services = siteConfig.services.map((service) => ({
     '@type': 'Service',
     '@id': graphIds.service(service.slug),
@@ -143,7 +145,9 @@ export function buildKnowledgeGraph() {
     description: service.description,
     url: `${siteConfig.siteUrl}${service.url}`,
     provider: { '@id': graphIds.agent },
-    areaServed: { '@id': graphIds.aliantePlace },
+    areaServed: servicesServingTuleSprings.has(service.slug)
+      ? [{ '@id': graphIds.aliantePlace }, { '@id': graphIds.northLasVegas }]
+      : { '@id': graphIds.aliantePlace },
     serviceType: 'RealEstate',
   }));
 

@@ -14,11 +14,12 @@ export default function BuilderDetailContent() {
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
             As an independent buyer’s agent, I represent you — not Lennar, D.R. Horton, Del Webb, or
-            the other desks on the Aliante and Tule Springs map. Builder sales agents represent the
-            builder. Buyer representation is typically at no extra cost to you on participating
-            builder sales — builders pay the cooperating commission from their marketing budget.
-            Confirm the fee in writing before you tour. I review the live incentive sheet, lot
-            premium, and upgrades on that contract. I will not publish a stale savings total.
+            the other desks on the builder map relative to Aliante 89084. Builder sales agents
+            represent the builder. Buyer representation is typically at no extra cost to you on
+            participating builder sales — builders pay the cooperating commission from their
+            marketing budget. Confirm the fee in writing before you tour. I review the live
+            incentive sheet, lot premium, and upgrades on that contract. I will not publish a stale
+            savings total.
           </p>
 
           <p className="leading-relaxed">

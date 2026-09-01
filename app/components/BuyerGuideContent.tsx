@@ -51,7 +51,7 @@ export default function BuyerGuideContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Which villages to tour near Aliante 89084
+            Which villages to tour in Aliante 89084 and nearby Tule Springs
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

@@ -25,7 +25,7 @@ export default function NewConstructionCTA() {
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Hire a new-construction buyer’s agent near Aliante 89084
+          Hire a new-construction buyer’s agent relative to Aliante 89084
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
           Independent representation with Lennar and Del Webb in 89084, D.R. Horton at Tule Springs,

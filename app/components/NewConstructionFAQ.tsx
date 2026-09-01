@@ -31,5 +31,5 @@ const faqs = [
 ];
 
 export default function NewConstructionFAQ() {
-  return <FAQSection title="New-construction FAQs near Aliante 89084" faqs={faqs} />;
+  return <FAQSection title="New-construction FAQs relative to Aliante 89084" faqs={faqs} />;
 }

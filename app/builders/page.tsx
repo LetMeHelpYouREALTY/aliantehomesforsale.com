@@ -10,7 +10,7 @@ import NewConstructionHero from '../components/NewConstructionHero';
 import TopBuilders from '../components/TopBuilders';
 
 export const metadata: Metadata = {
-  title: 'Builders near Aliante | Lennar, Horton, Del Webb',
+  title: 'Builders relative to Aliante | Lennar, Horton, Del Webb',
   description:
     'Compare Lennar and Del Webb in Aliante 89084 with D.R. Horton at Tule Springs. Independent buyer’s agent. Confirm live incentives. Call (702) 707-7273.',
   keywords: 'aliante builders, lennar aliante, dr horton tule springs, del webb sun city aliante',
@@ -23,7 +23,7 @@ export default function Builders() {
   return (
     <main className="builders-page">
       <NewConstructionHero
-        title="Builders near Aliante | Lennar, Horton, Del Webb"
+        title="Builders relative to Aliante | Lennar, Horton, Del Webb"
         subtitle="Lennar and Del Webb in 89084. Horton at Tule Springs, east of Aliante. Call (702) 707-7273."
         filterHeading="Compare builders relative to Aliante 89084"
         image={pageHero('/builders')}

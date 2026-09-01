@@ -7,16 +7,16 @@ export default function BuildersIntro() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          How new construction works near Aliante 89084
+          How new construction works relative to Aliante 89084
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            Aliante and the surrounding North Las Vegas area remain active for new construction. The
-            I-215 Beltway connects ZIP 89084 to downtown Las Vegas, Harry Reid International
-            Airport, and employment centers throughout the valley. National and regional builders
-            still sell here, each with a different floor-plan mix, included features, and incentive
-            sheet.
+            Lennar and Del Webb still sell inside Aliante ZIP 89084. D.R. Horton builds at Tule
+            Springs, east of the master plan. Toll, Tri Pointe, and Richmond are comparison
+            inventory — not inside 89084. The I-215 Beltway connects ZIP 89084 to downtown Las
+            Vegas, Harry Reid International Airport, and employment centers throughout the valley.
+            Each builder has a different floor-plan mix, included features, and incentive sheet.
           </p>
 
           <p className="leading-relaxed">

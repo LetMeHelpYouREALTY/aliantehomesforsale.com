@@ -8,7 +8,7 @@ import NeighborhoodCards from '../components/NeighborhoodCards';
 export const metadata: Metadata = {
   title: 'Club Aliante Golf Homes for Sale | North Las Vegas 89084 Realtor',
   description:
-    'Golf-course homes near Club Aliante and Aliante Golf Club in North Las Vegas 89084. Call (702) 707-7273. Confirm live MLS prices before you offer.',
+    'Golf-course homes in Club Aliante next to Aliante Golf Club in North Las Vegas 89084. Call (702) 707-7273. Confirm live MLS prices before you offer.',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/golf-homes',
   },

@@ -12,7 +12,7 @@ export default function AlianteFAQ() {
       answer: `<a href="/neighborhoods/desert-willows" class="${linkClass}">Desert Willows</a> and <a href="/neighborhoods/paseos" class="${linkClass}">The Paseos</a> are open-access villages with parks and community pools. <a href="/neighborhoods/prominence" class="${linkClass}">The Prominence</a> and <a href="/neighborhoods/club-aliante" class="${linkClass}">Club Aliante</a> are gated. <a href="/sun-city-aliante" class="${linkClass}">Sun City Aliante</a> is Del Webb 55+ inside 89084. Confirm live MLS prices before you offer.`,
     },
     {
-      question: 'How do I confirm new-construction prices near Aliante?',
+      question: 'How do I confirm new-construction prices relative to Aliante?',
       answer: `Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="${linkClass}">Lennar</a> and <a href="/builders/del-webb" class="${linkClass}">Del Webb</a> in ZIP 89084, and <a href="/builders/dr-horton" class="${linkClass}">D.R. Horton</a> at Tule Springs. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="${linkClass}">Builder Incentives</a> page or call ${siteConfig.phone}.`,
     },
     {

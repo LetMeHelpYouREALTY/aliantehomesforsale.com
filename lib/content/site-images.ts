@@ -47,7 +47,10 @@ export const siteImages = {
     'search.jpg',
     'Aerial view of Aliante North Las Vegas residential streets for MLS search'
   ),
-  golf: img('golf.jpg', 'Golf-course homes near Club Aliante in North Las Vegas 89084'),
+  golf: img(
+    'golf.jpg',
+    'Golf-course homes in Club Aliante next to Aliante Golf Club, North Las Vegas 89084'
+  ),
   gated: img('gated.jpg', 'Gated community entrance in Aliante, North Las Vegas'),
   neighborhoods: img(
     'neighborhoods.jpg',
