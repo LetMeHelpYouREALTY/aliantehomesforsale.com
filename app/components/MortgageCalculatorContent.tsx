@@ -8,7 +8,7 @@ export default function MortgageCalculatorContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Understanding Mortgage Payments and Affordability
+            Mortgage payments on an Aliante 89084 purchase
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -23,24 +23,25 @@ export default function MortgageCalculatorContent() {
             </p>
 
             <p className="leading-relaxed">
-              For example, on a $450,000 purchase with 10% down ($45,000), a sample payment at a 7%
-              rate looks like this (illustrative only — confirm live rate and taxes): Principal and
-              interest approximately $2,696, property taxes, insurance, HOA, and PMI if applicable.
-              Total housing cost is higher than the advertised P&amp;I. View current{' '}
+              Enter the list price, down payment, and the rate your lender quoted in the estimator
+              on this page for principal and interest. Confirm live rate and taxes — I will not
+              publish a sample price or rate as current. Property taxes, insurance, HOA, and PMI if
+              applicable sit on top of that P&amp;I. Total housing cost is higher than the
+              advertised P&amp;I. View current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 Aliante homes for sale
               </Link>{' '}
-              to calculate payments on specific properties, or check our{' '}
+              to calculate payments on specific properties, or read the{' '}
               <Link
                 href="/market-report"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 market report
               </Link>{' '}
-              for current pricing trends.
+              for how to read live MLS widgets.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -48,24 +49,19 @@ export default function MortgageCalculatorContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Interest rates remain the single most important variable affecting affordability. On
-              the sample $450,000 loan above, a 1% rate change moves principal-and-interest by a few
-              hundred dollars a month — confirm the live quote for your credit and down payment. In
-              today's environment, rates fluctuate based on Federal Reserve policy, inflation
-              trends, and broader economic conditions. Working with lenders who can lock favorable
-              rates quickly when market conditions improve is crucial – rates can change daily, and
-              being prepared to act when opportunities emerge provides real financial advantage.
+              Interest rates remain the single most important variable affecting affordability. A 1%
+              rate change moves monthly principal-and-interest — confirm the live quote for your
+              credit, purchase price, and down payment. Rates move with the market. Confirm the
+              quote your lender will actually lock — I will not treat a Fed headline as your
+              payment.
             </p>
 
             <p className="leading-relaxed">
-              Many builders offer rate buydown programs where they pay points to temporarily reduce
-              your interest rate during the first 1-2 years of your loan. A common 2-1 buydown might
-              give you 5% rate in year one, 6% in year two, then your permanent rate of 7% in years
-              three through thirty. This significantly improves early affordability and gives you
-              time to refinance if rates decrease. Some builders are also offering permanent rate
-              buydowns or closing cost assistance that effectively reduces your rate throughout the
-              entire loan term. As your buyer's agent, I'll help you evaluate which incentive
-              structures provide the best overall value.
+              Many builders offer rate buydown programs. A 2-1 buydown lowers the note rate for the
+              first two years, then the permanent rate applies. Confirm that structure and the
+              dollars on this month's sheet — I will not publish a 5% / 6% / 7% example as current.
+              Some builders also credit closing costs instead of a buydown. I review which credits
+              are actually on the contract you will sign.
             </p>
           </div>
         </div>
@@ -74,7 +70,7 @@ export default function MortgageCalculatorContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Down Payment Options and Loan Programs
+            Loan programs for an Aliante purchase in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -89,39 +85,30 @@ export default function MortgageCalculatorContent() {
             </p>
 
             <p className="leading-relaxed">
-              Each program has trade-offs beyond just down payment percentage. FHA loans require
-              both upfront and monthly mortgage insurance premiums that remain for the life of the
-              loan if you put down less than 10%, adding significant cost compared to conventional
-              PMI that drops off once you reach 20-22% equity. Conventional loans offer the best
-              rates and lowest fees for borrowers with strong credit (720+ scores) and larger down
-              payments. VA loans provide unmatched benefits for those who qualify but include a
-              funding fee (waived for disabled veterans) that must be paid upfront or financed into
-              the loan.
+              Each program has trade-offs beyond down payment. FHA can include upfront and monthly
+              mortgage insurance. Conventional PMI can drop once you reach the equity the servicer
+              requires — confirm that on your quote. VA loans can include a funding fee (waived for
+              some disabled veterans) paid upfront or financed. Confirm current rules with the
+              lender. I will not publish a 720-score cutoff or a lifetime-savings figure.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Hidden Costs and Budget Planning
+              Closing costs, HOA dues, and maintenance on an 89084 home
             </h3>
 
             <p className="leading-relaxed">
-              Beyond your monthly payment, homeownership includes additional costs that renters
-              don't face. Budget for maintenance and repairs averaging 1-2% of home value annually –
-              for a $450,000 home, that's $4,500-$9,000 per year. HVAC servicing, pool maintenance
-              for homes with pools, landscaping costs, and periodic replacement of major systems
-              (roof, water heater, appliances) all require planning. Many buyers are surprised by
-              these costs if they're transitioning from rental properties where landlords handled
-              all maintenance.
+              Budget for maintenance separately from the mortgage. HVAC, pool service where a pool
+              exists, landscaping, and later roof or water-heater replacement all sit outside P&I. I
+              will not publish a 1–2% of value rule as your actual bill — ask a contractor for that
+              address.
             </p>
 
             <p className="leading-relaxed">
-              Closing costs typically range 2-4% of purchase price and include lender fees, title
-              insurance, escrow fees, appraisal costs, and prepaid items like property taxes and
-              insurance. On a $450,000 purchase, expect $9,000-$18,000 in closing costs beyond your
-              down payment. Many buyers negotiate seller-paid closing costs, particularly in
-              balanced markets where sellers have flexibility. Some lenders also offer
-              no-closing-cost loans where fees are built into slightly higher interest rates – this
-              can be beneficial for buyers who plan to refinance within a few years if rates
-              decrease.
+              Closing costs include lender fees, title, escrow, appraisal, and prepaid taxes and
+              insurance. Confirm the current estimate from your lender — I will not publish a 2–4%
+              or dollar total as current. Some sellers credit closing costs; some builders put
+              credits on the incentive sheet. Confirm what is actually in the contract. A
+              no-closing-cost loan usually means a higher rate — compare both quotes in writing.
             </p>
           </div>
         </div>
@@ -130,18 +117,16 @@ export default function MortgageCalculatorContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Working with Experienced Mortgage Professionals
+            Compare at least two written lender quotes for ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Selecting the right lender is nearly as important as finding the right home. I work
-              with several mortgage professionals who specialize in the Las Vegas market and
-              consistently deliver competitive rates, efficient processing, and reliable closings.
-              These lenders understand unique situations like self-employment income, investment
-              property financing, and non-traditional credit profiles. They'll provide multiple loan
-              program options with detailed cost comparisons so you can make informed decisions
-              about which structure best fits your situation.
+              Selecting the right lender is nearly as important as finding the right home. Compare
+              at least two written quotes from lenders who actually close Las Vegas loans. Confirm
+              rate, points, and fees on that Loan Estimate — I will not claim a spread versus
+              advertised averages. Ask whether they have closed Aliante or Tule Springs files
+              recently.
             </p>
 
             <p className="leading-relaxed">

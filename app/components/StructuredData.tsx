@@ -44,7 +44,7 @@ export default function StructuredData({
         '@context': 'https://schema.org',
         '@type': 'RealEstateAgent',
         name: siteConfig.siteName,
-        description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} — buyer representation, listing services, new construction, and 55+ community specialist.`,
+        description: `Hyperlocal real estate services in ${siteConfig.areaName}, ${siteConfig.region} — buyer representation, listing services, new construction, and Sun City Aliante 55+.`,
         url: siteConfig.siteUrl,
         founder: {
           '@type': 'Person',
@@ -125,12 +125,13 @@ export default function StructuredData({
         '@type': 'WebPage',
         name: 'Aliante Neighborhoods Guide',
         description:
-          'Guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos, Sun City Aliante, and nearby Villages at Tule Springs in North Las Vegas 89084.',
+          'Guide to Aliante neighborhoods: The Prominence, Desert Willows, Club Aliante, The Paseos, and Sun City Aliante in North Las Vegas 89084. Nearby Villages at Tule Springs is east of ZIP 89084.',
         url: 'https://www.aliantehomesforsale.com/neighborhoods',
         mainEntity: {
           '@type': 'ItemList',
-          name: 'Aliante Neighborhoods',
-          description: 'Complete guide to all neighborhoods in Aliante, North Las Vegas',
+          name: 'Aliante villages and nearby Tule Springs',
+          description:
+            'Villages inside Aliante ZIP 89084, plus Villages at Tule Springs east of 89084',
           itemListElement: [
             {
               '@type': 'ListItem',
@@ -188,7 +189,7 @@ export default function StructuredData({
               item: {
                 '@type': 'Place',
                 name: 'Villages at Tule Springs',
-                description: 'New construction east of Aliante near Floyd Lamb Park',
+                description: 'New construction east of Aliante ZIP 89084, near Floyd Lamb Park',
                 url: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs',
               },
             },
@@ -278,12 +279,6 @@ export default function StructuredData({
             name: 'Sun City Aliante',
             description: 'Del Webb 55+ village inside ZIP 89084',
             url: 'https://www.aliantehomesforsale.com/sun-city-aliante',
-          },
-          {
-            '@type': 'Place',
-            name: 'Villages at Tule Springs',
-            description: 'New construction east of Aliante near Floyd Lamb Park',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs',
           },
         ],
         areaServed: {

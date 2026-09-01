@@ -28,7 +28,7 @@ export default function About() {
       {/* Expertise Section */}
       <AboutExpertise />
 
-      {/* Why Choose Us Section */}
+      {/* How I represent you */}
       <AboutWhyChooseUs />
 
       {/* Commitment Section */}

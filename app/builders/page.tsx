@@ -10,9 +10,9 @@ import NewConstructionHero from '../components/NewConstructionHero';
 import TopBuilders from '../components/TopBuilders';
 
 export const metadata: Metadata = {
-  title: 'Aliante Builders | Lennar, D.R. Horton, Del Webb — 89084',
+  title: 'Builders relative to Aliante | Lennar, Horton, Del Webb',
   description:
-    'Compare Lennar, D.R. Horton, and Del Webb near Aliante, North Las Vegas 89084. Independent buyer’s agent. Confirm live incentives. Call (702) 707-7273.',
+    'Compare Lennar and Del Webb in Aliante 89084 with D.R. Horton at Tule Springs. Independent buyer’s agent. Confirm live incentives. Call (702) 707-7273.',
   keywords: 'aliante builders, lennar aliante, dr horton tule springs, del webb sun city aliante',
   alternates: {
     canonical: 'https://www.aliantehomesforsale.com/builders',
@@ -23,9 +23,9 @@ export default function Builders() {
   return (
     <main className="builders-page">
       <NewConstructionHero
-        title="Aliante Builders | Lennar, D.R. Horton, Del Webb — 89084"
-        subtitle="Independent buyer representation in Aliante and nearby Tule Springs. Call (702) 707-7273."
-        filterHeading="Compare Aliante and Tule Springs builders"
+        title="Builders relative to Aliante | Lennar, Horton, Del Webb"
+        subtitle="Lennar and Del Webb in 89084. Horton at Tule Springs, east of Aliante. Call (702) 707-7273."
+        filterHeading="Compare builders relative to Aliante 89084"
         image={pageHero('/builders')}
       />
       <BuildersIntro />
@@ -36,12 +36,12 @@ export default function Builders() {
       <BuilderAdvantages />
       <BuilderComparison
         heading="Where each builder sits relative to Aliante ZIP 89084"
-        subheading="Lennar and Del Webb inside Aliante. D.R. Horton in nearby Tule Springs."
+        subheading="Lennar and Del Webb inside Aliante. Horton in Tule Springs. Toll, Tri Pointe, and Richmond are not inside 89084."
         showBuildersCta={false}
       />
       <BuilderIncentivesInfo
-        heading="Builder credits when you buy in Aliante 89084"
-        subheading="I confirm live Lennar, D.R. Horton, and Del Webb sheets before you write."
+        heading="Builder credits relative to Aliante 89084"
+        subheading="Lennar and Del Webb in 89084; Horton at Tule Springs. Confirm today’s sheet."
       />
       <NewConstructionCTA />
     </main>

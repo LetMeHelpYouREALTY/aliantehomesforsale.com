@@ -15,14 +15,24 @@ export default function NeighborhoodComparison({
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+          <h2
+            id="neighborhood-comparison-heading"
+            className="text-3xl sm:text-4xl font-bold mb-4"
+            style={{ color: '#1a365d' }}
+          >
             {heading}
           </h2>
           <p className="text-xl text-gray-600">{subheading}</p>
         </div>
 
         <div className="overflow-x-auto rounded-xl shadow-xl">
-          <table className="w-full min-w-[900px] bg-white">
+          <table
+            className="w-full min-w-[900px] bg-white"
+            aria-labelledby="neighborhood-comparison-heading"
+          >
+            <caption className="sr-only">
+              Compare Aliante villages by housing type, location, and typical buyer notes
+            </caption>
             <thead>
               <tr style={{ backgroundColor: '#1a365d' }}>
                 <th className="px-6 py-4 text-left text-white font-bold">Feature</th>
@@ -49,19 +59,19 @@ export default function NeighborhoodComparison({
                   Home types
                 </td>
                 <td className="px-6 py-4 text-gray-700">Single-family</td>
-                <td className="px-6 py-4 text-gray-700">Single-family, townhomes</td>
+                <td className="px-6 py-4 text-gray-700">Single-family</td>
                 <td className="px-6 py-4 text-gray-700">Golf-course lots</td>
-                <td className="px-6 py-4 text-gray-700">Single-family, townhomes</td>
+                <td className="px-6 py-4 text-gray-700">Confirm on live MLS</td>
                 <td className="px-6 py-4 text-gray-700">Single-family, villas</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
-                  Golf access
+                  Golf / fairway
                 </td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
+                <td className="px-6 py-4 text-gray-700">Not a golf village</td>
+                <td className="px-6 py-4 text-gray-700">Not fairway lots</td>
                 <td className="px-6 py-4 text-gray-700">Fairway lots</td>
-                <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
+                <td className="px-6 py-4 text-gray-700">Not fairway lots</td>
                 <td className="px-6 py-4 text-gray-700">Aliante Golf Club nearby</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">

@@ -14,7 +14,9 @@ interface ContactMethodProps {
 function ContactMethodCard({ icon, title, primary, details, href, featured }: ContactMethodProps) {
   const content = (
     <>
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-2xl font-bold mb-4" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -54,7 +56,7 @@ export default function ContactMethods() {
   const methods: ContactMethodProps[] = [
     {
       icon: '📞',
-      title: 'Call Us Today',
+      title: 'Call today',
       primary: '(702) 707-7273',
       details: [siteConfig.hours.weekday, siteConfig.hours.weekend],
       href: 'tel:+17027077273',
@@ -62,14 +64,14 @@ export default function ContactMethods() {
     },
     {
       icon: '✉️',
-      title: 'Email Us',
-      primary: 'DrDuffy@AlianteHomesForSale.com',
+      title: 'Email',
+      primary: siteConfig.email,
       details: ['Reply during office hours'],
-      href: 'mailto:DrDuffy@AlianteHomesForSale.com',
+      href: `mailto:${siteConfig.email}`,
     },
     {
       icon: '📍',
-      title: 'Visit Our Office',
+      title: 'Visit the office',
       primary: '2590 Nature Park Drive',
       details: ['Suite 275 · North Las Vegas, NV 89084', 'Tap for map & directions'],
       href: '#directions',

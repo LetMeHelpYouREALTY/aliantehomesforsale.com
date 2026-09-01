@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 /**
  * Honest disambiguation for GSC queries like "aliante property management".
@@ -13,7 +14,7 @@ export default function PropertyManagementContent() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          We sell Aliante homes in ZIP 89084. We do not manage rentals or HOAs.
+          I sell Aliante homes in ZIP 89084. I do not manage rentals or HOAs.
         </h2>
         <p className="leading-relaxed">
           Google searches for Aliante property management, leasing agents, and rental companies
@@ -30,10 +31,16 @@ export default function PropertyManagementContent() {
           FirstService Residential vs your Aliante realtor (same building)
         </h3>
         <p className="leading-relaxed">
-          FirstService Residential has managed the Aliante Master Association since 2003 and keeps a
-          North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275
-          in that same building. HOA billing, architectural review, and community rules go to the
-          association manager. Purchase and listing work goes to me.
+          <ExternalLink
+            href={siteConfig.official.firstService}
+            className="font-semibold text-[#2c5aa0] hover:underline"
+          >
+            FirstService Residential
+          </ExternalLink>{' '}
+          has managed the Aliante Master Association since 2003 and keeps a North Las Vegas office
+          at 2590 Nature Park Drive, Suite 100. My office is Suite 275 in that same building. HOA
+          billing, architectural review, and community rules go to the association manager. Purchase
+          and listing work goes to me.
         </p>
         <p className="leading-relaxed">
           Sub-associations such as Courts at Aliante and Terrasini also use professional HOA
@@ -103,7 +110,7 @@ export default function PropertyManagementContent() {
               className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2"
               style={{ borderColor: '#2c5aa0', color: '#2c5aa0' }}
             >
-              View Google Reviews
+              Open in Google Maps
             </a>
           </div>
         </div>

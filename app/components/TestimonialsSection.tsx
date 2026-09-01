@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
               Open the office listing on Google Maps for current reviews of {siteConfig.agentName}.
             </p>
             <span className="font-semibold" style={{ color: '#2c5aa0' }}>
-              View Google Reviews →
+              Open in Google Maps →
             </span>
           </a>
           <a

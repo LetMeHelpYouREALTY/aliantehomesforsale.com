@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { calendlyEventForPath, hasPageInlineCalendly, isLegalPath } from '../../lib/calendly';
+import { calendlyCopyForPath, hasPageInlineCalendly, isLegalPath } from '../../lib/calendly';
 import CalendlySection from './CalendlySection';
 
 /**
@@ -15,5 +15,8 @@ export default function CalendlyPageSection() {
     return null;
   }
 
-  return <CalendlySection event={calendlyEventForPath(pathname)} />;
+  const copy = calendlyCopyForPath(pathname);
+  return (
+    <CalendlySection event={copy.event} heading={copy.heading} description={copy.description} />
+  );
 }

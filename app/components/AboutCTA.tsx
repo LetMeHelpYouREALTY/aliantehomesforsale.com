@@ -1,9 +1,26 @@
 'use client';
 
+import type { CalendlyEventKey } from '../../lib/calendly';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
 
-export default function AboutCTA() {
+type AboutCTAProps = {
+  heading?: string;
+  subheading?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  calendlyEvent?: CalendlyEventKey;
+  calendlyLabel?: string;
+};
+
+export default function AboutCTA({
+  heading = 'Work with your Aliante realtor in North Las Vegas 89084',
+  subheading = 'Buyer or seller representation in ZIP 89084. Confirm live MLS before you offer or list.',
+  secondaryHref = '/homes-for-sale',
+  secondaryLabel = 'Browse Homes',
+  calendlyEvent = 'consultation',
+  calendlyLabel = 'Schedule with Dr. Jan Duffy',
+}: AboutCTAProps) {
   return (
     <section
       className="py-16 px-4 relative overflow-hidden"
@@ -11,8 +28,7 @@ export default function AboutCTA() {
         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       }}
     >
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
           style={{
@@ -24,23 +40,19 @@ export default function AboutCTA() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Work with your Aliante realtor in North Las Vegas 89084
-        </h2>
-        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Let&apos;s start your home search journey together
-        </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">{heading}</h2>
+        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">{subheading}</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <CalendlyPopupButton
-            event="consultation"
+            event={calendlyEvent}
             className="inline-block py-4 px-10 rounded-lg font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
           >
-            Schedule with Dr. Jan Duffy
+            {calendlyLabel}
           </CalendlyPopupButton>
 
           <a
-            href="/homes-for-sale"
+            href={secondaryHref}
             className="inline-block py-4 px-10 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl border-2 focus:ring-4 focus:ring-white/30 focus:outline-none"
             style={{
               backgroundColor: 'transparent',
@@ -56,14 +68,14 @@ export default function AboutCTA() {
               e.currentTarget.style.color = 'white';
             }}
           >
-            Browse Homes
+            {secondaryLabel}
           </a>
         </div>
 
         <div className="mt-10 text-white/90">
-          <p className="text-lg mb-3">Or call us directly:</p>
+          <p className="text-lg mb-3">Or call me directly:</p>
           <a href="tel:+17027077273" className="text-2xl sm:text-3xl font-bold hover:underline">
-            📞 (702) 707-7273
+            <span aria-hidden="true">📞</span> (702) 707-7273
           </a>
         </div>
       </div>

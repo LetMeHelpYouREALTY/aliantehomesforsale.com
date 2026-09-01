@@ -28,8 +28,8 @@ export default function RealScoutOfficeListingsSection() {
             Current homes for sale from this office
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Live MLS cards from Dr. Jan Duffy’s listings. Confirm city and ZIP on each card — not
-            every listing is inside Aliante 89084. Use the search widget to filter North Las Vegas.
+            Live MLS cards from this office. Confirm city and ZIP on each card — not every listing
+            is inside Aliante 89084. Use the search widget to filter North Las Vegas.
           </p>
         </div>
         <div className="min-h-[200px] w-full" dangerouslySetInnerHTML={{ __html: widgetMarkup }} />

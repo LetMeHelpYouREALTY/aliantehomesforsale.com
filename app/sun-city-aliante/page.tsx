@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import CommunityAmenities from '../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
@@ -27,10 +25,11 @@ export default function SunCityAliante() {
         image={pageHero('/sun-city-aliante')}
       />
       <SunCityContent />
-      <CommunityAmenities />
-      <EnhancedFeaturedProperties />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour Sun City Aliante 55+ in ZIP 89084"
+        subheading="Del Webb inside 89084 — not Ardiente in 89081. Call (702) 707-7273."
+      />
     </main>
   );
 }

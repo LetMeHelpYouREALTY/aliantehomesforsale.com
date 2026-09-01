@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 export default function GolfHomesContent() {
   return (
@@ -13,9 +15,15 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Golf-course homes in Aliante sit next to the city-owned Aliante Golf Club, an 18-hole
-              public course designed by Gary Panks — not Palm Valley in Sun City Summerlin, and not
-              a Billy Casper layout.{' '}
+              Golf-course homes in Aliante sit next to the city-owned{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>
+              , an 18-hole public course designed by Gary Panks — not Palm Valley in Sun City
+              Summerlin, and not a Billy Casper layout.{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -35,12 +43,12 @@ export default function GolfHomesContent() {
             </p>
 
             <p className="leading-relaxed">
-              As a golf course property specialist, I understand the unique considerations that make
-              these homes special. Not all golf course lots are created equal – corner lots with
-              views of multiple holes often price higher, while homes on fairways versus greens
-              offer different noise and foot-traffic profiles. Lots next to par-5s see more
+              Not all golf-course lots price the same. Corner lots with views of more than one hole
+              often trade differently than a single-fairway lot. Homes on fairways versus greens
+              have different noise and foot-traffic profiles. Lots next to par-5s see more
               errant-ball risk and longer sightlines; par-3 frontage is shorter. I compare lot
-              position, HOA rules, and live comps for the address you will actually buy.
+              position, HOA rules, and live comps for the address you will actually buy. I will not
+              publish a golf-course premium percentage.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -48,11 +56,17 @@ export default function GolfHomesContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Owning a home on the Club Aliante golf course sits next to the city-owned Aliante Golf
-              Club, though formal club membership is separate from home ownership. Confirm current
-              tee-time, dining, and practice-facility rules with Aliante Golf Club — I will not
-              publish member benefits that can change. The course also takes daily-fee play;
-              membership is optional.
+              Owning a home on the Club Aliante golf course sits next to the city-owned{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>
+              , though formal club membership is separate from home ownership. Confirm current
+              tee-time, dining, and practice-facility rules with the course — I will not publish
+              member benefits that can change. The course also takes daily-fee play; membership is
+              optional.
             </p>
 
             <p className="leading-relaxed">
@@ -95,7 +109,7 @@ export default function GolfHomesContent() {
               living before making their purchase. The primary consideration is errant golf balls –
               homes located along fairways will occasionally receive wayward shots, particularly
               from amateur players. Most golf course homeowners accept this as a minor trade-off for
-              the views and lifestyle, but it's important to acknowledge. Installing
+              the views and open space, but it's important to acknowledge. Installing
               impact-resistant windows on golf course-facing sides and creating covered patios
               provides protection while maintaining the open feel these properties offer.
             </p>
@@ -118,21 +132,16 @@ export default function GolfHomesContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Navigating the golf course home market requires working with an agent who understands
-              the nuances of these specialized properties. I tour fairway lots in Aliante with you
-              and can walk lot position, view corridors, errant-ball exposure, sun, and recent
-              comps. Some listings linger because the photos miss the course — we can check those
-              against live MLS and negotiate from there.
+              I tour fairway lots in Aliante with you and walk lot position, view corridors,
+              errant-ball exposure, sun, and recent comps. Some listings linger because the photos
+              miss the course — I check those against live MLS and negotiate from there.
             </p>
 
             <p className="leading-relaxed">
-              When evaluating golf course properties, I recommend multiple showings at different
-              times of day to experience the property during active golf hours and quiet periods.
-              This gives you realistic understanding of noise levels, foot traffic, and how the golf
-              course activity affects the home's ambiance. I'll also provide detailed comparative
-              market analysis showing recent golf course sales and how various lots are valued
-              relative to one another, ensuring you make an informed decision about fair value for
-              the specific property you're considering.
+              When evaluating golf-course lots, I schedule more than one showing when the calendar
+              allows — morning tee times and quieter hours sound different. Confirm errant-ball
+              history and live comps for that lot. I will not publish a quiet-hours schedule I have
+              not verified with the club.
             </p>
 
             <p className="leading-relaxed">

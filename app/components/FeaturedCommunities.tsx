@@ -13,7 +13,7 @@ const COMMUNITIES: Community[] = [
   {
     name: 'The Prominence',
     href: '/neighborhoods/prominence',
-    tagline: 'Gated village with larger homes and private streets',
+    tagline: 'Gated village with private streets and shared amenities',
     image: siteImages.prominence,
   },
   {
@@ -43,7 +43,7 @@ const COMMUNITIES: Community[] = [
   {
     name: 'Tule Springs',
     href: '/neighborhoods/tule-springs',
-    tagline: 'New construction near Floyd Lamb Park',
+    tagline: 'New construction east of Aliante ZIP 89084',
     image: siteImages.tuleSprings,
   },
 ];
@@ -63,11 +63,11 @@ export default function FeaturedCommunities() {
             className="text-4xl sm:text-5xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Featured Communities
+            Aliante villages and nearby Tule Springs
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore Aliante villages by location, amenities, and home style. RealScout search is on
-            each page.
+            Villages inside the Aliante master plan, plus Tule Springs new construction east of
+            89084. Confirm live MLS on each page.
           </p>
         </div>
 

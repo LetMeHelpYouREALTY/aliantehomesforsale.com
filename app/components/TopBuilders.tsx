@@ -1,5 +1,16 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
+
+function builderOfficialUrl(slug: (typeof siteConfig.builders)[number]['slug']): string {
+  const match = siteConfig.builders.find((builder) => builder.slug === slug);
+  if (match === undefined) {
+    throw new Error(`Missing official URL for builder slug ${slug}`);
+  }
+  return match.officialUrl;
+}
+
 interface BuilderCardProps {
   name: string;
   badge: string;
@@ -10,6 +21,7 @@ interface BuilderCardProps {
   incentives: string[];
   primaryCTA: { text: string; href: string };
   secondaryCTA: { text: string; href: string };
+  officialUrl?: string;
   featured?: boolean;
 }
 
@@ -23,6 +35,7 @@ function BuilderCard({
   incentives,
   primaryCTA,
   secondaryCTA,
+  officialUrl,
   featured,
 }: BuilderCardProps) {
   return (
@@ -63,7 +76,9 @@ function BuilderCard({
           <ul className="space-y-2">
             {communities.map((community) => (
               <li key={community} className="flex items-start gap-2 text-sm text-gray-700">
-                <span className="text-teal-500 font-bold flex-shrink-0">▸</span>
+                <span className="text-teal-500 font-bold flex-shrink-0" aria-hidden="true">
+                  ▸
+                </span>
                 <span>{community}</span>
               </li>
             ))}
@@ -77,7 +92,9 @@ function BuilderCard({
           <ul className="space-y-2">
             {incentives.map((incentive) => (
               <li key={incentive} className="flex items-start gap-2 text-sm text-gray-700">
-                <span className="flex-shrink-0">✅</span>
+                <span className="flex-shrink-0" aria-hidden="true">
+                  ✅
+                </span>
                 <span>{incentive}</span>
               </li>
             ))}
@@ -113,6 +130,16 @@ function BuilderCard({
             {secondaryCTA.text}
           </a>
         </div>
+        {officialUrl ? (
+          <p className="mt-3 text-center text-sm">
+            <ExternalLink
+              href={officialUrl}
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Official {name} website
+            </ExternalLink>
+          </p>
+        ) : null}
       </div>
     </article>
   );
@@ -143,6 +170,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Lennar in Aliante 89084', href: '/builders/lennar' },
       secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('lennar'),
       featured: true,
     },
     {
@@ -168,6 +196,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'D.R. Horton buyer notes', href: '/builders/dr-horton' },
       secondaryCTA: { text: 'Schedule Tule Springs tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('dr-horton'),
       featured: true,
     },
     {
@@ -191,6 +220,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Tri Pointe buyer notes', href: '/builders/tri-pointe' },
       secondaryCTA: { text: 'Book Showing', href: '/contact' },
+      officialUrl: builderOfficialUrl('tri-pointe'),
     },
     {
       name: 'DEL WEBB',
@@ -213,6 +243,7 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Del Webb buyer notes', href: '/builders/del-webb' },
       secondaryCTA: { text: 'Sun City Aliante', href: '/sun-city-aliante' },
+      officialUrl: builderOfficialUrl('del-webb'),
     },
     {
       name: 'TOLL BROTHERS',
@@ -224,7 +255,7 @@ export default function TopBuilders() {
       ],
       title: 'Toll Brothers — Elkhorn Grove',
       description:
-        'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131.',
+        'Toll Brothers is not currently building inside Aliante ZIP 89084. Elkhorn Grove is at 5819 Kings Bluff Ave, Las Vegas NV 89131 — not an Aliante address.',
       communities: [
         'Elkhorn Grove, Las Vegas 89131 — not Aliante 89084',
         'Confirm live inventory before you tour',
@@ -235,30 +266,51 @@ export default function TopBuilders() {
       ],
       primaryCTA: { text: 'Toll Brothers buyer notes', href: '/builders/toll-brothers' },
       secondaryCTA: { text: 'Schedule Private Tour', href: '/contact' },
-      featured: true,
+      officialUrl: builderOfficialUrl('toll-brothers'),
+    },
+    {
+      name: 'RICHMOND AMERICAN',
+      badge: 'Confirm ZIP',
+      stats: [
+        { value: 'Confirm', label: 'ZIP vs 89084' },
+        { value: 'Live', label: 'Inventory' },
+        { value: 'Confirm', label: 'Community' },
+      ],
+      title: 'Richmond American — confirm the community ZIP',
+      description:
+        'Do not assume a Richmond American community is inside Aliante ZIP 89084. Confirm the current map, then compare with Lennar in Aliante or Tule Springs new construction.',
+      communities: [
+        'Confirm whether the community you will tour is inside 89084',
+        'Compare with Lennar in Aliante and D.R. Horton at Tule Springs',
+      ],
+      incentives: [
+        'Confirm today’s incentive sheet for that community',
+        'Register with me before the model tour so representation is documented',
+      ],
+      primaryCTA: { text: 'Richmond American buyer notes', href: '/builders/richmond-american' },
+      secondaryCTA: { text: 'Schedule Tour', href: '/contact' },
+      officialUrl: builderOfficialUrl('richmond-american'),
     },
   ];
 
   return (
-    <>
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-              New-home builders near Aliante 89084
-            </h2>
-            <p className="text-xl text-gray-600">
-              Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {builders.map((builder) => (
-              <BuilderCard key={builder.name} {...builder} />
-            ))}
-          </div>
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+            New-home builders relative to Aliante 89084
+          </h2>
+          <p className="text-xl text-gray-600">
+            Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
+          </p>
         </div>
-      </section>
-    </>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {builders.map((builder) => (
+            <BuilderCard key={builder.name} {...builder} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

@@ -7,7 +7,7 @@ import TriPointeContent from '../../components/TriPointeContent';
 import TriPointeFAQ from '../../components/TriPointeFAQ';
 
 export const metadata: Metadata = {
-  title: 'Tri Pointe Homes Las Vegas | New Construction Near Aliante',
+  title: 'Tri Pointe Homes Las Vegas | Not Inside Aliante 89084',
   description:
     'Tri Pointe Homes Las Vegas: current collections are northwest (Kyle Pointe, Citrine), not inside Aliante 89084. Compare with Lennar and Aliante resale. Independent buyer representation. Call (702) 707-7273.',
   keywords:
@@ -21,7 +21,7 @@ export default function TriPointe() {
     <main>
       <PageHero
         eyebrow="New construction · Las Vegas Valley"
-        title="Tri Pointe Homes Las Vegas | Near Aliante, Not Inside 89084"
+        title="Tri Pointe Homes Las Vegas | Not Inside Aliante ZIP 89084"
         subtitle="Tri Pointe is not currently listing a community inside the Aliante master plan. Tour northwest collections with an independent buyer’s agent. Call (702) 707-7273."
         image={pageHero('/builders/tri-pointe')}
       />

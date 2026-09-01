@@ -57,9 +57,9 @@ export default function BuilderIncentivesInfo({
           </p>
 
           <p className="leading-relaxed">
-            Tri Pointe and Toll Brothers are not currently building inside Aliante ZIP 89084. Nearby
-            northwest Las Vegas communities still matter if you are comparing new construction with
-            Aliante resale. Confirm live inventory before you drive.{' '}
+            Tri Pointe, Toll Brothers, and Richmond American are not currently building inside
+            Aliante ZIP 89084. Use those collections as a comparison to Aliante resale or Lennar
+            inventory, not as a nearby Aliante address. Confirm live inventory before you drive.{' '}
             <Link
               href="/mortgage-calculator"
               className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

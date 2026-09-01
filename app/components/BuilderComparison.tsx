@@ -15,14 +15,21 @@ export default function BuilderComparison({
     <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+          <h2
+            id="builder-comparison-heading"
+            className="text-3xl sm:text-4xl font-bold mb-4"
+            style={{ color: '#1a365d' }}
+          >
             {heading}
           </h2>
           <p className="text-xl text-gray-600">{subheading}</p>
         </div>
 
         <div className="overflow-x-auto rounded-xl shadow-xl">
-          <table className="w-full min-w-[800px]">
+          <table className="w-full min-w-[800px]" aria-labelledby="builder-comparison-heading">
+            <caption className="sr-only">
+              Compare Aliante and nearby builders by location, listings, and incentives
+            </caption>
             <thead>
               <tr style={{ backgroundColor: '#1a365d' }}>
                 <th className="px-6 py-4 text-left text-white font-bold">Builder</th>

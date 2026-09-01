@@ -10,7 +10,7 @@ export default function SearchPageContent() {
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            Our MLS search connects to the Las Vegas MLS feed that agents use, with listings that
+            This MLS search connects to the Las Vegas MLS feed that agents use, with listings that
             refresh about every 15 minutes. Inventory counts change throughout the day — search live
             rather than relying on a stale total. Confirm the address, list price, and status on the
             widget before you treat any card as current.
@@ -23,7 +23,7 @@ export default function SearchPageContent() {
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-            Understanding MLS Data and Property Information
+            How to read MLS listing remarks in ZIP 89084
           </h3>
 
           <p className="leading-relaxed">

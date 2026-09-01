@@ -12,7 +12,7 @@ export default function NewConstructionCTA() {
       }}
     >
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
           style={{
@@ -25,10 +25,11 @@ export default function NewConstructionCTA() {
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Hire a new-construction buyer’s agent in Aliante 89084
+          Hire a new-construction buyer’s agent relative to Aliante 89084
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance from Dr. Jan Duffy - Aliante's new construction specialist
+          Independent representation with Lennar and Del Webb in 89084, D.R. Horton at Tule Springs,
+          and other builders you will actually tour. Call (702) 707-7273.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -42,7 +43,7 @@ export default function NewConstructionCTA() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
           >
-            📞 Call (702) 707-7273
+            <span aria-hidden="true">📞</span> Call (702) 707-7273
           </a>
 
           <CalendlyPopupButton
@@ -69,7 +70,7 @@ export default function NewConstructionCTA() {
               e.currentTarget.style.color = 'white';
             }}
           >
-            View Current Incentives
+            View builder incentive notes
           </a>
         </div>
 

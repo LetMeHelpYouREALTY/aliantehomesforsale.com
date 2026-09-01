@@ -7,7 +7,7 @@ export default function TriPointeContent() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto prose prose-lg text-gray-700">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-          Tri Pointe Homes Las Vegas — buyer agency near Aliante, not inside 89084
+          Tri Pointe Homes Las Vegas — not inside Aliante ZIP 89084
         </h2>
         <p className="leading-relaxed">
           Searches for Tri Pointe Homes Las Vegas often hit this Aliante site. As of August 31,
@@ -48,9 +48,9 @@ export default function TriPointeContent() {
               className="font-semibold"
               style={{ color: '#2c5aa0' }}
             >
-              Toll Brothers near Aliante
+              Toll Brothers in 89131
             </Link>{' '}
-            — luxury collections in 89131 and Summerlin, not inside 89084.
+            — Elkhorn Grove (89131) and Summerlin collections, not inside 89084.
           </li>
         </ul>
         <p className="leading-relaxed">

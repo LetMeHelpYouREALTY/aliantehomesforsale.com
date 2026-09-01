@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import BuilderComparison from '../components/BuilderComparison';
 import ConstructionProcess from '../components/ConstructionProcess';
 import NewConstructionCTA from '../components/NewConstructionCTA';
 import NewConstructionFAQ from '../components/NewConstructionFAQ';
 import NewConstructionHero from '../components/NewConstructionHero';
-import QuickMoveInHomes from '../components/QuickMoveInHomes';
 import TopBuilders from '../components/TopBuilders';
 import WhyNewConstruction from '../components/WhyNewConstruction';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
@@ -13,7 +11,7 @@ import WhyWorkWithUs from '../components/WhyWorkWithUs';
 export const metadata: Metadata = {
   title: 'New-Construction Buyer Agency in Aliante | North Las Vegas 89084',
   description:
-    'Independent new-construction buyer’s agent in Aliante and Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 707-7273.',
+    'Independent new-construction buyer’s agent in Aliante 89084 and Tule Springs. Lennar and Del Webb in 89084; D.R. Horton east of Aliante. Confirm live incentives. Call (702) 707-7273.',
   keywords:
     'north las vegas home builders, new construction Aliante, Aliante new homes, Lennar Aliante, DR Horton Tule Springs',
   alternates: {
@@ -33,18 +31,13 @@ export default function NewConstruction() {
     <main className="new-construction-page">
       <NewConstructionHero
         title="New-Construction Buyer Agency in Aliante, North Las Vegas 89084"
-        subtitle="Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273."
-        filterHeading="Filter Aliante and Tule Springs new construction"
+        subtitle="Independent representation with Lennar and Del Webb in 89084, D.R. Horton at Tule Springs, and other builders you will actually tour. Call (702) 707-7273."
+        filterHeading="Jump to a builder — confirm ZIP relative to 89084"
         image={pageHero('/new-construction')}
       />
       <TopBuilders />
       <WhyNewConstruction />
       <ConstructionProcess />
-      <QuickMoveInHomes />
-      <BuilderComparison
-        heading="Lennar, D.R. Horton, and Del Webb near Aliante 89084"
-        subheading="Independent buyer agency. Confirm live inventory and incentive sheets."
-      />
       <WhyWorkWithUs />
       <NewConstructionFAQ />
       <NewConstructionCTA />

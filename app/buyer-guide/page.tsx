@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
-import ConstructionProcess from '../components/ConstructionProcess';
-import ContactWhyChoose from '../components/ContactWhyChoose';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
 import HomesSearchTips from '../components/HomesSearchTips';
@@ -30,9 +28,14 @@ export default function BuyerGuide() {
         <ContextualLinks variant="buying" />
       </div>
       <HomesSearchTips />
-      <ConstructionProcess />
-      <ContactWhyChoose />
-      <HomesCTA />
+      <HomesCTA
+        heading="Buyer representation in Aliante, North Las Vegas 89084"
+        subheading="I represent you on Club Aliante, gated villages, and Sun City Aliante. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Search live MLS"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a buyer consultation"
+      />
     </main>
   );
 }

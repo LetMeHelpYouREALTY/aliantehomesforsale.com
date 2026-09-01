@@ -26,9 +26,16 @@ export default function MortgageCalculator() {
       />
       <MortgagePaymentEstimator />
       <MortgageCalculatorContent />
-      <EnhancedContactForm event="consultation" />
+      <EnhancedContactForm event="appointment" />
       <HomesMarketSnapshot />
-      <HomesCTA />
+      <HomesCTA
+        heading="Estimate principal and interest for an Aliante purchase"
+        subheading="Confirm taxes, insurance, and HOA with your lender. I am your realtor, not your loan officer."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="appointment"
+        calendlyLabel="Schedule a payment review"
+      />
     </main>
   );
 }

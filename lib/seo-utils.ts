@@ -108,14 +108,14 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
 // Neighborhood-specific SEO data
 export const neighborhoodSEO = {
   prominence: {
-    title: 'The Prominence Homes For Sale - Luxury Gated Community Aliante',
+    title: 'The Prominence Homes For Sale - Gated Village Aliante 89084',
     description:
       'Gated village in The Prominence, Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
     keywords: [
       'The Prominence',
-      'luxury homes Aliante',
+      'gated homes Aliante',
       'gated community Las Vegas',
-      'premium real estate',
+      'Aliante 89084',
     ],
   },
   'desert-willows': {
@@ -148,7 +148,7 @@ export const pageSEO = {
   'homes-for-sale': {
     title: 'Homes For Sale in Aliante - Updated Every 15 Minutes | MLS Listings',
     description:
-      'MLS listings in Aliante, North Las Vegas 89084. Updated about every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 707-7273',
+      'MLS listings in Aliante, North Las Vegas 89084. Updated about every 15 minutes. Search by price, beds, baths. Independent buyer representation. Call (702) 707-7273',
     keywords: [
       'Aliante homes for sale',
       'MLS listings Aliante',
@@ -159,7 +159,7 @@ export const pageSEO = {
   'new-construction': {
     title: 'New Construction Homes Aliante - Builder Incentives & Floor Plans',
     description:
-      'New construction in Aliante and nearby Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 707-7273.',
+      'New construction in Aliante 89084 and nearby Tule Springs. Lennar and Del Webb in 89084; D.R. Horton east of Aliante. Confirm live incentives. Call (702) 707-7273.',
     keywords: ['new construction Aliante', 'builder incentives', 'Lennar homes', 'DR Horton'],
   },
   'home-valuation': {

@@ -38,7 +38,7 @@ export function buildContentGraph() {
   const neighborhoodList = {
     '@type': 'ItemList',
     '@id': `${siteConfig.siteUrl}/neighborhoods#itemlist`,
-    name: 'Aliante Neighborhoods Guide',
+    name: 'Aliante villages and nearby Tule Springs',
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     numberOfItems: siteConfig.neighborhoods.length,
     itemListElement: siteConfig.neighborhoods.map((n, index) => {
@@ -70,7 +70,7 @@ export function buildContentGraph() {
   const buildersList = {
     '@type': 'ItemList',
     '@id': `${siteConfig.siteUrl}/builders#itemlist`,
-    name: 'Aliante New Construction Builders',
+    name: 'Builders relative to Aliante 89084',
     numberOfItems: siteConfig.builders.length,
     itemListElement: siteConfig.builders.map((builder, index) => ({
       '@type': 'ListItem',
@@ -86,8 +86,7 @@ export function buildContentGraph() {
     '@id': `${siteConfig.siteUrl}/buyer-guide#howto`,
     name: 'How to buy a home in Aliante, North Las Vegas',
     description:
-      'Three steps to search MLS listings, tour Aliante communities, and close with a hyperlocal agent.',
-    totalTime: 'P30D',
+      'Search live MLS, tour Aliante villages, then write and close. Confirm the close date on that contract.',
     supply: [],
     tool: [],
     step: buyerPathSteps.map((step) => ({

@@ -13,35 +13,30 @@ export default function SellerChecklistContent() {
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Selling your Aliante home successfully requires strategic planning, professional
-              execution, and expert{' '}
-              <Link
-                href="/market-report"
-                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
-              >
-                market knowledge
-              </Link>
-              . The difference between an average sale and an exceptional one often comes down to
-              preparation, pricing strategy, and marketing execution. As your listing agent since
-              2018 in the Aliante market, I'll walk you through pricing from village comps, MLS
-              photos, and offer review. Time on market still depends on the list price and the week
-              — I will not promise a sale speed. Get started with a{' '}
+              Selling your Aliante home takes a list price from village comps, MLS photos, and offer
+              review. Time on market still depends on the list price and the week — I will not
+              promise a sale speed. Start with a{' '}
               <Link
                 href="/home-valuation"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 home valuation / CMA
               </Link>{' '}
-              to understand your property's current worth.
+              for that address. Read current medians on the{' '}
+              <Link
+                href="/market-report"
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                market report
+              </Link>
+              .
             </p>
 
             <p className="leading-relaxed">
-              The Aliante market is unique in that buyers have high expectations for quality and
-              presentation given the master-planned community's reputation. Homes that show well and
-              are priced to recent comps typically get more showing traffic in the first weeks of
-              listing. Homes that hit the market unprepared or overpriced can linger, which can
-              weaken later offers. Confirm current days-on-market on live MLS — I will not publish a
-              stale “sold in week one” rate.
+              Homes that show well and are priced to recent comps typically get more showing traffic
+              in the first weeks of listing. Homes that hit the market unprepared or overpriced can
+              linger, which can weaken later offers. Confirm current days-on-market on live MLS — I
+              will not publish a stale “sold in week one” rate.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -49,19 +44,16 @@ export default function SellerChecklistContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Before your home hits the MLS, we'll walk the house together, note repairs that affect
-              how buyers see it, and skip updates that may not recoup their cost. Deep cleaning,
-              minor repairs, fresh paint in neutral colors, and landscaping often change showing
-              photos more than a full kitchen remodel — confirm what that address actually needs.
+              Before your home hits the MLS, I walk the house with you, note repairs that affect how
+              buyers see it, and skip updates that may not recoup their cost. Deep cleaning, minor
+              repairs, fresh paint in neutral colors, and landscaping often change showing photos
+              more than a full kitchen remodel — confirm what that address actually needs.
             </p>
 
             <p className="leading-relaxed">
-              Decluttering and depersonalizing your home is equally critical. Buyers need to
-              envision themselves living in your space, which becomes difficult when every surface
-              is covered with personal items, family photos, and collection displays. We'll work
-              together to create a clean, neutral canvas that showcases your home's best features.
-              For many sellers, this means placing items in storage temporarily so rooms photograph
-              and show as empty living space, not a personal archive.
+              Personal photos and collections on every surface make rooms harder to photograph. I
+              help you decide what to pack so MLS photos show rooms, light, and lot — not a personal
+              archive. For many sellers that means a short storage stay until close.
             </p>
           </div>
         </div>
@@ -95,12 +87,10 @@ export default function SellerChecklistContent() {
             </h3>
 
             <p className="leading-relaxed">
-              Once your home is prepared and priced, we launch a comprehensive marketing campaign
-              designed to reach every qualified buyer in the market. This begins with professional
-              photography — professional listing photos typically show rooms, lot, and light more
-              clearly than phone snapshots. I invest in professional photographers who understand
-              how to showcase homes in the best light, often including drone footage for properties
-              with exceptional locations or views.
+              Once your home is prepared and priced, listing photos go out with the MLS.
+              Professional listing photos typically show rooms, lot, and light more clearly than
+              phone snapshots. I use listing photographers who shoot rooms, lot, and light —
+              including drone photos when the lot or elevation actually shows in the frame.
             </p>
 
             <p className="leading-relaxed">
@@ -132,18 +122,13 @@ export default function SellerChecklistContent() {
               management and problem-solving. Home inspections, appraisals, loan processing, and
               title work all need to proceed smoothly for the sale to close successfully. I'll
               coordinate with all parties, address any issues that arise, and keep you informed
-              throughout the process. My goal is to remove stress and uncertainty from the
-              transaction while protecting your interests and ensuring we reach closing day on
-              schedule. Closing timelines still depend on the contract, lender, and title — confirm
-              current days-to-close on the offer you accept.
+              throughout the process. Closing timelines still depend on the contract, lender, and
+              title — confirm current days-to-close on the offer you accept.
             </p>
 
             <p className="leading-relaxed">
-              Selling a home is a significant life event, and you deserve representation that
-              combines local market expertise with professional execution. I have listed Aliante
-              homes since 2018. Contact me today for a comparative market analysis and listing
-              consultation where we can discuss your specific situation and create a customized plan
-              for your successful sale.
+              I have listed Aliante homes since 2018. Call (702) 707-7273 for a comparative market
+              analysis and listing consultation for your address.
             </p>
           </div>
         </div>

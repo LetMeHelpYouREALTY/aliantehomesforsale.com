@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
 
 export default function SunCityContent() {
   return (
@@ -40,20 +42,26 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              I represent 55+ buyers on occupancy rules, HOA documents, and lot position.
-              Single-story plans, proximity to the recreation campus or Aliante Golf Club, and club
+              I represent 55+ buyers on occupancy rules, HOA documents, and lot position. Floor
+              plan, story count, proximity to the recreation campus or Aliante Golf Club, and club
               access still vary by address. Confirm live MLS inventory and list prices — I will not
               publish a stale count or range.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Amenities and Recreation
+              Recreation campuses and Aliante Golf Club from Sun City
             </h3>
 
             <p className="leading-relaxed">
               Sun City Aliante recreation campuses typically include fitness rooms, pools, tennis
               and pickleball courts, and meeting rooms for clubs. Confirm current hours, fees, and
-              guest rules with the association — amenity lists change. The 18-hole Aliante Golf Club
+              guest rules with the association — amenity lists change. The 18-hole{' '}
+              <ExternalLink
+                href={siteConfig.official.alianteGolf}
+                className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
+              >
+                Aliante Golf Club
+              </ExternalLink>{' '}
               (Gary Panks, city-owned and open to the public) runs through the broader Aliante plan.
               Palm Valley is a different course in Sun City Summerlin — do not confuse the two.
               Confirm current resident rates and tee-time rules with the club.
@@ -71,18 +79,15 @@ export default function SunCityContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Home Styles and Floor Plans
+            Sun City Aliante floor plans in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Sun City Aliante homes were designed specifically for active adult living, with
-              thoughtful features that enhance comfort and accessibility. Most homes offer
-              single-story living with master bedroom suites featuring walk-in closets, ensuite
-              bathrooms with walk-in showers, and direct access to outdoor living spaces.
-              Open-concept floor plans maximize usable space while creating bright interiors.
-              Kitchens with islands, upgraded appliances, and ample storage show up on some plans;
-              confirm finishes on the listing. Flex rooms can serve as an office or hobby space.
+              Sun City Aliante plans are built for 55+ occupancy. Confirm story count, primary-suite
+              location, bed/bath count, stairs, and finishes on that MLS number — I will not treat
+              single-story as a given. Open-concept kitchens and flex rooms show up on some plans,
+              not all. I will not hard-code a size range.
             </p>
 
             <p className="leading-relaxed">
@@ -93,7 +98,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Healthcare and Services Access
+              Drive times to care and services from Sun City Aliante
             </h3>
 
             <p className="leading-relaxed">
@@ -130,10 +135,10 @@ export default function SunCityContent() {
             </p>
 
             <p className="leading-relaxed">
-              From a lifestyle perspective, Sun City Aliante is built around clubs, fitness, and
-              low-maintenance lots. Confirm current amenities, HOA fees, and occupancy rules with
-              the association before you offer. I represent you on the purchase — I will not publish
-              unverified resident testimonials.
+              Sun City Aliante is built around clubs, fitness, and low-maintenance lots. Confirm
+              current amenities, HOA fees, and occupancy rules with the association before you
+              offer. I represent you on the purchase — I will not publish unverified resident
+              testimonials.
             </p>
           </div>
         </div>

@@ -48,21 +48,22 @@ export const lifestyleCategories: LifestyleCategory[] = [
   {
     id: 'golf',
     title: 'Golf-Course Homes',
-    description: 'Homes near Club Aliante and fairway living in North Las Vegas 89084.',
+    description:
+      'Fairway homes in Club Aliante next to Aliante Golf Club in North Las Vegas 89084.',
     href: '/golf-homes',
     image: '/images/golf.jpg',
-    alt: 'Golf course homes near Club Aliante',
+    alt: 'Golf-course homes in Club Aliante next to Aliante Golf Club',
     highlights: ['Near Aliante Golf Club', 'Fairway & mountain views', 'Confirm HOA and lot type'],
   },
   {
     id: 'new-construction',
     title: 'New Construction',
     description:
-      'Compare Lennar and Del Webb in 89084 with nearby Tule Springs and other builders.',
+      'Compare Lennar and Del Webb in 89084 with Horton at Tule Springs. Toll and Tri Pointe are not inside 89084.',
     href: '/new-construction',
     image: '/images/builders.jpg',
     alt: 'New construction homes in Aliante North Las Vegas',
-    highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer advocacy'],
+    highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer representation'],
   },
   {
     id: 'sun-city',
@@ -71,7 +72,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     href: '/sun-city-aliante',
     image: '/images/sun-city.jpg',
     alt: 'Sun City Aliante 55+ active adult community',
-    highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Single-story plans'],
+    highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Confirm floor plan on listing'],
   },
 ];
 
@@ -120,7 +121,7 @@ export const agentCredentials: CredentialItem[] = [
     id: 'builders',
     title: 'Builder negotiation advocate',
     description:
-      'Independent buyer representation with major Aliante builders — incentives, upgrades, and contract terms. Confirm the fee in writing before you tour.',
+      'Independent buyer representation with Lennar and Del Webb in 89084, Horton at Tule Springs, and other builders you will actually tour. Confirm the fee in writing before you tour.',
   },
 ];
 
@@ -135,15 +136,16 @@ export const buyerPathSteps: BuyerPath[] = [
   {
     id: 'tour',
     step: 2,
-    title: 'Tour communities',
-    description: 'Compare gated, golf, 55+, and new-construction neighborhoods.',
+    title: 'Tour villages',
+    description:
+      'Compare gated, golf, 55+, and Tule Springs new construction relative to ZIP 89084.',
     href: '/neighborhoods',
   },
   {
     id: 'guide',
     step: 3,
-    title: 'Get local guidance',
-    description: 'Work with Dr. Jan Duffy on offers, inspections, and closing.',
+    title: 'Write and close',
+    description: 'Work with Dr. Jan Duffy on offers, inspections, and closing in ZIP 89084.',
     href: '/contact',
   },
 ];
@@ -166,8 +168,7 @@ export const nearbyPlaces: NearbyPlace[] = [
     id: 'aliante-casino',
     name: 'Aliante Casino + Hotel',
     category: 'Entertainment & dining',
-    description:
-      'Resort casino with restaurants, shows, and a spa — about a short drive from the office on Aliante Parkway.',
+    description: 'Resort casino with restaurants, shows, and a spa on Aliante Parkway.',
     mapsQuery: 'Aliante Casino + Hotel, North Las Vegas, NV',
     driveNote: 'Nearby on Aliante Parkway — confirm drive time from the address you will buy.',
   },

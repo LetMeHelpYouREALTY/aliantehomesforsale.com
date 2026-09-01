@@ -20,10 +20,7 @@ const homeSlide1 = img(
   'home-1.jpg',
   'Aliante North Las Vegas homes for sale along a desert residential street'
 );
-const homeSlide2 = img(
-  'home-2.jpg',
-  'Gated luxury community entrance in Aliante, North Las Vegas 89084'
-);
+const homeSlide2 = img('home-2.jpg', 'Gated community entrance in Aliante, North Las Vegas 89084');
 const homeSlide3 = img(
   'home-3.jpg',
   'Golf-course home overlooking a fairway in Aliante, North Las Vegas'
@@ -50,7 +47,10 @@ export const siteImages = {
     'search.jpg',
     'Aerial view of Aliante North Las Vegas residential streets for MLS search'
   ),
-  golf: img('golf.jpg', 'Golf-course homes near Club Aliante in North Las Vegas 89084'),
+  golf: img(
+    'golf.jpg',
+    'Golf-course homes in Club Aliante next to Aliante Golf Club, North Las Vegas 89084'
+  ),
   gated: img('gated.jpg', 'Gated community entrance in Aliante, North Las Vegas'),
   neighborhoods: img(
     'neighborhoods.jpg',
@@ -58,7 +58,7 @@ export const siteImages = {
   ),
   prominence: img(
     'prominence.jpg',
-    'Luxury gated homes in The Prominence, Aliante, North Las Vegas 89084'
+    'Gated homes in The Prominence, Aliante, North Las Vegas 89084'
   ),
   desertWillows: img(
     'desert-willows.jpg',
@@ -90,11 +90,11 @@ export const siteImages = {
   drHorton: img('dr-horton.jpg', 'D.R. Horton new construction in Tule Springs, North Las Vegas'),
   triPointe: img(
     'tri-pointe.jpg',
-    'Tri Pointe Homes new construction in North Las Vegas near Aliante'
+    'Tri Pointe Homes new construction in northwest Las Vegas, not inside Aliante'
   ),
   tollBrothers: img(
     'toll-brothers.jpg',
-    'Toll Brothers luxury home exterior in the North Las Vegas luxury market'
+    'Toll Brothers home exterior — not inside Aliante ZIP 89084'
   ),
   richmondAmerican: img(
     'richmond-american.jpg',

@@ -32,11 +32,13 @@ export default function LocationSchema() {
       name: 'North Las Vegas',
       sameAs: graphIds.northLasVegas,
     },
-    containsPlace: siteConfig.neighborhoods.map((n) => ({
-      '@type': 'Place',
-      '@id': graphIds.neighborhood(n.slug),
-      name: n.name,
-    })),
+    containsPlace: siteConfig.neighborhoods
+      .filter((n) => n.slug !== 'tule-springs')
+      .map((n) => ({
+        '@type': 'Place',
+        '@id': graphIds.neighborhood(n.slug),
+        name: n.name,
+      })),
   };
 
   return (

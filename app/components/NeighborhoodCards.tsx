@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 
 interface NeighborhoodCardProps {
@@ -11,7 +12,6 @@ interface NeighborhoodCardProps {
   features: string[];
   stats: { label: string; value: string }[];
   href: string;
-  featured?: boolean;
 }
 
 function NeighborhoodCard({
@@ -22,14 +22,11 @@ function NeighborhoodCard({
   features,
   stats,
   href,
-  featured,
 }: NeighborhoodCardProps) {
   return (
     <article
-      className={`bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${
-        featured ? 'border-4' : 'border-2'
-      }`}
-      style={featured ? { borderColor: '#2c5aa0' } : { borderColor: '#e5e7eb' }}
+      className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2"
+      style={{ borderColor: '#e5e7eb' }}
     >
       <div className="relative h-48">
         <Image
@@ -40,11 +37,6 @@ function NeighborhoodCard({
           className="object-cover"
           loading="lazy"
         />
-        {featured && (
-          <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-            Featured
-          </div>
-        )}
       </div>
 
       <div className="p-6">
@@ -98,21 +90,21 @@ function NeighborhoodCard({
 }
 
 export default function NeighborhoodCards() {
+  const pathname = (usePathname() || '/').replace(/\/+$/, '') || '/';
   const neighborhoods: NeighborhoodCardProps[] = [
     {
       image: siteImages.prominence,
       name: 'The Prominence',
       tag: 'Gated village',
       description:
-        'Controlled-access village inside the Aliante master plan with premium finishes, private amenities, and proximity to Aliante Golf Club.',
-      features: ['Near Aliante Golf Club', 'Gated entry', 'Community pool', 'Courts'],
+        'Controlled-access village inside the Aliante master plan with private streets and shared amenities.',
+      features: ['Gated entry', 'Private streets', 'Community pool', 'HOA architectural rules'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
         { label: 'Home types', value: 'Single-family' },
         { label: 'Access', value: 'Gated' },
       ],
       href: '/neighborhoods/prominence',
-      featured: true,
     },
     {
       image: siteImages.desertWillows,
@@ -123,7 +115,7 @@ export default function NeighborhoodCards() {
       features: ['Parks nearby', 'Community pools', 'Shopping nearby', 'Mixed floor plans'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
-        { label: 'Home types', value: 'Single-family, townhomes' },
+        { label: 'Home types', value: 'Single-family' },
         { label: 'Access', value: 'Open' },
       ],
       href: '/neighborhoods/desert-willows',
@@ -131,7 +123,7 @@ export default function NeighborhoodCards() {
     {
       image: siteImages.clubAliante,
       name: 'Club Aliante',
-      tag: 'Golf-course living',
+      tag: 'Gated golf-course village',
       description:
         'Guard-gated village with fairway lots next to Aliante Golf Club, clubhouse dining, and recreation amenities.',
       features: ['Fairway lots', 'Clubhouse', 'Dining', 'Fitness center'],
@@ -147,11 +139,11 @@ export default function NeighborhoodCards() {
       name: 'The Paseos',
       tag: 'Open-access village',
       description:
-        'Open-access village inside the Aliante master plan with parks, green space, and a mix of single-family homes and townhomes.',
-      features: ['Green spaces', 'Trails nearby', 'Driveway parking', 'Townhomes + SFH'],
+        'Open-access village inside the Aliante master plan with parks and green space. Not The Paseos in Summerlin. Confirm housing type on live MLS.',
+      features: ['Green spaces', 'Trails nearby', 'Open-access streets', 'Master HOA'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
-        { label: 'Home types', value: 'Single-family, townhomes' },
+        { label: 'Home types', value: 'Confirm on live MLS' },
         { label: 'Access', value: 'Open' },
       ],
       href: '/neighborhoods/paseos',
@@ -161,8 +153,8 @@ export default function NeighborhoodCards() {
       name: 'Sun City Aliante',
       tag: 'Active adult 55+',
       description:
-        'Del Webb 55+ village inside ZIP 89084 — not Ardiente (89081). Golf nearby, clubs, fitness, and low-maintenance single-story plans.',
-      features: ['Aliante Golf Club nearby', 'Clubs', 'Fitness', 'Single-story plans'],
+        'Del Webb 55+ village inside ZIP 89084 — not Ardiente (89081). Golf nearby, clubs, and fitness. Confirm floor plan and story count on the listing.',
+      features: ['Aliante Golf Club nearby', 'Clubs', 'Fitness', 'Confirm floor plan on listing'],
       stats: [
         { label: 'Listings', value: 'Confirm live MLS' },
         { label: 'Home types', value: 'Single-family, villas' },
@@ -186,21 +178,26 @@ export default function NeighborhoodCards() {
     },
   ];
 
+  const visible = neighborhoods.filter((neighborhood) => neighborhood.href !== pathname);
+  const onVillagePage = visible.length < neighborhoods.length;
+
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Aliante villages in North Las Vegas 89084
+            {onVillagePage
+              ? 'Other Aliante villages and nearby Tule Springs'
+              : 'Aliante villages and nearby Tule Springs'}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Club Aliante, gated villages, Sun City Aliante 55+, open-access streets, and nearby Tule
-            Springs new construction. Confirm live MLS before you offer.
+            Club Aliante, gated villages, Sun City Aliante 55+, open-access streets, and Tule
+            Springs east of 89084. Confirm live MLS before you offer.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {neighborhoods.map((neighborhood) => (
+          {visible.map((neighborhood) => (
             <NeighborhoodCard key={neighborhood.href} {...neighborhood} />
           ))}
         </div>

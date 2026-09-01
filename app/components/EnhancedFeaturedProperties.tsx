@@ -7,7 +7,7 @@ const neighborhoods = [
     name: 'The Prominence',
     href: '/neighborhoods/prominence',
     image: siteImages.prominence,
-    caption: 'Gated village with larger homes',
+    caption: 'Gated village with private streets',
   },
   {
     name: 'Club Aliante',
@@ -41,7 +41,7 @@ export default function EnhancedFeaturedProperties() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Featured Neighborhoods
+            Aliante villages in ZIP 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Browse Aliante villages, then open live MLS search. Inventory, prices, and days on

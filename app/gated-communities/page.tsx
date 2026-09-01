@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
 import HomesCTA from '../components/HomesCTA';
@@ -27,8 +26,14 @@ export default function GatedCommunities() {
       />
       <GatedCommunitiesContent />
       <NeighborhoodCards />
-      <EnhancedFeaturedProperties />
-      <HomesCTA />
+      <HomesCTA
+        heading="Tour gated Aliante villages in North Las Vegas 89084"
+        subheading="Club Aliante, The Prominence, and other controlled-access streets. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="showing"
+        calendlyLabel="Schedule a gated-village showing"
+      />
     </main>
   );
 }

@@ -17,7 +17,7 @@ export default function OfficeLocation() {
             className="text-3xl sm:text-4xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Visit Our Office &amp; Get Directions
+            Visit the office and get directions
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Plan your visit with {agentName} at Aliante Corporate Center in North Las Vegas. Confirm
@@ -122,15 +122,6 @@ export default function OfficeLocation() {
                 >
                   Open in Google Maps
                 </a>
-                <a
-                  href={maps.placeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2 transition-colors focus:outline-none focus:ring-4 focus:ring-teal-200"
-                  style={{ borderColor: '#16B286', color: '#16B286' }}
-                >
-                  View Google Reviews
-                </a>
               </div>
 
               <p className="mt-6 text-sm text-gray-600">
@@ -138,7 +129,7 @@ export default function OfficeLocation() {
                 <a href="#schedule" className="font-semibold underline">
                   schedule on Calendly
                 </a>{' '}
-                — we come to you.
+                — I come to you.
               </p>
             </div>
           </div>

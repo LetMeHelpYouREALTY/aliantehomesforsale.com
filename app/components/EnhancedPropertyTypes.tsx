@@ -37,6 +37,7 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
               <span
                 className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
                 style={{ backgroundColor: '#16B286' }}
+                aria-hidden="true"
               >
                 ✓
               </span>
@@ -71,13 +72,13 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
 export default function EnhancedPropertyTypes() {
   const propertyTypes: PropertyTypeCardProps[] = [
     {
-      title: 'Luxury Homes',
+      title: 'The Prominence (gated)',
       features: [
-        'Premium finishes — confirm live MLS',
+        'Confirm finishes on live MLS',
         'Updated kitchens and baths where listed',
         'Confirm smart-home items on the listing',
         'Pools and outdoor living where present',
-        'Mountain or golf-course views where the lot has them',
+        'Gated streets — confirm lot position, not golf-course frontage',
       ],
       link: '/neighborhoods/prominence',
       image: siteImages.prominence,
@@ -112,7 +113,7 @@ export default function EnhancedPropertyTypes() {
         'Never-lived-in inventory',
         'Modern floor plans & finishes',
         'Energy-efficient features',
-        'Builder warranties included',
+        'Confirm the warranty booklet',
         'Independent buyer representation',
       ],
       link: '/new-construction',
@@ -126,7 +127,7 @@ export default function EnhancedPropertyTypes() {
         <div className="text-center mb-12">
           <AgentPhoto size={120} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Explore Property Types
+            Compare housing types in Aliante ZIP 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Compare gated villages, 55+ Del Webb, golf-course lots, and new construction. Confirm

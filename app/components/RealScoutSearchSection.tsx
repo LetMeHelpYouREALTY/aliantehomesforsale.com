@@ -18,7 +18,7 @@ export default function RealScoutSearchSection() {
           className="text-2xl sm:text-3xl font-bold mb-6 text-center"
           style={{ color: '#1a365d' }}
         >
-          Find homes for sale in Aliante
+          Find homes for sale — confirm ZIP on each card
         </h2>
         <div className="realscout-search-section">
           <style>{`.realscout-search-section realscout-advanced-search { max-width: 100%; width: 100%; }`}</style>
@@ -31,7 +31,7 @@ export default function RealScoutSearchSection() {
             className="inline-flex items-center gap-2 text-xl font-bold hover:underline"
             style={{ color: '#2c5aa0' }}
           >
-            📞 (702) 707-7273
+            <span aria-hidden="true">📞</span> (702) 707-7273
           </a>
         </div>
       </div>

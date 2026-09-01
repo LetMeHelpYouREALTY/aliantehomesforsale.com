@@ -30,7 +30,9 @@ function ProcessStep({ number, title, description, details }: ProcessStepProps) 
       <ul className="space-y-2">
         {details.map((detail, index) => (
           <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-            <span className="flex-shrink-0 text-green-500 font-bold">✓</span>
+            <span className="flex-shrink-0 text-green-500 font-bold" aria-hidden="true">
+              ✓
+            </span>
             <span>{detail}</span>
           </li>
         ))}
@@ -47,7 +49,7 @@ export default function ConstructionProcess() {
       description:
         'Compare builders, floor plans, and amenities against your budget and the lots that are actually for sale this month.',
       details: [
-        'Review builders active near Aliante',
+        'Review builders relative to Aliante',
         'Compare plans and included features',
         'Confirm live price sheets',
         'Visit model homes together',
@@ -57,10 +59,10 @@ export default function ConstructionProcess() {
       number: 2,
       title: 'Strategic Lot Selection',
       description:
-        'Lot placement affects views, sun, street noise, and daily living. We walk the map with you so you can choose a lot that matches those factors.',
+        'Lot placement affects views, sun, street noise, and daily living. I walk the map with you so you can choose a lot that matches those factors.',
       details: [
         'Corner vs. interior lots',
-        'View premiums vs. standard',
+        'Fairway vs interior (confirm on the plat)',
         'Sun exposure and orientation',
         'Proximity to amenities/streets',
       ],
@@ -69,7 +71,7 @@ export default function ConstructionProcess() {
       number: 3,
       title: 'Design Center & Upgrades',
       description:
-        'Choose upgrades with use and resale in mind. We help you decide which design-center items you want to pay for and which to skip.',
+        'Choose upgrades with use and resale in mind. I help you decide which design-center items you want to pay for and which to skip.',
       details: [
         'Flooring and finishes selection',
         'Kitchen and bath upgrades',
@@ -81,7 +83,7 @@ export default function ConstructionProcess() {
       number: 4,
       title: 'Construction Monitoring',
       description:
-        'We walk key phases with you, coordinate inspections you hire, and document issues before closing.',
+        'I walk key phases with you, coordinate inspections you hire, and document issues before closing.',
       details: [
         'Foundation and framing inspections',
         'Pre-drywall walkthrough',
@@ -111,10 +113,11 @@ export default function ConstructionProcess() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Your New Home Journey - Step by Step
+            How a new-construction purchase works relative to Aliante 89084
           </h2>
           <p className="text-xl text-white/90">
-            We guide you through every phase of the new construction process
+            Community selection, options, walk-throughs, and closing — confirm the live sheet at
+            each step.
           </p>
         </div>
 

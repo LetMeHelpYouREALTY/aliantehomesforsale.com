@@ -44,7 +44,7 @@ export const siteConfig = {
     {
       name: 'Villages at Tule Springs',
       slug: 'tule-springs',
-      summary: 'New construction near Floyd Lamb Park and Tule Springs.',
+      summary: 'New construction east of Aliante ZIP 89084, near Floyd Lamb Park.',
     },
     {
       name: 'Sun City Aliante',
@@ -99,12 +99,20 @@ export const siteConfig = {
     },
   ],
   builders: [
-    { name: 'Lennar', slug: 'lennar' },
-    { name: 'D.R. Horton', slug: 'dr-horton' },
-    { name: 'Tri Pointe Homes', slug: 'tri-pointe' },
-    { name: 'Del Webb', slug: 'del-webb' },
-    { name: 'Toll Brothers', slug: 'toll-brothers' },
-    { name: 'Richmond American Homes', slug: 'richmond-american' },
+    { name: 'Lennar', slug: 'lennar', officialUrl: 'https://www.lennar.com/' },
+    { name: 'D.R. Horton', slug: 'dr-horton', officialUrl: 'https://www.drhorton.com/' },
+    {
+      name: 'Tri Pointe Homes',
+      slug: 'tri-pointe',
+      officialUrl: 'https://www.tripointehomes.com/',
+    },
+    { name: 'Del Webb', slug: 'del-webb', officialUrl: 'https://www.delwebb.com/' },
+    { name: 'Toll Brothers', slug: 'toll-brothers', officialUrl: 'https://www.tollbrothers.com/' },
+    {
+      name: 'Richmond American Homes',
+      slug: 'richmond-american',
+      officialUrl: 'https://www.richmondamerican.com/',
+    },
   ],
   /** Content-graph hub pages for AEO/GEO internal linking */
   hubPages: [
@@ -132,8 +140,27 @@ export const siteConfig = {
     'Lennar homes Aliante',
     'D.R. Horton Tule Springs',
   ],
-  /** Verified / brand profiles only — empty slots omitted from schema */
-  sameAs: ['https://www.aliantehomesforsale.com', 'https://calendly.com/drjanduffy'] as string[],
+  /**
+   * Other public profiles for this agent (not this site’s own URL — that is `url`).
+   * Do not add unverified social accounts.
+   */
+  sameAs: ['https://calendly.com/drjanduffy'] as string[],
+  /**
+   * Verified official third-party URLs (HTTP-checked 2026-08-31).
+   * Crawlable outbound citations for license, Fair Housing, brokerage, schools, and builders.
+   */
+  official: {
+    brokerage: 'https://www.bhhsnv.com/',
+    nred: 'https://red.nv.gov/',
+    nredLicenseLookup: 'https://red.prod.secure.nv.gov/Lookup/LicenseLookup.aspx',
+    hudFairHousing: 'https://www.hud.gov/fairhousing',
+    hudReportDiscrimination: 'https://www.hud.gov/reporthousingdiscrimination',
+    nercComplaint: 'https://mynerccomplaint.nv.gov/',
+    ccsdZoning: 'https://www.ccsd.net/zoning',
+    alianteGolf: 'https://www.aliantegolf.com/',
+    firstService: 'https://www.fsresidential.com/',
+    wcag22: 'https://www.w3.org/WAI/WCAG22/quickref/',
+  },
   /**
    * Live Calendly event types (verified 2026-08-31).
    * Used for inline embeds, the sitewide badge, and ScheduleAction schema.

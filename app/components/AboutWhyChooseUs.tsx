@@ -12,6 +12,7 @@ function ReasonCard({ title, description, icon }: ReasonProps) {
       <div
         className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-2xl"
         style={{ backgroundColor: '#e6f0ff' }}
+        aria-hidden="true"
       >
         {icon}
       </div>
@@ -28,30 +29,29 @@ function ReasonCard({ title, description, icon }: ReasonProps) {
 export default function AboutWhyChooseUs() {
   const reasons: ReasonProps[] = [
     {
-      title: 'Local Focus',
-      description:
-        'Focused on Aliante and North Las Vegas 89084 — this is the market I work every week',
+      title: 'ZIP 89084 focus',
+      description: 'Aliante and North Las Vegas 89084 — this is the market I work every week',
       icon: '📍',
     },
     {
-      title: 'Builder Relationships',
+      title: 'Builder map, not the sales desk',
       description: 'I confirm live builder incentive sheets and represent you on the contract',
       icon: '🤝',
     },
     {
-      title: 'Market Mastery',
+      title: 'Village comps, not a valley average',
       description:
-        'We watch Aliante 89084 inventory, price changes, and village comps — not a valley-wide average',
+        'I watch Aliante 89084 inventory, price changes, and village comps — not a valley-wide average',
       icon: '📈',
     },
     {
-      title: 'Client-First',
-      description: 'Your goals are our priority - no pressure, just expert guidance',
+      title: 'Live MLS before you write',
+      description: 'No pressure. Confirm live MLS before you offer or list.',
       icon: '💙',
     },
     {
-      title: 'Proven Results',
-      description: 'Aliante closings since 2018 — call for current references',
+      title: 'Aliante closings since 2018',
+      description: 'Call for current references. I will not publish an unverified closing count.',
       icon: '✨',
     },
   ];
@@ -61,10 +61,10 @@ export default function AboutWhyChooseUs() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Why Choose Us
+            Why work with Dr. Jan Duffy in Aliante 89084
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            What sets us apart in the Aliante real estate market
+            License S.0197614.LLC, BHHS Nevada Properties, Aliante since 2018
           </p>
         </div>
 

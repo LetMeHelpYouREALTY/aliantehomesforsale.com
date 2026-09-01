@@ -7,17 +7,14 @@ export default function BuilderAdvantages() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-          How to Choose the Right Builder in Aliante
+          How to compare builders relative to Aliante 89084
         </h2>
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
-            Selecting the right builder is one of the most important decisions you'll make in the
-            home buying process. Each builder has a different construction process, floor-plan mix,
-            and included-feature list. I compare the live map with you: Lennar and Del Webb inside
-            ZIP 89084, D.R. Horton in nearby Tule Springs, and Tri Pointe, Toll Brothers, and
-            Richmond American only where they currently have inventory — not as a substitute for an
-            Aliante address.
+            I compare the live builder map with you: Lennar and Del Webb inside ZIP 89084, D.R.
+            Horton in nearby Tule Springs, and Tri Pointe, Toll Brothers, and Richmond American only
+            where they currently have inventory — not as a substitute for an Aliante address.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -39,18 +36,9 @@ export default function BuilderAdvantages() {
             >
               D.R. Horton
             </Link>{' '}
-            focus on efficiency and value, offering move-in-ready homes with comprehensive included
-            features at competitive price points. Spec and quick-move-in homes can close faster than
-            a to-be-built lot — confirm the current close date. They're a fit for{' '}
-            <Link
-              href="/buyer-guide"
-              className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
-            >
-              first-time buyers
-            </Link>{' '}
-            and buyers who want included features and a shorter path to occupancy. Confirm the
-            current build calendar for the lot you will actually buy — I will not publish a stale
-            3–4 month promise.
+            focus on included-feature packages and spec inventory. Spec and quick-move-in homes can
+            close faster than a to-be-built lot — confirm the current close date. Confirm the live
+            price sheet; I will not call any builder the better value.
           </p>
 
           <p className="leading-relaxed">

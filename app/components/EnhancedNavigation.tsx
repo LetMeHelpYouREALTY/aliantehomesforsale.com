@@ -17,13 +17,15 @@ export default function EnhancedNavigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
   }, [isMenuOpen]);
 
   return (
@@ -42,18 +44,21 @@ export default function EnhancedNavigation() {
                 className="flex-shrink-0 shadow-sm"
                 priority
               />
-              <span className="flex flex-col">
-                <span className="text-xl md:text-2xl font-bold" style={{ color: '#1a365d' }}>
+              <span className="flex flex-col min-w-0">
+                <span
+                  className="text-lg xl:text-2xl font-bold whitespace-nowrap"
+                  style={{ color: '#1a365d' }}
+                >
                   Aliante Las Vegas
                 </span>
-                <span className="text-xs md:text-sm text-gray-600 font-medium hidden sm:block">
-                  Homes by Dr. Jan Duffy | Your Trusted Local Expert Since 2018
+                <span className="text-xs text-gray-600 font-medium hidden xl:block whitespace-nowrap">
+                  Dr. Jan Duffy · Aliante 89084 since 2018
                 </span>
               </span>
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center gap-4 xl:gap-8">
               <Link
                 href="/homes-for-sale"
                 className="text-base font-medium transition-colors hover:border-b-2 pb-1"
@@ -80,7 +85,13 @@ export default function EnhancedNavigation() {
                   }
                 >
                   New Construction
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    aria-hidden="true"
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -114,13 +125,31 @@ export default function EnhancedNavigation() {
                       href="/builders/tri-pointe"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
-                      Tri Pointe (Luxury)
+                      Tri Pointe
                     </Link>
                     <Link
                       href="/builders/del-webb"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       Del Webb (55+)
+                    </Link>
+                    <Link
+                      href="/builders/toll-brothers"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Toll Brothers
+                    </Link>
+                    <Link
+                      href="/builders/richmond-american"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Richmond American
+                    </Link>
+                    <Link
+                      href="/builders"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      All Builders
                     </Link>
                     <Link
                       href="/builders/incentives"
@@ -149,7 +178,13 @@ export default function EnhancedNavigation() {
                   }
                 >
                   Neighborhoods
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    aria-hidden="true"
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -198,10 +233,22 @@ export default function EnhancedNavigation() {
                       Sun City (55+)
                     </Link>
                     <Link
+                      href="/neighborhoods/tule-springs"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Villages at Tule Springs
+                    </Link>
+                    <Link
                       href="/gated-communities"
                       className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       Gated Communities
+                    </Link>
+                    <Link
+                      href="/golf-homes"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Golf Course Homes
                     </Link>
                     <Link
                       href="/neighborhoods/compare"
@@ -242,13 +289,19 @@ export default function EnhancedNavigation() {
             </div>
 
             {/* Right Side - CTA Buttons */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
               <a
                 href="tel:+17027077273"
-                className="text-lg font-semibold flex items-center gap-2 transition-colors"
+                className="text-base xl:text-lg font-semibold flex items-center gap-2 transition-colors whitespace-nowrap shrink-0"
                 style={{ color: '#1a365d' }}
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  aria-hidden="true"
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -261,7 +314,7 @@ export default function EnhancedNavigation() {
 
               <Link
                 href="/search"
-                className="px-6 py-2.5 rounded-lg font-semibold text-white transition-all transform hover:scale-105 hover:shadow-lg"
+                className="px-4 xl:px-6 py-2.5 rounded-lg font-semibold text-white whitespace-nowrap shrink-0 transition-all transform hover:scale-105 hover:shadow-lg"
                 style={{ backgroundColor: '#ed8936' }}
               >
                 Search Properties
@@ -278,6 +331,7 @@ export default function EnhancedNavigation() {
             >
               {isMenuOpen ? (
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
@@ -293,6 +347,7 @@ export default function EnhancedNavigation() {
                 </svg>
               ) : (
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
@@ -330,6 +385,7 @@ export default function EnhancedNavigation() {
                 aria-label="Close menu"
               >
                 <svg
+                  aria-hidden="true"
                   className="w-6 h-6"
                   style={{ color: '#1a365d' }}
                   fill="none"
@@ -355,7 +411,7 @@ export default function EnhancedNavigation() {
                   <span className="font-bold" style={{ color: '#1a365d' }}>
                     Dr. Jan Duffy
                   </span>
-                  <span className="text-sm text-gray-600">Aliante real estate expert</span>
+                  <span className="text-sm text-gray-600">Aliante 89084 realtor</span>
                 </span>
               </Link>
 
@@ -365,7 +421,7 @@ export default function EnhancedNavigation() {
                 className="block w-full px-6 py-3 rounded-lg font-bold text-white text-center mb-6 transition-all"
                 style={{ backgroundColor: '#ed8936' }}
               >
-                📞 (702) 707-7273
+                <span aria-hidden="true">📞</span> (702) 707-7273
               </a>
 
               {/* Mobile Navigation Links */}
@@ -385,6 +441,48 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   New Construction
+                </Link>
+                <Link
+                  href="/builders/lennar"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Lennar
+                </Link>
+                <Link
+                  href="/builders/dr-horton"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  D.R. Horton
+                </Link>
+                <Link
+                  href="/builders/tri-pointe"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Tri Pointe
+                </Link>
+                <Link
+                  href="/builders/del-webb"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Del Webb (55+)
+                </Link>
+                <Link
+                  href="/builders/toll-brothers"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Toll Brothers
+                </Link>
+                <Link
+                  href="/builders/richmond-american"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Richmond American
                 </Link>
                 <Link
                   href="/builders"
@@ -407,6 +505,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Neighborhoods
+                </Link>
+                <Link
+                  href="/neighborhoods/prominence"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  The Prominence
                 </Link>
                 <Link
                   href="/neighborhoods/desert-willows"
@@ -437,6 +542,13 @@ export default function EnhancedNavigation() {
                   Sun City Aliante
                 </Link>
                 <Link
+                  href="/neighborhoods/tule-springs"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Villages at Tule Springs
+                </Link>
+                <Link
                   href="/gated-communities"
                   className="block py-2 px-8 text-sm text-gray-600"
                   onClick={() => setIsMenuOpen(false)}
@@ -449,6 +561,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Golf Course Homes
+                </Link>
+                <Link
+                  href="/neighborhoods/compare"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Compare Neighborhoods
                 </Link>
                 <Link
                   href="/market-report"

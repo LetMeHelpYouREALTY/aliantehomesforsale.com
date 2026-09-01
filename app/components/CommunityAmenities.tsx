@@ -10,13 +10,17 @@ function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md">
       <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: '#1a365d' }}>
-        <span className="text-3xl">{icon}</span>
+        <span className="text-3xl" aria-hidden="true">
+          {icon}
+        </span>
         {title}
       </h3>
       <ul className="space-y-2">
         {amenities.map((amenity) => (
           <li key={amenity} className="flex items-start gap-2 text-gray-700">
-            <span className="flex-shrink-0 text-green-500 font-bold">✓</span>
+            <span className="flex-shrink-0 text-green-500 font-bold" aria-hidden="true">
+              ✓
+            </span>
             <span>{amenity}</span>
           </li>
         ))}
@@ -53,10 +57,12 @@ export default function CommunityAmenities() {
       icon: '🎓',
       title: 'Named campuses nearby',
       amenities: [
-        'Leavitt Elementary, Kit Carson Elementary',
-        'Homer Elementary (confirm current boundary)',
-        'Brinley Middle School',
-        'Centennial High School or Legacy High School',
+        'Vincent L. Triggs Elementary (89084)',
+        'Theron H. and Naomi D. Goynes Elementary (89084)',
+        'Don E. Hayden Elementary (89084)',
+        'Ruby Duncan Elementary (89084)',
+        'Brian & Teri Cram Middle School (89084)',
+        'Legacy High School (89084)',
         'Confirm CCSD attendance before you offer',
       ],
     },
@@ -78,7 +84,7 @@ export default function CommunityAmenities() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Community Amenities & Lifestyle
+            Amenities in the Aliante master plan, ZIP 89084
           </h2>
           <p className="text-xl text-gray-600">
             Golf, parks, named CCSD campuses, and I-215 access inside the Aliante master plan

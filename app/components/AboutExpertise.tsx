@@ -13,7 +13,9 @@ function ExpertiseCard({ icon, title, description }: ExpertiseCardProps) {
       style={{ borderLeftColor: '#2c5aa0' }}
     >
       <div className="flex items-start gap-4 mb-4">
-        <div className="text-4xl flex-shrink-0">{icon}</div>
+        <div className="text-4xl flex-shrink-0" aria-hidden="true">
+          {icon}
+        </div>
         <h3 className="text-2xl font-bold" style={{ color: '#1a365d' }}>
           {title}
         </h3>
@@ -29,7 +31,7 @@ export default function AboutExpertise() {
       icon: '🏗️',
       title: 'New-construction buyer agency in Aliante & Tule Springs',
       description:
-        'I represent you with Lennar, D.R. Horton, and Del Webb — not the builder. Incentives, options, and walk-throughs in North Las Vegas 89084.',
+        'I represent you with Lennar and Del Webb in 89084, and D.R. Horton at Tule Springs — not the builder. Confirm incentives, options, and walk-throughs on that community\u2019s sheet.',
     },
     {
       icon: '🏘️',
@@ -71,8 +73,9 @@ export default function AboutExpertise() {
             Realtor expertise in Aliante, North Las Vegas 89084
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Six services, one ZIP: buyer agency, listings, new construction, Sun City Aliante 55+,
-            CMAs, and rental-property analysis.
+            Buyer agency, listings, new construction, Sun City Aliante 55+, CMAs, and
+            rental-property analysis. Tule Springs new construction is east of ZIP 89084 — I will
+            say so before you tour.
           </p>
         </div>
 

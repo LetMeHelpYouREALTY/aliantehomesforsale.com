@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
-import AboutExpertise from '../components/AboutExpertise';
 import EnhancedContactForm from '../components/EnhancedContactForm';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
-import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
 import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
 
 export const metadata: Metadata = {
@@ -24,11 +22,16 @@ export default function InvestmentAnalysis() {
         subtitle="Address-level cash-flow review in ZIP 89084. Call (702) 707-7273. I do not manage leases."
         image={pageHero('/investment-analysis')}
       />
-      <HomesMarketSnapshot />
       <InvestmentAnalysisContent />
-      <AboutExpertise />
       <EnhancedContactForm event="appointment" />
-      <HomesCTA />
+      <HomesCTA
+        heading="Analyze an Aliante rental address in ZIP 89084"
+        subheading="I sell the home. HOA and lease management is a different company. Call (702) 707-7273."
+        secondaryHref="/homes-for-sale"
+        secondaryLabel="Browse MLS listings"
+        calendlyEvent="appointment"
+        calendlyLabel="Schedule a cash-flow review"
+      />
     </main>
   );
 }

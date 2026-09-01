@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
@@ -22,10 +21,17 @@ export default function Paseos() {
         subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
         image={pageHero('/neighborhoods/paseos')}
       />
-      <EnhancedFeaturedProperties />
-      <NeighborhoodDetailContent heading="Buying in The Paseos, Aliante 89084" />
+      <NeighborhoodDetailContent
+        heading="Buying in The Paseos, Aliante 89084"
+        intro="The Paseos in Aliante ZIP 89084 is an open-access village (not gated), with parks and green space. It is not The Paseos in Summerlin. Confirm housing type on live MLS."
+        lotCopy="In The Paseos I walk open-access streets, park frontage, and cul-de-sacs with you. This is Aliante ZIP 89084, not The Paseos in Summerlin. Confirm housing type, HOA dues, and live comps on MLS before you offer."
+        access="open"
+      />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour The Paseos in Aliante 89084"
+        subheading="Open-access streets, master HOA, and village CC&Rs. Call (702) 707-7273."
+      />
     </main>
   );
 }

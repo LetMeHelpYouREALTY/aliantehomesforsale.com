@@ -28,9 +28,15 @@ export default function Compare() {
         subheading="Prices and inventory change. Confirm current listings on live MLS."
         showCompareCta={false}
       />
-      <NeighborhoodDetailContent heading="How I compare Aliante villages in ZIP 89084" />
+      <NeighborhoodDetailContent
+        heading="How I compare Aliante villages in ZIP 89084"
+        variant="compare"
+      />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Compare Aliante villages with an 89084 realtor"
+        subheading="Gated vs open-access, fairway vs interior, Sun City 55+ vs all-ages streets."
+      />
     </main>
   );
 }

@@ -21,10 +21,9 @@ export default function GatedCommunitiesContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your local gated-community specialist, I walk buyers through HOA governance,
-              amenity access, and offer strategy on controlled-access lots. Guard gates, electronic
-              entry, and guest lists work differently in each village — I will tell you which
-              address uses which system before you tour.
+              Guard gates, electronic entry, and guest lists work differently in each village — I
+              will tell you which address uses which system before you tour. I walk HOA documents,
+              amenity access, and offer terms on controlled-access lots.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -51,29 +50,28 @@ export default function GatedCommunitiesContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Aliante's Gated Villages
+            Gated villages in Aliante ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Aliante includes several gated villages, each with its own character and amenity
-              offerings.{' '}
+              Aliante includes several gated villages.{' '}
               <Link
                 href="/neighborhoods/prominence"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
                 The Prominence
               </Link>{' '}
-              is a gated village with golf-course proximity and community pools. Confirm live MLS
-              prices, finishes, and lot size — I will not publish a stale range as current. Some
-              listings sit near the manicured{' '}
+              is a gated village with controlled entry, private streets, and shared amenities.
+              Confirm live MLS prices, finishes, and lot size — I will not publish a stale range as
+              current. Club Aliante — not Prominence — is the village along{' '}
               <Link
                 href="/golf-homes"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                golf course
+                Aliante Golf Club
               </Link>{' '}
-              and surrounding mountains.
+              fairways.
             </p>
 
             <p className="leading-relaxed">
@@ -126,7 +124,7 @@ export default function GatedCommunitiesContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            What to Know Before Buying in a Gated Community
+            What to check before you buy on a gated Aliante street
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

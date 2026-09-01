@@ -1,11 +1,8 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import BuilderDetailContent from '../../components/BuilderDetailContent';
+import LennarContent from '../../components/LennarContent';
 import NewConstructionCTA from '../../components/NewConstructionCTA';
 import NewConstructionHero from '../../components/NewConstructionHero';
-import QuickMoveInHomes from '../../components/QuickMoveInHomes';
-import TopBuilders from '../../components/TopBuilders';
-import WhyNewConstruction from '../../components/WhyNewConstruction';
 
 export const metadata: Metadata = {
   title: 'Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084',
@@ -21,13 +18,10 @@ export default function Lennar() {
       <NewConstructionHero
         title="Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084"
         subtitle="I represent you on the Lennar contract in ZIP 89084. Confirm live inventory. Call (702) 707-7273."
-        filterHeading="Lennar communities near Aliante 89084"
+        filterHeading="Lennar communities in Aliante 89084"
         image={pageHero('/builders/lennar')}
       />
-      <TopBuilders />
-      <WhyNewConstruction />
-      <BuilderDetailContent />
-      <QuickMoveInHomes />
+      <LennarContent />
       <NewConstructionCTA />
     </main>
   );

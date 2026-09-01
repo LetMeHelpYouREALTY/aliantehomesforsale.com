@@ -15,16 +15,17 @@ const BUILDERS = [
   { name: 'All builders', href: '/builders' },
   { name: 'Lennar', href: '/builders/lennar' },
   { name: 'D.R. Horton', href: '/builders/dr-horton' },
+  { name: 'Del Webb 55+', href: '/builders/del-webb' },
   { name: 'Toll Brothers', href: '/builders/toll-brothers' },
   { name: 'Tri Pointe', href: '/builders/tri-pointe' },
-  { name: 'Del Webb 55+', href: '/builders/del-webb' },
+  { name: 'Richmond American', href: '/builders/richmond-american' },
 ] as const;
 
 export default function NewConstructionHero({
   title = 'New-Construction Buyer Agency in Aliante, North Las Vegas 89084',
-  subtitle = 'Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273.',
+  subtitle = 'Independent representation with Lennar and Del Webb in 89084, D.R. Horton at Tule Springs, and other builders you will actually tour. Call (702) 707-7273.',
   filterHeading = 'Jump to a builder',
-  filterSubheading = 'Inventory lives on MLS and each builder page. We do not invent home counts here.',
+  filterSubheading = 'Inventory lives on MLS and each builder page. I do not invent home counts here.',
   image = siteImages.builders,
 }: NewConstructionHeroProps) {
   return (
@@ -91,7 +92,7 @@ export default function NewConstructionHero({
                 className="inline-block px-8 py-3 bg-white rounded-lg font-semibold transition-all hover:scale-105 focus:ring-4 focus:ring-white/30 focus:outline-none"
                 style={{ color: '#ed8936' }}
               >
-                View Aliante incentive notes →
+                View builder incentive notes →
               </a>
             </div>
           </div>

@@ -31,7 +31,7 @@ export default function Contact() {
 
       <EnhancedContactForm event="consultation" />
 
-      {/* Why Choose Us */}
+      {/* How I represent you */}
       <ContactWhyChoose />
 
       {/* FAQ with schema (AEO) */}

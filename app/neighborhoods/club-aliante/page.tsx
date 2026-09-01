@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
-import CommunityAmenities from '../../components/CommunityAmenities';
-import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
-import GolfHomesContent from '../../components/GolfHomesContent';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 
@@ -24,11 +22,17 @@ export default function ClubAliante() {
         subtitle="Fairway homes in ZIP 89084 next to Aliante Golf Club. Call (702) 707-7273 to tour live listings."
         image={pageHero('/neighborhoods/club-aliante')}
       />
-      <GolfHomesContent />
-      <CommunityAmenities />
-      <EnhancedFeaturedProperties />
+      <NeighborhoodDetailContent
+        heading="Buying in Club Aliante, ZIP 89084"
+        intro="Club Aliante is the guard-gated village along Aliante Golf Club fairways. Confirm live MLS prices, lot position, and HOA rules — I will not publish a stale range."
+        lotCopy="In Club Aliante I walk fairway vs interior lots, par-5 vs par-3 frontage, and errant-ball exposure with you. This is not The Prominence — golf-course lots sit next to the city-owned Aliante Golf Club (Gary Panks). Confirm HOA dues, guest procedures, and live comps before you offer."
+        access="gated"
+      />
       <NeighborhoodCards />
-      <NeighborhoodsCTA />
+      <NeighborhoodsCTA
+        heading="Tour Club Aliante golf-course lots in 89084"
+        subheading="Fairway homes next to Aliante Golf Club. Call (702) 707-7273."
+      />
     </main>
   );
 }

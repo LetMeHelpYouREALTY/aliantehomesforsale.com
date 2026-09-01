@@ -9,7 +9,9 @@ interface TipCardProps {
 function TipCard({ icon, title, description }: TipCardProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="text-4xl mb-4 text-center">{icon}</div>
+      <div className="text-4xl mb-4 text-center" aria-hidden="true">
+        {icon}
+      </div>
       <h3 className="text-lg font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -40,21 +42,20 @@ export default function HomesSearchTips() {
     },
     {
       icon: '⏱️',
-      title: 'Act Quickly on Good Deals',
+      title: 'Set MLS alerts, then tour',
       description:
         'Well-priced homes can still move quickly. Confirm current days-on-market on live MLS and set alerts for the villages you want.',
     },
     {
       icon: '🤝',
-      title: 'Work with a Local Expert',
+      title: 'Work with an 89084 realtor',
       description:
         'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',
     },
     {
       icon: '📊',
       title: 'Check the Market Data',
-      description:
-        'Understand pricing trends, days on market, and neighborhood comparisons before making offers.',
+      description: 'Confirm live medians, days on market, and village comps before you write.',
     },
   ];
 
@@ -63,10 +64,10 @@ export default function HomesSearchTips() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Home Search Tips
+            How I search Aliante MLS in ZIP 89084
           </h2>
           <p className="text-xl text-gray-600">
-            Expert advice to help you search Aliante MLS and tour 89084 villages
+            Filter by village, set alerts, then confirm live comps before you write.
           </p>
         </div>
 

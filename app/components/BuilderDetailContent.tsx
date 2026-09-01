@@ -1,5 +1,8 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
+import ExternalLink from './ExternalLink';
+
 export default function BuilderDetailContent() {
   return (
     <section className="py-16 px-4 bg-white">
@@ -11,11 +14,12 @@ export default function BuilderDetailContent() {
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
             As an independent buyer’s agent, I represent you — not Lennar, D.R. Horton, Del Webb, or
-            the other desks on the Aliante and Tule Springs map. Builder sales agents represent the
-            builder. Buyer representation is typically at no extra cost to you on participating
-            builder sales — builders pay the cooperating commission from their marketing budget.
-            Confirm the fee in writing before you tour. I review the live incentive sheet, lot
-            premium, and upgrades on that contract. I will not publish a stale savings total.
+            the other desks on the builder map relative to Aliante 89084. Builder sales agents
+            represent the builder. Buyer representation is typically at no extra cost to you on
+            participating builder sales — builders pay the cooperating commission from their
+            marketing budget. Confirm the fee in writing before you tour. I review the live
+            incentive sheet, lot premium, and upgrades on that contract. I will not publish a stale
+            savings total.
           </p>
 
           <p className="leading-relaxed">
@@ -43,6 +47,27 @@ export default function BuilderDetailContent() {
             walk-throughs. Contact me to review the current sheet for the community you will
             actually tour.
           </p>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
+            Official builder websites
+          </h3>
+
+          <p className="leading-relaxed">
+            Confirm collections and incentive headlines on the builder’s site, then register with me
+            before you tour so representation is in writing:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            {siteConfig.builders.map((builder) => (
+              <li key={builder.slug}>
+                <ExternalLink
+                  href={builder.officialUrl}
+                  className="text-blue-600 hover:underline font-semibold"
+                >
+                  {builder.name}
+                </ExternalLink>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
