@@ -73,7 +73,7 @@ export default function HomesCTA({
         </div>
 
         <div className="text-white/90">
-          <p className="text-lg mb-3">Or call us directly:</p>
+          <p className="text-lg mb-3">Or call me directly:</p>
           <a href="tel:+17027077273" className="text-2xl sm:text-3xl font-bold hover:underline">
             <span aria-hidden="true">📞</span> (702) 707-7273
           </a>

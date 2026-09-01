@@ -112,12 +112,12 @@ const CALENDLY_COPY_BY_PATH: Record<string, CalendlyPathCopy> = {
   },
   '/new-construction': {
     heading: 'Schedule a new-construction buyer appointment',
-    description: 'Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders.',
+    description: 'Lennar and Del Webb in 89084; D.R. Horton at Tule Springs.',
   },
   '/builders/incentives': {
     heading: 'Schedule an incentive-sheet review',
     description:
-      'I confirm today’s Lennar, Horton, and Del Webb offers. I will not publish a stale dollar amount.',
+      'I confirm today’s Lennar and Del Webb offers in 89084 and Horton at Tule Springs. I will not publish a stale dollar amount.',
   },
   '/buyer-guide': {
     heading: 'Schedule a buyer-representation conversation',

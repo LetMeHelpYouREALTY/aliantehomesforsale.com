@@ -28,8 +28,8 @@ export default function NewConstructionCTA() {
           Hire a new-construction buyer’s agent near Aliante 89084
         </h2>
         <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs
-          builders. Call (702) 707-7273.
+          Independent representation with Lennar and Del Webb in 89084, D.R. Horton at Tule Springs,
+          and other builders you will actually tour. Call (702) 707-7273.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

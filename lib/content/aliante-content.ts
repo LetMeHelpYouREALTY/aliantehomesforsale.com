@@ -120,7 +120,7 @@ export const agentCredentials: CredentialItem[] = [
     id: 'builders',
     title: 'Builder negotiation advocate',
     description:
-      'Independent buyer representation with major Aliante builders — incentives, upgrades, and contract terms. Confirm the fee in writing before you tour.',
+      'Independent buyer representation with Lennar and Del Webb in 89084, Horton at Tule Springs, and other builders you will actually tour. Confirm the fee in writing before you tour.',
   },
 ];
 

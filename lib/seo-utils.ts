@@ -159,7 +159,7 @@ export const pageSEO = {
   'new-construction': {
     title: 'New Construction Homes Aliante - Builder Incentives & Floor Plans',
     description:
-      'New construction in Aliante and nearby Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 707-7273.',
+      'New construction in Aliante 89084 and nearby Tule Springs. Lennar and Del Webb in 89084; D.R. Horton east of Aliante. Confirm live incentives. Call (702) 707-7273.',
     keywords: ['new construction Aliante', 'builder incentives', 'Lennar homes', 'DR Horton'],
   },
   'home-valuation': {
