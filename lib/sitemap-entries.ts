@@ -1,7 +1,7 @@
 import { siteConfig } from './site-config';
 
 /** Calendar date of last meaningful content change — not the request time. */
-export const sitemapLastmod = '2026-08-31';
+export const sitemapLastmod = '2026-09-01';
 
 export type SitemapChangefreq = 'daily' | 'weekly' | 'monthly' | 'yearly';
 

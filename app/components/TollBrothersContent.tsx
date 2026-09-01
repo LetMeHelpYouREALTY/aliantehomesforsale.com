@@ -15,10 +15,10 @@ export default function TollBrothersContent() {
           Toll Brothers at Elkhorn Grove — Las Vegas 89131, not ZIP 89084
         </h2>
         <p className="leading-relaxed">
-          Toll Brothers is not currently building inside the Aliante master plan. The closest
-          published community is Elkhorn Grove at 5819 Kings Bluff Ave, Las Vegas NV 89131. Confirm
-          live inventory on the Toll sheet before you tour. I still represent you if you compare
-          Elkhorn Grove with{' '}
+          Toll Brothers is not currently building inside the Aliante master plan. The published
+          community on the current map is Elkhorn Grove at 5819 Kings Bluff Ave, Las Vegas NV 89131
+          — not a substitute for an Aliante 89084 address. Confirm live inventory on the Toll sheet
+          before you tour. I still represent you if you compare Elkhorn Grove with{' '}
           <Link href="/homes-for-sale" className="font-semibold" style={{ color: '#2c5aa0' }}>
             Aliante resale
           </Link>{' '}

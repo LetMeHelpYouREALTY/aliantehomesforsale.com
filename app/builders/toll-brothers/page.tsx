@@ -7,7 +7,7 @@ import TollBrothersContent from '../../components/TollBrothersContent';
 export const metadata: Metadata = {
   title: 'Toll Brothers at Elkhorn Grove | Las Vegas 89131, not 89084',
   description:
-    'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131. Call (702) 707-7273.',
+    'Toll Brothers is not currently building inside Aliante ZIP 89084. Elkhorn Grove is at 5819 Kings Bluff Ave, Las Vegas NV 89131 — not an Aliante address. Call (702) 707-7273.',
   keywords: 'toll brothers aliante, toll brothers elkhorn grove, toll brothers north las vegas',
   alternates: { canonical: 'https://www.aliantehomesforsale.com/builders/toll-brothers' },
 };

@@ -255,7 +255,7 @@ export default function TopBuilders() {
       ],
       title: 'Toll Brothers — Elkhorn Grove',
       description:
-        'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131.',
+        'Toll Brothers is not currently building inside Aliante ZIP 89084. Elkhorn Grove is at 5819 Kings Bluff Ave, Las Vegas NV 89131 — not an Aliante address.',
       communities: [
         'Elkhorn Grove, Las Vegas 89131 — not Aliante 89084',
         'Confirm live inventory before you tour',
@@ -272,7 +272,7 @@ export default function TopBuilders() {
       name: 'RICHMOND AMERICAN',
       badge: 'Confirm ZIP',
       stats: [
-        { value: 'Nearby', label: 'Not assumed 89084' },
+        { value: 'Confirm', label: 'ZIP vs 89084' },
         { value: 'Live', label: 'Inventory' },
         { value: 'Confirm', label: 'Community' },
       ],
