@@ -1,6 +1,6 @@
-'use client';
-
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function GolfHomesContent() {
   return (
@@ -10,6 +10,10 @@ export default function GolfHomesContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Club Aliante golf-course lot playbook in ZIP 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.golfFairway}
+            caption="Fairway lot next to Aliante Golf Club — lot position is the product"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

@@ -6,6 +6,7 @@ import EnhancedMarketInsights from './EnhancedMarketInsights';
 import EnhancedPropertyTypes from './EnhancedPropertyTypes';
 import EnhancedTrustAuthority from './EnhancedTrustAuthority';
 import FeaturedCommunities from './FeaturedCommunities';
+import GbpPhotoStrip from './GbpPhotoStrip';
 import HomeCTAStrip from './HomeCTAStrip';
 import HyperlocalRealtorServices from './HyperlocalRealtorServices';
 import LifestyleHomesSection from './LifestyleHomesSection';
@@ -29,6 +30,7 @@ export function HomeSectionsTop() {
       <EnhancedMarketInsights />
       <EnhancedTrustAuthority />
       <TestimonialsSection />
+      <GbpPhotoStrip />
     </>
   );
 }

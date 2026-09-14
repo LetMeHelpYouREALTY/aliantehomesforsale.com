@@ -1,4 +1,5 @@
-'use client';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 interface AmenityCategoryProps {
   icon: string;
@@ -84,6 +85,11 @@ export default function CommunityAmenities() {
             Golf, parks, named CCSD campuses, and I-215 access inside the Aliante master plan
           </p>
         </div>
+
+        <HeadingPhoto
+          image={siteImages.amenities}
+          caption="Community recreation campus in Aliante, North Las Vegas 89084"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((category) => (

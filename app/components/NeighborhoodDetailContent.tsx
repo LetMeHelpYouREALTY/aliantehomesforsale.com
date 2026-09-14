@@ -1,11 +1,23 @@
 import { neighborhoodGuides } from '../../lib/content/neighborhood-guides';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 type NeighborhoodDetailContentProps = {
   village: string;
 };
 
+const villageHeadingPhotos: Record<string, SiteImage> = {
+  prominence: siteImages.prominence,
+  'desert-willows': siteImages.desertWillows,
+  paseos: siteImages.paseos,
+  'club-aliante': siteImages.golfFairway,
+  'tule-springs': siteImages.newConstruction,
+  compare: siteImages.compare,
+};
+
 export default function NeighborhoodDetailContent({ village }: NeighborhoodDetailContentProps) {
   const guide = neighborhoodGuides[village];
+  const headingPhoto = villageHeadingPhotos[village];
   if (!guide) return null;
 
   return (
@@ -14,6 +26,7 @@ export default function NeighborhoodDetailContent({ village }: NeighborhoodDetai
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           {guide.heading}
         </h2>
+        {headingPhoto ? <HeadingPhoto image={headingPhoto} /> : null}
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           {guide.intro.map((paragraph) => (

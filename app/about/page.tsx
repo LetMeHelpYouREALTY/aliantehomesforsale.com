@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutCommitment from '../components/AboutCommitment';
 import AboutCTA from '../components/AboutCTA';
@@ -18,7 +19,7 @@ export default function About() {
   return (
     <main className="about-page">
       {/* Hero Section */}
-      <AboutHero />
+      <AboutHero image={pageHero('/about')} />
 
       {/* Stats Section */}
       <AboutStats />

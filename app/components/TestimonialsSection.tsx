@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           <a
-            href={siteConfig.maps.placeUrl}
+            href={siteConfig.maps.reviewsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow"

@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import { pageOgImage } from './content/site-images';
+import { absoluteMediaUrl } from './media';
 import { siteConfig } from './site-config';
 
 const SITE_URL = siteConfig.siteUrl;
 const SITE_NAME = siteConfig.siteName;
 const DEFAULT_TITLE = siteConfig.defaultTitle;
 const DEFAULT_DESCRIPTION = siteConfig.defaultDescription;
-const DEFAULT_OG_IMAGE = '/og-image.jpg';
 
 type PageMetadataInput = {
   title: string;
@@ -22,24 +23,25 @@ function absoluteUrl(path: string): string {
 }
 
 function absoluteImage(image: string): string {
-  return image.startsWith('http') ? image : `${SITE_URL}${image}`;
+  return absoluteMediaUrl(image, SITE_URL);
 }
 
 /**
  * Per-route metadata with canonical, Open Graph, and Twitter cards.
  * Based on Next.js 15 App Router metadata merging — set this on every page
  * so inner routes do not inherit the homepage canonical or default OG title.
+ * Default share image is the H1 photo for that path (homepage uses /og-image.jpg).
  */
 export function pageMetadata({
   title,
   description,
   path,
   keywords,
-  image = DEFAULT_OG_IMAGE,
+  image,
   noindex = false,
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
-  const imageUrl = absoluteImage(image);
+  const imageUrl = absoluteImage(image ?? pageOgImage(path).src);
 
   return {
     title,
@@ -116,7 +118,7 @@ export function generateMetadata(config: SEOConfig = {}): Metadata {
     title,
     description,
     path,
-    image: config.image ?? DEFAULT_OG_IMAGE,
+    image: config.image ?? pageOgImage(path).src,
   };
   if (keywords) meta.keywords = keywords;
   if (config.noindex) meta.noindex = true;
@@ -242,7 +244,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'RealEstateAgent',
     '@id': `${SITE_URL}/#organization`,
     name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-    image: `${SITE_URL}/og-image.jpg`,
+    image: absoluteMediaUrl('/og-image.jpg', SITE_URL),
     url: SITE_URL,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
@@ -328,7 +330,7 @@ export function generateOrganizationSchema() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/og-image.jpg`,
+      url: absoluteMediaUrl('/og-image.jpg', SITE_URL),
       width: 1200,
       height: 630,
     },

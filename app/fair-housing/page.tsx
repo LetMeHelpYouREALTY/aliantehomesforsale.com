@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
@@ -15,6 +16,7 @@ export default function FairHousing() {
       <AboutHero
         title="Fair Housing | Aliante Realtor, North Las Vegas 89084"
         subtitle="Equal professional service on every Aliante listing and buyer tour. Call (702) 707-7273."
+        image={pageHero('/fair-housing')}
       />
       <LegalContent title="Fair Housing and Equal Opportunity Statement">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

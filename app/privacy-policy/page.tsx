@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
@@ -15,6 +16,7 @@ export default function PrivacyPolicy() {
       <AboutHero
         title="Privacy Policy | Aliante Homes by Dr. Jan Duffy"
         subtitle="How we handle contact data for Aliante real estate inquiries in ZIP 89084."
+        image={pageHero('/privacy-policy')}
       />
       <LegalContent title="Our Commitment to Your Privacy">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

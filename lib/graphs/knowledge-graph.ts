@@ -1,4 +1,11 @@
 import { nearbyPlaceSearchUrl, nearbyPlaces } from '../content/aliante-content';
+import {
+  absoluteImageUrl,
+  gbpPhotoStrip,
+  ogImage,
+  pageHero,
+  siteImages,
+} from '../content/site-images';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
 
@@ -20,7 +27,7 @@ export function buildKnowledgeGraph() {
     url: siteConfig.siteUrl,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteConfig.siteUrl}/og-image.jpg`,
+      url: absoluteImageUrl(ogImage),
       width: 1200,
       height: 630,
     },
@@ -49,7 +56,12 @@ export function buildKnowledgeGraph() {
     '@id': graphIds.localBusiness,
     name: siteConfig.siteName,
     url: siteConfig.siteUrl,
-    image: `${siteConfig.siteUrl}/og-image.jpg`,
+    image: [
+      absoluteImageUrl(ogImage),
+      absoluteImageUrl(siteImages.officeNap),
+      absoluteImageUrl(siteImages.golfFairway),
+      absoluteImageUrl(siteImages.sunCity),
+    ],
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
     address: postalAddress,
@@ -80,6 +92,14 @@ export function buildKnowledgeGraph() {
       ...siteConfig.neighborhoods.map((n) => ({ '@id': graphIds.neighborhood(n.slug) })),
     ],
     hasMap: siteConfig.maps.placeUrl,
+    photo: gbpPhotoStrip.map((photo, index) => ({
+      '@type': 'ImageObject',
+      '@id': `${siteConfig.siteUrl}/#gbp-photo-${index + 1}`,
+      url: absoluteImageUrl(photo),
+      contentUrl: absoluteImageUrl(photo),
+      name: photo.alt,
+      description: photo.alt,
+    })),
   };
 
   const aliantePlace = {
@@ -89,6 +109,7 @@ export function buildKnowledgeGraph() {
     description:
       'Master-planned community in North Las Vegas, Nevada (89084) with gated neighborhoods, golf, and Sun City Aliante 55+ living.',
     url: `${siteConfig.siteUrl}/neighborhoods`,
+    image: absoluteImageUrl(ogImage),
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'North Las Vegas',
@@ -120,6 +141,7 @@ export function buildKnowledgeGraph() {
       name: n.name,
       description: n.summary,
       url: `${siteConfig.siteUrl}${path}`,
+      image: absoluteImageUrl(pageHero(path)),
       containedInPlace: { '@id': graphIds.aliantePlace },
       address: {
         '@type': 'PostalAddress',

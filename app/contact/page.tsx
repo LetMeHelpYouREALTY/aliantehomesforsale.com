@@ -1,3 +1,4 @@
+import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import ContactFAQ from '../components/ContactFAQ';
 import ContactHero from '../components/ContactHero';
@@ -22,6 +23,7 @@ export default function Contact() {
       <ContactHero
         title="Contact Aliante Realtor | Call (702) 707-7273"
         subtitle="Buyer or seller representation in ZIP 89084. Office at 2590 Nature Park Drive, Suite 275, North Las Vegas."
+        image={pageHero('/contact')}
       />
 
       {/* Contact Methods Grid */}

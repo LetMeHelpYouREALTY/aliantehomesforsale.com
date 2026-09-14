@@ -1,11 +1,23 @@
 import { builderGuides } from '../../lib/content/builder-guides';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 type BuilderDetailContentProps = {
   builder: string;
 };
 
+const builderHeadingPhotos: Record<string, SiteImage> = {
+  lennar: siteImages.lennar,
+  'dr-horton': siteImages.drHorton,
+  'richmond-american': siteImages.richmondAmerican,
+  'toll-brothers': siteImages.tollBrothers,
+  'del-webb': siteImages.delWebb,
+  'tri-pointe': siteImages.triPointe,
+};
+
 export default function BuilderDetailContent({ builder }: BuilderDetailContentProps) {
   const guide = builderGuides[builder];
+  const headingPhoto = builderHeadingPhotos[builder];
   if (!guide) return null;
 
   return (
@@ -14,6 +26,7 @@ export default function BuilderDetailContent({ builder }: BuilderDetailContentPr
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           {guide.heading}
         </h2>
+        {headingPhoto ? <HeadingPhoto image={headingPhoto} /> : null}
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           {guide.intro.map((paragraph) => (
