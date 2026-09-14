@@ -1,13 +1,14 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Accessibility Statement - Aliante Homes For Sale',
+export const metadata = pageMetadata({
+  title: 'Accessibility Statement | Aliante Homes For Sale, North Las Vegas 89084',
   description:
-    'How we work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page blocks you.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/accessibility' },
-};
+    'How we work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page, form, or widget blocks you in North Las Vegas 89084.',
+  path: '/accessibility',
+});
 
 export default function Accessibility() {
   return (
@@ -15,6 +16,7 @@ export default function Accessibility() {
       <AboutHero
         title="Accessibility | Aliante Homes for Sale, North Las Vegas 89084"
         subtitle="We work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page blocks you."
+        image={pageHero('/accessibility')}
       />
       <LegalContent title="Website Accessibility Commitment">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">

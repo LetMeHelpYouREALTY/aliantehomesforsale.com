@@ -1,28 +1,30 @@
 'use client';
 
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import CardPhoto from './CardPhoto';
 
-interface ContactMethodProps {
-  icon: string;
+type ContactMethodProps = {
+  image: SiteImage;
   title: string;
   primary: string;
   details: string[];
   href?: string;
   featured?: boolean;
-}
+};
 
-function ContactMethodCard({ icon, title, primary, details, href, featured }: ContactMethodProps) {
+function ContactMethodCard({ image, title, primary, details, href, featured }: ContactMethodProps) {
   const content = (
     <>
-      <div className="text-5xl mb-4">{icon}</div>
+      <CardPhoto image={image} heightClass="h-28" />
       <h3 className="text-2xl font-bold mb-4" style={{ color: '#1a365d' }}>
         {title}
       </h3>
       <p className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#2c5aa0' }}>
         {primary}
       </p>
-      {details.map((detail, index) => (
-        <p key={index} className="text-gray-600">
+      {details.map((detail) => (
+        <p key={detail} className="text-gray-600">
           {detail}
         </p>
       ))}
@@ -53,7 +55,7 @@ function ContactMethodCard({ icon, title, primary, details, href, featured }: Co
 export default function ContactMethods() {
   const methods: ContactMethodProps[] = [
     {
-      icon: '📞',
+      image: siteImages.officeNap,
       title: 'Call Us Today',
       primary: '(702) 707-7273',
       details: [siteConfig.hours.weekday, siteConfig.hours.weekend],
@@ -61,21 +63,21 @@ export default function ContactMethods() {
       featured: true,
     },
     {
-      icon: '✉️',
+      image: siteImages.about,
       title: 'Email Us',
       primary: 'DrDuffy@AlianteHomesForSale.com',
       details: ['Reply during office hours'],
       href: 'mailto:DrDuffy@AlianteHomesForSale.com',
     },
     {
-      icon: '📍',
+      image: siteImages.contact,
       title: 'Visit Our Office',
       primary: '2590 Nature Park Drive',
       details: ['Suite 275 · North Las Vegas, NV 89084', 'Tap for map & directions'],
       href: '#directions',
     },
     {
-      icon: '📅',
+      image: siteImages.buyerPath,
       title: 'Schedule Time',
       primary: 'Book on Calendly',
       details: ['15-minute consultation', 'No contact form required'],
@@ -87,8 +89,8 @@ export default function ContactMethods() {
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {methods.map((method, index) => (
-            <ContactMethodCard key={index} {...method} />
+          {methods.map((method) => (
+            <ContactMethodCard key={method.title} {...method} />
           ))}
         </div>
       </div>

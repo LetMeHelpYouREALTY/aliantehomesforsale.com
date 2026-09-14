@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function MortgageCalculatorContent() {
   return (
@@ -10,6 +12,10 @@ export default function MortgageCalculatorContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Understanding Mortgage Payments and Affordability
           </h2>
+          <HeadingPhoto
+            image={siteImages.mortgage}
+            caption="Estimate a payment on an Aliante home — not a rate lock"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -76,6 +82,10 @@ export default function MortgageCalculatorContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Down Payment Options and Loan Programs
           </h2>
+          <HeadingPhoto
+            image={siteImages.lenderMeeting}
+            caption="Compare at least two written quotes — this page is not a rate lock"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -132,6 +142,10 @@ export default function MortgageCalculatorContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Working with Experienced Mortgage Professionals
           </h2>
+          <HeadingPhoto
+            image={siteImages.officeNap}
+            caption="Ask for lender introductions from Suite 275 — pre-approval is not cash"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

@@ -17,6 +17,7 @@
     "vercel-dev": "next dev",
     "analyze": "ANALYZE=true next build",
     "type-check": "tsc --noEmit",
+    "media:upload": "node scripts/upload-r2-media.mjs",
     "next:build": "next build",
     "next:dev": "next dev",
     "next:start": "next start",

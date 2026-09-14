@@ -1,5 +1,8 @@
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import CardPhoto from './CardPhoto';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Honest disambiguation for GSC queries like "aliante property management".
@@ -15,6 +18,10 @@ export default function PropertyManagementContent() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           We sell Aliante homes in ZIP 89084. We do not manage rentals or HOAs.
         </h2>
+        <HeadingPhoto
+          image={siteImages.propertyManagement}
+          caption="Suite 275 lists homes. Suite 100 is FirstService Residential — same building, different job."
+        />
         <p className="leading-relaxed">
           Google searches for Aliante property management, leasing agents, and rental companies
           often land here. {agentName} is a licensed Nevada realtor at {siteConfig.brokerage}. If
@@ -29,6 +36,7 @@ export default function PropertyManagementContent() {
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>
           FirstService Residential vs your Aliante realtor (same building)
         </h3>
+        <CardPhoto image={siteImages.officeNap} heightClass="h-40" />
         <p className="leading-relaxed">
           FirstService Residential has managed the Aliante Master Association since 2003 and keeps a
           North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275
@@ -44,6 +52,7 @@ export default function PropertyManagementContent() {
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>
           Need an Aliante rental instead of a purchase?
         </h3>
+        <CardPhoto image={siteImages.rentalHoa} heightClass="h-40" />
         <p className="leading-relaxed">
           I do not run a leasing desk or screen tenants. I can still help you compare buying in{' '}
           <Link href="/homes-for-sale" className="font-semibold" style={{ color: '#2c5aa0' }}>
@@ -56,6 +65,7 @@ export default function PropertyManagementContent() {
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>
           Selling a rental you already own in Aliante 89084
         </h3>
+        <CardPhoto image={siteImages.sellerPrep} heightClass="h-40" />
         <p className="leading-relaxed">
           If you already own in Aliante and want to sell — tenant in place or vacant — that is
           listing work. See the{' '}

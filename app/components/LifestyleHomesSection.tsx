@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { lifestyleCategories } from '../../lib/content/aliante-content';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * User-friendly “explore by lifestyle” grid — replaces fabricated MLS property cards.
@@ -22,6 +24,10 @@ export default function LifestyleHomesSection() {
             Pick the lifestyle that fits — then search live MLS listings for North Las Vegas 89084.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.homesForSale}
+          caption="Gated, golf, new construction, and Sun City Aliante — then search live MLS"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {lifestyleCategories.map((item) => (

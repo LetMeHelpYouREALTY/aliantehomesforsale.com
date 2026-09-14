@@ -1,7 +1,9 @@
 import type { CalendlyEventKey } from '../../lib/calendly';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 import CalendlyInline from './CalendlyInline';
+import HeadingPhoto from './HeadingPhoto';
 
 type CalendlySectionProps = {
   event?: CalendlyEventKey;
@@ -33,7 +35,7 @@ export default function CalendlySection({
           >
             {heading ?? item.heading}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             {description ?? item.description} Or call{' '}
             <a href={`tel:${siteConfig.phoneTel}`} className="font-semibold underline">
               {siteConfig.phone}
@@ -41,6 +43,10 @@ export default function CalendlySection({
             .
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.officeNap}
+          caption="Book a showing from Suite 275 — or meet at the listing in ZIP 89084"
+        />
         <CalendlyInline event={event} />
       </div>
     </section>

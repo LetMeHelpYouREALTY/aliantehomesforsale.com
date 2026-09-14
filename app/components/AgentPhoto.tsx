@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { mediaSrc } from '../../lib/media';
 import { siteConfig } from '../../lib/site-config';
 
 type AgentPhotoProps = {
@@ -19,7 +20,7 @@ export default function AgentPhoto({
 }: AgentPhotoProps) {
   return (
     <Image
-      src={siteConfig.agentImage}
+      src={mediaSrc(siteConfig.agentImage)}
       alt={`${siteConfig.agentName}, Aliante North Las Vegas real estate agent`}
       width={size}
       height={size}

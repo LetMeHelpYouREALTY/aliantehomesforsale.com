@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 type Community = {
   name: string;
@@ -70,6 +71,10 @@ export default function FeaturedCommunities() {
             each page.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.neighborhoods}
+          caption="Aliante villages in North Las Vegas 89084 — gated, golf, 55+, and open-access"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {COMMUNITIES.map((community) => (

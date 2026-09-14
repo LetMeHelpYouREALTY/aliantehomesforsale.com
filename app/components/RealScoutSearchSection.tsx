@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 import RealScoutAdvancedSearch from './RealScoutAdvancedSearch';
 
 /**
@@ -20,6 +23,10 @@ export default function RealScoutSearchSection() {
         >
           Find homes for sale in Aliante
         </h2>
+        <HeadingPhoto
+          image={siteImages.search}
+          caption="Search live MLS for Aliante North Las Vegas 89084 — inventory changes all day"
+        />
         <div className="realscout-search-section">
           <style>{`.realscout-search-section realscout-advanced-search { max-width: 100%; width: 100%; }`}</style>
           <RealScoutAdvancedSearch />
@@ -27,11 +34,11 @@ export default function RealScoutSearchSection() {
         <div className="mt-6 pt-6 border-t border-slate-200 text-center">
           <p className="text-slate-600 mb-2">Need personalized help?</p>
           <a
-            href="tel:+17027077273"
+            href={`tel:${siteConfig.phoneTel}`}
             className="inline-flex items-center gap-2 text-xl font-bold hover:underline"
             style={{ color: '#2c5aa0' }}
           >
-            📞 (702) 707-7273
+            Call {siteConfig.phone}
           </a>
         </div>
       </div>

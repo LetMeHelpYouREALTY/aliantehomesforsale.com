@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import ContactFAQ from '../components/ContactFAQ';
 import ContactHero from '../components/ContactHero';
 import ContactMethods from '../components/ContactMethods';
@@ -7,15 +8,13 @@ import EnhancedContactForm from '../components/EnhancedContactForm';
 import NearbyLocatorMap from '../components/NearbyLocatorMap';
 import OfficeLocation from '../components/OfficeLocation';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Contact Aliante Realtor | Call (702) 707-7273 · North Las Vegas 89084',
   description:
     'Call Dr. Jan Duffy at (702) 707-7273. Buyer or seller representation in Aliante, North Las Vegas 89084. Office at 2590 Nature Park Drive, Suite 275.',
+  path: '/contact',
   keywords: 'contact aliante realtor, dr jan duffy phone, aliante real estate 89084',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/contact',
-  },
-};
+});
 
 export default function Contact() {
   return (
@@ -24,6 +23,7 @@ export default function Contact() {
       <ContactHero
         title="Contact Aliante Realtor | Call (702) 707-7273"
         subtitle="Buyer or seller representation in ZIP 89084. Office at 2590 Nature Park Drive, Suite 275, North Las Vegas."
+        image={pageHero('/contact')}
       />
 
       {/* Contact Methods Grid */}

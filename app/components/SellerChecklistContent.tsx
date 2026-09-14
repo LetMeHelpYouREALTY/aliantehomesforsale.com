@@ -1,6 +1,6 @@
-'use client';
-
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function SellerChecklistContent() {
   return (
@@ -10,6 +10,10 @@ export default function SellerChecklistContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             List your Aliante home in North Las Vegas 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.sellerChecklist}
+            caption="Listing-ready living room in Aliante, North Las Vegas 89084"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -72,6 +76,10 @@ export default function SellerChecklistContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Price an Aliante listing using 89084 neighborhood comps
           </h2>
+          <HeadingPhoto
+            image={siteImages.pricingComps}
+            caption="List from recent closed sales in your village — not a valley average"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -118,6 +126,10 @@ export default function SellerChecklistContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Negotiate and close an Aliante sale in ZIP 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.negotiateClose}
+            caption="Inspections, appraisal, loan, and title run on that contract’s deadlines"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

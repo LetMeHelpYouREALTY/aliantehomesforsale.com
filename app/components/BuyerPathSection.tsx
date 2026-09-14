@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { buyerPathSteps } from '../../lib/content/aliante-content';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 /** Simple 3-step buyer path — supports HowTo content graph + UX clarity */
 export default function BuyerPathSection() {
@@ -18,6 +20,10 @@ export default function BuyerPathSection() {
             Three clear steps — search, tour, close with local guidance.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.buyerPath}
+          caption="Search live MLS, tour Aliante villages, then close with local representation"
+        />
         <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {buyerPathSteps.map((step) => (
             <li key={step.id}>

@@ -1,5 +1,3 @@
-'use client';
-
 import FAQSection from './FAQSection';
 
 export default function AlianteFAQ() {
@@ -15,9 +13,9 @@ export default function AlianteFAQ() {
         'Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="text-blue-600 hover:underline font-semibold">Lennar</a>, <a href="/builders/dr-horton" class="text-blue-600 hover:underline font-semibold">D.R. Horton</a>, and <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="text-blue-600 hover:underline font-semibold">Builder Incentives</a> page or call (702) 707-7273.',
     },
     {
-      question: 'What is Sun City Aliante and who can live there?',
+      question: 'What is Sun City Aliante and what are the occupancy rules?',
       answer:
-        '<a href="/sun-city-aliante" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is a Del Webb 55+ community inside ZIP 89084 — not Ardiente (89081). At least one resident must be 55 or older. Amenities include fitness, pools, clubs, and nearby <a href="/golf-homes" class="text-blue-600 hover:underline font-semibold">Aliante Golf Club</a>. Confirm live MLS before you offer.',
+        '<a href="/sun-city-aliante" class="text-blue-600 hover:underline font-semibold">Sun City Aliante</a> is a Del Webb 55+ community inside ZIP 89084 — not Ardiente (89081). At least one resident must be 55 or older (HOPA age restriction). Amenities include fitness, pools, clubs, and nearby <a href="/golf-homes" class="text-blue-600 hover:underline font-semibold">Aliante Golf Club</a>. Confirm live MLS before you offer.',
     },
     {
       question: 'Are there gated communities in Aliante?',

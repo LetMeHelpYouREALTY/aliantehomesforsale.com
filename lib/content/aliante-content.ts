@@ -1,7 +1,4 @@
-/**
- * Typed content objects for Aliante UX + SEO (no fabricated listings or ratings).
- * Keep market figures soft / dated — live MLS numbers come from RealScout widgets.
- */
+import { mediaSrc } from '../media';
 
 export type LifestyleCategory = {
   id: string;
@@ -41,7 +38,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Gated Communities',
     description: 'Controlled-access neighborhoods with private amenities across Aliante.',
     href: '/gated-communities',
-    image: '/images/gated.jpg',
+    image: mediaSrc('/images/gated.jpg'),
     alt: 'Gated community homes in Aliante North Las Vegas',
     highlights: ['Controlled entry', 'Community pools & parks', 'Resale inventory'],
   },
@@ -50,7 +47,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Golf-Course Homes',
     description: 'Homes near Club Aliante and fairway living in North Las Vegas 89084.',
     href: '/golf-homes',
-    image: '/images/golf.jpg',
+    image: mediaSrc('/images/golf.jpg'),
     alt: 'Golf course homes near Club Aliante',
     highlights: ['Near Aliante Golf Club', 'Fairway & mountain views', 'Confirm HOA and lot type'],
   },
@@ -60,7 +57,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     description:
       'Compare Lennar and Del Webb in 89084 with nearby Tule Springs and other builders.',
     href: '/new-construction',
-    image: '/images/builders.jpg',
+    image: mediaSrc('/images/new-construction.jpg'),
     alt: 'New construction homes in Aliante North Las Vegas',
     highlights: ['Builder incentives', 'Modern floor plans', 'Independent buyer advocacy'],
   },
@@ -69,7 +66,7 @@ export const lifestyleCategories: LifestyleCategory[] = [
     title: 'Sun City Aliante 55+',
     description: 'Del Webb active-adult living with golf, clubs, and low-maintenance homes.',
     href: '/sun-city-aliante',
-    image: '/images/sun-city.jpg',
+    image: mediaSrc('/images/sun-city.jpg'),
     alt: 'Sun City Aliante 55+ active adult community',
     highlights: ['55+ Del Webb community', 'Golf & fitness clubs', 'Single-story plans'],
   },

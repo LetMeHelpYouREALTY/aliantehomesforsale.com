@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function HomeValuationContent() {
   return (
@@ -10,6 +12,10 @@ export default function HomeValuationContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Aliante home valuation and CMA in North Las Vegas 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.homeValuation}
+            caption="CMA from village comps in Aliante 89084 — not a valley-wide average"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -62,6 +68,10 @@ export default function HomeValuationContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             What changes an Aliante home’s value in ZIP 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.valuationFactors}
+            caption="Gated vs open-access, fairway vs interior — read it off village comps"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -119,6 +129,10 @@ export default function HomeValuationContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Next steps after your Aliante CMA
           </h2>
+          <HeadingPhoto
+            image={siteImages.cmaNextSteps}
+            caption="Review comps at 2590 Nature Park Drive, Suite 275, North Las Vegas 89084"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

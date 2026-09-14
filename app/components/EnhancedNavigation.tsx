@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 
 export default function EnhancedNavigation() {
@@ -17,14 +18,26 @@ export default function EnhancedNavigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = '';
     }
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      setIsMenuOpen(false);
+      setActiveDropdown(null);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
 
   return (
     <>
@@ -244,7 +257,7 @@ export default function EnhancedNavigation() {
             {/* Right Side - CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-4">
               <a
-                href="tel:+17027077273"
+                href={`tel:${siteConfig.phoneTel}`}
                 className="text-lg font-semibold flex items-center gap-2 transition-colors"
                 style={{ color: '#1a365d' }}
               >
@@ -256,7 +269,7 @@ export default function EnhancedNavigation() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                (702) 707-7273
+                {siteConfig.phone}
               </a>
 
               <Link
@@ -273,8 +286,9 @@ export default function EnhancedNavigation() {
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
-              aria-label="Toggle mobile menu"
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isMenuOpen}
+              aria-controls="mobile-nav-panel"
             >
               {isMenuOpen ? (
                 <svg
@@ -320,7 +334,13 @@ export default function EnhancedNavigation() {
             onClick={() => setIsMenuOpen(false)}
             aria-hidden="true"
           />
-          <div className="fixed top-0 right-0 bottom-0 w-80 bg-white z-50 lg:hidden shadow-2xl overflow-y-auto">
+          <div
+            id="mobile-nav-panel"
+            className="fixed top-0 right-0 bottom-0 w-80 bg-white z-50 lg:hidden shadow-2xl overflow-y-auto"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site menu"
+          >
             <div className="p-6">
               {/* Close Button */}
               <button
@@ -361,11 +381,11 @@ export default function EnhancedNavigation() {
 
               {/* Mobile Phone CTA */}
               <a
-                href="tel:+17027077273"
+                href={`tel:${siteConfig.phoneTel}`}
                 className="block w-full px-6 py-3 rounded-lg font-bold text-white text-center mb-6 transition-all"
                 style={{ backgroundColor: '#ed8936' }}
               >
-                📞 (702) 707-7273
+                Call {siteConfig.phone}
               </a>
 
               {/* Mobile Navigation Links */}

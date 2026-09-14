@@ -1,17 +1,20 @@
 'use client';
 
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
+import CardPhoto from './CardPhoto';
+import HeadingPhoto from './HeadingPhoto';
 
-interface StatCardProps {
+type StatCardProps = {
   number: string;
   label: string;
-  icon: string;
-}
+  image: SiteImage;
+};
 
-function StatCard({ number, label, icon }: StatCardProps) {
+function StatCard({ number, label, image }: StatCardProps) {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      <div className="text-5xl mb-4">{icon}</div>
+      <CardPhoto image={image} heightClass="h-24" />
       <h3 className="text-4xl sm:text-5xl font-bold mb-2" style={{ color: '#2c5aa0' }}>
         {number}
       </h3>
@@ -25,22 +28,22 @@ export default function AboutStats() {
     {
       number: '2018',
       label: 'Aliante specialist since',
-      icon: '📅',
+      image: siteImages.about,
     },
     {
       number: 'S.0197614.LLC',
       label: 'Nevada real estate license',
-      icon: '📋',
+      image: siteImages.officeNap,
     },
     {
       number: '89084',
       label: 'Hyperlocal ZIP focus',
-      icon: '📍',
+      image: siteImages.neighborhoods,
     },
     {
       number: 'BHHS NV',
       label: 'Berkshire Hathaway HomeServices',
-      icon: '🏠',
+      image: siteImages.homesForSale,
     },
   ];
 
@@ -52,11 +55,15 @@ export default function AboutStats() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Who We Are
           </h2>
-          <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
             Dr. Jan Duffy has specialized in Aliante and North Las Vegas 89084 since 2018 with
             Berkshire Hathaway HomeServices Nevada Properties. For verified client feedback, use
             Google Business Profile reviews — I will not publish an unverified star rating here.
           </p>
+          <HeadingPhoto
+            image={siteImages.officeNap}
+            caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084"
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

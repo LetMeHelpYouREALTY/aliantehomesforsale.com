@@ -1,4 +1,5 @@
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import { siteConfig } from '../../lib/site-config';
 import AfterHeroListings from './AfterHeroListings';
 import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
@@ -10,8 +11,8 @@ type AboutHeroProps = {
 };
 
 export default function AboutHero({
-  title = 'Aliante Realtor Services | Dr. Jan Duffy, North Las Vegas 89084',
-  subtitle = 'Buyer agency, listings, new-construction representation, and Sun City Aliante 55+. Call (702) 707-7273.',
+  title = 'Aliante Realtor | Dr. Jan Duffy, North Las Vegas 89084',
+  subtitle = `Buyer agency, listings, new-construction representation, and Sun City Aliante 55+. Call ${siteConfig.phone}.`,
   image = siteImages.about,
 }: AboutHeroProps) {
   return (
@@ -39,7 +40,8 @@ export default function AboutHero({
           <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">{subtitle}</p>
 
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
-            Berkshire Hathaway HomeServices Nevada Properties · License S.0197614.LLC · Since 2018
+            {siteConfig.brokerage} · License {siteConfig.agentLicense} · Since{' '}
+            {siteConfig.foundedYear}
           </p>
         </div>
       </section>

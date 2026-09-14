@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 
 /**
@@ -46,6 +48,16 @@ export default function OfficeLocation() {
               className="rounded-2xl p-8 h-full"
               style={{ background: 'linear-gradient(135deg, #f0f4ff 0%, #e8f5f0 100%)' }}
             >
+              <figure className="mb-6 overflow-hidden rounded-xl">
+                <Image
+                  src={siteImages.officeNap.src}
+                  alt={siteImages.officeNap.alt}
+                  width={800}
+                  height={450}
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
               <h3 className="text-2xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Office Location
               </h3>
@@ -123,7 +135,7 @@ export default function OfficeLocation() {
                   Open in Google Maps
                 </a>
                 <a
-                  href={maps.placeUrl}
+                  href={maps.reviewsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2 transition-colors focus:outline-none focus:ring-4 focus:ring-teal-200"

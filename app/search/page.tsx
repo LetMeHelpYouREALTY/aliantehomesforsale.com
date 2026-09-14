@@ -1,20 +1,19 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesSearchTips from '../components/HomesSearchTips';
+import PageFAQ from '../components/PageFAQ';
 import PropertyCategories from '../components/PropertyCategories';
 import RealScoutSearchSection from '../components/RealScoutSearchSection';
 import SearchPageContent from '../components/SearchPageContent';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Search Aliante MLS | Realtor Filters, North Las Vegas 89084',
   description:
     'Search Aliante homes for sale with MLS filters. ZIP 89084. Updated about every 15 minutes. Call (702) 707-7273.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/search',
-  },
-};
+  path: '/search',
+});
 
 export default function Search() {
   return (
@@ -28,6 +27,7 @@ export default function Search() {
       <SearchPageContent />
       <PropertyCategories />
       <HomesSearchTips />
+      <PageFAQ path="/search" title="Aliante MLS search FAQ" />
       <HomesCTA />
     </main>
   );

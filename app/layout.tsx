@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Script from 'next/script';
+import { ogImage } from '../lib/content/site-images';
 import { siteConfig } from '../lib/site-config';
 import './globals.css';
 import Breadcrumbs from './components/Breadcrumbs';
@@ -43,9 +44,6 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL(siteConfig.siteUrl),
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '48x48' },
@@ -62,10 +60,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: ogImage.src,
         width: 1200,
         height: 630,
-        alt: 'Aliante North Las Vegas Real Estate & Homes For Sale',
+        alt: ogImage.alt,
       },
     ],
   },
@@ -73,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.defaultTitle,
     description: siteConfig.defaultDescription,
-    images: ['/og-image.jpg'],
+    images: [ogImage.src],
   },
   robots: {
     index: true,
@@ -135,7 +133,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <EnhancedNavigation />
         <Breadcrumbs />
 
-        <div id="main-content" tabIndex={-1}>
+        <div id="main-content" tabIndex={-1} className="min-h-screen">
           {children}
         </div>
 

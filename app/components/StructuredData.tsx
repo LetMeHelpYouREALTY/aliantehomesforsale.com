@@ -1,6 +1,7 @@
 'use client';
 
 import { useId } from 'react';
+import { absoluteImageUrl, ogImage, siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 
 interface StructuredDataProps {
@@ -299,7 +300,12 @@ export default function StructuredData({
         '@type': 'RealEstateAgent',
         '@id': `${siteConfig.siteUrl}/#organization`,
         name: siteConfig.siteName,
-        image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
+        image: [
+          absoluteImageUrl(ogImage),
+          absoluteImageUrl(siteImages.officeNap),
+          absoluteImageUrl(siteImages.golfFairway),
+          absoluteImageUrl(siteImages.sunCity),
+        ],
         url: siteConfig.siteUrl,
         telephone: siteConfig.phoneTel,
         email: siteConfig.email,
@@ -331,6 +337,7 @@ export default function StructuredData({
           },
         ],
         priceRange: '$$',
+        hasMap: siteConfig.maps.placeUrl,
         areaServed: [
           {
             '@type': 'City',
@@ -354,7 +361,7 @@ export default function StructuredData({
         url: siteConfig.siteUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${siteConfig.siteUrl}/og-image.jpg`,
+          url: absoluteImageUrl(ogImage),
           width: 1200,
           height: 630,
         },

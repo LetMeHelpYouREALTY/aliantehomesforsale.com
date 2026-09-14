@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { marketAsOfLabel, marketSnapshot } from '../../lib/content/aliante-content';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Market glance using soft content objects — live numbers come from MLS/RealScout widgets.
@@ -31,21 +33,26 @@ export default function EnhancedMarketInsights() {
           >
             Aliante Market at a Glance
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
             Hyperlocal North Las Vegas 89084 context — use live MLS search for current prices and
             inventory.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.seasonalMarket}
+              caption="Aliante 89084 housing grid — read live MLS widgets, not a stale median"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {marketSnapshot.map((stat) => (
             <div
               key={stat.id}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 text-center"
+              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 text-left"
             >
-              <p className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.value}</p>
-              <p className="text-base sm:text-lg text-white/90 font-medium mb-2">{stat.label}</p>
-              <p className="text-sm text-white/70 leading-snug">{stat.note}</p>
+              <p className="text-base sm:text-lg text-white font-semibold mb-2">{stat.label}</p>
+              <p className="text-sm text-white/80 leading-snug">{stat.note}</p>
             </div>
           ))}
         </div>

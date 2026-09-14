@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 const builderCards = [
   {
@@ -31,10 +32,16 @@ export default function QuickMoveInHomes() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             New Construction & Quick Move-In
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Inventory, incentives, and close dates change with each builder release. Confirm current
             homes with me at (702) 707-7273.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.quickMoveIn}
+              caption="Finished spec inventory near Aliante — confirm the close date on that sheet"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {builderCards.map((item) => (

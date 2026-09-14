@@ -1,3 +1,4 @@
+import { absoluteMediaUrl } from '../media';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
 
@@ -17,7 +18,7 @@ export function buildAgentGraph() {
     '@id': graphIds.agent,
     name: siteConfig.agentName,
     url: `${siteConfig.siteUrl}/about`,
-    image: `${siteConfig.siteUrl}${siteConfig.agentImage}`,
+    image: absoluteMediaUrl(siteConfig.agentImage, siteConfig.siteUrl),
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
     jobTitle: 'Real Estate Agent',

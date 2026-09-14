@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 
 /** Unique Tri Pointe copy. Official 2026 communities are northwest valley, not inside Aliante 89084. */
 export default function TriPointeContent() {
@@ -9,6 +11,10 @@ export default function TriPointeContent() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           Tri Pointe Homes Las Vegas — buyer agency near Aliante, not inside 89084
         </h2>
+        <HeadingPhoto
+          image={siteImages.triPointe}
+          caption="Tri Pointe communities are northwest valley — compare them with Aliante resale"
+        />
         <p className="leading-relaxed">
           Searches for Tri Pointe Homes Las Vegas often hit this Aliante site. As of August 31,
           2026, Tri Pointe’s published new-home map does not list an active community inside the

@@ -1,33 +1,35 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
+import { pageMetadata } from '../../../lib/seo-utils';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
-import GolfHomesContent from '../../components/GolfHomesContent';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
+import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
+import PageFAQ from '../../components/PageFAQ';
 
-export const metadata: Metadata = {
-  title: 'Club Aliante Homes for Sale | Golf Course Real Estate, North Las Vegas',
+export const metadata = pageMetadata({
+  title: 'Club Aliante Homes for Sale | Gated Golf Village, North Las Vegas',
   description:
-    'Club Aliante homes for sale in North Las Vegas 89084. Golf-course lots, clubhouse, and Aliante Golf Club. Independent realtor Dr. Jan Duffy. Call (702) 707-7273. Confirm live MLS prices before you offer.',
+    'Club Aliante is the gated village along Aliante Golf Club in North Las Vegas 89084. Fairway and interior lots. Independent realtor Dr. Jan Duffy. Call (702) 707-7273.',
+  path: '/neighborhoods/club-aliante',
   keywords:
     'club aliante, club aliante homes for sale, club aliante north las vegas, aliante golf club, golf homes aliante',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/club-aliante' },
-};
+});
 
 export default function ClubAliante() {
   return (
     <main>
       <NeighborhoodsHero
-        title="Club Aliante Homes for Sale | Golf Course Real Estate, North Las Vegas"
-        subtitle="Fairway homes in ZIP 89084 next to Aliante Golf Club. Call (702) 707-7273 to tour live listings."
+        title="Club Aliante Homes for Sale | Gated Golf Village, North Las Vegas"
+        subtitle="Gated village next to Aliante Golf Club in ZIP 89084. Call (702) 707-7273 to tour live listings."
         image={pageHero('/neighborhoods/club-aliante')}
       />
-      <GolfHomesContent />
+      <NeighborhoodDetailContent village="club-aliante" />
       <CommunityAmenities />
       <EnhancedFeaturedProperties />
       <NeighborhoodCards />
+      <PageFAQ path="/neighborhoods/club-aliante" title="Club Aliante village FAQ" />
       <NeighborhoodsCTA />
     </main>
   );

@@ -4,6 +4,55 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { siteConfig } from '../../lib/site-config';
 
+const SEGMENT_LABELS: Record<string, string> = {
+  about: 'About',
+  accessibility: 'Accessibility',
+  builders: 'Builders',
+  'buyer-guide': 'Buyer Guide',
+  contact: 'Contact',
+  compare: 'Compare Villages',
+  'club-aliante': 'Club Aliante',
+  'del-webb': 'Del Webb',
+  'desert-willows': 'Desert Willows',
+  'dr-horton': 'D.R. Horton',
+  'fair-housing': 'Fair Housing',
+  'gated-communities': 'Gated Communities',
+  'golf-homes': 'Golf Homes',
+  'home-valuation': 'Home Valuation',
+  'homes-for-sale': 'Homes for Sale',
+  incentives: 'Builder Incentives',
+  'investment-analysis': 'Investment Analysis',
+  lennar: 'Lennar',
+  'market-report': 'Market Report',
+  'mortgage-calculator': 'Mortgage Calculator',
+  neighborhoods: 'Neighborhoods',
+  'new-construction': 'New Construction',
+  paseos: 'The Paseos',
+  'privacy-policy': 'Privacy Policy',
+  prominence: 'The Prominence',
+  'property-management': 'Property Management',
+  'richmond-american': 'Richmond American',
+  schools: 'Schools',
+  search: 'Search',
+  'seller-checklist': 'Seller Checklist',
+  'sun-city': 'Sun City Aliante',
+  'sun-city-aliante': 'Sun City Aliante',
+  'terms-of-service': 'Terms of Service',
+  'toll-brothers': 'Toll Brothers',
+  'tri-pointe': 'Tri Pointe',
+  'tule-springs': 'Villages at Tule Springs',
+};
+
+function segmentLabel(segment: string): string {
+  return (
+    SEGMENT_LABELS[segment] ??
+    segment
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+  );
+}
+
 export default function Breadcrumbs() {
   const pathname = usePathname();
 
@@ -16,10 +65,7 @@ export default function Breadcrumbs() {
     { name: 'Home', url: '/' },
     ...pathSegments.map((segment, index) => {
       const url = `/${pathSegments.slice(0, index + 1).join('/')}`;
-      const name = segment
-        .split('-')
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
+      const name = segmentLabel(segment);
       return { name, url };
     }),
   ];

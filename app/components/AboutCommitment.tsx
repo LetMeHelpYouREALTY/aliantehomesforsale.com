@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 export default function AboutCommitment() {
   return (
     <section className="py-16 px-4 bg-white">
@@ -8,6 +11,10 @@ export default function AboutCommitment() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Our Commitment
           </h2>
+          <HeadingPhoto
+            image={siteImages.about}
+            caption="Dr. Jan Duffy, Aliante realtor at 2590 Nature Park Drive, Suite 275"
+          />
         </div>
 
         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 sm:p-12 shadow-lg">
@@ -22,7 +29,9 @@ export default function AboutCommitment() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">🎯</div>
+              <div className="text-4xl mb-3" aria-hidden="true">
+                1
+              </div>
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Transparency
               </h3>
@@ -30,7 +39,9 @@ export default function AboutCommitment() {
             </div>
 
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">💎</div>
+              <div className="text-4xl mb-3" aria-hidden="true">
+                2
+              </div>
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Integrity
               </h3>
@@ -38,7 +49,9 @@ export default function AboutCommitment() {
             </div>
 
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">❤️</div>
+              <div className="text-4xl mb-3" aria-hidden="true">
+                3
+              </div>
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Client-First
               </h3>

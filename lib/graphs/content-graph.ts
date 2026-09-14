@@ -1,4 +1,5 @@
 import { buyerPathSteps } from '../content/aliante-content';
+import { absoluteImageUrl, pageOgImage } from '../content/site-images';
 import { siteConfig } from '../site-config';
 import { graphIds } from './ids';
 
@@ -31,7 +32,7 @@ export function buildContentGraph() {
     url: `${siteConfig.siteUrl}${hub.path}`,
     isPartOf: { '@id': graphIds.website },
     about: { '@id': graphIds.aliantePlace },
-    primaryImageOfPage: `${siteConfig.siteUrl}/og-image.jpg`,
+    primaryImageOfPage: absoluteImageUrl(pageOgImage(hub.path)),
     inLanguage: 'en-US',
   }));
 

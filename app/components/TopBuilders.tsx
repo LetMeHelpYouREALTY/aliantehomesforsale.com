@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 interface BuilderCardProps {
   name: string;
   badge: string;
@@ -247,9 +250,15 @@ export default function TopBuilders() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
               New-home builders near Aliante 89084
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 mb-8">
               Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
             </p>
+            <div className="max-w-4xl mx-auto text-left">
+              <HeadingPhoto
+                image={siteImages.builders}
+                caption="Builders active near Aliante 89084 — confirm the live map before you tour"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

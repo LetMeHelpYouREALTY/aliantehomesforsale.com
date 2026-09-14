@@ -1,6 +1,6 @@
-'use client';
-
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function BuyerGuideContent() {
   return (
@@ -10,6 +10,10 @@ export default function BuyerGuideContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             How buyer representation works in Aliante 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.buyerGuide}
+            caption="Buyer tour of an Aliante listing in North Las Vegas 89084"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -56,6 +60,10 @@ export default function BuyerGuideContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Which Aliante villages to tour with your buyer’s agent
           </h2>
+          <HeadingPhoto
+            image={siteImages.villageTour}
+            caption="Club Aliante, Prominence, Paseos, Desert Willows, Sun City, Tule Springs"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -172,6 +180,10 @@ export default function BuyerGuideContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Write an offer on an Aliante home in North Las Vegas
           </h2>
+          <HeadingPhoto
+            image={siteImages.writeOffer}
+            caption="Price and terms from that village’s live comps — not a valley-wide rule"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

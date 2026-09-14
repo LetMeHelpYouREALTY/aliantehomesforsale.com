@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Purist-style agent intro: "Dr. Jan Duffy Real Estate" welcome block.
@@ -12,6 +14,10 @@ export default function AgentWelcomeSection() {
         <h2 id="agent-welcome-heading" className="text-3xl font-bold mb-6 text-[#0a2540]">
           Dr. Jan Duffy Real Estate
         </h2>
+        <HeadingPhoto
+          image={siteImages.officeNap}
+          caption="Dr. Jan Duffy · 2590 Nature Park Drive, Suite 275 · North Las Vegas 89084"
+        />
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
           Nevada license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Aliante
           89084 is my home market — gated villages, golf-course homes, and Sun City Aliante 55+.

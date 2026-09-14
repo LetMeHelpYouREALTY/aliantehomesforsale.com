@@ -1,10 +1,101 @@
 import type { Metadata } from 'next';
+import { pageOgImage } from './content/site-images';
+import { absoluteMediaUrl } from './media';
 import { siteConfig } from './site-config';
 
 const SITE_URL = siteConfig.siteUrl;
 const SITE_NAME = siteConfig.siteName;
 const DEFAULT_TITLE = siteConfig.defaultTitle;
 const DEFAULT_DESCRIPTION = siteConfig.defaultDescription;
+
+type PageMetadataInput = {
+  title: string;
+  description: string;
+  path: string;
+  keywords?: string;
+  image?: string;
+  noindex?: boolean;
+};
+
+function absoluteUrl(path: string): string {
+  if (path === '/' || path === '') return SITE_URL;
+  return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
+}
+
+function absoluteImage(image: string): string {
+  return absoluteMediaUrl(image, SITE_URL);
+}
+
+/**
+ * Per-route metadata with canonical, Open Graph, and Twitter cards.
+ * Based on Next.js 15 App Router metadata merging — set this on every page
+ * so inner routes do not inherit the homepage canonical or default OG title.
+ * Default share image is the H1 photo for that path (homepage uses /og-image.jpg).
+ */
+export function pageMetadata({
+  title,
+  description,
+  path,
+  keywords,
+  image,
+  noindex = false,
+}: PageMetadataInput): Metadata {
+  const url = absoluteUrl(path);
+  const imageUrl = absoluteImage(image ?? pageOgImage(path).src);
+
+  return {
+    title,
+    description,
+    ...(keywords ? { keywords } : {}),
+    authors: [{ name: siteConfig.agentName }],
+    creator: siteConfig.agentName,
+    publisher: siteConfig.brokerage,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: SITE_NAME,
+      locale: 'en_US',
+      type: 'website',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+    robots: noindex
+      ? { index: false, follow: true }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+          },
+        },
+    other: {
+      'geo.region': 'US-NV',
+      'geo.placename': `${siteConfig.areaName}, ${siteConfig.region}`,
+      'geo.position': `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
+      ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
+    },
+  };
+}
 
 interface SEOConfig {
   title?: string;
@@ -16,106 +107,35 @@ interface SEOConfig {
   type?: 'website' | 'article' | 'profile';
 }
 
+/** @deprecated Prefer pageMetadata() for App Router pages. */
 export function generateMetadata(config: SEOConfig = {}): Metadata {
-  const {
-    title = DEFAULT_TITLE,
-    description = DEFAULT_DESCRIPTION,
-    keywords = [],
-    path = '',
-    image = null,
-    noindex = false,
-    type = 'website',
-  } = config;
+  const title = config.title ?? DEFAULT_TITLE;
+  const description = config.description ?? DEFAULT_DESCRIPTION;
+  const path = config.path || '/';
+  const keywords = [...(config.keywords ?? [])].join(', ');
 
-  const url = `${SITE_URL}${path}`;
-
-  const defaultKeywords = [
-    'Aliante homes for sale',
-    'Las Vegas real estate',
-    'North Las Vegas homes',
-    'Aliante real estate',
-    'Nevada homes',
-  ];
-
-  const allKeywords = [...defaultKeywords, ...keywords].join(', ');
-
-  const openGraphConfig: any = {
+  const meta: PageMetadataInput = {
     title,
     description,
-    url,
-    siteName: SITE_NAME,
-    locale: 'en_US',
-    type,
+    path,
+    image: config.image ?? pageOgImage(path).src,
   };
-
-  if (image) {
-    const fullImageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
-    openGraphConfig.images = [
-      {
-        url: fullImageUrl,
-        width: 1200,
-        height: 630,
-        alt: title,
-      },
-    ];
-  }
-
-  const twitterConfig: any = {
-    card: image ? 'summary_large_image' : 'summary',
-    title,
-    description,
-    creator: '@aliantehomes',
-  };
-
-  if (image) {
-    const fullImageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
-    twitterConfig.images = [fullImageUrl];
-  }
-
-  return {
-    title,
-    description,
-    keywords: allKeywords,
-    authors: [{ name: siteConfig.agentName }],
-    creator: siteConfig.agentName,
-    publisher: siteConfig.brokerage,
-    metadataBase: new URL(SITE_URL),
-    alternates: {
-      canonical: url,
-    },
-    openGraph: openGraphConfig,
-    twitter: twitterConfig,
-    robots: {
-      index: !noindex,
-      follow: !noindex,
-      googleBot: {
-        index: !noindex,
-        follow: !noindex,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    other: {
-      'geo.region': 'US-NV',
-      'geo.placename': 'Aliante, North Las Vegas',
-      'geo.position': `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
-      ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
-    },
-  };
+  if (keywords) meta.keywords = keywords;
+  if (config.noindex) meta.noindex = true;
+  return pageMetadata(meta);
 }
 
 // Neighborhood-specific SEO data
 export const neighborhoodSEO = {
   prominence: {
-    title: 'The Prominence Homes For Sale - Luxury Gated Community Aliante',
+    title: 'The Prominence Aliante | Gated Homes North Las Vegas 89084',
     description:
       'Gated village in The Prominence, Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
     keywords: [
       'The Prominence',
-      'luxury homes Aliante',
-      'gated community Las Vegas',
-      'premium real estate',
+      'gated homes Aliante',
+      'gated community North Las Vegas',
+      'Aliante 89084',
     ],
   },
   'desert-willows': {
@@ -133,7 +153,12 @@ export const neighborhoodSEO = {
     title: 'Club Aliante Homes For Sale - Golf Course Community Las Vegas',
     description:
       'Golf-course lots in Club Aliante, North Las Vegas 89084. Confirm live MLS prices. Call (702) 707-7273.',
-    keywords: ['Club Aliante', 'golf course homes', 'resort living Las Vegas', 'golf community'],
+    keywords: [
+      'Club Aliante',
+      'golf course homes Aliante',
+      'Aliante Golf Club',
+      'North Las Vegas 89084',
+    ],
   },
   paseos: {
     title: 'The Paseos Homes For Sale - Aliante, North Las Vegas 89084',
@@ -219,7 +244,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'RealEstateAgent',
     '@id': `${SITE_URL}/#organization`,
     name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
-    image: `${SITE_URL}/og-image.jpg`,
+    image: absoluteMediaUrl('/og-image.jpg', SITE_URL),
     url: SITE_URL,
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,
@@ -305,7 +330,7 @@ export function generateOrganizationSchema() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/og-image.jpg`,
+      url: absoluteMediaUrl('/og-image.jpg', SITE_URL),
       width: 1200,
       height: 630,
     },

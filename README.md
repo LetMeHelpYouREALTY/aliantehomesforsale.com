@@ -112,12 +112,21 @@ NODE_ENV=development
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 # Production
-NEXT_PUBLIC_SITE_URL=https://aliantehomesforsale.com
-GOOGLE_VERIFICATION=your-google-verification-code
+NEXT_PUBLIC_SITE_URL=https://www.aliantehomesforsale.com
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-verification-code
+
+# Cloudflare R2 image CDN (optional). Git public/images is the backup.
+# Use a gray-cloud media host — never orange-cloud www.aliantehomesforsale.com (Vercel).
+# NEXT_PUBLIC_CLOUDFLARE_MEDIA_BASE=https://media.aliantehomesforsale.com
+# CLOUDFLARE_API_TOKEN=
+# CLOUDFLARE_ACCOUNT_ID=
+# R2_BUCKET=aliante-homes-media
 
 # Vercel (auto-populated)
 VERCEL_URL=https://your-project.vercel.app
 ```
+
+Copy `.env.example` to `.env.local`. After adding photos, run `npm run media:upload` when Cloudflare credentials are set. Until then, Vercel serves `/images` and `/og-image.jpg` from git.
 
 ### Next.js Configuration
 

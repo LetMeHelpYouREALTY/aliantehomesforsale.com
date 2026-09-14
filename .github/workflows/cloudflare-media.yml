@@ -1,0 +1,32 @@
+name: Cloudflare R2 media
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - public/images/**
+      - public/og-image.jpg
+      - scripts/upload-r2-media.mjs
+      - wrangler.toml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    name: Upload images to R2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Upload git-backed photos to Cloudflare R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ vars.R2_BUCKET }}
+        run: node scripts/upload-r2-media.mjs
