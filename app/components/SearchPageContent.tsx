@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 export default function SearchPageContent() {
   return (
     <section className="py-16 px-4 bg-white">
@@ -7,6 +10,10 @@ export default function SearchPageContent() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           Search Aliante MLS with a North Las Vegas 89084 realtor
         </h2>
+        <HeadingPhoto
+          image={siteImages.search}
+          caption="Live MLS search for Aliante streets — listings refresh about every 15 minutes"
+        />
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

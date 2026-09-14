@@ -55,7 +55,7 @@ export default function PropertyCategories() {
       description:
         'Lennar, D.R. Horton, and Del Webb near Aliante. Confirm live incentives — I will not publish a stale dollar amount.',
       href: '/new-construction',
-      image: siteImages.builders,
+      image: siteImages.newConstruction,
     },
     {
       title: 'Gated Communities',

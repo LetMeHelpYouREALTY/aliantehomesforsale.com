@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import type { SiteImage } from '../../lib/content/site-images';
 

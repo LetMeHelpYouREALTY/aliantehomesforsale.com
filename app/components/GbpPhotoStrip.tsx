@@ -19,8 +19,8 @@ export default function GbpPhotoStrip() {
             Aliante photos that match the office on Google Maps
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Street, office, golf, and Sun City Aliante — the same 89084 place Google shows for{' '}
-            {siteConfig.agentName}. Call {siteConfig.phone} or{' '}
+            Street, office, golf, Sun City, gated village, and amenities — the same 89084 place
+            Google shows for {siteConfig.agentName}. Call {siteConfig.phone} or{' '}
             <a
               href={siteConfig.maps.placeUrl}
               className="font-semibold underline"
@@ -32,7 +32,7 @@ export default function GbpPhotoStrip() {
             .
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {gbpPhotoStrip.map((photo) => (
             <figure key={photo.src} className="overflow-hidden rounded-xl shadow-sm bg-white">
               <Image

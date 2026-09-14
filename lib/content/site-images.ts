@@ -57,6 +57,10 @@ export const siteImages = {
     'Fairway lot next to Aliante Golf Club in North Las Vegas 89084'
   ),
   gated: img('gated.jpg', 'Gated community entrance in Aliante, North Las Vegas'),
+  gatedGate: img(
+    'gated-gate.jpg',
+    'Controlled-access gate at an Aliante village in North Las Vegas 89084'
+  ),
   neighborhoods: img(
     'neighborhoods.jpg',
     'Aliante neighborhoods in North Las Vegas 89084 master-planned streets'
@@ -79,6 +83,10 @@ export const siteImages = {
     'New construction homes near Tule Springs and Aliante, North Las Vegas'
   ),
   sunCity: img('sun-city.jpg', 'Sun City Aliante 55+ Del Webb homes in North Las Vegas 89084'),
+  sunCityRec: img(
+    'sun-city-rec.jpg',
+    'Sun City Aliante 55+ recreation campus with pool and courts in North Las Vegas 89084'
+  ),
   compare: img(
     'compare.jpg',
     'Aliante North Las Vegas neighborhood comparison of gated and golf-course streets'
@@ -133,6 +141,18 @@ export const siteImages = {
   fairHousing: img(
     'fair-housing.jpg',
     'Aliante home exterior in North Las Vegas 89084 — equal housing opportunity, property only'
+  ),
+  privacyPolicy: img(
+    'privacy-policy.jpg',
+    'Aliante real estate office interior used for privacy policy at North Las Vegas 89084'
+  ),
+  termsOfService: img(
+    'terms-of-service.jpg',
+    'Aliante Corporate Center lobby for website terms of service, North Las Vegas 89084'
+  ),
+  accessibility: img(
+    'accessibility.jpg',
+    'Accessible office entrance at 2590 Nature Park Drive, North Las Vegas 89084'
   ),
   buyerTour: img(
     'buyer-tour.jpg',
@@ -204,9 +224,9 @@ export const pageHeroByPath: Record<string, SiteImage> = {
   '/mortgage-calculator': siteImages.mortgage,
   '/investment-analysis': siteImages.investment,
   '/property-management': siteImages.propertyManagement,
-  '/privacy-policy': siteImages.about,
-  '/terms-of-service': siteImages.about,
-  '/accessibility': siteImages.officeNap,
+  '/privacy-policy': siteImages.privacyPolicy,
+  '/terms-of-service': siteImages.termsOfService,
+  '/accessibility': siteImages.accessibility,
   '/fair-housing': siteImages.fairHousing,
 };
 
@@ -216,6 +236,8 @@ export const gbpPhotoStrip: readonly SiteImage[] = [
   siteImages.officeNap,
   siteImages.golfFairway,
   siteImages.sunCity,
+  siteImages.gatedGate,
+  siteImages.amenities,
 ];
 
 export function pageHero(path: string): SiteImage {

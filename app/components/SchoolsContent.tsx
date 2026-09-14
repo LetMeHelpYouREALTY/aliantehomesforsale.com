@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function SchoolsContent() {
   return (
@@ -10,6 +12,10 @@ export default function SchoolsContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Named campuses serving Aliante, North Las Vegas 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.schools}
+            caption="Named CCSD campuses that currently serve Aliante addresses — confirm the map"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

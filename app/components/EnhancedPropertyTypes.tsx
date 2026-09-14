@@ -116,7 +116,7 @@ export default function EnhancedPropertyTypes() {
         'Independent buyer representation',
       ],
       link: '/new-construction',
-      image: siteImages.builders,
+      image: siteImages.newConstruction,
     },
   ];
 

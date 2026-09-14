@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 interface NeighborhoodCardProps {
   image: SiteImage;
@@ -198,6 +199,10 @@ export default function NeighborhoodCards() {
             Springs new construction. Confirm live MLS before you offer.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.neighborhoods}
+          caption="Aliante villages in North Las Vegas 89084 — confirm live MLS before you offer"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {neighborhoods.map((neighborhood) => (

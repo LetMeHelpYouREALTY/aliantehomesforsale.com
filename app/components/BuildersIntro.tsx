@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function BuildersIntro() {
   return (
@@ -9,6 +11,10 @@ export default function BuildersIntro() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           Why Choose New Construction in Aliante?
         </h2>
+        <HeadingPhoto
+          image={siteImages.newConstruction}
+          caption="New construction in Aliante and Tule Springs — I represent you, not the builder"
+        />
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

@@ -76,6 +76,10 @@ export default function GolfHomesContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Comps, buyer pool, and resale on fairway lots
           </h2>
+          <HeadingPhoto
+            image={siteImages.golf}
+            caption="Fairway lots draw a smaller buyer pool — confirm live comps for that lot"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

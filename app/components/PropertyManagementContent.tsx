@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Honest disambiguation for GSC queries like "aliante property management".
@@ -15,6 +17,10 @@ export default function PropertyManagementContent() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
           We sell Aliante homes in ZIP 89084. We do not manage rentals or HOAs.
         </h2>
+        <HeadingPhoto
+          image={siteImages.propertyManagement}
+          caption="Suite 275 lists homes. Suite 100 is FirstService Residential — same building, different job."
+        />
         <p className="leading-relaxed">
           Google searches for Aliante property management, leasing agents, and rental companies
           often land here. {agentName} is a licensed Nevada realtor at {siteConfig.brokerage}. If

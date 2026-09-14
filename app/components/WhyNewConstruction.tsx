@@ -1,19 +1,33 @@
 'use client';
 
-interface BenefitCardProps {
-  icon: string;
+import Image from 'next/image';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+
+type BenefitCardProps = {
+  image: SiteImage;
   title: string;
   description: string;
-}
+};
 
-function BenefitCard({ icon, title, description }: BenefitCardProps) {
+function BenefitCard({ image, title, description }: BenefitCardProps) {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="text-5xl mb-4 text-center">{icon}</div>
-      <h3 className="text-xl font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
-        {title}
-      </h3>
-      <p className="text-gray-700 leading-relaxed text-center">{description}</p>
+    <div className="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div className="relative h-40">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover"
+          loading="lazy"
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
+          {title}
+        </h3>
+        <p className="text-gray-700 leading-relaxed text-center">{description}</p>
+      </div>
     </div>
   );
 }
@@ -21,37 +35,37 @@ function BenefitCard({ icon, title, description }: BenefitCardProps) {
 export default function WhyNewConstruction() {
   const benefits: BenefitCardProps[] = [
     {
-      icon: '🏗️',
+      image: siteImages.newConstruction,
       title: 'Never Been Lived In',
       description:
         'New inventory built to the codes in effect at permit. Confirm remaining warranties, punch-list items, and included features on that contract.',
     },
     {
-      icon: '🎨',
+      image: siteImages.incentives,
       title: 'Lot, plan, and finish choices',
       description:
         'Where the builder still has unsold lots, you can often choose plan, elevation, and design-center options. Confirm what is still available on that phase.',
     },
     {
-      icon: '💰',
+      image: siteImages.lennar,
       title: 'Builder Incentives & Savings',
       description:
         'Builder credits, upgrades, and rate buydowns change with the week. Confirm today’s sheet — I will not publish a stale dollar amount.',
     },
     {
-      icon: '✅',
+      image: siteImages.delWebb,
       title: 'Builder warranties',
       description:
         'Warranty length and coverage vary by builder and component. Read the warranty booklet for that community before you write — I will not publish a one-size term.',
     },
     {
-      icon: '⚡',
+      image: siteImages.drHorton,
       title: 'Energy Efficiency',
       description:
         'Newer homes are built to the energy code in effect at permit. Compare utility estimates on that plan — I will not publish a savings figure.',
     },
     {
-      icon: '🎯',
+      image: siteImages.officeNap,
       title: 'Our Expert Guidance',
       description:
         'We represent you in negotiations, monitor construction quality, and confirm the live incentive sheet before you write.',
@@ -68,8 +82,8 @@ export default function WhyNewConstruction() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <BenefitCard key={index} {...benefit} />
+          {benefits.map((benefit) => (
+            <BenefitCard key={benefit.title} {...benefit} />
           ))}
         </div>
       </div>

@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function SunCityContent() {
   return (
@@ -10,6 +12,10 @@ export default function SunCityContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Sun City Aliante 55+ realtor services in North Las Vegas 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.sunCity}
+            caption="Del Webb 55+ homes at Sun City Aliante in ZIP 89084 — not Ardiente"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -49,6 +55,10 @@ export default function SunCityContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Amenities and Recreation
             </h3>
+            <HeadingPhoto
+              image={siteImages.sunCityRec}
+              caption="Recreation campus, pool, and courts — confirm current hours with the HOA"
+            />
 
             <p className="leading-relaxed">
               Sun City Aliante recreation campuses typically include fitness rooms, pools, tennis

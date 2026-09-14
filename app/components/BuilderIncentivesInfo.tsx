@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 type BuilderIncentivesInfoProps = {
   heading?: string;
@@ -18,6 +20,10 @@ export default function BuilderIncentivesInfo({
           {heading}
         </h2>
         {subheading ? <p className="text-xl text-gray-600 mb-8">{subheading}</p> : null}
+        <HeadingPhoto
+          image={siteImages.incentives}
+          caption="Confirm today’s incentive sheet — I will not publish a stale dollar amount"
+        />
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
