@@ -1,19 +1,20 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../../lib/content/site-images';
+import { pageMetadata } from '../../../lib/seo-utils';
 import CommunityAmenities from '../../components/CommunityAmenities';
 import EnhancedFeaturedProperties from '../../components/EnhancedFeaturedProperties';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
 import NeighborhoodDetailContent from '../../components/NeighborhoodDetailContent';
 import NeighborhoodsCTA from '../../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../../components/NeighborhoodsHero';
+import PageFAQ from '../../components/PageFAQ';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Desert Willows Aliante | Homes for Sale North Las Vegas 89084',
   description:
-    'Desert Willows homes in Aliante, North Las Vegas 89084. Parks nearby. Confirm live MLS listings. Call (702) 707-7273.',
+    'Desert Willows is an open-access Aliante village in North Las Vegas 89084 with parks and community pools. Confirm live MLS listings. Call (702) 707-7273.',
+  path: '/neighborhoods/desert-willows',
   keywords: 'desert willows aliante, desert willows north las vegas 89084',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows' },
-};
+});
 
 export default function DesertWillows() {
   return (
@@ -25,8 +26,9 @@ export default function DesertWillows() {
       />
       <EnhancedFeaturedProperties />
       <CommunityAmenities />
-      <NeighborhoodDetailContent heading="Buying in Desert Willows, Aliante 89084" />
+      <NeighborhoodDetailContent village="desert-willows" />
       <NeighborhoodCards />
+      <PageFAQ path="/neighborhoods/desert-willows" title="Desert Willows FAQ" />
       <NeighborhoodsCTA />
     </main>
   );

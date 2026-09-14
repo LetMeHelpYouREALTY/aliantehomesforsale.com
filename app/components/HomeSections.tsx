@@ -1,5 +1,3 @@
-'use client';
-
 import AgentWelcomeSection from './AgentWelcomeSection';
 import AlianteFAQ from './AlianteFAQ';
 import BuyerPathSection from './BuyerPathSection';
@@ -12,6 +10,7 @@ import HomeCTAStrip from './HomeCTAStrip';
 import HyperlocalRealtorServices from './HyperlocalRealtorServices';
 import LifestyleHomesSection from './LifestyleHomesSection';
 import NearbyLocatorMap from './NearbyLocatorMap';
+import OfficeLocation from './OfficeLocation';
 import RealScoutSearchSection from './RealScoutSearchSection';
 import TestimonialsSection from './TestimonialsSection';
 
@@ -21,8 +20,8 @@ export function HomeSectionsTop() {
     <>
       <EnhancedHero />
       <RealScoutSearchSection />
-      <LifestyleHomesSection />
       <AgentWelcomeSection />
+      <LifestyleHomesSection />
       <BuyerPathSection />
       <FeaturedCommunities />
       <HyperlocalRealtorServices />
@@ -34,11 +33,12 @@ export function HomeSectionsTop() {
   );
 }
 
-/** Bottom half: CTA strip then FAQ. */
+/** Bottom half: CTA, NAP, map, FAQ. */
 export function HomeSectionsBottom() {
   return (
     <>
       <HomeCTAStrip />
+      <OfficeLocation />
       <NearbyLocatorMap />
       <AlianteFAQ />
     </>

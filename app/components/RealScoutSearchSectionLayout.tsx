@@ -10,7 +10,7 @@ const PAGES_WITH_SEARCH_AFTER_HERO = ['/', '/homes-for-sale', '/search'];
  * already show it right after the hero (home, homes-for-sale) for best lead-gen placement.
  */
 export default function RealScoutSearchSectionLayout() {
-  const pathname = usePathname();
+  const pathname = usePathname().replace(/\/$/, '') || '/';
   if (PAGES_WITH_SEARCH_AFTER_HERO.includes(pathname)) return null;
   return <RealScoutSearchSection />;
 }

@@ -1,13 +1,13 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
 import LegalContent from '../components/LegalContent';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy - Aliante Homes For Sale',
+export const metadata = pageMetadata({
+  title: 'Privacy Policy | Aliante Homes For Sale, North Las Vegas 89084',
   description:
-    'Privacy policy for AlianteHomesForSale.com. How we collect, use, and protect your information.',
-  alternates: { canonical: 'https://www.aliantehomesforsale.com/privacy-policy' },
-};
+    'Privacy policy for AlianteHomesForSale.com. How Dr. Jan Duffy collects, uses, and protects Aliante real estate inquiry data in ZIP 89084.',
+  path: '/privacy-policy',
+});
 
 export default function PrivacyPolicy() {
   return (

@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
 import BuyerGuideContent from '../components/BuyerGuideContent';
 import ConstructionProcess from '../components/ConstructionProcess';
@@ -7,15 +7,14 @@ import ContactWhyChoose from '../components/ContactWhyChoose';
 import ContextualLinks from '../components/ContextualLinks';
 import HomesCTA from '../components/HomesCTA';
 import HomesSearchTips from '../components/HomesSearchTips';
+import PageFAQ from '../components/PageFAQ';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Buyer Representation in Aliante | North Las Vegas 89084 Realtor',
   description:
     'Independent buyer’s agent in Aliante, North Las Vegas 89084. Club Aliante, gated villages, Sun City Aliante, Tule Springs. Call (702) 707-7273.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/buyer-guide',
-  },
-};
+  path: '/buyer-guide',
+});
 
 export default function BuyerGuide() {
   return (
@@ -32,6 +31,7 @@ export default function BuyerGuide() {
       <HomesSearchTips />
       <ConstructionProcess />
       <ContactWhyChoose />
+      <PageFAQ path="/buyer-guide" title="Aliante buyer representation FAQ" />
       <HomesCTA />
     </main>
   );

@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { homeHeroSlides, type SiteImage } from '../../lib/content/site-images';
 import AfterHeroListings from './AfterHeroListings';
-import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
 
 const INTERVAL_MS = 6000;
@@ -17,7 +16,7 @@ type EnhancedHeroProps = {
 
 export default function EnhancedHero({
   title = 'Dr. Jan Duffy | Aliante North Las Vegas Real Estate',
-  subtitle = 'Discover new listings right when they hit the market. RealScout powers your search—updated every 15 minutes.',
+  subtitle = 'Homes for sale in Aliante, North Las Vegas 89084. MLS updates about every 15 minutes.',
   image,
 }: EnhancedHeroProps) {
   const [index, setIndex] = useState(0);
@@ -31,6 +30,16 @@ export default function EnhancedHero({
     },
     [slides.length]
   );
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const syncMotion = () => {
+      if (mq.matches) setPaused(true);
+    };
+    syncMotion();
+    mq.addEventListener('change', syncMotion);
+    return () => mq.removeEventListener('change', syncMotion);
+  }, []);
 
   useEffect(() => {
     if (paused || slides.length < 2) return;
@@ -70,11 +79,6 @@ export default function EnhancedHero({
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto w-full text-center">
-          <AgentPhoto
-            size={180}
-            className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40"
-            priority
-          />
           <h1
             id="hero-heading"
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]"
@@ -84,17 +88,9 @@ export default function EnhancedHero({
           <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed">
             {subtitle}
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              ⚡ MLS Updated Every 15 Min
-            </span>
-            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              🏆 Local Expert Since 2018
-            </span>
-            <span className="bg-white/20 backdrop-blur-md border border-white/30 px-6 py-3 rounded-full text-white font-semibold text-sm sm:text-base">
-              📍 Aliante 89084 focus
-            </span>
-          </div>
+          <p className="text-sm sm:text-base text-white/90 mb-10">
+            MLS updated about every 15 minutes · Aliante 89084 · Local since 2018
+          </p>
           <a
             href="#live-listings-heading"
             className="inline-block py-4 px-8 rounded-xl font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-[1.02] hover:shadow-xl focus:ring-4 focus:ring-orange-300 focus:outline-none"
@@ -127,13 +123,12 @@ export default function EnhancedHero({
                 />
               </svg>
             </button>
-            <div className="flex gap-2" role="tablist" aria-label="Hero slides">
+            <nav className="flex gap-2" aria-label="Hero slides">
               {slides.map((slide, i) => (
                 <button
                   key={slide.src}
                   type="button"
-                  role="tab"
-                  aria-selected={i === index ? 'true' : 'false'}
+                  aria-current={i === index ? 'true' : undefined}
                   aria-label={`Slide ${i + 1}`}
                   onClick={() => goTo(i)}
                   className={`h-2.5 rounded-full transition-all focus:ring-2 focus:ring-white focus:outline-none ${
@@ -141,7 +136,7 @@ export default function EnhancedHero({
                   }`}
                 />
               ))}
-            </div>
+            </nav>
             <button
               type="button"
               onClick={() => goTo(index + 1)}

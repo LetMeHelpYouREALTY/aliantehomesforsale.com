@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
@@ -236,16 +234,16 @@ export default function EnhancedFooter() {
             </nav>
 
             <div className="rounded-lg border border-white/20 p-4">
-              <h4 className="font-semibold mb-2 text-white">Market updates</h4>
+              <h4 className="font-semibold mb-2 text-white">Talk market with me</h4>
               <p className="text-xs text-gray-400 mb-3">
-                Get Aliante listing alerts and local market notes from Dr. Duffy.
+                Book a 15-minute call on current Aliante 89084 listings — not an email newsletter.
               </p>
               <a
                 href={siteConfig.calendly.events.consultation.url}
                 className="inline-block w-full text-center py-2 px-4 rounded-lg font-semibold text-sm text-white"
                 style={{ backgroundColor: '#16B286' }}
               >
-                Schedule a market call
+                Schedule a 15-minute consultation
               </a>
             </div>
           </div>

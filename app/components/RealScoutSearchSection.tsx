@@ -1,5 +1,6 @@
 'use client';
 
+import { siteConfig } from '../../lib/site-config';
 import RealScoutAdvancedSearch from './RealScoutAdvancedSearch';
 
 /**
@@ -27,11 +28,11 @@ export default function RealScoutSearchSection() {
         <div className="mt-6 pt-6 border-t border-slate-200 text-center">
           <p className="text-slate-600 mb-2">Need personalized help?</p>
           <a
-            href="tel:+17027077273"
+            href={`tel:${siteConfig.phoneTel}`}
             className="inline-flex items-center gap-2 text-xl font-bold hover:underline"
             style={{ color: '#2c5aa0' }}
           >
-            📞 (702) 707-7273
+            Call {siteConfig.phone}
           </a>
         </div>
       </div>

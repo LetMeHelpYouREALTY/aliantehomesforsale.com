@@ -8,23 +8,24 @@ export default function GolfHomesContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
-            Club Aliante golf-course realtor services in ZIP 89084
+            Club Aliante golf-course lot playbook in ZIP 89084
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
-              Golf-course homes in Aliante sit next to the city-owned Aliante Golf Club, an 18-hole
-              public course designed by Gary Panks — not Palm Valley in Sun City Summerlin, and not
-              a Billy Casper layout.{' '}
+              This page is the fairway-lot playbook — errant balls, par-3 versus par-5 frontage, and
+              membership versus the deed. For gates, HOA, and interior Club Aliante streets, use the{' '}
               <Link
                 href="/neighborhoods/club-aliante"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
               >
-                Club Aliante
-              </Link>{' '}
-              is the guard-gated village along those fairways. Lot position matters: corner views,
-              fairway versus green, and par-5 versus par-3 frontage. Confirm live MLS rather than a
-              stale count. Browse current{' '}
+                Club Aliante village page
+              </Link>
+              . Golf-course homes in Aliante sit next to the city-owned Aliante Golf Club, an
+              18-hole public course designed by Gary Panks — not Palm Valley in Sun City Summerlin,
+              and not a Billy Casper layout. Lot position matters: corner views, fairway versus
+              green, and par-5 versus par-3 frontage. Confirm live MLS rather than a stale count.
+              Browse current{' '}
               <Link
                 href="/homes-for-sale"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"

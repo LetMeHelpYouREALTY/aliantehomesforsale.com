@@ -41,11 +41,10 @@ export default function EnhancedMarketInsights() {
           {marketSnapshot.map((stat) => (
             <div
               key={stat.id}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 text-center"
+              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 sm:p-8 text-left"
             >
-              <p className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.value}</p>
-              <p className="text-base sm:text-lg text-white/90 font-medium mb-2">{stat.label}</p>
-              <p className="text-sm text-white/70 leading-snug">{stat.note}</p>
+              <p className="text-base sm:text-lg text-white font-semibold mb-2">{stat.label}</p>
+              <p className="text-sm text-white/80 leading-snug">{stat.note}</p>
             </div>
           ))}
         </div>

@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { siteConfig } from '../../lib/site-config';
 
 const serviceIcons: Record<string, string> = {
-  'buyer-representation': '🤝',
-  'seller-representation': '🏷️',
-  'new-construction': '🏗️',
-  '55-plus': '🌅',
-  'home-valuation': '📊',
-  'investment-analysis': '📈',
+  'buyer-representation': '01',
+  'seller-representation': '02',
+  'new-construction': '03',
+  '55-plus': '04',
+  'home-valuation': '05',
+  'investment-analysis': '06',
 };
 
 /** Visible services matching knowledge-graph OfferCatalog (GEO/AEO). */
@@ -36,8 +36,12 @@ export default function HyperlocalRealtorServices() {
               href={service.url}
               className="block bg-gray-50 rounded-xl p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg border-2 border-transparent hover:border-[#2c5aa0]"
             >
-              <div className="text-4xl mb-4" aria-hidden="true">
-                {serviceIcons[service.slug] ?? '🏠'}
+              <div
+                className="text-sm font-bold mb-4 tracking-widest"
+                style={{ color: '#2c5aa0' }}
+                aria-hidden="true"
+              >
+                {serviceIcons[service.slug] ?? '01'}
               </div>
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 {service.name}

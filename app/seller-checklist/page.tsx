@@ -1,20 +1,19 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import AboutCTA from '../components/AboutCTA';
 import AboutExpertise from '../components/AboutExpertise';
 import AboutHero from '../components/AboutHero';
 import ConstructionProcess from '../components/ConstructionProcess';
 import ContextualLinks from '../components/ContextualLinks';
+import PageFAQ from '../components/PageFAQ';
 import SellerChecklistContent from '../components/SellerChecklistContent';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Sell Your Aliante Home | Listing Agent, North Las Vegas 89084',
   description:
     'Listing agent for Aliante, North Las Vegas 89084. Neighborhood comps, MLS marketing, and offer negotiation. Call (702) 707-7273.',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/seller-checklist',
-  },
-};
+  path: '/seller-checklist',
+});
 
 export default function SellerChecklist() {
   return (
@@ -30,6 +29,7 @@ export default function SellerChecklist() {
       </div>
       <ConstructionProcess />
       <AboutExpertise />
+      <PageFAQ path="/seller-checklist" title="Selling an Aliante home FAQ" />
       <AboutCTA />
     </main>
   );

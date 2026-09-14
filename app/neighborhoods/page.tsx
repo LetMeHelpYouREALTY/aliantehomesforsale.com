@@ -1,23 +1,22 @@
-import type { Metadata } from 'next';
 import { pageHero } from '../../lib/content/site-images';
+import { pageMetadata } from '../../lib/seo-utils';
 import CommunityAmenities from '../components/CommunityAmenities';
 import ContextualLinks from '../components/ContextualLinks';
 import NeighborhoodCards from '../components/NeighborhoodCards';
 import NeighborhoodComparison from '../components/NeighborhoodComparison';
 import NeighborhoodsCTA from '../components/NeighborhoodsCTA';
 import NeighborhoodsHero from '../components/NeighborhoodsHero';
+import PageFAQ from '../components/PageFAQ';
 import StructuredData from '../components/StructuredData';
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: 'Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084',
   description:
     'Aliante neighborhoods in North Las Vegas 89084: Club Aliante, Sun City Aliante, The Prominence, Desert Willows, The Paseos, and nearby Tule Springs. Call (702) 707-7273 for live MLS homes.',
+  path: '/neighborhoods',
   keywords:
     'aliante neighborhoods, club aliante, sun city aliante, gated communities north las vegas 89084',
-  alternates: {
-    canonical: 'https://www.aliantehomesforsale.com/neighborhoods',
-  },
-};
+});
 
 export default function Neighborhoods() {
   return (
@@ -50,6 +49,7 @@ export default function Neighborhoods() {
         />
 
         {/* CTA Section */}
+        <PageFAQ path="/neighborhoods" title="Aliante neighborhoods FAQ" />
         <NeighborhoodsCTA />
       </main>
     </>
