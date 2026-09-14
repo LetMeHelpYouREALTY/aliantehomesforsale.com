@@ -60,6 +60,10 @@ export default function BuyerGuideContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Which Aliante villages to tour with your buyer’s agent
           </h2>
+          <HeadingPhoto
+            image={siteImages.villageTour}
+            caption="Club Aliante, Prominence, Paseos, Desert Willows, Sun City, Tule Springs"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -176,6 +180,10 @@ export default function BuyerGuideContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Write an offer on an Aliante home in North Las Vegas
           </h2>
+          <HeadingPhoto
+            image={siteImages.writeOffer}
+            caption="Price and terms from that village’s live comps — not a valley-wide rule"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

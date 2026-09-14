@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import { getKcmFeedItems } from '../../lib/kcm-feed';
+import HeadingPhoto from './HeadingPhoto';
 
 /** Blog section powered by Simplifying the Market (KCM) RSS feed. Images from files.keepingcurrentmatters.com — img-src must allow that host. */
 export default async function LatestNewsSection() {
@@ -13,10 +15,16 @@ export default async function LatestNewsSection() {
         <h2 id="latest-news-heading" className="text-3xl font-bold text-center mb-4 text-[#0a2540]">
           Latest News
         </h2>
-        <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           Tips and trends for Aliante and North Las Vegas home buyers and sellers. Updated regularly
           from our partners at Simplifying the Market.
         </p>
+        <div className="max-w-4xl mx-auto text-left">
+          <HeadingPhoto
+            image={siteImages.marketReport}
+            caption="Market notes for Aliante 89084 — then read live MLS, not a stale median"
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item) => (
             <article

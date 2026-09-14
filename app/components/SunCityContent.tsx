@@ -83,6 +83,10 @@ export default function SunCityContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Home Styles and Floor Plans
           </h2>
+          <HeadingPhoto
+            image={siteImages.sunCityPlans}
+            caption="Single-story Del Webb plans at Sun City Aliante — confirm finishes on MLS"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -129,6 +133,10 @@ export default function SunCityContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             HOA dues, occupancy rules, and live comps
           </h2>
+          <HeadingPhoto
+            image={siteImages.hoaRules}
+            caption="Confirm dues, 55+ occupancy, and amenity hours with the association"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

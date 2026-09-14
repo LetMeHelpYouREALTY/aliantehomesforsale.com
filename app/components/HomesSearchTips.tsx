@@ -1,15 +1,19 @@
 'use client';
 
-interface TipCardProps {
-  icon: string;
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
+import HeadingPhoto from './HeadingPhoto';
+
+type TipCardProps = {
+  image: SiteImage;
   title: string;
   description: string;
-}
+};
 
-function TipCard({ icon, title, description }: TipCardProps) {
+function TipCard({ image, title, description }: TipCardProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="text-4xl mb-4 text-center">{icon}</div>
+      <CardPhoto image={image} heightClass="h-28" />
       <h3 className="text-lg font-bold mb-3 text-center" style={{ color: '#1a365d' }}>
         {title}
       </h3>
@@ -21,40 +25,40 @@ function TipCard({ icon, title, description }: TipCardProps) {
 export default function HomesSearchTips() {
   const tips: TipCardProps[] = [
     {
-      icon: '🔍',
+      image: siteImages.search,
       title: 'Start Broad, Then Narrow',
       description:
         'Begin with all Aliante homes, then filter by neighborhood, price range, and features.',
     },
     {
-      icon: '💰',
+      image: siteImages.mortgage,
       title: 'Get Pre-Approved First',
       description:
         'Know your budget before you write. I can introduce lenders who actually close Aliante files.',
     },
     {
-      icon: '🏘️',
+      image: siteImages.neighborhoods,
       title: 'Visit Multiple Neighborhoods',
       description:
         'Each Aliante village has different access, HOA rules, and lot types. Tour more than one before you offer.',
     },
     {
-      icon: '⏱️',
+      image: siteImages.homesForSale,
       title: 'Act Quickly on Good Deals',
       description:
         'Well-priced homes can still move quickly. Confirm current days-on-market on live MLS and set alerts for the villages you want.',
     },
     {
-      icon: '🤝',
+      image: siteImages.officeNap,
       title: 'Work with a Local Expert',
       description:
         'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',
     },
     {
-      icon: '📊',
+      image: siteImages.marketReport,
       title: 'Check the Market Data',
       description:
-        'Understand pricing trends, days on market, and neighborhood comparisons before making offers.',
+        'Understand pricing trends, days on market, and village comps before making offers.',
     },
   ];
 
@@ -69,10 +73,14 @@ export default function HomesSearchTips() {
             Expert advice to help you search Aliante MLS and tour 89084 villages
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.search}
+          caption="Search Aliante MLS, then tour the village you will actually buy"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tips.map((tip, index) => (
-            <TipCard key={index} {...tip} />
+          {tips.map((tip) => (
+            <TipCard key={tip.title} {...tip} />
           ))}
         </div>
       </div>

@@ -77,6 +77,10 @@ export default function MarketReportContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Seasonal Patterns and Buying Opportunities
           </h2>
+          <HeadingPhoto
+            image={siteImages.seasonalMarket}
+            caption="Listing volume in 89084 still moves with the calendar — confirm live MLS"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -122,6 +126,10 @@ export default function MarketReportContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Property Type Performance and Investment Potential
           </h2>
+          <HeadingPhoto
+            image={siteImages.propertyTypesMarket}
+            caption="Gated, golf, and open-access lots trade on live comps — not a forecast"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

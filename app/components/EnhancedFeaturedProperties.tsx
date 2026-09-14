@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 const neighborhoods = [
   {
@@ -43,10 +44,16 @@ export default function EnhancedFeaturedProperties() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Featured Neighborhoods
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Browse Aliante villages, then open live MLS search. Inventory, prices, and days on
             market change daily.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.neighborhoods}
+              caption="Aliante master-planned villages in North Las Vegas 89084"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {neighborhoods.map((item) => (

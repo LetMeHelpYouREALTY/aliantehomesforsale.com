@@ -61,6 +61,8 @@ export function buildKnowledgeGraph() {
       absoluteImageUrl(siteImages.officeNap),
       absoluteImageUrl(siteImages.golfFairway),
       absoluteImageUrl(siteImages.sunCity),
+      absoluteImageUrl(siteImages.gatedGate),
+      absoluteImageUrl(siteImages.amenities),
     ],
     telephone: siteConfig.phoneTel,
     email: siteConfig.email,

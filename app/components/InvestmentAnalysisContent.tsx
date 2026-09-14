@@ -76,6 +76,10 @@ export default function InvestmentAnalysisContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Aliante rental demand versus HOA and vacancy costs
           </h2>
+          <HeadingPhoto
+            image={siteImages.rentalHoa}
+            caption="HOA dues can erase a rent bump — underwrite the specific 89084 address"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -126,6 +130,10 @@ export default function InvestmentAnalysisContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Long-term buy-and-hold strategy in Aliante 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.buyHold}
+            caption="Master-planned streets in ZIP 89084 — confirm live rents before you lever"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

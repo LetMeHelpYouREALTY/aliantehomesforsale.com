@@ -1,19 +1,20 @@
 'use client';
 
-interface ReasonProps {
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
+import HeadingPhoto from './HeadingPhoto';
+
+type ReasonProps = {
   title: string;
   description: string;
-  icon: string;
-}
+  image: SiteImage;
+};
 
-function ReasonCard({ title, description, icon }: ReasonProps) {
+function ReasonCard({ title, description, image }: ReasonProps) {
   return (
     <div className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
-      <div
-        className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-2xl"
-        style={{ backgroundColor: '#e6f0ff' }}
-      >
-        {icon}
+      <div className="w-28 flex-shrink-0">
+        <CardPhoto image={image} heightClass="h-20" />
       </div>
       <div>
         <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
@@ -31,28 +32,28 @@ export default function AboutWhyChooseUs() {
       title: 'Local Focus',
       description:
         'Focused on Aliante and North Las Vegas 89084 — this is the market I work every week',
-      icon: '📍',
+      image: siteImages.neighborhoods,
     },
     {
       title: 'Builder Relationships',
       description: 'I confirm live builder incentive sheets and represent you on the contract',
-      icon: '🤝',
+      image: siteImages.newConstruction,
     },
     {
       title: 'Market Mastery',
       description:
         'We watch Aliante 89084 inventory, price changes, and village comps — not a valley-wide average',
-      icon: '📈',
+      image: siteImages.marketReport,
     },
     {
       title: 'Client-First',
       description: 'Your goals are our priority - no pressure, just expert guidance',
-      icon: '💙',
+      image: siteImages.officeNap,
     },
     {
       title: 'Proven Results',
       description: 'Aliante closings since 2018 — call for current references',
-      icon: '✨',
+      image: siteImages.about,
     },
   ];
 
@@ -67,10 +68,14 @@ export default function AboutWhyChooseUs() {
             What sets us apart in the Aliante real estate market
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.homesForSale}
+          caption="Hyperlocal Aliante 89084 representation — not a valley-wide general practice"
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {reasons.map((reason, index) => (
-            <ReasonCard key={index} {...reason} />
+          {reasons.map((reason) => (
+            <ReasonCard key={reason.title} {...reason} />
           ))}
         </div>
       </div>

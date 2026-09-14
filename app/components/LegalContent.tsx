@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 type LegalContentProps = {
   title: string;
   children: React.ReactNode;
@@ -28,6 +31,10 @@ export default function LegalContent({
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Contact Information
           </h2>
+          <HeadingPhoto
+            image={siteImages.officeNap}
+            caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -69,6 +76,10 @@ export default function LegalContent({
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             Updates and Changes
           </h2>
+          <HeadingPhoto
+            image={siteImages.privacyPolicy}
+            caption="Policy updates are posted on this site — last-updated date is at the top"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

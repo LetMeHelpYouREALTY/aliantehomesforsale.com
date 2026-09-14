@@ -138,6 +138,10 @@ export default function GatedCommunitiesContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             What to Know Before Buying in a Gated Community
           </h2>
+          <HeadingPhoto
+            image={siteImages.gatedHoa}
+            caption="HOA architectural walls and controlled access — read CC&Rs before you offer"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

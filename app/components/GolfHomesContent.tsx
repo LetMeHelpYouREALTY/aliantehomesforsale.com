@@ -124,6 +124,10 @@ export default function GolfHomesContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             How I tour Aliante golf-course lots
           </h2>
+          <HeadingPhoto
+            image={siteImages.golfLotTour}
+            caption="Walk lot position, errant-ball exposure, and sun at more than one hour"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { agentCredentials } from '../../lib/content/aliante-content';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Trust / credentials for Dr. Jan Duffy — no fabricated rankings or reviews.
@@ -20,10 +22,16 @@ export default function EnhancedTrustAuthority() {
           >
             Why Choose {siteConfig.agentName}?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Hyperlocal Aliante expertise, Nevada license {siteConfig.agentLicense}, and{' '}
             {siteConfig.brokerage}.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.officeNap}
+              caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">

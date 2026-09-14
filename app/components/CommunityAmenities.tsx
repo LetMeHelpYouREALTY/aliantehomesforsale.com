@@ -1,17 +1,18 @@
-import { siteImages } from '../../lib/content/site-images';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
-interface AmenityCategoryProps {
-  icon: string;
+type AmenityCategoryProps = {
+  image: SiteImage;
   title: string;
   amenities: string[];
-}
+};
 
-function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
+function AmenityCategory({ image, title, amenities }: AmenityCategoryProps) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md">
-      <h3 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: '#1a365d' }}>
-        <span className="text-3xl">{icon}</span>
+      <CardPhoto image={image} heightClass="h-28" />
+      <h3 className="text-xl font-bold mb-4" style={{ color: '#1a365d' }}>
         {title}
       </h3>
       <ul className="space-y-2">
@@ -29,7 +30,7 @@ function AmenityCategory({ icon, title, amenities }: AmenityCategoryProps) {
 export default function CommunityAmenities() {
   const categories: AmenityCategoryProps[] = [
     {
-      icon: '🏌️',
+      image: siteImages.golf,
       title: 'Golf & Recreation',
       amenities: [
         'Aliante Golf Club (18-hole public course)',
@@ -40,7 +41,7 @@ export default function CommunityAmenities() {
       ],
     },
     {
-      icon: '🛍️',
+      image: siteImages.amenities,
       title: 'Shopping & Dining',
       amenities: [
         'Aliante Casino + Hotel',
@@ -51,7 +52,7 @@ export default function CommunityAmenities() {
       ],
     },
     {
-      icon: '🎓',
+      image: siteImages.schools,
       title: 'Named campuses nearby',
       amenities: [
         'Leavitt Elementary, Kit Carson Elementary',
@@ -62,7 +63,7 @@ export default function CommunityAmenities() {
       ],
     },
     {
-      icon: '🚗',
+      image: siteImages.search,
       title: 'Transportation & Access',
       amenities: [
         'I-215 Beltway interchange at Aliante Parkway',

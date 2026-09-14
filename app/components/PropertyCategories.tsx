@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 interface CategoryCardProps {
   title: string;
@@ -87,9 +88,15 @@ export default function PropertyCategories() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Browse by Category
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 mb-8">
             Filter Aliante 89084 homes on live MLS — inventory changes throughout the day.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.search}
+              caption="Aerial of Aliante streets — gated, golf, 55+, and new construction"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

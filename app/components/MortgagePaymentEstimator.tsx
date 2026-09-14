@@ -1,6 +1,8 @@
 'use client';
 
 import { useId, useMemo, useState } from 'react';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 function monthlyPrincipalAndInterest(
   loanAmount: number,
@@ -71,6 +73,10 @@ export default function MortgagePaymentEstimator() {
           principal and interest only — taxes, insurance, HOA, and PMI are extra. I am your realtor,
           not your loan officer.
         </p>
+        <HeadingPhoto
+          image={siteImages.mortgage}
+          caption="Estimate principal and interest on an Aliante home — not a rate lock"
+        />
 
         <form
           className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white rounded-xl p-6 sm:p-8 shadow-md"

@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 interface ProcessStepProps {
   number: number;
   title: string;
@@ -113,9 +116,15 @@ export default function ConstructionProcess() {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Your New Home Journey - Step by Step
           </h2>
-          <p className="text-xl text-white/90">
+          <p className="text-xl text-white/90 mb-8">
             We guide you through every phase of the new construction process
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.constructionProcess}
+              caption="Framing through punch list on a North Las Vegas desert lot near Aliante"
+            />
+          </div>
         </div>
 
         <div className="space-y-6">

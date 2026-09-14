@@ -76,6 +76,10 @@ export default function SellerChecklistContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Price an Aliante listing using 89084 neighborhood comps
           </h2>
+          <HeadingPhoto
+            image={siteImages.pricingComps}
+            caption="List from recent closed sales in your village — not a valley average"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">
@@ -122,6 +126,10 @@ export default function SellerChecklistContent() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
             Negotiate and close an Aliante sale in ZIP 89084
           </h2>
+          <HeadingPhoto
+            image={siteImages.negotiateClose}
+            caption="Inspections, appraisal, loan, and title run on that contract’s deadlines"
+          />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p className="leading-relaxed">

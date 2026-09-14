@@ -158,6 +158,86 @@ export const siteImages = {
     'buyer-tour.jpg',
     'Interior of an Aliante listing prepared for a buyer tour in North Las Vegas 89084'
   ),
+  buyerPath: img(
+    'buyer-path.jpg',
+    'Aliante residential street for the search, tour, and close path in North Las Vegas 89084'
+  ),
+  constructionProcess: img(
+    'construction-process.jpg',
+    'New-construction framing on a North Las Vegas desert lot near Aliante'
+  ),
+  gatedHoa: img(
+    'gated-hoa.jpg',
+    'Gated village monument and HOA architectural walls in Aliante, North Las Vegas 89084'
+  ),
+  schoolsSecondary: img(
+    'schools-secondary.jpg',
+    'Secondary campus building serving Aliante and North Las Vegas addresses'
+  ),
+  seasonalMarket: img(
+    'seasonal-market.jpg',
+    'Aliante 89084 residential streets at dusk for seasonal listing volume'
+  ),
+  propertyTypesMarket: img(
+    'property-types-market.jpg',
+    'Different Aliante home types on a North Las Vegas 89084 street'
+  ),
+  valuationFactors: img(
+    'valuation-factors.jpg',
+    'Aliante home exterior used to explain village comps in ZIP 89084'
+  ),
+  cmaNextSteps: img(
+    'cma-next-steps.jpg',
+    'Aliante Corporate Center conference table for CMA review in North Las Vegas 89084'
+  ),
+  rentalHoa: img(
+    'rental-hoa.jpg',
+    'Aliante rental single-family home on a North Las Vegas 89084 street'
+  ),
+  buyHold: img(
+    'buy-hold.jpg',
+    'Established Aliante residential street for buy-and-hold in ZIP 89084'
+  ),
+  lenderMeeting: img(
+    'lender-meeting.jpg',
+    'North Las Vegas office campus for mortgage and down-payment conversations'
+  ),
+  villageTour: img(
+    'village-tour.jpg',
+    'Aliante master-planned streets to tour with a buyer’s agent in ZIP 89084'
+  ),
+  writeOffer: img(
+    'write-offer.jpg',
+    'Office table used to write an offer on an Aliante home in North Las Vegas'
+  ),
+  pricingComps: img(
+    'pricing-comps.jpg',
+    'Aliante curb appeal prepared for MLS pricing from 89084 comps'
+  ),
+  negotiateClose: img(
+    'negotiate-close.jpg',
+    'North Las Vegas office lobby for negotiating and closing an Aliante sale'
+  ),
+  golfLotTour: img(
+    'golf-lot-tour.jpg',
+    'Patio overlooking an Aliante Golf Club fairway lot in North Las Vegas 89084'
+  ),
+  sunCityPlans: img(
+    'sun-city-plans.jpg',
+    'Single-story Del Webb home exterior at Sun City Aliante, North Las Vegas 89084'
+  ),
+  chooseBuilder: img(
+    'choose-builder.jpg',
+    'New-construction model-home street near Aliante and Tule Springs'
+  ),
+  quickMoveIn: img(
+    'quick-move-in.jpg',
+    'Finished quick-move-in new construction near Aliante, North Las Vegas'
+  ),
+  hoaRules: img(
+    'hoa-rules.jpg',
+    'Sun City Aliante recreation campus for HOA dues and occupancy rules in 89084'
+  ),
   sellerPrep: img(
     'seller-prep.jpg',
     'Aliante home curb appeal prepared for MLS listing photos in North Las Vegas 89084'
@@ -238,6 +318,8 @@ export const gbpPhotoStrip: readonly SiteImage[] = [
   siteImages.sunCity,
   siteImages.gatedGate,
   siteImages.amenities,
+  siteImages.villageTour,
+  siteImages.hoaRules,
 ];
 
 export function pageHero(path: string): SiteImage {

@@ -3,7 +3,9 @@ import {
   nearbyPlaceSearchUrl,
   nearbyPlaces,
 } from '../../lib/content/aliante-content';
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * GBP “Show what’s nearby” — Google Maps locator + curated Aliante attractions/businesses.
@@ -25,11 +27,17 @@ export default function NearbyLocatorMap() {
           >
             What&apos;s Nearby in Aliante
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Discover parks, golf, dining, and everyday services near{' '}
             {siteConfig.address.streetAddress} — and near the homes you&apos;ll tour in North Las
             Vegas {siteConfig.zipCode}.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.amenities}
+              caption="Parks, golf, and recreation near Aliante Corporate Center in ZIP 89084"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-stretch mb-10">

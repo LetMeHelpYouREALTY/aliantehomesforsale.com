@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 type BenefitCardProps = {
   image: SiteImage;
@@ -79,6 +80,12 @@ export default function WhyNewConstruction() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Why use a buyer’s agent on Aliante new construction?
           </h2>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.newConstruction}
+              caption="Independent representation on Lennar, Del Webb, and nearby builder lots"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,6 +1,8 @@
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import HeadingPhoto from './HeadingPhoto';
 
 /**
  * Client feedback without invented quotes or Review JSON-LD.
@@ -18,10 +20,16 @@ export default function TestimonialsSection() {
           >
             Client reviews and how to reach me
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Read current Google Business Profile reviews. I will not publish invented quotes or an
             unverified star rating here.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.officeNap}
+              caption="Google Maps reviews for 2590 Nature Park Drive, Suite 275, North Las Vegas 89084"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">

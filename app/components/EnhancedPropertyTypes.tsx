@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import HeadingPhoto from './HeadingPhoto';
 
 interface PropertyTypeCardProps {
   title: string;
@@ -128,10 +129,16 @@ export default function EnhancedPropertyTypes() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#1a365d' }}>
             Explore Property Types
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Compare gated villages, 55+ Del Webb, golf-course lots, and new construction. Confirm
             live inventory before you offer.
           </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.propertyTypesMarket}
+              caption="Luxury, gated, 55+, and new construction — confirm the live listing"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

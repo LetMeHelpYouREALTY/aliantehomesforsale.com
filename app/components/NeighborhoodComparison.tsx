@@ -1,5 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 type NeighborhoodComparisonProps = {
   heading?: string;
   subheading?: string;
@@ -18,7 +21,13 @@ export default function NeighborhoodComparison({
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
             {heading}
           </h2>
-          <p className="text-xl text-gray-600">{subheading}</p>
+          <p className="text-xl text-gray-600 mb-8">{subheading}</p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.compare}
+              caption="Gated, golf, open-access, and 55+ villages inside ZIP 89084"
+            />
+          </div>
         </div>
 
         <div className="overflow-x-auto rounded-xl shadow-xl">

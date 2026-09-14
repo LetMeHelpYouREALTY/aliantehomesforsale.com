@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
 
 export default function BuilderAdvantages() {
   return (
@@ -9,6 +11,10 @@ export default function BuilderAdvantages() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
           How to Choose the Right Builder in Aliante
         </h2>
+        <HeadingPhoto
+          image={siteImages.chooseBuilder}
+          caption="Lennar and Del Webb in 89084 — confirm the live map before you tour models"
+        />
 
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">

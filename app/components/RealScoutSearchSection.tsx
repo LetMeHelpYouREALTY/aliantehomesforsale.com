@@ -1,6 +1,8 @@
 'use client';
 
+import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 import RealScoutAdvancedSearch from './RealScoutAdvancedSearch';
 
 /**
@@ -21,6 +23,10 @@ export default function RealScoutSearchSection() {
         >
           Find homes for sale in Aliante
         </h2>
+        <HeadingPhoto
+          image={siteImages.search}
+          caption="Search live MLS for Aliante North Las Vegas 89084 — inventory changes all day"
+        />
         <div className="realscout-search-section">
           <style>{`.realscout-search-section realscout-advanced-search { max-width: 100%; width: 100%; }`}</style>
           <RealScoutAdvancedSearch />

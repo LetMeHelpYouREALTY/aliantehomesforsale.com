@@ -1,3 +1,6 @@
+import { siteImages } from '../../lib/content/site-images';
+import HeadingPhoto from './HeadingPhoto';
+
 /**
  * RealScout office listings widget — live MLS cards (replaces fabricated featured listings).
  * Script must be loaded once in root layout. Rendered immediately after every page hero.
@@ -32,6 +35,10 @@ export default function RealScoutOfficeListingsSection() {
             every listing is inside Aliante 89084. Use the search widget to filter North Las Vegas.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.homesForSale}
+          caption="Live MLS cards from this office — confirm city and ZIP on each card"
+        />
         <div className="min-h-[200px] w-full" dangerouslySetInnerHTML={{ __html: widgetMarkup }} />
         <p className="mt-6 text-center text-sm text-gray-500">
           Listing data provided via RealScout / Greater Las Vegas Association of REALTORS® MLS.

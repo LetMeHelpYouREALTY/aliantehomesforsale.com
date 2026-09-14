@@ -1,13 +1,16 @@
 import Link from 'next/link';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import CardPhoto from './CardPhoto';
+import HeadingPhoto from './HeadingPhoto';
 
-const serviceIcons: Record<string, string> = {
-  'buyer-representation': '01',
-  'seller-representation': '02',
-  'new-construction': '03',
-  '55-plus': '04',
-  'home-valuation': '05',
-  'investment-analysis': '06',
+const servicePhotos: Record<string, SiteImage> = {
+  'buyer-representation': siteImages.buyerTour,
+  'seller-representation': siteImages.sellerPrep,
+  'new-construction': siteImages.newConstruction,
+  '55-plus': siteImages.sunCity,
+  'home-valuation': siteImages.homeValuation,
+  'investment-analysis': siteImages.investment,
 };
 
 /** Visible services matching knowledge-graph OfferCatalog (GEO/AEO). */
@@ -28,6 +31,10 @@ export default function HyperlocalRealtorServices() {
             not a valley-wide general practice.
           </p>
         </div>
+        <HeadingPhoto
+          image={siteImages.homesForSale}
+          caption="Buyer, seller, new construction, 55+, CMA, and rental analysis in ZIP 89084"
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {siteConfig.services.map((service) => (
@@ -36,13 +43,7 @@ export default function HyperlocalRealtorServices() {
               href={service.url}
               className="block bg-gray-50 rounded-xl p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg border-2 border-transparent hover:border-[#2c5aa0]"
             >
-              <div
-                className="text-sm font-bold mb-4 tracking-widest"
-                style={{ color: '#2c5aa0' }}
-                aria-hidden="true"
-              >
-                {serviceIcons[service.slug] ?? '01'}
-              </div>
+              <CardPhoto image={servicePhotos[service.slug] ?? siteImages.homesForSale} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 {service.name}
               </h3>
