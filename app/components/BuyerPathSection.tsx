@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import { buyerPathSteps } from '../../lib/content/aliante-content';
-import { siteImages } from '../../lib/content/site-images';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
+
+function photoForBuyerStep(id: string): SiteImage {
+  if (id === 'search') return siteImages.buyerSearch;
+  if (id === 'tour') return siteImages.villageTour;
+  if (id === 'guide') return siteImages.buyerClose;
+  return siteImages.buyerPath;
+}
 
 /** Simple 3-step buyer path — supports HowTo content graph + UX clarity */
 export default function BuyerPathSection() {
@@ -37,6 +45,7 @@ export default function BuyerPathSection() {
                 >
                   {step.step}
                 </span>
+                <CardPhoto image={photoForBuyerStep(step.id)} />
                 <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                   {step.title}
                 </h3>

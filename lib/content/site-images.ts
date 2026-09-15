@@ -238,6 +238,24 @@ export const siteImages = {
     'hoa-rules.jpg',
     'Sun City Aliante recreation campus for HOA dues and occupancy rules in 89084'
   ),
+  mlsData: img('mls-data.jpg', 'MLS search workspace for Aliante North Las Vegas 89084 listings'),
+  buyerSearch: img(
+    'buyer-search.jpg',
+    'Aliante residential street for a live MLS home search in ZIP 89084'
+  ),
+  buyerClose: img(
+    'buyer-close.jpg',
+    'North Las Vegas closing table for an Aliante purchase in ZIP 89084'
+  ),
+  listingMarketing: img(
+    'listing-marketing.jpg',
+    'Listing photography of an Aliante home interior in North Las Vegas 89084'
+  ),
+  healthcareNlv: img('healthcare-nlv.jpg', 'North Las Vegas medical campus near Aliante ZIP 89084'),
+  elementaryCampus: img(
+    'elementary-campus.jpg',
+    'Elementary campus serving Aliante and North Las Vegas addresses'
+  ),
   sellerPrep: img(
     'seller-prep.jpg',
     'Aliante home curb appeal prepared for MLS listing photos in North Las Vegas 89084'
@@ -320,6 +338,8 @@ export const gbpPhotoStrip: readonly SiteImage[] = [
   siteImages.amenities,
   siteImages.villageTour,
   siteImages.hoaRules,
+  siteImages.buyerSearch,
+  siteImages.listingMarketing,
 ];
 
 export function pageHero(path: string): SiteImage {

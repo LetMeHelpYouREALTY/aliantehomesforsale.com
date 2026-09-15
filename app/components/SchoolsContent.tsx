@@ -49,6 +49,10 @@ export default function SchoolsContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Elementary campuses serving parts of Aliante
             </h3>
+            <HeadingPhoto
+              image={siteImages.elementaryCampus}
+              caption="Leavitt, Kit Carson, or Homer — confirm the campus that currently serves the lot"
+            />
 
             <p className="leading-relaxed">
               Elementary campuses that currently serve parts of Aliante include Leavitt Elementary,
@@ -81,6 +85,10 @@ export default function SchoolsContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Other schooling options nearby
             </h3>
+            <HeadingPhoto
+              image={siteImages.search}
+              caption="I name the campus that currently serves an address — I do not rank programs"
+            />
 
             <p className="leading-relaxed">
               Private, charter, and online public programs operate in the Las Vegas valley. I name

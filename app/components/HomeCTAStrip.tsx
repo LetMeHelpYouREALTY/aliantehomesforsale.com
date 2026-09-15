@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import { siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
 
@@ -27,10 +29,20 @@ export default function HomeCTAStrip() {
 
   return (
     <section
-      className="py-14 px-4 bg-gradient-to-br from-[#0a2540] to-[#2c5aa0] text-white"
+      className="py-14 px-4 relative overflow-hidden text-white"
       aria-labelledby="cta-strip-heading"
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="absolute inset-0">
+        <Image
+          src={siteImages.villageTour.src}
+          alt={siteImages.villageTour.alt}
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0a2540]/82" aria-hidden />
+      </div>
+      <div className="max-w-5xl mx-auto text-center relative z-10">
         <AgentPhoto size={120} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
         <h2 id="cta-strip-heading" className="sr-only">
           Next steps

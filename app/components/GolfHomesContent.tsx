@@ -51,6 +51,10 @@ export default function GolfHomesContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Club Aliante golf access vs home ownership
             </h3>
+            <HeadingPhoto
+              image={siteImages.golf}
+              caption="Aliante Golf Club membership is separate from the deed on a fairway lot"
+            />
 
             <p className="leading-relaxed">
               Owning a home on the Club Aliante golf course sits next to the city-owned Aliante Golf
@@ -98,6 +102,10 @@ export default function GolfHomesContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Golf-course living: balls, dawn tee times, and views
             </h3>
+            <HeadingPhoto
+              image={siteImages.golfLotTour}
+              caption="Walk the lot at more than one hour — errant balls and morning play are real"
+            />
 
             <p className="leading-relaxed">
               Potential buyers should understand both the benefits and considerations of golf course

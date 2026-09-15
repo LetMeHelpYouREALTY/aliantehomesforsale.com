@@ -1,5 +1,6 @@
 'use client';
 
+import { headingMatchedImage } from '../../lib/content/section-photos';
 import { siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
 
@@ -21,6 +22,7 @@ export default function LegalContent({
           <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1a365d' }}>
             {title}
           </h2>
+          <HeadingPhoto image={headingMatchedImage(title)} />
           <p className="text-sm text-gray-500 mb-8">Last updated: {lastUpdated}</p>
           {children}
         </div>

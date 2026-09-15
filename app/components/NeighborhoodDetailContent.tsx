@@ -1,4 +1,5 @@
 import { neighborhoodGuides } from '../../lib/content/neighborhood-guides';
+import { headingMatchedImage } from '../../lib/content/section-photos';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
 
@@ -40,6 +41,7 @@ export default function NeighborhoodDetailContent({ village }: NeighborhoodDetai
               <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
                 {section.heading}
               </h3>
+              <HeadingPhoto image={headingMatchedImage(section.heading)} />
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)} className="leading-relaxed">
                   {paragraph}
