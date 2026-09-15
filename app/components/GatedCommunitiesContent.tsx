@@ -36,6 +36,10 @@ export default function GatedCommunitiesContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Controlled access, guest lists, and HOA rules
             </h3>
+            <HeadingPhoto
+              image={siteImages.gatedHoa}
+              caption="Guest lists and architectural rules differ by village — read the CC&Rs"
+            />
 
             <p className="leading-relaxed">
               The primary feature of gated villages is controlled access. Guard stations or
@@ -116,6 +120,10 @@ export default function GatedCommunitiesContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Comps, HOA dues, and resale
             </h3>
+            <HeadingPhoto
+              image={siteImages.pricingComps}
+              caption="Gated vs open-access still trades on live comps — not a guaranteed premium"
+            />
 
             <p className="leading-relaxed">
               Gated villages trade on lot position, square footage, HOA rules, and live comps — not

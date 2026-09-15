@@ -1,83 +1,43 @@
 'use client';
 
-import AgentPhoto from './AgentPhoto';
+import { siteImages } from '../../lib/content/site-images';
+import { siteConfig } from '../../lib/site-config';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import PhotoCtaBand from './PhotoCtaBand';
 
 export default function NewConstructionCTA() {
   return (
-    <section
-      className="py-16 px-4 relative overflow-hidden"
-      style={{
-        background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
-      }}
+    <PhotoCtaBand
+      image={siteImages.newConstruction}
+      heading="Hire a new-construction buyer’s agent in Aliante 89084"
     >
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
+      <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
+        Independent representation on Lennar, Del Webb, and nearby Tule Springs builders.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <a
+          href={`tel:${siteConfig.phoneTel}`}
+          className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-[#ed8936] hover:bg-[#dd6b20] transition-colors focus:ring-4 focus:ring-white/30 focus:outline-none"
+        >
+          Call {siteConfig.phone}
+        </a>
+        <CalendlyPopupButton
+          event="appointment"
+          className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-transparent border-2 border-white transition-all hover:bg-white hover:text-[#0A2540] focus:ring-4 focus:ring-white/30 focus:outline-none"
+        >
+          Schedule Builder Tours
+        </CalendlyPopupButton>
+        <a
+          href="/builders/incentives"
+          className="inline-block py-4 px-8 rounded-lg font-semibold text-lg border-2 border-white text-white hover:bg-white hover:text-[#0A2540] transition-colors focus:ring-4 focus:ring-white/30 focus:outline-none"
+        >
+          View Current Incentives
+        </a>
       </div>
-
-      <div className="max-w-5xl mx-auto text-center relative z-10">
-        <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Hire a new-construction buyer’s agent in Aliante 89084
-        </h2>
-        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance from Dr. Jan Duffy - Aliante's new construction specialist
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <a
-            href="tel:+17027077273"
-            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
-            style={{
-              backgroundColor: '#ed8936',
-              color: 'white',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#dd6b20')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#ed8936')}
-          >
-            📞 Call (702) 707-7273
-          </a>
-
-          <CalendlyPopupButton
-            event="appointment"
-            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-transparent border-2 border-white transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none hover:bg-white hover:text-[#0A2540]"
-          >
-            Schedule Builder Tours
-          </CalendlyPopupButton>
-
-          <a
-            href="/builders/incentives"
-            className="inline-block py-4 px-8 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl border-2 focus:ring-4 focus:ring-white/30 focus:outline-none"
-            style={{
-              backgroundColor: 'transparent',
-              color: 'white',
-              borderColor: 'white',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#0A2540';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = 'white';
-            }}
-          >
-            View Current Incentives
-          </a>
-        </div>
-
-        <p className="text-white/80 text-sm sm:text-base">
-          Buyer representation is typically at no extra cost to you on participating builder sales.
-          Confirm the fee in writing before you tour.
-        </p>
-      </div>
-    </section>
+      <p className="text-white/80 text-sm sm:text-base">
+        Buyer representation is typically at no extra cost to you on participating builder sales.
+        Confirm the fee in writing before you tour.
+      </p>
+    </PhotoCtaBand>
   );
 }

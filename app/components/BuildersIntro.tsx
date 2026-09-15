@@ -35,6 +35,10 @@ export default function BuildersIntro() {
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             The Advantages of Building New in 2026
           </h3>
+          <HeadingPhoto
+            image={siteImages.constructionProcess}
+            caption="Warranties, energy code, and incentives — confirm this month’s sheet"
+          />
 
           <p className="leading-relaxed">
             Today's new construction still competes on incentives, energy codes, and included

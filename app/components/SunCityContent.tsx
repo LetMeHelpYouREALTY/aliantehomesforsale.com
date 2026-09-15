@@ -109,6 +109,10 @@ export default function SunCityContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Healthcare and Services Access
             </h3>
+            <HeadingPhoto
+              image={siteImages.healthcareNlv}
+              caption="North Vista Hospital and nearby clinics — confirm drive time from that address"
+            />
 
             <p className="leading-relaxed">
               North Vista Hospital is in North Las Vegas. Confirm drive time from the specific Sun

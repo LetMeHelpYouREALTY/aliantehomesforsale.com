@@ -35,6 +35,10 @@ export default function BuyerGuideContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Get pre-approved before Club Aliante and Prominence tours
             </h3>
+            <HeadingPhoto
+              image={siteImages.lenderMeeting}
+              caption="Pre-approval is not cash — confirm the letter before gated village tours"
+            />
 
             <p className="leading-relaxed">
               Before you begin viewing homes, securing mortgage pre-approval is usually the first

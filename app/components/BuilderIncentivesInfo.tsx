@@ -35,6 +35,10 @@ export default function BuilderIncentivesInfo({
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             Lennar and Del Webb in ZIP 89084; Horton nearby
           </h3>
+          <HeadingPhoto
+            image={siteImages.chooseBuilder}
+            caption="Lennar and Del Webb in 89084 — Horton in nearby Tule Springs"
+          />
 
           <p className="leading-relaxed">
             <Link

@@ -1,6 +1,7 @@
 'use client';
 
 import { siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
 export default function AboutCommitment() {
@@ -29,9 +30,7 @@ export default function AboutCommitment() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3" aria-hidden="true">
-                1
-              </div>
+              <CardPhoto image={siteImages.officeNap} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Transparency
               </h3>
@@ -39,9 +38,7 @@ export default function AboutCommitment() {
             </div>
 
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3" aria-hidden="true">
-                2
-              </div>
+              <CardPhoto image={siteImages.fairHousing} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Integrity
               </h3>
@@ -49,9 +46,7 @@ export default function AboutCommitment() {
             </div>
 
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <div className="text-4xl mb-3" aria-hidden="true">
-                3
-              </div>
+              <CardPhoto image={siteImages.buyerClose} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Client-First
               </h3>

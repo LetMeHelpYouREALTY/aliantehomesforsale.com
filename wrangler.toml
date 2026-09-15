@@ -1,7 +1,9 @@
 # R2 media bucket for Aliante listing/hero photos.
 # Git `public/images` and `public/og-image.jpg` remain the backup.
 # Do not proxy www.aliantehomesforsale.com through Cloudflare (orange cloud).
-# Custom media host example: media.aliantehomesforsale.com → this bucket (DNS only).
+# Custom domain (DNS-only / gray cloud): media.aliantehomesforsale.com → this bucket.
+# Never orange-cloud www.aliantehomesforsale.com — Vercel serves the app.
+# Public object keys match git paths: og-image.jpg, images/*.jpg
 
 name = "aliante-homes-media"
 compatibility_date = "2026-09-14"

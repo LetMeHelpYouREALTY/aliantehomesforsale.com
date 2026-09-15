@@ -1,64 +1,32 @@
 'use client';
 
-import AgentPhoto from './AgentPhoto';
+import { siteImages } from '../../lib/content/site-images';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import PhotoCtaBand from './PhotoCtaBand';
 
 export default function NeighborhoodsCTA() {
   return (
-    <section
-      className="py-16 px-4 relative overflow-hidden"
-      style={{
-        background: 'linear-gradient(135deg, #0A2540 0%, #3A8DDE 100%)',
-      }}
+    <PhotoCtaBand
+      image={siteImages.villageTour}
+      heading="Tour Aliante neighborhoods with a 89084 realtor"
     >
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px',
-          }}
-        />
+      <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
+        Compare gated, golf, open-access, and Sun City Aliante 55+ villages on live MLS.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <CalendlyPopupButton
+          event="showing"
+          className="inline-block py-4 px-10 rounded-lg font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
+        >
+          Schedule a Neighborhood Tour
+        </CalendlyPopupButton>
+        <a
+          href="/homes-for-sale"
+          className="inline-block py-4 px-10 rounded-lg font-semibold text-lg border-2 border-white text-white hover:bg-white hover:text-[#0A2540] transition-colors focus:ring-4 focus:ring-white/30 focus:outline-none"
+        >
+          View Available Homes
+        </a>
       </div>
-
-      <div className="max-w-4xl mx-auto text-center relative z-10">
-        <AgentPhoto size={140} className="mx-auto mb-6 shadow-2xl ring-4 ring-white/40" />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Tour Aliante neighborhoods with a 89084 realtor
-        </h2>
-        <p className="text-xl sm:text-2xl text-white/95 mb-10 leading-relaxed">
-          Get expert guidance on choosing the right Aliante community for your lifestyle
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <CalendlyPopupButton
-            event="showing"
-            className="inline-block py-4 px-10 rounded-lg font-semibold text-lg text-white bg-[#ed8936] transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
-          >
-            Schedule a Neighborhood Tour
-          </CalendlyPopupButton>
-
-          <a
-            href="/homes-for-sale"
-            className="inline-block py-4 px-10 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl border-2 focus:ring-4 focus:ring-white/30 focus:outline-none"
-            style={{
-              backgroundColor: 'transparent',
-              color: 'white',
-              borderColor: 'white',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'white';
-              e.currentTarget.style.color = '#0A2540';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = 'white';
-            }}
-          >
-            View Available Homes
-          </a>
-        </div>
-      </div>
-    </section>
+    </PhotoCtaBand>
   );
 }

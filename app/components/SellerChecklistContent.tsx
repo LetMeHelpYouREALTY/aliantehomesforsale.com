@@ -101,6 +101,10 @@ export default function SellerChecklistContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Market an Aliante listing to North Las Vegas buyers
             </h3>
+            <HeadingPhoto
+              image={siteImages.listingMarketing}
+              caption="Professional listing photos for an Aliante 89084 resale — not a phone snapshot"
+            />
 
             <p className="leading-relaxed">
               Once your home is prepared and priced, we launch a comprehensive marketing campaign
