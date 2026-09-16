@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import MediaImage from './MediaImage';
 
 /**
  * Purist-style CTA strip: View Listings, Explore Neighborhoods, What's My Home Worth.
@@ -33,7 +33,7 @@ export default function HomeCTAStrip() {
       aria-labelledby="cta-strip-heading"
     >
       <div className="absolute inset-0">
-        <Image
+        <MediaImage
           src={siteImages.villageTour.src}
           alt={siteImages.villageTour.alt}
           fill

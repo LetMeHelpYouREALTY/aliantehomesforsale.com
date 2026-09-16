@@ -1,15 +1,12 @@
-# R2 media bucket for Aliante listing/hero photos.
+# Cloudflare Images is the primary photo CDN (imagedelivery.net).
 # Git `public/images` and `public/og-image.jpg` remain the backup.
-# Do not proxy www.aliantehomesforsale.com through Cloudflare (orange cloud).
+# R2 is optional tertiary storage — do not orange-cloud www (Vercel serves the app).
 # Custom domain (DNS-only / gray cloud): media.aliantehomesforsale.com → this bucket.
-# Never orange-cloud www.aliantehomesforsale.com — Vercel serves the app.
 # Public object keys match git paths: og-image.jpg, images/*.jpg
 
 name = "aliante-homes-media"
 compatibility_date = "2026-09-14"
-
-# Set CLOUDFLARE_ACCOUNT_ID in CI / .env.local — do not commit account secrets.
-# account_id = ""
+account_id = "2cc579c1ec9e426ed585e933ebf4753b"
 
 [[r2_buckets]]
 binding = "MEDIA"

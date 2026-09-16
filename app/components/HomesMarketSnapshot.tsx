@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { marketAsOfLabel, marketSnapshot } from '../../lib/content/aliante-content';
 import { siteImages } from '../../lib/content/site-images';
+import MediaImage from './MediaImage';
 
 /** Soft market context on /homes-for-sale — live numbers via RealScout MLS widgets */
 export default function HomesMarketSnapshot() {
@@ -20,7 +20,7 @@ export default function HomesMarketSnapshot() {
           </h2>
           <p className="text-xl text-white/90 mb-8">{marketAsOfLabel}</p>
           <figure className="max-w-3xl mx-auto overflow-hidden rounded-2xl border border-white/20">
-            <Image
+            <MediaImage
               src={siteImages.marketReport.src}
               alt={siteImages.marketReport.alt}
               width={1200}

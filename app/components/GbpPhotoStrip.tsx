@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { gbpPhotoStrip } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import MediaImage from './MediaImage';
 
 /**
  * Visible photos that match GBP/Maps categories: street, office NAP, golf, 55+ village.
@@ -35,7 +35,7 @@ export default function GbpPhotoStrip() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {gbpPhotoStrip.map((photo) => (
             <figure key={photo.src} className="overflow-hidden rounded-xl shadow-sm bg-white">
-              <Image
+              <MediaImage
                 src={photo.src}
                 alt={photo.alt}
                 width={800}

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import type { SiteImage } from '../../lib/content/site-images';
+import MediaImage from './MediaImage';
 
 type HeroBackdropProps = {
   image: SiteImage;
@@ -10,7 +10,7 @@ type HeroBackdropProps = {
 export default function HeroBackdrop({ image, priority = true }: HeroBackdropProps) {
   return (
     <div className="absolute inset-0">
-      <Image
+      <MediaImage
         src={image.src}
         alt={image.alt}
         fill

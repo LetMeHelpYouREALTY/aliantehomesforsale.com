@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { mediaSrc } from '../../lib/media';
 import { siteConfig } from '../../lib/site-config';
+import MediaImage from './MediaImage';
 
 type AgentPhotoProps = {
   /** Rendered width/height in pixels. */
@@ -19,7 +19,7 @@ export default function AgentPhoto({
   priority = false,
 }: AgentPhotoProps) {
   return (
-    <Image
+    <MediaImage
       src={mediaSrc(siteConfig.agentImage)}
       alt={`${siteConfig.agentName}, Aliante North Las Vegas real estate agent`}
       width={size}

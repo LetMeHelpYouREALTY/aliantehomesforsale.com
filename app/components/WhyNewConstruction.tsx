@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 type BenefitCardProps = {
   image: SiteImage;
@@ -14,7 +14,7 @@ function BenefitCard({ image, title, description }: BenefitCardProps) {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <div className="relative h-40">
-        <Image
+        <MediaImage
           src={image.src}
           alt={image.alt}
           fill

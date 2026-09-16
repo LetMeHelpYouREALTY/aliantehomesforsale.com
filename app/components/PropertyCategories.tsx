@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 interface CategoryCardProps {
   title: string;
@@ -15,7 +15,7 @@ function CategoryCard({ title, description, href, image }: CategoryCardProps) {
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-transparent hover:border-blue-500">
       <div className="relative h-32">
-        <Image
+        <MediaImage
           src={image.src}
           alt={image.alt}
           fill
