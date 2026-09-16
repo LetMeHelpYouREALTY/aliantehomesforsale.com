@@ -4,9 +4,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 /**
- * Upload git-backed photos to Cloudflare R2. Keys match public URL paths
- * (`/og-image.jpg`, `/images/foo.jpg`) so NEXT_PUBLIC_CLOUDFLARE_MEDIA_BASE
- * can prefix them 1:1.
+ * Upload git-backed photos to Cloudflare R2 (tertiary backup).
+ * Hosted Cloudflare Images is primary (`npm run media:upload`).
+ * Keys match public URL paths (`/og-image.jpg`, `/images/foo.jpg`) so
+ * NEXT_PUBLIC_CLOUDFLARE_MEDIA_BASE can prefix them 1:1.
  *
  * Required env: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
  * Optional: R2_BUCKET (default: aliante-homes-media)

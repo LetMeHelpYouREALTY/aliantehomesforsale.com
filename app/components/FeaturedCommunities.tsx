@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 type Community = {
   name: string;
@@ -84,7 +84,7 @@ export default function FeaturedCommunities() {
               className="group relative block overflow-hidden rounded-xl shadow-md focus:outline-none focus:ring-4 focus:ring-[#2c5aa0]/40"
             >
               <div className="relative aspect-[4/3]">
-                <Image
+                <MediaImage
                   src={community.image.src}
                   alt={community.image.alt}
                   fill

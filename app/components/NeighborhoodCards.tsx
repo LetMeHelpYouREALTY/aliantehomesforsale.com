@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 interface NeighborhoodCardProps {
   image: SiteImage;
@@ -33,7 +33,7 @@ function NeighborhoodCard({
       style={featured ? { borderColor: '#2c5aa0' } : { borderColor: '#e5e7eb' }}
     >
       <div className="relative h-48">
-        <Image
+        <MediaImage
           src={image.src}
           alt={image.alt}
           fill

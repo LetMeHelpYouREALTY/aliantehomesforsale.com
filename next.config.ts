@@ -58,6 +58,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'media.aliantehomesforsale.com',
       },
+      // Cloudflare Images hosted delivery: https://imagedelivery.net/<hash>/<id>/<variant>
       {
         protocol: 'https',
         hostname: 'imagedelivery.net',

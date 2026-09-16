@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { siteImages } from '../../lib/content/site-images';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 const builderCards = [
   {
@@ -51,7 +51,7 @@ export default function QuickMoveInHomes() {
               className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className="relative h-48">
-                <Image
+                <MediaImage
                   src={item.image.src}
                   alt={item.image.alt}
                   fill

@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import type { SiteImage } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
+import MediaImage from './MediaImage';
 
 type PhotoCtaBandProps = {
   image: SiteImage;
@@ -17,7 +17,7 @@ export default function PhotoCtaBand({ image, heading, headingId, children }: Ph
   return (
     <section className="py-16 px-4 relative overflow-hidden">
       <div className="absolute inset-0">
-        <Image
+        <MediaImage
           src={image.src}
           alt={image.alt}
           fill

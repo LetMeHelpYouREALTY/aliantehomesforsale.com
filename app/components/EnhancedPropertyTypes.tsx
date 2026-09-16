@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
 import HeadingPhoto from './HeadingPhoto';
+import MediaImage from './MediaImage';
 
 interface PropertyTypeCardProps {
   title: string;
@@ -17,7 +17,7 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
   return (
     <article className="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-2 border-transparent hover:border-[#2c5aa0] group">
       <div className="relative h-40">
-        <Image
+        <MediaImage
           src={image.src}
           alt={image.alt}
           fill

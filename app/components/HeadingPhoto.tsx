@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import type { SiteImage } from '../../lib/content/site-images';
+import MediaImage from './MediaImage';
 
 type HeadingPhotoProps = {
   image: SiteImage;
@@ -13,7 +13,7 @@ type HeadingPhotoProps = {
 export default function HeadingPhoto({ image, caption, priority = false }: HeadingPhotoProps) {
   return (
     <figure className="mb-8 overflow-hidden rounded-2xl shadow-md border border-gray-100">
-      <Image
+      <MediaImage
         src={image.src}
         alt={image.alt}
         width={1600}

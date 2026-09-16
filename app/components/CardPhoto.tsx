@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import type { SiteImage } from '../../lib/content/site-images';
+import MediaImage from './MediaImage';
 
 type CardPhotoProps = {
   image: SiteImage;
@@ -12,7 +12,7 @@ type CardPhotoProps = {
 export default function CardPhoto({ image, heightClass = 'h-32' }: CardPhotoProps) {
   return (
     <div className={`relative ${heightClass} w-full overflow-hidden rounded-lg mb-4`}>
-      <Image
+      <MediaImage
         src={image.src}
         alt={image.alt}
         fill

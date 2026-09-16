@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import MediaImage from './MediaImage';
 
 /**
  * Visit / directions block for GBP “Add directions to your website”.
@@ -49,7 +49,7 @@ export default function OfficeLocation() {
               style={{ background: 'linear-gradient(135deg, #f0f4ff 0%, #e8f5f0 100%)' }}
             >
               <figure className="mb-6 overflow-hidden rounded-xl">
-                <Image
+                <MediaImage
                   src={siteImages.officeNap.src}
                   alt={siteImages.officeNap.alt}
                   width={800}
