@@ -77,7 +77,7 @@ export default function ContactMethods() {
       href: '#directions',
     },
     {
-      image: siteImages.buyerPath,
+      image: siteImages.scheduleConsult,
       title: 'Schedule Time',
       primary: 'Book on Calendly',
       details: ['15-minute consultation', 'No contact form required'],

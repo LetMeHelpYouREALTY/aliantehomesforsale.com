@@ -31,13 +31,13 @@ export default function HomesSearchTips() {
         'Begin with all Aliante homes, then filter by neighborhood, price range, and features.',
     },
     {
-      image: siteImages.mortgage,
+      image: siteImages.lenderMeeting,
       title: 'Get Pre-Approved First',
       description:
         'Know your budget before you write. I can introduce lenders who actually close Aliante files.',
     },
     {
-      image: siteImages.neighborhoods,
+      image: siteImages.villageTour,
       title: 'Visit Multiple Neighborhoods',
       description:
         'Each Aliante village has different access, HOA rules, and lot types. Tour more than one before you offer.',
@@ -49,7 +49,7 @@ export default function HomesSearchTips() {
         'Well-priced homes can still move quickly. Confirm current days-on-market on live MLS and set alerts for the villages you want.',
     },
     {
-      image: siteImages.officeNap,
+      image: siteImages.specialistStreet,
       title: 'Work with a Local Expert',
       description:
         'I work ZIP 89084 every week. I walk village comps, HOA documents, and lot position with you.',

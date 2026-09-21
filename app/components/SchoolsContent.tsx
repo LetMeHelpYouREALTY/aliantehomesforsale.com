@@ -86,7 +86,7 @@ export default function SchoolsContent() {
               Other schooling options nearby
             </h3>
             <HeadingPhoto
-              image={siteImages.search}
+              image={siteImages.schools}
               caption="I name the campus that currently serves an address — I do not rank programs"
             />
 

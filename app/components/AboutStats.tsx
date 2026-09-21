@@ -28,12 +28,12 @@ export default function AboutStats() {
     {
       number: '2018',
       label: 'Aliante specialist since',
-      image: siteImages.about,
+      image: siteImages.specialistStreet,
     },
     {
       number: 'S.0197614.LLC',
       label: 'Nevada real estate license',
-      image: siteImages.officeNap,
+      image: siteImages.licenseCredential,
     },
     {
       number: '89084',

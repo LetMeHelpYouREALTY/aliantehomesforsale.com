@@ -1,4 +1,4 @@
-import { siteImages } from '../../lib/content/site-images';
+import { headingMatchedImage } from '../../lib/content/section-photos';
 import HeadingPhoto from './HeadingPhoto';
 
 interface FAQItem {
@@ -50,7 +50,7 @@ export default function FAQSection({ title, faqs }: FAQSectionProps) {
             {title}
           </h2>
           <HeadingPhoto
-            image={siteImages.officeNap}
+            image={headingMatchedImage(title)}
             caption="Typical Aliante 89084 questions — answers from Suite 275, North Las Vegas"
           />
 

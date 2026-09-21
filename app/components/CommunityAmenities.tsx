@@ -41,7 +41,7 @@ export default function CommunityAmenities() {
       ],
     },
     {
-      image: siteImages.amenities,
+      image: siteImages.shoppingAliante,
       title: 'Shopping & Dining',
       amenities: [
         'Aliante Casino + Hotel',
@@ -63,7 +63,7 @@ export default function CommunityAmenities() {
       ],
     },
     {
-      image: siteImages.search,
+      image: siteImages.i215Access,
       title: 'Transportation & Access',
       amenities: [
         'I-215 Beltway interchange at Aliante Parkway',

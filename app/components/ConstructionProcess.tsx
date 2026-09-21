@@ -1,6 +1,7 @@
 'use client';
 
-import { siteImages } from '../../lib/content/site-images';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
 interface ProcessStepProps {
@@ -8,14 +9,16 @@ interface ProcessStepProps {
   title: string;
   description: string;
   details: string[];
+  image: SiteImage;
 }
 
-function ProcessStep({ number, title, description, details }: ProcessStepProps) {
+function ProcessStep({ number, title, description, details, image }: ProcessStepProps) {
   return (
     <div
       className="bg-white rounded-xl p-8 shadow-lg border-l-4"
       style={{ borderLeftColor: '#2c5aa0' }}
     >
+      <CardPhoto image={image} heightClass="h-40" />
       <div className="flex items-center gap-4 mb-4">
         <div
           className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white"
@@ -49,6 +52,7 @@ export default function ConstructionProcess() {
       title: 'Builder & Community Selection',
       description:
         'Compare builders, floor plans, and amenities against your budget and the lots that are actually for sale this month.',
+      image: siteImages.constructionSelect,
       details: [
         'Review builders active near Aliante',
         'Compare plans and included features',
@@ -61,6 +65,7 @@ export default function ConstructionProcess() {
       title: 'Strategic Lot Selection',
       description:
         'Lot placement affects views, sun, street noise, and daily living. We walk the map with you so you can choose a lot that matches those factors.',
+      image: siteImages.constructionLot,
       details: [
         'Corner vs. interior lots',
         'View premiums vs. standard',
@@ -73,6 +78,7 @@ export default function ConstructionProcess() {
       title: 'Design Center & Upgrades',
       description:
         'Choose upgrades with use and resale in mind. We help you decide which design-center items you want to pay for and which to skip.',
+      image: siteImages.constructionDesign,
       details: [
         'Flooring and finishes selection',
         'Kitchen and bath upgrades',
@@ -85,6 +91,7 @@ export default function ConstructionProcess() {
       title: 'Construction Monitoring',
       description:
         'We walk key phases with you, coordinate inspections you hire, and document issues before closing.',
+      image: siteImages.constructionFraming,
       details: [
         'Foundation and framing inspections',
         'Pre-drywall walkthrough',
@@ -97,6 +104,7 @@ export default function ConstructionProcess() {
       title: 'Final Walkthrough & Closing',
       description:
         'Detailed pre-closing inspection, punch list management, and closing coordination. Confirm remaining items before you accept the keys.',
+      image: siteImages.constructionWalkthrough,
       details: [
         'Comprehensive final walkthrough',
         'Punch list creation and follow-up',
