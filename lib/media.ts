@@ -6,8 +6,8 @@ import {
 } from './cloudflare-images';
 
 /**
- * Cloudflare Images (imagedelivery.net) is the primary CDN in production.
- * Git `public/` is the backup and the local/preview fallback.
+ * Git `public/` is the live image source until hosted Images objects exist.
+ * Set NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true after `npm run media:upload`.
  * Optional R2 (`NEXT_PUBLIC_CLOUDFLARE_MEDIA_BASE`) is tertiary.
  *
  * Do not orange-cloud www.aliantehomesforsale.com — Vercel serves the app.

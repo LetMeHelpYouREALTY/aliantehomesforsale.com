@@ -88,15 +88,12 @@ function envFlag(name: string): boolean | undefined {
 }
 
 /**
- * Hosted Images URLs in Vercel production by default (client + server via
- * NEXT_PUBLIC_VERCEL_ENV so hydration matches).
- * Local and preview stay on git unless explicitly enabled.
- * Set NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=false to force git/R2.
+ * Hosted Images URLs only when explicitly enabled.
+ * Production auto-enable 404s OG/JSON-LD when objects are not uploaded yet
+ * (err=9404). Git `public/` stays the live source until
+ * `npm run media:upload` succeeds, then set
+ * NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true on Vercel.
  */
 export function isCloudflareImagesEnabled(): boolean {
-  const flag = envFlag('NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED');
-  if (flag === false) return false;
-  if (flag === true) return true;
-  const vercelEnv = process.env.NEXT_PUBLIC_VERCEL_ENV?.trim() || process.env.VERCEL_ENV?.trim();
-  return vercelEnv === 'production';
+  return envFlag('NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED') === true;
 }
