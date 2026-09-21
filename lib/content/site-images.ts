@@ -285,6 +285,66 @@ export const siteImages = {
     'investment.jpg',
     'Aliante North Las Vegas investment property on a residential street'
   ),
+  constructionSelect: img(
+    'construction-select.jpg',
+    'New-construction model-home street near Aliante, North Las Vegas 89084'
+  ),
+  constructionLot: img(
+    'construction-lot.jpg',
+    'Vacant desert lot with new curbs near Aliante, North Las Vegas 89084'
+  ),
+  constructionDesign: img(
+    'construction-design.jpg',
+    'Empty new-construction kitchen finishes in North Las Vegas near Aliante'
+  ),
+  constructionFraming: img(
+    'construction-framing.jpg',
+    'Wood framing on a desert lot near Aliante, North Las Vegas'
+  ),
+  constructionWalkthrough: img(
+    'construction-walkthrough.jpg',
+    'Empty finished living room ready for a new-construction walkthrough in North Las Vegas'
+  ),
+  shoppingAliante: img(
+    'shopping-aliante.jpg',
+    'Hotel and retail buildings along Aliante Parkway in North Las Vegas 89084'
+  ),
+  i215Access: img(
+    'i215-access.jpg',
+    'I-215 Beltway interchange beside Aliante rooftops in North Las Vegas 89084'
+  ),
+  googleReviews: img(
+    'google-reviews.jpg',
+    'Office entrance at Aliante Corporate Center, North Las Vegas 89084'
+  ),
+  scheduleConsult: img(
+    'schedule-consult.jpg',
+    'Empty conference room at 2590 Nature Park Drive, North Las Vegas 89084'
+  ),
+  licenseCredential: img(
+    'license-credential.jpg',
+    'Office lobby for Nevada license S.0197614.LLC in North Las Vegas 89084'
+  ),
+  specialistStreet: img(
+    'specialist-street.jpg',
+    'Established Aliante residential street in North Las Vegas 89084'
+  ),
+  builderAdvocate: img(
+    'builder-advocate.jpg',
+    'New-construction model-home porch near Aliante, North Las Vegas'
+  ),
+  contractReview: img(
+    'contract-review.jpg',
+    'Empty North Las Vegas office table used to review a builder contract'
+  ),
+  constructionTimeline: img(
+    'construction-timeline.jpg',
+    'Framed house beside a finished stucco home on a North Las Vegas desert street'
+  ),
+  energyEfficiency: img(
+    'energy-efficiency.jpg',
+    'New North Las Vegas home with rooftop solar near Aliante ZIP 89084'
+  ),
 } as const;
 
 /** Hero photo for each public pathname (matches that page’s H1). */

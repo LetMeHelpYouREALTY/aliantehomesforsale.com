@@ -30,7 +30,7 @@ export default function AboutCommitment() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <CardPhoto image={siteImages.officeNap} />
+              <CardPhoto image={siteImages.licenseCredential} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Transparency
               </h3>
@@ -46,7 +46,7 @@ export default function AboutCommitment() {
             </div>
 
             <div className="text-center p-6 bg-white rounded-xl shadow-sm">
-              <CardPhoto image={siteImages.buyerClose} />
+              <CardPhoto image={siteImages.scheduleConsult} />
               <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
                 Client-First
               </h3>

@@ -25,12 +25,12 @@ function ReasonCard({ image, title, description }: ReasonProps) {
 export default function ContactWhyChoose() {
   const reasons: ReasonProps[] = [
     {
-      image: siteImages.neighborhoods,
+      image: siteImages.specialistStreet,
       title: 'Local Expertise',
       description: '6+ years focused on Aliante and North Las Vegas 89084 properties',
     },
     {
-      image: siteImages.newConstruction,
+      image: siteImages.builderAdvocate,
       title: 'Builder Relationships',
       description: 'I confirm live builder incentive sheets and represent you — not the sales desk',
     },
@@ -40,7 +40,7 @@ export default function ContactWhyChoose() {
       description: 'Real-time market data and insights to help you make informed decisions',
     },
     {
-      image: siteImages.officeNap,
+      image: siteImages.googleReviews,
       title: 'Proven Track Record',
       description: 'Aliante and North Las Vegas closings since 2018 — ask for current references',
     },
@@ -55,7 +55,7 @@ export default function ContactWhyChoose() {
           </h2>
         </div>
         <HeadingPhoto
-          image={siteImages.officeNap}
+          image={siteImages.specialistStreet}
           caption="Call (702) 707-7273 · 2590 Nature Park Drive, Suite 275"
         />
 

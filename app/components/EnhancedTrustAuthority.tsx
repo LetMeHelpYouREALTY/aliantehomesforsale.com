@@ -1,10 +1,21 @@
 import Link from 'next/link';
 import { agentCredentials } from '../../lib/content/aliante-content';
-import { siteImages } from '../../lib/content/site-images';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
+
+const CREDENTIAL_PHOTOS: Record<string, SiteImage> = {
+  license: siteImages.licenseCredential,
+  hyperlocal: siteImages.specialistStreet,
+  builders: siteImages.builderAdvocate,
+};
+
+function credentialPhoto(id: string): SiteImage {
+  return CREDENTIAL_PHOTOS[id] ?? siteImages.officeNap;
+}
 
 /**
  * Trust / credentials for Dr. Jan Duffy — no fabricated rankings or reviews.
@@ -28,7 +39,7 @@ export default function EnhancedTrustAuthority() {
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto
-              image={siteImages.officeNap}
+              image={siteImages.licenseCredential}
               caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
             />
           </div>
@@ -41,6 +52,7 @@ export default function EnhancedTrustAuthority() {
               className="rounded-xl p-8 shadow-md border-l-4 bg-gray-50"
               style={{ borderLeftColor: '#2c5aa0' }}
             >
+              <CardPhoto image={credentialPhoto(item.id)} heightClass="h-28" />
               <h3 className="text-xl font-bold mb-3" style={{ color: '#2c5aa0' }}>
                 {item.title}
               </h3>

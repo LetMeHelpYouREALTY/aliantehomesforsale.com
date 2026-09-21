@@ -32,12 +32,12 @@ export default function AboutWhyChooseUs() {
       title: 'Local Focus',
       description:
         'Focused on Aliante and North Las Vegas 89084 — this is the market I work every week',
-      image: siteImages.neighborhoods,
+      image: siteImages.specialistStreet,
     },
     {
       title: 'Builder Relationships',
       description: 'I confirm live builder incentive sheets and represent you on the contract',
-      image: siteImages.newConstruction,
+      image: siteImages.builderAdvocate,
     },
     {
       title: 'Market Mastery',
@@ -48,12 +48,12 @@ export default function AboutWhyChooseUs() {
     {
       title: 'Client-First',
       description: 'Your goals are our priority - no pressure, just expert guidance',
-      image: siteImages.officeNap,
+      image: siteImages.scheduleConsult,
     },
     {
       title: 'Proven Results',
       description: 'Aliante closings since 2018 — call for current references',
-      image: siteImages.about,
+      image: siteImages.googleReviews,
     },
   ];
 
@@ -69,7 +69,7 @@ export default function AboutWhyChooseUs() {
           </p>
         </div>
         <HeadingPhoto
-          image={siteImages.homesForSale}
+          image={siteImages.specialistStreet}
           caption="Hyperlocal Aliante 89084 representation — not a valley-wide general practice"
         />
 

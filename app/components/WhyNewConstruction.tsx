@@ -36,13 +36,13 @@ function BenefitCard({ image, title, description }: BenefitCardProps) {
 export default function WhyNewConstruction() {
   const benefits: BenefitCardProps[] = [
     {
-      image: siteImages.newConstruction,
+      image: siteImages.constructionWalkthrough,
       title: 'Never Been Lived In',
       description:
         'New inventory built to the codes in effect at permit. Confirm remaining warranties, punch-list items, and included features on that contract.',
     },
     {
-      image: siteImages.incentives,
+      image: siteImages.constructionDesign,
       title: 'Lot, plan, and finish choices',
       description:
         'Where the builder still has unsold lots, you can often choose plan, elevation, and design-center options. Confirm what is still available on that phase.',
@@ -54,19 +54,19 @@ export default function WhyNewConstruction() {
         'Builder credits, upgrades, and rate buydowns change with the week. Confirm today’s sheet — I will not publish a stale dollar amount.',
     },
     {
-      image: siteImages.delWebb,
+      image: siteImages.constructionWalkthrough,
       title: 'Builder warranties',
       description:
         'Warranty length and coverage vary by builder and component. Read the warranty booklet for that community before you write — I will not publish a one-size term.',
     },
     {
-      image: siteImages.drHorton,
+      image: siteImages.energyEfficiency,
       title: 'Energy Efficiency',
       description:
         'Newer homes are built to the energy code in effect at permit. Compare utility estimates on that plan — I will not publish a savings figure.',
     },
     {
-      image: siteImages.officeNap,
+      image: siteImages.builderAdvocate,
       title: 'Our Expert Guidance',
       description:
         'We represent you in negotiations, monitor construction quality, and confirm the live incentive sheet before you write.',

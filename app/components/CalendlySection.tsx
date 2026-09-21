@@ -44,7 +44,7 @@ export default function CalendlySection({
           </p>
         </div>
         <HeadingPhoto
-          image={siteImages.officeNap}
+          image={siteImages.scheduleConsult}
           caption="Book a showing from Suite 275 — or meet at the listing in ZIP 89084"
         />
         <CalendlyInline event={event} />

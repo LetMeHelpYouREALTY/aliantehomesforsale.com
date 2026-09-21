@@ -46,19 +46,19 @@ export default function WhyWorkWithUs() {
         'I attend pre-drywall and pre-close walkthroughs with you. Third-party inspections are a separate cost you confirm with the inspector.',
     },
     {
-      image: siteImages.lennar,
+      image: siteImages.contractReview,
       title: 'Contract Expertise',
       description:
         'Builder contracts favor the builder. I review clauses with you and negotiate what that sales desk will actually change.',
     },
     {
-      image: siteImages.drHorton,
+      image: siteImages.constructionTimeline,
       title: 'Timeline Management',
       description:
         'I track dates on your contract and flag delays when the builder updates the schedule. I cannot control the superintendent’s calendar.',
     },
     {
-      image: siteImages.officeNap,
+      image: siteImages.specialistStreet,
       title: 'Proven Results',
       description:
         'Independent buyer representation on Aliante and nearby Tule Springs new construction. Confirm live inventory. I will not publish an unverified closing count.',
@@ -74,7 +74,7 @@ export default function WhyWorkWithUs() {
           </h2>
         </div>
         <HeadingPhoto
-          image={siteImages.newConstruction}
+          image={siteImages.builderAdvocate}
           caption="Independent buyer agency on Aliante and Tule Springs new construction"
         />
 

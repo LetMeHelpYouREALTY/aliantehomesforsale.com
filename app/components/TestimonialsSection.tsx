@@ -2,6 +2,7 @@ import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
 import AgentPhoto from './AgentPhoto';
 import CalendlyPopupButton from './CalendlyPopupButton';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
 /**
@@ -26,7 +27,7 @@ export default function TestimonialsSection() {
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto
-              image={siteImages.officeNap}
+              image={siteImages.googleReviews}
               caption="Google Maps reviews for 2590 Nature Park Drive, Suite 275, North Las Vegas 89084"
             />
           </div>
@@ -39,6 +40,7 @@ export default function TestimonialsSection() {
             rel="noopener noreferrer"
             className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow"
           >
+            <CardPhoto image={siteImages.googleReviews} heightClass="h-28" />
             <h3 className="text-xl font-bold mb-3" style={{ color: '#1a365d' }}>
               Google reviews
             </h3>
@@ -53,6 +55,7 @@ export default function TestimonialsSection() {
             href={`tel:${siteConfig.phoneTel}`}
             className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow"
           >
+            <CardPhoto image={siteImages.officeNap} heightClass="h-28" />
             <h3 className="text-xl font-bold mb-3" style={{ color: '#1a365d' }}>
               Call {siteConfig.phone}
             </h3>
@@ -67,6 +70,7 @@ export default function TestimonialsSection() {
             event="consultation"
             className="rounded-xl border border-gray-100 bg-[#f8f9fa] p-6 md:p-8 hover:shadow-md transition-shadow text-left"
           >
+            <CardPhoto image={siteImages.scheduleConsult} heightClass="h-28" />
             <h3 className="text-xl font-bold mb-3" style={{ color: '#1a365d' }}>
               Schedule time with me
             </h3>

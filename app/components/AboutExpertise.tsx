@@ -34,19 +34,19 @@ export default function AboutExpertise() {
         'I represent you with Lennar, D.R. Horton, and Del Webb — not the builder. Incentives, options, and walk-throughs in North Las Vegas 89084.',
     },
     {
-      image: siteImages.neighborhoods,
+      image: siteImages.villageTour,
       title: 'Village matching: Club Aliante, Prominence, Paseos, Desert Willows, Sun City',
       description:
         'I tour the actual Aliante villages with you. Ardiente (89081) is not inside this master plan; I will say so before you write an offer.',
     },
     {
-      image: siteImages.marketReport,
+      image: siteImages.mlsData,
       title: 'MLS and CMA work for ZIP 89084',
       description:
         'Listings refresh about every 15 minutes. Valuations use Aliante comps — Club Aliante vs Sun City vs gated — not a valley average.',
     },
     {
-      image: siteImages.officeNap,
+      image: siteImages.specialistStreet,
       title: 'Buyer and seller advocacy in Aliante',
       description:
         'Purchase or listing, I am your agent at 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
