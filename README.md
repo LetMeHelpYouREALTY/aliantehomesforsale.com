@@ -115,10 +115,10 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 NEXT_PUBLIC_SITE_URL=https://www.aliantehomesforsale.com
 NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-verification-code
 
-# Cloudflare Images (hosted assets — primary CDN). Git public/images is the backup.
-# Production (VERCEL_ENV=production) uses https://imagedelivery.net/byE6BTe9lNqo21V57n4aPQ/<id>/public
-# Local/preview stay on git unless NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true
-# Kill switch: NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=false
+# Cloudflare Images (hosted). Git public/images is live until uploads exist.
+# After `npm run media:upload` succeeds, set on Vercel:
+# NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true
+# Delivery: https://imagedelivery.net/byE6BTe9lNqo21V57n4aPQ/<id>/public
 # Optional R2 tertiary (gray-cloud host only — never orange-cloud www):
 # NEXT_PUBLIC_CLOUDFLARE_MEDIA_BASE=https://media.aliantehomesforsale.com
 # CLOUDFLARE_API_TOKEN=   # Images:Edit — never commit
@@ -129,7 +129,7 @@ NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-verification-code
 VERCEL_URL=https://your-project.vercel.app
 ```
 
-Copy `.env.example` to `.env.local`. After adding photos, run `npm run media:upload` when `CLOUDFLARE_API_TOKEN` is set (Account → Images → Edit). Until objects exist on Images, local/preview still serve `/images` and `/og-image.jpg` from git. Vercel production uses imagedelivery.net; `MediaImage` falls back to git if a hosted object 404s. Optional `npm run media:upload:r2` copies the same files to R2 as tertiary storage.
+Copy `.env.example` to `.env.local`. After adding photos, run `npm run media:upload` when `CLOUDFLARE_API_TOKEN` is set (Account → Images → Edit). Until hosted objects exist, the site serves `/images` and `/og-image.jpg` from git (including Vercel production). After a successful upload, set `NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true` on Vercel. Optional `npm run media:upload:r2` copies the same files to R2 as tertiary storage.
 
 ### Next.js Configuration
 

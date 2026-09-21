@@ -170,5 +170,5 @@ console.log(
   `Cloudflare Images upload complete. uploaded=${uploaded} replaced=${replaced} skipped=${skipped}`
 );
 console.log(
-  'Production (VERCEL_ENV=production) serves these URLs. Set NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=false to force git/R2.'
+  'Hosted Images upload complete. Set NEXT_PUBLIC_CLOUDFLARE_IMAGES_ENABLED=true on Vercel after objects exist.'
 );
