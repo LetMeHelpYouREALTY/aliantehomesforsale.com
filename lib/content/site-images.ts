@@ -357,6 +357,19 @@ export const siteImages = {
     'volume-builders.jpg',
     'Row of similar new-construction homes near Aliante, North Las Vegas'
   ),
+  builderWarranty: img(
+    'builder-warranty.jpg',
+    'Never-lived-in new construction home near Aliante, North Las Vegas 89084'
+  ),
+  golfDawn: img('golf-dawn.jpg', 'Aliante Golf Club fairway at dawn in North Las Vegas 89084'),
+  officeSuites: img(
+    'office-suites.jpg',
+    'Office corridor at Aliante Corporate Center, 2590 Nature Park Drive, North Las Vegas 89084'
+  ),
+  gatedCcrs: img(
+    'gated-ccrs.jpg',
+    'HOA architectural walls and gated entry in Aliante, North Las Vegas 89084'
+  ),
 } as const;
 
 /** Hero photo for each public pathname (matches that page’s H1). */

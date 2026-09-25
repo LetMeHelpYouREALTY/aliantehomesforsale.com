@@ -81,7 +81,7 @@ export default function GolfHomesContent() {
             Comps, buyer pool, and resale on fairway lots
           </h2>
           <HeadingPhoto
-            image={siteImages.golf}
+            image={siteImages.pricingComps}
             caption="Fairway lots draw a smaller buyer pool — confirm live comps for that lot"
           />
 
@@ -103,7 +103,7 @@ export default function GolfHomesContent() {
               Golf-course living: balls, dawn tee times, and views
             </h3>
             <HeadingPhoto
-              image={siteImages.golfLotTour}
+              image={siteImages.golfDawn}
               caption="Walk the lot at more than one hour — errant balls and morning play are real"
             />
 

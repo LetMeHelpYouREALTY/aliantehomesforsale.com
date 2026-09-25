@@ -61,7 +61,7 @@ export default function GatedCommunitiesContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Aliante's Gated Villages
+            Gated villages inside Aliante, North Las Vegas 89084
           </h2>
           <HeadingPhoto
             image={siteImages.gatedGate}
@@ -144,10 +144,10 @@ export default function GatedCommunitiesContent() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            What to Know Before Buying in a Gated Community
+            HOA dues, CC&Rs, and guest lists in Aliante gated villages
           </h2>
           <HeadingPhoto
-            image={siteImages.gatedHoa}
+            image={siteImages.gatedCcrs}
             caption="HOA architectural walls and controlled access — read CC&Rs before you offer"
           />
 

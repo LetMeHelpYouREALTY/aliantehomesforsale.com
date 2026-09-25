@@ -22,6 +22,24 @@ const builderCards = [
     image: siteImages.triPointe,
     caption: 'Northwest Las Vegas collections',
   },
+  {
+    name: 'Del Webb',
+    href: '/builders/del-webb',
+    image: siteImages.delWebb,
+    caption: 'Sun City Aliante 55+ in ZIP 89084',
+  },
+  {
+    name: 'Toll Brothers',
+    href: '/builders/toll-brothers',
+    image: siteImages.tollBrothers,
+    caption: 'Elkhorn Grove 89131 — not 89084',
+  },
+  {
+    name: 'Richmond American',
+    href: '/builders/richmond-american',
+    image: siteImages.richmondAmerican,
+    caption: 'Confirm whether the community is inside 89084',
+  },
 ];
 
 export default function QuickMoveInHomes() {
@@ -30,7 +48,7 @@ export default function QuickMoveInHomes() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            New Construction & Quick Move-In
+            Quick-move-in new construction near Aliante 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Inventory, incentives, and close dates change with each builder release. Confirm current

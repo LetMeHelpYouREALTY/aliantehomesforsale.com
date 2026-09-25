@@ -42,7 +42,7 @@ function CategoryCard({ title, description, href, image }: CategoryCardProps) {
             e.currentTarget.style.backgroundColor = '#ed8936';
           }}
         >
-          View Properties →
+          View {title} →
         </a>
       </div>
     </article>
@@ -86,7 +86,7 @@ export default function PropertyCategories() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Browse by Category
+            Browse Aliante 89084 homes by type
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Filter Aliante 89084 homes on live MLS — inventory changes throughout the day.

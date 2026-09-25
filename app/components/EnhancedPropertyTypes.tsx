@@ -62,7 +62,7 @@ function PropertyTypeCard({ title, features, link, image }: PropertyTypeCardProp
             e.currentTarget.style.color = '#2c5aa0';
           }}
         >
-          Learn More →
+          Browse {title} →
         </a>
       </div>
     </article>
@@ -127,7 +127,7 @@ export default function EnhancedPropertyTypes() {
         <div className="text-center mb-12">
           <AgentPhoto size={120} className="mx-auto mb-6 shadow-lg" />
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Explore Property Types
+            Aliante home types in North Las Vegas 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Compare gated villages, 55+ Del Webb, golf-course lots, and new construction. Confirm

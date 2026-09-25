@@ -54,7 +54,7 @@ export default function WhyNewConstruction() {
         'Builder credits, upgrades, and rate buydowns change with the week. Confirm today’s sheet — I will not publish a stale dollar amount.',
     },
     {
-      image: siteImages.constructionWalkthrough,
+      image: siteImages.builderWarranty,
       title: 'Builder warranties',
       description:
         'Warranty length and coverage vary by builder and component. Read the warranty booklet for that community before you write — I will not publish a one-size term.',

@@ -31,7 +31,7 @@ export default function NeighborhoodComparison({
         </div>
 
         <div className="overflow-x-auto rounded-xl shadow-xl">
-          <table className="w-full min-w-[900px] bg-white">
+          <table className="w-full min-w-[1100px] bg-white">
             <thead>
               <tr style={{ backgroundColor: '#1a365d' }}>
                 <th className="px-6 py-4 text-left text-white font-bold">Feature</th>
@@ -40,6 +40,7 @@ export default function NeighborhoodComparison({
                 <th className="px-6 py-4 text-left text-white font-bold">Club Aliante</th>
                 <th className="px-6 py-4 text-left text-white font-bold">The Paseos</th>
                 <th className="px-6 py-4 text-left text-white font-bold">Sun City Aliante</th>
+                <th className="px-6 py-4 text-left text-white font-bold">Tule Springs</th>
               </tr>
             </thead>
             <tbody>
@@ -52,6 +53,7 @@ export default function NeighborhoodComparison({
                 <td className="px-6 py-4 text-gray-700">Confirm live MLS</td>
                 <td className="px-6 py-4 text-gray-700">Confirm live MLS</td>
                 <td className="px-6 py-4 text-gray-700">Confirm live MLS</td>
+                <td className="px-6 py-4 text-gray-700">Confirm live inventory</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
@@ -62,6 +64,7 @@ export default function NeighborhoodComparison({
                 <td className="px-6 py-4 text-gray-700">Golf-course lots</td>
                 <td className="px-6 py-4 text-gray-700">Single-family, townhomes</td>
                 <td className="px-6 py-4 text-gray-700">Single-family, villas</td>
+                <td className="px-6 py-4 text-gray-700">New construction</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
@@ -72,6 +75,7 @@ export default function NeighborhoodComparison({
                 <td className="px-6 py-4 text-gray-700">Fairway lots</td>
                 <td className="px-6 py-4 text-gray-700">Near Aliante Golf Club</td>
                 <td className="px-6 py-4 text-gray-700">Aliante Golf Club nearby</td>
+                <td className="px-6 py-4 text-gray-700">Floyd Lamb Park nearby</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
@@ -82,11 +86,13 @@ export default function NeighborhoodComparison({
                 <td className="px-6 py-4 text-gray-700">Gated</td>
                 <td className="px-6 py-4 text-gray-700">Open</td>
                 <td className="px-6 py-4 text-gray-700">55+ occupancy</td>
+                <td className="px-6 py-4 text-gray-700">Open / builder gates</td>
               </tr>
               <tr className="hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4 font-bold" style={{ color: '#1a365d' }}>
-                  Attendance
+                  CCSD boundary
                 </td>
+                <td className="px-6 py-4 text-gray-700">Confirm CCSD boundary</td>
                 <td className="px-6 py-4 text-gray-700">Confirm CCSD boundary</td>
                 <td className="px-6 py-4 text-gray-700">Confirm CCSD boundary</td>
                 <td className="px-6 py-4 text-gray-700">Confirm CCSD boundary</td>
