@@ -1,6 +1,7 @@
-import { pageHero } from '../../lib/content/site-images';
+import { pageHero, siteImages } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
+import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
@@ -40,6 +41,10 @@ export default function TermsOfService() {
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             Use of Services and Website
           </h3>
+          <HeadingPhoto
+            image={siteImages.termsOfService}
+            caption="Terms for using AlianteHomesForSale.com from Suite 275, North Las Vegas 89084"
+          />
 
           <p className="leading-relaxed">
             You may use our website and services only for lawful purposes and in accordance with

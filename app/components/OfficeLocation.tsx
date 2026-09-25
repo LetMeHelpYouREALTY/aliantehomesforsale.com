@@ -1,5 +1,6 @@
 import { siteImages } from '../../lib/content/site-images';
 import { siteConfig } from '../../lib/site-config';
+import HeadingPhoto from './HeadingPhoto';
 import MediaImage from './MediaImage';
 
 /**
@@ -25,6 +26,12 @@ export default function OfficeLocation() {
             Plan your visit with {agentName} at Aliante Corporate Center in North Las Vegas. Confirm
             parking when you arrive.
           </p>
+          <div className="max-w-4xl mx-auto text-left mt-8">
+            <HeadingPhoto
+              image={siteImages.officeNap}
+              caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-stretch">

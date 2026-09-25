@@ -55,6 +55,10 @@ export default function MarketReportContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Current Market Trends and Indicators
             </h3>
+            <HeadingPhoto
+              image={siteImages.marketReport}
+              caption="Aliante 89084 housing grid — read live MLS, not a stale median"
+            />
 
             <p className="leading-relaxed">
               Days on market changes with the week. Well-priced homes can still move quickly when
@@ -99,6 +103,10 @@ export default function MarketReportContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Interest Rate Impact on Affordability
             </h3>
+            <HeadingPhoto
+              image={siteImages.lenderMeeting}
+              caption="Rate and payment conversations at a North Las Vegas office campus"
+            />
 
             <p className="leading-relaxed">
               Interest rates remain the single most important factor affecting housing affordability

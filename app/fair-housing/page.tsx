@@ -1,6 +1,7 @@
-import { pageHero } from '../../lib/content/site-images';
+import { pageHero, siteImages } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
+import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
@@ -42,6 +43,10 @@ export default function FairHousing() {
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             Our Commitment to Equal Housing Opportunity
           </h3>
+          <HeadingPhoto
+            image={siteImages.fairHousing}
+            caption="Equal housing opportunity on every Aliante listing and buyer tour in ZIP 89084"
+          />
 
           <p className="leading-relaxed">
             We provide professional real estate services to all clients and customers without regard

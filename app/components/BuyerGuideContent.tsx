@@ -162,6 +162,10 @@ export default function BuyerGuideContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Search Aliante MLS and tour 89084 homes with a buyer’s agent
             </h3>
+            <HeadingPhoto
+              image={siteImages.buyerSearch}
+              caption="Live MLS search for Aliante streets — then tour the village you will actually buy"
+            />
 
             <p className="leading-relaxed">
               Once you are pre-approved, we set a RealScout / MLS search that emails you when a

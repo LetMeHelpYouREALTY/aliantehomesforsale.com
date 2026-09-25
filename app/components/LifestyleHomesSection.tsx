@@ -25,7 +25,7 @@ export default function LifestyleHomesSection() {
           </p>
         </div>
         <HeadingPhoto
-          image={siteImages.homesForSale}
+          image={siteImages.propertyTypesMarket}
           caption="Gated, golf, new construction, and Sun City Aliante — then search live MLS"
         />
 

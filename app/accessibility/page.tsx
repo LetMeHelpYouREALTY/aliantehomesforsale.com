@@ -1,6 +1,7 @@
-import { pageHero } from '../../lib/content/site-images';
+import { pageHero, siteImages } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
+import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
@@ -37,6 +38,10 @@ export default function Accessibility() {
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             Accessibility Features
           </h3>
+          <HeadingPhoto
+            image={siteImages.accessibility}
+            caption="Accessible entrance at 2590 Nature Park Drive, North Las Vegas 89084"
+          />
 
           <p className="leading-relaxed">
             The site uses semantic HTML, labeled form fields, a skip link, and keyboard-focus styles

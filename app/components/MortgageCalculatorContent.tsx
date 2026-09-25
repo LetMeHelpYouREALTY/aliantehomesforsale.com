@@ -52,6 +52,10 @@ export default function MortgageCalculatorContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               How rates change what you can pay
             </h3>
+            <HeadingPhoto
+              image={siteImages.lenderMeeting}
+              caption="Use the rate your lender actually quoted — this page does not lock a rate"
+            />
 
             <p className="leading-relaxed">
               Interest rates remain the single most important variable affecting affordability. On
@@ -112,6 +116,10 @@ export default function MortgageCalculatorContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Hidden Costs and Budget Planning
             </h3>
+            <HeadingPhoto
+              image={siteImages.mortgage}
+              caption="Payment estimate for an Aliante home — taxes, HOA, and insurance are extra"
+            />
 
             <p className="leading-relaxed">
               Beyond your monthly payment, homeownership includes additional costs that renters
@@ -143,7 +151,7 @@ export default function MortgageCalculatorContent() {
             Working with Experienced Mortgage Professionals
           </h2>
           <HeadingPhoto
-            image={siteImages.officeNap}
+            image={siteImages.lenderMeeting}
             caption="Ask for lender introductions from Suite 275 — pre-approval is not cash"
           />
 

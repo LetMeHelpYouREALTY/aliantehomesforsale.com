@@ -29,6 +29,10 @@ export default function TriPointeContent() {
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>
           Compare Tri Pointe with builders you can actually tour for Aliante
         </h3>
+        <HeadingPhoto
+          image={siteImages.chooseBuilder}
+          caption="Compare Tri Pointe with Lennar and Del Webb you can actually tour for Aliante"
+        />
         <ul className="list-disc pl-6 space-y-2">
           <li>
             <Link href="/builders/lennar" className="font-semibold" style={{ color: '#2c5aa0' }}>

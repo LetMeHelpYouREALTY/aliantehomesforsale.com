@@ -77,7 +77,7 @@ export default function AboutExpertise() {
             CMAs, and rental-property analysis.
           </p>
           <HeadingPhoto
-            image={siteImages.about}
+            image={siteImages.specialistStreet}
             caption="Aliante realtor services from 2590 Nature Park Drive, Suite 275"
           />
         </div>

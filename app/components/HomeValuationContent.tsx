@@ -39,6 +39,10 @@ export default function HomeValuationContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               What goes into a CMA for Club Aliante vs Sun City Aliante
             </h3>
+            <HeadingPhoto
+              image={siteImages.pricingComps}
+              caption="Village comps for Club Aliante versus Sun City Aliante in ZIP 89084"
+            />
 
             <p className="leading-relaxed">
               A professional CMA examines multiple data points to arrive at an accurate value
@@ -104,6 +108,10 @@ export default function HomeValuationContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Timing an Aliante listing in the North Las Vegas market
             </h3>
+            <HeadingPhoto
+              image={siteImages.seasonalMarket}
+              caption="Aliante 89084 streets at dusk — listing volume changes with the season"
+            />
 
             <p className="leading-relaxed">
               Home values move with inventory, rates, and season. Confirm current medians and days
