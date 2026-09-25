@@ -38,12 +38,12 @@ export default function AboutStats() {
     {
       number: '89084',
       label: 'Hyperlocal ZIP focus',
-      image: siteImages.neighborhoods,
+      image: siteImages.specialistStreet,
     },
     {
       number: 'BHHS NV',
       label: 'Berkshire Hathaway HomeServices',
-      image: siteImages.homesForSale,
+      image: siteImages.about,
     },
   ];
 

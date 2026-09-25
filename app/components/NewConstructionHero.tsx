@@ -2,6 +2,7 @@ import { type SiteImage, siteImages } from '../../lib/content/site-images';
 import AfterHeroListings from './AfterHeroListings';
 import AgentPhoto from './AgentPhoto';
 import HeroBackdrop from './HeroBackdrop';
+import MediaImage from './MediaImage';
 
 type NewConstructionHeroProps = {
   title?: string;
@@ -79,6 +80,15 @@ export default function NewConstructionHero({
             </div>
 
             <div className="mt-6 bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl p-6 text-center shadow-xl">
+              <div className="relative h-32 mb-4 overflow-hidden rounded-lg">
+                <MediaImage
+                  src={siteImages.incentives.src}
+                  alt={siteImages.incentives.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 640px"
+                  className="object-cover"
+                />
+              </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Confirm current builder incentives
               </h3>

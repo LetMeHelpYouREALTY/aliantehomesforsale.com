@@ -51,6 +51,10 @@ export default function SellerChecklistContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Pre-listing prep for Club Aliante, gated, and Sun City homes
             </h3>
+            <HeadingPhoto
+              image={siteImages.sellerPrep}
+              caption="Aliante curb appeal prepared for MLS photos in North Las Vegas 89084"
+            />
 
             <p className="leading-relaxed">
               Before your home hits the MLS, we'll walk the house together, note repairs that affect

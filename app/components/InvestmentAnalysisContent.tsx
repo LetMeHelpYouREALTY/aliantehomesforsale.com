@@ -50,6 +50,10 @@ export default function InvestmentAnalysisContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Cash flow math on an Aliante address in ZIP 89084
             </h3>
+            <HeadingPhoto
+              image={siteImages.investment}
+              caption="Buy-and-hold math starts with the actual Aliante address, not a valley average"
+            />
 
             <p className="leading-relaxed">
               Investment property analysis requires understanding multiple financial metrics that
@@ -99,6 +103,10 @@ export default function InvestmentAnalysisContent() {
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Who manages Aliante rentals (not this realtor)
             </h3>
+            <HeadingPhoto
+              image={siteImages.propertyManagement}
+              caption="Suite 275 lists homes. Leasing and HOA management are different companies."
+            />
 
             <p className="leading-relaxed">
               Successful real estate investment extends beyond acquisition – property management

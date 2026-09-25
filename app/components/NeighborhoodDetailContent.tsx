@@ -12,7 +12,7 @@ const villageHeadingPhotos: Record<string, SiteImage> = {
   'desert-willows': siteImages.desertWillows,
   paseos: siteImages.paseos,
   'club-aliante': siteImages.golfFairway,
-  'tule-springs': siteImages.newConstruction,
+  'tule-springs': siteImages.tuleSprings,
   compare: siteImages.compare,
 };
 
@@ -41,7 +41,7 @@ export default function NeighborhoodDetailContent({ village }: NeighborhoodDetai
               <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
                 {section.heading}
               </h3>
-              <HeadingPhoto image={headingMatchedImage(section.heading)} />
+              <HeadingPhoto image={headingMatchedImage(section.heading, headingPhoto)} />
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)} className="leading-relaxed">
                   {paragraph}

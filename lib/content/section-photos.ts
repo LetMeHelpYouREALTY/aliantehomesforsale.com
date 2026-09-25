@@ -9,6 +9,30 @@ const HEADING_PHOTO_MATCHES: readonly { needle: string; image: SiteImage }[] = [
   { needle: 'information we collect', image: siteImages.privacyPolicy },
   { needle: 'terms', image: siteImages.termsOfService },
   { needle: 'use of services', image: siteImages.termsOfService },
+  { needle: 'lennar versus', image: siteImages.chooseBuilder },
+  { needle: 'versus horton', image: siteImages.chooseBuilder },
+  { needle: 'fair comparison', image: siteImages.compare },
+  { needle: 'versus aliante', image: siteImages.tuleSprings },
+  { needle: '89131', image: siteImages.tollBrothers },
+  { needle: 'how i represent', image: siteImages.builderAdvocate },
+  { needle: 'buyer agency at', image: siteImages.builderAdvocate },
+  { needle: 'tri pointe', image: siteImages.triPointe },
+  { needle: 'toll brothers', image: siteImages.tollBrothers },
+  { needle: 'richmond', image: siteImages.richmondAmerican },
+  { needle: 'cash flow', image: siteImages.investment },
+  { needle: 'who manages', image: siteImages.propertyManagement },
+  { needle: 'property management', image: siteImages.propertyManagement },
+  { needle: 'hidden cost', image: siteImages.mortgage },
+  { needle: 'interest rate', image: siteImages.lenderMeeting },
+  { needle: 'how rates', image: siteImages.lenderMeeting },
+  { needle: 'pre-listing', image: siteImages.sellerPrep },
+  { needle: 'market report', image: siteImages.marketReport },
+  { needle: 'buyer representation', image: siteImages.buyerTour },
+  { needle: 'selling an aliante', image: siteImages.sellerPrep },
+  { needle: 'our team', image: siteImages.about },
+  { needle: 'home valuation', image: siteImages.homeValuation },
+  { needle: 'hyperlocal', image: siteImages.specialistStreet },
+  { needle: 'investment', image: siteImages.investment },
   { needle: 'accessib', image: siteImages.accessibility },
   { needle: 'fair housing', image: siteImages.fairHousing },
   { needle: 'equal housing', image: siteImages.fairHousing },
@@ -132,14 +156,15 @@ const HEADING_PHOTO_MATCHES: readonly { needle: string; image: SiteImage }[] = [
   { needle: 'office', image: siteImages.officeNap },
   { needle: 'nap', image: siteImages.officeNap },
   { needle: 'contact', image: siteImages.officeNap },
+  { needle: 'frequently asked', image: siteImages.officeNap },
 ];
 
 /**
  * Pick a heading-matched photo from H2/H3 text. Architecture and landscape only.
  * Fair Housing: never map “family,” “safe,” or school-quality language to a photo.
  */
-export function headingMatchedImage(heading: string): SiteImage {
+export function headingMatchedImage(heading: string, fallback?: SiteImage): SiteImage {
   const h = heading.toLowerCase();
   const match = HEADING_PHOTO_MATCHES.find((row) => h.includes(row.needle));
-  return match?.image ?? siteImages.neighborhoods;
+  return match?.image ?? fallback ?? siteImages.neighborhoods;
 }

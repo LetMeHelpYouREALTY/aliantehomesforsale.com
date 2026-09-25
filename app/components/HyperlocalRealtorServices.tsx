@@ -32,7 +32,7 @@ export default function HyperlocalRealtorServices() {
           </p>
         </div>
         <HeadingPhoto
-          image={siteImages.homesForSale}
+          image={siteImages.specialistStreet}
           caption="Buyer, seller, new construction, 55+, CMA, and rental analysis in ZIP 89084"
         />
 

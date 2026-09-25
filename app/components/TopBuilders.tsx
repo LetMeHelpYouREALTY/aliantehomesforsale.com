@@ -1,6 +1,7 @@
 'use client';
 
-import { siteImages } from '../../lib/content/site-images';
+import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
 interface BuilderCardProps {
@@ -13,6 +14,7 @@ interface BuilderCardProps {
   incentives: string[];
   primaryCTA: { text: string; href: string };
   secondaryCTA: { text: string; href: string };
+  image: SiteImage;
   featured?: boolean;
 }
 
@@ -26,6 +28,7 @@ function BuilderCard({
   incentives,
   primaryCTA,
   secondaryCTA,
+  image,
   featured,
 }: BuilderCardProps) {
   return (
@@ -54,6 +57,7 @@ function BuilderCard({
       </div>
 
       <div className="p-6">
+        <CardPhoto image={image} heightClass="h-36" />
         <h3 className="text-2xl font-bold mb-3" style={{ color: '#1a365d' }}>
           {title}
         </h3>
@@ -132,6 +136,7 @@ export default function TopBuilders() {
         { value: 'Confirm', label: 'Price sheet' },
       ],
       title: 'Lennar — independent buyer representation',
+      image: siteImages.lennar,
       description:
         'I represent you on the Lennar contract in ZIP 89084 — not the builder. Confirm live spec homes, lot premiums, and incentives before you write.',
       communities: [
@@ -157,6 +162,7 @@ export default function TopBuilders() {
         { value: 'Confirm', label: 'Price sheet' },
       ],
       title: 'D.R. Horton — Villages at Tule Springs',
+      image: siteImages.drHorton,
       description:
         'Compare Tule Springs new homes with Aliante resale. D.R. Horton is adjacent to Aliante, not inside the master plan. Confirm live inventory before you tour.',
       communities: [
@@ -182,6 +188,7 @@ export default function TopBuilders() {
         { value: 'Confirm', label: 'Community' },
       ],
       title: 'Tri Pointe Homes — northwest Las Vegas',
+      image: siteImages.triPointe,
       description:
         'Tri Pointe is not currently listing a community inside the Aliante master plan. Active collections are northwest (Kyle Pointe and Citrine near Skye Canyon).',
       communities: [
@@ -204,6 +211,7 @@ export default function TopBuilders() {
         { value: 'Confirm', label: 'Inventory' },
       ],
       title: 'Del Webb — Sun City Aliante',
+      image: siteImages.delWebb,
       description:
         'Age-qualified Del Webb inside ZIP 89084 — not Ardiente (89081), not Del Webb Summerlin. Confirm live inventory and age occupancy rules before you offer.',
       communities: [
@@ -226,6 +234,7 @@ export default function TopBuilders() {
         { value: 'Confirm', label: 'Rate sheet' },
       ],
       title: 'Toll Brothers — Elkhorn Grove',
+      image: siteImages.tollBrothers,
       description:
         'Toll Brothers is not currently building inside Aliante ZIP 89084. Closest community: Elkhorn Grove, 5819 Kings Bluff Ave, Las Vegas NV 89131.',
       communities: [
@@ -243,31 +252,29 @@ export default function TopBuilders() {
   ];
 
   return (
-    <>
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-              New-home builders near Aliante 89084
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
-            </p>
-            <div className="max-w-4xl mx-auto text-left">
-              <HeadingPhoto
-                image={siteImages.builders}
-                caption="Builders active near Aliante 89084 — confirm the live map before you tour"
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {builders.map((builder) => (
-              <BuilderCard key={builder.name} {...builder} />
-            ))}
+    <section className="py-16 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
+            New-home builders near Aliante 89084
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Independent buyer’s agent. Confirm live inventory — I will not publish a stale count.
+          </p>
+          <div className="max-w-4xl mx-auto text-left">
+            <HeadingPhoto
+              image={siteImages.builders}
+              caption="Builders active near Aliante 89084 — confirm the live map before you tour"
+            />
           </div>
         </div>
-      </section>
-    </>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {builders.map((builder) => (
+            <BuilderCard key={builder.name} {...builder} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
