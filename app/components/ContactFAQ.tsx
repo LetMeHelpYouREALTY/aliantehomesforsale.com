@@ -21,5 +21,5 @@ const contactFaqs = [
 ];
 
 export default function ContactFAQ() {
-  return <FAQSection title="Frequently Asked Questions About Contacting Us" faqs={contactFaqs} />;
+  return <FAQSection title="How to reach Dr. Jan Duffy in Aliante 89084" faqs={contactFaqs} />;
 }

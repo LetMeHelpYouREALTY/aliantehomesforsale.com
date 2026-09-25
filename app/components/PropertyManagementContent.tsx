@@ -36,7 +36,7 @@ export default function PropertyManagementContent() {
         <h3 className="text-2xl font-bold mt-10 mb-4" style={{ color: '#2c5aa0' }}>
           FirstService Residential vs your Aliante realtor (same building)
         </h3>
-        <CardPhoto image={siteImages.officeNap} heightClass="h-40" />
+        <CardPhoto image={siteImages.officeSuites} heightClass="h-40" />
         <p className="leading-relaxed">
           FirstService Residential has managed the Aliante Master Association since 2003 and keeps a
           North Las Vegas office at 2590 Nature Park Drive, Suite 100. Our sales office is Suite 275

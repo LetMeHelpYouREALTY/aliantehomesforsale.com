@@ -34,6 +34,12 @@ const neighborhoods = [
     image: siteImages.sunCity,
     caption: 'Del Webb 55+ recreation campus',
   },
+  {
+    name: 'Tule Springs',
+    href: '/neighborhoods/tule-springs',
+    image: siteImages.tuleSprings,
+    caption: 'New construction near Floyd Lamb Park',
+  },
 ];
 
 export default function EnhancedFeaturedProperties() {
@@ -42,7 +48,7 @@ export default function EnhancedFeaturedProperties() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#1a365d' }}>
-            Featured Neighborhoods
+            Aliante neighborhoods in North Las Vegas 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Browse Aliante villages, then open live MLS search. Inventory, prices, and days on
@@ -55,7 +61,7 @@ export default function EnhancedFeaturedProperties() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {neighborhoods.map((item) => (
             <Link
               key={item.href}

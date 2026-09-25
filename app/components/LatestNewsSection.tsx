@@ -13,7 +13,7 @@ export default async function LatestNewsSection() {
     <section className="py-16 px-4 bg-[#f7f9fc]" aria-labelledby="latest-news-heading">
       <div className="max-w-7xl mx-auto">
         <h2 id="latest-news-heading" className="text-3xl font-bold text-center mb-4 text-[#0a2540]">
-          Latest News
+          Aliante and North Las Vegas market notes
         </h2>
         <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           Tips and trends for Aliante and North Las Vegas home buyers and sellers. Updated regularly

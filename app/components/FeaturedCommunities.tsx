@@ -64,7 +64,7 @@ export default function FeaturedCommunities() {
             className="text-4xl sm:text-5xl font-bold mb-4"
             style={{ color: '#1a365d' }}
           >
-            Featured Communities
+            Featured Aliante villages in North Las Vegas 89084
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Explore Aliante villages by location, amenities, and home style. RealScout search is on
@@ -111,7 +111,7 @@ export default function FeaturedCommunities() {
             className="inline-block py-3 px-8 rounded-lg font-semibold text-white transition-colors focus:ring-4 focus:ring-teal-300 focus:outline-none"
             style={{ backgroundColor: '#16B286' }}
           >
-            View All Neighborhoods
+            View all Aliante neighborhoods
           </Link>
         </div>
       </div>

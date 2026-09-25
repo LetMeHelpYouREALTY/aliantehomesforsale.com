@@ -53,7 +53,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Amenities and Recreation
+              Sun City Aliante recreation campus in ZIP 89084
             </h3>
             <HeadingPhoto
               image={siteImages.sunCityRec}
@@ -81,7 +81,7 @@ export default function SunCityContent() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1a365d' }}>
-            Home Styles and Floor Plans
+            Single-story Del Webb floor plans at Sun City Aliante
           </h2>
           <HeadingPhoto
             image={siteImages.sunCityPlans}
@@ -107,7 +107,7 @@ export default function SunCityContent() {
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
-              Healthcare and Services Access
+              Healthcare near Sun City Aliante, North Las Vegas
             </h3>
             <HeadingPhoto
               image={siteImages.healthcareNlv}

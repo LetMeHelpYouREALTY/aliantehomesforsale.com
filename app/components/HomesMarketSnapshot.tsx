@@ -16,7 +16,7 @@ export default function HomesMarketSnapshot() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 id="homes-market-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Aliante Market Insights
+            Aliante 89084 market snapshot
           </h2>
           <p className="text-xl text-white/90 mb-8">{marketAsOfLabel}</p>
           <figure className="max-w-3xl mx-auto overflow-hidden rounded-2xl border border-white/20">

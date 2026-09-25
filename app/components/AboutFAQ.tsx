@@ -21,5 +21,5 @@ const aboutFaqs = [
 ];
 
 export default function AboutFAQ() {
-  return <FAQSection title="Frequently Asked Questions About Our Team" faqs={aboutFaqs} />;
+  return <FAQSection title="About Dr. Jan Duffy, Aliante realtor in ZIP 89084" faqs={aboutFaqs} />;
 }

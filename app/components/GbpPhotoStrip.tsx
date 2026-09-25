@@ -48,6 +48,33 @@ export default function GbpPhotoStrip() {
             </figure>
           ))}
         </div>
+        <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+          <a
+            href={`tel:${siteConfig.phoneTel}`}
+            className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold text-white"
+            style={{ backgroundColor: '#ed8936' }}
+          >
+            Call {siteConfig.phone}
+          </a>
+          <a
+            href={siteConfig.maps.directionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold text-white"
+            style={{ backgroundColor: '#2c5aa0' }}
+          >
+            Directions
+          </a>
+          <a
+            href={siteConfig.maps.reviewsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center items-center px-6 py-3 rounded-lg font-semibold border-2"
+            style={{ borderColor: '#16B286', color: '#16B286' }}
+          >
+            View Google Reviews
+          </a>
+        </div>
       </div>
     </section>
   );
