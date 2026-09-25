@@ -93,8 +93,8 @@ export default function PropertyCategories() {
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto
-              image={siteImages.search}
-              caption="Aerial of Aliante streets — gated, golf, 55+, and new construction"
+              image={siteImages.propertyTypesMarket}
+              caption="Gated, golf, 55+, and new construction home types in Aliante 89084"
             />
           </div>
         </div>

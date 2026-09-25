@@ -13,7 +13,7 @@ export default function AboutCommitment() {
             Our Commitment
           </h2>
           <HeadingPhoto
-            image={siteImages.about}
+            image={siteImages.licenseCredential}
             caption="Dr. Jan Duffy, Aliante realtor at 2590 Nature Park Drive, Suite 275"
           />
         </div>

@@ -34,7 +34,7 @@ export default function NearbyLocatorMap() {
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto
-              image={siteImages.amenities}
+              image={siteImages.nearbyAliante}
               caption="Parks, golf, and recreation near Aliante Corporate Center in ZIP 89084"
             />
           </div>
@@ -55,6 +55,10 @@ export default function NearbyLocatorMap() {
           </div>
 
           <div className="flex flex-col justify-center">
+            <HeadingPhoto
+              image={siteImages.villageTour}
+              caption="Walk Aliante streets, then open Google Maps for turn-by-turn directions"
+            />
             <h3 className="text-xl font-bold mb-2" style={{ color: '#1a365d' }}>
               Explore the neighborhood
             </h3>

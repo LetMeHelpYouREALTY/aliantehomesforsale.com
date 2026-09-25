@@ -61,7 +61,7 @@ export default function AboutStats() {
             Google Business Profile reviews — I will not publish an unverified star rating here.
           </p>
           <HeadingPhoto
-            image={siteImages.officeNap}
+            image={siteImages.licenseCredential}
             caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084"
           />
         </div>

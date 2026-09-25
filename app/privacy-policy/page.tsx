@@ -1,6 +1,7 @@
-import { pageHero } from '../../lib/content/site-images';
+import { pageHero, siteImages } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
 import AboutHero from '../components/AboutHero';
+import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
@@ -38,6 +39,10 @@ export default function PrivacyPolicy() {
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
             Information We Collect
           </h3>
+          <HeadingPhoto
+            image={siteImages.privacyPolicy}
+            caption="Inquiry data for Aliante 89084 stays at Suite 275 — we do not sell contact lists"
+          />
 
           <p className="leading-relaxed">
             We collect several types of information from and about users of our website and

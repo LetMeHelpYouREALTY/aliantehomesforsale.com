@@ -345,6 +345,18 @@ export const siteImages = {
     'energy-efficiency.jpg',
     'New North Las Vegas home with rooftop solar near Aliante ZIP 89084'
   ),
+  nearbyAliante: img(
+    'nearby-aliante.jpg',
+    'Aerial of Aliante parks, pool, and rooftops in North Las Vegas 89084'
+  ),
+  emailOffice: img(
+    'email-office.jpg',
+    'Empty office desk at 2590 Nature Park Drive, North Las Vegas 89084'
+  ),
+  volumeBuilders: img(
+    'volume-builders.jpg',
+    'Row of similar new-construction homes near Aliante, North Las Vegas'
+  ),
 } as const;
 
 /** Hero photo for each public pathname (matches that page’s H1). */

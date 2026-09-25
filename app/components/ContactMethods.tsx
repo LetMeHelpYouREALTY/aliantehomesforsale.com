@@ -63,7 +63,7 @@ export default function ContactMethods() {
       featured: true,
     },
     {
-      image: siteImages.about,
+      image: siteImages.emailOffice,
       title: 'Email Us',
       primary: 'DrDuffy@AlianteHomesForSale.com',
       details: ['Reply during office hours'],

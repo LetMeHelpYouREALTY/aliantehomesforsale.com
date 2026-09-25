@@ -15,8 +15,8 @@ export default function AgentWelcomeSection() {
           Dr. Jan Duffy Real Estate
         </h2>
         <HeadingPhoto
-          image={siteImages.officeNap}
-          caption="Dr. Jan Duffy · 2590 Nature Park Drive, Suite 275 · North Las Vegas 89084"
+          image={siteImages.licenseCredential}
+          caption="Nevada license S.0197614.LLC · 2590 Nature Park Drive, Suite 275 · North Las Vegas 89084"
         />
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
           Nevada license S.0197614.LLC. Berkshire Hathaway HomeServices Nevada Properties. Aliante

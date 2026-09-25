@@ -47,6 +47,10 @@ export default function LegalContent({
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
               Dr. Jan Duffy - Aliante Real Estate Specialist
             </h3>
+            <HeadingPhoto
+              image={siteImages.licenseCredential}
+              caption="Nevada license S.0197614.LLC · Suite 275, 2590 Nature Park Drive"
+            />
 
             <p className="leading-relaxed">
               <strong>Office Address:</strong>
@@ -79,7 +83,7 @@ export default function LegalContent({
             Updates and Changes
           </h2>
           <HeadingPhoto
-            image={siteImages.privacyPolicy}
+            image={headingMatchedImage(title)}
             caption="Policy updates are posted on this site — last-updated date is at the top"
           />
 
