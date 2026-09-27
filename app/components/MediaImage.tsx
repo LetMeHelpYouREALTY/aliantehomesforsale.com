@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState, type ComponentProps } from 'react';
+import { type ComponentProps, useEffect, useState } from 'react';
 import { isCloudflareImagesDeliverySrc } from '../../lib/cloudflare-images';
 import { gitFallbackSrc } from '../../lib/media';
 

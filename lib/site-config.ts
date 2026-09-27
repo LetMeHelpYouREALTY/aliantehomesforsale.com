@@ -117,6 +117,7 @@ export const siteConfig = {
     { name: 'Buyer Guide', path: '/buyer-guide' },
     { name: 'About', path: '/about' },
     { name: 'Contact & Directions', path: '/contact' },
+    { name: 'Nearby Amenities', path: '/amenities' },
   ],
   knowsAbout: [
     'Aliante real estate',

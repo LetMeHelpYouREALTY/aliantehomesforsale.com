@@ -1,5 +1,6 @@
 import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
+import AmenityMapSection from '../components/amenities/AmenityMapSection';
 import CommunityAmenities from '../components/CommunityAmenities';
 import ContextualLinks from '../components/ContextualLinks';
 import NeighborhoodCards from '../components/NeighborhoodCards';
@@ -41,6 +42,13 @@ export default function Neighborhoods() {
 
         {/* Community Amenities */}
         <CommunityAmenities />
+
+        <AmenityMapSection
+          id="neighborhoods-nearby"
+          variant="compact"
+          showPhoto={false}
+          heading="Amenities across Aliante villages"
+        />
 
         {/* Neighborhood Comparison Table */}
         <NeighborhoodComparison

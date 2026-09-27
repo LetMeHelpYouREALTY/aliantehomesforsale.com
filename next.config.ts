@@ -169,6 +169,11 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/nearby-amenities',
+        destination: '/amenities',
+        permanent: true,
+      },
       // Consolidate duplicate Sun City URLs onto the stronger slug
       {
         source: '/neighborhoods/sun-city',
