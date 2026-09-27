@@ -8,7 +8,7 @@ export const siteConfig = {
   siteName: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
   defaultTitle: 'Aliante Real Estate | Homes for Sale in North Las Vegas 89084',
   defaultDescription:
-    'Aliante real estate and homes for sale in North Las Vegas, NV 89084. MLS updated about every 15 minutes. Club Aliante, Sun City Aliante 55+, gated communities. Call (702) 707-7273.',
+    'Aliante homes for sale in North Las Vegas 89084. Fresh MLS listings, Club Aliante, Sun City 55+, gated communities. Call (702) 707-7273.',
   agentName: 'Dr. Jan Duffy',
   /** Official circular portrait used for favicon, nav, footer, and agent sections. */
   agentImage: '/images/dr-jan-duffy.png',
