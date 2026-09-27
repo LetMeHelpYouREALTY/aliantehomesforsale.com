@@ -1,7 +1,6 @@
 import { graphIds } from '../graphs/ids';
-import { generateBreadcrumbs, generateFAQSchema } from '../seo-utils';
+import { generateBreadcrumbs } from '../seo-utils';
 import { siteConfig } from '../site-config';
-import { amenitiesPageFaqs } from './amenities-page-content';
 import { alianteCommunityMap } from './community-map-config';
 import { curatedAmenities, formatCuratedAddress } from './curated-amenities';
 
@@ -74,7 +73,7 @@ export function buildAmenitiesPageSchema() {
 
   return {
     '@context': 'https://schema.org',
-    '@graph': [breadcrumb, faq, communityPlace, itemList, agent],
+    '@graph': [breadcrumb, communityPlace, itemList, agent],
   };
 }
 
