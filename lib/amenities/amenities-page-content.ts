@@ -14,7 +14,7 @@ export const amenitiesPageFaqs = [
   {
     question: 'Are there hospitals near Aliante?',
     answer:
-      'Centennial Hills Hospital Medical Center at 6900 N Pecos Rd serves northwest valley communities including Aliante — confirm drive time from your listing.',
+      'Centennial Hills Hospital Medical Center at 6900 N Durango Dr serves northwest valley communities including Aliante — confirm drive time from your listing.',
   },
   {
     question: 'Where is the main park in Aliante?',
@@ -24,7 +24,7 @@ export const amenitiesPageFaqs = [
   {
     question: 'Is there golf in Aliante?',
     answer:
-      'Aliante Golf Club at 7300 Aliante Pkwy is the public 18-hole course next to Club Aliante fairway lots and the casino resort on Aliante Parkway.',
+      'Aliante Golf Club at 3100 W Elkhorn Rd is the public 18-hole course serving Club Aliante fairway lots and surrounding Aliante villages.',
   },
   {
     question: 'How far is Aliante from Harry Reid International Airport?',
@@ -70,7 +70,7 @@ export const amenityGuideSections: AmenityGuideSection[] = [
     id: 'golf',
     title: 'Golf',
     paragraphs: [
-      'Aliante Golf Club shares the 7300 Aliante Pkwy campus with the resort — public play, clubhouse dining, and fairway lots in Club Aliante and nearby villages.',
+      'Aliante Golf Club on West Elkhorn Road offers public play, clubhouse dining, and fairway lots in Club Aliante and nearby villages.',
       'Sun City Aliante 55+ includes its own recreation campus; confirm amenity access and guest rules with the association for the address you will tour.',
     ],
   },
@@ -78,7 +78,7 @@ export const amenityGuideSections: AmenityGuideSection[] = [
     id: 'healthcare',
     title: 'Healthcare & pharmacies',
     paragraphs: [
-      'Centennial Hills Hospital Medical Center at 6900 N Pecos Rd is the acute-care hospital most buyers reference for northwest Las Vegas.',
+      'Centennial Hills Hospital Medical Center at 6900 N Durango Dr is the acute-care hospital most buyers reference for northwest Las Vegas.',
       "Smith's on Aliante Parkway includes a pharmacy counter — confirm hours for the location you will use day to day.",
     ],
   },
@@ -87,7 +87,7 @@ export const amenityGuideSections: AmenityGuideSection[] = [
     title: 'Shopping & services',
     paragraphs: [
       "Smith's Food and Drug at 6855 N Aliante Pkwy covers weekly groceries inside 89084.",
-      'The Centennial Hills retail corridor adds big-box stores, home improvement, and specialty retail west of Aliante — drive time depends on whether you are in Prominence, Paseos, or Tule Springs edge lots.',
+      'Centennial Hills and the 215 corridor west of Aliante add big-box stores, home improvement, and specialty retail — drive time depends on whether you are in Prominence, Paseos, or Tule Springs edge lots.',
     ],
   },
   {

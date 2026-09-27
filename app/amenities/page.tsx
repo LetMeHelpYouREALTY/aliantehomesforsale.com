@@ -48,8 +48,7 @@ export default function AmenitiesPage() {
           <p className="text-lg text-gray-700 max-w-3xl leading-relaxed mb-10">
             Use the interactive map to explore places around the Aliante master plan. Categories
             include restaurants, cafes, grocery, parks, golf, healthcare, pharmacies, shopping,
-            parking, fitness, and schools. When the Google Maps API key is not configured, the embed
-            and curated list below still load without errors.
+            parking, fitness, and schools. Featured places near Aliante are listed alongside the map.
           </p>
           <CommunityAmenityMap variant="full" showAmenitiesPageLink={false} />
         </div>
