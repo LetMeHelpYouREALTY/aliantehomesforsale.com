@@ -21,6 +21,7 @@ const companyLinks = [
   { href: '/sun-city-aliante', label: 'Sun City Aliante' },
   { href: '/seller-checklist', label: 'Seller Checklist' },
   { href: '/schools', label: 'Schools' },
+  { href: '/amenities', label: 'Nearby Amenities' },
   { href: '/fair-housing', label: 'Fair Housing' },
 ];
 

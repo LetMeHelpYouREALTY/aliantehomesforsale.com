@@ -1,5 +1,6 @@
 import { pageMetadata } from '../../lib/seo-utils';
 import AlianteFAQ from '../components/AlianteFAQ';
+import AmenityMapSection from '../components/amenities/AmenityMapSection';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
@@ -18,7 +19,6 @@ export const metadata = pageMetadata({
 
 export default function HomesForSale() {
   return (
-    <>
       <main className="homes-for-sale-page">
         {/* Hero Section */}
         <HomesForSaleHero />
@@ -35,12 +35,19 @@ export default function HomesForSale() {
         {/* Search Tips */}
         <HomesSearchTips />
 
+        <AmenityMapSection
+          id="homes-nearby"
+          variant="compact"
+          showPhoto={false}
+          heading="What's near the homes you'll tour"
+          subheading="Filter restaurants, grocery, parks, golf, and healthcare around Aliante before you write an offer."
+        />
+
         {/* FAQ Section */}
         <AlianteFAQ />
 
         {/* CTA Section */}
         <HomesCTA />
       </main>
-    </>
   );
 }

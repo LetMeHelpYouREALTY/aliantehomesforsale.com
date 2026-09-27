@@ -1,5 +1,6 @@
 import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
+import AmenityMapSection from '../components/amenities/AmenityMapSection';
 import EnhancedFeaturedProperties from '../components/EnhancedFeaturedProperties';
 import EnhancedHero from '../components/EnhancedHero';
 import GatedCommunitiesContent from '../components/GatedCommunitiesContent';
@@ -27,6 +28,12 @@ export default function GatedCommunities() {
       <GatedCommunitiesContent />
       <NeighborhoodCards />
       <EnhancedFeaturedProperties />
+      <AmenityMapSection
+        id="gated-nearby"
+        variant="compact"
+        showPhoto={false}
+        heading="What's near gated Aliante villages"
+      />
       <PageFAQ path="/gated-communities" title="Aliante gated communities FAQ" />
       <HomesCTA />
     </main>

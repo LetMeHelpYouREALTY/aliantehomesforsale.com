@@ -1,5 +1,6 @@
 import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
+import AmenityMapSection from '../components/amenities/AmenityMapSection';
 import CommunityAmenities from '../components/CommunityAmenities';
 import EnhancedHero from '../components/EnhancedHero';
 import GolfHomesContent from '../components/GolfHomesContent';
@@ -25,6 +26,13 @@ export default function GolfHomes() {
       <GolfHomesContent />
       <NeighborhoodCards />
       <CommunityAmenities />
+      <AmenityMapSection
+        id="golf-nearby"
+        variant="compact"
+        showPhoto={false}
+        heading="Golf, dining, and parks near Club Aliante"
+        subheading="Start with the Golf filter for Aliante Golf Club and nearby fairway services."
+      />
       <PageFAQ path="/golf-homes" title="Golf-course lot FAQ" />
       <HomesCTA />
     </main>

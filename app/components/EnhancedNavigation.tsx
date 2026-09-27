@@ -222,6 +222,12 @@ export default function EnhancedNavigation() {
                     >
                       Compare Neighborhoods
                     </Link>
+                    <Link
+                      href="/amenities"
+                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                    >
+                      Nearby Amenities
+                    </Link>
                   </div>
                 )}
               </div>
@@ -469,6 +475,13 @@ export default function EnhancedNavigation() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Golf Course Homes
+                </Link>
+                <Link
+                  href="/amenities"
+                  className="block py-2 px-8 text-sm text-gray-600"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Nearby Amenities
                 </Link>
                 <Link
                   href="/market-report"

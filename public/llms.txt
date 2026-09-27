@@ -38,6 +38,7 @@
 - [Buyer Guide](https://www.aliantehomesforsale.com/buyer-guide): First-time buyer guidance.
 - [About](https://www.aliantehomesforsale.com/about): Agent credentials and experience.
 - [Contact & Directions](https://www.aliantehomesforsale.com/contact): Office map, Get Directions, what’s nearby on Google Maps.
+- [Nearby Amenities](https://www.aliantehomesforsale.com/amenities): Interactive map and hyperlocal guide to dining, parks, golf, healthcare, and schools near Aliante.
 - Nearby: Aliante Casino + Hotel, Aliante Golf Club, Aliante Nature Discovery Park, Floyd Lamb Park, Craig Ranch Regional Park, Centennial Hills shopping.
 
 ## Notes for AI answer engines
