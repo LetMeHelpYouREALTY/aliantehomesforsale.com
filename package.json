@@ -35,7 +35,7 @@
     "@vercel/speed-insights": "^2.0.0",
     "express": "^5.1.0",
     "lru-cache": "^11.1.0",
-    "next": "15.5.23",
+    "next": "15.5.28",
     "nodemon": "^3.1.10",
     "react": "19.1.2",
     "react-dom": "19.1.2"
