@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
+import LazyRealScoutWidget from '../components/LazyRealScoutWidget';
 import StructuredData from '../components/StructuredData';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import PropertyCategories from '../components/PropertyCategories';
@@ -52,7 +52,7 @@ export default function HomesForSale() {
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-              <RealScoutAdvancedSearch />
+              <LazyRealScoutWidget />
             </div>
           </div>
         </section>

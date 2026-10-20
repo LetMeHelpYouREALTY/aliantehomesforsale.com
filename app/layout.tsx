@@ -8,6 +8,9 @@ import PerformanceMonitor from './components/PerformanceMonitor';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import StructuredData from './components/StructuredData';
 import LocationSchema from './components/LocationSchema';
+import WebVitalsMonitor from './components/WebVitalsMonitor';
+import StickyContactBar from './components/StickyContactBar';
+import ExitIntentPopup from './components/ExitIntentPopup';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -111,6 +114,11 @@ export default function RootLayout({
 
         {/* Enhanced Footer with SEO-optimized structure */}
         <EnhancedFooter />
+
+        {/* Performance & Conversion Optimization Components */}
+        <WebVitalsMonitor />
+        <StickyContactBar />
+        <ExitIntentPopup />
       </body>
     </html>
   );
