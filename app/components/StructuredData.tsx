@@ -432,7 +432,7 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
           {
             '@type': 'Organization',
             name: 'National Association of Realtors',
-            sameAs': 'https://www.nar.realtor'
+            sameAs: 'https://www.nar.realtor'
           }
         ],
         address: {
