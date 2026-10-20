@@ -407,13 +407,47 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
           height: 60,
         },
         description: 'Expert real estate services in Aliante, North Las Vegas since 2018',
+        foundingDate: '2018-01-01',
+        slogan: '286+ MLS listings updated every 15 minutes',
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+1-702-707-7273',
           contactType: 'Customer Service',
           areaServed: 'US-NV',
           availableLanguage: ['English', 'Spanish'],
+          email: 'DrDuffy@AlianteHomesForSale.com'
         },
+        member: {
+          '@type': 'Person',
+          name: 'Dr. Jan Duffy',
+          jobTitle: 'Real Estate Agent & Aliante Specialist',
+          sameAs: 'https://www.aliantehomesforsale.com/about'
+        },
+        memberOf: [
+          {
+            '@type': 'Organization',
+            name: 'Greater Las Vegas Association of Realtors',
+            sameAs: 'https://www.glvar.org'
+          },
+          {
+            '@type': 'Organization',
+            name: 'National Association of Realtors',
+            sameAs': 'https://www.nar.realtor'
+          }
+        ],
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '2590 Nature Park Drive, Suite 275',
+          addressLocality: 'North Las Vegas',
+          addressRegion: 'NV',
+          postalCode: '89084',
+          addressCountry: 'US'
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 36.1699,
+          longitude: -115.1398
+        }
       };
     }
 
@@ -421,11 +455,18 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
       return {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
+        '@id': 'https://www.aliantehomesforsale.com/#breadcrumb',
+        numberOfItems: breadcrumbs.length,
         itemListElement: breadcrumbs.map((item, index) => ({
           '@type': 'ListItem',
           position: index + 1,
           name: item.name,
-          item: item.url,
+          item: {
+            '@type': 'WebPage',
+            '@id': item.url,
+            url: item.url,
+            name: item.name
+          }
         })),
       };
     }
@@ -482,8 +523,22 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
         hasCredential: [
           {
             '@type': 'EducationalOccupationalCredential',
-            credentialCategory: 'Professional License',
-            name: 'Nevada Real Estate License'
+            credentialCategory: 'license',
+            name: 'Nevada Real Estate Salesperson License',
+            issuedBy: {
+              '@type': 'Organization',
+              name: 'Nevada Real Estate Division'
+            },
+            recognizedBy: {
+              '@type': 'Organization',
+              name: 'State of Nevada'
+            }
+          },
+          {
+            '@type': 'EducationalOccupationalCredential',
+            credentialCategory: 'certification',
+            name: 'Aliante Market Specialist',
+            description: 'Specialized expertise in Aliante communities since 2018'
           }
         ],
         workLocation: {
