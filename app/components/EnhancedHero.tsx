@@ -89,7 +89,7 @@ export default function EnhancedHero({
             {subtitle}
           </p>
           <p className="text-sm sm:text-base text-white/90 mb-10">
-            MLS updated about every 15 minutes · Aliante 89084 · Local since 2018
+            MLS updated about every 15 minutes · Aliante 89084 · In real estate since 1983
           </p>
           <a
             href="#live-listings-heading"

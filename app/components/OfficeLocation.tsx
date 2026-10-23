@@ -8,7 +8,7 @@ import MediaImage from './MediaImage';
  * Map embed + Get Directions / Call / Open in Maps CTAs with NAP matching schema.
  */
 export default function OfficeLocation() {
-  const { address, phone, phoneTel, maps, hours, agentName, brokerage } = siteConfig;
+  const { address, phone, phoneTel, maps, hours, agentName } = siteConfig;
   const fullAddress = `${address.streetAddress}, ${address.addressLocality}, ${address.addressRegion} ${address.postalCode}`;
 
   return (
@@ -65,10 +65,9 @@ export default function OfficeLocation() {
                   className="w-full h-48 object-cover"
                 />
               </figure>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#1a365d' }}>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#1a365d' }}>
                 Aliante Corporate Center, Suite 275
               </h3>
-              <p className="text-sm text-gray-600 mb-6">{brokerage}</p>
 
               <address className="not-italic space-y-5 mb-8">
                 <div>

@@ -52,7 +52,7 @@ export default function EnhancedFooter() {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Contact</h3>
             <p className="text-gray-300 mb-4 text-sm">
-              Your Aliante and North Las Vegas real estate partner since 2018
+              Your Aliante and North Las Vegas real estate partner, in real estate since 1983
             </p>
 
             <div className="space-y-3 text-sm">
@@ -147,8 +147,6 @@ export default function EnhancedFooter() {
             </div>
             <p className="text-sm text-gray-300 mb-3">
               {siteConfig.agentName}
-              <br />
-              {siteConfig.brokerage}
             </p>
             <a
               href={siteConfig.calendly.events.consultation.url}
@@ -157,8 +155,6 @@ export default function EnhancedFooter() {
               Schedule time with me
             </a>
             <p className="text-xs text-gray-400 mb-4">
-              Nevada Real Estate License #{siteConfig.agentLicense}
-              <br />
               Equal Housing Opportunity
             </p>
             <nav aria-label="Company links">
@@ -255,7 +251,10 @@ export default function EnhancedFooter() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="text-center md:text-left">
               <p className="mb-1">
-                © 2026 {siteConfig.siteName}. Licensed real estate brokerage in Nevada.
+                © 2026 {siteConfig.siteName}.
+              </p>
+              <p className="mb-1">
+                {siteConfig.brokerage} since September 2008 · License {siteConfig.agentLicense}
               </p>
               <p className="text-xs">
                 All information deemed reliable but not guaranteed. All properties subject to prior

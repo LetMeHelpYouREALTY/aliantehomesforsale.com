@@ -26,7 +26,7 @@ export default function BuildersIntro() {
           </p>
 
           <p className="leading-relaxed">
-            As Dr. Jan Duffy, your local new construction specialist since 2018, I represent you —
+            As Dr. Jan Duffy, your local new construction specialist, in real estate since 1983, I represent you —
             not the builder — on the contract, options, and walk-throughs. Confirm current
             communities, inventory, and incentive programs on this month’s sheet. I match the
             builder map to the ZIP you actually want — Aliante 89084 versus nearby Tule Springs.

@@ -40,7 +40,7 @@ export default function AlianteFAQ() {
     {
       question: 'What is Dr. Jan Duffy’s focus in Aliante real estate?',
       answer:
-        'I have specialized in Aliante and North Las Vegas 89084 since 2018 with Berkshire Hathaway HomeServices Nevada Properties (license S.0197614.LLC). I represent buyers and sellers on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Read more <a href="/about" class="text-blue-600 hover:underline font-semibold">about my work</a>.',
+        'I have been in real estate since 1983 and specialize in Aliante and North Las Vegas 89084. I represent buyers and sellers on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Read more <a href="/about" class="text-blue-600 hover:underline font-semibold">about my work</a>.',
     },
   ];
 

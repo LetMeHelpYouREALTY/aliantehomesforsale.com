@@ -96,22 +96,22 @@ export const marketSnapshot: MarketSnapshotItem[] = [
     id: 'experience',
     label: 'Local since',
     value: '2018',
-    note: 'Dr. Jan Duffy has specialized in Aliante transactions since 2018.',
+    note: 'Dr. Jan Duffy has been in real estate since 1983 and specializes in Aliante transactions.',
   },
 ];
 
 export const agentCredentials: CredentialItem[] = [
   {
     id: 'license',
-    title: 'Nevada License S.0197614.LLC',
+    title: 'Licensed Nevada REALTOR®',
     description:
-      'Dr. Jan Duffy is a licensed Nevada real estate professional with Berkshire Hathaway HomeServices Nevada Properties, focused on Aliante and North Las Vegas 89084.',
+      'Dr. Jan Duffy is a licensed Nevada real estate professional, in real estate since 1983, focused on Aliante and North Las Vegas 89084.',
   },
   {
     id: 'hyperlocal',
-    title: 'Aliante specialist since 2018',
+    title: 'In real estate since 1983',
     description:
-      'Aliante closings since 2018 across gated villages, new construction, Club Aliante golf homes, and Sun City Aliante 55+. Call for current references.',
+      'Aliante closings across gated villages, new construction, Club Aliante golf homes, and Sun City Aliante 55+. Call for current references.',
   },
   {
     id: 'builders',

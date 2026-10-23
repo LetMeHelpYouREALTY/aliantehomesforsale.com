@@ -40,8 +40,7 @@ export default function AboutHero({
           <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">{subtitle}</p>
 
           <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
-            {siteConfig.brokerage} · License {siteConfig.agentLicense} · Since{' '}
-            {siteConfig.foundedYear}
+            In real estate since 1983
           </p>
         </div>
       </section>

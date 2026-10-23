@@ -52,7 +52,7 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Proven Results',
-      description: 'Aliante closings since 2018 — call for current references',
+      description: 'In real estate since 1983 — call for current Aliante references',
       image: siteImages.googleReviews,
     },
   ];

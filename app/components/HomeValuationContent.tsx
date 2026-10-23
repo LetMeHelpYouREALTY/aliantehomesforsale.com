@@ -28,7 +28,7 @@ export default function HomeValuationContent() {
             </p>
 
             <p className="leading-relaxed">
-              I have analyzed Aliante property values since 2018. Valuation accuracy comes from
+              I have been in real estate since 1983 and analyze Aliante property values closely. Valuation accuracy comes from
               touring the village and reading recent comps — not from an automated estimate. I
               understand how specific neighborhoods command different price premiums, how various
               upgrades affect value, and what current market trends mean for your property's worth

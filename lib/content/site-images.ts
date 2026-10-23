@@ -125,7 +125,7 @@ export const siteImages = {
     'incentives.jpg',
     'New construction design-center options for an Aliante, Nevada buyer'
   ),
-  about: img('about.jpg', 'Real estate office serving Aliante, North Las Vegas since 2018'),
+  about: img('about.jpg', 'Real estate office serving Aliante, North Las Vegas'),
   contact: img(
     'contact.jpg',
     'Professional office exterior near 2590 Nature Park Drive, North Las Vegas 89084'
@@ -323,7 +323,7 @@ export const siteImages = {
   ),
   licenseCredential: img(
     'license-credential.jpg',
-    'Office lobby for Nevada license S.0197614.LLC in North Las Vegas 89084'
+    'Real estate office lobby in North Las Vegas 89084'
   ),
   specialistStreet: img(
     'specialist-street.jpg',

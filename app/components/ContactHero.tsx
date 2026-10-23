@@ -40,7 +40,7 @@ export default function ContactHero({
           <p className="text-xl sm:text-2xl text-white/95 mb-4 leading-relaxed">{subtitle}</p>
 
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
-            Dr. Jan Duffy · Berkshire Hathaway HomeServices Nevada Properties · Since 2018
+            Dr. Jan Duffy · In real estate since 1983
           </p>
 
           <div className="mt-8">

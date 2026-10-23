@@ -27,7 +27,7 @@ export default function ContactWhyChoose() {
     {
       image: siteImages.specialistStreet,
       title: 'Local Expertise',
-      description: '6+ years focused on Aliante and North Las Vegas 89084 properties',
+      description: 'In real estate since 1983, focused on Aliante and North Las Vegas 89084 properties',
     },
     {
       image: siteImages.builderAdvocate,
@@ -42,7 +42,7 @@ export default function ContactWhyChoose() {
     {
       image: siteImages.googleReviews,
       title: 'Proven Track Record',
-      description: 'Aliante and North Las Vegas closings since 2018 — ask for current references',
+      description: 'Aliante and North Las Vegas closings — ask for current references',
     },
   ];
 
