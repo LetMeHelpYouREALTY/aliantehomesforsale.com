@@ -33,7 +33,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
         heading: 'Lennar versus Horton, Del Webb, and resale',
         paragraphs: [
           'D.R. Horton is the usual Tule Springs comparison — east of Aliante, not Club Aliante. Del Webb is the 55+ desk at Sun City Aliante. Lennar is the 89084 production builder I start with when you want new construction without age occupancy rules.',
-          'Call (702) 707-7273. I confirm today’s Lennar sheet with you before you sit in the model.',
+          'Call (702) 500-1332. I confirm today’s Lennar sheet with you before you sit in the model.',
         ],
       },
     ],
@@ -41,7 +41,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
       {
         question: 'Does Lennar still build in Aliante 89084?',
         answer:
-          'Confirm live communities and specs on the current inventory sheet. I will not publish a stale community list. Call (702) 707-7273 or see <a href="/new-construction" class="text-blue-600 hover:underline font-semibold">new construction</a>.',
+          'Confirm live communities and specs on the current inventory sheet. I will not publish a stale community list. Call (702) 500-1332 or see <a href="/new-construction" class="text-blue-600 hover:underline font-semibold">new construction</a>.',
       },
       {
         question: 'Do I need my own agent at Lennar?',
@@ -74,7 +74,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
         heading: 'Horton process I walk with you',
         paragraphs: [
           'I review the incentive sheet, structural options, and lender credit. Preferred lenders are optional. I attend key walk-throughs and document punch-list items before you accept the home.',
-          'Call (702) 707-7273 before you visit the model. Builder desks track first-touch. Show up represented.',
+          'Call (702) 500-1332 before you visit the model. Builder desks track first-touch. Show up represented.',
         ],
       },
     ],
@@ -92,7 +92,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
       {
         question: 'Should I buy Horton new or Aliante resale?',
         answer:
-          'New construction is incentives and warranty. Aliante resale is the village product (gate, golf, 55+, parks). I compare two live addresses. Call (702) 707-7273.',
+          'New construction is incentives and warranty. Aliante resale is the village product (gate, golf, 55+, parks). I compare two live addresses. Call (702) 500-1332.',
       },
     ],
   },
@@ -115,7 +115,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
         heading: 'How I represent you at Richmond American',
         paragraphs: [
           'Register me before the first visit. I review the live incentive sheet, design options, and punch list. Confirm the fee arrangement in writing.',
-          'Call (702) 707-7273. I will tell you whether the community on today’s sheet is inside Aliante — or not.',
+          'Call (702) 500-1332. I will tell you whether the community on today’s sheet is inside Aliante — or not.',
         ],
       },
     ],
@@ -123,7 +123,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
       {
         question: 'Does Richmond American build in Aliante 89084?',
         answer:
-          'Confirm the live community map. Richmond is not the in-Aliante production builder. Lennar and Del Webb are the 89084 desks I start with. Call (702) 707-7273.',
+          'Confirm the live community map. Richmond is not the in-Aliante production builder. Lennar and Del Webb are the 89084 desks I start with. Call (702) 500-1332.',
       },
       {
         question: 'Can I still use Dr. Jan Duffy on a Richmond purchase?',
@@ -151,7 +151,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
         heading: 'Buyer agency at Toll Brothers',
         paragraphs: [
           'Register representation before the first tour. Confirm cooperating compensation in writing. I review incentives, options, and walk-throughs on your side of the table.',
-          'Call (702) 707-7273 if you want Aliante 89084 or a Toll community — I will not blur the two.',
+          'Call (702) 500-1332 if you want Aliante 89084 or a Toll community — I will not blur the two.',
         ],
       },
     ],
@@ -164,7 +164,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
       {
         question: 'Will you represent me at Elkhorn Grove?',
         answer:
-          'Yes, if that address is the product you want. Register me before the first visit. Call (702) 707-7273.',
+          'Yes, if that address is the product you want. Register me before the first visit. Call (702) 500-1332.',
       },
     ],
   },
@@ -187,7 +187,7 @@ export const builderGuides: Record<string, BuilderGuide> = {
         heading: 'How I work the Del Webb desk',
         paragraphs: [
           'Register me before the first model tour. I attend design-center appointments, keep incentives in writing, and walk punch-list items before you accept keys.',
-          'Call (702) 707-7273. I represent you on the Del Webb contract in 89084 — not Ardiente, not Del Webb Summerlin, not Mesquite.',
+          'Call (702) 500-1332. I represent you on the Del Webb contract in 89084 — not Ardiente, not Del Webb Summerlin, not Mesquite.',
         ],
       },
     ],

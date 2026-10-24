@@ -11,7 +11,7 @@ import TopBuilders from '../../components/TopBuilders';
 export const metadata = pageMetadata({
   title: 'D.R. Horton near Aliante | Tule Springs Buyer Agency 89084',
   description:
-    'D.R. Horton new construction near Aliante in Villages at Tule Springs, North Las Vegas. Independent buyer’s agent. Confirm live inventory. Call (702) 707-7273.',
+    'D.R. Horton new construction near Aliante in Villages at Tule Springs, North Las Vegas. Independent buyer’s agent. Confirm live inventory. Call (702) 500-1332.',
   path: '/builders/dr-horton',
   keywords: 'dr horton tule springs, dr horton aliante, dr horton north las vegas',
 });
@@ -21,7 +21,7 @@ export default function DrHorton() {
     <main>
       <NewConstructionHero
         title="D.R. Horton near Aliante | Tule Springs Buyer Agency 89084"
-        subtitle="Compare Tule Springs new homes with Aliante resale. Confirm live inventory. Call (702) 707-7273."
+        subtitle="Compare Tule Springs new homes with Aliante resale. Confirm live inventory. Call (702) 500-1332."
         filterHeading="D.R. Horton near Aliante and Tule Springs"
         image={pageHero('/builders/dr-horton')}
       />

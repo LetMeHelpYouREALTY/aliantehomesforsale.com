@@ -57,9 +57,9 @@ export default function ContactMethods() {
     {
       image: siteImages.officeNap,
       title: 'Call Us Today',
-      primary: '(702) 707-7273',
+      primary: '(702) 500-1332',
       details: [siteConfig.hours.weekday, siteConfig.hours.weekend],
-      href: 'tel:+17027077273',
+      href: 'tel:+17025001332',
       featured: true,
     },
     {

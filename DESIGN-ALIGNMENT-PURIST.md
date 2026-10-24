@@ -60,7 +60,7 @@ Goal: Align aliantehomesforsale.com structure, sections, and visual tone with th
 - RealScout script once in layout; search widget below hero (and on /homes-for-sale).
 - NAP, schema (LocalBusiness, RealEstateAgent, etc.), and GBP alignment.
 - No changes to /components/idx/*.
-- Dr. Jan Duffy branding, license (S.0197614.LLC), phone (702) 707-7273, aliantehomesforsale.com.
+- Dr. Jan Duffy branding, license (S.0197614.LLC), phone (702) 500-1332, aliantehomesforsale.com.
 
 ---
 

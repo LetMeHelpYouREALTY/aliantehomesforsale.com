@@ -11,7 +11,7 @@ import PageFAQ from '../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Investment Analysis for Aliante Rentals | North Las Vegas 89084',
   description:
-    'Buy-and-hold analysis for Aliante, North Las Vegas 89084. I sell the home; HOA and rental management is a different company. Call (702) 707-7273.',
+    'Buy-and-hold analysis for Aliante, North Las Vegas 89084. I sell the home; HOA and rental management is a different company. Call (702) 500-1332.',
   path: '/investment-analysis',
 });
 
@@ -20,7 +20,7 @@ export default function InvestmentAnalysis() {
     <main>
       <HomesForSaleHero
         title="Investment Analysis for Aliante Rentals | North Las Vegas 89084"
-        subtitle="Address-level cash-flow review in ZIP 89084. Call (702) 707-7273. I do not manage leases."
+        subtitle="Address-level cash-flow review in ZIP 89084. Call (702) 500-1332. I do not manage leases."
         image={pageHero('/investment-analysis')}
       />
       <HomesMarketSnapshot />

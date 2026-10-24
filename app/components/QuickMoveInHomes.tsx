@@ -52,7 +52,7 @@ export default function QuickMoveInHomes() {
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Inventory, incentives, and close dates change with each builder release. Confirm current
-            homes with me at (702) 707-7273.
+            homes with me at (702) 500-1332.
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto

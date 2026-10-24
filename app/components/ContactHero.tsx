@@ -45,11 +45,11 @@ export default function ContactHero({
 
           <div className="mt-8">
             <a
-              href="tel:+17027077273"
+              href="tel:+17025001332"
               className="inline-block px-10 py-4 bg-white rounded-full text-2xl sm:text-3xl font-bold transition-all transform hover:scale-105 hover:shadow-2xl focus:ring-4 focus:ring-white/30 focus:outline-none"
               style={{ color: '#2c5aa0' }}
             >
-              (702) 707-7273
+              (702) 500-1332
             </a>
             <p className="text-white/80 mt-3 text-sm sm:text-base">
               {siteConfig.hours.weekday} · {siteConfig.hours.weekend}

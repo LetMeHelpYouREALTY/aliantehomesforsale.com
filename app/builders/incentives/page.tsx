@@ -10,7 +10,7 @@ import TopBuilders from '../../components/TopBuilders';
 export const metadata = pageMetadata({
   title: 'Builder Incentives in Aliante | North Las Vegas 89084',
   description:
-    'Independent buyer’s agent for current Lennar, D.R. Horton, and Del Webb incentives in Aliante, North Las Vegas 89084. Confirm live offers. Call (702) 707-7273.',
+    'Independent buyer’s agent for current Lennar, D.R. Horton, and Del Webb incentives in Aliante, North Las Vegas 89084. Confirm live offers. Call (702) 500-1332.',
   path: '/builders/incentives',
   keywords:
     'builder incentives aliante, lennar incentives north las vegas, dr horton tule springs incentives, del webb sun city aliante',
@@ -21,7 +21,7 @@ export default function Incentives() {
     <main>
       <NewConstructionHero
         title="Builder Incentives in Aliante | North Las Vegas 89084"
-        subtitle="I confirm today’s closing-cost, rate-buydown, and upgrade offers with you. I will not publish a stale dollar amount. Call (702) 707-7273."
+        subtitle="I confirm today’s closing-cost, rate-buydown, and upgrade offers with you. I will not publish a stale dollar amount. Call (702) 500-1332."
         filterHeading="Which Aliante builder is offering credits now"
         image={pageHero('/builders/incentives')}
       />

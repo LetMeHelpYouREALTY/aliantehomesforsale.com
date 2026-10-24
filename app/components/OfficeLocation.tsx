@@ -29,7 +29,7 @@ export default function OfficeLocation() {
           <div className="max-w-4xl mx-auto text-left mt-8">
             <HeadingPhoto
               image={siteImages.officeNap}
-              caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
+              caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 500-1332"
             />
           </div>
         </div>

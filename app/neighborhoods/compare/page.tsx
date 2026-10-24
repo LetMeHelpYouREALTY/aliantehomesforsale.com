@@ -10,7 +10,7 @@ import PageFAQ from '../../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Compare Aliante Neighborhoods | Club Aliante, Sun City, Prominence',
   description:
-    'Compare Club Aliante, The Prominence, Desert Willows, The Paseos, and Sun City Aliante in North Las Vegas 89084. Confirm live MLS prices. Call (702) 707-7273.',
+    'Compare Club Aliante, The Prominence, Desert Willows, The Paseos, and Sun City Aliante in North Las Vegas 89084. Confirm live MLS prices. Call (702) 500-1332.',
   path: '/neighborhoods/compare',
   keywords:
     'compare aliante neighborhoods, club aliante vs prominence, sun city aliante vs ardiente',
@@ -21,7 +21,7 @@ export default function Compare() {
     <main>
       <NeighborhoodsHero
         title="Compare Aliante Neighborhoods | Club Aliante, Sun City, Prominence"
-        subtitle="Side-by-side villages in ZIP 89084. Confirm live MLS prices before you offer. Call (702) 707-7273."
+        subtitle="Side-by-side villages in ZIP 89084. Confirm live MLS prices before you offer. Call (702) 500-1332."
         image={pageHero('/neighborhoods/compare')}
       />
       <NeighborhoodComparison

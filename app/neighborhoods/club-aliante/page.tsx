@@ -11,7 +11,7 @@ import PageFAQ from '../../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Club Aliante Homes for Sale | Gated Golf Village, North Las Vegas',
   description:
-    'Club Aliante is the gated village along Aliante Golf Club in North Las Vegas 89084. Fairway and interior lots. Independent realtor Dr. Jan Duffy. Call (702) 707-7273.',
+    'Club Aliante is the gated village along Aliante Golf Club in North Las Vegas 89084. Fairway and interior lots. Independent realtor Dr. Jan Duffy. Call (702) 500-1332.',
   path: '/neighborhoods/club-aliante',
   keywords:
     'club aliante, club aliante homes for sale, club aliante north las vegas, aliante golf club, golf homes aliante',
@@ -22,7 +22,7 @@ export default function ClubAliante() {
     <main>
       <NeighborhoodsHero
         title="Club Aliante Homes for Sale | Gated Golf Village, North Las Vegas"
-        subtitle="Gated village next to Aliante Golf Club in ZIP 89084. Call (702) 707-7273 to tour live listings."
+        subtitle="Gated village next to Aliante Golf Club in ZIP 89084. Call (702) 500-1332 to tour live listings."
         image={pageHero('/neighborhoods/club-aliante')}
       />
       <NeighborhoodDetailContent village="club-aliante" />

@@ -54,7 +54,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error:
-            'Online form is not connected. Call (702) 707-7273 or email DrDuffy@AlianteHomesForSale.com.',
+            'Online form is not connected. Call (702) 500-1332 or email DrDuffy@AlianteHomesForSale.com.',
         },
         { status: 503 }
       );
@@ -64,7 +64,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error:
-            'We could not save this inquiry. Call (702) 707-7273 so we do not miss your request.',
+            'We could not save this inquiry. Call (702) 500-1332 so we do not miss your request.',
         },
         { status: 502 }
       );
@@ -74,7 +74,7 @@ export async function POST(request: Request) {
   } catch {
     return NextResponse.json(
       {
-        error: 'Something went wrong. Call (702) 707-7273 so we do not miss your request.',
+        error: 'Something went wrong. Call (702) 500-1332 so we do not miss your request.',
       },
       { status: 500 }
     );

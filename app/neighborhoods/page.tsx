@@ -12,7 +12,7 @@ import StructuredData from '../components/StructuredData';
 export const metadata = pageMetadata({
   title: 'Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084',
   description:
-    'Aliante neighborhoods in North Las Vegas 89084: Club Aliante, Sun City Aliante, The Prominence, Desert Willows, The Paseos, and nearby Tule Springs. Call (702) 707-7273 for live MLS homes.',
+    'Aliante neighborhoods in North Las Vegas 89084: Club Aliante, Sun City Aliante, The Prominence, Desert Willows, The Paseos, and nearby Tule Springs. Call (702) 500-1332 for live MLS homes.',
   path: '/neighborhoods',
   keywords:
     'aliante neighborhoods, club aliante, sun city aliante, gated communities north las vegas 89084',
@@ -27,7 +27,7 @@ export default function Neighborhoods() {
         {/* Hero Section */}
         <NeighborhoodsHero
           title="Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084"
-          subtitle="Villages inside the Aliante master plan, North Las Vegas ZIP 89084. Call (702) 707-7273."
+          subtitle="Villages inside the Aliante master plan, North Las Vegas ZIP 89084. Call (702) 500-1332."
           image={pageHero('/neighborhoods')}
         />
 

@@ -7,7 +7,7 @@ import LegalContent from '../components/LegalContent';
 export const metadata = pageMetadata({
   title: 'Terms of Service | Aliante Homes For Sale, North Las Vegas 89084',
   description:
-    'Terms of service for AlianteHomesForSale.com. Rules for using this Aliante, North Las Vegas 89084 real estate website. Call (702) 707-7273.',
+    'Terms of service for AlianteHomesForSale.com. Rules for using this Aliante, North Las Vegas 89084 real estate website. Call (702) 500-1332.',
   path: '/terms-of-service',
 });
 

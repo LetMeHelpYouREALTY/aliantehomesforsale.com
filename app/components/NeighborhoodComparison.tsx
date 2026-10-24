@@ -11,7 +11,7 @@ type NeighborhoodComparisonProps = {
 
 export default function NeighborhoodComparison({
   heading = 'Aliante villages in ZIP 89084',
-  subheading = 'Confirm live MLS prices before you offer. Call (702) 707-7273.',
+  subheading = 'Confirm live MLS prices before you offer. Call (702) 500-1332.',
   showCompareCta = true,
 }: NeighborhoodComparisonProps) {
   return (

@@ -10,7 +10,7 @@ import PageFAQ from '../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Gated Communities in Las Vegas | Aliante North Las Vegas Homes',
   description:
-    'Gated communities in Las Vegas inside Aliante 89084: Club Aliante, The Prominence, Courts at Aliante, Terrasini, and more. Call (702) 707-7273 for live MLS homes for sale.',
+    'Gated communities in Las Vegas inside Aliante 89084: Club Aliante, The Prominence, Courts at Aliante, Terrasini, and more. Call (702) 500-1332 for live MLS homes for sale.',
   path: '/gated-communities',
   keywords:
     'gated community las vegas, gated communities in las vegas, gated communities las vegas nv, aliante gated',
@@ -21,7 +21,7 @@ export default function GatedCommunities() {
     <main>
       <EnhancedHero
         title="Gated Communities in Las Vegas | Aliante Homes for Sale, 89084"
-        subtitle="Controlled-access villages inside the Aliante master plan. Call (702) 707-7273 to tour current listings."
+        subtitle="Controlled-access villages inside the Aliante master plan. Call (702) 500-1332 to tour current listings."
         image={pageHero('/gated-communities')}
       />
       <GatedCommunitiesContent />

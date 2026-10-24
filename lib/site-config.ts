@@ -8,7 +8,7 @@ export const siteConfig = {
   siteName: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
   defaultTitle: 'Aliante Real Estate | Homes for Sale in North Las Vegas 89084',
   defaultDescription:
-    'Aliante homes for sale in North Las Vegas 89084. Fresh MLS listings, Club Aliante, Sun City 55+, gated communities. Call (702) 707-7273.',
+    'Aliante homes for sale in North Las Vegas 89084. Fresh MLS listings, Club Aliante, Sun City 55+, gated communities. Call (702) 500-1332.',
   agentName: 'Dr. Jan Duffy',
   /** Official circular portrait used for favicon, nav, footer, and agent sections. */
   agentImage: '/images/dr-jan-duffy.png',
@@ -176,8 +176,8 @@ export const siteConfig = {
       },
     },
   },
-  phone: '(702) 707-7273',
-  phoneTel: '+17027077273',
+  phone: '(702) 500-1332',
+  phoneTel: '+17025001332',
   email: 'DrDuffy@AlianteHomesForSale.com',
   address: {
     streetAddress: '2590 Nature Park Drive, Suite 275',

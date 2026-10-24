@@ -10,7 +10,7 @@ import PageFAQ from '../../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Villages at Tule Springs Homes | North Las Vegas New Construction',
   description:
-    'Villages at Tule Springs sits east of Aliante 89084. D.R. Horton new construction versus Aliante resale. Call (702) 707-7273. Confirm live inventory and prices.',
+    'Villages at Tule Springs sits east of Aliante 89084. D.R. Horton new construction versus Aliante resale. Call (702) 500-1332. Confirm live inventory and prices.',
   path: '/neighborhoods/tule-springs',
   keywords:
     'tule springs las vegas, villages at tule springs, dr horton tule springs, north las vegas new construction',
@@ -21,7 +21,7 @@ export default function TuleSprings() {
     <main>
       <NeighborhoodsHero
         title="Villages at Tule Springs | North Las Vegas New Construction"
-        subtitle="East of Aliante. Compare Tule Springs new homes with Aliante resale. Call (702) 707-7273."
+        subtitle="East of Aliante. Compare Tule Springs new homes with Aliante resale. Call (702) 500-1332."
         image={pageHero('/neighborhoods/tule-springs')}
       />
       <NeighborhoodDetailContent village="tule-springs" />

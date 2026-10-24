@@ -10,7 +10,7 @@ import SchoolsContent from '../components/SchoolsContent';
 export const metadata = pageMetadata({
   title: 'Homes Near Aliante Schools | North Las Vegas 89084',
   description:
-    'Named campuses serving Aliante in North Las Vegas 89084, plus homes for sale nearby. Call (702) 707-7273 to match an address to current attendance boundaries.',
+    'Named campuses serving Aliante in North Las Vegas 89084, plus homes for sale nearby. Call (702) 500-1332 to match an address to current attendance boundaries.',
   path: '/schools',
   keywords: 'aliante schools, homes near aliante schools, north las vegas schools 89084',
 });

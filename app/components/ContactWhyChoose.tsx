@@ -57,7 +57,7 @@ export default function ContactWhyChoose() {
         </div>
         <HeadingPhoto
           image={siteImages.specialistStreet}
-          caption="Call (702) 707-7273 · 2590 Nature Park Drive, Suite 275"
+          caption="Call (702) 500-1332 · 2590 Nature Park Drive, Suite 275"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

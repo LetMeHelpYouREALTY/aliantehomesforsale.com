@@ -10,7 +10,7 @@ export default function AlianteFAQ() {
     {
       question: 'How do I confirm new-construction prices near Aliante?',
       answer:
-        'Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="text-blue-600 hover:underline font-semibold">Lennar</a>, <a href="/builders/dr-horton" class="text-blue-600 hover:underline font-semibold">D.R. Horton</a>, and <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="text-blue-600 hover:underline font-semibold">Builder Incentives</a> page or call (702) 707-7273.',
+        'Confirm live inventory and incentive sheets with <a href="/builders/lennar" class="text-blue-600 hover:underline font-semibold">Lennar</a>, <a href="/builders/dr-horton" class="text-blue-600 hover:underline font-semibold">D.R. Horton</a>, and <a href="/builders/del-webb" class="text-blue-600 hover:underline font-semibold">Del Webb</a>. I will not publish a stale dollar amount. Check the <a href="/builders/incentives" class="text-blue-600 hover:underline font-semibold">Builder Incentives</a> page or call (702) 500-1332.',
     },
     {
       question: 'What is Sun City Aliante and what are the occupancy rules?',
@@ -25,7 +25,7 @@ export default function AlianteFAQ() {
     {
       question: 'How often are MLS listings updated on this site?',
       answer:
-        '<a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">MLS listings</a> refresh about every 15 minutes from the Las Vegas MLS feed. Inventory changes daily — use <a href="/search" class="text-blue-600 hover:underline font-semibold">advanced search</a> or call (702) 707-7273 for current addresses.',
+        '<a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">MLS listings</a> refresh about every 15 minutes from the Las Vegas MLS feed. Inventory changes daily — use <a href="/search" class="text-blue-600 hover:underline font-semibold">advanced search</a> or call (702) 500-1332 for current addresses.',
     },
     {
       question: 'What are current home prices in Aliante?',

@@ -29,7 +29,7 @@ export default function BuilderIncentivesInfo({
           <p className="leading-relaxed">
             Builder incentives in Aliante and nearby Tule Springs change by community, phase, and
             week. I confirm the live closing-cost, rate-buydown, and upgrade offers with you before
-            you write. I will not publish a stale dollar amount in a heading. Call (702) 707-7273.
+            you write. I will not publish a stale dollar amount in a heading. Call (702) 500-1332.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>
@@ -90,7 +90,7 @@ export default function BuilderIncentivesInfo({
             Buyer representation is typically at no extra cost to you on participating builder sales
             — the builder pays the cooperating commission from its marketing budget. Confirm the fee
             arrangement in writing before you tour. Going to the model-home desk without
-            representation does not make the home cheaper. Call (702) 707-7273 to confirm today’s
+            representation does not make the home cheaper. Call (702) 500-1332 to confirm today’s
             sheet for the community you want.
           </p>
         </div>

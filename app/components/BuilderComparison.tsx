@@ -11,7 +11,7 @@ type BuilderComparisonProps = {
 
 export default function BuilderComparison({
   heading = 'Aliante and nearby builders in North Las Vegas',
-  subheading = 'Confirm live inventory and incentive sheets. Call (702) 707-7273.',
+  subheading = 'Confirm live inventory and incentive sheets. Call (702) 500-1332.',
   showBuildersCta = true,
 }: BuilderComparisonProps) {
   return (

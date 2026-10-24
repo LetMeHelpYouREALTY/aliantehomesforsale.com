@@ -23,7 +23,7 @@ const BUILDERS = [
 
 export default function NewConstructionHero({
   title = 'New-Construction Buyer Agency in Aliante, North Las Vegas 89084',
-  subtitle = 'Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 707-7273.',
+  subtitle = 'Independent representation with Lennar, D.R. Horton, Del Webb, and nearby Tule Springs builders. Call (702) 500-1332.',
   filterHeading = 'Jump to a builder',
   filterSubheading = 'Inventory lives on MLS and each builder page. We do not invent home counts here.',
   image = siteImages.builders,
@@ -94,7 +94,7 @@ export default function NewConstructionHero({
               </h3>
               <p className="text-white/95 mb-4 text-lg">
                 Closing-cost, rate-buydown, and upgrade offers change by community. I confirm them
-                with you. Call (702) 707-7273.
+                with you. Call (702) 500-1332.
               </p>
               <a
                 href="/builders/incentives"
