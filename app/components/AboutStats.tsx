@@ -46,8 +46,8 @@ export default function AboutStats() {
             Who We Are
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
-            Dr. Jan Duffy has been in real estate since 1983 and specializes in Aliante and North
-            Las Vegas 89084. For verified client feedback, use
+            Dr. Jan Duffy, a Top 1% Las Vegas REALTOR®, has been in real estate since 1983 and
+            specializes in Aliante and North Las Vegas 89084. For verified client feedback, use
             Google Business Profile reviews — I will not publish an unverified star rating here.
           </p>
           <HeadingPhoto
