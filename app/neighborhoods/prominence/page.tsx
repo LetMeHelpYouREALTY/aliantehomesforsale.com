@@ -11,7 +11,7 @@ import PageFAQ from '../../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'The Prominence Aliante | Gated Homes North Las Vegas 89084',
   description:
-    'The Prominence gated village in Aliante, North Las Vegas 89084. Private streets and controlled entry. Confirm live MLS listings. Call (702) 707-7273.',
+    'The Prominence gated village in Aliante, North Las Vegas 89084. Private streets and controlled entry. Confirm live MLS listings. Call (702) 500-1332.',
   path: '/neighborhoods/prominence',
   keywords: 'the prominence aliante, gated homes aliante, prominence north las vegas 89084',
 });
@@ -21,7 +21,7 @@ export default function Prominence() {
     <main>
       <NeighborhoodsHero
         title="The Prominence Aliante | Gated Homes North Las Vegas 89084"
-        subtitle="Controlled-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
+        subtitle="Controlled-access village inside the Aliante master plan. Confirm live MLS. Call (702) 500-1332."
         image={pageHero('/neighborhoods/prominence')}
       />
       <EnhancedFeaturedProperties />

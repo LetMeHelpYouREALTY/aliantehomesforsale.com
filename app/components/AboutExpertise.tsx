@@ -49,7 +49,7 @@ export default function AboutExpertise() {
       image: siteImages.specialistStreet,
       title: 'Buyer and seller advocacy in Aliante',
       description:
-        'Purchase or listing, I am your agent at 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
+        'Purchase or listing, I am your agent at 2590 Nature Park Drive, Suite 275. Call (702) 500-1332.',
     },
     {
       image: siteImages.sunCity,

@@ -11,7 +11,7 @@ import SellerChecklistContent from '../components/SellerChecklistContent';
 export const metadata = pageMetadata({
   title: 'Sell Your Aliante Home | Listing Agent, North Las Vegas 89084',
   description:
-    'Listing agent for Aliante, North Las Vegas 89084. Neighborhood comps, MLS marketing, and offer negotiation. Call (702) 707-7273.',
+    'Listing agent for Aliante, North Las Vegas 89084. Neighborhood comps, MLS marketing, and offer negotiation. Call (702) 500-1332.',
   path: '/seller-checklist',
 });
 
@@ -20,7 +20,7 @@ export default function SellerChecklist() {
     <main>
       <AboutHero
         title="Sell Your Aliante Home | Listing Agent, North Las Vegas 89084"
-        subtitle="Club Aliante, gated villages, and Sun City Aliante listings. Call (702) 707-7273 for a CMA."
+        subtitle="Club Aliante, gated villages, and Sun City Aliante listings. Call (702) 500-1332 for a CMA."
         image={pageHero('/seller-checklist')}
       />
       <SellerChecklistContent />

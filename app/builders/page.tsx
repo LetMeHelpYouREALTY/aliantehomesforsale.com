@@ -13,7 +13,7 @@ import TopBuilders from '../components/TopBuilders';
 export const metadata = pageMetadata({
   title: 'Aliante Builders | Lennar, D.R. Horton, Del Webb — 89084',
   description:
-    'Compare Lennar, D.R. Horton, and Del Webb near Aliante, North Las Vegas 89084. Independent buyer’s agent. Confirm live incentives. Call (702) 707-7273.',
+    'Compare Lennar, D.R. Horton, and Del Webb near Aliante, North Las Vegas 89084. Independent buyer’s agent. Confirm live incentives. Call (702) 500-1332.',
   path: '/builders',
   keywords: 'aliante builders, lennar aliante, dr horton tule springs, del webb sun city aliante',
 });
@@ -23,7 +23,7 @@ export default function Builders() {
     <main className="builders-page">
       <NewConstructionHero
         title="Aliante Builders | Lennar, D.R. Horton, Del Webb — 89084"
-        subtitle="Independent buyer representation in Aliante and nearby Tule Springs. Call (702) 707-7273."
+        subtitle="Independent buyer representation in Aliante and nearby Tule Springs. Call (702) 500-1332."
         filterHeading="Compare Aliante and Tule Springs builders"
         image={pageHero('/builders')}
       />

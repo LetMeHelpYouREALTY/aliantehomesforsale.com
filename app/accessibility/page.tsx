@@ -7,7 +7,7 @@ import LegalContent from '../components/LegalContent';
 export const metadata = pageMetadata({
   title: 'Accessibility Statement | Aliante Homes For Sale, North Las Vegas 89084',
   description:
-    'How we work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page, form, or widget blocks you in North Las Vegas 89084.',
+    'How we work to keep AlianteHomesForSale.com usable. Call (702) 500-1332 if a page, form, or widget blocks you in North Las Vegas 89084.',
   path: '/accessibility',
 });
 
@@ -16,14 +16,14 @@ export default function Accessibility() {
     <main>
       <AboutHero
         title="Accessibility | Aliante Homes for Sale, North Las Vegas 89084"
-        subtitle="We work to keep AlianteHomesForSale.com usable. Call (702) 707-7273 if a page blocks you."
+        subtitle="We work to keep AlianteHomesForSale.com usable. Call (702) 500-1332 if a page blocks you."
         image={pageHero('/accessibility')}
       />
       <LegalContent title="Website Accessibility Commitment">
         <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
           <p className="leading-relaxed">
             At Aliante Homes For Sale, we work to keep this site usable for people with
-            disabilities. If a page, form, or widget blocks you, call (702) 707-7273 and we will
+            disabilities. If a page, form, or widget blocks you, call (702) 500-1332 and we will
             help you complete the request another way.
           </p>
 
@@ -58,7 +58,7 @@ export default function Accessibility() {
           </p>
 
           <p className="leading-relaxed">
-            Report accessibility problems to Dr. Jan Duffy at (702) 707-7273 or
+            Report accessibility problems to Dr. Jan Duffy at (702) 500-1332 or
             DrDuffy@AlianteHomesForSale.com. We will work with you to provide the listing or form
             another way.
           </p>

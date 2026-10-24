@@ -7,7 +7,7 @@ import LegalContent from '../components/LegalContent';
 export const metadata = pageMetadata({
   title: 'Fair Housing Statement | Aliante Homes For Sale, North Las Vegas 89084',
   description:
-    'Equal housing opportunity from Dr. Jan Duffy in Aliante, North Las Vegas 89084. Fair Housing Act compliance on every listing and buyer tour. Call (702) 707-7273.',
+    'Equal housing opportunity from Dr. Jan Duffy in Aliante, North Las Vegas 89084. Fair Housing Act compliance on every listing and buyer tour. Call (702) 500-1332.',
   path: '/fair-housing',
 });
 
@@ -16,7 +16,7 @@ export default function FairHousing() {
     <main>
       <AboutHero
         title="Fair Housing | Aliante Realtor, North Las Vegas 89084"
-        subtitle="Equal professional service on every Aliante listing and buyer tour. Call (702) 707-7273."
+        subtitle="Equal professional service on every Aliante listing and buyer tour. Call (702) 500-1332."
         image={pageHero('/fair-housing')}
       />
       <LegalContent title="Fair Housing and Equal Opportunity Statement">

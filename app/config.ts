@@ -14,7 +14,7 @@ export const appConfig = {
     defaultTitle: 'Aliante Homes For Sale - Las Vegas Real Estate',
     titleTemplate: '%s | Aliante Homes For Sale',
     defaultDescription:
-      'Aliante homes for sale in North Las Vegas, NV 89084. MLS updated about every 15 minutes. Call (702) 707-7273.',
+      'Aliante homes for sale in North Las Vegas, NV 89084. MLS updated about every 15 minutes. Call (702) 500-1332.',
     siteUrl: 'https://www.aliantehomesforsale.com',
     openGraph: {
       type: 'website',

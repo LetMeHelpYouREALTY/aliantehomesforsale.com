@@ -47,11 +47,11 @@ export default function PageHero({
           </p>
           <div className="mt-8">
             <a
-              href="tel:+17027077273"
+              href="tel:+17025001332"
               className="inline-block px-10 py-4 bg-white rounded-full text-xl sm:text-2xl font-bold transition-transform hover:scale-105 focus:ring-4 focus:ring-white/30 focus:outline-none"
               style={{ color: '#2c5aa0' }}
             >
-              Call (702) 707-7273
+              Call (702) 500-1332
             </a>
           </div>
         </div>

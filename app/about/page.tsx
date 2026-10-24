@@ -11,7 +11,7 @@ import AboutWhyChooseUs from '../components/AboutWhyChooseUs';
 export const metadata = pageMetadata({
   title: 'Aliante Realtor | Dr. Jan Duffy, North Las Vegas 89084',
   description:
-    'Meet Dr. Jan Duffy, Aliante realtor in real estate since 1983. Buyer and seller representation in ZIP 89084. Call (702) 707-7273.',
+    'Meet Dr. Jan Duffy, Aliante realtor in real estate since 1983. Buyer and seller representation in ZIP 89084. Call (702) 500-1332.',
   path: '/about',
 });
 

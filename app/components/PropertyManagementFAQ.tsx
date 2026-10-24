@@ -6,7 +6,7 @@ const faqs = [
   {
     question: 'Who handles Aliante property management and HOA billing?',
     answer:
-      'Aliante Master Association has been managed by FirstService Residential since 2003. Their North Las Vegas office is at 2590 Nature Park Drive, Suite 100. Dr. Jan Duffy’s real estate office is Suite 275 in the same building. Call FirstService for HOA and community management. Call (702) 707-7273 to buy or sell a home.',
+      'Aliante Master Association has been managed by FirstService Residential since 2003. Their North Las Vegas office is at 2590 Nature Park Drive, Suite 100. Dr. Jan Duffy’s real estate office is Suite 275 in the same building. Call FirstService for HOA and community management. Call (702) 500-1332 to buy or sell a home.',
   },
   {
     question: 'Do you manage rental homes in Aliante?',

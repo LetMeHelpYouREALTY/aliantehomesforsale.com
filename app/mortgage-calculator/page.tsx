@@ -11,7 +11,7 @@ import PageFAQ from '../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Aliante Mortgage Payment Estimate | North Las Vegas 89084',
   description:
-    'Estimate principal and interest for an Aliante home using the rate your lender quoted. Confirm taxes, insurance, and HOA separately. Call (702) 707-7273.',
+    'Estimate principal and interest for an Aliante home using the rate your lender quoted. Confirm taxes, insurance, and HOA separately. Call (702) 500-1332.',
   path: '/mortgage-calculator',
 });
 

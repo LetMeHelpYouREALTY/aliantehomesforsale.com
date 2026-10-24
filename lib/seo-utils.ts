@@ -130,7 +130,7 @@ export const neighborhoodSEO = {
   prominence: {
     title: 'The Prominence Aliante | Gated Homes North Las Vegas 89084',
     description:
-      'Gated village in The Prominence, Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
+      'Gated village in The Prominence, Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 500-1332.',
     keywords: [
       'The Prominence',
       'gated homes Aliante',
@@ -141,7 +141,7 @@ export const neighborhoodSEO = {
   'desert-willows': {
     title: 'Desert Willows Homes For Sale - Aliante, North Las Vegas 89084',
     description:
-      'Homes in Desert Willows, Aliante. Parks, community pools, and named CCSD campuses nearby. Confirm live MLS prices. Call (702) 707-7273.',
+      'Homes in Desert Willows, Aliante. Parks, community pools, and named CCSD campuses nearby. Confirm live MLS prices. Call (702) 500-1332.',
     keywords: [
       'Desert Willows',
       'Aliante homes North Las Vegas',
@@ -152,7 +152,7 @@ export const neighborhoodSEO = {
   'club-aliante': {
     title: 'Club Aliante Homes For Sale - Golf Course Community Las Vegas',
     description:
-      'Golf-course lots in Club Aliante, North Las Vegas 89084. Confirm live MLS prices. Call (702) 707-7273.',
+      'Golf-course lots in Club Aliante, North Las Vegas 89084. Confirm live MLS prices. Call (702) 500-1332.',
     keywords: [
       'Club Aliante',
       'golf course homes Aliante',
@@ -163,7 +163,7 @@ export const neighborhoodSEO = {
   paseos: {
     title: 'The Paseos Homes For Sale - Aliante, North Las Vegas 89084',
     description:
-      'The Paseos is an open-access village in Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 707-7273.',
+      'The Paseos is an open-access village in Aliante, North Las Vegas 89084. Confirm live MLS listings. Call (702) 500-1332.',
     keywords: ['The Paseos', 'open-access Aliante', 'Aliante homes North Las Vegas', '89084'],
   },
 };
@@ -173,7 +173,7 @@ export const pageSEO = {
   'homes-for-sale': {
     title: 'Homes For Sale in Aliante - Updated Every 15 Minutes | MLS Listings',
     description:
-      'MLS listings in Aliante, North Las Vegas 89084. Updated about every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 707-7273',
+      'MLS listings in Aliante, North Las Vegas 89084. Updated about every 15 minutes. Search by price, beds, baths. Expert buyer representation. Call (702) 500-1332',
     keywords: [
       'Aliante homes for sale',
       'MLS listings Aliante',
@@ -184,25 +184,25 @@ export const pageSEO = {
   'new-construction': {
     title: 'New Construction Homes Aliante - Builder Incentives & Floor Plans',
     description:
-      'New construction in Aliante and nearby Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 707-7273.',
+      'New construction in Aliante and nearby Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 500-1332.',
     keywords: ['new construction Aliante', 'builder incentives', 'Lennar homes', 'DR Horton'],
   },
   'home-valuation': {
     title: 'What’s My Aliante Home Worth? | CMA in North Las Vegas 89084',
     description:
-      'Comparative market analysis for Aliante, North Las Vegas 89084. Neighborhood comps — not a valley average. Call (702) 707-7273.',
+      'Comparative market analysis for Aliante, North Las Vegas 89084. Neighborhood comps — not a valley average. Call (702) 500-1332.',
     keywords: ['home valuation Aliante', 'property value estimate', 'CMA', 'sell my home'],
   },
   contact: {
-    title: 'Contact Aliante Real Estate - Call (702) 707-7273',
+    title: 'Contact Aliante Real Estate - Call (702) 500-1332',
     description:
-      'Contact Dr. Jan Duffy in Aliante, North Las Vegas 89084. Office: 2590 Nature Park Drive, Suite 275. Call (702) 707-7273.',
+      'Contact Dr. Jan Duffy in Aliante, North Las Vegas 89084. Office: 2590 Nature Park Drive, Suite 275. Call (702) 500-1332.',
     keywords: ['contact Aliante realtor', 'real estate agent', 'buyer consultation'],
   },
   search: {
     title: 'Search Aliante Homes - Advanced Property Search Tool',
     description:
-      'Search Aliante homes in North Las Vegas 89084. Filter by price, beds, baths, and village. Call (702) 707-7273.',
+      'Search Aliante homes in North Las Vegas 89084. Filter by price, beds, baths, and village. Call (702) 500-1332.',
     keywords: ['property search Aliante', 'home search tool', 'MLS search', 'real estate search'],
   },
 };

@@ -16,7 +16,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'How do I compare villages?',
       answer:
-        'Use the <a href="/neighborhoods/compare" class="text-blue-600 hover:underline font-semibold">comparison page</a> for gate, golf, 55+, and parks. I tour two villages on live listings — I do not rank a “best” neighborhood. Call (702) 707-7273.',
+        'Use the <a href="/neighborhoods/compare" class="text-blue-600 hover:underline font-semibold">comparison page</a> for gate, golf, 55+, and parks. I tour two villages on live listings — I do not rank a “best” neighborhood. Call (702) 500-1332.',
     },
   ],
   '/builders': [
@@ -28,7 +28,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Do I pay extra to use a buyer’s agent at a builder?',
       answer:
-        'On participating builder sales the cooperating commission typically comes from the builder’s marketing budget. Confirm the fee in writing before you tour. Call (702) 707-7273.',
+        'On participating builder sales the cooperating commission typically comes from the builder’s marketing budget. Confirm the fee in writing before you tour. Call (702) 500-1332.',
     },
     {
       question: 'Where do I see current incentives?',
@@ -40,7 +40,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Why don’t you list today’s incentive dollar amounts?',
       answer:
-        'Builder credits, rate buydowns, and upgrades change with inventory and corporate directives. A number on this page would be stale. I confirm the live sheet for the community you will tour. Call (702) 707-7273.',
+        'Builder credits, rate buydowns, and upgrades change with inventory and corporate directives. A number on this page would be stale. I confirm the live sheet for the community you will tour. Call (702) 500-1332.',
     },
     {
       question: 'Do I have to use the builder’s lender?',
@@ -57,7 +57,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Is Tri Pointe building inside Aliante 89084?',
       answer:
-        'Current Tri Pointe collections shoppers ask about are northwest Las Vegas (Kyle Pointe, Citrine), not inside Aliante. Confirm the live map. Call (702) 707-7273.',
+        'Current Tri Pointe collections shoppers ask about are northwest Las Vegas (Kyle Pointe, Citrine), not inside Aliante. Confirm the live map. Call (702) 500-1332.',
     },
   ],
   '/gated-communities': [
@@ -69,7 +69,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Does a gate change HOA dues?',
       answer:
-        'Gated villages often carry a village association on top of the Aliante master HOA. Confirm the current stack in the resale documents for that address. Call (702) 707-7273.',
+        'Gated villages often carry a village association on top of the Aliante master HOA. Confirm the current stack in the resale documents for that address. Call (702) 500-1332.',
     },
     {
       question: 'Is Sun City Aliante gated?',
@@ -91,7 +91,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Fairway, green, or interior street — what is the difference?',
       answer:
-        'Fairway lots see play and errant balls. Green-adjacent lots see more foot traffic on some holes. Interior Club Aliante streets are a different product. I map the lot before you tour. Call (702) 707-7273.',
+        'Fairway lots see play and errant balls. Green-adjacent lots see more foot traffic on some holes. Interior Club Aliante streets are a different product. I map the lot before you tour. Call (702) 500-1332.',
     },
   ],
   '/sun-city-aliante': [
@@ -120,14 +120,14 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Can you guarantee a school assignment?',
       answer:
-        'No. Attendance zones change. Confirm with CCSD for the specific address and school year. Call (702) 707-7273 and I will help you match the listing to the current boundary map.',
+        'No. Attendance zones change. Confirm with CCSD for the specific address and school year. Call (702) 500-1332 and I will help you match the listing to the current boundary map.',
     },
   ],
   '/market-report': [
     {
       question: 'Why don’t you publish a median sale price here?',
       answer:
-        'A median on this page would be stale by the next closing. Use the live MLS widgets on this page and <a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">homes for sale</a>. Call (702) 707-7273 for a village-level read.',
+        'A median on this page would be stale by the next closing. Use the live MLS widgets on this page and <a href="/homes-for-sale" class="text-blue-600 hover:underline font-semibold">homes for sale</a>. Call (702) 500-1332 for a village-level read.',
     },
     {
       question: 'Is this the whole Las Vegas valley?',
@@ -139,7 +139,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Is this an automated value?',
       answer:
-        'No. I prepare a comparative market analysis from Aliante village comps — not a valley AVM. Call (702) 707-7273 or submit the form on this page.',
+        'No. I prepare a comparative market analysis from Aliante village comps — not a valley AVM. Call (702) 500-1332 or submit the form on this page.',
     },
     {
       question: 'Do you charge for a CMA?',
@@ -151,7 +151,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'What does buyer representation cost in Aliante?',
       answer:
-        'On participating sales the cooperating commission typically comes from the seller or builder marketing budget. Confirm the fee in writing before you tour. Call (702) 707-7273.',
+        'On participating sales the cooperating commission typically comes from the seller or builder marketing budget. Confirm the fee in writing before you tour. Call (702) 500-1332.',
     },
     {
       question: 'Can you represent me at a new-construction desk?',
@@ -163,7 +163,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'How do you price an Aliante listing?',
       answer:
-        'Village comps — Prominence, Paseos, Club Aliante, Sun City — not a valley average. I will not quote a list price in this FAQ. Call (702) 707-7273 for a CMA.',
+        'Village comps — Prominence, Paseos, Club Aliante, Sun City — not a valley average. I will not quote a list price in this FAQ. Call (702) 500-1332 for a CMA.',
     },
     {
       question: 'Do I need HOA documents before listing?',
@@ -175,7 +175,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'How often does this search update?',
       answer:
-        'MLS data on this site refreshes about every 15 minutes. Inventory changes daily. Call (702) 707-7273 for an address that just hit the market.',
+        'MLS data on this site refreshes about every 15 minutes. Inventory changes daily. Call (702) 500-1332 for an address that just hit the market.',
     },
     {
       question: 'Can you save a search for me?',
@@ -192,7 +192,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Can you get me a loan?',
       answer:
-        'No. I am a realtor. I can introduce licensed lenders. Compare at least two written quotes. Call (702) 707-7273.',
+        'No. I am a realtor. I can introduce licensed lenders. Compare at least two written quotes. Call (702) 500-1332.',
     },
   ],
   '/investment-analysis': [
@@ -204,7 +204,7 @@ export const pageFaqs: Record<string, GuideFaq[]> = {
     {
       question: 'Will you project a cap rate?',
       answer:
-        'I review buy-and-hold math from numbers you and your CPA provide. I will not publish a guaranteed return. Call (702) 707-7273.',
+        'I review buy-and-hold math from numbers you and your CPA provide. I will not publish a guaranteed return. Call (702) 500-1332.',
     },
   ],
   '/new-construction': [

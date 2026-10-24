@@ -11,7 +11,7 @@ import WhyNewConstruction from '../../components/WhyNewConstruction';
 export const metadata = pageMetadata({
   title: 'Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084',
   description:
-    'Lennar new construction in Aliante, North Las Vegas 89084. Independent buyer’s agent. Confirm live inventory and incentives. Call (702) 707-7273.',
+    'Lennar new construction in Aliante, North Las Vegas 89084. Independent buyer’s agent. Confirm live inventory and incentives. Call (702) 500-1332.',
   path: '/builders/lennar',
   keywords: 'lennar aliante, lennar north las vegas, lennar homes 89084',
 });
@@ -21,7 +21,7 @@ export default function Lennar() {
     <main>
       <NewConstructionHero
         title="Lennar Homes in Aliante | Buyer Agency, North Las Vegas 89084"
-        subtitle="I represent you on the Lennar contract in ZIP 89084. Confirm live inventory. Call (702) 707-7273."
+        subtitle="I represent you on the Lennar contract in ZIP 89084. Confirm live inventory. Call (702) 500-1332."
         filterHeading="Lennar communities near Aliante 89084"
         image={pageHero('/builders/lennar')}
       />

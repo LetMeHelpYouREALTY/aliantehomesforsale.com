@@ -10,7 +10,7 @@ import PageFAQ from '../../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'The Paseos Aliante | Homes for Sale North Las Vegas 89084',
   description:
-    'The Paseos is an open-access Aliante village in North Las Vegas 89084 with parks and trails. Confirm live MLS listings. Call (702) 707-7273.',
+    'The Paseos is an open-access Aliante village in North Las Vegas 89084 with parks and trails. Confirm live MLS listings. Call (702) 500-1332.',
   path: '/neighborhoods/paseos',
   keywords: 'the paseos aliante, paseos north las vegas 89084',
 });
@@ -20,7 +20,7 @@ export default function Paseos() {
     <main>
       <NeighborhoodsHero
         title="The Paseos Aliante | Homes for Sale North Las Vegas 89084"
-        subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 707-7273."
+        subtitle="Open-access village inside the Aliante master plan. Confirm live MLS. Call (702) 500-1332."
         image={pageHero('/neighborhoods/paseos')}
       />
       <EnhancedFeaturedProperties />

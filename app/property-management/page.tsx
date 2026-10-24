@@ -8,7 +8,7 @@ import PropertyManagementFAQ from '../components/PropertyManagementFAQ';
 export const metadata = pageMetadata({
   title: 'Aliante Property Management | We Sell Homes — HOA Is Next Door',
   description:
-    'Looking for Aliante property management? FirstService Residential manages the master association at 2590 Nature Park Drive, Suite 100. Dr. Jan Duffy sells homes from Suite 275. Call (702) 707-7273 to buy or sell.',
+    'Looking for Aliante property management? FirstService Residential manages the master association at 2590 Nature Park Drive, Suite 100. Dr. Jan Duffy sells homes from Suite 275. Call (702) 500-1332 to buy or sell.',
   path: '/property-management',
   keywords:
     'aliante property management, realty management aliante, firstservice residential aliante, aliante leasing agent, aliante rental management',
@@ -20,7 +20,7 @@ export default function PropertyManagementPage() {
       <PageHero
         eyebrow="Aliante · North Las Vegas 89084"
         title="Aliante Property Management | We Sell Homes, Not Leases"
-        subtitle="FirstService Residential runs the Aliante Master Association from Suite 100 in this building. I list and sell homes from Suite 275. Call (702) 707-7273."
+        subtitle="FirstService Residential runs the Aliante Master Association from Suite 100 in this building. I list and sell homes from Suite 275. Call (702) 500-1332."
         image={pageHero('/property-management')}
       />
       <PropertyManagementContent />

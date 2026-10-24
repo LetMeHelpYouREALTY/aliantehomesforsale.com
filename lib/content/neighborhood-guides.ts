@@ -37,7 +37,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'How I tour The Prominence versus nearby villages',
         paragraphs: [
           'Buyers often compare The Prominence with Club Aliante (golf, also gated) and Desert Willows or The Paseos (open-access). I line up lot position, HOA stack, and live comps for the three addresses you will actually see — not a ZIP-wide average.',
-          'Call (702) 707-7273 to set a gate-code tour. I represent you, not the listing desk, on inspection, HOA questions, and the offer.',
+          'Call (702) 500-1332 to set a gate-code tour. I represent you, not the listing desk, on inspection, HOA questions, and the offer.',
         ],
       },
     ],
@@ -50,7 +50,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
       {
         question: 'How do Prominence HOA dues compare with other Aliante villages?',
         answer:
-          'Dues change. I confirm the current master + village stack in the resale documents for that address. I will not publish a stale monthly number. Call (702) 707-7273 with the listing you are considering.',
+          'Dues change. I confirm the current master + village stack in the resale documents for that address. I will not publish a stale monthly number. Call (702) 500-1332 with the listing you are considering.',
       },
       {
         question: 'Should I buy Prominence or Club Aliante?',
@@ -78,7 +78,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'Open-access versus gated Aliante',
         paragraphs: [
           'Desert Willows does not use a guard gate. If controlled entry is the requirement, look at The Prominence or Club Aliante. If you want parks without a gate, Desert Willows and The Paseos are the usual pair I compare.',
-          'Call (702) 707-7273. I represent you on HOA review, inspections, and the offer — not a listing desk inside this village.',
+          'Call (702) 500-1332. I represent you on HOA review, inspections, and the offer — not a listing desk inside this village.',
         ],
       },
     ],
@@ -119,7 +119,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'Who I compare The Paseos against',
         paragraphs: [
           'Most shoppers pair The Paseos with Desert Willows (also open-access) or step up to gated Prominence. I set that comparison on live listings, not marketing copy.',
-          'Call (702) 707-7273 to walk parks and listings in one appointment. I represent you on the purchase in ZIP 89084.',
+          'Call (702) 500-1332 to walk parks and listings in one appointment. I represent you on the purchase in ZIP 89084.',
         ],
       },
     ],
@@ -160,7 +160,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'Club Aliante versus other Aliante villages',
         paragraphs: [
           'Compare Club Aliante with The Prominence if you want a gate without golf frontage, or with Sun City Aliante if 55+ occupancy rules are the requirement. Interior Club Aliante streets are a different product from Desert Willows open-access parks.',
-          'Call (702) 707-7273 for a gate-code showing. I represent you on lot position, HOA, and the offer.',
+          'Call (702) 500-1332 for a gate-code showing. I represent you on lot position, HOA, and the offer.',
         ],
       },
     ],
@@ -201,7 +201,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'New construction versus Aliante resale',
         paragraphs: [
           'A Tule Springs spec home can close faster than a to-be-built. An Aliante resale can put you in a gated or golf village the builders are not opening this year. I review the incentive sheet, lot premium, and HOA on both sides.',
-          'Call (702) 707-7273. I represent you — not the builder sales desk — on options, credits, and walk-throughs.',
+          'Call (702) 500-1332. I represent you — not the builder sales desk — on options, credits, and walk-throughs.',
         ],
       },
     ],
@@ -219,7 +219,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
       {
         question: 'Should I buy Tule Springs new or Aliante resale?',
         answer:
-          'New construction is incentives, lot premium, and warranty. Aliante resale is the village (gate, golf, 55+, parks) you cannot buy from a Tule Springs sales desk. I compare two live addresses. Call (702) 707-7273.',
+          'New construction is incentives, lot premium, and warranty. Aliante resale is the village (gate, golf, 55+, parks) you cannot buy from a Tule Springs sales desk. I compare two live addresses. Call (702) 500-1332.',
       },
     ],
   },
@@ -235,7 +235,7 @@ export const neighborhoodGuides: Record<string, VillageGuide> = {
         heading: 'What I put on the same-day tour',
         paragraphs: [
           'Most buyers pick one axis: gate, golf, 55+, or parks. I do not stack six villages in one afternoon. Two villages plus live comps is enough to decide. Ardiente (89081) is a different 55+ community — I will tell you which address is which.',
-          'HOA dues, rental caps, and parking rules differ. I pull the documents for the village you will actually bid on. Call (702) 707-7273 with the list of streets you want to see.',
+          'HOA dues, rental caps, and parking rules differ. I pull the documents for the village you will actually bid on. Call (702) 500-1332 with the list of streets you want to see.',
         ],
       },
       {

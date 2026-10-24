@@ -11,7 +11,7 @@ type HomesForSaleHeroProps = {
 
 export default function HomesForSaleHero({
   title = 'Aliante Homes for Sale | Realtor MLS Search, North Las Vegas 89084',
-  subtitle = 'Live MLS for ZIP 89084 — Club Aliante, gated villages, Sun City Aliante. Call (702) 707-7273.',
+  subtitle = 'Live MLS for ZIP 89084 — Club Aliante, gated villages, Sun City Aliante. Call (702) 500-1332.',
   image = siteImages.homesForSale,
 }: HomesForSaleHeroProps) {
   return (

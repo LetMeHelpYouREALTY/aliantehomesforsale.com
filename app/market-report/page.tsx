@@ -11,7 +11,7 @@ import PropertyCategories from '../components/PropertyCategories';
 export const metadata = pageMetadata({
   title: 'Aliante Market Report | ZIP 89084 MLS Trends, North Las Vegas',
   description:
-    'Aliante, North Las Vegas 89084 market tools from live MLS. Confirm current medians on the widgets. Call (702) 707-7273.',
+    'Aliante, North Las Vegas 89084 market tools from live MLS. Confirm current medians on the widgets. Call (702) 500-1332.',
   path: '/market-report',
 });
 
@@ -20,7 +20,7 @@ export default function MarketReport() {
     <main>
       <HomesForSaleHero
         title="Aliante Market Report | ZIP 89084 MLS Trends, North Las Vegas"
-        subtitle="Use live widgets for current medians. I will not quote a stale average in a heading. Call (702) 707-7273."
+        subtitle="Use live widgets for current medians. I will not quote a stale average in a heading. Call (702) 500-1332."
         image={pageHero('/market-report')}
       />
       <HomesMarketSnapshot />

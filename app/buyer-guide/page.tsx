@@ -12,7 +12,7 @@ import PageFAQ from '../components/PageFAQ';
 export const metadata = pageMetadata({
   title: 'Buyer Representation in Aliante | North Las Vegas 89084 Realtor',
   description:
-    'Independent buyer’s agent in Aliante, North Las Vegas 89084. Club Aliante, gated villages, Sun City Aliante, Tule Springs. Call (702) 707-7273.',
+    'Independent buyer’s agent in Aliante, North Las Vegas 89084. Club Aliante, gated villages, Sun City Aliante, Tule Springs. Call (702) 500-1332.',
   path: '/buyer-guide',
 });
 
@@ -21,7 +21,7 @@ export default function BuyerGuide() {
     <main>
       <AboutHero
         title="Buyer Representation in Aliante, North Las Vegas 89084"
-        subtitle="I represent you on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Call (702) 707-7273."
+        subtitle="I represent you on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction. Call (702) 500-1332."
         image={pageHero('/buyer-guide')}
       />
       <BuyerGuideContent />

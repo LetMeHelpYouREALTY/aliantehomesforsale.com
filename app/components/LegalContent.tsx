@@ -35,7 +35,7 @@ export default function LegalContent({
           </h2>
           <HeadingPhoto
             image={siteImages.officeNap}
-            caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 707-7273"
+            caption="2590 Nature Park Drive, Suite 275, North Las Vegas, NV 89084 · (702) 500-1332"
           />
 
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
@@ -61,7 +61,7 @@ export default function LegalContent({
             </p>
 
             <p className="leading-relaxed">
-              <strong>Phone:</strong> (702) 707-7273
+              <strong>Phone:</strong> (702) 500-1332
               <br />
               <strong>Email:</strong> DrDuffy@AlianteHomesForSale.com
             </p>
