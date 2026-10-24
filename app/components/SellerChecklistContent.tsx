@@ -27,9 +27,9 @@ export default function SellerChecklistContent() {
               </Link>
               . The difference between an average sale and an exceptional one often comes down to
               preparation, pricing strategy, and marketing execution. As your listing agent in the
-              Aliante market, in real estate since 1983, I'll walk you through pricing from village comps, MLS
-              photos, and offer review. Time on market still depends on the list price and the week
-              — I will not promise a sale speed. Get started with a{' '}
+              Aliante market, in real estate since 1983, I'll walk you through pricing from village
+              comps, MLS photos, and offer review. Time on market still depends on the list price
+              and the week — I will not promise a sale speed. Get started with a{' '}
               <Link
                 href="/home-valuation"
                 className="text-blue-600 hover:text-blue-800 font-semibold hover:underline"
@@ -160,10 +160,10 @@ export default function SellerChecklistContent() {
 
             <p className="leading-relaxed">
               Selling a home is a significant life event, and you deserve representation that
-              combines local market expertise with professional execution. I have been in real estate
-              since 1983 and list Aliante homes. Contact me today for a comparative market analysis and listing
-              consultation where we can discuss your specific situation and create a customized plan
-              for your successful sale.
+              combines local market expertise with professional execution. I have been in real
+              estate since 1983 and list Aliante homes. Contact me today for a comparative market
+              analysis and listing consultation where we can discuss your specific situation and
+              create a customized plan for your successful sale.
             </p>
           </div>
         </div>

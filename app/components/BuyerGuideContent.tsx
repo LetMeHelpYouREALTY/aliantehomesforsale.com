@@ -26,10 +26,10 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your local buyer's agent, in real estate since 1983, I represent you through pre-approval, tours,
-              offers, and closing. My role is to be your advocate, advisor, and expert throughout
-              the entire transaction, ensuring that you make informed decisions and never feel
-              pressured or confused about the process.
+              As your local buyer's agent, in real estate since 1983, I represent you through
+              pre-approval, tours, offers, and closing. My role is to be your advocate, advisor, and
+              expert throughout the entire transaction, ensuring that you make informed decisions
+              and never feel pressured or confused about the process.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

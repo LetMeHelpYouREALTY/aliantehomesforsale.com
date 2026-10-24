@@ -19,9 +19,9 @@ export default function AgentWelcomeSection() {
           caption="2590 Nature Park Drive, Suite 275 · North Las Vegas 89084"
         />
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          In real estate since 1983. Aliante
-          89084 is my home market — gated villages, golf-course homes, and Sun City Aliante 55+.
-          Call (702) 707-7273 when you want a showing or a pricing conversation.
+          In real estate since 1983. Aliante 89084 is my home market — gated villages, golf-course
+          homes, and Sun City Aliante 55+. Call (702) 707-7273 when you want a showing or a pricing
+          conversation.
         </p>
         <Link
           href="/about"
