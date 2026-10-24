@@ -137,11 +137,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
 
-        {/* Matching Calendly event below content on pages without an inline scheduler */}
-        <CalendlyPageSection />
-
         {/* RealScout search (lead gen): below hero on home (in page); below content on other pages */}
         <RealScoutSearchSectionLayout />
+
+        {/* Matching Calendly event right after RealScout on pages without an inline scheduler */}
+        <CalendlyPageSection />
 
         <PerformanceMonitor />
 

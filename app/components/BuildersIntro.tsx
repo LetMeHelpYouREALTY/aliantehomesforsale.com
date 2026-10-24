@@ -26,10 +26,10 @@ export default function BuildersIntro() {
           </p>
 
           <p className="leading-relaxed">
-            As Dr. Jan Duffy, your local new construction specialist, in real estate since 1983, I represent you —
-            not the builder — on the contract, options, and walk-throughs. Confirm current
-            communities, inventory, and incentive programs on this month’s sheet. I match the
-            builder map to the ZIP you actually want — Aliante 89084 versus nearby Tule Springs.
+            As Dr. Jan Duffy, your local new construction specialist, in real estate since 1983, I
+            represent you — not the builder — on the contract, options, and walk-throughs. Confirm
+            current communities, inventory, and incentive programs on this month’s sheet. I match
+            the builder map to the ZIP you actually want — Aliante 89084 versus nearby Tule Springs.
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4" style={{ color: '#2c5aa0' }}>

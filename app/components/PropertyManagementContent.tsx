@@ -24,9 +24,9 @@ export default function PropertyManagementContent() {
         />
         <p className="leading-relaxed">
           Google searches for Aliante property management, leasing agents, and rental companies
-          often land here. {agentName} is a licensed Nevada realtor. If
-          you need a landlord, HOA manager, or leasing office, that is a different company. If you
-          need to buy or sell in ZIP 89084, call{' '}
+          often land here. {agentName} is a licensed Nevada realtor. If you need a landlord, HOA
+          manager, or leasing office, that is a different company. If you need to buy or sell in ZIP
+          89084, call{' '}
           <a href={`tel:${phoneTel}`} className="font-semibold" style={{ color: '#2c5aa0' }}>
             {phone}
           </a>

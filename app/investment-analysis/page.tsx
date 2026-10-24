@@ -26,7 +26,7 @@ export default function InvestmentAnalysis() {
       <HomesMarketSnapshot />
       <InvestmentAnalysisContent />
       <AboutExpertise />
-      <EnhancedContactForm event="appointment" />
+      <EnhancedContactForm event="buyer" />
       <PageFAQ path="/investment-analysis" title="Aliante investment FAQ" />
       <HomesCTA />
     </main>

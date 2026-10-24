@@ -1,5 +1,6 @@
 import { pageMetadata } from '../../lib/seo-utils';
 import AlianteFAQ from '../components/AlianteFAQ';
+import CalendlyAfterListings from '../components/CalendlyAfterListings';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesMarketSnapshot from '../components/HomesMarketSnapshot';
@@ -25,6 +26,7 @@ export default function HomesForSale() {
 
         {/* RealScout search: right below hero (primary lead-gen) */}
         <RealScoutSearchSection />
+        <CalendlyAfterListings />
 
         {/* Property Categories */}
         <PropertyCategories />

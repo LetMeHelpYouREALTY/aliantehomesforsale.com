@@ -1,6 +1,7 @@
 import AgentWelcomeSection from './AgentWelcomeSection';
 import AlianteFAQ from './AlianteFAQ';
 import BuyerPathSection from './BuyerPathSection';
+import CalendlyAfterListings from './CalendlyAfterListings';
 import EnhancedHero from './EnhancedHero';
 import EnhancedMarketInsights from './EnhancedMarketInsights';
 import EnhancedPropertyTypes from './EnhancedPropertyTypes';
@@ -21,6 +22,7 @@ export function HomeSectionsTop() {
     <>
       <EnhancedHero />
       <RealScoutSearchSection />
+      <CalendlyAfterListings />
       <AgentWelcomeSection />
       <LifestyleHomesSection />
       <BuyerPathSection />

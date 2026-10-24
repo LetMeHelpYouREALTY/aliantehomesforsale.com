@@ -145,18 +145,14 @@ export default function EnhancedFooter() {
                 <p className="text-xs text-gray-400">{siteConfig.agentName}</p>
               </div>
             </div>
-            <p className="text-sm text-gray-300 mb-3">
-              {siteConfig.agentName}
-            </p>
+            <p className="text-sm text-gray-300 mb-3">{siteConfig.agentName}</p>
             <a
               href={siteConfig.calendly.events.consultation.url}
               className="inline-block mb-4 text-sm font-semibold text-[#16B286] hover:underline"
             >
               Schedule time with me
             </a>
-            <p className="text-xs text-gray-400 mb-4">
-              Equal Housing Opportunity
-            </p>
+            <p className="text-xs text-gray-400 mb-4">Equal Housing Opportunity</p>
             <nav aria-label="Company links">
               <ul className="space-y-2 text-sm">
                 {companyLinks.map((link) => (
@@ -250,9 +246,7 @@ export default function EnhancedFooter() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <div className="text-center md:text-left">
-              <p className="mb-1">
-                © 2026 {siteConfig.siteName}.
-              </p>
+              <p className="mb-1">© 2026 {siteConfig.siteName}.</p>
               <p className="mb-1">
                 {siteConfig.brokerage} since September 2008 · License {siteConfig.agentLicense}
               </p>

@@ -29,16 +29,15 @@ export function calendlyEventForPath(pathname: string): CalendlyEventKey {
   if (pathname.startsWith('/seller-checklist')) {
     return 'listing';
   }
-  if (
-    pathname.startsWith('/home-valuation') ||
-    pathname.startsWith('/investment-analysis') ||
-    pathname.startsWith('/mortgage-calculator') ||
-    pathname.startsWith('/new-construction') ||
-    pathname.startsWith('/builders')
-  ) {
-    return 'appointment';
+  if (pathname.startsWith('/home-valuation')) {
+    return 'listing';
+  }
+  if (pathname.startsWith('/investment-analysis') || pathname.startsWith('/mortgage-calculator')) {
+    return 'buyer';
   }
   if (
+    pathname.startsWith('/new-construction') ||
+    pathname.startsWith('/builders') ||
     pathname.startsWith('/homes-for-sale') ||
     pathname.startsWith('/search') ||
     pathname.startsWith('/golf-homes') ||
@@ -51,12 +50,27 @@ export function calendlyEventForPath(pathname: string): CalendlyEventKey {
   return 'consultation';
 }
 
-export function calendlyEmbedUrl(event: CalendlyEventKey): string {
+/**
+ * Embed URL for an event, tagged with UTM when the page is known. utm_source is the
+ * bare domain so the Calendly → FUB Worker can map the booking to this site.
+ */
+export function calendlyEmbedUrl(
+  event: CalendlyEventKey,
+  tracking?: { pathname: string; medium: string }
+): string {
   const base = siteConfig.calendly.events[event].url;
   const params = new URLSearchParams({
     hide_gdpr_banner: '1',
     primary_color: '2c5aa0',
   });
+  if (tracking) {
+    params.set('utm_source', 'aliantehomesforsale.com');
+    params.set('utm_medium', tracking.medium);
+    params.set(
+      'utm_campaign',
+      tracking.pathname === '/' ? 'home' : tracking.pathname.replace(/^\/|\/$/g, '')
+    );
+  }
   return `${base}?${params.toString()}`;
 }
 

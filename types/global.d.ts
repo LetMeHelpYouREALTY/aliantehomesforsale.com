@@ -36,6 +36,7 @@ declare global {
         branding: boolean;
       }) => void;
       initPopupWidget: (options: { url: string }) => void;
+      destroyBadgeWidget?: () => void;
     };
   }
 }
