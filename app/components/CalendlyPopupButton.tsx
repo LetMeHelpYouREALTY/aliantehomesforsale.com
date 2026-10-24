@@ -1,7 +1,7 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { type CalendlyEventKey, calendlyEmbedUrl } from '../../lib/calendly';
-import { siteConfig } from '../../lib/site-config';
 
 type CalendlyPopupButtonProps = {
   event?: CalendlyEventKey;
@@ -14,7 +14,8 @@ export default function CalendlyPopupButton({
   children,
   className = '',
 }: CalendlyPopupButtonProps) {
-  const fallbackHref = siteConfig.calendly.events[event].url;
+  const pathname = usePathname() || '/';
+  const url = calendlyEmbedUrl(event, { pathname, medium: 'popup' });
 
   return (
     <button
@@ -22,10 +23,10 @@ export default function CalendlyPopupButton({
       className={className}
       onClick={() => {
         if (window.Calendly) {
-          window.Calendly.initPopupWidget({ url: calendlyEmbedUrl(event) });
+          window.Calendly.initPopupWidget({ url });
           return;
         }
-        window.open(fallbackHref, '_blank', 'noopener,noreferrer');
+        window.open(url, '_blank', 'noopener,noreferrer');
       }}
     >
       {children}

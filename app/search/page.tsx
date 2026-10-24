@@ -1,5 +1,6 @@
 import { pageHero } from '../../lib/content/site-images';
 import { pageMetadata } from '../../lib/seo-utils';
+import CalendlyAfterListings from '../components/CalendlyAfterListings';
 import HomesCTA from '../components/HomesCTA';
 import HomesForSaleHero from '../components/HomesForSaleHero';
 import HomesSearchTips from '../components/HomesSearchTips';
@@ -24,6 +25,7 @@ export default function Search() {
         image={pageHero('/search')}
       />
       <RealScoutSearchSection />
+      <CalendlyAfterListings />
       <SearchPageContent />
       <PropertyCategories />
       <HomesSearchTips />

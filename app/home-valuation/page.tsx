@@ -23,7 +23,7 @@ export default function HomeValuation() {
         image={pageHero('/home-valuation')}
       />
       <HomeValuationContent />
-      <EnhancedContactForm event="appointment" />
+      <EnhancedContactForm event="listing" />
       <AboutExpertise />
       <PageFAQ path="/home-valuation" title="Aliante home valuation FAQ" />
       <AboutCTA />

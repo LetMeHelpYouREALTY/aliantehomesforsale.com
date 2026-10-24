@@ -22,7 +22,7 @@ export default function NewConstructionCTA() {
           Call {siteConfig.phone}
         </a>
         <CalendlyPopupButton
-          event="appointment"
+          event="showing"
           className="inline-block py-4 px-8 rounded-lg font-semibold text-lg text-white bg-transparent border-2 border-white transition-all hover:bg-white hover:text-[#0A2540] focus:ring-4 focus:ring-white/30 focus:outline-none"
         >
           Schedule Builder Tours

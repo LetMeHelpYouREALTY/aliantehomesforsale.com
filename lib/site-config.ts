@@ -139,7 +139,7 @@ export const siteConfig = {
     'https://www.google.com/maps/search/?api=1&query=2590+Nature+Park+Drive+Suite+275,+North+Las+Vegas,+NV+89084',
   ] as string[],
   /**
-   * Live Calendly event types (verified 2026-08-31).
+   * Live Calendly event types (verified 2026-10-24).
    * Used for inline embeds, the sitewide badge, and ScheduleAction schema.
    */
   calendly: {
@@ -154,12 +154,12 @@ export const siteConfig = {
         description:
           'Pick a time to talk Aliante homes, new construction, or your next move with Dr. Jan Duffy.',
       },
-      appointment: {
-        url: 'https://calendly.com/drjanduffy/appointment',
-        label: 'Appointment',
-        heading: 'Book an appointment with Dr. Jan Duffy',
+      buyer: {
+        url: 'https://calendly.com/drjanduffy/buyer-consultation-30-min',
+        label: 'Buyer consultation',
+        heading: 'Schedule a buyer consultation',
         description:
-          'Reserve a working session for a home valuation, builder strategy, or listing plan.',
+          'A 30-minute call on Aliante inventory, payments, and builder incentives before you tour.',
       },
       showing: {
         url: 'https://calendly.com/drjanduffy/showing',

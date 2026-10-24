@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { type CalendlyEventKey, calendlyEmbedUrl } from '../../lib/calendly';
 import { siteConfig } from '../../lib/site-config';
 
@@ -18,12 +19,13 @@ export default function CalendlyInline({
   title,
   className = '',
 }: CalendlyInlineProps) {
+  const pathname = usePathname() || '/';
   const label = title ?? siteConfig.calendly.events[event].heading;
 
   return (
     <div className={className}>
       <iframe
-        src={calendlyEmbedUrl(event)}
+        src={calendlyEmbedUrl(event, { pathname, medium: 'inline' })}
         title={label}
         className="w-full min-h-[700px] rounded-xl border-0 bg-white"
         loading="lazy"
