@@ -15,6 +15,7 @@ import EntityGraphSchema from './components/EntityGraphSchema';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import PerformanceMonitor from './components/PerformanceMonitor';
 import RealScoutSearchSectionLayout from './components/RealScoutSearchSectionLayout';
+import WidgetTracker from './widget-tracker'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -150,6 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CalendlyPopupWidget />
         <Analytics />
         <SpeedInsights />
+        <WidgetTracker />
       </body>
     </html>
   );
