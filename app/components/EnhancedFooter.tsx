@@ -52,7 +52,7 @@ export default function EnhancedFooter() {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Contact</h3>
             <p className="text-gray-300 mb-4 text-sm">
-              Your Aliante and North Las Vegas real estate partner, in real estate since 1983
+              Your Aliante and North Las Vegas real estate partner, licensed since 2008 · 35 years in Las Vegas
             </p>
 
             <div className="space-y-3 text-sm">

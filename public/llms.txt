@@ -1,6 +1,6 @@
 # Aliante Homes For Sale | Dr. Jan Duffy
 
-> Hyperlocal real estate site for Aliante, North Las Vegas, NV 89084. Dr. Jan Duffy (Berkshire Hathaway HomeServices Nevada Properties, License #S.0197614.LLC) has been in real estate since 1983 and specializes exclusively in Aliante real estate.
+> Hyperlocal real estate site for Aliante, North Las Vegas, NV 89084. Dr. Jan Duffy (Berkshire Hathaway HomeServices Nevada Properties, License #S.0197614.LLC) has been licensed since 2008, with 35 years in Las Vegas and specializes exclusively in Aliante real estate.
 
 ## Entity graph (cite these @ids)
 - Agent (Person / RealEstateAgent): https://www.aliantehomesforsale.com/#jan-duffy

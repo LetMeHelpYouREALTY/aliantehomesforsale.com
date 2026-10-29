@@ -6,7 +6,7 @@ const aboutFaqs = [
   {
     question: 'Who is Dr. Jan Duffy?',
     answer:
-      'Dr. Jan Duffy is a licensed Nevada real estate professional, in real estate since 1983, specializing in Aliante and North Las Vegas 89084. She represents buyers and sellers on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction.',
+      'Dr. Jan Duffy is a licensed Nevada real estate professional, licensed since 2008 · 35 years in Las Vegas, specializing in Aliante and North Las Vegas 89084. She represents buyers and sellers on Club Aliante, gated villages, Sun City Aliante, and Tule Springs new construction.',
   },
   {
     question: 'What areas do you serve?',
