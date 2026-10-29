@@ -34,7 +34,7 @@ export default function EnhancedTrustAuthority() {
             Why Choose {siteConfig.agentName}?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Hyperlocal Aliante expertise from a REALTOR® in real estate since 1983.
+            Hyperlocal Aliante expertise from a REALTOR® licensed since 2008 · 35 years in Las Vegas.
           </p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto

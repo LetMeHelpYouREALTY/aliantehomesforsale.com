@@ -26,7 +26,7 @@ function StatCard({ number, label, image }: StatCardProps) {
 export default function AboutStats() {
   const stats: StatCardProps[] = [
     {
-      number: 'Since 1983',
+      number: 'Since 2008',
       label: 'In real estate',
       image: siteImages.specialistStreet,
     },
@@ -46,7 +46,7 @@ export default function AboutStats() {
             Who We Are
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
-            Dr. Jan Duffy, a Top 1% Las Vegas REALTOR®, has been in real estate since 1983 and
+            Dr. Jan Duffy, a Las Vegas REALTOR®, has been licensed since 2008, with 35 years in Las Vegas, and
             specializes in Aliante and North Las Vegas 89084. For verified client feedback, use
             Google Business Profile reviews — I will not publish an unverified star rating here.
           </p>

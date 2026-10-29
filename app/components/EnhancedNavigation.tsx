@@ -60,7 +60,7 @@ export default function EnhancedNavigation() {
                   Aliante Las Vegas
                 </span>
                 <span className="text-xs md:text-sm text-gray-600 font-medium hidden sm:block">
-                  Homes by Dr. Jan Duffy | In Real Estate Since 1983
+                  Homes by Dr. Jan Duffy | Licensed Since 2008
                 </span>
               </span>
             </Link>

@@ -26,7 +26,7 @@ export default function BuyerGuideContent() {
             </p>
 
             <p className="leading-relaxed">
-              As your local buyer's agent, in real estate since 1983, I represent you through
+              As your local buyer's agent, licensed since 2008 · 35 years in Las Vegas, I represent you through
               pre-approval, tours, offers, and closing. My role is to be your advocate, advisor, and
               expert throughout the entire transaction, ensuring that you make informed decisions
               and never feel pressured or confused about the process.

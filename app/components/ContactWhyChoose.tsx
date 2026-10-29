@@ -28,7 +28,7 @@ export default function ContactWhyChoose() {
       image: siteImages.specialistStreet,
       title: 'Local Expertise',
       description:
-        'In real estate since 1983, focused on Aliante and North Las Vegas 89084 properties',
+        'Licensed since 2008 · 35 years in Las Vegas, focused on Aliante and North Las Vegas 89084 properties',
     },
     {
       image: siteImages.builderAdvocate,

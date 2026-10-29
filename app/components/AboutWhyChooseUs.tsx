@@ -52,7 +52,7 @@ export default function AboutWhyChooseUs() {
     },
     {
       title: 'Proven Results',
-      description: 'In real estate since 1983 — call for current Aliante references',
+      description: 'Licensed since 2008 · 35 years in Las Vegas — call for current Aliante references',
       image: siteImages.googleReviews,
     },
   ];

@@ -96,7 +96,7 @@ export const marketSnapshot: MarketSnapshotItem[] = [
     id: 'experience',
     label: 'Local since',
     value: '2018',
-    note: 'Dr. Jan Duffy has been in real estate since 1983 and specializes in Aliante transactions.',
+    note: 'Dr. Jan Duffy has been licensed since 2008, with 35 years in Las Vegas, and specializes in Aliante transactions.',
   },
 ];
 
@@ -105,11 +105,11 @@ export const agentCredentials: CredentialItem[] = [
     id: 'license',
     title: 'Licensed Nevada REALTOR®',
     description:
-      'Dr. Jan Duffy is a licensed Nevada real estate professional, in real estate since 1983, focused on Aliante and North Las Vegas 89084.',
+      'Dr. Jan Duffy is a licensed Nevada real estate professional, licensed since 2008 · 35 years in Las Vegas, focused on Aliante and North Las Vegas 89084.',
   },
   {
     id: 'hyperlocal',
-    title: 'In real estate since 1983',
+    title: 'Licensed since 2008 · 35 years in Las Vegas',
     description:
       'Aliante closings across gated villages, new construction, Club Aliante golf homes, and Sun City Aliante 55+. Call for current references.',
   },
