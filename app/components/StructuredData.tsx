@@ -3,7 +3,7 @@
 import { useId } from 'react';
 
 interface StructuredDataProps {
-  type: 'RealEstateAgent' | 'PropertyListing' | 'NeighborhoodDetail' | 'NeighborhoodGuide' | 'WebSite' | 'LocalBusiness' | 'Organization' | 'Breadcrumbs' | 'FAQPage' | 'Person' | 'Article' | 'HowTo';
+  type: 'RealEstateAgent' | 'PropertyListing' | 'NeighborhoodDetail' | 'NeighborhoodGuide' | 'WebSite' | 'LocalBusiness' | 'Organization' | 'Breadcrumbs' | 'FAQPage' | 'Person' | 'Article' | 'HowTo' | 'Review' | 'Video' | 'Event' | 'Product';
   property?: {
     title: string;
     description: string;
@@ -18,6 +18,7 @@ interface StructuredDataProps {
     mlsNumber?: string;
     yearBuilt?: number;
     propertyType?: string;
+    images?: Array<{ url: string; caption?: string }>;
   };
   breadcrumbs?: Array<{ name: string; url: string }>;
   faqs?: Array<{ question: string; answer: string }>;
@@ -32,6 +33,40 @@ interface StructuredDataProps {
     name: string;
     description: string;
     steps: Array<{ name: string; text: string }>;
+  };
+  review?: {
+    itemReviewed: string;
+    reviewBody: string;
+    rating: number;
+    author: string;
+    datePublished?: string;
+  };
+  video?: {
+    name: string;
+    description: string;
+    thumbnailUrl: string;
+    uploadDate: string;
+    duration?: string;
+    contentUrl?: string;
+    embedUrl?: string;
+  };
+  event?: {
+    name: string;
+    description: string;
+    startDate: string;
+    endDate?: string;
+    location: string;
+    organizer?: string;
+  };
+  product?: {
+    name: string;
+    description: string;
+    image?: string;
+    offers?: {
+      price: number;
+      priceCurrency: string;
+      availability?: string;
+    };
   };
   customData?: Record<string, unknown>;
 }
@@ -186,6 +221,33 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
         numberOfBathroomsTotal: property.bathrooms,
         propertyType: property.propertyType || 'Single Family Residence',
         yearBuilt: property.yearBuilt,
+        image: property.images ? property.images.map((img, index) => ({
+          '@type': 'ImageObject',
+          url: img.url,
+          caption: img.caption || property.title,
+          name: `${property.title} - Image ${index + 1}`,
+          contentLocation: {
+            '@type': 'Place',
+            name: property.address,
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 36.1699,
+              longitude: -115.1398
+            }
+          },
+          exifData: [
+            {
+              '@type': 'PropertyValue',
+              name: 'Location',
+              value: `${property.address}, North Las Vegas, NV ${property.zipCode}`
+            },
+            {
+              '@type': 'PropertyValue',
+              name: 'Property Type',
+              value: property.propertyType || 'Single Family Residence'
+            }
+          ]
+        })) : undefined,
         additionalProperty: [
           {
             '@type': 'PropertyValue',
@@ -196,6 +258,11 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
             '@type': 'PropertyValue',
             name: 'Data Source',
             value: 'Greater Las Vegas MLS - Updated every 15 minutes'
+          },
+          {
+            '@type': 'PropertyValue',
+            name: 'Last Updated',
+            value: new Date().toISOString()
           }
         ]
       };
@@ -619,6 +686,168 @@ export default function StructuredData({ type, property, breadcrumbs, faqs, arti
             name: 'Professional Real Estate Agent'
           }
         ]
+      };
+    }
+
+    if (type === 'Review' && review) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Review',
+        '@id': 'https://www.aliantehomesforsale.com/#review',
+        itemReviewed: {
+          '@type': 'LocalBusiness',
+          name: review.itemReviewed,
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '2590 Nature Park Drive, Suite 275',
+            addressLocality: 'North Las Vegas',
+            addressRegion: 'NV',
+            postalCode: '89084'
+          }
+        },
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: review.rating.toString(),
+          bestRating: '5',
+          worstRating: '1'
+        },
+        author: {
+          '@type': 'Person',
+          name: review.author
+        },
+        reviewBody: review.reviewBody,
+        datePublished: review.datePublished || new Date().toISOString(),
+        publisher: {
+          '@type': 'Organization',
+          name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy'
+        }
+      };
+    }
+
+    if (type === 'Video' && video) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        '@id': `https://www.aliantehomesforsale.com/videos/${video.name.toLowerCase().replace(/\s+/g, '-')}`,
+        name: video.name,
+        description: video.description,
+        thumbnailUrl: video.thumbnailUrl,
+        uploadDate: video.uploadDate,
+        duration: video.duration || 'PT2M',
+        contentUrl: video.contentUrl,
+        embedUrl: video.embedUrl,
+        publisher: {
+          '@type': 'Organization',
+          name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://www.aliantehomesforsale.com/logo.png',
+            width: 250,
+            height: 60
+          }
+        },
+        creator: {
+          '@type': 'Person',
+          name: 'Dr. Jan Duffy',
+          jobTitle: 'Real Estate Agent & Aliante Specialist'
+        },
+        contentLocation: {
+          '@type': 'Place',
+          name: 'Aliante, North Las Vegas',
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 36.1699,
+            longitude: -115.1398
+          }
+        },
+        keywords: 'Aliante homes, North Las Vegas real estate, property tour, virtual home tour'
+      };
+    }
+
+    if (type === 'Event' && event) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Event',
+        '@id': `https://www.aliantehomesforsale.com/events/${event.name.toLowerCase().replace(/\s+/g, '-')}`,
+        name: event.name,
+        description: event.description,
+        startDate: event.startDate,
+        endDate: event.endDate || event.startDate,
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        location: {
+          '@type': 'Place',
+          name: event.location,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'North Las Vegas',
+            addressRegion: 'NV',
+            postalCode: '89084'
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 36.1699,
+            longitude: -115.1398
+          }
+        },
+        organizer: {
+          '@type': 'Person',
+          name: event.organizer || 'Dr. Jan Duffy',
+          telephone: '(702) 707-7273',
+          email: 'DrDuffy@AlianteHomesForSale.com'
+        },
+        performer: {
+          '@type': 'Person',
+          name: 'Dr. Jan Duffy'
+        },
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+          url: 'https://www.aliantehomesforsale.com/events',
+          validFrom: new Date().toISOString()
+        }
+      };
+    }
+
+    if (type === 'Product' && product) {
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        '@id': `https://www.aliantehomesforsale.com/products/${product.name.toLowerCase().replace(/\s+/g, '-')}`,
+        name: product.name,
+        description: product.description,
+        image: product.image ? {
+          '@type': 'ImageObject',
+          url: product.image,
+          caption: product.name,
+          exifData: {
+            '@type': 'PropertyValue',
+            name: 'Location',
+            value: 'Aliante, North Las Vegas, NV'
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: 36.1699,
+            longitude: -115.1398
+          }
+        } : undefined,
+        brand: {
+          '@type': 'Organization',
+          name: 'Aliante Las Vegas | Homes by Dr. Jan Duffy'
+        },
+        offers: product.offers ? {
+          '@type': 'Offer',
+          price: product.offers.price,
+          priceCurrency: product.offers.priceCurrency || 'USD',
+          availability: product.offers.availability || 'https://schema.org/InStock',
+          seller: {
+            '@type': 'Person',
+            name: 'Dr. Jan Duffy'
+          }
+        } : undefined,
+        category: 'Real Estate Services'
       };
     }
 
