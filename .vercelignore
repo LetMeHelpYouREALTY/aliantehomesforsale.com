@@ -56,8 +56,7 @@ coverage/
 ehthumbs.db
 Thumbs.db
 
-# Git
-.git/
+# Git (keep .git/ for Vercel build step git diff checks)
 .gitignore
 
 # Documentation
