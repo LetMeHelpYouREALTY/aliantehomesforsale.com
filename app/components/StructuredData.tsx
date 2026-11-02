@@ -8,7 +8,6 @@ interface StructuredDataProps {
   type:
     | 'RealEstateAgent'
     | 'PropertyListing'
-    | 'NeighborhoodDetail'
     | 'NeighborhoodGuide'
     | 'WebSite'
     | 'LocalBusiness'
@@ -230,66 +229,6 @@ export default function StructuredData({
             postalCode: siteConfig.address.postalCode,
             addressCountry: siteConfig.address.addressCountry,
           },
-        },
-      };
-    }
-
-    if (type === 'NeighborhoodDetail') {
-      return {
-        '@context': 'https://schema.org',
-        '@type': 'Place',
-        name: 'Aliante Neighborhoods',
-        description:
-          'Aliante neighborhoods in North Las Vegas 89084: gated villages, golf-course lots, open-access streets, and Sun City Aliante 55+.',
-        url: 'https://www.aliantehomesforsale.com/neighborhoods',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'North Las Vegas',
-          addressRegion: 'NV',
-          postalCode: '89084',
-          addressCountry: 'US',
-        },
-        containsPlace: [
-          {
-            '@type': 'Place',
-            name: 'The Prominence',
-            description: 'Gated village in Aliante, North Las Vegas 89084',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/prominence',
-          },
-          {
-            '@type': 'Place',
-            name: 'Desert Willows',
-            description: 'Open-access village in Aliante',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/desert-willows',
-          },
-          {
-            '@type': 'Place',
-            name: 'Club Aliante',
-            description: 'Golf course community in Aliante',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/club-aliante',
-          },
-          {
-            '@type': 'Place',
-            name: 'The Paseos',
-            description: 'Open-access village in Aliante',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/paseos',
-          },
-          {
-            '@type': 'Place',
-            name: 'Sun City Aliante',
-            description: 'Del Webb 55+ village inside ZIP 89084',
-            url: 'https://www.aliantehomesforsale.com/sun-city-aliante',
-          },
-          {
-            '@type': 'Place',
-            name: 'Villages at Tule Springs',
-            description: 'New construction east of Aliante near Floyd Lamb Park',
-            url: 'https://www.aliantehomesforsale.com/neighborhoods/tule-springs',
-          },
-        ],
-        areaServed: {
-          '@type': 'Place',
-          name: 'Aliante, North Las Vegas, Nevada',
         },
       };
     }
