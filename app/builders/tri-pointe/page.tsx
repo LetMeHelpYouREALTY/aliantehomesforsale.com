@@ -9,7 +9,7 @@ import TriPointeFAQ from '../../components/TriPointeFAQ';
 export const metadata = pageMetadata({
   title: 'Tri Pointe Homes Las Vegas | New Construction Near Aliante',
   description:
-    'Tri Pointe Homes Las Vegas: current collections are northwest (Kyle Pointe, Citrine), not inside Aliante 89084. Compare with Lennar and Aliante resale. Independent buyer representation. Call (702) 500-1332.',
+    'Tri Pointe Homes Las Vegas: current collections are northwest (Kyle Pointe, Citrine), not inside Aliante 89084. Independent buyer’s agent. Call (702) 500-1332.',
   path: '/builders/tri-pointe',
   keywords:
     'tri pointe homes las vegas, tri pointe las vegas, tripointe homes las vegas, new construction north las vegas',

@@ -5,7 +5,7 @@ import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
-  title: 'Accessibility Statement | Aliante Homes For Sale, North Las Vegas 89084',
+  title: 'Accessibility Statement | Aliante Homes For Sale',
   description:
     'How we work to keep AlianteHomesForSale.com usable. Call (702) 500-1332 if a page, form, or widget blocks you in North Las Vegas 89084.',
   path: '/accessibility',

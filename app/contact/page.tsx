@@ -9,7 +9,7 @@ import NearbyLocatorMap from '../components/NearbyLocatorMap';
 import OfficeLocation from '../components/OfficeLocation';
 
 export const metadata = pageMetadata({
-  title: 'Contact Aliante Realtor | Call (702) 500-1332 · North Las Vegas 89084',
+  title: 'Contact Aliante Realtor | (702) 500-1332 · North Las Vegas',
   description:
     'Call Dr. Jan Duffy at (702) 500-1332. Buyer or seller representation in Aliante, North Las Vegas 89084. Office at 2590 Nature Park Drive, Suite 275.',
   path: '/contact',

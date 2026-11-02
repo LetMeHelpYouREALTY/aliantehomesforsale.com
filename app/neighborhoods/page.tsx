@@ -10,9 +10,9 @@ import PageFAQ from '../components/PageFAQ';
 import StructuredData from '../components/StructuredData';
 
 export const metadata = pageMetadata({
-  title: 'Aliante Neighborhoods | Club Aliante, Sun City, Gated — 89084',
+  title: 'Aliante Neighborhoods 89084 | Club Aliante, Sun City, Gated',
   description:
-    'Aliante neighborhoods in North Las Vegas 89084: Club Aliante, Sun City Aliante, The Prominence, Desert Willows, The Paseos, and nearby Tule Springs. Call (702) 500-1332 for live MLS homes.',
+    'Aliante neighborhoods, North Las Vegas 89084: Club Aliante, Sun City, The Prominence, Desert Willows, The Paseos, and nearby Tule Springs. Call (702) 500-1332.',
   path: '/neighborhoods',
   keywords:
     'aliante neighborhoods, club aliante, sun city aliante, gated communities north las vegas 89084',

@@ -9,7 +9,7 @@ import InvestmentAnalysisContent from '../components/InvestmentAnalysisContent';
 import PageFAQ from '../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Investment Analysis for Aliante Rentals | North Las Vegas 89084',
+  title: 'Investment Analysis: Aliante Rentals | North Las Vegas 89084',
   description:
     'Buy-and-hold analysis for Aliante, North Las Vegas 89084. I sell the home; HOA and rental management is a different company. Call (702) 500-1332.',
   path: '/investment-analysis',

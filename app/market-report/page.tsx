@@ -9,7 +9,7 @@ import PageFAQ from '../components/PageFAQ';
 import PropertyCategories from '../components/PropertyCategories';
 
 export const metadata = pageMetadata({
-  title: 'Aliante Market Report | ZIP 89084 MLS Trends, North Las Vegas',
+  title: 'Aliante Market Report | 89084 MLS Trends, North Las Vegas',
   description:
     'Aliante, North Las Vegas 89084 market tools from live MLS. Confirm current medians on the widgets. Call (702) 500-1332.',
   path: '/market-report',

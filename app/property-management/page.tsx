@@ -6,9 +6,9 @@ import PropertyManagementContent from '../components/PropertyManagementContent';
 import PropertyManagementFAQ from '../components/PropertyManagementFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Aliante Property Management | We Sell Homes — HOA Is Next Door',
+  title: 'Aliante Property Management | We Sell Homes — HOA Next Door',
   description:
-    'Looking for Aliante property management? FirstService Residential manages the master association at 2590 Nature Park Drive, Suite 100. Dr. Jan Duffy sells homes from Suite 275. Call (702) 500-1332 to buy or sell.',
+    'Aliante property management? FirstService Residential runs the master association from Suite 100. Dr. Jan Duffy sells homes from Suite 275. Call (702) 500-1332.',
   path: '/property-management',
   keywords:
     'aliante property management, realty management aliante, firstservice residential aliante, aliante leasing agent, aliante rental management',

@@ -5,7 +5,7 @@ import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
-  title: 'Privacy Policy | Aliante Homes For Sale, North Las Vegas 89084',
+  title: 'Privacy Policy | Aliante Homes For Sale, North Las Vegas',
   description:
     'Privacy policy for AlianteHomesForSale.com. How Dr. Jan Duffy collects, uses, and protects Aliante real estate inquiry data in ZIP 89084.',
   path: '/privacy-policy',

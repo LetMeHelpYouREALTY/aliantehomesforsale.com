@@ -5,9 +5,9 @@ import HeadingPhoto from '../components/HeadingPhoto';
 import LegalContent from '../components/LegalContent';
 
 export const metadata = pageMetadata({
-  title: 'Fair Housing Statement | Aliante Homes For Sale, North Las Vegas 89084',
+  title: 'Fair Housing Statement | Aliante Homes For Sale',
   description:
-    'Equal housing opportunity from Dr. Jan Duffy in Aliante, North Las Vegas 89084. Fair Housing Act compliance on every listing and buyer tour. Call (702) 500-1332.',
+    'Equal housing opportunity from Dr. Jan Duffy in Aliante, North Las Vegas 89084. Fair Housing Act compliance on every listing and tour. Call (702) 500-1332.',
   path: '/fair-housing',
 });
 

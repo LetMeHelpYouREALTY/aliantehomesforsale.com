@@ -8,7 +8,7 @@ import PageFAQ from '../../components/PageFAQ';
 import TopBuilders from '../../components/TopBuilders';
 
 export const metadata = pageMetadata({
-  title: 'Del Webb Sun City Aliante | 55+ Buyer Agency, North Las Vegas 89084',
+  title: 'Del Webb Sun City Aliante | 55+ Buyer Agent, North Las Vegas',
   description:
     'Del Webb at Sun City Aliante in North Las Vegas 89084. Independent buyer’s agent for 55+ new construction. Confirm live inventory. Call (702) 500-1332.',
   path: '/builders/del-webb',

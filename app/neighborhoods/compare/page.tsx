@@ -8,7 +8,7 @@ import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 import PageFAQ from '../../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Compare Aliante Neighborhoods | Club Aliante, Sun City, Prominence',
+  title: 'Compare Aliante Neighborhoods | Club Aliante, Sun City',
   description:
     'Compare Club Aliante, The Prominence, Desert Willows, The Paseos, and Sun City Aliante in North Las Vegas 89084. Confirm live MLS prices. Call (702) 500-1332.',
   path: '/neighborhoods/compare',

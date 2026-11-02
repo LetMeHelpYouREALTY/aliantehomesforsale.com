@@ -8,9 +8,9 @@ import NeighborhoodCards from '../components/NeighborhoodCards';
 import PageFAQ from '../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Gated Communities in Las Vegas | Aliante North Las Vegas Homes',
+  title: 'Gated Communities in Las Vegas | Aliante, North Las Vegas',
   description:
-    'Gated communities in Las Vegas inside Aliante 89084: Club Aliante, The Prominence, Courts at Aliante, Terrasini, and more. Call (702) 500-1332 for live MLS homes for sale.',
+    'Las Vegas gated communities inside Aliante 89084: Club Aliante, The Prominence, Courts at Aliante, Terrasini, and more. Call (702) 500-1332 for live MLS homes.',
   path: '/gated-communities',
   keywords:
     'gated community las vegas, gated communities in las vegas, gated communities las vegas nv, aliante gated',
