@@ -6,8 +6,10 @@ import {
   pageHero,
   siteImages,
 } from '../content/site-images';
-import { siteConfig } from '../site-config';
+import { type SiteNeighborhood, siteConfig } from '../site-config';
 import { graphIds } from './ids';
+
+const isInsideAliante = (n: SiteNeighborhood) => !('outsideAliante' in n && n.outsideAliante);
 
 /** Knowledge graph: Organization, LocalBusiness, Places, Services, OfferCatalog */
 export function buildKnowledgeGraph() {
@@ -130,13 +132,14 @@ export function buildKnowledgeGraph() {
       name: 'North Las Vegas',
       sameAs: graphIds.northLasVegas,
     },
-    containsPlace: siteConfig.neighborhoods.map((n) => ({
+    containsPlace: siteConfig.neighborhoods.filter(isInsideAliante).map((n) => ({
       '@id': graphIds.neighborhood(n.slug),
     })),
   };
 
   const neighborhoodPlaces = siteConfig.neighborhoods.map((n) => {
     const path = 'path' in n && typeof n.path === 'string' ? n.path : `/neighborhoods/${n.slug}`;
+    const insideAliante = isInsideAliante(n);
     return {
       '@type': 'Place',
       '@id': graphIds.neighborhood(n.slug),
@@ -144,12 +147,13 @@ export function buildKnowledgeGraph() {
       description: n.summary,
       url: `${siteConfig.siteUrl}${path}`,
       image: absoluteImageUrl(pageHero(path)),
-      containedInPlace: { '@id': graphIds.aliantePlace },
+      containedInPlace: { '@id': insideAliante ? graphIds.aliantePlace : graphIds.northLasVegas },
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'North Las Vegas',
         addressRegion: 'NV',
-        postalCode: siteConfig.zipCode,
+        // Outside the master plan the ZIP is confirmed per lot, not assumed to be 89084.
+        ...(insideAliante ? { postalCode: siteConfig.zipCode } : {}),
         addressCountry: 'US',
       },
     };

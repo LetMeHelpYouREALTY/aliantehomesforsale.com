@@ -45,6 +45,7 @@ export const siteConfig = {
       name: 'Villages at Tule Springs',
       slug: 'tule-springs',
       summary: 'New construction near Floyd Lamb Park and Tule Springs.',
+      outsideAliante: true,
     },
     {
       name: 'Sun City Aliante',
