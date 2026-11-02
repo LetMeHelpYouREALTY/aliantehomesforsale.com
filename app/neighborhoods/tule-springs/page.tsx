@@ -10,7 +10,7 @@ import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 import PageFAQ from '../../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Villages at Tule Springs Homes | North Las Vegas New Construction',
+  title: 'Villages at Tule Springs | North Las Vegas New Construction',
   description:
     'Villages at Tule Springs sits east of Aliante 89084. D.R. Horton new construction versus Aliante resale. Call (702) 500-1332. Confirm live inventory and prices.',
   path: '/neighborhoods/tule-springs',

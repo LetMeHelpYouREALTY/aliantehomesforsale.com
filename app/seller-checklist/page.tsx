@@ -9,7 +9,7 @@ import PageFAQ from '../components/PageFAQ';
 import SellerChecklistContent from '../components/SellerChecklistContent';
 
 export const metadata = pageMetadata({
-  title: 'Sell Your Aliante Home | Listing Agent, North Las Vegas 89084',
+  title: 'Sell Your Aliante Home | Listing Agent North Las Vegas 89084',
   description:
     'Listing agent for Aliante, North Las Vegas 89084. Neighborhood comps, MLS marketing, and offer negotiation. Call (702) 500-1332.',
   path: '/seller-checklist',

@@ -10,7 +10,7 @@ import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 import PageFAQ from '../../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Desert Willows Aliante | Homes for Sale North Las Vegas 89084',
+  title: 'Desert Willows Aliante Homes for Sale, North Las Vegas 89084',
   description:
     'Desert Willows is an open-access Aliante village in North Las Vegas 89084 with parks and community pools. Confirm live MLS listings. Call (702) 500-1332.',
   path: '/neighborhoods/desert-willows',

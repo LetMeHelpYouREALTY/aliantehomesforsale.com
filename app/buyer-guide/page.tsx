@@ -10,7 +10,7 @@ import HomesSearchTips from '../components/HomesSearchTips';
 import PageFAQ from '../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Buyer Representation in Aliante | North Las Vegas 89084 Realtor',
+  title: 'Aliante Buyer Representation | North Las Vegas 89084 Realtor',
   description:
     'Independent buyer’s agent in Aliante, North Las Vegas 89084. Club Aliante, gated villages, Sun City Aliante, Tule Springs. Call (702) 500-1332.',
   path: '/buyer-guide',

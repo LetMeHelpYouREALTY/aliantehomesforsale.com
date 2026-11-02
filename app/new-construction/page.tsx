@@ -13,7 +13,7 @@ import WhyNewConstruction from '../components/WhyNewConstruction';
 import WhyWorkWithUs from '../components/WhyWorkWithUs';
 
 export const metadata = pageMetadata({
-  title: 'New-Construction Buyer Agency in Aliante | North Las Vegas 89084',
+  title: 'New-Construction Buyer Agency in Aliante | North Las Vegas',
   description:
     'Independent new-construction buyer’s agent in Aliante and Tule Springs. Lennar, D.R. Horton, Del Webb. Confirm live incentives. Call (702) 500-1332.',
   path: '/new-construction',

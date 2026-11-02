@@ -10,9 +10,9 @@ import NeighborhoodsHero from '../../components/NeighborhoodsHero';
 import PageFAQ from '../../components/PageFAQ';
 
 export const metadata = pageMetadata({
-  title: 'Club Aliante Homes for Sale | Gated Golf Village, North Las Vegas',
+  title: 'Club Aliante Gated Golf Homes for Sale | North Las Vegas',
   description:
-    'Club Aliante is the gated village along Aliante Golf Club in North Las Vegas 89084. Fairway and interior lots. Independent realtor Dr. Jan Duffy. Call (702) 500-1332.',
+    'Club Aliante is the gated village along Aliante Golf Club in North Las Vegas 89084. Fairway and interior lots. Realtor Dr. Jan Duffy. Call (702) 500-1332.',
   path: '/neighborhoods/club-aliante',
   keywords:
     'club aliante, club aliante homes for sale, club aliante north las vegas, aliante golf club, golf homes aliante',
