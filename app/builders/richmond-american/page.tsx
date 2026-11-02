@@ -10,7 +10,7 @@ import TopBuilders from '../../components/TopBuilders';
 export const metadata = pageMetadata({
   title: 'Richmond American near Aliante | North Las Vegas 89084',
   description:
-    'Richmond American Homes near Aliante, North Las Vegas. Independent buyer’s agent. Confirm live inventory and whether a community is inside ZIP 89084. Call (702) 500-1332.',
+    'Richmond American near Aliante, North Las Vegas. Independent buyer’s agent. Confirm live inventory and if a community is inside ZIP 89084. Call (702) 500-1332.',
   path: '/builders/richmond-american',
   keywords: 'richmond american aliante, richmond american north las vegas',
 });
