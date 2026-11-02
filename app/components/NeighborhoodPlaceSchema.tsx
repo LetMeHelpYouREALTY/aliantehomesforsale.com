@@ -1,102 +1,42 @@
-'use client';
-
-import { useId } from 'react';
+import { graphIds } from '../../lib/graphs/ids';
+import { type SiteNeighborhood, siteConfig } from '../../lib/site-config';
 
 interface NeighborhoodPlaceSchemaProps {
-  name: string;
+  slug: SiteNeighborhood['slug'];
+  /** Must be copy that is visible on the page. */
   description: string;
-  priceRange: string;
-  latitude: string;
-  longitude: string;
-  features: string[];
-  builders?: string[];
-  homeTypes?: string[];
-  specialFeatures?: string[];
+  containedInPlaceId?: string;
 }
 
+/**
+ * Reuses the sitewide neighborhood Place @id so this block merges with
+ * EntityGraphSchema instead of declaring a second entity.
+ */
 export default function NeighborhoodPlaceSchema({
-  name,
+  slug,
   description,
-  priceRange,
-  latitude,
-  longitude,
-  features,
-  builders,
-  homeTypes,
-  specialFeatures,
+  containedInPlaceId = graphIds.aliantePlace,
 }: NeighborhoodPlaceSchemaProps) {
-  const scriptId = useId();
+  const neighborhood = siteConfig.neighborhoods.find((n) => n.slug === slug);
+  if (!neighborhood) return null;
+  const path =
+    'path' in neighborhood && typeof neighborhood.path === 'string'
+      ? neighborhood.path
+      : `/neighborhoods/${neighborhood.slug}`;
 
   const placeSchema = {
     '@context': 'https://schema.org',
     '@type': 'Place',
-    '@id': `https://www.aliantehomesforsale.com/neighborhoods/${name.toLowerCase().replace(/\s+/g, '-')}#place`,
-    name: `${name} - Aliante, North Las Vegas`,
+    '@id': graphIds.neighborhood(neighborhood.slug),
+    name: neighborhood.name,
     description,
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude,
-      longitude,
-    },
-    containedInPlace: {
-      '@type': 'Place',
-      name: 'Aliante',
-      '@id': 'https://www.aliantehomesforsale.com/#aliante-location',
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'North Las Vegas',
-      addressRegion: 'NV',
-      postalCode: '89084',
-      addressCountry: 'US',
-    },
-    additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'Price Range',
-        value: priceRange,
-      },
-      ...features.map((feature) => ({
-        '@type': 'PropertyValue',
-        name: 'Feature',
-        value: feature,
-      })),
-      ...(builders
-        ? builders.map((builder) => ({
-            '@type': 'PropertyValue',
-            name: 'Builder',
-            value: builder,
-          }))
-        : []),
-      ...(homeTypes
-        ? homeTypes.map((type) => ({
-            '@type': 'PropertyValue',
-            name: 'Home Type',
-            value: type,
-          }))
-        : []),
-      ...(specialFeatures
-        ? specialFeatures.map((feature) => ({
-            '@type': 'PropertyValue',
-            name: 'Special Feature',
-            value: feature,
-          }))
-        : []),
-    ],
-    // AEO 2026: Add expertise and freshness signals
-    provider: {
-      '@type': 'Person',
-      name: 'Dr. Jan Duffy',
-      url: 'https://www.aliantehomesforsale.com/about',
-    },
-    dateModified: new Date().toISOString(),
+    url: `${siteConfig.siteUrl}${path}`,
+    containedInPlace: { '@id': containedInPlaceId },
   };
 
   return (
     <script
       type="application/ld+json"
-      id={scriptId}
-      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
     />
   );

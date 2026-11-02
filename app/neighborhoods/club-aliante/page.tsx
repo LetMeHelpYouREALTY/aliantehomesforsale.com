@@ -22,22 +22,8 @@ export default function ClubAliante() {
   return (
     <>
       <NeighborhoodPlaceSchema
-        name="Club Aliante"
-        description="Club Aliante offers premier golf course living with homes surrounding the championship 18-hole Aliante Golf Club and world-class clubhouse amenities."
-        priceRange="$500,000 - $900,000"
-        latitude="36.2722"
-        longitude="-115.2145"
-        features={[
-          'Championship 18-hole golf course',
-          'Golf course views and access',
-          'Resort-style clubhouse',
-          'Fine dining at club restaurant',
-          'Pro shop and golf instruction',
-          'Premium lot premiums for course views',
-        ]}
-        builders={['Toll Brothers', 'Tri Pointe Homes', 'Custom builders']}
-        homeTypes={['Golf course homes', 'Single-family estates', 'Premium view lots']}
-        specialFeatures={['Direct golf course access', 'Club membership opportunities', 'Tournament-quality course']}
+        slug="club-aliante"
+        description="Club Aliante uses controlled entry. The course next door is the city-owned Aliante Golf Club (Gary Panks design) — public daily-fee play, not a private equity club baked into the deed."
       />
       <main>
         <NeighborhoodsHero

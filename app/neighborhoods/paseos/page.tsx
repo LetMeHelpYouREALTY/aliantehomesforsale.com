@@ -20,22 +20,8 @@ export default function Paseos() {
   return (
     <>
       <NeighborhoodPlaceSchema
-        name="The Paseos"
-        description="The Paseos offers affordable, quality homes perfect for first-time buyers and families looking to enter the Aliante housing market with great value."
-        priceRange="$300,000 - $500,000"
-        latitude="36.2656"
-        longitude="-115.2189"
-        features={[
-          'Affordable home prices',
-          'First-time buyer friendly',
-          'Quality construction',
-          'Community parks',
-          'Low HOA fees',
-          'Family-oriented neighborhood',
-        ]}
-        builders={['KB Home', 'Beazer Homes', 'D.R. Horton']}
-        homeTypes={['Single-family homes', 'Starter homes', 'Townhomes']}
-        specialFeatures={['Lowest entry price point in Aliante', 'FHA/VA financing friendly', 'Move-in ready homes']}
+        slug="paseos"
+        description="The Paseos is an open-access village in the Aliante master plan with parks, trails, and shared recreation."
       />
       <main>
         <NeighborhoodsHero

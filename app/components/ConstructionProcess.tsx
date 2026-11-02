@@ -1,18 +1,14 @@
 'use client';
 
-import { type SiteImage, siteImages } from '../../lib/content/site-images';
+import {
+  type ConstructionProcessStep,
+  constructionProcess,
+} from '../../lib/content/construction-process';
+import { siteImages } from '../../lib/content/site-images';
 import CardPhoto from './CardPhoto';
 import HeadingPhoto from './HeadingPhoto';
 
-interface ProcessStepProps {
-  number: number;
-  title: string;
-  description: string;
-  details: string[];
-  image: SiteImage;
-}
-
-function ProcessStep({ number, title, description, details, image }: ProcessStepProps) {
+function ProcessStep({ number, title, description, details, image }: ConstructionProcessStep) {
   return (
     <div
       className="bg-white rounded-xl p-8 shadow-lg border-l-4"
@@ -46,73 +42,7 @@ function ProcessStep({ number, title, description, details, image }: ProcessStep
 }
 
 export default function ConstructionProcess() {
-  const steps: ProcessStepProps[] = [
-    {
-      number: 1,
-      title: 'Builder & Community Selection',
-      description:
-        'Compare builders, floor plans, and amenities against your budget and the lots that are actually for sale this month.',
-      image: siteImages.constructionSelect,
-      details: [
-        'Review builders active near Aliante',
-        'Compare plans and included features',
-        'Confirm live price sheets',
-        'Visit model homes together',
-      ],
-    },
-    {
-      number: 2,
-      title: 'Strategic Lot Selection',
-      description:
-        'Lot placement affects views, sun, street noise, and daily living. We walk the map with you so you can choose a lot that matches those factors.',
-      image: siteImages.constructionLot,
-      details: [
-        'Corner vs. interior lots',
-        'View premiums vs. standard',
-        'Sun exposure and orientation',
-        'Proximity to amenities/streets',
-      ],
-    },
-    {
-      number: 3,
-      title: 'Design Center & Upgrades',
-      description:
-        'Choose upgrades with use and resale in mind. We help you decide which design-center items you want to pay for and which to skip.',
-      image: siteImages.constructionDesign,
-      details: [
-        'Flooring and finishes selection',
-        'Kitchen and bath upgrades',
-        'Structural vs. cosmetic changes',
-        'Negotiate upgrade credits',
-      ],
-    },
-    {
-      number: 4,
-      title: 'Construction Monitoring',
-      description:
-        'We walk key phases with you, coordinate inspections you hire, and document issues before closing.',
-      image: siteImages.constructionFraming,
-      details: [
-        'Foundation and framing inspections',
-        'Pre-drywall walkthrough',
-        'MEP systems verification',
-        'Quality control checkpoints',
-      ],
-    },
-    {
-      number: 5,
-      title: 'Final Walkthrough & Closing',
-      description:
-        'Detailed pre-closing inspection, punch list management, and closing coordination. Confirm remaining items before you accept the keys.',
-      image: siteImages.constructionWalkthrough,
-      details: [
-        'Comprehensive final walkthrough',
-        'Punch list creation and follow-up',
-        'Warranty documentation review',
-        'Closing coordination and support',
-      ],
-    },
-  ];
+  const { heading, subheading, steps } = constructionProcess;
 
   return (
     <section
@@ -121,12 +51,8 @@ export default function ConstructionProcess() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Your New Home Journey - Step by Step
-          </h2>
-          <p className="text-xl text-white/90 mb-8">
-            We guide you through every phase of the new construction process
-          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">{heading}</h2>
+          <p className="text-xl text-white/90 mb-8">{subheading}</p>
           <div className="max-w-4xl mx-auto text-left">
             <HeadingPhoto
               image={siteImages.constructionProcess}

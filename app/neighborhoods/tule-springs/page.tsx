@@ -1,4 +1,5 @@
 import { pageHero } from '../../../lib/content/site-images';
+import { graphIds } from '../../../lib/graphs/ids';
 import { pageMetadata } from '../../../lib/seo-utils';
 import ContextualLinks from '../../components/ContextualLinks';
 import NeighborhoodCards from '../../components/NeighborhoodCards';
@@ -21,22 +22,9 @@ export default function TuleSprings() {
   return (
     <>
       <NeighborhoodPlaceSchema
-        name="Villages at Tule Springs"
-        description="Villages at Tule Springs is a new master-planned community featuring brand-new construction homes, extensive parks, trails, and modern amenities."
-        priceRange="$450,000 - $750,000"
-        latitude="36.2845"
-        longitude="-115.2234"
-        features={[
-          'Brand-new master-planned community',
-          'New construction homes',
-          'Extensive parks and trails',
-          'Modern amenities',
-          'Planned community centers',
-          'Energy-efficient new builds',
-        ]}
-        builders={['Lennar', 'D.R. Horton', 'Tri Pointe Homes', 'Richmond American']}
-        homeTypes={['New construction single-family', 'Modern floor plans', 'Energy-efficient homes']}
-        specialFeatures={['Brand-new homes only', 'Builder incentives available', 'Latest smart home features', '10-year structural warranties']}
+        slug="tule-springs"
+        description="Villages at Tule Springs is east of the Aliante master plan. It is North Las Vegas new construction — not inside Club Aliante, The Prominence, or Sun City Aliante."
+        containedInPlaceId={graphIds.northLasVegas}
       />
       <main>
         <NeighborhoodsHero
